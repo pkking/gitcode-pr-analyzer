@@ -1,12 +1,12 @@
-name: Collect GitCode PR Data
+name: 'Collect GitCode PR Data'
 
 on:
   schedule:
-    - cron: "0 * * * *"
+    - cron: '0 * * * *'
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: 'write'
 
 jobs:
   collect-data:
