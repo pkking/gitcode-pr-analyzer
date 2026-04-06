@@ -1,0 +1,24 @@
+orgs:
+  - name: Ascend
+    rules:
+      - id: compile
+        when:
+          - { phase: trigger, source: comment, pattern: "compile", match: equals }
+          - { phase: trigger, source: comment, pattern: "/compile", match: equals }
+          - { phase: start,   source: label,   action: added, pattern: "ci-pipeline-running", match: equals }
+          - { phase: finish,  source: label,   action: added, pattern: "ci-pipeline-passed", match: equals }
+          - { phase: finish,  source: label,   action: added, pattern: "ci-pipeline-failed", match: equals }
+
+      - id: docs-ci
+        when:
+          - { phase: trigger, source: comment, pattern: "compile", match: equals }
+          - { phase: trigger, source: comment, pattern: "/compile", match: equals }
+          - { phase: start,   source: label,   action: added, pattern: "docs-ci-pipeline-running", match: equals }
+          - { phase: finish,  source: label,   action: added, pattern: "docs-ci-pipeline-success", match: equals }
+          - { phase: finish,  source: label,   action: added, pattern: "docs-ci-pipeline-failed", match: equals }
+
+    repos:
+      - Ascend/community
+
+repos:
+  - vllm-project/vllm-ascend

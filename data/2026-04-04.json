@@ -1,0 +1,156 @@
+{
+  "date": "2026-04-04",
+  "repo": "Ascend/community",
+  "runs": [
+    {
+      "id": 1000000,
+      "name": "PR #464 compile - 增加msagent仓库",
+      "head_branch": "msagent",
+      "status": "completed",
+      "conclusion": "pending",
+      "created_at": "2026-04-03T17:18:23Z",
+      "updated_at": "2026-04-06T20:24:41Z",
+      "html_url": "https://gitcode.com/Ascend/community/merge_requests/464",
+      "durationInSeconds": 270378.974,
+      "jobs": [
+        {
+          "id": 1000001,
+          "name": "Ascend docs pipeline is running...",
+          "status": "completed",
+          "conclusion": "pending",
+          "created_at": "2026-04-03T17:18:23Z",
+          "started_at": "2026-04-03T17:18:53Z",
+          "completed_at": "2026-04-06T20:24:41Z",
+          "html_url": "https://gitcode.com/Ascend/community/merge_requests/464",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 270348.974
+        }
+      ]
+    },
+    {
+      "id": 1000003,
+      "name": "PR #462 compile - 增加msagent代码仓--Step1，更新sig分组信息",
+      "head_branch": "msagent",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-04-03T16:15:04Z",
+      "updated_at": "2026-04-03T16:21:53Z",
+      "html_url": "https://gitcode.com/Ascend/community/merge_requests/462",
+      "durationInSeconds": 409,
+      "jobs": [
+        {
+          "id": 1000004,
+          "name": "Ascend docs pipeline is running...",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-04-03T16:15:04Z",
+          "started_at": "2026-04-03T16:15:34Z",
+          "completed_at": "2026-04-03T16:21:53Z",
+          "html_url": "https://gitcode.com/Ascend/community/merge_requests/462",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 379
+        }
+      ]
+    },
+    {
+      "id": 4650000,
+      "name": "PR #465 compile - add reviewers for mindspeed",
+      "head_branch": "master",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-04-04T10:20:53Z",
+      "updated_at": "2026-04-04T10:24:27Z",
+      "html_url": "https://gitcode.com/Ascend/community/merge_requests/465",
+      "durationInSeconds": 214,
+      "jobs": [
+        {
+          "id": 4650001,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-04-04T10:20:53Z",
+          "started_at": "2026-04-04T10:22:56Z",
+          "completed_at": "2026-04-04T10:24:27Z",
+          "html_url": "https://gitcode.com/Ascend/community/merge_requests/465",
+          "queueDurationInSeconds": 123,
+          "durationInSeconds": 91
+        }
+      ]
+    },
+    {
+      "id": 4640000,
+      "name": "PR #464 compile - 增加msagent仓库",
+      "head_branch": "msagent",
+      "status": "completed",
+      "conclusion": "pending",
+      "created_at": "2026-04-03T17:18:23Z",
+      "updated_at": "2026-04-06T20:26:44Z",
+      "html_url": "https://gitcode.com/Ascend/community/merge_requests/464",
+      "durationInSeconds": 270501.444,
+      "jobs": [
+        {
+          "id": 4640001,
+          "name": "Ascend docs pipeline is running...",
+          "status": "completed",
+          "conclusion": "pending",
+          "created_at": "2026-04-03T17:18:23Z",
+          "started_at": "2026-04-03T17:18:53Z",
+          "completed_at": "2026-04-06T20:26:44Z",
+          "html_url": "https://gitcode.com/Ascend/community/merge_requests/464",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 270471.444
+        }
+      ]
+    },
+    {
+      "id": 4620003,
+      "name": "PR #462 compile - 增加msagent代码仓--Step1，更新sig分组信息",
+      "head_branch": "msagent",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-04-03T16:15:04Z",
+      "updated_at": "2026-04-03T16:21:53Z",
+      "html_url": "https://gitcode.com/Ascend/community/merge_requests/462",
+      "durationInSeconds": 409,
+      "jobs": [
+        {
+          "id": 4620004,
+          "name": "Ascend docs pipeline is running...",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-04-03T16:15:04Z",
+          "started_at": "2026-04-03T16:15:34Z",
+          "completed_at": "2026-04-03T16:21:53Z",
+          "html_url": "https://gitcode.com/Ascend/community/merge_requests/462",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 379
+        }
+      ]
+    },
+    {
+      "id": 4650100,
+      "name": "PR #465 docs-ci - add reviewers for mindspeed",
+      "head_branch": "master",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-04-04T10:20:53Z",
+      "updated_at": "2026-04-04T10:23:06Z",
+      "html_url": "https://gitcode.com/Ascend/community/merge_requests/465",
+      "durationInSeconds": 133,
+      "jobs": [
+        {
+          "id": 4650101,
+          "name": "docs-ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-04-04T10:20:53Z",
+          "started_at": "2026-04-04T10:21:57Z",
+          "completed_at": "2026-04-04T10:23:06Z",
+          "html_url": "https://gitcode.com/Ascend/community/merge_requests/465",
+          "queueDurationInSeconds": 64,
+          "durationInSeconds": 69
+        }
+      ]
+    }
+  ]
+}
