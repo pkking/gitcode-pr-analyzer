@@ -96,8 +96,8 @@ interface GitCodePullRequest {
 }
 
 const GITCODE_API_BASE = 'https://api.gitcode.com/api/v5';
-const ETL_DIR = path.join(__dirname, '..');
-const DATA_DIR = path.join(__dirname, '../../data');
+const ETL_DIR = path.join(process.cwd(), 'etl');
+const DATA_DIR = path.join(process.cwd(), 'data');
 const INDEX_PATH = path.join(DATA_DIR, 'index.json');
 const REPOS_CONFIG_PATH = path.join(ETL_DIR, 'repos.yaml');
 
