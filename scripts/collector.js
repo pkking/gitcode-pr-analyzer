@@ -3,7 +3,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import yaml from 'js-yaml';
 import { analyzePR } from '../src/utils/analyzer.js';
-import { getPRs, getComments, getModifyHistory } from '../src/api/gitcode.js';
+import { getPRs, getComments, getModifyHistory, getOperateLogs } from '../src/api/gitcode.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -60,10 +60,13 @@ async function main() {
 
       for (const pr of prs) {
         console.log(`Analyzing PR #${pr.number}...`);
-        const comments = await getComments(owner, repo, pr.number, token);
-        const history = await getModifyHistory(owner, repo, pr.number, token);
+        const [comments, history, operateLogs] = await Promise.all([
+          getComments(owner, repo, pr.number, token),
+          getModifyHistory(owner, repo, pr.number, token),
+          getOperateLogs(owner, repo, pr.number, token),
+        ]);
         
-        const analysisResult = analyzePR(pr, comments, history);
+        const analysisResult = analyzePR(pr, comments, history, operateLogs);
         
         const prFilePath = path.join(repoDataDir, `pr-${pr.number}.json`);
         await fs.writeFile(prFilePath, JSON.stringify(analysisResult, null, 2));

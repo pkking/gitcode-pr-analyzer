@@ -32,5 +32,6 @@ A pure front-end application to analyze Pull Request performance metrics on GitC
    - Click "Analyze PR" to see the metrics.
 
 ## Analysis Logic
-- **Compile Cycles:** Matches each comment containing "compile" (case-insensitive) with the *first subsequent* removal of the `ci-pipeline-running` label found in the PR's modification history.
+- **Compile Cycles:** Matches each comment containing "compile" (case-insensitive) with the *first subsequent* CI finish event from GitCode timestamps, preferring Pull Request `operate_logs` label events and falling back to `modify_history` when needed.
+- **CI Finish Events:** Treats either removal of `ci-pipeline-running` or addition of `ci-pipeline-passed` as the end of a compile cycle.
 - **Time Formatting:** All durations are formatted into human-readable strings (e.g., `2h 15m 30s`).
