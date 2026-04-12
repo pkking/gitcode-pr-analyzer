@@ -16,9 +16,19 @@ orgs:
           - { phase: start,   source: label,   action: added, pattern: "docs-ci-pipeline-running", match: equals }
           - { phase: finish,  source: label,   action: added, pattern: "docs-ci-pipeline-success", match: equals }
           - { phase: finish,  source: label,   action: added, pattern: "docs-ci-pipeline-failed", match: equals }
-
-    repos:
-      - Ascend/community
+    exclude:
+      - Ascend/example-ignored-repo
+    repo_overrides:
+      Ascend/community:
+        mode: replace
+        rules:
+          - id: compile
+            when:
+              - { phase: trigger, source: comment, pattern: "compile", match: equals }
+              - { phase: trigger, source: comment, pattern: "/compile", match: equals }
+              - { phase: start,   source: label,   action: added, pattern: "ci-pipeline-running", match: equals }
+              - { phase: finish,  source: label,   action: added, pattern: "ci-pipeline-passed", match: equals }
+              - { phase: finish,  source: label,   action: added, pattern: "ci-pipeline-failed", match: equals }
 
 repos:
   - vllm-project/vllm-ascend

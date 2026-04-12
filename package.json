@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "collect": "node --experimental-strip-types etl/scripts/collect-gitcode.ts",
     "test": "node --test",
     "build": "vite build",
     "preview": "vite preview"

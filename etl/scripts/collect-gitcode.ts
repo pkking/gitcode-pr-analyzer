@@ -3,6 +3,7 @@ import * as fs from 'fs';
 import * as path from 'path';
 import * as yaml from 'js-yaml';
 import { extractLabelEvents } from '../../src/utils/gitcodeCiEvents.js';
+import { normalizeConfig, resolveRepoTargets } from '../lib/config.js';
 
 interface Run {
   id: number;
@@ -55,15 +56,22 @@ interface CIRule {
   when: PhaseDef[];
 }
 
+interface RepoOverride {
+  mode?: 'append' | 'replace';
+  rules?: CIRule[];
+}
+
 interface OrgConfig {
-  name: string;
-  rules: CIRule[];
-  repos: string[];
+  name?: string;
+  rules?: CIRule[];
+  repos?: string[];
+  exclude?: string[];
+  repo_overrides?: Record<string, RepoOverride>;
 }
 
 interface ReposConfig {
-  repos: string[];
-  orgs: OrgConfig[];
+  repos?: string[];
+  orgs?: OrgConfig[];
 }
 
 interface GitCodeComment {
@@ -98,7 +106,7 @@ interface GitCodePullRequest {
 
 const GITCODE_API_BASE = 'https://api.gitcode.com/api/v5';
 const ETL_DIR = path.join(process.cwd(), 'etl');
-const DATA_DIR = path.join(process.cwd(), 'data');
+const DATA_DIR = path.join(process.cwd(), 'public', 'data');
 const INDEX_PATH = path.join(DATA_DIR, 'index.json');
 const REPOS_CONFIG_PATH = path.join(ETL_DIR, 'repos.yaml');
 
@@ -117,12 +125,9 @@ function writeIndex(index: Index) {
 function readConfig(): ReposConfig {
   try {
     const content = fs.readFileSync(REPOS_CONFIG_PATH, 'utf-8');
-    return yaml.load(content) as ReposConfig;
+    return normalizeConfig(yaml.load(content) as ReposConfig);
   } catch {
-    return {
-      repos: (process.env.TARGET_REPOS || '').split(',').map(s => s.trim()).filter(Boolean),
-      orgs: [],
-    };
+    return normalizeConfig({}, (process.env.TARGET_REPOS || '').split(',').map(s => s.trim()).filter(Boolean));
   }
 }
 
@@ -163,8 +168,24 @@ async function gitcodeFetch(endpoint: string, params: Record<string, string> = {
     url.searchParams.set(key, value);
   }
 
-  const response = await fetch(url.toString());
+  let response: Response;
+  try {
+    response = await fetch(url.toString());
+  } catch (error) {
+    throw new Error(`Network error while requesting ${endpoint}. Check outbound network access and GitCode availability.`, {
+      cause: error,
+    });
+  }
+
   if (!response.ok) {
+    if (response.status === 401 || response.status === 403) {
+      throw new Error(`Authentication failed for ${endpoint}. Check whether GITCODE_TOKEN is valid and has access to the target resource.`);
+    }
+
+    if (response.status === 404) {
+      throw new Error(`Resource not found for ${endpoint}. The repository or organization may not exist on GitCode, or the token may not have visibility.`);
+    }
+
     throw new Error(`GitCode API error: ${response.status} ${response.statusText} - ${endpoint}`);
   }
   return response.json();
@@ -182,6 +203,41 @@ async function paginate(endpoint: string, params: Record<string, string> = {}): 
     await new Promise(resolve => setTimeout(resolve, 200));
   }
   return all;
+}
+
+interface GitCodeRepo {
+  path_with_namespace?: string;
+  full_name?: string;
+  name_with_namespace?: string;
+  namespace?: { path?: string; name?: string };
+  path?: string;
+  name?: string;
+}
+
+async function discoverOrgRepos(orgName: string): Promise<string[]> {
+  try {
+    const repos = await paginate(`/orgs/${orgName}/repos`);
+    const repoNames = repos
+      .map((repo: GitCodeRepo) => {
+        if (repo.path_with_namespace) return repo.path_with_namespace;
+        if (repo.full_name) return repo.full_name;
+        if (repo.namespace?.path && repo.path) return `${repo.namespace.path}/${repo.path}`;
+        if (repo.namespace?.name && repo.name) return `${repo.namespace.name}/${repo.name}`;
+        return '';
+      })
+      .filter(Boolean);
+
+    if (repoNames.length === 0) {
+      console.warn(`No repositories discovered for org ${orgName}. The org may be empty, inaccessible to this token, or not present on GitCode.`);
+    } else {
+      console.log(`  Discovered ${repoNames.length} repos for org ${orgName}`);
+    }
+
+    return repoNames;
+  } catch (error) {
+    console.error(`Failed to discover repositories for org ${orgName}:`, error instanceof Error ? error.message : error);
+    return [];
+  }
 }
 
 interface PhaseMatch {
@@ -315,25 +371,16 @@ function reconstructCIRuns(
 async function main() {
   const config = readConfig();
   const retentionDays = parseInt(process.env.RETENTION_DAYS || '90');
+  const targets = await resolveRepoTargets(config, discoverOrgRepos);
 
-  const targetRepos = new Map<string, CIRule[]>();
-  for (const org of config.orgs) {
-    for (const repo of org.repos) {
-      targetRepos.set(repo, org.rules);
-    }
-  }
-  for (const repo of config.repos) {
-    if (!targetRepos.has(repo)) targetRepos.set(repo, []);
-  }
-
-  if (targetRepos.size === 0) {
+  if (targets.length === 0) {
     console.log('No repositories configured. Skipping collection.');
     return;
   }
 
   const index = readIndex();
 
-  for (const [repo, rules] of targetRepos) {
+  for (const { repo, rules } of targets) {
     try {
       console.log(`Processing ${repo} (${rules.length} rules)...`);
       const [owner, repoName] = repo.split('/');
@@ -424,7 +471,7 @@ async function main() {
         if (idx > -1) index.repos[repo].files.splice(idx, 1);
       }
     } catch (err) {
-      console.error(`Error processing repo ${repo}:`, err instanceof Error ? err.message : err);
+      console.error(`Error processing repo ${repo}. This may indicate a non-GitCode repository, missing visibility, or a transient network problem:`, err instanceof Error ? err.message : err);
     }
   }
 
