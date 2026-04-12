@@ -29,6 +29,3 @@ orgs:
               - { phase: start,   source: label,   action: added, pattern: "ci-pipeline-running", match: equals }
               - { phase: finish,  source: label,   action: added, pattern: "ci-pipeline-passed", match: equals }
               - { phase: finish,  source: label,   action: added, pattern: "ci-pipeline-failed", match: equals }
-
-repos:
-  - vllm-project/vllm-ascend
