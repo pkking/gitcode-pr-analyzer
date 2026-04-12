@@ -6,10 +6,26 @@
     "created_at": "2026-04-03T09:17:45.000Z",
     "merged_at": "2026-04-07T01:28:58.000Z"
   },
-  "compileToCiCycles": [],
+  "compileToCiCycles": [
+    {
+      "compileTime": "2026-04-03T09:18:23.000Z",
+      "removalTime": "2026-04-03T09:24:06.000Z",
+      "durationSeconds": 343,
+      "durationText": "5m 43s"
+    },
+    {
+      "compileTime": "2026-04-07T01:17:24.000Z",
+      "removalTime": "2026-04-07T01:20:03.000Z",
+      "durationSeconds": 159,
+      "durationText": "2m 39s"
+    }
+  ],
   "prSubmitToMerge": {
     "durationSeconds": 317473,
     "durationText": "3d 16h 11m 13s"
   },
-  "lastCiRemovalToMerge": null
+  "lastCiRemovalToMerge": {
+    "durationSeconds": 534,
+    "durationText": "8m 54s"
+  }
 }

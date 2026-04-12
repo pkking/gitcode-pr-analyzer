@@ -6,10 +6,20 @@
     "created_at": "2026-04-10T13:02:29.000Z",
     "merged_at": "2026-04-10T13:55:28.000Z"
   },
-  "compileToCiCycles": [],
+  "compileToCiCycles": [
+    {
+      "compileTime": "2026-04-10T13:02:36.000Z",
+      "removalTime": "2026-04-10T13:54:47.000Z",
+      "durationSeconds": 3131,
+      "durationText": "52m 11s"
+    }
+  ],
   "prSubmitToMerge": {
     "durationSeconds": 3179,
     "durationText": "52m 59s"
   },
-  "lastCiRemovalToMerge": null
+  "lastCiRemovalToMerge": {
+    "durationSeconds": 40,
+    "durationText": "40s"
+  }
 }
