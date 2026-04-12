@@ -1,0 +1,3106 @@
+{
+  "date": "2026-02-23",
+  "repo": "Ascend/op-plugin",
+  "runs": [
+    {
+      "id": 4060003,
+      "name": "PR #406 compile - w8a8sc权重加载逻辑迁移至权重预加载路线",
+      "head_branch": "dev",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-02-23T15:48:20Z",
+      "updated_at": "2026-02-23T17:19:04Z",
+      "html_url": "https://gitcode.com/Ascend/MindIE-LLM/merge_requests/406",
+      "durationInSeconds": 5444,
+      "jobs": [
+        {
+          "id": 4060004,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-02-23T15:48:20Z",
+          "started_at": "2026-02-23T15:48:48Z",
+          "completed_at": "2026-02-23T17:19:04Z",
+          "html_url": "https://gitcode.com/Ascend/MindIE-LLM/merge_requests/406",
+          "queueDurationInSeconds": 28,
+          "durationInSeconds": 5416
+        }
+      ]
+    },
+    {
+      "id": 4060103,
+      "name": "PR #406 docs-ci - w8a8sc权重加载逻辑迁移至权重预加载路线",
+      "head_branch": "dev",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-02-23T15:48:20Z",
+      "updated_at": "2026-03-14T07:18:47Z",
+      "html_url": "https://gitcode.com/Ascend/MindIE-LLM/merge_requests/406",
+      "durationInSeconds": 1611027,
+      "jobs": [
+        {
+          "id": 4060104,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-02-23T15:48:20Z",
+          "started_at": "2026-02-23T15:48:50Z",
+          "completed_at": "2026-03-14T07:18:47Z",
+          "html_url": "https://gitcode.com/Ascend/MindIE-LLM/merge_requests/406",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 1610997
+        }
+      ]
+    },
+    {
+      "id": 960000,
+      "name": "PR #96 compile - [issue #62]feat(timeline): aclgraph 数据 Stream 泳道根据",
+      "head_branch": "feat_20251229_aclgraph",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-02-23T01:55:05Z",
+      "updated_at": "2026-02-23T02:36:08Z",
+      "html_url": "https://gitcode.com/Ascend/msinsight/merge_requests/96",
+      "durationInSeconds": 2463,
+      "jobs": [
+        {
+          "id": 960001,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-02-23T01:55:05Z",
+          "started_at": "2026-02-23T01:56:04Z",
+          "completed_at": "2026-02-23T02:36:08Z",
+          "html_url": "https://gitcode.com/Ascend/msinsight/merge_requests/96",
+          "queueDurationInSeconds": 59,
+          "durationInSeconds": 2404
+        }
+      ]
+    },
+    {
+      "id": 960100,
+      "name": "PR #96 docs-ci - [issue #62]feat(timeline): aclgraph 数据 Stream 泳道根据",
+      "head_branch": "feat_20251229_aclgraph",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-02-23T01:55:05Z",
+      "updated_at": "2026-02-25T09:12:05Z",
+      "html_url": "https://gitcode.com/Ascend/msinsight/merge_requests/96",
+      "durationInSeconds": 199020,
+      "jobs": [
+        {
+          "id": 960101,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-02-23T01:55:05Z",
+          "started_at": "2026-02-23T01:55:35Z",
+          "completed_at": "2026-02-25T09:12:05Z",
+          "html_url": "https://gitcode.com/Ascend/msinsight/merge_requests/96",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 198990
+        }
+      ]
+    },
+    {
+      "id": 5480002,
+      "name": "PR #548 compile - [AscendNPU IR] feat-auto-sync-update-2602",
+      "head_branch": "feature-auto-sync-update-2602",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-02-23T01:24:16Z",
+      "updated_at": "2026-02-23T01:30:40Z",
+      "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/548",
+      "durationInSeconds": 384,
+      "jobs": [
+        {
+          "id": 5480003,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-02-23T01:24:16Z",
+          "started_at": "2026-02-23T01:24:51Z",
+          "completed_at": "2026-02-23T01:30:40Z",
+          "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/548",
+          "queueDurationInSeconds": 35,
+          "durationInSeconds": 349
+        }
+      ]
+    },
+    {
+      "id": 5480102,
+      "name": "PR #548 docs-ci - [AscendNPU IR] feat-auto-sync-update-2602",
+      "head_branch": "feature-auto-sync-update-2602",
+      "status": "completed",
+      "conclusion": "pending",
+      "created_at": "2026-02-23T01:24:16Z",
+      "updated_at": "2026-04-12T16:39:37Z",
+      "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/548",
+      "durationInSeconds": 4202121.428,
+      "jobs": [
+        {
+          "id": 5480103,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "pending",
+          "created_at": "2026-02-23T01:24:16Z",
+          "started_at": "2026-02-23T01:24:46Z",
+          "completed_at": "2026-04-12T16:39:37Z",
+          "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/548",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 4202091.428
+        }
+      ]
+    },
+    {
+      "id": 309160039,
+      "name": "PR #30916 compile - Update op_plugin commit id",
+      "head_branch": "v2.6.0-7.3.0",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-02-23T02:01:21Z",
+      "updated_at": "2026-02-23T02:47:35Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30916",
+      "durationInSeconds": 2774,
+      "jobs": [
+        {
+          "id": 309160040,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-02-23T02:01:21Z",
+          "started_at": "2026-02-23T02:01:48Z",
+          "completed_at": "2026-02-23T02:47:35Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30916",
+          "queueDurationInSeconds": 27,
+          "durationInSeconds": 2747
+        }
+      ]
+    },
+    {
+      "id": 309160040,
+      "name": "PR #30916 compile - Update op_plugin commit id",
+      "head_branch": "v2.6.0-7.3.0",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-02-23T08:01:29Z",
+      "updated_at": "2026-02-23T08:51:39Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30916",
+      "durationInSeconds": 3010,
+      "jobs": [
+        {
+          "id": 309160041,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-02-23T08:01:29Z",
+          "started_at": "2026-02-23T08:01:56Z",
+          "completed_at": "2026-02-23T08:51:39Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30916",
+          "queueDurationInSeconds": 27,
+          "durationInSeconds": 2983
+        }
+      ]
+    },
+    {
+      "id": 309160041,
+      "name": "PR #30916 compile - Update op_plugin commit id",
+      "head_branch": "v2.6.0-7.3.0",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-02-23T13:01:22Z",
+      "updated_at": "2026-02-23T13:46:41Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30916",
+      "durationInSeconds": 2719,
+      "jobs": [
+        {
+          "id": 309160042,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-02-23T13:01:22Z",
+          "started_at": "2026-02-23T13:01:52Z",
+          "completed_at": "2026-02-23T13:46:41Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30916",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 2689
+        }
+      ]
+    },
+    {
+      "id": 309160042,
+      "name": "PR #30916 compile - Update op_plugin commit id",
+      "head_branch": "v2.6.0-7.3.0",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-02-23T15:02:28Z",
+      "updated_at": "2026-02-23T15:51:41Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30916",
+      "durationInSeconds": 2953,
+      "jobs": [
+        {
+          "id": 309160043,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-02-23T15:02:28Z",
+          "started_at": "2026-02-23T15:02:52Z",
+          "completed_at": "2026-02-23T15:51:41Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30916",
+          "queueDurationInSeconds": 24,
+          "durationInSeconds": 2929
+        }
+      ]
+    },
+    {
+      "id": 309160139,
+      "name": "PR #30916 docs-ci - Update op_plugin commit id",
+      "head_branch": "v2.6.0-7.3.0",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-02-23T02:01:21Z",
+      "updated_at": "2026-02-26T01:05:52Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30916",
+      "durationInSeconds": 255871,
+      "jobs": [
+        {
+          "id": 309160140,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-02-23T02:01:21Z",
+          "started_at": "2026-02-23T02:01:51Z",
+          "completed_at": "2026-02-26T01:05:52Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30916",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 255841
+        }
+      ]
+    },
+    {
+      "id": 309160140,
+      "name": "PR #30916 docs-ci - Update op_plugin commit id",
+      "head_branch": "v2.6.0-7.3.0",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-02-23T08:01:29Z",
+      "updated_at": "2026-02-26T01:05:52Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30916",
+      "durationInSeconds": 234263,
+      "jobs": [
+        {
+          "id": 309160141,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-02-23T08:01:29Z",
+          "started_at": "2026-02-23T08:01:59Z",
+          "completed_at": "2026-02-26T01:05:52Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30916",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 234233
+        }
+      ]
+    },
+    {
+      "id": 309160141,
+      "name": "PR #30916 docs-ci - Update op_plugin commit id",
+      "head_branch": "v2.6.0-7.3.0",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-02-23T13:01:22Z",
+      "updated_at": "2026-02-26T01:05:52Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30916",
+      "durationInSeconds": 216270,
+      "jobs": [
+        {
+          "id": 309160142,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-02-23T13:01:22Z",
+          "started_at": "2026-02-23T13:01:52Z",
+          "completed_at": "2026-02-26T01:05:52Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30916",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 216240
+        }
+      ]
+    },
+    {
+      "id": 309160142,
+      "name": "PR #30916 docs-ci - Update op_plugin commit id",
+      "head_branch": "v2.6.0-7.3.0",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-02-23T15:02:28Z",
+      "updated_at": "2026-02-26T01:05:52Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30916",
+      "durationInSeconds": 209004,
+      "jobs": [
+        {
+          "id": 309160143,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-02-23T15:02:28Z",
+          "started_at": "2026-02-23T15:02:58Z",
+          "completed_at": "2026-02-26T01:05:52Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30916",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 208974
+        }
+      ]
+    },
+    {
+      "id": 308470043,
+      "name": "PR #30847 compile - Update op_plugin commit id",
+      "head_branch": "v2.7.1-7.3.0",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-02-23T02:01:26Z",
+      "updated_at": "2026-02-23T02:01:33Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30847",
+      "durationInSeconds": 7,
+      "jobs": [
+        {
+          "id": 308470044,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-02-23T02:01:26Z",
+          "started_at": "2026-02-23T02:01:51Z",
+          "completed_at": "2026-02-23T02:01:33Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30847",
+          "queueDurationInSeconds": 25,
+          "durationInSeconds": 0
+        }
+      ]
+    },
+    {
+      "id": 308470044,
+      "name": "PR #30847 compile - Update op_plugin commit id",
+      "head_branch": "v2.7.1-7.3.0",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-02-23T08:01:27Z",
+      "updated_at": "2026-02-23T08:48:05Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30847",
+      "durationInSeconds": 2798,
+      "jobs": [
+        {
+          "id": 308470045,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-02-23T08:01:27Z",
+          "started_at": "2026-02-23T08:01:55Z",
+          "completed_at": "2026-02-23T08:48:05Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30847",
+          "queueDurationInSeconds": 28,
+          "durationInSeconds": 2770
+        }
+      ]
+    },
+    {
+      "id": 308470045,
+      "name": "PR #30847 compile - Update op_plugin commit id",
+      "head_branch": "v2.7.1-7.3.0",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-02-23T13:01:31Z",
+      "updated_at": "2026-02-23T13:48:35Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30847",
+      "durationInSeconds": 2824,
+      "jobs": [
+        {
+          "id": 308470046,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-02-23T13:01:31Z",
+          "started_at": "2026-02-23T13:01:55Z",
+          "completed_at": "2026-02-23T13:48:35Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30847",
+          "queueDurationInSeconds": 24,
+          "durationInSeconds": 2800
+        }
+      ]
+    },
+    {
+      "id": 308470046,
+      "name": "PR #30847 compile - Update op_plugin commit id",
+      "head_branch": "v2.7.1-7.3.0",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-02-23T15:01:25Z",
+      "updated_at": "2026-02-23T19:16:05Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30847",
+      "durationInSeconds": 15280,
+      "jobs": [
+        {
+          "id": 308470047,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-02-23T15:01:25Z",
+          "started_at": "2026-02-23T15:01:54Z",
+          "completed_at": "2026-02-23T19:16:05Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30847",
+          "queueDurationInSeconds": 29,
+          "durationInSeconds": 15251
+        }
+      ]
+    },
+    {
+      "id": 308470143,
+      "name": "PR #30847 docs-ci - Update op_plugin commit id",
+      "head_branch": "v2.7.1-7.3.0",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-02-23T02:01:26Z",
+      "updated_at": "2026-02-26T01:05:46Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30847",
+      "durationInSeconds": 255860,
+      "jobs": [
+        {
+          "id": 308470144,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-02-23T02:01:26Z",
+          "started_at": "2026-02-23T02:01:56Z",
+          "completed_at": "2026-02-26T01:05:46Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30847",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 255830
+        }
+      ]
+    },
+    {
+      "id": 308470144,
+      "name": "PR #30847 docs-ci - Update op_plugin commit id",
+      "head_branch": "v2.7.1-7.3.0",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-02-23T08:01:27Z",
+      "updated_at": "2026-02-26T01:05:46Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30847",
+      "durationInSeconds": 234259,
+      "jobs": [
+        {
+          "id": 308470145,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-02-23T08:01:27Z",
+          "started_at": "2026-02-23T08:01:57Z",
+          "completed_at": "2026-02-26T01:05:46Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30847",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 234229
+        }
+      ]
+    },
+    {
+      "id": 308470145,
+      "name": "PR #30847 docs-ci - Update op_plugin commit id",
+      "head_branch": "v2.7.1-7.3.0",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-02-23T13:01:31Z",
+      "updated_at": "2026-02-26T01:05:46Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30847",
+      "durationInSeconds": 216255,
+      "jobs": [
+        {
+          "id": 308470146,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-02-23T13:01:31Z",
+          "started_at": "2026-02-23T13:02:01Z",
+          "completed_at": "2026-02-26T01:05:46Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30847",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 216225
+        }
+      ]
+    },
+    {
+      "id": 308470146,
+      "name": "PR #30847 docs-ci - Update op_plugin commit id",
+      "head_branch": "v2.7.1-7.3.0",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-02-23T15:01:25Z",
+      "updated_at": "2026-02-26T01:05:46Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30847",
+      "durationInSeconds": 209061,
+      "jobs": [
+        {
+          "id": 308470147,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-02-23T15:01:25Z",
+          "started_at": "2026-02-23T15:01:55Z",
+          "completed_at": "2026-02-26T01:05:46Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30847",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 209031
+        }
+      ]
+    },
+    {
+      "id": 309170039,
+      "name": "PR #30917 compile - Update op_plugin commit id",
+      "head_branch": "master",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-02-23T02:01:22Z",
+      "updated_at": "2026-02-23T02:48:46Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30917",
+      "durationInSeconds": 2844,
+      "jobs": [
+        {
+          "id": 309170040,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-02-23T02:01:22Z",
+          "started_at": "2026-02-23T02:01:50Z",
+          "completed_at": "2026-02-23T02:48:46Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30917",
+          "queueDurationInSeconds": 28,
+          "durationInSeconds": 2816
+        }
+      ]
+    },
+    {
+      "id": 309170040,
+      "name": "PR #30917 compile - Update op_plugin commit id",
+      "head_branch": "master",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-02-23T08:01:27Z",
+      "updated_at": "2026-02-23T08:47:40Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30917",
+      "durationInSeconds": 2773,
+      "jobs": [
+        {
+          "id": 309170041,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-02-23T08:01:27Z",
+          "started_at": "2026-02-23T08:01:53Z",
+          "completed_at": "2026-02-23T08:47:40Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30917",
+          "queueDurationInSeconds": 26,
+          "durationInSeconds": 2747
+        }
+      ]
+    },
+    {
+      "id": 309170041,
+      "name": "PR #30917 compile - Update op_plugin commit id",
+      "head_branch": "master",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-02-23T13:01:29Z",
+      "updated_at": "2026-02-23T13:01:39Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30917",
+      "durationInSeconds": 10,
+      "jobs": [
+        {
+          "id": 309170042,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-02-23T13:01:29Z",
+          "started_at": "2026-02-23T13:01:54Z",
+          "completed_at": "2026-02-23T13:01:39Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30917",
+          "queueDurationInSeconds": 25,
+          "durationInSeconds": 0
+        }
+      ]
+    },
+    {
+      "id": 309170042,
+      "name": "PR #30917 compile - Update op_plugin commit id",
+      "head_branch": "master",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-02-23T15:01:22Z",
+      "updated_at": "2026-02-23T15:41:07Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30917",
+      "durationInSeconds": 2385,
+      "jobs": [
+        {
+          "id": 309170043,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-02-23T15:01:22Z",
+          "started_at": "2026-02-23T15:01:51Z",
+          "completed_at": "2026-02-23T15:41:07Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30917",
+          "queueDurationInSeconds": 29,
+          "durationInSeconds": 2356
+        }
+      ]
+    },
+    {
+      "id": 309170139,
+      "name": "PR #30917 docs-ci - Update op_plugin commit id",
+      "head_branch": "master",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-02-23T02:01:22Z",
+      "updated_at": "2026-02-26T01:05:40Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30917",
+      "durationInSeconds": 255858,
+      "jobs": [
+        {
+          "id": 309170140,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-02-23T02:01:22Z",
+          "started_at": "2026-02-23T02:01:52Z",
+          "completed_at": "2026-02-26T01:05:40Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30917",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 255828
+        }
+      ]
+    },
+    {
+      "id": 309170140,
+      "name": "PR #30917 docs-ci - Update op_plugin commit id",
+      "head_branch": "master",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-02-23T08:01:27Z",
+      "updated_at": "2026-02-26T01:05:40Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30917",
+      "durationInSeconds": 234253,
+      "jobs": [
+        {
+          "id": 309170141,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-02-23T08:01:27Z",
+          "started_at": "2026-02-23T08:01:57Z",
+          "completed_at": "2026-02-26T01:05:40Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30917",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 234223
+        }
+      ]
+    },
+    {
+      "id": 309170141,
+      "name": "PR #30917 docs-ci - Update op_plugin commit id",
+      "head_branch": "master",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-02-23T13:01:29Z",
+      "updated_at": "2026-02-26T01:05:40Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30917",
+      "durationInSeconds": 216251,
+      "jobs": [
+        {
+          "id": 309170142,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-02-23T13:01:29Z",
+          "started_at": "2026-02-23T13:01:59Z",
+          "completed_at": "2026-02-26T01:05:40Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30917",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 216221
+        }
+      ]
+    },
+    {
+      "id": 309170142,
+      "name": "PR #30917 docs-ci - Update op_plugin commit id",
+      "head_branch": "master",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-02-23T15:01:22Z",
+      "updated_at": "2026-02-26T01:05:40Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30917",
+      "durationInSeconds": 209058,
+      "jobs": [
+        {
+          "id": 309170143,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-02-23T15:01:22Z",
+          "started_at": "2026-02-23T15:01:52Z",
+          "completed_at": "2026-02-26T01:05:40Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30917",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 209028
+        }
+      ]
+    },
+    {
+      "id": 309380001,
+      "name": "PR #30938 compile - [feat]modifications for aclnn extension",
+      "head_branch": "cherry-pick-mr-30809-1771055600402-auto",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-02-23T05:41:54Z",
+      "updated_at": "2026-02-23T10:08:34Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30938",
+      "durationInSeconds": 16000,
+      "jobs": [
+        {
+          "id": 309380002,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-02-23T05:41:54Z",
+          "started_at": "2026-02-23T05:42:21Z",
+          "completed_at": "2026-02-23T10:08:34Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30938",
+          "queueDurationInSeconds": 27,
+          "durationInSeconds": 15973
+        }
+      ]
+    },
+    {
+      "id": 309380002,
+      "name": "PR #30938 compile - [feat]modifications for aclnn extension",
+      "head_branch": "cherry-pick-mr-30809-1771055600402-auto",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-02-23T22:28:03Z",
+      "updated_at": "2026-02-23T23:23:40Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30938",
+      "durationInSeconds": 3337,
+      "jobs": [
+        {
+          "id": 309380003,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-02-23T22:28:03Z",
+          "started_at": "2026-02-23T22:28:31Z",
+          "completed_at": "2026-02-23T23:23:40Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30938",
+          "queueDurationInSeconds": 28,
+          "durationInSeconds": 3309
+        }
+      ]
+    },
+    {
+      "id": 309380101,
+      "name": "PR #30938 docs-ci - [feat]modifications for aclnn extension",
+      "head_branch": "cherry-pick-mr-30809-1771055600402-auto",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-02-23T05:41:54Z",
+      "updated_at": "2026-02-25T12:10:53Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30938",
+      "durationInSeconds": 196139,
+      "jobs": [
+        {
+          "id": 309380102,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-02-23T05:41:54Z",
+          "started_at": "2026-02-23T05:42:24Z",
+          "completed_at": "2026-02-25T12:10:53Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30938",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 196109
+        }
+      ]
+    },
+    {
+      "id": 309380102,
+      "name": "PR #30938 docs-ci - [feat]modifications for aclnn extension",
+      "head_branch": "cherry-pick-mr-30809-1771055600402-auto",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-02-23T22:28:03Z",
+      "updated_at": "2026-02-25T12:10:53Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30938",
+      "durationInSeconds": 135770,
+      "jobs": [
+        {
+          "id": 309380103,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-02-23T22:28:03Z",
+          "started_at": "2026-02-23T22:28:33Z",
+          "completed_at": "2026-02-25T12:10:53Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30938",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 135740
+        }
+      ]
+    },
+    {
+      "id": 309140039,
+      "name": "PR #30914 compile - Update op_plugin commit id",
+      "head_branch": "v2.6.0",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-02-23T02:01:28Z",
+      "updated_at": "2026-02-23T02:01:35Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30914",
+      "durationInSeconds": 7,
+      "jobs": [
+        {
+          "id": 309140040,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-02-23T02:01:28Z",
+          "started_at": "2026-02-23T02:01:52Z",
+          "completed_at": "2026-02-23T02:01:35Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30914",
+          "queueDurationInSeconds": 24,
+          "durationInSeconds": 0
+        }
+      ]
+    },
+    {
+      "id": 309140040,
+      "name": "PR #30914 compile - Update op_plugin commit id",
+      "head_branch": "v2.6.0",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-02-23T08:01:30Z",
+      "updated_at": "2026-02-23T09:00:35Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30914",
+      "durationInSeconds": 3545,
+      "jobs": [
+        {
+          "id": 309140041,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-02-23T08:01:30Z",
+          "started_at": "2026-02-23T08:01:58Z",
+          "completed_at": "2026-02-23T09:00:35Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30914",
+          "queueDurationInSeconds": 28,
+          "durationInSeconds": 3517
+        }
+      ]
+    },
+    {
+      "id": 309140041,
+      "name": "PR #30914 compile - Update op_plugin commit id",
+      "head_branch": "v2.6.0",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-02-23T13:01:29Z",
+      "updated_at": "2026-02-23T13:01:41Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30914",
+      "durationInSeconds": 12,
+      "jobs": [
+        {
+          "id": 309140042,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-02-23T13:01:29Z",
+          "started_at": "2026-02-23T13:01:54Z",
+          "completed_at": "2026-02-23T13:01:41Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30914",
+          "queueDurationInSeconds": 25,
+          "durationInSeconds": 0
+        }
+      ]
+    },
+    {
+      "id": 309140042,
+      "name": "PR #30914 compile - Update op_plugin commit id",
+      "head_branch": "v2.6.0",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-02-23T15:01:28Z",
+      "updated_at": "2026-02-23T16:01:29Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30914",
+      "durationInSeconds": 3601,
+      "jobs": [
+        {
+          "id": 309140043,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-02-23T15:01:28Z",
+          "started_at": "2026-02-23T15:01:53Z",
+          "completed_at": "2026-02-23T16:01:29Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30914",
+          "queueDurationInSeconds": 25,
+          "durationInSeconds": 3576
+        }
+      ]
+    },
+    {
+      "id": 309140139,
+      "name": "PR #30914 docs-ci - Update op_plugin commit id",
+      "head_branch": "v2.6.0",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-02-23T02:01:28Z",
+      "updated_at": "2026-02-25T09:22:57Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30914",
+      "durationInSeconds": 199289,
+      "jobs": [
+        {
+          "id": 309140140,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-02-23T02:01:28Z",
+          "started_at": "2026-02-23T02:01:58Z",
+          "completed_at": "2026-02-25T09:22:57Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30914",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 199259
+        }
+      ]
+    },
+    {
+      "id": 309140140,
+      "name": "PR #30914 docs-ci - Update op_plugin commit id",
+      "head_branch": "v2.6.0",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-02-23T08:01:30Z",
+      "updated_at": "2026-02-25T09:22:57Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30914",
+      "durationInSeconds": 177687,
+      "jobs": [
+        {
+          "id": 309140141,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-02-23T08:01:30Z",
+          "started_at": "2026-02-23T08:02:00Z",
+          "completed_at": "2026-02-25T09:22:57Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30914",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 177657
+        }
+      ]
+    },
+    {
+      "id": 309140141,
+      "name": "PR #30914 docs-ci - Update op_plugin commit id",
+      "head_branch": "v2.6.0",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-02-23T13:01:29Z",
+      "updated_at": "2026-02-25T09:22:57Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30914",
+      "durationInSeconds": 159688,
+      "jobs": [
+        {
+          "id": 309140142,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-02-23T13:01:29Z",
+          "started_at": "2026-02-23T13:01:59Z",
+          "completed_at": "2026-02-25T09:22:57Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30914",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 159658
+        }
+      ]
+    },
+    {
+      "id": 309140142,
+      "name": "PR #30914 docs-ci - Update op_plugin commit id",
+      "head_branch": "v2.6.0",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-02-23T15:01:28Z",
+      "updated_at": "2026-02-25T09:22:57Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30914",
+      "durationInSeconds": 152489,
+      "jobs": [
+        {
+          "id": 309140143,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-02-23T15:01:28Z",
+          "started_at": "2026-02-23T15:01:58Z",
+          "completed_at": "2026-02-25T09:22:57Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30914",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 152459
+        }
+      ]
+    },
+    {
+      "id": 309120039,
+      "name": "PR #30912 compile - Update op_plugin commit id",
+      "head_branch": "v2.9.0",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-02-23T02:01:28Z",
+      "updated_at": "2026-02-23T02:01:35Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30912",
+      "durationInSeconds": 7,
+      "jobs": [
+        {
+          "id": 309120040,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-02-23T02:01:28Z",
+          "started_at": "2026-02-23T02:01:53Z",
+          "completed_at": "2026-02-23T02:01:35Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30912",
+          "queueDurationInSeconds": 25,
+          "durationInSeconds": 0
+        }
+      ]
+    },
+    {
+      "id": 309120040,
+      "name": "PR #30912 compile - Update op_plugin commit id",
+      "head_branch": "v2.9.0",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-02-23T08:01:28Z",
+      "updated_at": "2026-02-23T08:01:36Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30912",
+      "durationInSeconds": 8,
+      "jobs": [
+        {
+          "id": 309120041,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-02-23T08:01:28Z",
+          "started_at": "2026-02-23T08:01:56Z",
+          "completed_at": "2026-02-23T08:01:36Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30912",
+          "queueDurationInSeconds": 28,
+          "durationInSeconds": 0
+        }
+      ]
+    },
+    {
+      "id": 309120041,
+      "name": "PR #30912 compile - Update op_plugin commit id",
+      "head_branch": "v2.9.0",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-02-23T13:01:27Z",
+      "updated_at": "2026-02-23T14:18:04Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30912",
+      "durationInSeconds": 4597,
+      "jobs": [
+        {
+          "id": 309120042,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-02-23T13:01:27Z",
+          "started_at": "2026-02-23T13:01:52Z",
+          "completed_at": "2026-02-23T14:18:04Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30912",
+          "queueDurationInSeconds": 25,
+          "durationInSeconds": 4572
+        }
+      ]
+    },
+    {
+      "id": 309120042,
+      "name": "PR #30912 compile - Update op_plugin commit id",
+      "head_branch": "v2.9.0",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-02-23T15:01:28Z",
+      "updated_at": "2026-02-23T16:16:14Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30912",
+      "durationInSeconds": 4486,
+      "jobs": [
+        {
+          "id": 309120043,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-02-23T15:01:28Z",
+          "started_at": "2026-02-23T15:01:53Z",
+          "completed_at": "2026-02-23T16:16:14Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30912",
+          "queueDurationInSeconds": 25,
+          "durationInSeconds": 4461
+        }
+      ]
+    },
+    {
+      "id": 309120139,
+      "name": "PR #30912 docs-ci - Update op_plugin commit id",
+      "head_branch": "v2.9.0",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-02-23T02:01:28Z",
+      "updated_at": "2026-02-25T09:22:53Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30912",
+      "durationInSeconds": 199285,
+      "jobs": [
+        {
+          "id": 309120140,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-02-23T02:01:28Z",
+          "started_at": "2026-02-23T02:01:58Z",
+          "completed_at": "2026-02-25T09:22:53Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30912",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 199255
+        }
+      ]
+    },
+    {
+      "id": 309120140,
+      "name": "PR #30912 docs-ci - Update op_plugin commit id",
+      "head_branch": "v2.9.0",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-02-23T08:01:28Z",
+      "updated_at": "2026-02-25T09:22:53Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30912",
+      "durationInSeconds": 177685,
+      "jobs": [
+        {
+          "id": 309120141,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-02-23T08:01:28Z",
+          "started_at": "2026-02-23T08:01:58Z",
+          "completed_at": "2026-02-25T09:22:53Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30912",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 177655
+        }
+      ]
+    },
+    {
+      "id": 309120141,
+      "name": "PR #30912 docs-ci - Update op_plugin commit id",
+      "head_branch": "v2.9.0",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-02-23T13:01:27Z",
+      "updated_at": "2026-02-25T09:22:53Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30912",
+      "durationInSeconds": 159686,
+      "jobs": [
+        {
+          "id": 309120142,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-02-23T13:01:27Z",
+          "started_at": "2026-02-23T13:01:57Z",
+          "completed_at": "2026-02-25T09:22:53Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30912",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 159656
+        }
+      ]
+    },
+    {
+      "id": 309120142,
+      "name": "PR #30912 docs-ci - Update op_plugin commit id",
+      "head_branch": "v2.9.0",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-02-23T15:01:28Z",
+      "updated_at": "2026-02-25T09:22:53Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30912",
+      "durationInSeconds": 152485,
+      "jobs": [
+        {
+          "id": 309120143,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-02-23T15:01:28Z",
+          "started_at": "2026-02-23T15:01:58Z",
+          "completed_at": "2026-02-25T09:22:53Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30912",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 152455
+        }
+      ]
+    },
+    {
+      "id": 309130039,
+      "name": "PR #30913 compile - Update op_plugin commit id",
+      "head_branch": "v2.8.0-7.3.0",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-02-23T02:01:30Z",
+      "updated_at": "2026-02-23T02:39:04Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30913",
+      "durationInSeconds": 2254,
+      "jobs": [
+        {
+          "id": 309130040,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-02-23T02:01:30Z",
+          "started_at": "2026-02-23T02:01:54Z",
+          "completed_at": "2026-02-23T02:39:04Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30913",
+          "queueDurationInSeconds": 24,
+          "durationInSeconds": 2230
+        }
+      ]
+    },
+    {
+      "id": 309130040,
+      "name": "PR #30913 compile - Update op_plugin commit id",
+      "head_branch": "v2.8.0-7.3.0",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-02-23T08:01:28Z",
+      "updated_at": "2026-02-23T08:01:36Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30913",
+      "durationInSeconds": 8,
+      "jobs": [
+        {
+          "id": 309130041,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-02-23T08:01:28Z",
+          "started_at": "2026-02-23T08:01:53Z",
+          "completed_at": "2026-02-23T08:01:36Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30913",
+          "queueDurationInSeconds": 25,
+          "durationInSeconds": 0
+        }
+      ]
+    },
+    {
+      "id": 309130041,
+      "name": "PR #30913 compile - Update op_plugin commit id",
+      "head_branch": "v2.8.0-7.3.0",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-02-23T13:01:25Z",
+      "updated_at": "2026-02-23T13:01:40Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30913",
+      "durationInSeconds": 15,
+      "jobs": [
+        {
+          "id": 309130042,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-02-23T13:01:25Z",
+          "started_at": "2026-02-23T13:01:51Z",
+          "completed_at": "2026-02-23T13:01:40Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30913",
+          "queueDurationInSeconds": 26,
+          "durationInSeconds": 0
+        }
+      ]
+    },
+    {
+      "id": 309130042,
+      "name": "PR #30913 compile - Update op_plugin commit id",
+      "head_branch": "v2.8.0-7.3.0",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-02-23T15:01:28Z",
+      "updated_at": "2026-02-23T15:01:40Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30913",
+      "durationInSeconds": 12,
+      "jobs": [
+        {
+          "id": 309130043,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-02-23T15:01:28Z",
+          "started_at": "2026-02-23T15:01:53Z",
+          "completed_at": "2026-02-23T15:01:40Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30913",
+          "queueDurationInSeconds": 25,
+          "durationInSeconds": 0
+        }
+      ]
+    },
+    {
+      "id": 309130139,
+      "name": "PR #30913 docs-ci - Update op_plugin commit id",
+      "head_branch": "v2.8.0-7.3.0",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-02-23T02:01:30Z",
+      "updated_at": "2026-02-25T07:49:44Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30913",
+      "durationInSeconds": 193694,
+      "jobs": [
+        {
+          "id": 309130140,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-02-23T02:01:30Z",
+          "started_at": "2026-02-23T02:02:00Z",
+          "completed_at": "2026-02-25T07:49:44Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30913",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 193664
+        }
+      ]
+    },
+    {
+      "id": 309130140,
+      "name": "PR #30913 docs-ci - Update op_plugin commit id",
+      "head_branch": "v2.8.0-7.3.0",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-02-23T08:01:28Z",
+      "updated_at": "2026-02-25T07:49:44Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30913",
+      "durationInSeconds": 172096,
+      "jobs": [
+        {
+          "id": 309130141,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-02-23T08:01:28Z",
+          "started_at": "2026-02-23T08:01:58Z",
+          "completed_at": "2026-02-25T07:49:44Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30913",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 172066
+        }
+      ]
+    },
+    {
+      "id": 309130141,
+      "name": "PR #30913 docs-ci - Update op_plugin commit id",
+      "head_branch": "v2.8.0-7.3.0",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-02-23T13:01:25Z",
+      "updated_at": "2026-02-25T07:49:44Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30913",
+      "durationInSeconds": 154099,
+      "jobs": [
+        {
+          "id": 309130142,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-02-23T13:01:25Z",
+          "started_at": "2026-02-23T13:01:55Z",
+          "completed_at": "2026-02-25T07:49:44Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30913",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 154069
+        }
+      ]
+    },
+    {
+      "id": 309130142,
+      "name": "PR #30913 docs-ci - Update op_plugin commit id",
+      "head_branch": "v2.8.0-7.3.0",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-02-23T15:01:28Z",
+      "updated_at": "2026-02-25T07:49:44Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30913",
+      "durationInSeconds": 146896,
+      "jobs": [
+        {
+          "id": 309130143,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-02-23T15:01:28Z",
+          "started_at": "2026-02-23T15:01:58Z",
+          "completed_at": "2026-02-25T07:49:44Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30913",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 146866
+        }
+      ]
+    },
+    {
+      "id": 309150039,
+      "name": "PR #30915 compile - Update op_plugin commit id",
+      "head_branch": "v2.10.0",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-02-23T02:01:28Z",
+      "updated_at": "2026-02-23T02:03:43Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30915",
+      "durationInSeconds": 135,
+      "jobs": [
+        {
+          "id": 309150040,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-02-23T02:01:28Z",
+          "started_at": "2026-02-23T02:01:54Z",
+          "completed_at": "2026-02-23T02:03:43Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30915",
+          "queueDurationInSeconds": 26,
+          "durationInSeconds": 109
+        }
+      ]
+    },
+    {
+      "id": 309150040,
+      "name": "PR #30915 compile - Update op_plugin commit id",
+      "head_branch": "v2.10.0",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-02-23T08:02:35Z",
+      "updated_at": "2026-02-23T09:18:05Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30915",
+      "durationInSeconds": 4530,
+      "jobs": [
+        {
+          "id": 309150041,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-02-23T08:02:35Z",
+          "started_at": "2026-02-23T08:03:00Z",
+          "completed_at": "2026-02-23T09:18:05Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30915",
+          "queueDurationInSeconds": 25,
+          "durationInSeconds": 4505
+        }
+      ]
+    },
+    {
+      "id": 309150041,
+      "name": "PR #30915 compile - Update op_plugin commit id",
+      "head_branch": "v2.10.0",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-02-23T13:01:28Z",
+      "updated_at": "2026-02-23T14:18:09Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30915",
+      "durationInSeconds": 4601,
+      "jobs": [
+        {
+          "id": 309150042,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-02-23T13:01:28Z",
+          "started_at": "2026-02-23T13:01:54Z",
+          "completed_at": "2026-02-23T14:18:09Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30915",
+          "queueDurationInSeconds": 26,
+          "durationInSeconds": 4575
+        }
+      ]
+    },
+    {
+      "id": 309150042,
+      "name": "PR #30915 compile - Update op_plugin commit id",
+      "head_branch": "v2.10.0",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-02-23T15:01:28Z",
+      "updated_at": "2026-02-23T15:01:41Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30915",
+      "durationInSeconds": 13,
+      "jobs": [
+        {
+          "id": 309150043,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-02-23T15:01:28Z",
+          "started_at": "2026-02-23T15:01:52Z",
+          "completed_at": "2026-02-23T15:01:41Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30915",
+          "queueDurationInSeconds": 24,
+          "durationInSeconds": 0
+        }
+      ]
+    },
+    {
+      "id": 309150139,
+      "name": "PR #30915 docs-ci - Update op_plugin commit id",
+      "head_branch": "v2.10.0",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-02-23T02:01:28Z",
+      "updated_at": "2026-02-25T07:49:37Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30915",
+      "durationInSeconds": 193689,
+      "jobs": [
+        {
+          "id": 309150140,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-02-23T02:01:28Z",
+          "started_at": "2026-02-23T02:01:58Z",
+          "completed_at": "2026-02-25T07:49:37Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30915",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 193659
+        }
+      ]
+    },
+    {
+      "id": 309150140,
+      "name": "PR #30915 docs-ci - Update op_plugin commit id",
+      "head_branch": "v2.10.0",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-02-23T08:02:35Z",
+      "updated_at": "2026-02-25T07:49:37Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30915",
+      "durationInSeconds": 172022,
+      "jobs": [
+        {
+          "id": 309150141,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-02-23T08:02:35Z",
+          "started_at": "2026-02-23T08:03:05Z",
+          "completed_at": "2026-02-25T07:49:37Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30915",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 171992
+        }
+      ]
+    },
+    {
+      "id": 309150141,
+      "name": "PR #30915 docs-ci - Update op_plugin commit id",
+      "head_branch": "v2.10.0",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-02-23T13:01:28Z",
+      "updated_at": "2026-02-25T07:49:37Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30915",
+      "durationInSeconds": 154089,
+      "jobs": [
+        {
+          "id": 309150142,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-02-23T13:01:28Z",
+          "started_at": "2026-02-23T13:01:58Z",
+          "completed_at": "2026-02-25T07:49:37Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30915",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 154059
+        }
+      ]
+    },
+    {
+      "id": 309150142,
+      "name": "PR #30915 docs-ci - Update op_plugin commit id",
+      "head_branch": "v2.10.0",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-02-23T15:01:28Z",
+      "updated_at": "2026-02-25T07:49:37Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30915",
+      "durationInSeconds": 146889,
+      "jobs": [
+        {
+          "id": 309150143,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-02-23T15:01:28Z",
+          "started_at": "2026-02-23T15:01:58Z",
+          "completed_at": "2026-02-25T07:49:37Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30915",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 146859
+        }
+      ]
+    },
+    {
+      "id": 309270011,
+      "name": "PR #30927 compile - Update torchair commit id",
+      "head_branch": "v2.6.0",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-02-23T14:01:27Z",
+      "updated_at": "2026-02-23T14:45:04Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30927",
+      "durationInSeconds": 2617,
+      "jobs": [
+        {
+          "id": 309270012,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-02-23T14:01:27Z",
+          "started_at": "2026-02-23T14:01:54Z",
+          "completed_at": "2026-02-23T14:45:04Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30927",
+          "queueDurationInSeconds": 27,
+          "durationInSeconds": 2590
+        }
+      ]
+    },
+    {
+      "id": 309270111,
+      "name": "PR #30927 docs-ci - Update torchair commit id",
+      "head_branch": "v2.6.0",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-02-23T14:01:27Z",
+      "updated_at": "2026-02-25T06:28:29Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30927",
+      "durationInSeconds": 145622,
+      "jobs": [
+        {
+          "id": 309270112,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-02-23T14:01:27Z",
+          "started_at": "2026-02-23T14:01:57Z",
+          "completed_at": "2026-02-25T06:28:29Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30927",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 145592
+        }
+      ]
+    },
+    {
+      "id": 309240011,
+      "name": "PR #30924 compile - Update torchair commit id",
+      "head_branch": "master",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-02-23T14:01:22Z",
+      "updated_at": "2026-02-23T14:33:44Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30924",
+      "durationInSeconds": 1942,
+      "jobs": [
+        {
+          "id": 309240012,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-02-23T14:01:22Z",
+          "started_at": "2026-02-23T14:01:51Z",
+          "completed_at": "2026-02-23T14:33:44Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30924",
+          "queueDurationInSeconds": 29,
+          "durationInSeconds": 1913
+        }
+      ]
+    },
+    {
+      "id": 309240111,
+      "name": "PR #30924 docs-ci - Update torchair commit id",
+      "head_branch": "master",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-02-23T14:01:22Z",
+      "updated_at": "2026-02-25T06:28:22Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30924",
+      "durationInSeconds": 145620,
+      "jobs": [
+        {
+          "id": 309240112,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-02-23T14:01:22Z",
+          "started_at": "2026-02-23T14:01:52Z",
+          "completed_at": "2026-02-25T06:28:22Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30924",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 145590
+        }
+      ]
+    },
+    {
+      "id": 309330001,
+      "name": "PR #30933 compile - [feat]modifications for aclnn extension",
+      "head_branch": "cherry-pick-mr-30809-1771053808089-auto",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-02-23T02:17:45Z",
+      "updated_at": "2026-02-23T02:36:39Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30933",
+      "durationInSeconds": 1134,
+      "jobs": [
+        {
+          "id": 309330002,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-02-23T02:17:45Z",
+          "started_at": "2026-02-23T02:18:11Z",
+          "completed_at": "2026-02-23T02:36:39Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30933",
+          "queueDurationInSeconds": 26,
+          "durationInSeconds": 1108
+        }
+      ]
+    },
+    {
+      "id": 309330002,
+      "name": "PR #30933 compile - [feat]modifications for aclnn extension",
+      "head_branch": "cherry-pick-mr-30809-1771053808089-auto",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-02-23T16:26:25Z",
+      "updated_at": "2026-02-23T16:46:34Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30933",
+      "durationInSeconds": 1209,
+      "jobs": [
+        {
+          "id": 309330003,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-02-23T16:26:25Z",
+          "started_at": "2026-02-23T16:26:52Z",
+          "completed_at": "2026-02-23T16:46:34Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30933",
+          "queueDurationInSeconds": 27,
+          "durationInSeconds": 1182
+        }
+      ]
+    },
+    {
+      "id": 309330101,
+      "name": "PR #30933 docs-ci - [feat]modifications for aclnn extension",
+      "head_branch": "cherry-pick-mr-30809-1771053808089-auto",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-02-23T02:17:45Z",
+      "updated_at": "2026-02-25T02:41:13Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30933",
+      "durationInSeconds": 174208,
+      "jobs": [
+        {
+          "id": 309330102,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-02-23T02:17:45Z",
+          "started_at": "2026-02-23T02:18:15Z",
+          "completed_at": "2026-02-25T02:41:13Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30933",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 174178
+        }
+      ]
+    },
+    {
+      "id": 309330102,
+      "name": "PR #30933 docs-ci - [feat]modifications for aclnn extension",
+      "head_branch": "cherry-pick-mr-30809-1771053808089-auto",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-02-23T16:26:25Z",
+      "updated_at": "2026-02-25T02:41:13Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30933",
+      "durationInSeconds": 123288,
+      "jobs": [
+        {
+          "id": 309330103,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-02-23T16:26:25Z",
+          "started_at": "2026-02-23T16:26:55Z",
+          "completed_at": "2026-02-25T02:41:13Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30933",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 123258
+        }
+      ]
+    },
+    {
+      "id": 309360001,
+      "name": "PR #30936 compile - [feat]modifications for aclnn extension",
+      "head_branch": "cherry-pick-mr-30809-1771055229878-auto",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-02-23T22:26:39Z",
+      "updated_at": "2026-02-23T23:07:35Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30936",
+      "durationInSeconds": 2456,
+      "jobs": [
+        {
+          "id": 309360002,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-02-23T22:26:39Z",
+          "started_at": "2026-02-23T22:27:07Z",
+          "completed_at": "2026-02-23T23:07:35Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30936",
+          "queueDurationInSeconds": 28,
+          "durationInSeconds": 2428
+        }
+      ]
+    },
+    {
+      "id": 309360101,
+      "name": "PR #30936 docs-ci - [feat]modifications for aclnn extension",
+      "head_branch": "cherry-pick-mr-30809-1771055229878-auto",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-02-23T22:26:39Z",
+      "updated_at": "2026-02-25T02:40:51Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30936",
+      "durationInSeconds": 101652,
+      "jobs": [
+        {
+          "id": 309360102,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-02-23T22:26:39Z",
+          "started_at": "2026-02-23T22:27:09Z",
+          "completed_at": "2026-02-25T02:40:51Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30936",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 101622
+        }
+      ]
+    },
+    {
+      "id": 309250010,
+      "name": "PR #30925 compile - Update torchair commit id",
+      "head_branch": "v2.7.1",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-02-23T14:01:27Z",
+      "updated_at": "2026-02-23T15:08:04Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30925",
+      "durationInSeconds": 3997,
+      "jobs": [
+        {
+          "id": 309250011,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-02-23T14:01:27Z",
+          "started_at": "2026-02-23T14:01:54Z",
+          "completed_at": "2026-02-23T15:08:04Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30925",
+          "queueDurationInSeconds": 27,
+          "durationInSeconds": 3970
+        }
+      ]
+    },
+    {
+      "id": 309250110,
+      "name": "PR #30925 docs-ci - Update torchair commit id",
+      "head_branch": "v2.7.1",
+      "status": "completed",
+      "conclusion": "pending",
+      "created_at": "2026-02-23T14:01:27Z",
+      "updated_at": "2026-04-12T17:56:21Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30925",
+      "durationInSeconds": 4161294.327,
+      "jobs": [
+        {
+          "id": 309250111,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "pending",
+          "created_at": "2026-02-23T14:01:27Z",
+          "started_at": "2026-02-23T14:01:57Z",
+          "completed_at": "2026-04-12T17:56:21Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30925",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 4161264.327
+        }
+      ]
+    },
+    {
+      "id": 309260011,
+      "name": "PR #30926 compile - Update torchair commit id",
+      "head_branch": "v2.10.0",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-02-23T14:01:28Z",
+      "updated_at": "2026-02-23T14:54:05Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30926",
+      "durationInSeconds": 3157,
+      "jobs": [
+        {
+          "id": 309260012,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-02-23T14:01:28Z",
+          "started_at": "2026-02-23T14:01:53Z",
+          "completed_at": "2026-02-23T14:54:05Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30926",
+          "queueDurationInSeconds": 25,
+          "durationInSeconds": 3132
+        }
+      ]
+    },
+    {
+      "id": 309260111,
+      "name": "PR #30926 docs-ci - Update torchair commit id",
+      "head_branch": "v2.10.0",
+      "status": "completed",
+      "conclusion": "pending",
+      "created_at": "2026-02-23T14:01:28Z",
+      "updated_at": "2026-04-12T17:56:23Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30926",
+      "durationInSeconds": 4161295.289,
+      "jobs": [
+        {
+          "id": 309260112,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "pending",
+          "created_at": "2026-02-23T14:01:28Z",
+          "started_at": "2026-02-23T14:01:58Z",
+          "completed_at": "2026-04-12T17:56:23Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30926",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 4161265.289
+        }
+      ]
+    },
+    {
+      "id": 309440000,
+      "name": "PR #30944 compile - test null pr",
+      "head_branch": "test_v2.10.0_null",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-02-23T16:04:21Z",
+      "updated_at": "2026-02-23T16:15:36Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30944",
+      "durationInSeconds": 675,
+      "jobs": [
+        {
+          "id": 309440001,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-02-23T16:04:21Z",
+          "started_at": "2026-02-23T16:04:50Z",
+          "completed_at": "2026-02-23T16:15:36Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30944",
+          "queueDurationInSeconds": 29,
+          "durationInSeconds": 646
+        }
+      ]
+    },
+    {
+      "id": 309440001,
+      "name": "PR #30944 compile - test null pr",
+      "head_branch": "test_v2.10.0_null",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-02-23T16:49:19Z",
+      "updated_at": "2026-02-23T17:46:11Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30944",
+      "durationInSeconds": 3412,
+      "jobs": [
+        {
+          "id": 309440002,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-02-23T16:49:19Z",
+          "started_at": "2026-02-23T16:49:42Z",
+          "completed_at": "2026-02-23T17:46:11Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30944",
+          "queueDurationInSeconds": 23,
+          "durationInSeconds": 3389
+        }
+      ]
+    },
+    {
+      "id": 309440100,
+      "name": "PR #30944 docs-ci - test null pr",
+      "head_branch": "test_v2.10.0_null",
+      "status": "completed",
+      "conclusion": "pending",
+      "created_at": "2026-02-23T16:04:21Z",
+      "updated_at": "2026-04-12T17:56:24Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30944",
+      "durationInSeconds": 4153923.45,
+      "jobs": [
+        {
+          "id": 309440101,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "pending",
+          "created_at": "2026-02-23T16:04:21Z",
+          "started_at": "2026-02-23T16:04:51Z",
+          "completed_at": "2026-04-12T17:56:24Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30944",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 4153893.45
+        }
+      ]
+    },
+    {
+      "id": 309440101,
+      "name": "PR #30944 docs-ci - test null pr",
+      "head_branch": "test_v2.10.0_null",
+      "status": "completed",
+      "conclusion": "pending",
+      "created_at": "2026-02-23T16:49:19Z",
+      "updated_at": "2026-04-12T17:56:24Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30944",
+      "durationInSeconds": 4151225.45,
+      "jobs": [
+        {
+          "id": 309440102,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "pending",
+          "created_at": "2026-02-23T16:49:19Z",
+          "started_at": "2026-02-23T16:49:49Z",
+          "completed_at": "2026-04-12T17:56:24Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30944",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 4151195.45
+        }
+      ]
+    },
+    {
+      "id": 309340001,
+      "name": "PR #30934 compile - [feat]modifications for aclnn extension",
+      "head_branch": "cherry-pick-mr-30809-1771053941696-auto",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-02-23T02:13:14Z",
+      "updated_at": "2026-02-23T03:14:04Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30934",
+      "durationInSeconds": 3650,
+      "jobs": [
+        {
+          "id": 309340002,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-02-23T02:13:14Z",
+          "started_at": "2026-02-23T02:13:41Z",
+          "completed_at": "2026-02-23T03:14:04Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30934",
+          "queueDurationInSeconds": 27,
+          "durationInSeconds": 3623
+        }
+      ]
+    },
+    {
+      "id": 309340101,
+      "name": "PR #30934 docs-ci - [feat]modifications for aclnn extension",
+      "head_branch": "cherry-pick-mr-30809-1771053941696-auto",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-02-23T02:13:14Z",
+      "updated_at": "2026-02-24T08:01:07Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30934",
+      "durationInSeconds": 107273,
+      "jobs": [
+        {
+          "id": 309340102,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-02-23T02:13:14Z",
+          "started_at": "2026-02-23T02:13:44Z",
+          "completed_at": "2026-02-24T08:01:07Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30934",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 107243
+        }
+      ]
+    },
+    {
+      "id": 309370001,
+      "name": "PR #30937 compile - [feat]modifications for aclnn extension",
+      "head_branch": "cherry-pick-mr-30809-1771055532652-auto",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-02-23T02:14:13Z",
+      "updated_at": "2026-02-23T03:02:05Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30937",
+      "durationInSeconds": 2872,
+      "jobs": [
+        {
+          "id": 309370002,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-02-23T02:14:13Z",
+          "started_at": "2026-02-23T02:14:38Z",
+          "completed_at": "2026-02-23T03:02:05Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30937",
+          "queueDurationInSeconds": 25,
+          "durationInSeconds": 2847
+        }
+      ]
+    },
+    {
+      "id": 309370101,
+      "name": "PR #30937 docs-ci - [feat]modifications for aclnn extension",
+      "head_branch": "cherry-pick-mr-30809-1771055532652-auto",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-02-23T02:14:13Z",
+      "updated_at": "2026-02-24T08:00:37Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30937",
+      "durationInSeconds": 107184,
+      "jobs": [
+        {
+          "id": 309370102,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-02-23T02:14:13Z",
+          "started_at": "2026-02-23T02:14:43Z",
+          "completed_at": "2026-02-24T08:00:37Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30937",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 107154
+        }
+      ]
+    },
+    {
+      "id": 309410034,
+      "name": "PR #30941 compile - Update op_plugin commit id",
+      "head_branch": "v2.8.0",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-02-23T02:01:22Z",
+      "updated_at": "2026-02-23T06:15:05Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30941",
+      "durationInSeconds": 15223,
+      "jobs": [
+        {
+          "id": 309410035,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-02-23T02:01:22Z",
+          "started_at": "2026-02-23T02:01:49Z",
+          "completed_at": "2026-02-23T06:15:05Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30941",
+          "queueDurationInSeconds": 27,
+          "durationInSeconds": 15196
+        }
+      ]
+    },
+    {
+      "id": 309410035,
+      "name": "PR #30941 compile - Update op_plugin commit id",
+      "head_branch": "v2.8.0",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-02-23T08:01:28Z",
+      "updated_at": "2026-02-23T08:47:04Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30941",
+      "durationInSeconds": 2736,
+      "jobs": [
+        {
+          "id": 309410036,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-02-23T08:01:28Z",
+          "started_at": "2026-02-23T08:01:59Z",
+          "completed_at": "2026-02-23T08:47:04Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30941",
+          "queueDurationInSeconds": 31,
+          "durationInSeconds": 2705
+        }
+      ]
+    },
+    {
+      "id": 309410036,
+      "name": "PR #30941 compile - Update op_plugin commit id",
+      "head_branch": "v2.8.0",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-02-23T13:01:24Z",
+      "updated_at": "2026-02-23T15:01:41Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30941",
+      "durationInSeconds": 7217,
+      "jobs": [
+        {
+          "id": 309410037,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-02-23T13:01:24Z",
+          "started_at": "2026-02-23T13:01:52Z",
+          "completed_at": "2026-02-23T15:01:41Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30941",
+          "queueDurationInSeconds": 28,
+          "durationInSeconds": 7189
+        }
+      ]
+    },
+    {
+      "id": 309410037,
+      "name": "PR #30941 compile - Update op_plugin commit id",
+      "head_branch": "v2.8.0",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-02-23T15:01:29Z",
+      "updated_at": "2026-02-23T15:01:41Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30941",
+      "durationInSeconds": 12,
+      "jobs": [
+        {
+          "id": 309410038,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-02-23T15:01:29Z",
+          "started_at": "2026-02-23T15:01:53Z",
+          "completed_at": "2026-02-23T15:01:41Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30941",
+          "queueDurationInSeconds": 24,
+          "durationInSeconds": 0
+        }
+      ]
+    },
+    {
+      "id": 309410134,
+      "name": "PR #30941 docs-ci - Update op_plugin commit id",
+      "head_branch": "v2.8.0",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-02-23T02:01:22Z",
+      "updated_at": "2026-02-24T06:58:28Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30941",
+      "durationInSeconds": 104226,
+      "jobs": [
+        {
+          "id": 309410135,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-02-23T02:01:22Z",
+          "started_at": "2026-02-23T02:01:52Z",
+          "completed_at": "2026-02-24T06:58:28Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30941",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 104196
+        }
+      ]
+    },
+    {
+      "id": 309410135,
+      "name": "PR #30941 docs-ci - Update op_plugin commit id",
+      "head_branch": "v2.8.0",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-02-23T08:01:28Z",
+      "updated_at": "2026-02-24T06:58:28Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30941",
+      "durationInSeconds": 82620,
+      "jobs": [
+        {
+          "id": 309410136,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-02-23T08:01:28Z",
+          "started_at": "2026-02-23T08:01:58Z",
+          "completed_at": "2026-02-24T06:58:28Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30941",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 82590
+        }
+      ]
+    },
+    {
+      "id": 309410136,
+      "name": "PR #30941 docs-ci - Update op_plugin commit id",
+      "head_branch": "v2.8.0",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-02-23T13:01:24Z",
+      "updated_at": "2026-02-24T06:58:28Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30941",
+      "durationInSeconds": 64624,
+      "jobs": [
+        {
+          "id": 309410137,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-02-23T13:01:24Z",
+          "started_at": "2026-02-23T13:01:54Z",
+          "completed_at": "2026-02-24T06:58:28Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30941",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 64594
+        }
+      ]
+    },
+    {
+      "id": 309410137,
+      "name": "PR #30941 docs-ci - Update op_plugin commit id",
+      "head_branch": "v2.8.0",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-02-23T15:01:29Z",
+      "updated_at": "2026-02-24T06:58:28Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30941",
+      "durationInSeconds": 57419,
+      "jobs": [
+        {
+          "id": 309410138,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-02-23T15:01:29Z",
+          "started_at": "2026-02-23T15:01:59Z",
+          "completed_at": "2026-02-24T06:58:28Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30941",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 57389
+        }
+      ]
+    },
+    {
+      "id": 309420033,
+      "name": "PR #30942 compile - Update op_plugin commit id",
+      "head_branch": "v2.7.1",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-02-23T02:01:24Z",
+      "updated_at": "2026-02-23T02:01:34Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30942",
+      "durationInSeconds": 10,
+      "jobs": [
+        {
+          "id": 309420034,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-02-23T02:01:24Z",
+          "started_at": "2026-02-23T02:01:49Z",
+          "completed_at": "2026-02-23T02:01:34Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30942",
+          "queueDurationInSeconds": 25,
+          "durationInSeconds": 0
+        }
+      ]
+    },
+    {
+      "id": 309420034,
+      "name": "PR #30942 compile - Update op_plugin commit id",
+      "head_branch": "v2.7.1",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-02-23T08:02:34Z",
+      "updated_at": "2026-02-23T09:05:04Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30942",
+      "durationInSeconds": 3750,
+      "jobs": [
+        {
+          "id": 309420035,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-02-23T08:02:34Z",
+          "started_at": "2026-02-23T08:03:01Z",
+          "completed_at": "2026-02-23T09:05:04Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30942",
+          "queueDurationInSeconds": 27,
+          "durationInSeconds": 3723
+        }
+      ]
+    },
+    {
+      "id": 309420035,
+      "name": "PR #30942 compile - Update op_plugin commit id",
+      "head_branch": "v2.7.1",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-02-23T13:01:26Z",
+      "updated_at": "2026-02-23T13:01:40Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30942",
+      "durationInSeconds": 14,
+      "jobs": [
+        {
+          "id": 309420036,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-02-23T13:01:26Z",
+          "started_at": "2026-02-23T13:01:52Z",
+          "completed_at": "2026-02-23T13:01:40Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30942",
+          "queueDurationInSeconds": 26,
+          "durationInSeconds": 0
+        }
+      ]
+    },
+    {
+      "id": 309420036,
+      "name": "PR #30942 compile - Update op_plugin commit id",
+      "head_branch": "v2.7.1",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-02-23T15:01:32Z",
+      "updated_at": "2026-02-23T16:02:34Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30942",
+      "durationInSeconds": 3662,
+      "jobs": [
+        {
+          "id": 309420037,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-02-23T15:01:32Z",
+          "started_at": "2026-02-23T15:01:58Z",
+          "completed_at": "2026-02-23T16:02:34Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30942",
+          "queueDurationInSeconds": 26,
+          "durationInSeconds": 3636
+        }
+      ]
+    },
+    {
+      "id": 309420133,
+      "name": "PR #30942 docs-ci - Update op_plugin commit id",
+      "head_branch": "v2.7.1",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-02-23T02:01:24Z",
+      "updated_at": "2026-02-24T06:58:28Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30942",
+      "durationInSeconds": 104224,
+      "jobs": [
+        {
+          "id": 309420134,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-02-23T02:01:24Z",
+          "started_at": "2026-02-23T02:01:54Z",
+          "completed_at": "2026-02-24T06:58:28Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30942",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 104194
+        }
+      ]
+    },
+    {
+      "id": 309420134,
+      "name": "PR #30942 docs-ci - Update op_plugin commit id",
+      "head_branch": "v2.7.1",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-02-23T08:02:34Z",
+      "updated_at": "2026-02-24T06:58:28Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30942",
+      "durationInSeconds": 82554,
+      "jobs": [
+        {
+          "id": 309420135,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-02-23T08:02:34Z",
+          "started_at": "2026-02-23T08:03:04Z",
+          "completed_at": "2026-02-24T06:58:28Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30942",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 82524
+        }
+      ]
+    },
+    {
+      "id": 309420135,
+      "name": "PR #30942 docs-ci - Update op_plugin commit id",
+      "head_branch": "v2.7.1",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-02-23T13:01:26Z",
+      "updated_at": "2026-02-24T06:58:28Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30942",
+      "durationInSeconds": 64622,
+      "jobs": [
+        {
+          "id": 309420136,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-02-23T13:01:26Z",
+          "started_at": "2026-02-23T13:01:56Z",
+          "completed_at": "2026-02-24T06:58:28Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30942",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 64592
+        }
+      ]
+    },
+    {
+      "id": 309420136,
+      "name": "PR #30942 docs-ci - Update op_plugin commit id",
+      "head_branch": "v2.7.1",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-02-23T15:01:32Z",
+      "updated_at": "2026-02-24T06:58:28Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30942",
+      "durationInSeconds": 57416,
+      "jobs": [
+        {
+          "id": 309420137,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-02-23T15:01:32Z",
+          "started_at": "2026-02-23T15:02:02Z",
+          "completed_at": "2026-02-24T06:58:28Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30942",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 57386
+        }
+      ]
+    },
+    {
+      "id": 309460000,
+      "name": "PR #30946 compile - test null pr",
+      "head_branch": "test_v2.6.0_null",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-02-23T16:17:01Z",
+      "updated_at": "2026-02-23T16:27:04Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30946",
+      "durationInSeconds": 603,
+      "jobs": [
+        {
+          "id": 309460001,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-02-23T16:17:01Z",
+          "started_at": "2026-02-23T16:17:28Z",
+          "completed_at": "2026-02-23T16:27:04Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30946",
+          "queueDurationInSeconds": 27,
+          "durationInSeconds": 576
+        }
+      ]
+    },
+    {
+      "id": 309460001,
+      "name": "PR #30946 compile - test null pr",
+      "head_branch": "test_v2.6.0_null",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-02-23T16:37:39Z",
+      "updated_at": "2026-02-23T17:20:34Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30946",
+      "durationInSeconds": 2575,
+      "jobs": [
+        {
+          "id": 309460002,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-02-23T16:37:39Z",
+          "started_at": "2026-02-23T16:38:08Z",
+          "completed_at": "2026-02-23T17:20:34Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30946",
+          "queueDurationInSeconds": 29,
+          "durationInSeconds": 2546
+        }
+      ]
+    },
+    {
+      "id": 309460100,
+      "name": "PR #30946 docs-ci - test null pr",
+      "head_branch": "test_v2.6.0_null",
+      "status": "completed",
+      "conclusion": "pending",
+      "created_at": "2026-02-23T16:17:01Z",
+      "updated_at": "2026-04-12T17:56:44Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30946",
+      "durationInSeconds": 4153183.097,
+      "jobs": [
+        {
+          "id": 309460101,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "pending",
+          "created_at": "2026-02-23T16:17:01Z",
+          "started_at": "2026-02-23T16:17:31Z",
+          "completed_at": "2026-04-12T17:56:44Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30946",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 4153153.097
+        }
+      ]
+    },
+    {
+      "id": 309460101,
+      "name": "PR #30946 docs-ci - test null pr",
+      "head_branch": "test_v2.6.0_null",
+      "status": "completed",
+      "conclusion": "pending",
+      "created_at": "2026-02-23T16:37:39Z",
+      "updated_at": "2026-04-12T17:56:44Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30946",
+      "durationInSeconds": 4151945.097,
+      "jobs": [
+        {
+          "id": 309460102,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "pending",
+          "created_at": "2026-02-23T16:37:39Z",
+          "started_at": "2026-02-23T16:38:09Z",
+          "completed_at": "2026-04-12T17:56:44Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30946",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 4151915.097
+        }
+      ]
+    },
+    {
+      "id": 309450000,
+      "name": "PR #30945 compile - test null pr",
+      "head_branch": "test_master_null",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-02-23T16:12:31Z",
+      "updated_at": "2026-02-23T16:23:35Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30945",
+      "durationInSeconds": 664,
+      "jobs": [
+        {
+          "id": 309450001,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-02-23T16:12:31Z",
+          "started_at": "2026-02-23T16:12:56Z",
+          "completed_at": "2026-02-23T16:23:35Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30945",
+          "queueDurationInSeconds": 25,
+          "durationInSeconds": 639
+        }
+      ]
+    },
+    {
+      "id": 309450001,
+      "name": "PR #30945 compile - test null pr",
+      "head_branch": "test_master_null",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-02-23T16:47:42Z",
+      "updated_at": "2026-02-23T16:47:48Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30945",
+      "durationInSeconds": 6,
+      "jobs": [
+        {
+          "id": 309450002,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-02-23T16:47:42Z",
+          "started_at": "2026-02-23T16:48:06Z",
+          "completed_at": "2026-02-23T16:47:48Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30945",
+          "queueDurationInSeconds": 24,
+          "durationInSeconds": 0
+        }
+      ]
+    },
+    {
+      "id": 309450100,
+      "name": "PR #30945 docs-ci - test null pr",
+      "head_branch": "test_master_null",
+      "status": "completed",
+      "conclusion": "pending",
+      "created_at": "2026-02-23T16:12:31Z",
+      "updated_at": "2026-04-12T17:56:45Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30945",
+      "durationInSeconds": 4153454.224,
+      "jobs": [
+        {
+          "id": 309450101,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "pending",
+          "created_at": "2026-02-23T16:12:31Z",
+          "started_at": "2026-02-23T16:13:01Z",
+          "completed_at": "2026-04-12T17:56:45Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30945",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 4153424.224
+        }
+      ]
+    },
+    {
+      "id": 309450101,
+      "name": "PR #30945 docs-ci - test null pr",
+      "head_branch": "test_master_null",
+      "status": "completed",
+      "conclusion": "pending",
+      "created_at": "2026-02-23T16:47:42Z",
+      "updated_at": "2026-04-12T17:56:45Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30945",
+      "durationInSeconds": 4151343.224,
+      "jobs": [
+        {
+          "id": 309450102,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "pending",
+          "created_at": "2026-02-23T16:47:42Z",
+          "started_at": "2026-02-23T16:48:12Z",
+          "completed_at": "2026-04-12T17:56:45Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30945",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 4151313.224
+        }
+      ]
+    },
+    {
+      "id": 41860010,
+      "name": "PR #4186 compile - 【feature】新增适配QuantMatmulGelu融合算子，支持A4W4/A8W8输入",
+      "head_branch": "add_quant_matmal_gelu",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-02-23T18:37:08Z",
+      "updated_at": "2026-02-23T18:45:49Z",
+      "html_url": "https://gitcode.com/Ascend/op-plugin/merge_requests/4186",
+      "durationInSeconds": 521,
+      "jobs": [
+        {
+          "id": 41860011,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-02-23T18:37:08Z",
+          "started_at": "2026-02-23T18:37:29Z",
+          "completed_at": "2026-02-23T18:45:49Z",
+          "html_url": "https://gitcode.com/Ascend/op-plugin/merge_requests/4186",
+          "queueDurationInSeconds": 21,
+          "durationInSeconds": 500
+        }
+      ]
+    },
+    {
+      "id": 41860011,
+      "name": "PR #4186 compile - 【feature】新增适配QuantMatmulGelu融合算子，支持A4W4/A8W8输入",
+      "head_branch": "add_quant_matmal_gelu",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-02-23T18:51:33Z",
+      "updated_at": "2026-02-23T18:51:34Z",
+      "html_url": "https://gitcode.com/Ascend/op-plugin/merge_requests/4186",
+      "durationInSeconds": 1,
+      "jobs": [
+        {
+          "id": 41860012,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-02-23T18:51:33Z",
+          "started_at": "2026-02-23T18:51:33Z",
+          "completed_at": "2026-02-23T18:51:34Z",
+          "html_url": "https://gitcode.com/Ascend/op-plugin/merge_requests/4186",
+          "queueDurationInSeconds": 0,
+          "durationInSeconds": 1
+        }
+      ]
+    },
+    {
+      "id": 41860012,
+      "name": "PR #4186 compile - 【feature】新增适配QuantMatmulGelu融合算子，支持A4W4/A8W8输入",
+      "head_branch": "add_quant_matmal_gelu",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-02-23T18:57:19Z",
+      "updated_at": "2026-02-23T20:21:05Z",
+      "html_url": "https://gitcode.com/Ascend/op-plugin/merge_requests/4186",
+      "durationInSeconds": 5026,
+      "jobs": [
+        {
+          "id": 41860013,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-02-23T18:57:19Z",
+          "started_at": "2026-02-23T18:57:46Z",
+          "completed_at": "2026-02-23T20:21:05Z",
+          "html_url": "https://gitcode.com/Ascend/op-plugin/merge_requests/4186",
+          "queueDurationInSeconds": 27,
+          "durationInSeconds": 4999
+        }
+      ]
+    },
+    {
+      "id": 41860110,
+      "name": "PR #4186 docs-ci - 【feature】新增适配QuantMatmulGelu融合算子，支持A4W4/A8W8输入",
+      "head_branch": "add_quant_matmal_gelu",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-02-23T18:37:08Z",
+      "updated_at": "2026-02-25T11:22:04Z",
+      "html_url": "https://gitcode.com/Ascend/op-plugin/merge_requests/4186",
+      "durationInSeconds": 146696,
+      "jobs": [
+        {
+          "id": 41860111,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-02-23T18:37:08Z",
+          "started_at": "2026-02-23T18:37:38Z",
+          "completed_at": "2026-02-25T11:22:04Z",
+          "html_url": "https://gitcode.com/Ascend/op-plugin/merge_requests/4186",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 146666
+        }
+      ]
+    },
+    {
+      "id": 41860111,
+      "name": "PR #4186 docs-ci - 【feature】新增适配QuantMatmulGelu融合算子，支持A4W4/A8W8输入",
+      "head_branch": "add_quant_matmal_gelu",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-02-23T18:51:33Z",
+      "updated_at": "2026-02-25T11:22:04Z",
+      "html_url": "https://gitcode.com/Ascend/op-plugin/merge_requests/4186",
+      "durationInSeconds": 145831,
+      "jobs": [
+        {
+          "id": 41860112,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-02-23T18:51:33Z",
+          "started_at": "2026-02-23T18:52:03Z",
+          "completed_at": "2026-02-25T11:22:04Z",
+          "html_url": "https://gitcode.com/Ascend/op-plugin/merge_requests/4186",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 145801
+        }
+      ]
+    },
+    {
+      "id": 41860112,
+      "name": "PR #4186 docs-ci - 【feature】新增适配QuantMatmulGelu融合算子，支持A4W4/A8W8输入",
+      "head_branch": "add_quant_matmal_gelu",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-02-23T18:57:19Z",
+      "updated_at": "2026-02-25T11:22:04Z",
+      "html_url": "https://gitcode.com/Ascend/op-plugin/merge_requests/4186",
+      "durationInSeconds": 145485,
+      "jobs": [
+        {
+          "id": 41860113,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-02-23T18:57:19Z",
+          "started_at": "2026-02-23T18:57:49Z",
+          "completed_at": "2026-02-25T11:22:04Z",
+          "html_url": "https://gitcode.com/Ascend/op-plugin/merge_requests/4186",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 145455
+        }
+      ]
+    },
+    {
+      "id": 42250004,
+      "name": "PR #4225 compile - 【feat】MoeInitRoutingV3:非量化场景支持hif8 & quantMode为6支持",
+      "head_branch": "cpy",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-02-23T08:30:31Z",
+      "updated_at": "2026-02-23T08:33:39Z",
+      "html_url": "https://gitcode.com/Ascend/op-plugin/merge_requests/4225",
+      "durationInSeconds": 188,
+      "jobs": [
+        {
+          "id": 42250005,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-02-23T08:30:31Z",
+          "started_at": "2026-02-23T08:30:54Z",
+          "completed_at": "2026-02-23T08:33:39Z",
+          "html_url": "https://gitcode.com/Ascend/op-plugin/merge_requests/4225",
+          "queueDurationInSeconds": 23,
+          "durationInSeconds": 165
+        }
+      ]
+    },
+    {
+      "id": 42250005,
+      "name": "PR #4225 compile - 【feat】MoeInitRoutingV3:非量化场景支持hif8 & quantMode为6支持",
+      "head_branch": "cpy",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-02-23T09:30:01Z",
+      "updated_at": "2026-02-23T09:30:06Z",
+      "html_url": "https://gitcode.com/Ascend/op-plugin/merge_requests/4225",
+      "durationInSeconds": 5,
+      "jobs": [
+        {
+          "id": 42250006,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-02-23T09:30:01Z",
+          "started_at": "2026-02-23T09:30:22Z",
+          "completed_at": "2026-02-23T09:30:06Z",
+          "html_url": "https://gitcode.com/Ascend/op-plugin/merge_requests/4225",
+          "queueDurationInSeconds": 21,
+          "durationInSeconds": 0
+        }
+      ]
+    },
+    {
+      "id": 42250104,
+      "name": "PR #4225 docs-ci - 【feat】MoeInitRoutingV3:非量化场景支持hif8 & quantMode为6支持",
+      "head_branch": "cpy",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-02-23T08:30:31Z",
+      "updated_at": "2026-03-02T08:33:59Z",
+      "html_url": "https://gitcode.com/Ascend/op-plugin/merge_requests/4225",
+      "durationInSeconds": 605008,
+      "jobs": [
+        {
+          "id": 42250105,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-02-23T08:30:31Z",
+          "started_at": "2026-02-23T08:31:01Z",
+          "completed_at": "2026-03-02T08:33:59Z",
+          "html_url": "https://gitcode.com/Ascend/op-plugin/merge_requests/4225",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 604978
+        }
+      ]
+    },
+    {
+      "id": 42250105,
+      "name": "PR #4225 docs-ci - 【feat】MoeInitRoutingV3:非量化场景支持hif8 & quantMode为6支持",
+      "head_branch": "cpy",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-02-23T09:30:01Z",
+      "updated_at": "2026-03-02T08:33:59Z",
+      "html_url": "https://gitcode.com/Ascend/op-plugin/merge_requests/4225",
+      "durationInSeconds": 601438,
+      "jobs": [
+        {
+          "id": 42250106,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-02-23T09:30:01Z",
+          "started_at": "2026-02-23T09:30:31Z",
+          "completed_at": "2026-03-02T08:33:59Z",
+          "html_url": "https://gitcode.com/Ascend/op-plugin/merge_requests/4225",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 601408
+        }
+      ]
+    },
+    {
+      "id": 42740004,
+      "name": "PR #4274 compile - [feat][3/N]cpp extension support",
+      "head_branch": "master_cpp_extention_3",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-02-23T13:53:53Z",
+      "updated_at": "2026-02-23T15:24:08Z",
+      "html_url": "https://gitcode.com/Ascend/op-plugin/merge_requests/4274",
+      "durationInSeconds": 5415,
+      "jobs": [
+        {
+          "id": 42740005,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-02-23T13:53:53Z",
+          "started_at": "2026-02-23T13:54:15Z",
+          "completed_at": "2026-02-23T15:24:08Z",
+          "html_url": "https://gitcode.com/Ascend/op-plugin/merge_requests/4274",
+          "queueDurationInSeconds": 22,
+          "durationInSeconds": 5393
+        }
+      ]
+    },
+    {
+      "id": 42740104,
+      "name": "PR #4274 docs-ci - [feat][3/N]cpp extension support",
+      "head_branch": "master_cpp_extention_3",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-02-23T13:53:53Z",
+      "updated_at": "2026-02-24T02:44:50Z",
+      "html_url": "https://gitcode.com/Ascend/op-plugin/merge_requests/4274",
+      "durationInSeconds": 46257,
+      "jobs": [
+        {
+          "id": 42740105,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-02-23T13:53:53Z",
+          "started_at": "2026-02-23T13:54:23Z",
+          "completed_at": "2026-02-24T02:44:50Z",
+          "html_url": "https://gitcode.com/Ascend/op-plugin/merge_requests/4274",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 46227
+        }
+      ]
+    }
+  ]
+}
