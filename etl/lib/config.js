@@ -1,8 +1,18 @@
+function normalizeRepoIdentifier(repo) {
+  const normalized = String(repo || '').trim();
+  if (!normalized) return '';
+
+  const parts = normalized.split('/').map(part => part.trim()).filter(Boolean);
+  if (parts.length < 2) return normalized;
+
+  return `${parts[0]}/${parts.slice(1).join('/')}`;
+}
+
 function normalizeRepoList(repos) {
   if (!Array.isArray(repos)) return [];
 
   return repos
-    .map(repo => String(repo || '').trim())
+    .map(normalizeRepoIdentifier)
     .filter(Boolean);
 }
 
@@ -18,7 +28,7 @@ function normalizeRepoOverrides(repoOverrides) {
   return Object.fromEntries(
     Object.entries(repoOverrides)
       .map(([repo, override]) => {
-        const normalizedRepo = String(repo || '').trim();
+        const normalizedRepo = normalizeRepoIdentifier(repo);
         const rawOverride = override && typeof override === 'object' ? override : {};
         const mode = rawOverride.mode === 'replace' ? 'replace' : 'append';
 
@@ -49,6 +59,8 @@ export function normalizeConfig(rawConfig = {}, fallbackRepos = []) {
     })),
   };
 }
+
+export { normalizeRepoIdentifier };
 
 function buildRules(orgRules, repoOverride) {
   if (!repoOverride) return orgRules;
@@ -82,7 +94,8 @@ export async function resolveRepoTargets(config, discoverOrgRepos) {
 
     const explicitRepos = org.repos.length > 0;
     const discoveredRepos = explicitRepos ? org.repos : await discoverOrgRepos(org.name);
-    const filteredRepos = discoveredRepos.filter(repo => !org.exclude.includes(repo));
+    const normalizedRepos = normalizeRepoList(discoveredRepos);
+    const filteredRepos = normalizedRepos.filter(repo => !org.exclude.includes(repo));
     const source = explicitRepos ? 'org-explicit' : 'org-discovery';
 
     for (const repo of filteredRepos) {

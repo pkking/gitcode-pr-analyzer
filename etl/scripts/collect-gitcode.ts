@@ -3,7 +3,7 @@ import * as fs from 'fs';
 import * as path from 'path';
 import * as yaml from 'js-yaml';
 import { extractLabelEvents } from '../../src/utils/gitcodeCiEvents.js';
-import { normalizeConfig, resolveRepoTargets } from '../lib/config.js';
+import { normalizeConfig, normalizeRepoIdentifier, resolveRepoTargets } from '../lib/config.js';
 
 interface Run {
   id: number;
@@ -221,10 +221,12 @@ async function discoverOrgRepos(orgName: string): Promise<string[]> {
       .map((repo: GitCodeRepo) => {
         if (repo.path_with_namespace) return repo.path_with_namespace;
         if (repo.full_name) return repo.full_name;
+        if (repo.name_with_namespace) return repo.name_with_namespace;
         if (repo.namespace?.path && repo.path) return `${repo.namespace.path}/${repo.path}`;
         if (repo.namespace?.name && repo.name) return `${repo.namespace.name}/${repo.name}`;
         return '';
       })
+      .map(normalizeRepoIdentifier)
       .filter(Boolean);
 
     if (repoNames.length === 0) {
@@ -383,20 +385,25 @@ async function main() {
   for (const { repo, rules } of targets) {
     try {
       console.log(`Processing ${repo} (${rules.length} rules)...`);
-      const [owner, repoName] = repo.split('/');
+      const canonicalRepo = normalizeRepoIdentifier(repo);
+      const [owner, ...repoSegments] = canonicalRepo.split('/');
+      const repoName = repoSegments.join('/');
       if (!owner || !repoName) {
         console.error(`Invalid repo format: ${repo}. Expected owner/repo`);
         continue;
       }
 
-      const repoIndex = index.repos[repo];
+      const ownerPath = encodeURIComponent(owner);
+      const repoPath = encodeURIComponent(repoName);
+
+      const repoIndex = index.repos[canonicalRepo];
       const lastUpdated = repoIndex?.latest
         ? parseISO(repoIndex.latest)
         : subDays(new Date(), retentionDays);
 
       const since = format(lastUpdated, "yyyy-MM-dd'T'HH:mm:ssXXX");
       console.log(`  Fetching PRs since ${since}...`);
-      const prs = await paginate(`/repos/${owner}/${repoName}/pulls`, {
+      const prs = await paginate(`/repos/${ownerPath}/${repoPath}/pulls`, {
         state: 'all',
         since: since,
         sort: 'updated',
@@ -410,8 +417,8 @@ async function main() {
         console.log(`  Processing PR #${pr.number}: ${pr.title.substring(0, 40)}...`);
 
         const [comments, logs] = await Promise.all([
-          paginate(`/repos/${owner}/${repoName}/pulls/${pr.number}/comments`),
-          paginate(`/repos/${owner}/${repoName}/pulls/${pr.number}/operate_logs`),
+          paginate(`/repos/${ownerPath}/${repoPath}/pulls/${pr.number}/comments`),
+          paginate(`/repos/${ownerPath}/${repoPath}/pulls/${pr.number}/operate_logs`),
         ]);
 
         console.log(`    ${comments.length} comments, ${logs.length} operate logs`);
@@ -431,7 +438,7 @@ async function main() {
       }
 
       const dates = Object.keys(runsByDate).sort().reverse();
-      const files = index.repos[repo]?.files || [];
+      const files = index.repos[canonicalRepo]?.files || [];
 
       for (const date of dates) {
         console.log(`  Writing ${date}.json (${runsByDate[date].length} runs)`);
@@ -439,7 +446,7 @@ async function main() {
         const runMap = new Map(existing.runs.map(r => [r.id, r]));
         for (const run of runsByDate[date]) runMap.set(run.id, run);
 
-        writeDayData({ date, repo, runs: Array.from(runMap.values()) });
+        writeDayData({ date, repo: canonicalRepo, runs: Array.from(runMap.values()) });
 
         if (!files.includes(`${date}.json`)) {
           files.push(`${date}.json`);
@@ -448,7 +455,7 @@ async function main() {
 
       files.sort().reverse();
 
-      index.repos[repo] = {
+      index.repos[canonicalRepo] = {
         latest: dates[0] || repoIndex?.latest || '',
         files,
         retention_days: retentionDays,
@@ -467,8 +474,8 @@ async function main() {
           console.log(`  Removing old file: ${file}`);
           fs.unlinkSync(filePath);
         }
-        const idx = index.repos[repo].files.indexOf(file);
-        if (idx > -1) index.repos[repo].files.splice(idx, 1);
+        const idx = index.repos[canonicalRepo].files.indexOf(file);
+        if (idx > -1) index.repos[canonicalRepo].files.splice(idx, 1);
       }
     } catch (err) {
       console.error(`Error processing repo ${repo}. This may indicate a non-GitCode repository, missing visibility, or a transient network problem:`, err instanceof Error ? err.message : err);
