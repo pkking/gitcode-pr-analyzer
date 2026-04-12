@@ -33,3 +33,10 @@ export const getModifyHistory = async (owner, repo, number, token) => {
   });
   return response.data;
 };
+
+export const getOperateLogs = async (owner, repo, number, token) => {
+  const response = await apiClient.get(`/repos/${owner}/${repo}/pulls/${number}/operate_logs`, {
+    params: { access_token: token },
+  });
+  return response.data;
+};

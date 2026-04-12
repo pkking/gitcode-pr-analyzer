@@ -1,8 +1,10 @@
 import { parseISO, differenceInSeconds, formatDuration, intervalToDuration } from 'date-fns';
+import { extractCiEvents } from './gitcodeCiEvents.js';
 
 const CI_LABEL = 'ci-pipeline-running';
+const CI_FINISH_LABEL = 'ci-pipeline-passed';
 
-export const analyzePR = (pr, comments, history) => {
+export const analyzePR = (pr, comments, history, operateLogs = []) => {
   const prCreatedAt = parseISO(pr.created_at);
   const prMergedAt = pr.merged_at ? parseISO(pr.merged_at) : null;
 
@@ -17,33 +19,35 @@ export const analyzePR = (pr, comments, history) => {
     }))
     .sort((a, b) => a.timestamp - b.timestamp);
 
-  const ciRemovals = history
-    .filter(h => {
-      const content = h.content || '';
-      return (content.includes('移除 标签') || content.includes('removed label')) && content.includes(CI_LABEL);
-    })
-    .map(h => ({
-      id: h.id,
-      timestamp: parseISO(h.created_at),
-      content: h.content
+  const ciFinishEvents = extractCiEvents({ history, operateLogs })
+    .filter(event => (
+      (event.type === 'removed' && event.label === CI_LABEL) ||
+      (event.type === 'added' && event.label === CI_FINISH_LABEL)
+    ))
+    .map(event => ({
+      id: event.id,
+      timestamp: event.timestamp,
+      content: event.content,
+      label: event.label,
+      type: event.type,
     }))
     .sort((a, b) => a.timestamp - b.timestamp);
 
   const compileToCiCycles = [];
-  let lastUsedRemovalIdx = -1;
+  let lastUsedFinishIdx = -1;
 
   for (const comment of compileComments) {
-    // Find the first removal AFTER this comment and AFTER the last used removal
-    const removal = ciRemovals.find((r, idx) => idx > lastUsedRemovalIdx && r.timestamp > comment.timestamp);
-    if (removal) {
-      const seconds = differenceInSeconds(removal.timestamp, comment.timestamp);
+    // Match each compile comment to the first finish event after it.
+    const finish = ciFinishEvents.find((event, idx) => idx > lastUsedFinishIdx && event.timestamp > comment.timestamp);
+    if (finish) {
+      const seconds = differenceInSeconds(finish.timestamp, comment.timestamp);
       compileToCiCycles.push({
         compileTime: comment.timestamp,
-        removalTime: removal.timestamp,
+        removalTime: finish.timestamp,
         durationSeconds: seconds,
         durationText: formatSeconds(seconds)
       });
-      lastUsedRemovalIdx = ciRemovals.indexOf(removal);
+      lastUsedFinishIdx = ciFinishEvents.indexOf(finish);
     }
   }
 
@@ -59,10 +63,10 @@ export const analyzePR = (pr, comments, history) => {
 
   // 3. Last CI removal to merge
   let lastCiRemovalToMerge = null;
-  if (prMergedAt && ciRemovals.length > 0) {
-    const lastRemoval = ciRemovals[ciRemovals.length - 1];
-    if (prMergedAt > lastRemoval.timestamp) {
-      const seconds = differenceInSeconds(prMergedAt, lastRemoval.timestamp);
+  if (prMergedAt && ciFinishEvents.length > 0) {
+    const lastFinish = ciFinishEvents[ciFinishEvents.length - 1];
+    if (prMergedAt > lastFinish.timestamp) {
+      const seconds = differenceInSeconds(prMergedAt, lastFinish.timestamp);
       lastCiRemovalToMerge = {
         durationSeconds: seconds,
         durationText: formatSeconds(seconds)

@@ -2,6 +2,7 @@ import { format, subDays, parseISO, isBefore } from 'date-fns';
 import * as fs from 'fs';
 import * as path from 'path';
 import * as yaml from 'js-yaml';
+import { extractLabelEvents } from '../../src/utils/gitcodeCiEvents.js';
 
 interface Run {
   id: number;
@@ -198,6 +199,7 @@ function buildTimeline(
   rules: CIRule[]
 ): PhaseMatch[] {
   const timeline: PhaseMatch[] = [];
+  const labelEvents = extractLabelEvents({ operateLogs: logs });
 
   for (const rule of rules) {
     for (let pIdx = 0; pIdx < rule.when.length; pIdx++) {
@@ -218,20 +220,16 @@ function buildTimeline(
       }
 
       if (phase.source === 'label') {
-        const actionPrefix = phase.action === 'added' ? 'add label ' : 'delete label ';
-        for (const log of logs) {
-          if (log.content.startsWith(actionPrefix)) {
-            const labelName = log.content.substring(actionPrefix.length).trim();
-            if (matchesPattern(labelName, phase.pattern, phase.match)) {
-              timeline.push({
-                timestamp: new Date(log.created_at),
-                ruleId: rule.id,
-                phaseIdx: pIdx,
-                detail: labelName,
-                user: log.user?.login || 'unknown',
-                conclusion: labelName.includes('fail') ? 'failure' : 'success',
-              });
-            }
+        for (const event of labelEvents) {
+          if (event.type === phase.action && matchesPattern(event.label, phase.pattern, phase.match)) {
+            timeline.push({
+              timestamp: event.timestamp,
+              ruleId: rule.id,
+              phaseIdx: pIdx,
+              detail: event.label,
+              user: event.user,
+              conclusion: event.label.includes('fail') ? 'failure' : 'success',
+            });
           }
         }
       }
