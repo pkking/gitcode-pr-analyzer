@@ -6384,9 +6384,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-03-28T14:30:49Z",
-      "updated_at": "2026-04-12T15:18:30Z",
+      "updated_at": "2026-04-13T08:15:53Z",
       "html_url": "https://gitcode.com/Ascend/msmodeling/merge_requests/124",
-      "durationInSeconds": 1298861.782,
+      "durationInSeconds": 1359904.739,
       "jobs": [
         {
           "id": 1240102,
@@ -6395,10 +6395,10 @@
           "conclusion": "pending",
           "created_at": "2026-03-28T14:30:49Z",
           "started_at": "2026-03-28T14:31:19Z",
-          "completed_at": "2026-04-12T15:18:30Z",
+          "completed_at": "2026-04-13T08:15:53Z",
           "html_url": "https://gitcode.com/Ascend/msmodeling/merge_requests/124",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 1298831.782
+          "durationInSeconds": 1359874.739
         }
       ]
     },
@@ -12782,23 +12782,23 @@
       "name": "PR #32616 docs-ci - fix: handle zero tensor src in copy_ to avoid null",
       "head_branch": "v2.7.1-issue146",
       "status": "completed",
-      "conclusion": "pending",
+      "conclusion": "success",
       "created_at": "2026-03-28T09:08:45Z",
-      "updated_at": "2026-04-13T03:31:34Z",
+      "updated_at": "2026-04-13T07:16:15Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/32616",
-      "durationInSeconds": 1362169.699,
+      "durationInSeconds": 1375650,
       "jobs": [
         {
           "id": 326160101,
           "name": "docs-ci",
           "status": "completed",
-          "conclusion": "pending",
+          "conclusion": "success",
           "created_at": "2026-03-28T09:08:45Z",
           "started_at": "2026-03-28T09:09:15Z",
-          "completed_at": "2026-04-13T03:31:34Z",
+          "completed_at": "2026-04-13T07:16:15Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/32616",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 1362139.699
+          "durationInSeconds": 1375620
         }
       ]
     },
