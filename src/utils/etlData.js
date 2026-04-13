@@ -1,5 +1,14 @@
 import { intervalToDuration } from 'date-fns';
 
+const PR_DETAIL_FILE_PATHS = [
+  'ascend/pytorch/pr-33542.json',
+  'ascend/pytorch/pr-33543.json',
+  'ascend/pytorch/pr-33551.json',
+  'ascend/pytorch/pr-33552.json',
+  'ascend/pytorch/pr-33553.json',
+  'ascend/pytorch/pr-33554.json',
+];
+
 export function listRepoEntries(indexData) {
   return Object.entries(indexData?.repos || {})
     .map(([key, value]) => {
@@ -16,10 +25,38 @@ export function listRepoEntries(indexData) {
     .sort((a, b) => a.key.localeCompare(b.key));
 }
 
+export function listOrgEntries(indexData) {
+  const repoEntries = listRepoEntries(indexData);
+  const orgMap = new Map();
+
+  for (const repo of repoEntries) {
+    if (!orgMap.has(repo.owner)) {
+      orgMap.set(repo.owner, {
+        owner: repo.owner,
+        key: repo.owner,
+        repos: [],
+      });
+    }
+
+    orgMap.get(repo.owner).repos.push(repo);
+  }
+
+  return Array.from(orgMap.values())
+    .map(org => ({
+      ...org,
+      repos: org.repos.sort((a, b) => a.repo.localeCompare(b.repo)),
+    }))
+    .sort((a, b) => a.owner.localeCompare(b.owner));
+}
+
 export function buildRunList(dayFiles) {
   return dayFiles
     .flatMap(file => file?.runs || [])
     .sort((a, b) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime());
+}
+
+export function buildRepoRunList(dayFiles, repoKey) {
+  return buildRunList(dayFiles).filter(run => getRunRepoKey(run) === repoKey);
 }
 
 export function summarizeRun(run) {
@@ -35,7 +72,92 @@ export function summarizeRun(run) {
   };
 }
 
+export function getRunRepoParts(run) {
+  try {
+    const url = new URL(run?.html_url || '');
+    const segments = url.pathname.split('/').filter(Boolean);
+    const mergeRequestIndex = segments.findIndex(segment => segment === 'merge_requests');
+
+    if (mergeRequestIndex < 2) return null;
+
+    const owner = segments[mergeRequestIndex - 2];
+    const repo = segments[mergeRequestIndex - 1];
+
+    if (!owner || !repo) return null;
+
+    return { owner, repo, key: `${owner}/${repo}` };
+  } catch {
+    return null;
+  }
+}
+
+export function getRunRepoKey(run) {
+  return getRunRepoParts(run)?.key || '';
+}
+
+export function getRunPrNumber(run) {
+  const match = String(run?.name || '').match(/PR\s+#(\d+)/i);
+  return match ? Number(match[1]) : null;
+}
+
+export function listPrDetailEntries() {
+  return PR_DETAIL_FILE_PATHS.map(filePath => {
+    const normalizedPath = filePath.toLowerCase();
+    const match = normalizedPath.match(/^([^/]+)\/(.+)\/pr-(\d+)\.json$/);
+    if (!match) return null;
+
+    const [, owner, repoPath, prNumber] = match;
+    return {
+      owner,
+      repo: repoPath,
+      repoKey: `${owner}/${repoPath}`,
+      prNumber: Number(prNumber),
+      filePath,
+      publicPath: `/data/${filePath}`,
+      detailKey: `${owner}/${repoPath}#${prNumber}`,
+    };
+  }).filter(Boolean);
+}
+
+export function getPrDetailEntry(owner, repo, prNumber) {
+  const normalizedOwner = String(owner || '').toLowerCase();
+  const normalizedRepo = String(repo || '').toLowerCase();
+  const normalizedPrNumber = Number(prNumber);
+
+  return listPrDetailEntries().find(entry =>
+    entry.owner === normalizedOwner &&
+    entry.repo === normalizedRepo &&
+    entry.prNumber === normalizedPrNumber
+  ) || null;
+}
+
+export function listOrgPrDetailEntries(owner) {
+  const normalizedOwner = String(owner || '').toLowerCase();
+  return listPrDetailEntries().filter(entry => entry.owner === normalizedOwner);
+}
+
+export function getRunStageName(run) {
+  const primaryJob = Array.isArray(run?.jobs) && run.jobs.length > 0 ? run.jobs[0].name : '';
+  if (primaryJob) return primaryJob;
+
+  const match = String(run?.name || '').match(/^PR\s+#\d+\s+(.+?)\s+-/i);
+  return match ? match[1].trim() : 'unknown';
+}
+
+export function average(numbers) {
+  const valid = numbers.filter(value => Number.isFinite(value));
+  if (valid.length === 0) return null;
+  return valid.reduce((sum, value) => sum + value, 0) / valid.length;
+}
+
+export function getSuccessRate(runs) {
+  if (!runs.length) return 0;
+  const successCount = runs.filter(run => run.conclusion === 'success').length;
+  return successCount / runs.length;
+}
+
 export function formatSeconds(seconds) {
+  if (!Number.isFinite(seconds)) return '--';
   if (seconds < 0) return '0s';
   const duration = intervalToDuration({ start: 0, end: Math.round(seconds) * 1000 });
   const parts = [];
