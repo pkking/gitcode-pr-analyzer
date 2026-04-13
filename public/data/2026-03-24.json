@@ -1,6 +1,6 @@
 {
   "date": "2026-03-24",
-  "repo": "Ascend/op-plugin",
+  "repo": "Ascend/DrivingSDK",
   "runs": [
     {
       "id": 20000,
@@ -34,9 +34,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-03-24T13:46:45Z",
-      "updated_at": "2026-04-12T14:07:06Z",
+      "updated_at": "2026-04-13T03:20:46Z",
       "html_url": "https://gitcode.com/Ascend/Triton-distributed-ascend/merge_requests/2",
-      "durationInSeconds": 1642821.702,
+      "durationInSeconds": 1690441.09,
       "jobs": [
         {
           "id": 20101,
@@ -45,10 +45,10 @@
           "conclusion": "pending",
           "created_at": "2026-03-24T13:46:45Z",
           "started_at": "2026-03-24T13:47:15Z",
-          "completed_at": "2026-04-12T14:07:06Z",
+          "completed_at": "2026-04-13T03:20:46Z",
           "html_url": "https://gitcode.com/Ascend/Triton-distributed-ascend/merge_requests/2",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 1642791.702
+          "durationInSeconds": 1690411.09
         }
       ]
     },
@@ -8382,23 +8382,23 @@
       "name": "PR #218 docs-ci - Added new W4A4_MXFP4 quantization format",
       "head_branch": "apply_mxfp4",
       "status": "completed",
-      "conclusion": "pending",
+      "conclusion": "success",
       "created_at": "2026-03-24T08:39:05Z",
-      "updated_at": "2026-04-12T15:04:06Z",
+      "updated_at": "2026-04-13T03:08:39Z",
       "html_url": "https://gitcode.com/Ascend/MindIE-SD/merge_requests/218",
-      "durationInSeconds": 1664701.42,
+      "durationInSeconds": 1708174,
       "jobs": [
         {
           "id": 2180101,
-          "name": "docs-ci",
+          "name": "docs-ci-pipeline-running",
           "status": "completed",
-          "conclusion": "pending",
+          "conclusion": "success",
           "created_at": "2026-03-24T08:39:05Z",
-          "started_at": "2026-03-24T08:39:35Z",
-          "completed_at": "2026-04-12T15:04:06Z",
+          "started_at": "2026-04-13T03:05:51Z",
+          "completed_at": "2026-04-13T03:08:39Z",
           "html_url": "https://gitcode.com/Ascend/MindIE-SD/merge_requests/218",
-          "queueDurationInSeconds": 30,
-          "durationInSeconds": 1664671.42
+          "queueDurationInSeconds": 1708006,
+          "durationInSeconds": 168
         }
       ]
     },
@@ -16284,9 +16284,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-03-24T13:13:13Z",
-      "updated_at": "2026-04-12T16:18:37Z",
+      "updated_at": "2026-04-13T03:29:34Z",
       "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/562",
-      "durationInSeconds": 1652724.347,
+      "durationInSeconds": 1692981.856,
       "jobs": [
         {
           "id": 5620102,
@@ -16295,10 +16295,10 @@
           "conclusion": "pending",
           "created_at": "2026-03-24T13:13:13Z",
           "started_at": "2026-03-24T13:13:43Z",
-          "completed_at": "2026-04-12T16:18:37Z",
+          "completed_at": "2026-04-13T03:29:34Z",
           "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/562",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 1652694.347
+          "durationInSeconds": 1692951.856
         }
       ]
     },

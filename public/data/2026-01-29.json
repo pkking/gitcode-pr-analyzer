@@ -1,6 +1,6 @@
 {
   "date": "2026-01-29",
-  "repo": "Ascend/op-plugin",
+  "repo": "Ascend/RecSDK",
   "runs": [
     {
       "id": 220000,
@@ -24349,6 +24349,56 @@
           "html_url": "https://gitcode.com/Ascend/op-plugin/merge_requests/4111",
           "queueDurationInSeconds": 30,
           "durationInSeconds": 6369732.441
+        }
+      ]
+    },
+    {
+      "id": 20920000,
+      "name": "PR #2092 compile - 【FEAT】【tf_v1】【A2】配置TF框架预冒烟脚本",
+      "head_branch": "pre_smoke0128",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-01-29T11:54:13Z",
+      "updated_at": "2026-01-29T12:19:47Z",
+      "html_url": "https://gitcode.com/Ascend/RecSDK/merge_requests/2092",
+      "durationInSeconds": 1534,
+      "jobs": [
+        {
+          "id": 20920001,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-01-29T11:54:13Z",
+          "started_at": "2026-01-29T12:03:44Z",
+          "completed_at": "2026-01-29T12:19:47Z",
+          "html_url": "https://gitcode.com/Ascend/RecSDK/merge_requests/2092",
+          "queueDurationInSeconds": 571,
+          "durationInSeconds": 963
+        }
+      ]
+    },
+    {
+      "id": 20920100,
+      "name": "PR #2092 docs-ci - 【FEAT】【tf_v1】【A2】配置TF框架预冒烟脚本",
+      "head_branch": "pre_smoke0128",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-01-29T11:54:13Z",
+      "updated_at": "2026-01-29T12:19:53Z",
+      "html_url": "https://gitcode.com/Ascend/RecSDK/merge_requests/2092",
+      "durationInSeconds": 1540,
+      "jobs": [
+        {
+          "id": 20920101,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-01-29T11:54:13Z",
+          "started_at": "2026-01-29T11:54:43Z",
+          "completed_at": "2026-01-29T12:19:53Z",
+          "html_url": "https://gitcode.com/Ascend/RecSDK/merge_requests/2092",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 1510
         }
       ]
     }

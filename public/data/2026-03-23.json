@@ -1,6 +1,6 @@
 {
   "date": "2026-03-23",
-  "repo": "Ascend/op-plugin",
+  "repo": "Ascend/mindsdk-referenceapps",
   "runs": [
     {
       "id": 10000,
@@ -12934,9 +12934,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-03-23T13:15:59Z",
-      "updated_at": "2026-04-12T16:18:46Z",
+      "updated_at": "2026-04-13T03:30:11Z",
       "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/807",
-      "durationInSeconds": 1738967.96,
+      "durationInSeconds": 1779252.023,
       "jobs": [
         {
           "id": 8070101,
@@ -12945,10 +12945,10 @@
           "conclusion": "pending",
           "created_at": "2026-03-23T13:15:59Z",
           "started_at": "2026-03-23T13:16:29Z",
-          "completed_at": "2026-04-12T16:18:46Z",
+          "completed_at": "2026-04-13T03:30:11Z",
           "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/807",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 1738937.96
+          "durationInSeconds": 1779222.023
         }
       ]
     },
@@ -13184,9 +13184,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-03-23T01:38:38Z",
-      "updated_at": "2026-04-12T16:19:48Z",
+      "updated_at": "2026-04-13T03:29:21Z",
       "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/618",
-      "durationInSeconds": 1780870.102,
+      "durationInSeconds": 1821043.407,
       "jobs": [
         {
           "id": 6180103,
@@ -13195,10 +13195,10 @@
           "conclusion": "pending",
           "created_at": "2026-03-23T01:38:38Z",
           "started_at": "2026-03-23T01:39:08Z",
-          "completed_at": "2026-04-12T16:19:48Z",
+          "completed_at": "2026-04-13T03:29:21Z",
           "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/618",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 1780840.102
+          "durationInSeconds": 1821013.407
         }
       ]
     },
@@ -26199,6 +26199,56 @@
           "html_url": "https://gitcode.com/Ascend/op-plugin/merge_requests/4380",
           "queueDurationInSeconds": 30,
           "durationInSeconds": 14062
+        }
+      ]
+    },
+    {
+      "id": 9250000,
+      "name": "PR #925 compile - feat(trust_ai): fix some issues",
+      "head_branch": "feat/trust_ai",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-03-23T03:02:45Z",
+      "updated_at": "2026-03-23T03:10:20Z",
+      "html_url": "https://gitcode.com/Ascend/mindsdk-referenceapps/merge_requests/925",
+      "durationInSeconds": 455,
+      "jobs": [
+        {
+          "id": 9250001,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-03-23T03:02:45Z",
+          "started_at": "2026-03-23T03:02:51Z",
+          "completed_at": "2026-03-23T03:10:20Z",
+          "html_url": "https://gitcode.com/Ascend/mindsdk-referenceapps/merge_requests/925",
+          "queueDurationInSeconds": 6,
+          "durationInSeconds": 449
+        }
+      ]
+    },
+    {
+      "id": 9250100,
+      "name": "PR #925 docs-ci - feat(trust_ai): fix some issues",
+      "head_branch": "feat/trust_ai",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-03-23T03:02:45Z",
+      "updated_at": "2026-03-24T02:14:00Z",
+      "html_url": "https://gitcode.com/Ascend/mindsdk-referenceapps/merge_requests/925",
+      "durationInSeconds": 83475,
+      "jobs": [
+        {
+          "id": 9250101,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-03-23T03:02:45Z",
+          "started_at": "2026-03-23T03:03:15Z",
+          "completed_at": "2026-03-24T02:14:00Z",
+          "html_url": "https://gitcode.com/Ascend/mindsdk-referenceapps/merge_requests/925",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 83445
         }
       ]
     }

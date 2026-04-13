@@ -1,6 +1,6 @@
 {
   "date": "2026-03-18",
-  "repo": "Ascend/op-plugin",
+  "repo": "Ascend/mindsdk-referenceapps",
   "runs": [
     {
       "id": 140000,
@@ -10084,9 +10084,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-03-18T10:19:53Z",
-      "updated_at": "2026-04-12T16:18:49Z",
+      "updated_at": "2026-04-13T03:30:13Z",
       "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/751",
-      "durationInSeconds": 2181536.286,
+      "durationInSeconds": 2221820.314,
       "jobs": [
         {
           "id": 7510101,
@@ -10095,10 +10095,10 @@
           "conclusion": "pending",
           "created_at": "2026-03-18T10:19:53Z",
           "started_at": "2026-03-18T10:20:23Z",
-          "completed_at": "2026-04-12T16:18:49Z",
+          "completed_at": "2026-04-13T03:30:13Z",
           "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/751",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 2181506.286
+          "durationInSeconds": 2221790.314
         }
       ]
     },
@@ -26699,6 +26699,106 @@
           "html_url": "https://gitcode.com/Ascend/op-plugin/merge_requests/4487",
           "queueDurationInSeconds": 30,
           "durationInSeconds": 4773
+        }
+      ]
+    },
+    {
+      "id": 9040000,
+      "name": "PR #904 compile - add gitcode-pr-audit skill",
+      "head_branch": "add-gitcode-pr-audit",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-03-18T11:02:24Z",
+      "updated_at": "2026-03-18T11:11:06Z",
+      "html_url": "https://gitcode.com/Ascend/mindsdk-referenceapps/merge_requests/904",
+      "durationInSeconds": 522,
+      "jobs": [
+        {
+          "id": 9040001,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-03-18T11:02:24Z",
+          "started_at": "2026-03-18T11:06:58Z",
+          "completed_at": "2026-03-18T11:11:06Z",
+          "html_url": "https://gitcode.com/Ascend/mindsdk-referenceapps/merge_requests/904",
+          "queueDurationInSeconds": 274,
+          "durationInSeconds": 248
+        }
+      ]
+    },
+    {
+      "id": 9040001,
+      "name": "PR #904 compile - add gitcode-pr-audit skill",
+      "head_branch": "add-gitcode-pr-audit",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-03-18T11:04:00Z",
+      "updated_at": "2026-03-18T11:11:06Z",
+      "html_url": "https://gitcode.com/Ascend/mindsdk-referenceapps/merge_requests/904",
+      "durationInSeconds": 426,
+      "jobs": [
+        {
+          "id": 9040002,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-03-18T11:04:00Z",
+          "started_at": "2026-03-18T11:06:58Z",
+          "completed_at": "2026-03-18T11:11:06Z",
+          "html_url": "https://gitcode.com/Ascend/mindsdk-referenceapps/merge_requests/904",
+          "queueDurationInSeconds": 178,
+          "durationInSeconds": 248
+        }
+      ]
+    },
+    {
+      "id": 9040100,
+      "name": "PR #904 docs-ci - add gitcode-pr-audit skill",
+      "head_branch": "add-gitcode-pr-audit",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-03-18T11:02:24Z",
+      "updated_at": "2026-03-20T01:29:09Z",
+      "html_url": "https://gitcode.com/Ascend/mindsdk-referenceapps/merge_requests/904",
+      "durationInSeconds": 138405,
+      "jobs": [
+        {
+          "id": 9040101,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-03-18T11:02:24Z",
+          "started_at": "2026-03-18T11:02:54Z",
+          "completed_at": "2026-03-20T01:29:09Z",
+          "html_url": "https://gitcode.com/Ascend/mindsdk-referenceapps/merge_requests/904",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 138375
+        }
+      ]
+    },
+    {
+      "id": 9040101,
+      "name": "PR #904 docs-ci - add gitcode-pr-audit skill",
+      "head_branch": "add-gitcode-pr-audit",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-03-18T11:04:00Z",
+      "updated_at": "2026-03-20T01:29:09Z",
+      "html_url": "https://gitcode.com/Ascend/mindsdk-referenceapps/merge_requests/904",
+      "durationInSeconds": 138309,
+      "jobs": [
+        {
+          "id": 9040102,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-03-18T11:04:00Z",
+          "started_at": "2026-03-18T11:04:30Z",
+          "completed_at": "2026-03-20T01:29:09Z",
+          "html_url": "https://gitcode.com/Ascend/mindsdk-referenceapps/merge_requests/904",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 138279
         }
       ]
     }

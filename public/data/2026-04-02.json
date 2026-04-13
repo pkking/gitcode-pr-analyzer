@@ -259,9 +259,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-02T06:49:05Z",
-      "updated_at": "2026-04-12T14:07:06Z",
+      "updated_at": "2026-04-13T03:20:46Z",
       "html_url": "https://gitcode.com/Ascend/Triton-distributed-ascend/merge_requests/2",
-      "durationInSeconds": 890281.702,
+      "durationInSeconds": 937901.09,
       "jobs": [
         {
           "id": 20103,
@@ -270,10 +270,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-02T06:49:05Z",
           "started_at": "2026-04-02T06:49:35Z",
-          "completed_at": "2026-04-12T14:07:06Z",
+          "completed_at": "2026-04-13T03:20:46Z",
           "html_url": "https://gitcode.com/Ascend/Triton-distributed-ascend/merge_requests/2",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 890251.702
+          "durationInSeconds": 937871.09
         }
       ]
     },
@@ -284,9 +284,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-02T08:49:18Z",
-      "updated_at": "2026-04-12T14:07:06Z",
+      "updated_at": "2026-04-13T03:20:46Z",
       "html_url": "https://gitcode.com/Ascend/Triton-distributed-ascend/merge_requests/2",
-      "durationInSeconds": 883068.702,
+      "durationInSeconds": 930688.09,
       "jobs": [
         {
           "id": 20104,
@@ -295,10 +295,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-02T08:49:18Z",
           "started_at": "2026-04-02T08:49:48Z",
-          "completed_at": "2026-04-12T14:07:06Z",
+          "completed_at": "2026-04-13T03:20:46Z",
           "html_url": "https://gitcode.com/Ascend/Triton-distributed-ascend/merge_requests/2",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 883038.702
+          "durationInSeconds": 930658.09
         }
       ]
     },
@@ -2659,9 +2659,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-02T09:08:04Z",
-      "updated_at": "2026-04-12T14:17:53Z",
+      "updated_at": "2026-04-13T03:22:52Z",
       "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/117",
-      "durationInSeconds": 882589.593,
+      "durationInSeconds": 929688.143,
       "jobs": [
         {
           "id": 1170109,
@@ -2670,10 +2670,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-02T09:08:04Z",
           "started_at": "2026-04-02T09:08:34Z",
-          "completed_at": "2026-04-12T14:17:53Z",
+          "completed_at": "2026-04-13T03:22:52Z",
           "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/117",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 882559.593
+          "durationInSeconds": 929658.143
         }
       ]
     },
@@ -2884,9 +2884,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-02T11:40:06Z",
-      "updated_at": "2026-04-12T15:18:21Z",
+      "updated_at": "2026-04-13T03:25:07Z",
       "html_url": "https://gitcode.com/Ascend/msmodeling/merge_requests/130",
-      "durationInSeconds": 877095.946,
+      "durationInSeconds": 920701.595,
       "jobs": [
         {
           "id": 1300101,
@@ -2895,10 +2895,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-02T11:40:06Z",
           "started_at": "2026-04-02T11:40:36Z",
-          "completed_at": "2026-04-12T15:18:21Z",
+          "completed_at": "2026-04-13T03:25:07Z",
           "html_url": "https://gitcode.com/Ascend/msmodeling/merge_requests/130",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 877065.946
+          "durationInSeconds": 920671.595
         }
       ]
     },
@@ -4529,101 +4529,101 @@
     },
     {
       "id": 520000,
-      "name": "PR #52 compile - 资料问题修复",
-      "head_branch": "26.0.0",
+      "name": "PR #52 compile - [Bug]: 【易用性专项-资料】CANN 9.0.0编译接口变更需要适配",
+      "head_branch": "dev_04031",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-04-02T02:58:34Z",
-      "updated_at": "2026-04-02T03:08:55Z",
-      "html_url": "https://gitcode.com/Ascend/mspti/merge_requests/52",
-      "durationInSeconds": 621,
+      "created_at": "2026-04-02T09:13:33Z",
+      "updated_at": "2026-04-02T09:30:32Z",
+      "html_url": "https://gitcode.com/Ascend/msot/merge_requests/52",
+      "durationInSeconds": 1019,
       "jobs": [
         {
           "id": 520001,
           "name": "ci-pipeline-running",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-04-02T02:58:34Z",
-          "started_at": "2026-04-02T02:59:15Z",
-          "completed_at": "2026-04-02T03:08:55Z",
-          "html_url": "https://gitcode.com/Ascend/mspti/merge_requests/52",
-          "queueDurationInSeconds": 41,
-          "durationInSeconds": 580
+          "created_at": "2026-04-02T09:13:33Z",
+          "started_at": "2026-04-02T09:15:05Z",
+          "completed_at": "2026-04-02T09:30:32Z",
+          "html_url": "https://gitcode.com/Ascend/msot/merge_requests/52",
+          "queueDurationInSeconds": 92,
+          "durationInSeconds": 927
         }
       ]
     },
     {
       "id": 520100,
-      "name": "PR #52 docs-ci - 资料问题修复",
-      "head_branch": "26.0.0",
+      "name": "PR #52 docs-ci - [Bug]: 【易用性专项-资料】CANN 9.0.0编译接口变更需要适配",
+      "head_branch": "dev_04031",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-04-02T02:58:34Z",
-      "updated_at": "2026-04-02T03:01:39Z",
-      "html_url": "https://gitcode.com/Ascend/mspti/merge_requests/52",
-      "durationInSeconds": 185,
+      "created_at": "2026-04-02T09:13:33Z",
+      "updated_at": "2026-04-02T09:30:38Z",
+      "html_url": "https://gitcode.com/Ascend/msot/merge_requests/52",
+      "durationInSeconds": 1025,
       "jobs": [
         {
           "id": 520101,
-          "name": "docs-ci-pipeline-running",
+          "name": "docs-ci",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-04-02T02:58:34Z",
-          "started_at": "2026-04-02T02:59:54Z",
-          "completed_at": "2026-04-02T03:01:39Z",
-          "html_url": "https://gitcode.com/Ascend/mspti/merge_requests/52",
-          "queueDurationInSeconds": 80,
-          "durationInSeconds": 105
+          "created_at": "2026-04-02T09:13:33Z",
+          "started_at": "2026-04-02T09:14:03Z",
+          "completed_at": "2026-04-02T09:30:38Z",
+          "html_url": "https://gitcode.com/Ascend/msot/merge_requests/52",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 995
         }
       ]
     },
     {
       "id": 510000,
-      "name": "PR #51 compile - 【26.0.0】fix hash id callback and reg type info cal",
-      "head_branch": "hash_fix_26.0.0",
+      "name": "PR #51 compile - [Bug]: 【易用性专项-资料】CANN 9.0.0编译接口变更需要适配",
+      "head_branch": "dev_0403",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-04-02T02:52:51Z",
-      "updated_at": "2026-04-02T06:30:21Z",
-      "html_url": "https://gitcode.com/Ascend/mspti/merge_requests/51",
-      "durationInSeconds": 13050,
+      "created_at": "2026-04-02T09:06:37Z",
+      "updated_at": "2026-04-02T09:23:19Z",
+      "html_url": "https://gitcode.com/Ascend/msot/merge_requests/51",
+      "durationInSeconds": 1002,
       "jobs": [
         {
           "id": 510001,
           "name": "ci-pipeline-running",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-04-02T02:52:51Z",
-          "started_at": "2026-04-02T06:18:34Z",
-          "completed_at": "2026-04-02T06:30:21Z",
-          "html_url": "https://gitcode.com/Ascend/mspti/merge_requests/51",
-          "queueDurationInSeconds": 12343,
-          "durationInSeconds": 707
+          "created_at": "2026-04-02T09:06:37Z",
+          "started_at": "2026-04-02T09:07:13Z",
+          "completed_at": "2026-04-02T09:23:19Z",
+          "html_url": "https://gitcode.com/Ascend/msot/merge_requests/51",
+          "queueDurationInSeconds": 36,
+          "durationInSeconds": 966
         }
       ]
     },
     {
       "id": 510100,
-      "name": "PR #51 docs-ci - 【26.0.0】fix hash id callback and reg type info cal",
-      "head_branch": "hash_fix_26.0.0",
+      "name": "PR #51 docs-ci - [Bug]: 【易用性专项-资料】CANN 9.0.0编译接口变更需要适配",
+      "head_branch": "dev_0403",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-04-02T02:52:51Z",
-      "updated_at": "2026-04-02T06:20:12Z",
-      "html_url": "https://gitcode.com/Ascend/mspti/merge_requests/51",
-      "durationInSeconds": 12441,
+      "created_at": "2026-04-02T09:06:37Z",
+      "updated_at": "2026-04-02T09:09:28Z",
+      "html_url": "https://gitcode.com/Ascend/msot/merge_requests/51",
+      "durationInSeconds": 171,
       "jobs": [
         {
           "id": 510101,
-          "name": "docs-ci-pipeline-running",
+          "name": "docs-ci-pipeline-success",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-04-02T02:52:51Z",
-          "started_at": "2026-04-02T06:19:09Z",
-          "completed_at": "2026-04-02T06:20:12Z",
-          "html_url": "https://gitcode.com/Ascend/mspti/merge_requests/51",
-          "queueDurationInSeconds": 12378,
-          "durationInSeconds": 63
+          "created_at": "2026-04-02T09:06:37Z",
+          "started_at": "2026-04-02T09:07:07Z",
+          "completed_at": "2026-04-02T09:09:28Z",
+          "html_url": "https://gitcode.com/Ascend/msot/merge_requests/51",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 141
         }
       ]
     },
@@ -14734,9 +14734,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-02T06:47:41Z",
-      "updated_at": "2026-04-12T15:54:39Z",
+      "updated_at": "2026-04-13T03:28:30Z",
       "html_url": "https://gitcode.com/Ascend/triton-ascend/merge_requests/1523",
-      "durationInSeconds": 896818.929,
+      "durationInSeconds": 938449.3,
       "jobs": [
         {
           "id": 15230101,
@@ -14745,10 +14745,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-02T06:47:41Z",
           "started_at": "2026-04-02T06:48:11Z",
-          "completed_at": "2026-04-12T15:54:39Z",
+          "completed_at": "2026-04-13T03:28:30Z",
           "html_url": "https://gitcode.com/Ascend/triton-ascend/merge_requests/1523",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 896788.929
+          "durationInSeconds": 938419.3
         }
       ]
     },
@@ -14759,9 +14759,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-02T08:45:01Z",
-      "updated_at": "2026-04-12T15:54:39Z",
+      "updated_at": "2026-04-13T03:28:30Z",
       "html_url": "https://gitcode.com/Ascend/triton-ascend/merge_requests/1523",
-      "durationInSeconds": 889778.929,
+      "durationInSeconds": 931409.3,
       "jobs": [
         {
           "id": 15230102,
@@ -14770,10 +14770,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-02T08:45:01Z",
           "started_at": "2026-04-02T08:45:31Z",
-          "completed_at": "2026-04-12T15:54:39Z",
+          "completed_at": "2026-04-13T03:28:30Z",
           "html_url": "https://gitcode.com/Ascend/triton-ascend/merge_requests/1523",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 889748.929
+          "durationInSeconds": 931379.3
         }
       ]
     },
@@ -15234,9 +15234,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-02T01:15:54Z",
-      "updated_at": "2026-04-12T15:55:32Z",
+      "updated_at": "2026-04-13T03:28:11Z",
       "html_url": "https://gitcode.com/Ascend/triton-ascend/merge_requests/1265",
-      "durationInSeconds": 916778.814,
+      "durationInSeconds": 958337.624,
       "jobs": [
         {
           "id": 12650107,
@@ -15245,10 +15245,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-02T01:15:54Z",
           "started_at": "2026-04-02T01:16:24Z",
-          "completed_at": "2026-04-12T15:55:32Z",
+          "completed_at": "2026-04-13T03:28:11Z",
           "html_url": "https://gitcode.com/Ascend/triton-ascend/merge_requests/1265",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 916748.814
+          "durationInSeconds": 958307.624
         }
       ]
     },
@@ -15259,9 +15259,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-02T04:48:21Z",
-      "updated_at": "2026-04-12T15:55:32Z",
+      "updated_at": "2026-04-13T03:28:11Z",
       "html_url": "https://gitcode.com/Ascend/triton-ascend/merge_requests/1265",
-      "durationInSeconds": 904031.814,
+      "durationInSeconds": 945590.624,
       "jobs": [
         {
           "id": 12650108,
@@ -15270,10 +15270,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-02T04:48:21Z",
           "started_at": "2026-04-02T04:48:51Z",
-          "completed_at": "2026-04-12T15:55:32Z",
+          "completed_at": "2026-04-13T03:28:11Z",
           "html_url": "https://gitcode.com/Ascend/triton-ascend/merge_requests/1265",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 904001.814
+          "durationInSeconds": 945560.624
         }
       ]
     },
@@ -17084,9 +17084,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-02T03:48:02Z",
-      "updated_at": "2026-04-12T16:09:06Z",
+      "updated_at": "2026-04-13T03:28:50Z",
       "html_url": "https://gitcode.com/Ascend/MindSpeed-LLM/merge_requests/4372",
-      "durationInSeconds": 908464.979,
+      "durationInSeconds": 949248.547,
       "jobs": [
         {
           "id": 43720101,
@@ -17095,10 +17095,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-02T03:48:02Z",
           "started_at": "2026-04-02T03:48:32Z",
-          "completed_at": "2026-04-12T16:09:06Z",
+          "completed_at": "2026-04-13T03:28:50Z",
           "html_url": "https://gitcode.com/Ascend/MindSpeed-LLM/merge_requests/4372",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 908434.979
+          "durationInSeconds": 949218.547
         }
       ]
     },
@@ -17109,9 +17109,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-02T07:57:29Z",
-      "updated_at": "2026-04-12T16:09:06Z",
+      "updated_at": "2026-04-13T03:28:50Z",
       "html_url": "https://gitcode.com/Ascend/MindSpeed-LLM/merge_requests/4372",
-      "durationInSeconds": 893497.979,
+      "durationInSeconds": 934281.547,
       "jobs": [
         {
           "id": 43720102,
@@ -17120,10 +17120,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-02T07:57:29Z",
           "started_at": "2026-04-02T07:57:59Z",
-          "completed_at": "2026-04-12T16:09:06Z",
+          "completed_at": "2026-04-13T03:28:50Z",
           "html_url": "https://gitcode.com/Ascend/MindSpeed-LLM/merge_requests/4372",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 893467.979
+          "durationInSeconds": 934251.547
         }
       ]
     },
@@ -22809,9 +22809,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-02T10:54:20Z",
-      "updated_at": "2026-04-12T17:07:11Z",
+      "updated_at": "2026-04-13T03:31:01Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30841",
-      "durationInSeconds": 886371.969,
+      "durationInSeconds": 923801.869,
       "jobs": [
         {
           "id": 308410104,
@@ -22820,10 +22820,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-02T10:54:20Z",
           "started_at": "2026-04-02T10:54:50Z",
-          "completed_at": "2026-04-12T17:07:11Z",
+          "completed_at": "2026-04-13T03:31:01Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/30841",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 886341.969
+          "durationInSeconds": 923771.869
         }
       ]
     },
@@ -37907,23 +37907,23 @@
       "name": "PR #4640 docs-ci - 【feature】取消BSA对inner_precise在bf16下使用的校验，该校验下沉到acln",
       "head_branch": "update_bsa_params_check",
       "status": "completed",
-      "conclusion": "pending",
+      "conclusion": "success",
       "created_at": "2026-04-02T12:33:55Z",
-      "updated_at": "2026-04-12T18:38:10Z",
+      "updated_at": "2026-04-13T01:51:58Z",
       "html_url": "https://gitcode.com/Ascend/op-plugin/merge_requests/4640",
-      "durationInSeconds": 885855.688,
+      "durationInSeconds": 911883,
       "jobs": [
         {
           "id": 46400101,
-          "name": "docs-ci",
+          "name": "docs-ci-pipeline-running",
           "status": "completed",
-          "conclusion": "pending",
+          "conclusion": "success",
           "created_at": "2026-04-02T12:33:55Z",
-          "started_at": "2026-04-02T12:34:25Z",
-          "completed_at": "2026-04-12T18:38:10Z",
+          "started_at": "2026-04-13T01:50:37Z",
+          "completed_at": "2026-04-13T01:51:58Z",
           "html_url": "https://gitcode.com/Ascend/op-plugin/merge_requests/4640",
-          "queueDurationInSeconds": 30,
-          "durationInSeconds": 885825.688
+          "queueDurationInSeconds": 911802,
+          "durationInSeconds": 81
         }
       ]
     },
@@ -39909,9 +39909,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-02T11:06:39Z",
-      "updated_at": "2026-04-12T18:39:43Z",
+      "updated_at": "2026-04-13T03:33:02Z",
       "html_url": "https://gitcode.com/Ascend/op-plugin/merge_requests/4638",
-      "durationInSeconds": 891184.783,
+      "durationInSeconds": 923183.715,
       "jobs": [
         {
           "id": 46380101,
@@ -39920,10 +39920,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-02T11:06:39Z",
           "started_at": "2026-04-02T11:07:09Z",
-          "completed_at": "2026-04-12T18:39:43Z",
+          "completed_at": "2026-04-13T03:33:02Z",
           "html_url": "https://gitcode.com/Ascend/op-plugin/merge_requests/4638",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 891154.783
+          "durationInSeconds": 923153.715
         }
       ]
     },
@@ -39934,9 +39934,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-02T11:11:57Z",
-      "updated_at": "2026-04-12T18:39:43Z",
+      "updated_at": "2026-04-13T03:33:02Z",
       "html_url": "https://gitcode.com/Ascend/op-plugin/merge_requests/4638",
-      "durationInSeconds": 890866.783,
+      "durationInSeconds": 922865.715,
       "jobs": [
         {
           "id": 46380102,
@@ -39945,10 +39945,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-02T11:11:57Z",
           "started_at": "2026-04-02T11:12:27Z",
-          "completed_at": "2026-04-12T18:39:43Z",
+          "completed_at": "2026-04-13T03:33:02Z",
           "html_url": "https://gitcode.com/Ascend/op-plugin/merge_requests/4638",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 890836.783
+          "durationInSeconds": 922835.715
         }
       ]
     },
@@ -39959,9 +39959,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-02T11:33:45Z",
-      "updated_at": "2026-04-12T18:39:43Z",
+      "updated_at": "2026-04-13T03:33:02Z",
       "html_url": "https://gitcode.com/Ascend/op-plugin/merge_requests/4638",
-      "durationInSeconds": 889558.783,
+      "durationInSeconds": 921557.715,
       "jobs": [
         {
           "id": 46380103,
@@ -39970,10 +39970,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-02T11:33:45Z",
           "started_at": "2026-04-02T11:34:15Z",
-          "completed_at": "2026-04-12T18:39:43Z",
+          "completed_at": "2026-04-13T03:33:02Z",
           "html_url": "https://gitcode.com/Ascend/op-plugin/merge_requests/4638",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 889528.783
+          "durationInSeconds": 921527.715
         }
       ]
     },

@@ -1,6 +1,6 @@
 {
   "date": "2026-03-26",
-  "repo": "Ascend/op-plugin",
+  "repo": "Ascend/mindsdk-referenceapps",
   "runs": [
     {
       "id": 450000,
@@ -32199,6 +32199,106 @@
           "html_url": "https://gitcode.com/Ascend/op-plugin/merge_requests/4554",
           "queueDurationInSeconds": 30,
           "durationInSeconds": 15301
+        }
+      ]
+    },
+    {
+      "id": 9220000,
+      "name": "PR #922 compile - feat(agent skill: os_adapter): add part one",
+      "head_branch": "agent/os_adapter_one",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-03-26T11:51:46Z",
+      "updated_at": "2026-03-26T12:02:08Z",
+      "html_url": "https://gitcode.com/Ascend/mindsdk-referenceapps/merge_requests/922",
+      "durationInSeconds": 622,
+      "jobs": [
+        {
+          "id": 9220001,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-03-26T11:51:46Z",
+          "started_at": "2026-03-26T11:52:16Z",
+          "completed_at": "2026-03-26T12:02:08Z",
+          "html_url": "https://gitcode.com/Ascend/mindsdk-referenceapps/merge_requests/922",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 592
+        }
+      ]
+    },
+    {
+      "id": 9220100,
+      "name": "PR #922 docs-ci - feat(agent skill: os_adapter): add part one",
+      "head_branch": "agent/os_adapter_one",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-03-26T11:51:46Z",
+      "updated_at": "2026-03-26T12:01:43Z",
+      "html_url": "https://gitcode.com/Ascend/mindsdk-referenceapps/merge_requests/922",
+      "durationInSeconds": 597,
+      "jobs": [
+        {
+          "id": 9220101,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-03-26T11:51:46Z",
+          "started_at": "2026-03-26T11:52:16Z",
+          "completed_at": "2026-03-26T12:01:43Z",
+          "html_url": "https://gitcode.com/Ascend/mindsdk-referenceapps/merge_requests/922",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 567
+        }
+      ]
+    },
+    {
+      "id": 9230000,
+      "name": "PR #923 compile - feat(agent skill: os_adapter): add part two",
+      "head_branch": "agent/os_adapter_two",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-03-26T11:55:25Z",
+      "updated_at": "2026-03-26T12:01:42Z",
+      "html_url": "https://gitcode.com/Ascend/mindsdk-referenceapps/merge_requests/923",
+      "durationInSeconds": 377,
+      "jobs": [
+        {
+          "id": 9230001,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-03-26T11:55:25Z",
+          "started_at": "2026-03-26T11:55:34Z",
+          "completed_at": "2026-03-26T12:01:42Z",
+          "html_url": "https://gitcode.com/Ascend/mindsdk-referenceapps/merge_requests/923",
+          "queueDurationInSeconds": 9,
+          "durationInSeconds": 368
+        }
+      ]
+    },
+    {
+      "id": 9230100,
+      "name": "PR #923 docs-ci - feat(agent skill: os_adapter): add part two",
+      "head_branch": "agent/os_adapter_two",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-03-26T11:55:25Z",
+      "updated_at": "2026-03-26T12:01:51Z",
+      "html_url": "https://gitcode.com/Ascend/mindsdk-referenceapps/merge_requests/923",
+      "durationInSeconds": 386,
+      "jobs": [
+        {
+          "id": 9230101,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-03-26T11:55:25Z",
+          "started_at": "2026-03-26T11:55:55Z",
+          "completed_at": "2026-03-26T12:01:51Z",
+          "html_url": "https://gitcode.com/Ascend/mindsdk-referenceapps/merge_requests/923",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 356
         }
       ]
     }

@@ -1,6 +1,6 @@
 {
   "date": "2026-03-02",
-  "repo": "Ascend/op-plugin",
+  "repo": "Ascend/MindStudio-Profiler-Analyze",
   "runs": [
     {
       "id": 500003,
@@ -554,51 +554,51 @@
     },
     {
       "id": 730000,
-      "name": "PR #73 compile - 【fix】mask算子精度问题修复",
-      "head_branch": "mask",
+      "name": "PR #73 compile - 慢节点检测 part3 算法部分",
+      "head_branch": "develop",
       "status": "completed",
-      "conclusion": "success",
-      "created_at": "2026-03-02T08:31:49Z",
-      "updated_at": "2026-03-02T08:48:29Z",
-      "html_url": "https://gitcode.com/Ascend/IndexSDK/merge_requests/73",
-      "durationInSeconds": 1000,
+      "conclusion": "failure",
+      "created_at": "2026-03-02T07:28:28Z",
+      "updated_at": "2026-03-02T07:33:41Z",
+      "html_url": "https://gitcode.com/Ascend/msprof-analyze/merge_requests/73",
+      "durationInSeconds": 313,
       "jobs": [
         {
           "id": 730001,
           "name": "ci-pipeline-running",
           "status": "completed",
-          "conclusion": "success",
-          "created_at": "2026-03-02T08:31:49Z",
-          "started_at": "2026-03-02T08:32:36Z",
-          "completed_at": "2026-03-02T08:48:29Z",
-          "html_url": "https://gitcode.com/Ascend/IndexSDK/merge_requests/73",
-          "queueDurationInSeconds": 47,
-          "durationInSeconds": 953
+          "conclusion": "failure",
+          "created_at": "2026-03-02T07:28:28Z",
+          "started_at": "2026-03-02T07:29:47Z",
+          "completed_at": "2026-03-02T07:33:41Z",
+          "html_url": "https://gitcode.com/Ascend/msprof-analyze/merge_requests/73",
+          "queueDurationInSeconds": 79,
+          "durationInSeconds": 234
         }
       ]
     },
     {
       "id": 730100,
-      "name": "PR #73 docs-ci - 【fix】mask算子精度问题修复",
-      "head_branch": "mask",
+      "name": "PR #73 docs-ci - 慢节点检测 part3 算法部分",
+      "head_branch": "develop",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-03-02T08:31:49Z",
-      "updated_at": "2026-03-02T11:08:34Z",
-      "html_url": "https://gitcode.com/Ascend/IndexSDK/merge_requests/73",
-      "durationInSeconds": 9405,
+      "created_at": "2026-03-02T07:28:28Z",
+      "updated_at": "2026-03-12T11:38:46Z",
+      "html_url": "https://gitcode.com/Ascend/msprof-analyze/merge_requests/73",
+      "durationInSeconds": 879018,
       "jobs": [
         {
           "id": 730101,
-          "name": "docs-ci",
+          "name": "docs-ci-pipeline-running",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-03-02T08:31:49Z",
-          "started_at": "2026-03-02T08:32:19Z",
-          "completed_at": "2026-03-02T11:08:34Z",
-          "html_url": "https://gitcode.com/Ascend/IndexSDK/merge_requests/73",
-          "queueDurationInSeconds": 30,
-          "durationInSeconds": 9375
+          "created_at": "2026-03-02T07:28:28Z",
+          "started_at": "2026-03-12T11:38:14Z",
+          "completed_at": "2026-03-12T11:38:46Z",
+          "html_url": "https://gitcode.com/Ascend/msprof-analyze/merge_requests/73",
+          "queueDurationInSeconds": 878986,
+          "durationInSeconds": 32
         }
       ]
     },
