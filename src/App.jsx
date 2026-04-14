@@ -488,10 +488,10 @@ function RunDetailView({ run, detail, timeline, onBack }) {
 
         <div className="mt-8 rounded-[28px] border border-stone-200 bg-stone-950 px-5 py-6 text-white">
           <div className="flex items-center justify-between text-xs uppercase tracking-[0.25em] text-stone-400">
-            <span>Comment</span>
-            <span>Label Added</span>
-            <span>Label Removed</span>
-            <span>PR Merged</span>
+            <span>CI触发</span>
+            <span>CI启动</span>
+            <span>CI完成</span>
+            <span>PR合入</span>
           </div>
 
           <div className="mt-4 flex h-5 overflow-hidden rounded-full bg-stone-800">
@@ -507,11 +507,8 @@ function RunDetailView({ run, detail, timeline, onBack }) {
 
           <div className="mt-6 grid gap-4 lg:grid-cols-3">
             {timeline.map(phase => (
-              <div key={phase.key} className="rounded-3xl border border-stone-800 bg-stone-900/90 px-4 py-4">
-                <div className="text-xs uppercase tracking-[0.24em] text-stone-500">{phase.eyebrow}</div>
-                <div className="mt-2 text-lg font-semibold text-white">{phase.label}</div>
-                <div className="mt-2 text-2xl font-semibold text-amber-300">{formatSeconds(phase.seconds)}</div>
-                <div className="mt-2 text-sm text-stone-400">{phase.description}</div>
+              <div key={phase.key} className="rounded-3xl border border-stone-800 bg-stone-900/90 px-4 py-6">
+                <div className="text-center text-2xl font-semibold text-amber-300">{formatSeconds(phase.seconds)}</div>
               </div>
             ))}
           </div>
@@ -519,9 +516,9 @@ function RunDetailView({ run, detail, timeline, onBack }) {
       </section>
 
       <section className="grid gap-4 xl:grid-cols-3">
-        <SummaryCard label="阶段一" value={formatSeconds(timeline[0]?.seconds)} sublabel="评论到加 running label" tone="amber" />
-        <SummaryCard label="阶段二" value={formatSeconds(timeline[1]?.seconds)} sublabel="label 存在到被删除" tone="green" />
-        <SummaryCard label="阶段三" value={formatSeconds(timeline[2]?.seconds)} sublabel="label 删除到 PR 合入" tone="blue" />
+        <SummaryCard label="CI启动时间" value={formatSeconds(timeline[0]?.seconds)} tone="amber" />
+        <SummaryCard label="CI运行时间" value={formatSeconds(timeline[1]?.seconds)} tone="green" />
+        <SummaryCard label="PR合入时间" value={formatSeconds(timeline[2]?.seconds)} tone="blue" />
       </section>
 
       <section className="overflow-hidden rounded-[28px] border border-stone-200 bg-white/90 shadow-lg shadow-stone-200/60">
@@ -594,25 +591,25 @@ function buildRunTimeline(run, detail) {
       {
         key: 'comment_to_label',
         eyebrow: 'Phase 1',
-        label: '评论 -> 增加 running label',
+        label: 'CI启动时间',
         seconds: fallbackPhaseOne,
-        description: '基于当前 run 的队列等待时间推导。',
+        description: '',
         barClass: 'bg-amber-400',
       },
       {
         key: 'label_to_remove',
         eyebrow: 'Phase 2',
-        label: 'running label -> 删除 label',
+        label: 'CI运行时间',
         seconds: fallbackPhaseTwo,
-        description: '基于 job 执行耗时推导。',
+        description: '',
         barClass: 'bg-emerald-400',
       },
       {
         key: 'remove_to_merge',
         eyebrow: 'Phase 3',
-        label: '删除 label -> PR 合入',
+        label: 'PR合入时间',
         seconds: fallbackPhaseThree,
-        description: '当前缺少 PR 明细，暂无法计算。',
+        description: '',
         barClass: 'bg-sky-400',
       },
     ];
@@ -629,25 +626,25 @@ function buildRunTimeline(run, detail) {
     {
       key: 'comment_to_label',
       eyebrow: 'Phase 1',
-      label: '评论 -> 增加 running label',
+      label: 'CI启动时间',
       seconds: phaseOne,
-      description: '从触发评论到 CI 进入 running 的等待时间。',
+      description: '',
       barClass: 'bg-amber-400',
     },
     {
       key: 'label_to_remove',
       eyebrow: 'Phase 2',
-      label: 'running label -> 删除 label',
+      label: 'CI运行时间',
       seconds: phaseTwo,
-      description: 'CI 主体执行区间，表示 pipeline 持续时间。',
+      description: '',
       barClass: 'bg-emerald-400',
     },
     {
       key: 'remove_to_merge',
       eyebrow: 'Phase 3',
-      label: '删除 label -> PR 合入',
+      label: 'PR合入时间',
       seconds: phaseThree,
-      description: 'CI 完成后到最终合入的等待时间。',
+      description: '',
       barClass: 'bg-sky-400',
     },
   ];
