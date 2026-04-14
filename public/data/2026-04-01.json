@@ -1,6 +1,6 @@
 {
   "date": "2026-04-01",
-  "repo": "Ascend/msit",
+  "repo": "Ascend/community",
   "runs": [
     {
       "id": 1000000,
@@ -32,23 +32,23 @@
       "name": "PR #443 compile - 创建MindStudio Agent代码仓",
       "head_branch": "master",
       "status": "completed",
-      "conclusion": "pending",
-      "created_at": "2026-04-01T11:15:06Z",
-      "updated_at": "2026-04-06T20:26:56Z",
+      "conclusion": "failure",
+      "created_at": "2026-04-01T03:15:06Z",
+      "updated_at": "2026-04-01T03:18:05Z",
       "html_url": "https://gitcode.com/Ascend/community/merge_requests/443",
-      "durationInSeconds": 465110.573,
+      "durationInSeconds": 179,
       "jobs": [
         {
           "id": 4430001,
-          "name": "Ascend docs pipeline is running...",
+          "name": "ci-pipeline-running",
           "status": "completed",
-          "conclusion": "pending",
-          "created_at": "2026-04-01T11:15:06Z",
-          "started_at": "2026-04-01T11:15:36Z",
-          "completed_at": "2026-04-06T20:26:56Z",
+          "conclusion": "failure",
+          "created_at": "2026-04-01T03:15:06Z",
+          "started_at": "2026-04-01T03:16:19Z",
+          "completed_at": "2026-04-01T03:18:05Z",
           "html_url": "https://gitcode.com/Ascend/community/merge_requests/443",
-          "queueDurationInSeconds": 30,
-          "durationInSeconds": 465080.573
+          "queueDurationInSeconds": 73,
+          "durationInSeconds": 106
         }
       ]
     },
@@ -809,9 +809,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-01T02:45:39Z",
-      "updated_at": "2026-04-14T07:55:13Z",
+      "updated_at": "2026-04-14T13:53:54Z",
       "html_url": "https://gitcode.com/Ascend/msopcom/merge_requests/94",
-      "durationInSeconds": 1141774.483,
+      "durationInSeconds": 1163295.924,
       "jobs": [
         {
           "id": 940101,
@@ -820,10 +820,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-01T02:45:39Z",
           "started_at": "2026-04-01T02:46:09Z",
-          "completed_at": "2026-04-14T07:55:13Z",
+          "completed_at": "2026-04-14T13:53:54Z",
           "html_url": "https://gitcode.com/Ascend/msopcom/merge_requests/94",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 1141744.483
+          "durationInSeconds": 1163265.924
         }
       ]
     },
@@ -834,9 +834,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-01T08:59:44Z",
-      "updated_at": "2026-04-14T07:55:13Z",
+      "updated_at": "2026-04-14T13:53:54Z",
       "html_url": "https://gitcode.com/Ascend/msopcom/merge_requests/94",
-      "durationInSeconds": 1119329.483,
+      "durationInSeconds": 1140850.924,
       "jobs": [
         {
           "id": 940102,
@@ -845,10 +845,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-01T08:59:44Z",
           "started_at": "2026-04-01T09:00:14Z",
-          "completed_at": "2026-04-14T07:55:13Z",
+          "completed_at": "2026-04-14T13:53:54Z",
           "html_url": "https://gitcode.com/Ascend/msopcom/merge_requests/94",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 1119299.483
+          "durationInSeconds": 1140820.924
         }
       ]
     },
@@ -2407,23 +2407,23 @@
       "name": "PR #15 compile - [feature] 同步主线资料修改：文档优化重构，提升易用性",
       "head_branch": "dev_0402",
       "status": "completed",
-      "conclusion": "success",
-      "created_at": "2026-04-01T06:14:20Z",
-      "updated_at": "2026-04-01T06:23:55Z",
-      "html_url": "https://gitcode.com/Ascend/mskl/merge_requests/15",
-      "durationInSeconds": 575,
+      "conclusion": "failure",
+      "created_at": "2026-04-01T06:33:14Z",
+      "updated_at": "2026-04-01T06:41:20Z",
+      "html_url": "https://gitcode.com/Ascend/msoptuner/merge_requests/15",
+      "durationInSeconds": 486,
       "jobs": [
         {
           "id": 150001,
           "name": "ci-pipeline-running",
           "status": "completed",
-          "conclusion": "success",
-          "created_at": "2026-04-01T06:14:20Z",
-          "started_at": "2026-04-01T06:15:10Z",
-          "completed_at": "2026-04-01T06:23:55Z",
-          "html_url": "https://gitcode.com/Ascend/mskl/merge_requests/15",
-          "queueDurationInSeconds": 50,
-          "durationInSeconds": 525
+          "conclusion": "failure",
+          "created_at": "2026-04-01T06:33:14Z",
+          "started_at": "2026-04-01T06:37:35Z",
+          "completed_at": "2026-04-01T06:41:20Z",
+          "html_url": "https://gitcode.com/Ascend/msoptuner/merge_requests/15",
+          "queueDurationInSeconds": 261,
+          "durationInSeconds": 225
         }
       ]
     },
@@ -2433,22 +2433,22 @@
       "head_branch": "dev_0402",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-04-01T06:14:20Z",
-      "updated_at": "2026-04-01T06:17:21Z",
-      "html_url": "https://gitcode.com/Ascend/mskl/merge_requests/15",
-      "durationInSeconds": 181,
+      "created_at": "2026-04-01T06:33:14Z",
+      "updated_at": "2026-04-01T06:36:30Z",
+      "html_url": "https://gitcode.com/Ascend/msoptuner/merge_requests/15",
+      "durationInSeconds": 196,
       "jobs": [
         {
           "id": 150101,
           "name": "docs-ci-pipeline-running",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-04-01T06:14:20Z",
-          "started_at": "2026-04-01T06:15:33Z",
-          "completed_at": "2026-04-01T06:17:21Z",
-          "html_url": "https://gitcode.com/Ascend/mskl/merge_requests/15",
-          "queueDurationInSeconds": 73,
-          "durationInSeconds": 108
+          "created_at": "2026-04-01T06:33:14Z",
+          "started_at": "2026-04-01T06:34:54Z",
+          "completed_at": "2026-04-01T06:36:30Z",
+          "html_url": "https://gitcode.com/Ascend/msoptuner/merge_requests/15",
+          "queueDurationInSeconds": 100,
+          "durationInSeconds": 96
         }
       ]
     },
@@ -11634,9 +11634,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-01T07:16:53Z",
-      "updated_at": "2026-04-14T08:02:30Z",
+      "updated_at": "2026-04-14T14:04:45Z",
       "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/913",
-      "durationInSeconds": 1125937.602,
+      "durationInSeconds": 1147672.218,
       "jobs": [
         {
           "id": 9130101,
@@ -11645,10 +11645,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-01T07:16:53Z",
           "started_at": "2026-04-01T07:17:23Z",
-          "completed_at": "2026-04-14T08:02:30Z",
+          "completed_at": "2026-04-14T14:04:45Z",
           "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/913",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 1125907.602
+          "durationInSeconds": 1147642.218
         }
       ]
     },
@@ -12957,23 +12957,23 @@
       "name": "PR #3369 compile - feat: release bf16 weights after mxfp8 quantizatio",
       "head_branch": "mega_release_bf16",
       "status": "completed",
-      "conclusion": "pending",
+      "conclusion": "failure",
       "created_at": "2026-04-01T07:44:00Z",
-      "updated_at": "2026-04-14T08:02:56Z",
+      "updated_at": "2026-04-14T08:31:21Z",
       "html_url": "https://gitcode.com/Ascend/MindSpeed/merge_requests/3369",
-      "durationInSeconds": 1124336.959,
+      "durationInSeconds": 1126041,
       "jobs": [
         {
           "id": 33690001,
-          "name": "compile",
+          "name": "ci-pipeline-running",
           "status": "completed",
-          "conclusion": "pending",
+          "conclusion": "failure",
           "created_at": "2026-04-01T07:44:00Z",
-          "started_at": "2026-04-01T07:44:30Z",
-          "completed_at": "2026-04-14T08:02:56Z",
+          "started_at": "2026-04-14T08:29:00Z",
+          "completed_at": "2026-04-14T08:31:21Z",
           "html_url": "https://gitcode.com/Ascend/MindSpeed/merge_requests/3369",
-          "queueDurationInSeconds": 30,
-          "durationInSeconds": 1124306.959
+          "queueDurationInSeconds": 1125900,
+          "durationInSeconds": 141
         }
       ]
     },
@@ -16409,9 +16409,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-01T09:49:28Z",
-      "updated_at": "2026-04-14T03:08:46Z",
+      "updated_at": "2026-04-14T14:10:12Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/32649",
-      "durationInSeconds": 1099158.819,
+      "durationInSeconds": 1138844.788,
       "jobs": [
         {
           "id": 326490104,
@@ -16420,10 +16420,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-01T09:49:28Z",
           "started_at": "2026-04-01T09:49:58Z",
-          "completed_at": "2026-04-14T03:08:46Z",
+          "completed_at": "2026-04-14T14:10:12Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/32649",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 1099128.819
+          "durationInSeconds": 1138814.788
         }
       ]
     },
@@ -16434,9 +16434,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-01T12:42:38Z",
-      "updated_at": "2026-04-14T03:08:46Z",
+      "updated_at": "2026-04-14T14:10:12Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/32649",
-      "durationInSeconds": 1088768.819,
+      "durationInSeconds": 1128454.788,
       "jobs": [
         {
           "id": 326490105,
@@ -16445,10 +16445,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-01T12:42:38Z",
           "started_at": "2026-04-01T12:43:08Z",
-          "completed_at": "2026-04-14T03:08:46Z",
+          "completed_at": "2026-04-14T14:10:12Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/32649",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 1088738.819
+          "durationInSeconds": 1128424.788
         }
       ]
     },
@@ -18934,9 +18934,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-01T09:50:27Z",
-      "updated_at": "2026-04-14T03:07:34Z",
+      "updated_at": "2026-04-14T14:10:10Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/32650",
-      "durationInSeconds": 1099027.547,
+      "durationInSeconds": 1138783.661,
       "jobs": [
         {
           "id": 326500106,
@@ -18945,10 +18945,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-01T09:50:27Z",
           "started_at": "2026-04-01T09:50:57Z",
-          "completed_at": "2026-04-14T03:07:34Z",
+          "completed_at": "2026-04-14T14:10:10Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/32650",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 1098997.547
+          "durationInSeconds": 1138753.661
         }
       ]
     },
@@ -19484,9 +19484,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-01T09:50:43Z",
-      "updated_at": "2026-04-14T03:07:30Z",
+      "updated_at": "2026-04-14T14:10:09Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/32651",
-      "durationInSeconds": 1099007.171,
+      "durationInSeconds": 1138766.157,
       "jobs": [
         {
           "id": 326510104,
@@ -19495,10 +19495,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-01T09:50:43Z",
           "started_at": "2026-04-01T09:51:13Z",
-          "completed_at": "2026-04-14T03:07:30Z",
+          "completed_at": "2026-04-14T14:10:09Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/32651",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 1098977.171
+          "durationInSeconds": 1138736.157
         }
       ]
     },
@@ -21959,9 +21959,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-01T09:02:56Z",
-      "updated_at": "2026-04-14T03:07:35Z",
+      "updated_at": "2026-04-14T14:10:15Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/32390",
-      "durationInSeconds": 1101879.967,
+      "durationInSeconds": 1141639.708,
       "jobs": [
         {
           "id": 323900107,
@@ -21970,10 +21970,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-01T09:02:56Z",
           "started_at": "2026-04-01T09:03:26Z",
-          "completed_at": "2026-04-14T03:07:35Z",
+          "completed_at": "2026-04-14T14:10:15Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/32390",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 1101849.967
+          "durationInSeconds": 1141609.708
         }
       ]
     },
@@ -21984,9 +21984,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-01T12:42:18Z",
-      "updated_at": "2026-04-14T03:07:35Z",
+      "updated_at": "2026-04-14T14:10:15Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/32390",
-      "durationInSeconds": 1088717.967,
+      "durationInSeconds": 1128477.708,
       "jobs": [
         {
           "id": 323900108,
@@ -21995,10 +21995,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-01T12:42:18Z",
           "started_at": "2026-04-01T12:42:48Z",
-          "completed_at": "2026-04-14T03:07:35Z",
+          "completed_at": "2026-04-14T14:10:15Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/32390",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 1088687.967
+          "durationInSeconds": 1128447.708
         }
       ]
     },
@@ -24732,23 +24732,23 @@
       "name": "PR #4618 docs-ci - [fix] Enable cube_math_type passthrough for matmul",
       "head_branch": "master_cube_math_type",
       "status": "completed",
-      "conclusion": "pending",
+      "conclusion": "success",
       "created_at": "2026-04-01T09:35:03Z",
-      "updated_at": "2026-04-12T18:38:12Z",
+      "updated_at": "2026-04-14T08:39:55Z",
       "html_url": "https://gitcode.com/Ascend/op-plugin/merge_requests/4618",
-      "durationInSeconds": 982989.044,
+      "durationInSeconds": 1119892,
       "jobs": [
         {
           "id": 46180101,
           "name": "docs-ci",
           "status": "completed",
-          "conclusion": "pending",
+          "conclusion": "success",
           "created_at": "2026-04-01T09:35:03Z",
           "started_at": "2026-04-01T09:35:33Z",
-          "completed_at": "2026-04-12T18:38:12Z",
+          "completed_at": "2026-04-14T08:39:55Z",
           "html_url": "https://gitcode.com/Ascend/op-plugin/merge_requests/4618",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 982959.044
+          "durationInSeconds": 1119862
         }
       ]
     },
@@ -24757,23 +24757,23 @@
       "name": "PR #4618 docs-ci - [fix] Enable cube_math_type passthrough for matmul",
       "head_branch": "master_cube_math_type",
       "status": "completed",
-      "conclusion": "pending",
+      "conclusion": "success",
       "created_at": "2026-04-01T10:43:43Z",
-      "updated_at": "2026-04-12T18:38:12Z",
+      "updated_at": "2026-04-14T08:39:55Z",
       "html_url": "https://gitcode.com/Ascend/op-plugin/merge_requests/4618",
-      "durationInSeconds": 978869.044,
+      "durationInSeconds": 1115772,
       "jobs": [
         {
           "id": 46180102,
           "name": "docs-ci",
           "status": "completed",
-          "conclusion": "pending",
+          "conclusion": "success",
           "created_at": "2026-04-01T10:43:43Z",
           "started_at": "2026-04-01T10:44:13Z",
-          "completed_at": "2026-04-12T18:38:12Z",
+          "completed_at": "2026-04-14T08:39:55Z",
           "html_url": "https://gitcode.com/Ascend/op-plugin/merge_requests/4618",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 978839.044
+          "durationInSeconds": 1115742
         }
       ]
     },
@@ -24782,23 +24782,23 @@
       "name": "PR #4618 docs-ci - [fix] Enable cube_math_type passthrough for matmul",
       "head_branch": "master_cube_math_type",
       "status": "completed",
-      "conclusion": "pending",
+      "conclusion": "success",
       "created_at": "2026-04-01T11:20:08Z",
-      "updated_at": "2026-04-12T18:38:12Z",
+      "updated_at": "2026-04-14T08:39:55Z",
       "html_url": "https://gitcode.com/Ascend/op-plugin/merge_requests/4618",
-      "durationInSeconds": 976684.044,
+      "durationInSeconds": 1113587,
       "jobs": [
         {
           "id": 46180103,
           "name": "docs-ci",
           "status": "completed",
-          "conclusion": "pending",
+          "conclusion": "success",
           "created_at": "2026-04-01T11:20:08Z",
           "started_at": "2026-04-01T11:20:38Z",
-          "completed_at": "2026-04-12T18:38:12Z",
+          "completed_at": "2026-04-14T08:39:55Z",
           "html_url": "https://gitcode.com/Ascend/op-plugin/merge_requests/4618",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 976654.044
+          "durationInSeconds": 1113557
         }
       ]
     },
@@ -24807,23 +24807,23 @@
       "name": "PR #4618 docs-ci - [fix] Enable cube_math_type passthrough for matmul",
       "head_branch": "master_cube_math_type",
       "status": "completed",
-      "conclusion": "pending",
+      "conclusion": "success",
       "created_at": "2026-04-01T11:42:20Z",
-      "updated_at": "2026-04-12T18:38:12Z",
+      "updated_at": "2026-04-14T08:39:55Z",
       "html_url": "https://gitcode.com/Ascend/op-plugin/merge_requests/4618",
-      "durationInSeconds": 975352.044,
+      "durationInSeconds": 1112255,
       "jobs": [
         {
           "id": 46180104,
           "name": "docs-ci",
           "status": "completed",
-          "conclusion": "pending",
+          "conclusion": "success",
           "created_at": "2026-04-01T11:42:20Z",
           "started_at": "2026-04-01T11:42:50Z",
-          "completed_at": "2026-04-12T18:38:12Z",
+          "completed_at": "2026-04-14T08:39:55Z",
           "html_url": "https://gitcode.com/Ascend/op-plugin/merge_requests/4618",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 975322.044
+          "durationInSeconds": 1112225
         }
       ]
     },
@@ -24832,23 +24832,23 @@
       "name": "PR #4618 docs-ci - [fix] Enable cube_math_type passthrough for matmul",
       "head_branch": "master_cube_math_type",
       "status": "completed",
-      "conclusion": "pending",
+      "conclusion": "success",
       "created_at": "2026-04-01T12:05:57Z",
-      "updated_at": "2026-04-12T18:38:12Z",
+      "updated_at": "2026-04-14T08:39:55Z",
       "html_url": "https://gitcode.com/Ascend/op-plugin/merge_requests/4618",
-      "durationInSeconds": 973935.044,
+      "durationInSeconds": 1110838,
       "jobs": [
         {
           "id": 46180105,
           "name": "docs-ci",
           "status": "completed",
-          "conclusion": "pending",
+          "conclusion": "success",
           "created_at": "2026-04-01T12:05:57Z",
           "started_at": "2026-04-01T12:06:27Z",
-          "completed_at": "2026-04-12T18:38:12Z",
+          "completed_at": "2026-04-14T08:39:55Z",
           "html_url": "https://gitcode.com/Ascend/op-plugin/merge_requests/4618",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 973905.044
+          "durationInSeconds": 1110808
         }
       ]
     },

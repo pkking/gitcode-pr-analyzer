@@ -9382,23 +9382,23 @@
       "name": "PR #1405 docs-ci - fix: add sync_block_lock/unlock around the RMW seq",
       "head_branch": "main/fix-mask",
       "status": "completed",
-      "conclusion": "pending",
+      "conclusion": "success",
       "created_at": "2026-03-20T06:19:46Z",
-      "updated_at": "2026-04-14T08:02:10Z",
+      "updated_at": "2026-04-14T09:27:53Z",
       "html_url": "https://gitcode.com/Ascend/triton-ascend/merge_requests/1405",
-      "durationInSeconds": 2166144.855,
+      "durationInSeconds": 2171287,
       "jobs": [
         {
           "id": 14050101,
-          "name": "docs-ci",
+          "name": "docs-ci-pipeline-running",
           "status": "completed",
-          "conclusion": "pending",
+          "conclusion": "success",
           "created_at": "2026-03-20T06:19:46Z",
-          "started_at": "2026-03-20T06:20:16Z",
-          "completed_at": "2026-04-14T08:02:10Z",
+          "started_at": "2026-04-14T09:23:51Z",
+          "completed_at": "2026-04-14T09:27:53Z",
           "html_url": "https://gitcode.com/Ascend/triton-ascend/merge_requests/1405",
-          "queueDurationInSeconds": 30,
-          "durationInSeconds": 2166114.855
+          "queueDurationInSeconds": 2171045,
+          "durationInSeconds": 242
         }
       ]
     },
@@ -10934,9 +10934,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-03-20T06:42:12Z",
-      "updated_at": "2026-04-13T03:29:46Z",
+      "updated_at": "2026-04-14T14:04:36Z",
       "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/619",
-      "durationInSeconds": 2062054.46,
+      "durationInSeconds": 2186544.222,
       "jobs": [
         {
           "id": 6190104,
@@ -10945,10 +10945,10 @@
           "conclusion": "pending",
           "created_at": "2026-03-20T06:42:12Z",
           "started_at": "2026-03-20T06:42:42Z",
-          "completed_at": "2026-04-13T03:29:46Z",
+          "completed_at": "2026-04-14T14:04:36Z",
           "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/619",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 2062024.46
+          "durationInSeconds": 2186514.222
         }
       ]
     },
@@ -10984,9 +10984,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-03-20T06:01:35Z",
-      "updated_at": "2026-04-13T03:30:13Z",
+      "updated_at": "2026-04-14T14:04:17Z",
       "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/751",
-      "durationInSeconds": 2064518.314,
+      "durationInSeconds": 2188962.646,
       "jobs": [
         {
           "id": 7510102,
@@ -10995,10 +10995,10 @@
           "conclusion": "pending",
           "created_at": "2026-03-20T06:01:35Z",
           "started_at": "2026-03-20T06:02:05Z",
-          "completed_at": "2026-04-13T03:30:13Z",
+          "completed_at": "2026-04-14T14:04:17Z",
           "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/751",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 2064488.314
+          "durationInSeconds": 2188932.646
         }
       ]
     },
@@ -11084,9 +11084,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-03-20T06:42:32Z",
-      "updated_at": "2026-04-12T16:20:16Z",
+      "updated_at": "2026-04-14T14:04:25Z",
       "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/651",
-      "durationInSeconds": 2021864.678,
+      "durationInSeconds": 2186513.339,
       "jobs": [
         {
           "id": 6510103,
@@ -11095,10 +11095,10 @@
           "conclusion": "pending",
           "created_at": "2026-03-20T06:42:32Z",
           "started_at": "2026-03-20T06:43:02Z",
-          "completed_at": "2026-04-12T16:20:16Z",
+          "completed_at": "2026-04-14T14:04:25Z",
           "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/651",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 2021834.678
+          "durationInSeconds": 2186483.339
         }
       ]
     },
