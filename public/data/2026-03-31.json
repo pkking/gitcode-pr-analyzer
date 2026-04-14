@@ -3959,9 +3959,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-03-31T03:16:34Z",
-      "updated_at": "2026-04-14T02:55:55Z",
+      "updated_at": "2026-04-14T07:56:21Z",
       "html_url": "https://gitcode.com/Ascend/MindIE-LLM/merge_requests/566",
-      "durationInSeconds": 1208361.226,
+      "durationInSeconds": 1226387.152,
       "jobs": [
         {
           "id": 5660103,
@@ -3970,10 +3970,10 @@
           "conclusion": "pending",
           "created_at": "2026-03-31T03:16:34Z",
           "started_at": "2026-03-31T03:17:04Z",
-          "completed_at": "2026-04-14T02:55:55Z",
+          "completed_at": "2026-04-14T07:56:21Z",
           "html_url": "https://gitcode.com/Ascend/MindIE-LLM/merge_requests/566",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 1208331.226
+          "durationInSeconds": 1226357.152
         }
       ]
     },
@@ -3984,9 +3984,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-03-31T12:09:51Z",
-      "updated_at": "2026-04-14T02:55:55Z",
+      "updated_at": "2026-04-14T07:56:21Z",
       "html_url": "https://gitcode.com/Ascend/MindIE-LLM/merge_requests/566",
-      "durationInSeconds": 1176364.226,
+      "durationInSeconds": 1194390.152,
       "jobs": [
         {
           "id": 5660104,
@@ -3995,10 +3995,10 @@
           "conclusion": "pending",
           "created_at": "2026-03-31T12:09:51Z",
           "started_at": "2026-03-31T12:10:21Z",
-          "completed_at": "2026-04-14T02:55:55Z",
+          "completed_at": "2026-04-14T07:56:21Z",
           "html_url": "https://gitcode.com/Ascend/MindIE-LLM/merge_requests/566",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 1176334.226
+          "durationInSeconds": 1194360.152
         }
       ]
     },
@@ -4009,9 +4009,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-03-31T12:32:02Z",
-      "updated_at": "2026-04-14T02:55:55Z",
+      "updated_at": "2026-04-14T07:56:21Z",
       "html_url": "https://gitcode.com/Ascend/MindIE-LLM/merge_requests/566",
-      "durationInSeconds": 1175033.226,
+      "durationInSeconds": 1193059.152,
       "jobs": [
         {
           "id": 5660105,
@@ -4020,10 +4020,10 @@
           "conclusion": "pending",
           "created_at": "2026-03-31T12:32:02Z",
           "started_at": "2026-03-31T12:32:32Z",
-          "completed_at": "2026-04-14T02:55:55Z",
+          "completed_at": "2026-04-14T07:56:21Z",
           "html_url": "https://gitcode.com/Ascend/MindIE-LLM/merge_requests/566",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 1175003.226
+          "durationInSeconds": 1193029.152
         }
       ]
     },
@@ -4034,9 +4034,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-03-31T12:44:05Z",
-      "updated_at": "2026-04-14T02:55:55Z",
+      "updated_at": "2026-04-14T07:56:21Z",
       "html_url": "https://gitcode.com/Ascend/MindIE-LLM/merge_requests/566",
-      "durationInSeconds": 1174310.226,
+      "durationInSeconds": 1192336.152,
       "jobs": [
         {
           "id": 5660106,
@@ -4045,10 +4045,10 @@
           "conclusion": "pending",
           "created_at": "2026-03-31T12:44:05Z",
           "started_at": "2026-03-31T12:44:35Z",
-          "completed_at": "2026-04-14T02:55:55Z",
+          "completed_at": "2026-04-14T07:56:21Z",
           "html_url": "https://gitcode.com/Ascend/MindIE-LLM/merge_requests/566",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 1174280.226
+          "durationInSeconds": 1192306.152
         }
       ]
     },
@@ -16632,23 +16632,23 @@
       "name": "PR #1961 docs-ci - add BEVPoolV3 A5 ops",
       "head_branch": "bevpool",
       "status": "completed",
-      "conclusion": "pending",
+      "conclusion": "success",
       "created_at": "2026-03-31T03:04:54Z",
-      "updated_at": "2026-04-14T03:04:42Z",
+      "updated_at": "2026-04-14T03:06:55Z",
       "html_url": "https://gitcode.com/Ascend/DrivingSDK/merge_requests/1961",
-      "durationInSeconds": 1209588.017,
+      "durationInSeconds": 1209721,
       "jobs": [
         {
           "id": 19610101,
           "name": "docs-ci-pipeline-running",
           "status": "completed",
-          "conclusion": "pending",
+          "conclusion": "success",
           "created_at": "2026-03-31T03:04:54Z",
           "started_at": "2026-04-13T12:22:30Z",
-          "completed_at": "2026-04-14T03:04:42Z",
+          "completed_at": "2026-04-14T03:06:55Z",
           "html_url": "https://gitcode.com/Ascend/DrivingSDK/merge_requests/1961",
           "queueDurationInSeconds": 1156656,
-          "durationInSeconds": 52932.01699999999
+          "durationInSeconds": 53065
         }
       ]
     },
@@ -32132,23 +32132,23 @@
       "name": "PR #4597 docs-ci - fix: handle CPU scalar in addcmul",
       "head_branch": "master-issue443",
       "status": "completed",
-      "conclusion": "pending",
+      "conclusion": "success",
       "created_at": "2026-03-31T06:24:17Z",
-      "updated_at": "2026-04-14T03:10:32Z",
+      "updated_at": "2026-04-14T03:48:15Z",
       "html_url": "https://gitcode.com/Ascend/op-plugin/merge_requests/4597",
-      "durationInSeconds": 1197975.513,
+      "durationInSeconds": 1200238,
       "jobs": [
         {
           "id": 45970101,
-          "name": "docs-ci",
+          "name": "docs-ci-pipeline-running",
           "status": "completed",
-          "conclusion": "pending",
+          "conclusion": "success",
           "created_at": "2026-03-31T06:24:17Z",
-          "started_at": "2026-03-31T06:24:47Z",
-          "completed_at": "2026-04-14T03:10:32Z",
+          "started_at": "2026-04-14T03:46:38Z",
+          "completed_at": "2026-04-14T03:48:15Z",
           "html_url": "https://gitcode.com/Ascend/op-plugin/merge_requests/4597",
-          "queueDurationInSeconds": 30,
-          "durationInSeconds": 1197945.513
+          "queueDurationInSeconds": 1200141,
+          "durationInSeconds": 97
         }
       ]
     },
@@ -32232,23 +32232,23 @@
       "name": "PR #4516 docs-ci - moe_init_routing_v3 非量化模式支持透传mxfp8",
       "head_branch": "cpy_mxfp9",
       "status": "completed",
-      "conclusion": "pending",
+      "conclusion": "success",
       "created_at": "2026-03-31T06:04:55Z",
-      "updated_at": "2026-04-12T18:40:25Z",
+      "updated_at": "2026-04-14T08:03:23Z",
       "html_url": "https://gitcode.com/Ascend/op-plugin/merge_requests/4516",
-      "durationInSeconds": 1082130.313,
+      "durationInSeconds": 1216708,
       "jobs": [
         {
           "id": 45160103,
-          "name": "docs-ci",
+          "name": "docs-ci-pipeline-running",
           "status": "completed",
-          "conclusion": "pending",
+          "conclusion": "success",
           "created_at": "2026-03-31T06:04:55Z",
-          "started_at": "2026-03-31T06:05:25Z",
-          "completed_at": "2026-04-12T18:40:25Z",
+          "started_at": "2026-04-14T08:01:43Z",
+          "completed_at": "2026-04-14T08:03:23Z",
           "html_url": "https://gitcode.com/Ascend/op-plugin/merge_requests/4516",
-          "queueDurationInSeconds": 30,
-          "durationInSeconds": 1082100.313
+          "queueDurationInSeconds": 1216608,
+          "durationInSeconds": 100
         }
       ]
     }

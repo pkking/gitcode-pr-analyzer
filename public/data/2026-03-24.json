@@ -1,6 +1,6 @@
 {
   "date": "2026-03-24",
-  "repo": "Ascend/pytorch",
+  "repo": "Ascend/DrivingSDK",
   "runs": [
     {
       "id": 20000,
@@ -34,9 +34,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-03-24T13:46:45Z",
-      "updated_at": "2026-04-14T02:52:27Z",
+      "updated_at": "2026-04-14T07:53:13Z",
       "html_url": "https://gitcode.com/Ascend/Triton-distributed-ascend/merge_requests/2",
-      "durationInSeconds": 1775142.221,
+      "durationInSeconds": 1793188.058,
       "jobs": [
         {
           "id": 20101,
@@ -45,10 +45,10 @@
           "conclusion": "pending",
           "created_at": "2026-03-24T13:46:45Z",
           "started_at": "2026-03-24T13:47:15Z",
-          "completed_at": "2026-04-14T02:52:27Z",
+          "completed_at": "2026-04-14T07:53:13Z",
           "html_url": "https://gitcode.com/Ascend/Triton-distributed-ascend/merge_requests/2",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 1775112.221
+          "durationInSeconds": 1793158.058
         }
       ]
     },
@@ -16254,7 +16254,7 @@
     },
     {
       "id": 5620001,
-      "name": "PR #562 compile - [AscendNPU IR]  Normalize Pass support asin/acos/a",
+      "name": "PR #562 compile - [AscendNPU IR]  feat: Normalize Pass support asin/",
       "head_branch": "feature-acos/asin/acosh/atanh",
       "status": "completed",
       "conclusion": "success",
@@ -16279,14 +16279,14 @@
     },
     {
       "id": 5620101,
-      "name": "PR #562 docs-ci - [AscendNPU IR]  Normalize Pass support asin/acos/a",
+      "name": "PR #562 docs-ci - [AscendNPU IR]  feat: Normalize Pass support asin/",
       "head_branch": "feature-acos/asin/acosh/atanh",
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-03-24T13:13:13Z",
-      "updated_at": "2026-04-14T03:04:11Z",
+      "updated_at": "2026-04-14T08:02:40Z",
       "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/562",
-      "durationInSeconds": 1777858.702,
+      "durationInSeconds": 1795767.494,
       "jobs": [
         {
           "id": 5620102,
@@ -16295,10 +16295,10 @@
           "conclusion": "pending",
           "created_at": "2026-03-24T13:13:13Z",
           "started_at": "2026-03-24T13:13:43Z",
-          "completed_at": "2026-04-14T03:04:11Z",
+          "completed_at": "2026-04-14T08:02:40Z",
           "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/562",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 1777828.702
+          "durationInSeconds": 1795737.494
         }
       ]
     },

@@ -1,6 +1,6 @@
 {
   "date": "2026-04-02",
-  "repo": "Ascend/op-plugin",
+  "repo": "Ascend/msit",
   "runs": [
     {
       "id": 1000000,
@@ -259,9 +259,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-02T06:49:05Z",
-      "updated_at": "2026-04-14T02:52:27Z",
+      "updated_at": "2026-04-14T07:53:13Z",
       "html_url": "https://gitcode.com/Ascend/Triton-distributed-ascend/merge_requests/2",
-      "durationInSeconds": 1022602.221,
+      "durationInSeconds": 1040648.058,
       "jobs": [
         {
           "id": 20103,
@@ -270,10 +270,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-02T06:49:05Z",
           "started_at": "2026-04-02T06:49:35Z",
-          "completed_at": "2026-04-14T02:52:27Z",
+          "completed_at": "2026-04-14T07:53:13Z",
           "html_url": "https://gitcode.com/Ascend/Triton-distributed-ascend/merge_requests/2",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 1022572.221
+          "durationInSeconds": 1040618.058
         }
       ]
     },
@@ -284,9 +284,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-02T08:49:18Z",
-      "updated_at": "2026-04-14T02:52:27Z",
+      "updated_at": "2026-04-14T07:53:13Z",
       "html_url": "https://gitcode.com/Ascend/Triton-distributed-ascend/merge_requests/2",
-      "durationInSeconds": 1015389.221,
+      "durationInSeconds": 1033435.058,
       "jobs": [
         {
           "id": 20104,
@@ -295,10 +295,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-02T08:49:18Z",
           "started_at": "2026-04-02T08:49:48Z",
-          "completed_at": "2026-04-14T02:52:27Z",
+          "completed_at": "2026-04-14T07:53:13Z",
           "html_url": "https://gitcode.com/Ascend/Triton-distributed-ascend/merge_requests/2",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 1015359.221
+          "durationInSeconds": 1033405.058
         }
       ]
     },
@@ -2659,9 +2659,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-02T09:08:04Z",
-      "updated_at": "2026-04-14T02:54:23Z",
+      "updated_at": "2026-04-14T07:55:20Z",
       "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/117",
-      "durationInSeconds": 1014379.777,
+      "durationInSeconds": 1032436.524,
       "jobs": [
         {
           "id": 1170109,
@@ -2670,10 +2670,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-02T09:08:04Z",
           "started_at": "2026-04-02T09:08:34Z",
-          "completed_at": "2026-04-14T02:54:23Z",
+          "completed_at": "2026-04-14T07:55:20Z",
           "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/117",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 1014349.777
+          "durationInSeconds": 1032406.524
         }
       ]
     },
@@ -20557,23 +20557,23 @@
       "name": "PR #1961 docs-ci - add BEVPoolV3 A5 ops",
       "head_branch": "bevpool",
       "status": "completed",
-      "conclusion": "pending",
+      "conclusion": "success",
       "created_at": "2026-04-02T07:27:34Z",
-      "updated_at": "2026-04-14T03:04:42Z",
+      "updated_at": "2026-04-14T03:06:55Z",
       "html_url": "https://gitcode.com/Ascend/DrivingSDK/merge_requests/1961",
-      "durationInSeconds": 1021028.017,
+      "durationInSeconds": 1021161,
       "jobs": [
         {
           "id": 19610102,
           "name": "docs-ci-pipeline-running",
           "status": "completed",
-          "conclusion": "pending",
+          "conclusion": "success",
           "created_at": "2026-04-02T07:27:34Z",
           "started_at": "2026-04-13T12:22:30Z",
-          "completed_at": "2026-04-14T03:04:42Z",
+          "completed_at": "2026-04-14T03:06:55Z",
           "html_url": "https://gitcode.com/Ascend/DrivingSDK/merge_requests/1961",
           "queueDurationInSeconds": 968096,
-          "durationInSeconds": 52932.01699999999
+          "durationInSeconds": 53065
         }
       ]
     },
