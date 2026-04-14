@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 
-import { listRepoEntries, buildRunList, summarizeRun } from '../src/utils/etlData.js';
+import { listRepoEntries, buildRunList, summarizeRun, getPrMergeWaitDuration } from '../src/utils/etlData.js';
 
 test('listRepoEntries converts ETL index repos map into sorted repo entries', () => {
   const indexData = {
@@ -86,4 +86,17 @@ test('summarizeRun derives stable display fields from an ETL run', () => {
   assert.equal(summary.durationText, '3m 34s');
   assert.equal(summary.jobCount, 1);
   assert.equal(summary.link, 'https://gitcode.com/Ascend/community/merge_requests/465');
+});
+
+test('getPrMergeWaitDuration uses label-removal-to-merge duration', () => {
+  const detail = {
+    prSubmitToMerge: {
+      durationSeconds: 5635,
+    },
+    lastCiRemovalToMerge: {
+      durationSeconds: 572,
+    },
+  };
+
+  assert.equal(getPrMergeWaitDuration(detail), 572);
 });
