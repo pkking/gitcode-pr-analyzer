@@ -72,6 +72,10 @@ export function summarizeRun(run) {
   };
 }
 
+export function getPrMergeWaitDuration(detail) {
+  return detail?.lastCiRemovalToMerge?.durationSeconds ?? null;
+}
+
 export function getRunRepoParts(run) {
   try {
     const url = new URL(run?.html_url || '');

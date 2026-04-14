@@ -4,6 +4,7 @@ import {
   buildRepoRunList,
   formatSeconds,
   getPrDetailEntry,
+  getPrMergeWaitDuration,
   getRunPrNumber,
   getRunRepoParts,
   getRunStageName,
@@ -12,6 +13,7 @@ import {
   listOrgPrDetailEntries,
   summarizeRun,
 } from './utils/etlData.js';
+import { buildRunTimeline, getRunTotalDuration } from './utils/runTimeline.js';
 
 function App() {
   const [indexData, setIndexData] = useState(null);
@@ -177,7 +179,7 @@ function App() {
     if (!selectedOrg) return [];
 
     return listOrgPrDetailEntries(selectedOrg.owner)
-      .map(entry => detailByKey[entry.detailKey]?.prSubmitToMerge?.durationSeconds)
+      .map(entry => getPrMergeWaitDuration(detailByKey[entry.detailKey]))
       .filter(value => Number.isFinite(value));
   }, [detailByKey, selectedOrg]);
 
@@ -445,7 +447,8 @@ function RepoView({ repo, runs, onSelectRun }) {
 }
 
 function RunDetailView({ run, detail, timeline, onBack }) {
-  const totalDuration = timeline.reduce((sum, phase) => sum + phase.seconds, 0);
+  const totalDuration = getRunTotalDuration(run, timeline);
+  const hasTimeline = timeline.length > 0;
 
   return (
     <div className="space-y-6">
@@ -479,47 +482,53 @@ function RunDetailView({ run, detail, timeline, onBack }) {
         <div className="flex flex-col gap-2 md:flex-row md:items-end md:justify-between">
           <div>
             <div className="text-xs uppercase tracking-[0.3em] text-stone-500">Timeline</div>
-            <h3 className="mt-2 text-2xl font-semibold tracking-tight">CI 全过程三段式示意图</h3>
+            <h3 className="mt-2 text-2xl font-semibold tracking-tight">{hasTimeline ? 'CI 全过程三段式示意图' : 'CI 状态'}</h3>
           </div>
-          <div className="text-sm text-stone-500">
-            {detail ? '已匹配到 PR 明细，三段时间按真实节点展示。' : '未找到 PR 明细，已降级为使用当前 run 的队列 / 执行 / 总耗时推导。'}
-          </div>
+          {hasTimeline ? <div className="text-sm text-stone-500">已匹配到 PR 明细，三段时间按真实节点展示。</div> : null}
         </div>
 
-        <div className="mt-8 rounded-[28px] border border-stone-200 bg-stone-950 px-5 py-6 text-white">
-          <div className="flex items-center justify-between text-xs uppercase tracking-[0.25em] text-stone-400">
-            <span>CI触发</span>
-            <span>CI启动</span>
-            <span>CI完成</span>
-            <span>PR合入</span>
-          </div>
+        {hasTimeline ? (
+          <div className="mt-8 rounded-[28px] border border-stone-200 bg-stone-950 px-5 py-6 text-white">
+            <div className="flex items-center justify-between text-xs uppercase tracking-[0.25em] text-stone-400">
+              <span>CI触发</span>
+              <span>CI启动</span>
+              <span>CI完成</span>
+              <span>PR合入</span>
+            </div>
 
-          <div className="mt-4 flex h-5 overflow-hidden rounded-full bg-stone-800">
-            {timeline.map(phase => (
-              <div
-                key={phase.key}
-                className={`${phase.barClass} h-full transition-all`}
-                style={{ width: `${totalDuration > 0 ? (phase.seconds / totalDuration) * 100 : 0}%` }}
-                title={`${phase.label}: ${formatSeconds(phase.seconds)}`}
-              />
-            ))}
-          </div>
+            <div className="mt-4 flex h-5 overflow-hidden rounded-full bg-stone-800">
+              {timeline.map(phase => (
+                <div
+                  key={phase.key}
+                  className={`${phase.barClass} h-full transition-all`}
+                  style={{ width: `${totalDuration > 0 ? (phase.seconds / totalDuration) * 100 : 0}%` }}
+                  title={`${phase.label}: ${formatSeconds(phase.seconds)}`}
+                />
+              ))}
+            </div>
 
-          <div className="mt-6 grid gap-4 lg:grid-cols-3">
-            {timeline.map(phase => (
-              <div key={phase.key} className="rounded-3xl border border-stone-800 bg-stone-900/90 px-4 py-6">
-                <div className="text-center text-2xl font-semibold text-amber-300">{formatSeconds(phase.seconds)}</div>
-              </div>
-            ))}
+            <div className="mt-6 grid gap-4 lg:grid-cols-3">
+              {timeline.map(phase => (
+                <div key={phase.key} className="rounded-3xl border border-stone-800 bg-stone-900/90 px-4 py-6">
+                  <div className="text-center text-2xl font-semibold text-amber-300">{formatSeconds(phase.seconds)}</div>
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
+        ) : (
+          <div className="mt-8 rounded-[28px] border border-dashed border-stone-300 bg-stone-50 px-6 py-12 text-center text-stone-600">
+            当前已识别到这次 CI 运行，但没有可用的三段拆解明细。
+          </div>
+        )}
       </section>
 
-      <section className="grid gap-4 xl:grid-cols-3">
-        <SummaryCard label="CI启动时间" value={formatSeconds(timeline[0]?.seconds)} tone="amber" />
-        <SummaryCard label="CI运行时间" value={formatSeconds(timeline[1]?.seconds)} tone="green" />
-        <SummaryCard label="PR合入时间" value={formatSeconds(timeline[2]?.seconds)} tone="blue" />
-      </section>
+      {hasTimeline ? (
+        <section className="grid gap-4 xl:grid-cols-3">
+          <SummaryCard label="CI启动时间" value={formatSeconds(timeline[0]?.seconds)} tone="amber" />
+          <SummaryCard label="CI运行时间" value={formatSeconds(timeline[1]?.seconds)} tone="green" />
+          <SummaryCard label="PR合入时间" value={formatSeconds(timeline[2]?.seconds)} tone="blue" />
+        </section>
+      ) : null}
 
       <section className="overflow-hidden rounded-[28px] border border-stone-200 bg-white/90 shadow-lg shadow-stone-200/60">
         <div className="border-b border-stone-200 bg-stone-50/80 px-6 py-4">
@@ -576,93 +585,6 @@ function EmptyState() {
       从左侧选择一个组织或仓库开始浏览。
     </div>
   );
-}
-
-function buildRunTimeline(run, detail) {
-  if (!run) return [];
-
-  const primaryJob = Array.isArray(run.jobs) && run.jobs.length > 0 ? run.jobs[0] : null;
-  const fallbackPhaseOne = primaryJob?.queueDurationInSeconds || 0;
-  const fallbackPhaseTwo = primaryJob?.durationInSeconds || Math.max(0, (run.durationInSeconds || 0) - fallbackPhaseOne);
-  const fallbackPhaseThree = 0;
-
-  if (!detail) {
-    return [
-      {
-        key: 'comment_to_label',
-        eyebrow: 'Phase 1',
-        label: 'CI启动时间',
-        seconds: fallbackPhaseOne,
-        description: '',
-        barClass: 'bg-amber-400',
-      },
-      {
-        key: 'label_to_remove',
-        eyebrow: 'Phase 2',
-        label: 'CI运行时间',
-        seconds: fallbackPhaseTwo,
-        description: '',
-        barClass: 'bg-emerald-400',
-      },
-      {
-        key: 'remove_to_merge',
-        eyebrow: 'Phase 3',
-        label: 'PR合入时间',
-        seconds: fallbackPhaseThree,
-        description: '',
-        barClass: 'bg-sky-400',
-      },
-    ];
-  }
-
-  const matchedCycle = matchCycleToRun(run, detail.compileToCiCycles || []);
-  const phaseOne = matchedCycle
-    ? Math.max(0, (new Date(matchedCycle.compileTime).getTime() - new Date(run.created_at).getTime()) / 1000)
-    : fallbackPhaseOne;
-  const phaseTwo = matchedCycle?.durationSeconds ?? fallbackPhaseTwo;
-  const phaseThree = detail.lastCiRemovalToMerge?.durationSeconds ?? fallbackPhaseThree;
-
-  return [
-    {
-      key: 'comment_to_label',
-      eyebrow: 'Phase 1',
-      label: 'CI启动时间',
-      seconds: phaseOne,
-      description: '',
-      barClass: 'bg-amber-400',
-    },
-    {
-      key: 'label_to_remove',
-      eyebrow: 'Phase 2',
-      label: 'CI运行时间',
-      seconds: phaseTwo,
-      description: '',
-      barClass: 'bg-emerald-400',
-    },
-    {
-      key: 'remove_to_merge',
-      eyebrow: 'Phase 3',
-      label: 'PR合入时间',
-      seconds: phaseThree,
-      description: '',
-      barClass: 'bg-sky-400',
-    },
-  ];
-}
-
-function matchCycleToRun(run, cycles) {
-  if (!Array.isArray(cycles) || cycles.length === 0) return null;
-
-  const primaryJob = Array.isArray(run.jobs) && run.jobs.length > 0 ? run.jobs[0] : null;
-  const startedAt = primaryJob?.started_at ? new Date(primaryJob.started_at).getTime() : new Date(run.created_at).getTime();
-
-  return cycles.reduce((best, cycle) => {
-    const diff = Math.abs(new Date(cycle.compileTime).getTime() - startedAt);
-    if (!best || diff < best.diff) {
-      return { diff, cycle };
-    }
-    return best;
-  }, null)?.cycle || null;
 }
 
 function formatPercent(value) {
