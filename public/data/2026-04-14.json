@@ -4,101 +4,101 @@
   "runs": [
     {
       "id": 120002,
-      "name": "PR #12 compile - [doc]: 易用性调整，readme文档整改",
-      "head_branch": "change_readme",
+      "name": "PR #12 compile - 适配gte模型支持flash attention",
+      "head_branch": "fix_gte",
       "status": "completed",
-      "conclusion": "failure",
-      "created_at": "2026-04-14T02:35:34Z",
-      "updated_at": "2026-04-14T02:39:46Z",
-      "html_url": "https://gitcode.com/Ascend/msoptuner/merge_requests/12",
-      "durationInSeconds": 252,
+      "conclusion": "success",
+      "created_at": "2026-04-14T00:41:22Z",
+      "updated_at": "2026-04-14T00:44:04Z",
+      "html_url": "https://gitcode.com/Ascend/text-embeddings-inference/merge_requests/12",
+      "durationInSeconds": 162,
       "jobs": [
         {
           "id": 120003,
           "name": "ci-pipeline-running",
           "status": "completed",
-          "conclusion": "failure",
-          "created_at": "2026-04-14T02:35:34Z",
-          "started_at": "2026-04-14T02:36:17Z",
-          "completed_at": "2026-04-14T02:39:46Z",
-          "html_url": "https://gitcode.com/Ascend/msoptuner/merge_requests/12",
-          "queueDurationInSeconds": 43,
-          "durationInSeconds": 209
+          "conclusion": "success",
+          "created_at": "2026-04-14T00:41:22Z",
+          "started_at": "2026-04-14T00:41:43Z",
+          "completed_at": "2026-04-14T00:44:04Z",
+          "html_url": "https://gitcode.com/Ascend/text-embeddings-inference/merge_requests/12",
+          "queueDurationInSeconds": 21,
+          "durationInSeconds": 141
         }
       ]
     },
     {
       "id": 120003,
-      "name": "PR #12 compile - [doc]: 易用性调整，readme文档整改",
-      "head_branch": "change_readme",
+      "name": "PR #12 compile - 适配gte模型支持flash attention",
+      "head_branch": "fix_gte",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-04-14T08:10:42Z",
-      "updated_at": "2026-04-14T08:23:24Z",
-      "html_url": "https://gitcode.com/Ascend/msoptuner/merge_requests/12",
-      "durationInSeconds": 762,
+      "created_at": "2026-04-14T00:49:29Z",
+      "updated_at": "2026-04-14T00:52:09Z",
+      "html_url": "https://gitcode.com/Ascend/text-embeddings-inference/merge_requests/12",
+      "durationInSeconds": 160,
       "jobs": [
         {
           "id": 120004,
           "name": "ci-pipeline-running",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-04-14T08:10:42Z",
-          "started_at": "2026-04-14T08:11:36Z",
-          "completed_at": "2026-04-14T08:23:24Z",
-          "html_url": "https://gitcode.com/Ascend/msoptuner/merge_requests/12",
-          "queueDurationInSeconds": 54,
-          "durationInSeconds": 708
+          "created_at": "2026-04-14T00:49:29Z",
+          "started_at": "2026-04-14T00:49:51Z",
+          "completed_at": "2026-04-14T00:52:09Z",
+          "html_url": "https://gitcode.com/Ascend/text-embeddings-inference/merge_requests/12",
+          "queueDurationInSeconds": 22,
+          "durationInSeconds": 138
         }
       ]
     },
     {
       "id": 120102,
-      "name": "PR #12 docs-ci - [doc]: 易用性调整，readme文档整改",
-      "head_branch": "change_readme",
+      "name": "PR #12 docs-ci - 适配gte模型支持flash attention",
+      "head_branch": "fix_gte",
       "status": "completed",
       "conclusion": "pending",
-      "created_at": "2026-04-14T02:35:34Z",
-      "updated_at": "2026-04-15T13:50:32Z",
-      "html_url": "https://gitcode.com/Ascend/msoptuner/merge_requests/12",
-      "durationInSeconds": 126898.417,
+      "created_at": "2026-04-14T00:41:22Z",
+      "updated_at": "2026-04-15T19:23:47Z",
+      "html_url": "https://gitcode.com/Ascend/text-embeddings-inference/merge_requests/12",
+      "durationInSeconds": 153745.328,
       "jobs": [
         {
           "id": 120103,
           "name": "docs-ci",
           "status": "completed",
           "conclusion": "pending",
-          "created_at": "2026-04-14T02:35:34Z",
-          "started_at": "2026-04-14T02:36:04Z",
-          "completed_at": "2026-04-15T13:50:32Z",
-          "html_url": "https://gitcode.com/Ascend/msoptuner/merge_requests/12",
+          "created_at": "2026-04-14T00:41:22Z",
+          "started_at": "2026-04-14T00:41:52Z",
+          "completed_at": "2026-04-15T19:23:47Z",
+          "html_url": "https://gitcode.com/Ascend/text-embeddings-inference/merge_requests/12",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 126868.417
+          "durationInSeconds": 153715.328
         }
       ]
     },
     {
       "id": 120103,
-      "name": "PR #12 docs-ci - [doc]: 易用性调整，readme文档整改",
-      "head_branch": "change_readme",
+      "name": "PR #12 docs-ci - 适配gte模型支持flash attention",
+      "head_branch": "fix_gte",
       "status": "completed",
       "conclusion": "pending",
-      "created_at": "2026-04-14T08:10:42Z",
-      "updated_at": "2026-04-15T13:50:32Z",
-      "html_url": "https://gitcode.com/Ascend/msoptuner/merge_requests/12",
-      "durationInSeconds": 106790.417,
+      "created_at": "2026-04-14T00:49:29Z",
+      "updated_at": "2026-04-15T19:23:47Z",
+      "html_url": "https://gitcode.com/Ascend/text-embeddings-inference/merge_requests/12",
+      "durationInSeconds": 153258.328,
       "jobs": [
         {
           "id": 120104,
           "name": "docs-ci",
           "status": "completed",
           "conclusion": "pending",
-          "created_at": "2026-04-14T08:10:42Z",
-          "started_at": "2026-04-14T08:11:12Z",
-          "completed_at": "2026-04-15T13:50:32Z",
-          "html_url": "https://gitcode.com/Ascend/msoptuner/merge_requests/12",
+          "created_at": "2026-04-14T00:49:29Z",
+          "started_at": "2026-04-14T00:49:59Z",
+          "completed_at": "2026-04-15T19:23:47Z",
+          "html_url": "https://gitcode.com/Ascend/text-embeddings-inference/merge_requests/12",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 106760.417
+          "durationInSeconds": 153228.328
         }
       ]
     },
@@ -309,9 +309,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T02:43:03Z",
-      "updated_at": "2026-04-15T13:49:50Z",
+      "updated_at": "2026-04-15T19:25:57Z",
       "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/117",
-      "durationInSeconds": 126407.697,
+      "durationInSeconds": 146574.722,
       "jobs": [
         {
           "id": 1170123,
@@ -320,10 +320,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T02:43:03Z",
           "started_at": "2026-04-14T02:43:33Z",
-          "completed_at": "2026-04-15T13:49:50Z",
+          "completed_at": "2026-04-15T19:25:57Z",
           "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/117",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 126377.697
+          "durationInSeconds": 146544.722
         }
       ]
     },
@@ -334,9 +334,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T02:51:38Z",
-      "updated_at": "2026-04-15T13:49:50Z",
+      "updated_at": "2026-04-15T19:25:57Z",
       "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/117",
-      "durationInSeconds": 125892.697,
+      "durationInSeconds": 146059.722,
       "jobs": [
         {
           "id": 1170124,
@@ -345,10 +345,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T02:51:38Z",
           "started_at": "2026-04-14T02:52:08Z",
-          "completed_at": "2026-04-15T13:49:50Z",
+          "completed_at": "2026-04-15T19:25:57Z",
           "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/117",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 125862.697
+          "durationInSeconds": 146029.722
         }
       ]
     },
@@ -534,9 +534,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T01:57:06Z",
-      "updated_at": "2026-04-15T13:50:49Z",
+      "updated_at": "2026-04-15T19:26:31Z",
       "html_url": "https://gitcode.com/Ascend/msopprof/merge_requests/107",
-      "durationInSeconds": 129223.972,
+      "durationInSeconds": 149365.668,
       "jobs": [
         {
           "id": 1070101,
@@ -545,10 +545,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T01:57:06Z",
           "started_at": "2026-04-14T01:57:36Z",
-          "completed_at": "2026-04-15T13:50:49Z",
+          "completed_at": "2026-04-15T19:26:31Z",
           "html_url": "https://gitcode.com/Ascend/msopprof/merge_requests/107",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 129193.972
+          "durationInSeconds": 149335.668
         }
       ]
     },
@@ -584,9 +584,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T11:55:45Z",
-      "updated_at": "2026-04-15T13:55:03Z",
+      "updated_at": "2026-04-15T19:29:06Z",
       "html_url": "https://gitcode.com/Ascend/msprof-analyze/merge_requests/108",
-      "durationInSeconds": 93558.929,
+      "durationInSeconds": 113601.63,
       "jobs": [
         {
           "id": 1080101,
@@ -595,10 +595,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T11:55:45Z",
           "started_at": "2026-04-14T11:56:15Z",
-          "completed_at": "2026-04-15T13:55:03Z",
+          "completed_at": "2026-04-15T19:29:06Z",
           "html_url": "https://gitcode.com/Ascend/msprof-analyze/merge_requests/108",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 93528.929
+          "durationInSeconds": 113571.63
         }
       ]
     },
@@ -1684,9 +1684,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T01:17:57Z",
-      "updated_at": "2026-04-15T13:54:24Z",
+      "updated_at": "2026-04-15T19:28:52Z",
       "html_url": "https://gitcode.com/Ascend/msmodelslim/merge_requests/311",
-      "durationInSeconds": 131787.457,
+      "durationInSeconds": 151855.264,
       "jobs": [
         {
           "id": 3110113,
@@ -1695,10 +1695,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T01:17:57Z",
           "started_at": "2026-04-14T01:18:27Z",
-          "completed_at": "2026-04-15T13:54:24Z",
+          "completed_at": "2026-04-15T19:28:52Z",
           "html_url": "https://gitcode.com/Ascend/msmodelslim/merge_requests/311",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 131757.457
+          "durationInSeconds": 151825.264
         }
       ]
     },
@@ -2834,9 +2834,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T02:30:54Z",
-      "updated_at": "2026-04-15T13:57:45Z",
+      "updated_at": "2026-04-15T19:31:08Z",
       "html_url": "https://gitcode.com/Ascend/triton-ascend/merge_requests/1577",
-      "durationInSeconds": 127611.379,
+      "durationInSeconds": 147614.815,
       "jobs": [
         {
           "id": 15770107,
@@ -2845,10 +2845,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T02:30:54Z",
           "started_at": "2026-04-14T02:31:24Z",
-          "completed_at": "2026-04-15T13:57:45Z",
+          "completed_at": "2026-04-15T19:31:08Z",
           "html_url": "https://gitcode.com/Ascend/triton-ascend/merge_requests/1577",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 127581.379
+          "durationInSeconds": 147584.815
         }
       ]
     },
@@ -4284,9 +4284,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T02:50:40Z",
-      "updated_at": "2026-04-15T14:06:21Z",
+      "updated_at": "2026-04-15T19:37:35Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33653",
-      "durationInSeconds": 126941.51,
+      "durationInSeconds": 146815.425,
       "jobs": [
         {
           "id": 336530101,
@@ -4295,10 +4295,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T02:50:40Z",
           "started_at": "2026-04-14T02:51:10Z",
-          "completed_at": "2026-04-15T14:06:21Z",
+          "completed_at": "2026-04-15T19:37:35Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33653",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 126911.51
+          "durationInSeconds": 146785.425
         }
       ]
     },
@@ -4334,9 +4334,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T02:03:16Z",
-      "updated_at": "2026-04-15T14:02:45Z",
+      "updated_at": "2026-04-15T19:34:43Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33649",
-      "durationInSeconds": 129569.411,
+      "durationInSeconds": 149487.437,
       "jobs": [
         {
           "id": 336490101,
@@ -4345,10 +4345,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T02:03:16Z",
           "started_at": "2026-04-14T02:03:46Z",
-          "completed_at": "2026-04-15T14:02:45Z",
+          "completed_at": "2026-04-15T19:34:43Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33649",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 129539.411
+          "durationInSeconds": 149457.437
         }
       ]
     },
@@ -4434,9 +4434,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T02:08:27Z",
-      "updated_at": "2026-04-15T14:05:29Z",
+      "updated_at": "2026-04-15T19:36:58Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/31588",
-      "durationInSeconds": 129422.852,
+      "durationInSeconds": 149311.067,
       "jobs": [
         {
           "id": 315880106,
@@ -4445,10 +4445,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T02:08:27Z",
           "started_at": "2026-04-14T02:08:57Z",
-          "completed_at": "2026-04-15T14:05:29Z",
+          "completed_at": "2026-04-15T19:36:58Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/31588",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 129392.852
+          "durationInSeconds": 149281.067
         }
       ]
     },
@@ -4534,9 +4534,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T02:52:11Z",
-      "updated_at": "2026-04-15T14:06:12Z",
+      "updated_at": "2026-04-15T19:37:27Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33657",
-      "durationInSeconds": 126841.268,
+      "durationInSeconds": 146716.933,
       "jobs": [
         {
           "id": 336570101,
@@ -4545,10 +4545,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T02:52:11Z",
           "started_at": "2026-04-14T02:52:41Z",
-          "completed_at": "2026-04-15T14:06:12Z",
+          "completed_at": "2026-04-15T19:37:27Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33657",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 126811.268
+          "durationInSeconds": 146686.933
         }
       ]
     },
@@ -4634,9 +4634,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T02:52:02Z",
-      "updated_at": "2026-04-15T14:06:13Z",
+      "updated_at": "2026-04-15T19:37:29Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33656",
-      "durationInSeconds": 126851.979,
+      "durationInSeconds": 146727.036,
       "jobs": [
         {
           "id": 336560101,
@@ -4645,10 +4645,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T02:52:02Z",
           "started_at": "2026-04-14T02:52:32Z",
-          "completed_at": "2026-04-15T14:06:13Z",
+          "completed_at": "2026-04-15T19:37:29Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33656",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 126821.979
+          "durationInSeconds": 146697.036
         }
       ]
     },
@@ -4709,9 +4709,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T01:24:49Z",
-      "updated_at": "2026-04-15T14:06:24Z",
+      "updated_at": "2026-04-15T19:37:38Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33558",
-      "durationInSeconds": 132095.304,
+      "durationInSeconds": 151969.255,
       "jobs": [
         {
           "id": 335580104,
@@ -4720,10 +4720,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T01:24:49Z",
           "started_at": "2026-04-14T01:25:19Z",
-          "completed_at": "2026-04-15T14:06:24Z",
+          "completed_at": "2026-04-15T19:37:38Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33558",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 132065.304
+          "durationInSeconds": 151939.255
         }
       ]
     },
@@ -4734,9 +4734,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T02:51:31Z",
-      "updated_at": "2026-04-15T14:06:24Z",
+      "updated_at": "2026-04-15T19:37:38Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33558",
-      "durationInSeconds": 126893.304,
+      "durationInSeconds": 146767.255,
       "jobs": [
         {
           "id": 335580105,
@@ -4745,10 +4745,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T02:51:31Z",
           "started_at": "2026-04-14T02:52:01Z",
-          "completed_at": "2026-04-15T14:06:24Z",
+          "completed_at": "2026-04-15T19:37:38Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33558",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 126863.304
+          "durationInSeconds": 146737.255
         }
       ]
     },
@@ -4784,9 +4784,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T02:51:53Z",
-      "updated_at": "2026-04-15T14:06:15Z",
+      "updated_at": "2026-04-15T19:37:30Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33655",
-      "durationInSeconds": 126862.391,
+      "durationInSeconds": 146737.112,
       "jobs": [
         {
           "id": 336550101,
@@ -4795,10 +4795,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T02:51:53Z",
           "started_at": "2026-04-14T02:52:23Z",
-          "completed_at": "2026-04-15T14:06:15Z",
+          "completed_at": "2026-04-15T19:37:30Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33655",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 126832.391
+          "durationInSeconds": 146707.112
         }
       ]
     },
@@ -4984,9 +4984,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T02:51:44Z",
-      "updated_at": "2026-04-15T14:06:16Z",
+      "updated_at": "2026-04-15T19:37:31Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33654",
-      "durationInSeconds": 126872.809,
+      "durationInSeconds": 146747.174,
       "jobs": [
         {
           "id": 336540101,
@@ -4995,10 +4995,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T02:51:44Z",
           "started_at": "2026-04-14T02:52:14Z",
-          "completed_at": "2026-04-15T14:06:16Z",
+          "completed_at": "2026-04-15T19:37:31Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33654",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 126842.809
+          "durationInSeconds": 146717.174
         }
       ]
     },
@@ -5184,9 +5184,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T02:01:35Z",
-      "updated_at": "2026-04-15T14:01:34Z",
+      "updated_at": "2026-04-15T19:33:35Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33441",
-      "durationInSeconds": 129599.572,
+      "durationInSeconds": 149520.967,
       "jobs": [
         {
           "id": 334410119,
@@ -5195,10 +5195,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T02:01:35Z",
           "started_at": "2026-04-14T02:02:05Z",
-          "completed_at": "2026-04-15T14:01:34Z",
+          "completed_at": "2026-04-15T19:33:35Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33441",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 129569.572
+          "durationInSeconds": 149490.967
         }
       ]
     },
@@ -5434,9 +5434,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T02:01:31Z",
-      "updated_at": "2026-04-15T14:01:57Z",
+      "updated_at": "2026-04-15T19:33:25Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33439",
-      "durationInSeconds": 129626.207,
+      "durationInSeconds": 149514.992,
       "jobs": [
         {
           "id": 334390118,
@@ -5445,10 +5445,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T02:01:31Z",
           "started_at": "2026-04-14T02:02:01Z",
-          "completed_at": "2026-04-15T14:01:57Z",
+          "completed_at": "2026-04-15T19:33:25Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33439",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 129596.207
+          "durationInSeconds": 149484.992
         }
       ]
     },
@@ -5484,9 +5484,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T02:01:42Z",
-      "updated_at": "2026-04-15T14:01:48Z",
+      "updated_at": "2026-04-15T19:33:45Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33440",
-      "durationInSeconds": 129606.193,
+      "durationInSeconds": 149523.926,
       "jobs": [
         {
           "id": 334400119,
@@ -5495,10 +5495,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T02:01:42Z",
           "started_at": "2026-04-14T02:02:12Z",
-          "completed_at": "2026-04-15T14:01:48Z",
+          "completed_at": "2026-04-15T19:33:45Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33440",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 129576.193
+          "durationInSeconds": 149493.926
         }
       ]
     },
@@ -5534,9 +5534,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T02:01:24Z",
-      "updated_at": "2026-04-15T14:01:31Z",
+      "updated_at": "2026-04-15T19:33:29Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33442",
-      "durationInSeconds": 129607.493,
+      "durationInSeconds": 149525.893,
       "jobs": [
         {
           "id": 334420119,
@@ -5545,10 +5545,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T02:01:24Z",
           "started_at": "2026-04-14T02:01:54Z",
-          "completed_at": "2026-04-15T14:01:31Z",
+          "completed_at": "2026-04-15T19:33:29Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33442",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 129577.493
+          "durationInSeconds": 149495.893
         }
       ]
     },
@@ -5584,9 +5584,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T01:24:00Z",
-      "updated_at": "2026-04-15T14:04:32Z",
+      "updated_at": "2026-04-15T19:36:15Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/32397",
-      "durationInSeconds": 132032.849,
+      "durationInSeconds": 151935.465,
       "jobs": [
         {
           "id": 323970104,
@@ -5595,10 +5595,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T01:24:00Z",
           "started_at": "2026-04-14T01:24:30Z",
-          "completed_at": "2026-04-15T14:04:32Z",
+          "completed_at": "2026-04-15T19:36:15Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/32397",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 132002.849
+          "durationInSeconds": 151905.465
         }
       ]
     },
@@ -5684,9 +5684,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T01:24:17Z",
-      "updated_at": "2026-04-15T14:04:36Z",
+      "updated_at": "2026-04-15T19:36:17Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/32351",
-      "durationInSeconds": 132019.552,
+      "durationInSeconds": 151920.9,
       "jobs": [
         {
           "id": 323510105,
@@ -5695,10 +5695,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T01:24:17Z",
           "started_at": "2026-04-14T01:24:47Z",
-          "completed_at": "2026-04-15T14:04:36Z",
+          "completed_at": "2026-04-15T19:36:17Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/32351",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 131989.552
+          "durationInSeconds": 151890.9
         }
       ]
     },
@@ -6184,9 +6184,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T01:19:05Z",
-      "updated_at": "2026-04-15T14:06:22Z",
+      "updated_at": "2026-04-15T19:37:36Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/32517",
-      "durationInSeconds": 132437.781,
+      "durationInSeconds": 152311.735,
       "jobs": [
         {
           "id": 325170105,
@@ -6195,10 +6195,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T01:19:05Z",
           "started_at": "2026-04-14T01:19:35Z",
-          "completed_at": "2026-04-15T14:06:22Z",
+          "completed_at": "2026-04-15T19:37:36Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/32517",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 132407.781
+          "durationInSeconds": 152281.735
         }
       ]
     },
@@ -7584,9 +7584,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T03:02:55Z",
-      "updated_at": "2026-04-15T13:49:50Z",
+      "updated_at": "2026-04-15T19:25:57Z",
       "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/117",
-      "durationInSeconds": 125215.697,
+      "durationInSeconds": 145382.722,
       "jobs": [
         {
           "id": 1170125,
@@ -7595,10 +7595,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T03:02:55Z",
           "started_at": "2026-04-14T03:03:25Z",
-          "completed_at": "2026-04-15T13:49:50Z",
+          "completed_at": "2026-04-15T19:25:57Z",
           "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/117",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 125185.697
+          "durationInSeconds": 145352.722
         }
       ]
     },
@@ -8934,9 +8934,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T06:19:31Z",
-      "updated_at": "2026-04-15T13:53:11Z",
+      "updated_at": "2026-04-15T19:27:55Z",
       "html_url": "https://gitcode.com/Ascend/msprof/merge_requests/182",
-      "durationInSeconds": 113620.721,
+      "durationInSeconds": 133704.508,
       "jobs": [
         {
           "id": 1820101,
@@ -8945,10 +8945,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T06:19:31Z",
           "started_at": "2026-04-14T06:20:01Z",
-          "completed_at": "2026-04-15T13:53:11Z",
+          "completed_at": "2026-04-15T19:27:55Z",
           "html_url": "https://gitcode.com/Ascend/msprof/merge_requests/182",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 113590.721
+          "durationInSeconds": 133674.508
         }
       ]
     },
@@ -9484,9 +9484,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T03:16:00Z",
-      "updated_at": "2026-04-15T13:53:54Z",
+      "updated_at": "2026-04-15T19:28:28Z",
       "html_url": "https://gitcode.com/Ascend/msinsight/merge_requests/426",
-      "durationInSeconds": 124674.859,
+      "durationInSeconds": 144748.083,
       "jobs": [
         {
           "id": 4260104,
@@ -9495,10 +9495,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T03:16:00Z",
           "started_at": "2026-04-14T03:16:30Z",
-          "completed_at": "2026-04-15T13:53:54Z",
+          "completed_at": "2026-04-15T19:28:28Z",
           "html_url": "https://gitcode.com/Ascend/msinsight/merge_requests/426",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 124644.859
+          "durationInSeconds": 144718.083
         }
       ]
     },
@@ -9584,9 +9584,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T03:25:17Z",
-      "updated_at": "2026-04-15T13:54:00Z",
+      "updated_at": "2026-04-15T19:28:32Z",
       "html_url": "https://gitcode.com/Ascend/msmemscope/merge_requests/99",
-      "durationInSeconds": 124123.422,
+      "durationInSeconds": 144195.986,
       "jobs": [
         {
           "id": 990101,
@@ -9595,10 +9595,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T03:25:17Z",
           "started_at": "2026-04-14T03:25:47Z",
-          "completed_at": "2026-04-15T13:54:00Z",
+          "completed_at": "2026-04-15T19:28:32Z",
           "html_url": "https://gitcode.com/Ascend/msmemscope/merge_requests/99",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 124093.422
+          "durationInSeconds": 144165.986
         }
       ]
     },
@@ -9634,9 +9634,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T03:24:42Z",
-      "updated_at": "2026-04-15T13:53:59Z",
+      "updated_at": "2026-04-15T19:28:32Z",
       "html_url": "https://gitcode.com/Ascend/msmemscope/merge_requests/98",
-      "durationInSeconds": 124157.472,
+      "durationInSeconds": 144230.106,
       "jobs": [
         {
           "id": 980101,
@@ -9645,10 +9645,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T03:24:42Z",
           "started_at": "2026-04-14T03:25:12Z",
-          "completed_at": "2026-04-15T13:53:59Z",
+          "completed_at": "2026-04-15T19:28:32Z",
           "html_url": "https://gitcode.com/Ascend/msmemscope/merge_requests/98",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 124127.472
+          "durationInSeconds": 144200.106
         }
       ]
     },
@@ -10384,9 +10384,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T07:27:43Z",
-      "updated_at": "2026-04-15T13:54:24Z",
+      "updated_at": "2026-04-15T19:28:52Z",
       "html_url": "https://gitcode.com/Ascend/msmodelslim/merge_requests/311",
-      "durationInSeconds": 109601.458,
+      "durationInSeconds": 129669.264,
       "jobs": [
         {
           "id": 3110114,
@@ -10395,10 +10395,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T07:27:43Z",
           "started_at": "2026-04-14T07:28:13Z",
-          "completed_at": "2026-04-15T13:54:24Z",
+          "completed_at": "2026-04-15T19:28:52Z",
           "html_url": "https://gitcode.com/Ascend/msmodelslim/merge_requests/311",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 109571.458
+          "durationInSeconds": 129639.264
         }
       ]
     },
@@ -11034,9 +11034,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T07:48:57Z",
-      "updated_at": "2026-04-15T13:56:54Z",
+      "updated_at": "2026-04-15T19:30:26Z",
       "html_url": "https://gitcode.com/Ascend/msprobe/merge_requests/530",
-      "durationInSeconds": 108477.461,
+      "durationInSeconds": 128489.088,
       "jobs": [
         {
           "id": 5300107,
@@ -11045,10 +11045,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T07:48:57Z",
           "started_at": "2026-04-14T07:49:27Z",
-          "completed_at": "2026-04-15T13:56:54Z",
+          "completed_at": "2026-04-15T19:30:26Z",
           "html_url": "https://gitcode.com/Ascend/msprobe/merge_requests/530",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 108447.461
+          "durationInSeconds": 128459.088
         }
       ]
     },
@@ -12084,9 +12084,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T06:20:12Z",
-      "updated_at": "2026-04-15T13:57:45Z",
+      "updated_at": "2026-04-15T19:31:08Z",
       "html_url": "https://gitcode.com/Ascend/triton-ascend/merge_requests/1577",
-      "durationInSeconds": 113853.379,
+      "durationInSeconds": 133856.815,
       "jobs": [
         {
           "id": 15770108,
@@ -12095,10 +12095,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T06:20:12Z",
           "started_at": "2026-04-14T06:20:42Z",
-          "completed_at": "2026-04-15T13:57:45Z",
+          "completed_at": "2026-04-15T19:31:08Z",
           "html_url": "https://gitcode.com/Ascend/triton-ascend/merge_requests/1577",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 113823.379
+          "durationInSeconds": 133826.815
         }
       ]
     },
@@ -12234,9 +12234,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T08:01:31Z",
-      "updated_at": "2026-04-15T14:00:07Z",
+      "updated_at": "2026-04-15T19:32:28Z",
       "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/1030",
-      "durationInSeconds": 107916.11,
+      "durationInSeconds": 127857.685,
       "jobs": [
         {
           "id": 10300101,
@@ -12245,10 +12245,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T08:01:31Z",
           "started_at": "2026-04-14T08:02:01Z",
-          "completed_at": "2026-04-15T14:00:07Z",
+          "completed_at": "2026-04-15T19:32:28Z",
           "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/1030",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 107886.11
+          "durationInSeconds": 127827.685
         }
       ]
     },
@@ -12434,9 +12434,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T03:54:20Z",
-      "updated_at": "2026-04-15T13:59:50Z",
+      "updated_at": "2026-04-15T19:32:15Z",
       "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/1025",
-      "durationInSeconds": 122730.456,
+      "durationInSeconds": 142675.903,
       "jobs": [
         {
           "id": 10250101,
@@ -12445,10 +12445,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T03:54:20Z",
           "started_at": "2026-04-14T03:54:50Z",
-          "completed_at": "2026-04-15T13:59:50Z",
+          "completed_at": "2026-04-15T19:32:15Z",
           "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/1025",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 122700.456
+          "durationInSeconds": 142645.903
         }
       ]
     },
@@ -13884,9 +13884,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T03:46:37Z",
-      "updated_at": "2026-04-15T14:06:24Z",
+      "updated_at": "2026-04-15T19:37:38Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33558",
-      "durationInSeconds": 123587.304,
+      "durationInSeconds": 143461.255,
       "jobs": [
         {
           "id": 335580106,
@@ -13895,10 +13895,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T03:46:37Z",
           "started_at": "2026-04-14T03:47:07Z",
-          "completed_at": "2026-04-15T14:06:24Z",
+          "completed_at": "2026-04-15T19:37:38Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33558",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 123557.304
+          "durationInSeconds": 143431.255
         }
       ]
     },
@@ -13909,9 +13909,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T07:15:26Z",
-      "updated_at": "2026-04-15T14:06:24Z",
+      "updated_at": "2026-04-15T19:37:38Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33558",
-      "durationInSeconds": 111058.304,
+      "durationInSeconds": 130932.256,
       "jobs": [
         {
           "id": 335580107,
@@ -13920,10 +13920,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T07:15:26Z",
           "started_at": "2026-04-14T07:15:56Z",
-          "completed_at": "2026-04-15T14:06:24Z",
+          "completed_at": "2026-04-15T19:37:38Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33558",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 111028.304
+          "durationInSeconds": 130902.256
         }
       ]
     },
@@ -13934,9 +13934,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T07:54:26Z",
-      "updated_at": "2026-04-15T14:06:24Z",
+      "updated_at": "2026-04-15T19:37:38Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33558",
-      "durationInSeconds": 108718.304,
+      "durationInSeconds": 128592.256,
       "jobs": [
         {
           "id": 335580108,
@@ -13945,10 +13945,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T07:54:26Z",
           "started_at": "2026-04-14T07:54:56Z",
-          "completed_at": "2026-04-15T14:06:24Z",
+          "completed_at": "2026-04-15T19:37:38Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33558",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 108688.304
+          "durationInSeconds": 128562.256
         }
       ]
     },
@@ -14034,9 +14034,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T08:01:31Z",
-      "updated_at": "2026-04-15T14:01:57Z",
+      "updated_at": "2026-04-15T19:33:25Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33439",
-      "durationInSeconds": 108026.207,
+      "durationInSeconds": 127914.992,
       "jobs": [
         {
           "id": 334390119,
@@ -14045,10 +14045,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T08:01:31Z",
           "started_at": "2026-04-14T08:02:01Z",
-          "completed_at": "2026-04-15T14:01:57Z",
+          "completed_at": "2026-04-15T19:33:25Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33439",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 107996.207
+          "durationInSeconds": 127884.992
         }
       ]
     },
@@ -14084,9 +14084,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T07:21:10Z",
-      "updated_at": "2026-04-15T14:03:00Z",
+      "updated_at": "2026-04-15T19:34:56Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33622",
-      "durationInSeconds": 110510.718,
+      "durationInSeconds": 130426.921,
       "jobs": [
         {
           "id": 336220102,
@@ -14095,10 +14095,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T07:21:10Z",
           "started_at": "2026-04-14T07:21:40Z",
-          "completed_at": "2026-04-15T14:03:00Z",
+          "completed_at": "2026-04-15T19:34:56Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33622",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 110480.718
+          "durationInSeconds": 130396.921
         }
       ]
     },
@@ -14184,9 +14184,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T07:27:40Z",
-      "updated_at": "2026-04-15T14:02:16Z",
+      "updated_at": "2026-04-15T19:34:18Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33677",
-      "durationInSeconds": 110076.089,
+      "durationInSeconds": 129998.521,
       "jobs": [
         {
           "id": 336770101,
@@ -14195,10 +14195,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T07:27:40Z",
           "started_at": "2026-04-14T07:28:10Z",
-          "completed_at": "2026-04-15T14:02:16Z",
+          "completed_at": "2026-04-15T19:34:18Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33677",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 110046.089
+          "durationInSeconds": 129968.521
         }
       ]
     },
@@ -14534,9 +14534,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T08:01:38Z",
-      "updated_at": "2026-04-15T14:01:34Z",
+      "updated_at": "2026-04-15T19:33:35Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33441",
-      "durationInSeconds": 107996.572,
+      "durationInSeconds": 127917.967,
       "jobs": [
         {
           "id": 334410120,
@@ -14545,10 +14545,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T08:01:38Z",
           "started_at": "2026-04-14T08:02:08Z",
-          "completed_at": "2026-04-15T14:01:34Z",
+          "completed_at": "2026-04-15T19:33:35Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33441",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 107966.572
+          "durationInSeconds": 127887.967
         }
       ]
     },
@@ -14584,9 +14584,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T07:46:30Z",
-      "updated_at": "2026-04-15T14:04:55Z",
+      "updated_at": "2026-04-15T19:36:32Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33697",
-      "durationInSeconds": 109105.678,
+      "durationInSeconds": 129002.418,
       "jobs": [
         {
           "id": 336970101,
@@ -14595,10 +14595,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T07:46:30Z",
           "started_at": "2026-04-14T07:47:00Z",
-          "completed_at": "2026-04-15T14:04:55Z",
+          "completed_at": "2026-04-15T19:36:32Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33697",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 109075.678
+          "durationInSeconds": 128972.418
         }
       ]
     },
@@ -14659,9 +14659,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T06:17:48Z",
-      "updated_at": "2026-04-15T14:06:29Z",
+      "updated_at": "2026-04-15T19:37:42Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33668",
-      "durationInSeconds": 114521.037,
+      "durationInSeconds": 134394.98,
       "jobs": [
         {
           "id": 336680101,
@@ -14670,10 +14670,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T06:17:48Z",
           "started_at": "2026-04-14T06:18:18Z",
-          "completed_at": "2026-04-15T14:06:29Z",
+          "completed_at": "2026-04-15T19:37:42Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33668",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 114491.037
+          "durationInSeconds": 134364.98
         }
       ]
     },
@@ -14684,9 +14684,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T07:58:17Z",
-      "updated_at": "2026-04-15T14:06:29Z",
+      "updated_at": "2026-04-15T19:37:42Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33668",
-      "durationInSeconds": 108492.037,
+      "durationInSeconds": 128365.98,
       "jobs": [
         {
           "id": 336680102,
@@ -14695,10 +14695,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T07:58:17Z",
           "started_at": "2026-04-14T07:58:47Z",
-          "completed_at": "2026-04-15T14:06:29Z",
+          "completed_at": "2026-04-15T19:37:42Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33668",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 108462.037
+          "durationInSeconds": 128335.98
         }
       ]
     },
@@ -14734,9 +14734,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T08:01:30Z",
-      "updated_at": "2026-04-15T14:01:48Z",
+      "updated_at": "2026-04-15T19:33:45Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33440",
-      "durationInSeconds": 108018.193,
+      "durationInSeconds": 127935.926,
       "jobs": [
         {
           "id": 334400120,
@@ -14745,10 +14745,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T08:01:30Z",
           "started_at": "2026-04-14T08:02:00Z",
-          "completed_at": "2026-04-15T14:01:48Z",
+          "completed_at": "2026-04-15T19:33:45Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33440",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 107988.193
+          "durationInSeconds": 127905.926
         }
       ]
     },
@@ -14784,9 +14784,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T08:01:36Z",
-      "updated_at": "2026-04-15T14:01:31Z",
+      "updated_at": "2026-04-15T19:33:29Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33442",
-      "durationInSeconds": 107995.493,
+      "durationInSeconds": 127913.893,
       "jobs": [
         {
           "id": 334420120,
@@ -14795,10 +14795,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T08:01:36Z",
           "started_at": "2026-04-14T08:02:06Z",
-          "completed_at": "2026-04-15T14:01:31Z",
+          "completed_at": "2026-04-15T19:33:29Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33442",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 107965.493
+          "durationInSeconds": 127883.893
         }
       ]
     },
@@ -15184,9 +15184,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T07:27:48Z",
-      "updated_at": "2026-04-15T14:02:17Z",
+      "updated_at": "2026-04-15T19:34:19Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33675",
-      "durationInSeconds": 110069.302,
+      "durationInSeconds": 129991.627,
       "jobs": [
         {
           "id": 336750101,
@@ -15195,10 +15195,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T07:27:48Z",
           "started_at": "2026-04-14T07:28:18Z",
-          "completed_at": "2026-04-15T14:02:17Z",
+          "completed_at": "2026-04-15T19:34:19Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33675",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 110039.302
+          "durationInSeconds": 129961.627
         }
       ]
     },
@@ -15234,9 +15234,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T07:01:42Z",
-      "updated_at": "2026-04-15T14:03:50Z",
+      "updated_at": "2026-04-15T19:35:37Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/32003",
-      "durationInSeconds": 111728.003,
+      "durationInSeconds": 131635.541,
       "jobs": [
         {
           "id": 320030103,
@@ -15245,10 +15245,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T07:01:42Z",
           "started_at": "2026-04-14T07:02:12Z",
-          "completed_at": "2026-04-15T14:03:50Z",
+          "completed_at": "2026-04-15T19:35:37Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/32003",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 111698.003
+          "durationInSeconds": 131605.541
         }
       ]
     },
@@ -15284,9 +15284,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T07:27:01Z",
-      "updated_at": "2026-04-15T14:01:40Z",
+      "updated_at": "2026-04-15T19:33:54Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33681",
-      "durationInSeconds": 110079.495,
+      "durationInSeconds": 130013.558,
       "jobs": [
         {
           "id": 336810101,
@@ -15295,10 +15295,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T07:27:01Z",
           "started_at": "2026-04-14T07:27:31Z",
-          "completed_at": "2026-04-15T14:01:40Z",
+          "completed_at": "2026-04-15T19:33:54Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33681",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 110049.495
+          "durationInSeconds": 129983.558
         }
       ]
     },
@@ -15384,9 +15384,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T07:27:33Z",
-      "updated_at": "2026-04-15T14:02:14Z",
+      "updated_at": "2026-04-15T19:34:17Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33678",
-      "durationInSeconds": 110081.861,
+      "durationInSeconds": 130004.415,
       "jobs": [
         {
           "id": 336780101,
@@ -15395,10 +15395,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T07:27:33Z",
           "started_at": "2026-04-14T07:28:03Z",
-          "completed_at": "2026-04-15T14:02:14Z",
+          "completed_at": "2026-04-15T19:34:17Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33678",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 110051.861
+          "durationInSeconds": 129974.415
         }
       ]
     },
@@ -15659,9 +15659,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T07:27:19Z",
-      "updated_at": "2026-04-15T14:02:13Z",
+      "updated_at": "2026-04-15T19:34:16Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33679",
-      "durationInSeconds": 110094.635,
+      "durationInSeconds": 130017.121,
       "jobs": [
         {
           "id": 336790101,
@@ -15670,10 +15670,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T07:27:19Z",
           "started_at": "2026-04-14T07:27:49Z",
-          "completed_at": "2026-04-15T14:02:13Z",
+          "completed_at": "2026-04-15T19:34:16Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33679",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 110064.635
+          "durationInSeconds": 129987.121
         }
       ]
     },
@@ -15684,9 +15684,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T07:27:25Z",
-      "updated_at": "2026-04-15T14:02:13Z",
+      "updated_at": "2026-04-15T19:34:16Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33679",
-      "durationInSeconds": 110088.635,
+      "durationInSeconds": 130011.121,
       "jobs": [
         {
           "id": 336790102,
@@ -15695,10 +15695,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T07:27:25Z",
           "started_at": "2026-04-14T07:27:55Z",
-          "completed_at": "2026-04-15T14:02:13Z",
+          "completed_at": "2026-04-15T19:34:16Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33679",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 110058.635
+          "durationInSeconds": 129981.121
         }
       ]
     },
@@ -15734,9 +15734,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T07:27:11Z",
-      "updated_at": "2026-04-15T14:02:04Z",
+      "updated_at": "2026-04-15T19:34:06Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33680",
-      "durationInSeconds": 110093.351,
+      "durationInSeconds": 130015.97,
       "jobs": [
         {
           "id": 336800101,
@@ -15745,10 +15745,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T07:27:11Z",
           "started_at": "2026-04-14T07:27:41Z",
-          "completed_at": "2026-04-15T14:02:04Z",
+          "completed_at": "2026-04-15T19:34:06Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33680",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 110063.351
+          "durationInSeconds": 129985.97
         }
       ]
     },
@@ -15784,9 +15784,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T07:26:13Z",
-      "updated_at": "2026-04-15T14:02:21Z",
+      "updated_at": "2026-04-15T19:34:22Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33683",
-      "durationInSeconds": 110168.192,
+      "durationInSeconds": 130089.88,
       "jobs": [
         {
           "id": 336830101,
@@ -15795,10 +15795,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T07:26:13Z",
           "started_at": "2026-04-14T07:26:43Z",
-          "completed_at": "2026-04-15T14:02:21Z",
+          "completed_at": "2026-04-15T19:34:22Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33683",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 110138.192
+          "durationInSeconds": 130059.88
         }
       ]
     },
@@ -15934,9 +15934,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T06:54:04Z",
-      "updated_at": "2026-04-15T14:05:29Z",
+      "updated_at": "2026-04-15T19:36:58Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/31588",
-      "durationInSeconds": 112285.852,
+      "durationInSeconds": 132174.067,
       "jobs": [
         {
           "id": 315880107,
@@ -15945,10 +15945,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T06:54:04Z",
           "started_at": "2026-04-14T06:54:34Z",
-          "completed_at": "2026-04-15T14:05:29Z",
+          "completed_at": "2026-04-15T19:36:58Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/31588",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 112255.852
+          "durationInSeconds": 132144.067
         }
       ]
     },
@@ -16134,9 +16134,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T06:52:11Z",
-      "updated_at": "2026-04-15T14:03:41Z",
+      "updated_at": "2026-04-15T19:35:31Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33139",
-      "durationInSeconds": 112290.855,
+      "durationInSeconds": 132200.208,
       "jobs": [
         {
           "id": 331390102,
@@ -16145,10 +16145,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T06:52:11Z",
           "started_at": "2026-04-14T06:52:41Z",
-          "completed_at": "2026-04-15T14:03:41Z",
+          "completed_at": "2026-04-15T19:35:31Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33139",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 112260.855
+          "durationInSeconds": 132170.208
         }
       ]
     },
@@ -16784,9 +16784,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T03:12:07Z",
-      "updated_at": "2026-04-15T14:06:49Z",
+      "updated_at": "2026-04-15T19:37:59Z",
       "html_url": "https://gitcode.com/Ascend/vision/merge_requests/200",
-      "durationInSeconds": 125682.625,
+      "durationInSeconds": 145552.837,
       "jobs": [
         {
           "id": 2000101,
@@ -16795,10 +16795,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T03:12:07Z",
           "started_at": "2026-04-14T03:12:37Z",
-          "completed_at": "2026-04-15T14:06:49Z",
+          "completed_at": "2026-04-15T19:37:59Z",
           "html_url": "https://gitcode.com/Ascend/vision/merge_requests/200",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 125652.625
+          "durationInSeconds": 145522.837
         }
       ]
     },
@@ -17209,9 +17209,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T12:40:59Z",
-      "updated_at": "2026-04-15T13:46:27Z",
+      "updated_at": "2026-04-15T19:23:28Z",
       "html_url": "https://gitcode.com/Ascend/msagent/merge_requests/2",
-      "durationInSeconds": 90328.606,
+      "durationInSeconds": 110549.352,
       "jobs": [
         {
           "id": 20102,
@@ -17220,10 +17220,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T12:40:59Z",
           "started_at": "2026-04-14T12:41:29Z",
-          "completed_at": "2026-04-15T13:46:27Z",
+          "completed_at": "2026-04-15T19:23:28Z",
           "html_url": "https://gitcode.com/Ascend/msagent/merge_requests/2",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 90298.606
+          "durationInSeconds": 110519.352
         }
       ]
     },
@@ -17284,9 +17284,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T08:13:57Z",
-      "updated_at": "2026-04-15T13:47:12Z",
+      "updated_at": "2026-04-15T19:24:01Z",
       "html_url": "https://gitcode.com/Ascend/slime-ascend/merge_requests/24",
-      "durationInSeconds": 106395.054,
+      "durationInSeconds": 126604.28,
       "jobs": [
         {
           "id": 240101,
@@ -17295,10 +17295,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T08:13:57Z",
           "started_at": "2026-04-14T08:14:27Z",
-          "completed_at": "2026-04-15T13:47:12Z",
+          "completed_at": "2026-04-15T19:24:01Z",
           "html_url": "https://gitcode.com/Ascend/slime-ascend/merge_requests/24",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 106365.054
+          "durationInSeconds": 126574.28
         }
       ]
     },
@@ -17309,9 +17309,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T08:14:39Z",
-      "updated_at": "2026-04-15T13:47:12Z",
+      "updated_at": "2026-04-15T19:24:01Z",
       "html_url": "https://gitcode.com/Ascend/slime-ascend/merge_requests/24",
-      "durationInSeconds": 106353.054,
+      "durationInSeconds": 126562.28,
       "jobs": [
         {
           "id": 240102,
@@ -17320,10 +17320,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T08:14:39Z",
           "started_at": "2026-04-14T08:15:09Z",
-          "completed_at": "2026-04-15T13:47:12Z",
+          "completed_at": "2026-04-15T19:24:01Z",
           "html_url": "https://gitcode.com/Ascend/slime-ascend/merge_requests/24",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 106323.054
+          "durationInSeconds": 126532.28
         }
       ]
     },
@@ -17809,9 +17809,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T09:27:13Z",
-      "updated_at": "2026-04-15T13:49:35Z",
+      "updated_at": "2026-04-15T19:25:50Z",
       "html_url": "https://gitcode.com/Ascend/msopcom/merge_requests/110",
-      "durationInSeconds": 102142.625,
+      "durationInSeconds": 122317.491,
       "jobs": [
         {
           "id": 1100101,
@@ -17820,10 +17820,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T09:27:13Z",
           "started_at": "2026-04-14T09:27:43Z",
-          "completed_at": "2026-04-15T13:49:35Z",
+          "completed_at": "2026-04-15T19:25:50Z",
           "html_url": "https://gitcode.com/Ascend/msopcom/merge_requests/110",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 102112.625
+          "durationInSeconds": 122287.491
         }
       ]
     },
@@ -17859,9 +17859,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T08:20:55Z",
-      "updated_at": "2026-04-15T13:49:34Z",
+      "updated_at": "2026-04-15T19:25:49Z",
       "html_url": "https://gitcode.com/Ascend/msopcom/merge_requests/94",
-      "durationInSeconds": 106119.206,
+      "durationInSeconds": 126294.615,
       "jobs": [
         {
           "id": 940105,
@@ -17870,10 +17870,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T08:20:55Z",
           "started_at": "2026-04-14T08:21:25Z",
-          "completed_at": "2026-04-15T13:49:34Z",
+          "completed_at": "2026-04-15T19:25:49Z",
           "html_url": "https://gitcode.com/Ascend/msopcom/merge_requests/94",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 106089.206
+          "durationInSeconds": 126264.615
         }
       ]
     },
@@ -18184,9 +18184,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T08:13:40Z",
-      "updated_at": "2026-04-15T13:49:50Z",
+      "updated_at": "2026-04-15T19:25:57Z",
       "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/117",
-      "durationInSeconds": 106570.697,
+      "durationInSeconds": 126737.722,
       "jobs": [
         {
           "id": 1170126,
@@ -18195,10 +18195,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T08:13:40Z",
           "started_at": "2026-04-14T08:14:10Z",
-          "completed_at": "2026-04-15T13:49:50Z",
+          "completed_at": "2026-04-15T19:25:57Z",
           "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/117",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 106540.697
+          "durationInSeconds": 126707.722
         }
       ]
     },
@@ -18209,9 +18209,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T08:48:45Z",
-      "updated_at": "2026-04-15T13:49:50Z",
+      "updated_at": "2026-04-15T19:25:57Z",
       "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/117",
-      "durationInSeconds": 104465.697,
+      "durationInSeconds": 124632.723,
       "jobs": [
         {
           "id": 1170127,
@@ -18220,10 +18220,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T08:48:45Z",
           "started_at": "2026-04-14T08:49:15Z",
-          "completed_at": "2026-04-15T13:49:50Z",
+          "completed_at": "2026-04-15T19:25:57Z",
           "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/117",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 104435.697
+          "durationInSeconds": 124602.723
         }
       ]
     },
@@ -18259,9 +18259,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T11:30:42Z",
-      "updated_at": "2026-04-15T13:49:54Z",
+      "updated_at": "2026-04-15T19:26:00Z",
       "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/146",
-      "durationInSeconds": 94752.066,
+      "durationInSeconds": 114918.892,
       "jobs": [
         {
           "id": 1460101,
@@ -18270,10 +18270,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T11:30:42Z",
           "started_at": "2026-04-14T11:31:12Z",
-          "completed_at": "2026-04-15T13:49:54Z",
+          "completed_at": "2026-04-15T19:26:00Z",
           "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/146",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 94722.066
+          "durationInSeconds": 114888.892
         }
       ]
     },
@@ -18959,9 +18959,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T08:00:26Z",
-      "updated_at": "2026-04-15T13:50:28Z",
+      "updated_at": "2026-04-15T19:26:25Z",
       "html_url": "https://gitcode.com/Ascend/msoptuner/merge_requests/9",
-      "durationInSeconds": 107402.455,
+      "durationInSeconds": 127559.449,
       "jobs": [
         {
           "id": 90104,
@@ -18970,10 +18970,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T08:00:26Z",
           "started_at": "2026-04-14T08:00:56Z",
-          "completed_at": "2026-04-15T13:50:28Z",
+          "completed_at": "2026-04-15T19:26:25Z",
           "html_url": "https://gitcode.com/Ascend/msoptuner/merge_requests/9",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 107372.455
+          "durationInSeconds": 127529.449
         }
       ]
     },
@@ -19134,9 +19134,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T08:10:40Z",
-      "updated_at": "2026-04-15T13:50:51Z",
+      "updated_at": "2026-04-15T19:26:32Z",
       "html_url": "https://gitcode.com/Ascend/msopprof/merge_requests/109",
-      "durationInSeconds": 106811.186,
+      "durationInSeconds": 126952.811,
       "jobs": [
         {
           "id": 1090101,
@@ -19145,10 +19145,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T08:10:40Z",
           "started_at": "2026-04-14T08:11:10Z",
-          "completed_at": "2026-04-15T13:50:51Z",
+          "completed_at": "2026-04-15T19:26:32Z",
           "html_url": "https://gitcode.com/Ascend/msopprof/merge_requests/109",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 106781.186
+          "durationInSeconds": 126922.811
         }
       ]
     },
@@ -19159,9 +19159,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T12:20:34Z",
-      "updated_at": "2026-04-15T13:50:51Z",
+      "updated_at": "2026-04-15T19:26:32Z",
       "html_url": "https://gitcode.com/Ascend/msopprof/merge_requests/109",
-      "durationInSeconds": 91817.186,
+      "durationInSeconds": 111958.811,
       "jobs": [
         {
           "id": 1090102,
@@ -19170,10 +19170,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T12:20:34Z",
           "started_at": "2026-04-14T12:21:04Z",
-          "completed_at": "2026-04-15T13:50:51Z",
+          "completed_at": "2026-04-15T19:26:32Z",
           "html_url": "https://gitcode.com/Ascend/msopprof/merge_requests/109",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 91787.186
+          "durationInSeconds": 111928.811
         }
       ]
     },
@@ -21759,9 +21759,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T09:35:31Z",
-      "updated_at": "2026-04-15T13:53:11Z",
+      "updated_at": "2026-04-15T19:27:55Z",
       "html_url": "https://gitcode.com/Ascend/msprof/merge_requests/182",
-      "durationInSeconds": 101860.721,
+      "durationInSeconds": 121944.508,
       "jobs": [
         {
           "id": 1820102,
@@ -21770,10 +21770,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T09:35:31Z",
           "started_at": "2026-04-14T09:36:01Z",
-          "completed_at": "2026-04-15T13:53:11Z",
+          "completed_at": "2026-04-15T19:27:55Z",
           "html_url": "https://gitcode.com/Ascend/msprof/merge_requests/182",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 101830.721
+          "durationInSeconds": 121914.508
         }
       ]
     },
@@ -23209,9 +23209,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T12:35:35Z",
-      "updated_at": "2026-04-15T13:55:03Z",
+      "updated_at": "2026-04-15T19:29:06Z",
       "html_url": "https://gitcode.com/Ascend/msprof-analyze/merge_requests/108",
-      "durationInSeconds": 91168.929,
+      "durationInSeconds": 111211.63,
       "jobs": [
         {
           "id": 1080102,
@@ -23220,10 +23220,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T12:35:35Z",
           "started_at": "2026-04-14T12:36:05Z",
-          "completed_at": "2026-04-15T13:55:03Z",
+          "completed_at": "2026-04-15T19:29:06Z",
           "html_url": "https://gitcode.com/Ascend/msprof-analyze/merge_requests/108",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 91138.929
+          "durationInSeconds": 111181.63
         }
       ]
     },
@@ -23559,9 +23559,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T13:38:56Z",
-      "updated_at": "2026-04-15T13:55:43Z",
+      "updated_at": "2026-04-15T19:29:36Z",
       "html_url": "https://gitcode.com/Ascend/VisionSDK/merge_requests/29",
-      "durationInSeconds": 87407.458,
+      "durationInSeconds": 107440.468,
       "jobs": [
         {
           "id": 290104,
@@ -23570,10 +23570,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T13:38:56Z",
           "started_at": "2026-04-14T13:39:26Z",
-          "completed_at": "2026-04-15T13:55:43Z",
+          "completed_at": "2026-04-15T19:29:36Z",
           "html_url": "https://gitcode.com/Ascend/VisionSDK/merge_requests/29",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 87377.458
+          "durationInSeconds": 107410.468
         }
       ]
     },
@@ -24409,9 +24409,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T11:50:22Z",
-      "updated_at": "2026-04-15T13:56:51Z",
+      "updated_at": "2026-04-15T19:30:23Z",
       "html_url": "https://gitcode.com/Ascend/msprobe/merge_requests/562",
-      "durationInSeconds": 93989.295,
+      "durationInSeconds": 114001.913,
       "jobs": [
         {
           "id": 5620101,
@@ -24420,10 +24420,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T11:50:22Z",
           "started_at": "2026-04-14T11:50:52Z",
-          "completed_at": "2026-04-15T13:56:51Z",
+          "completed_at": "2026-04-15T19:30:23Z",
           "html_url": "https://gitcode.com/Ascend/msprobe/merge_requests/562",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 93959.295
+          "durationInSeconds": 113971.913
         }
       ]
     },
@@ -24709,9 +24709,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T09:26:46Z",
-      "updated_at": "2026-04-15T13:57:36Z",
+      "updated_at": "2026-04-15T19:31:03Z",
       "html_url": "https://gitcode.com/Ascend/triton-ascend/merge_requests/1452",
-      "durationInSeconds": 102650.253,
+      "durationInSeconds": 122657.508,
       "jobs": [
         {
           "id": 14520108,
@@ -24720,10 +24720,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T09:26:46Z",
           "started_at": "2026-04-14T09:27:16Z",
-          "completed_at": "2026-04-15T13:57:36Z",
+          "completed_at": "2026-04-15T19:31:03Z",
           "html_url": "https://gitcode.com/Ascend/triton-ascend/merge_requests/1452",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 102620.253
+          "durationInSeconds": 122627.508
         }
       ]
     },
@@ -27359,9 +27359,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T13:07:52Z",
-      "updated_at": "2026-04-15T14:01:34Z",
+      "updated_at": "2026-04-15T19:33:35Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33441",
-      "durationInSeconds": 89622.572,
+      "durationInSeconds": 109543.967,
       "jobs": [
         {
           "id": 334410121,
@@ -27370,10 +27370,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T13:07:52Z",
           "started_at": "2026-04-14T13:08:22Z",
-          "completed_at": "2026-04-15T14:01:34Z",
+          "completed_at": "2026-04-15T19:33:35Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33441",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 89592.572
+          "durationInSeconds": 109513.967
         }
       ]
     },
@@ -27559,9 +27559,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T12:57:44Z",
-      "updated_at": "2026-04-15T14:02:45Z",
+      "updated_at": "2026-04-15T19:34:43Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33649",
-      "durationInSeconds": 90301.411,
+      "durationInSeconds": 110219.437,
       "jobs": [
         {
           "id": 336490102,
@@ -27570,10 +27570,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T12:57:44Z",
           "started_at": "2026-04-14T12:58:14Z",
-          "completed_at": "2026-04-15T14:02:45Z",
+          "completed_at": "2026-04-15T19:34:43Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33649",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 90271.411
+          "durationInSeconds": 110189.437
         }
       ]
     },
@@ -28109,9 +28109,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T14:01:33Z",
-      "updated_at": "2026-04-15T14:01:24Z",
+      "updated_at": "2026-04-15T19:33:48Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33572",
-      "durationInSeconds": 86391.214,
+      "durationInSeconds": 106335.298,
       "jobs": [
         {
           "id": 335720103,
@@ -28120,10 +28120,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T14:01:33Z",
           "started_at": "2026-04-14T14:02:03Z",
-          "completed_at": "2026-04-15T14:01:24Z",
+          "completed_at": "2026-04-15T19:33:48Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33572",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 86361.214
+          "durationInSeconds": 106305.298
         }
       ]
     },
@@ -28234,9 +28234,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T11:19:40Z",
-      "updated_at": "2026-04-15T14:05:01Z",
+      "updated_at": "2026-04-15T19:36:36Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33726",
-      "durationInSeconds": 96321.074,
+      "durationInSeconds": 116216.721,
       "jobs": [
         {
           "id": 337260101,
@@ -28245,10 +28245,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T11:19:40Z",
           "started_at": "2026-04-14T11:20:10Z",
-          "completed_at": "2026-04-15T14:05:01Z",
+          "completed_at": "2026-04-15T19:36:36Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33726",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 96291.074
+          "durationInSeconds": 116186.721
         }
       ]
     },
@@ -28259,9 +28259,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T12:51:12Z",
-      "updated_at": "2026-04-15T14:05:01Z",
+      "updated_at": "2026-04-15T19:36:36Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33726",
-      "durationInSeconds": 90829.074,
+      "durationInSeconds": 110724.721,
       "jobs": [
         {
           "id": 337260102,
@@ -28270,10 +28270,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T12:51:12Z",
           "started_at": "2026-04-14T12:51:42Z",
-          "completed_at": "2026-04-15T14:05:01Z",
+          "completed_at": "2026-04-15T19:36:36Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33726",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 90799.074
+          "durationInSeconds": 110694.721
         }
       ]
     },
@@ -28659,9 +28659,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T13:06:06Z",
-      "updated_at": "2026-04-15T14:01:48Z",
+      "updated_at": "2026-04-15T19:33:45Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33440",
-      "durationInSeconds": 89742.193,
+      "durationInSeconds": 109659.926,
       "jobs": [
         {
           "id": 334400121,
@@ -28670,10 +28670,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T13:06:06Z",
           "started_at": "2026-04-14T13:06:36Z",
-          "completed_at": "2026-04-15T14:01:48Z",
+          "completed_at": "2026-04-15T19:33:45Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33440",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 89712.193
+          "durationInSeconds": 109629.926
         }
       ]
     },
@@ -28734,9 +28734,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T11:19:11Z",
-      "updated_at": "2026-04-15T14:04:58Z",
+      "updated_at": "2026-04-15T19:36:34Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33724",
-      "durationInSeconds": 96347.412,
+      "durationInSeconds": 116243.561,
       "jobs": [
         {
           "id": 337240101,
@@ -28745,10 +28745,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T11:19:11Z",
           "started_at": "2026-04-14T11:19:41Z",
-          "completed_at": "2026-04-15T14:04:58Z",
+          "completed_at": "2026-04-15T19:36:34Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33724",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 96317.412
+          "durationInSeconds": 116213.561
         }
       ]
     },
@@ -28759,9 +28759,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T12:50:52Z",
-      "updated_at": "2026-04-15T14:04:58Z",
+      "updated_at": "2026-04-15T19:36:34Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33724",
-      "durationInSeconds": 90846.412,
+      "durationInSeconds": 110742.561,
       "jobs": [
         {
           "id": 337240102,
@@ -28770,10 +28770,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T12:50:52Z",
           "started_at": "2026-04-14T12:51:22Z",
-          "completed_at": "2026-04-15T14:04:58Z",
+          "completed_at": "2026-04-15T19:36:34Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33724",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 90816.412
+          "durationInSeconds": 110712.561
         }
       ]
     },
@@ -28809,9 +28809,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T13:01:28Z",
-      "updated_at": "2026-04-15T14:01:57Z",
+      "updated_at": "2026-04-15T19:33:25Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33439",
-      "durationInSeconds": 90029.207,
+      "durationInSeconds": 109917.992,
       "jobs": [
         {
           "id": 334390120,
@@ -28820,10 +28820,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T13:01:28Z",
           "started_at": "2026-04-14T13:01:58Z",
-          "completed_at": "2026-04-15T14:01:57Z",
+          "completed_at": "2026-04-15T19:33:25Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33439",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 89999.207
+          "durationInSeconds": 109887.992
         }
       ]
     },
@@ -28909,9 +28909,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T13:01:37Z",
-      "updated_at": "2026-04-15T14:01:31Z",
+      "updated_at": "2026-04-15T19:33:29Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33442",
-      "durationInSeconds": 89994.493,
+      "durationInSeconds": 109912.893,
       "jobs": [
         {
           "id": 334420121,
@@ -28920,10 +28920,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T13:01:37Z",
           "started_at": "2026-04-14T13:02:07Z",
-          "completed_at": "2026-04-15T14:01:31Z",
+          "completed_at": "2026-04-15T19:33:29Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33442",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 89964.493
+          "durationInSeconds": 109882.893
         }
       ]
     },
@@ -28984,9 +28984,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T11:19:32Z",
-      "updated_at": "2026-04-15T14:04:59Z",
+      "updated_at": "2026-04-15T19:36:35Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33725",
-      "durationInSeconds": 96327.621,
+      "durationInSeconds": 116223.628,
       "jobs": [
         {
           "id": 337250101,
@@ -28995,10 +28995,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T11:19:32Z",
           "started_at": "2026-04-14T11:20:02Z",
-          "completed_at": "2026-04-15T14:04:59Z",
+          "completed_at": "2026-04-15T19:36:35Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33725",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 96297.621
+          "durationInSeconds": 116193.628
         }
       ]
     },
@@ -29009,9 +29009,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T12:51:02Z",
-      "updated_at": "2026-04-15T14:04:59Z",
+      "updated_at": "2026-04-15T19:36:35Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33725",
-      "durationInSeconds": 90837.621,
+      "durationInSeconds": 110733.628,
       "jobs": [
         {
           "id": 337250102,
@@ -29020,10 +29020,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T12:51:02Z",
           "started_at": "2026-04-14T12:51:32Z",
-          "completed_at": "2026-04-15T14:04:59Z",
+          "completed_at": "2026-04-15T19:36:35Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33725",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 90807.621
+          "durationInSeconds": 110703.628
         }
       ]
     },
@@ -29159,9 +29159,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T08:13:11Z",
-      "updated_at": "2026-04-15T14:03:00Z",
+      "updated_at": "2026-04-15T19:34:56Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33622",
-      "durationInSeconds": 107389.718,
+      "durationInSeconds": 127305.921,
       "jobs": [
         {
           "id": 336220103,
@@ -29170,10 +29170,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T08:13:11Z",
           "started_at": "2026-04-14T08:13:41Z",
-          "completed_at": "2026-04-15T14:03:00Z",
+          "completed_at": "2026-04-15T19:34:56Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33622",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 107359.718
+          "durationInSeconds": 127275.921
         }
       ]
     },
@@ -29184,9 +29184,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T09:00:23Z",
-      "updated_at": "2026-04-15T14:03:00Z",
+      "updated_at": "2026-04-15T19:34:56Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33622",
-      "durationInSeconds": 104557.718,
+      "durationInSeconds": 124473.921,
       "jobs": [
         {
           "id": 336220104,
@@ -29195,10 +29195,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T09:00:23Z",
           "started_at": "2026-04-14T09:00:53Z",
-          "completed_at": "2026-04-15T14:03:00Z",
+          "completed_at": "2026-04-15T19:34:56Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33622",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 104527.718
+          "durationInSeconds": 124443.921
         }
       ]
     },
@@ -29209,9 +29209,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T09:21:58Z",
-      "updated_at": "2026-04-15T14:03:00Z",
+      "updated_at": "2026-04-15T19:34:56Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33622",
-      "durationInSeconds": 103262.718,
+      "durationInSeconds": 123178.921,
       "jobs": [
         {
           "id": 336220105,
@@ -29220,10 +29220,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T09:21:58Z",
           "started_at": "2026-04-14T09:22:28Z",
-          "completed_at": "2026-04-15T14:03:00Z",
+          "completed_at": "2026-04-15T19:34:56Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33622",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 103232.718
+          "durationInSeconds": 123148.921
         }
       ]
     },
@@ -29359,9 +29359,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T09:18:38Z",
-      "updated_at": "2026-04-15T14:06:24Z",
+      "updated_at": "2026-04-15T19:37:38Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33558",
-      "durationInSeconds": 103666.304,
+      "durationInSeconds": 123540.256,
       "jobs": [
         {
           "id": 335580109,
@@ -29370,10 +29370,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T09:18:38Z",
           "started_at": "2026-04-14T09:19:08Z",
-          "completed_at": "2026-04-15T14:06:24Z",
+          "completed_at": "2026-04-15T19:37:38Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33558",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 103636.304
+          "durationInSeconds": 123510.256
         }
       ]
     },
@@ -29384,9 +29384,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T11:26:50Z",
-      "updated_at": "2026-04-15T14:06:24Z",
+      "updated_at": "2026-04-15T19:37:38Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33558",
-      "durationInSeconds": 95974.304,
+      "durationInSeconds": 115848.256,
       "jobs": [
         {
           "id": 335580110,
@@ -29395,10 +29395,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T11:26:50Z",
           "started_at": "2026-04-14T11:27:20Z",
-          "completed_at": "2026-04-15T14:06:24Z",
+          "completed_at": "2026-04-15T19:37:38Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33558",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 95944.304
+          "durationInSeconds": 115818.256
         }
       ]
     },
@@ -29409,9 +29409,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T12:50:53Z",
-      "updated_at": "2026-04-15T14:06:24Z",
+      "updated_at": "2026-04-15T19:37:38Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33558",
-      "durationInSeconds": 90931.304,
+      "durationInSeconds": 110805.256,
       "jobs": [
         {
           "id": 335580111,
@@ -29420,10 +29420,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T12:50:53Z",
           "started_at": "2026-04-14T12:51:23Z",
-          "completed_at": "2026-04-15T14:06:24Z",
+          "completed_at": "2026-04-15T19:37:38Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33558",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 90901.304
+          "durationInSeconds": 110775.256
         }
       ]
     },
@@ -29459,9 +29459,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T12:31:46Z",
-      "updated_at": "2026-04-15T14:06:10Z",
+      "updated_at": "2026-04-15T19:37:26Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33734",
-      "durationInSeconds": 92064.853,
+      "durationInSeconds": 111940.846,
       "jobs": [
         {
           "id": 337340101,
@@ -29470,10 +29470,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T12:31:46Z",
           "started_at": "2026-04-14T12:32:16Z",
-          "completed_at": "2026-04-15T14:06:10Z",
+          "completed_at": "2026-04-15T19:37:26Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33734",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 92034.853
+          "durationInSeconds": 111910.846
         }
       ]
     },
@@ -29509,9 +29509,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T13:04:26Z",
-      "updated_at": "2026-04-15T14:05:09Z",
+      "updated_at": "2026-04-15T19:36:43Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33735",
-      "durationInSeconds": 90043.016,
+      "durationInSeconds": 109937.672,
       "jobs": [
         {
           "id": 337350101,
@@ -29520,10 +29520,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T13:04:26Z",
           "started_at": "2026-04-14T13:04:56Z",
-          "completed_at": "2026-04-15T14:05:09Z",
+          "completed_at": "2026-04-15T19:36:43Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33735",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 90013.016
+          "durationInSeconds": 109907.672
         }
       ]
     },
@@ -29609,9 +29609,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T11:45:50Z",
-      "updated_at": "2026-04-15T14:06:26Z",
+      "updated_at": "2026-04-15T19:37:40Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33729",
-      "durationInSeconds": 94836.839,
+      "durationInSeconds": 114710.775,
       "jobs": [
         {
           "id": 337290101,
@@ -29620,10 +29620,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T11:45:50Z",
           "started_at": "2026-04-14T11:46:20Z",
-          "completed_at": "2026-04-15T14:06:26Z",
+          "completed_at": "2026-04-15T19:37:40Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33729",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 94806.839
+          "durationInSeconds": 114680.775
         }
       ]
     },
@@ -29709,9 +29709,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T11:36:29Z",
-      "updated_at": "2026-04-15T14:04:13Z",
+      "updated_at": "2026-04-15T19:35:56Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33730",
-      "durationInSeconds": 95264.05,
+      "durationInSeconds": 115167.315,
       "jobs": [
         {
           "id": 337300101,
@@ -29720,10 +29720,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T11:36:29Z",
           "started_at": "2026-04-14T11:36:59Z",
-          "completed_at": "2026-04-15T14:04:13Z",
+          "completed_at": "2026-04-15T19:35:56Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33730",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 95234.05
+          "durationInSeconds": 115137.315
         }
       ]
     },
@@ -30159,9 +30159,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T11:19:48Z",
-      "updated_at": "2026-04-15T14:05:02Z",
+      "updated_at": "2026-04-15T19:36:37Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33727",
-      "durationInSeconds": 96314.288,
+      "durationInSeconds": 116209.779,
       "jobs": [
         {
           "id": 337270101,
@@ -30170,10 +30170,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T11:19:48Z",
           "started_at": "2026-04-14T11:20:18Z",
-          "completed_at": "2026-04-15T14:05:02Z",
+          "completed_at": "2026-04-15T19:36:37Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33727",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 96284.288
+          "durationInSeconds": 116179.779
         }
       ]
     },
@@ -30309,9 +30309,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T11:19:02Z",
-      "updated_at": "2026-04-15T14:04:56Z",
+      "updated_at": "2026-04-15T19:36:33Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33723",
-      "durationInSeconds": 96354.907,
+      "durationInSeconds": 116251.491,
       "jobs": [
         {
           "id": 337230101,
@@ -30320,10 +30320,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T11:19:02Z",
           "started_at": "2026-04-14T11:19:32Z",
-          "completed_at": "2026-04-15T14:04:56Z",
+          "completed_at": "2026-04-15T19:36:33Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33723",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 96324.907
+          "durationInSeconds": 116221.491
         }
       ]
     },
@@ -30359,9 +30359,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T11:55:31Z",
-      "updated_at": "2026-04-15T14:02:59Z",
+      "updated_at": "2026-04-15T19:34:55Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33620",
-      "durationInSeconds": 94048.213,
+      "durationInSeconds": 113964.52,
       "jobs": [
         {
           "id": 336200103,
@@ -30370,10 +30370,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T11:55:31Z",
           "started_at": "2026-04-14T11:56:01Z",
-          "completed_at": "2026-04-15T14:02:59Z",
+          "completed_at": "2026-04-15T19:34:55Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33620",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 94018.213
+          "durationInSeconds": 113934.52
         }
       ]
     },
@@ -30409,9 +30409,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T10:54:17Z",
-      "updated_at": "2026-04-15T14:05:28Z",
+      "updated_at": "2026-04-15T19:36:56Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33721",
-      "durationInSeconds": 97871.306,
+      "durationInSeconds": 117759.656,
       "jobs": [
         {
           "id": 337210101,
@@ -30420,10 +30420,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T10:54:17Z",
           "started_at": "2026-04-14T10:54:47Z",
-          "completed_at": "2026-04-15T14:05:28Z",
+          "completed_at": "2026-04-15T19:36:56Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33721",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 97841.306
+          "durationInSeconds": 117729.656
         }
       ]
     },
@@ -30534,9 +30534,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T08:38:49Z",
-      "updated_at": "2026-04-15T14:02:04Z",
+      "updated_at": "2026-04-15T19:34:06Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33680",
-      "durationInSeconds": 105795.351,
+      "durationInSeconds": 125717.97,
       "jobs": [
         {
           "id": 336800102,
@@ -30545,10 +30545,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T08:38:49Z",
           "started_at": "2026-04-14T08:39:19Z",
-          "completed_at": "2026-04-15T14:02:04Z",
+          "completed_at": "2026-04-15T19:34:06Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33680",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 105765.351
+          "durationInSeconds": 125687.97
         }
       ]
     },
@@ -30559,9 +30559,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T10:48:47Z",
-      "updated_at": "2026-04-15T14:02:04Z",
+      "updated_at": "2026-04-15T19:34:06Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33680",
-      "durationInSeconds": 97997.351,
+      "durationInSeconds": 117919.97,
       "jobs": [
         {
           "id": 336800103,
@@ -30570,10 +30570,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T10:48:47Z",
           "started_at": "2026-04-14T10:49:17Z",
-          "completed_at": "2026-04-15T14:02:04Z",
+          "completed_at": "2026-04-15T19:34:06Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33680",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 97967.351
+          "durationInSeconds": 117889.97
         }
       ]
     },
@@ -30584,9 +30584,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T11:30:45Z",
-      "updated_at": "2026-04-15T14:02:04Z",
+      "updated_at": "2026-04-15T19:34:06Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33680",
-      "durationInSeconds": 95479.351,
+      "durationInSeconds": 115401.97,
       "jobs": [
         {
           "id": 336800104,
@@ -30595,10 +30595,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T11:30:45Z",
           "started_at": "2026-04-14T11:31:15Z",
-          "completed_at": "2026-04-15T14:02:04Z",
+          "completed_at": "2026-04-15T19:34:06Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33680",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 95449.351
+          "durationInSeconds": 115371.97
         }
       ]
     },
@@ -30609,9 +30609,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T11:39:02Z",
-      "updated_at": "2026-04-15T14:02:04Z",
+      "updated_at": "2026-04-15T19:34:06Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33680",
-      "durationInSeconds": 94982.351,
+      "durationInSeconds": 114904.97,
       "jobs": [
         {
           "id": 336800105,
@@ -30620,10 +30620,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T11:39:02Z",
           "started_at": "2026-04-14T11:39:32Z",
-          "completed_at": "2026-04-15T14:02:04Z",
+          "completed_at": "2026-04-15T19:34:06Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33680",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 94952.351
+          "durationInSeconds": 114874.97
         }
       ]
     },
@@ -30659,9 +30659,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T10:55:12Z",
-      "updated_at": "2026-04-15T14:05:51Z",
+      "updated_at": "2026-04-15T19:37:14Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33718",
-      "durationInSeconds": 97839.519,
+      "durationInSeconds": 117722.323,
       "jobs": [
         {
           "id": 337180101,
@@ -30670,10 +30670,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T10:55:12Z",
           "started_at": "2026-04-14T10:55:42Z",
-          "completed_at": "2026-04-15T14:05:51Z",
+          "completed_at": "2026-04-15T19:37:14Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33718",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 97809.519
+          "durationInSeconds": 117692.323
         }
       ]
     },
@@ -31209,9 +31209,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T10:52:52Z",
-      "updated_at": "2026-04-15T14:05:54Z",
+      "updated_at": "2026-04-15T19:37:16Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33719",
-      "durationInSeconds": 97982.001,
+      "durationInSeconds": 117864.444,
       "jobs": [
         {
           "id": 337190101,
@@ -31220,10 +31220,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T10:52:52Z",
           "started_at": "2026-04-14T10:53:22Z",
-          "completed_at": "2026-04-15T14:05:54Z",
+          "completed_at": "2026-04-15T19:37:16Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33719",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 97952.001
+          "durationInSeconds": 117834.444
         }
       ]
     },
@@ -31259,9 +31259,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T10:53:34Z",
-      "updated_at": "2026-04-15T14:05:52Z",
+      "updated_at": "2026-04-15T19:37:15Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33720",
-      "durationInSeconds": 97938.764,
+      "durationInSeconds": 117821.386,
       "jobs": [
         {
           "id": 337200101,
@@ -31270,10 +31270,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T10:53:34Z",
           "started_at": "2026-04-14T10:54:04Z",
-          "completed_at": "2026-04-15T14:05:52Z",
+          "completed_at": "2026-04-15T19:37:15Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33720",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 97908.764
+          "durationInSeconds": 117791.386
         }
       ]
     },
@@ -31359,9 +31359,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T08:39:20Z",
-      "updated_at": "2026-04-15T14:02:14Z",
+      "updated_at": "2026-04-15T19:34:17Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33678",
-      "durationInSeconds": 105774.861,
+      "durationInSeconds": 125697.415,
       "jobs": [
         {
           "id": 336780102,
@@ -31370,10 +31370,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T08:39:20Z",
           "started_at": "2026-04-14T08:39:50Z",
-          "completed_at": "2026-04-15T14:02:14Z",
+          "completed_at": "2026-04-15T19:34:17Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33678",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 105744.861
+          "durationInSeconds": 125667.415
         }
       ]
     },
@@ -31384,9 +31384,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T10:49:31Z",
-      "updated_at": "2026-04-15T14:02:14Z",
+      "updated_at": "2026-04-15T19:34:17Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33678",
-      "durationInSeconds": 97963.861,
+      "durationInSeconds": 117886.415,
       "jobs": [
         {
           "id": 336780103,
@@ -31395,10 +31395,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T10:49:31Z",
           "started_at": "2026-04-14T10:50:01Z",
-          "completed_at": "2026-04-15T14:02:14Z",
+          "completed_at": "2026-04-15T19:34:17Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33678",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 97933.861
+          "durationInSeconds": 117856.415
         }
       ]
     },
@@ -31409,9 +31409,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T11:13:03Z",
-      "updated_at": "2026-04-15T14:02:14Z",
+      "updated_at": "2026-04-15T19:34:17Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33678",
-      "durationInSeconds": 96551.861,
+      "durationInSeconds": 116474.415,
       "jobs": [
         {
           "id": 336780104,
@@ -31420,10 +31420,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T11:13:03Z",
           "started_at": "2026-04-14T11:13:33Z",
-          "completed_at": "2026-04-15T14:02:14Z",
+          "completed_at": "2026-04-15T19:34:17Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33678",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 96521.861
+          "durationInSeconds": 116444.415
         }
       ]
     },
@@ -31859,9 +31859,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T08:43:06Z",
-      "updated_at": "2026-04-15T14:06:30Z",
+      "updated_at": "2026-04-15T19:37:45Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33699",
-      "durationInSeconds": 105804.945,
+      "durationInSeconds": 125679.134,
       "jobs": [
         {
           "id": 336990101,
@@ -31870,10 +31870,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T08:43:06Z",
           "started_at": "2026-04-14T08:43:36Z",
-          "completed_at": "2026-04-15T14:06:30Z",
+          "completed_at": "2026-04-15T19:37:45Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33699",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 105774.945
+          "durationInSeconds": 125649.134
         }
       ]
     },
@@ -31934,9 +31934,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T08:39:04Z",
-      "updated_at": "2026-04-15T14:02:13Z",
+      "updated_at": "2026-04-15T19:34:16Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33679",
-      "durationInSeconds": 105789.635,
+      "durationInSeconds": 125712.121,
       "jobs": [
         {
           "id": 336790103,
@@ -31945,10 +31945,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T08:39:04Z",
           "started_at": "2026-04-14T08:39:34Z",
-          "completed_at": "2026-04-15T14:02:13Z",
+          "completed_at": "2026-04-15T19:34:16Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33679",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 105759.635
+          "durationInSeconds": 125682.121
         }
       ]
     },
@@ -31959,9 +31959,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T10:49:08Z",
-      "updated_at": "2026-04-15T14:02:13Z",
+      "updated_at": "2026-04-15T19:34:16Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33679",
-      "durationInSeconds": 97985.635,
+      "durationInSeconds": 117908.121,
       "jobs": [
         {
           "id": 336790104,
@@ -31970,10 +31970,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T10:49:08Z",
           "started_at": "2026-04-14T10:49:38Z",
-          "completed_at": "2026-04-15T14:02:13Z",
+          "completed_at": "2026-04-15T19:34:16Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33679",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 97955.635
+          "durationInSeconds": 117878.121
         }
       ]
     },
@@ -32059,9 +32059,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T09:41:55Z",
-      "updated_at": "2026-04-15T14:06:29Z",
+      "updated_at": "2026-04-15T19:37:42Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33668",
-      "durationInSeconds": 102274.037,
+      "durationInSeconds": 122147.98,
       "jobs": [
         {
           "id": 336680103,
@@ -32070,10 +32070,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T09:41:55Z",
           "started_at": "2026-04-14T09:42:25Z",
-          "completed_at": "2026-04-15T14:06:29Z",
+          "completed_at": "2026-04-15T19:37:42Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33668",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 102244.037
+          "durationInSeconds": 122117.98
         }
       ]
     },
@@ -32134,9 +32134,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T08:21:12Z",
-      "updated_at": "2026-04-15T14:06:25Z",
+      "updated_at": "2026-04-15T19:37:39Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33090",
-      "durationInSeconds": 107113.88,
+      "durationInSeconds": 126987.678,
       "jobs": [
         {
           "id": 330900114,
@@ -32145,10 +32145,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T08:21:12Z",
           "started_at": "2026-04-14T08:21:42Z",
-          "completed_at": "2026-04-15T14:06:25Z",
+          "completed_at": "2026-04-15T19:37:39Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33090",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 107083.88
+          "durationInSeconds": 126957.678
         }
       ]
     },
@@ -32159,9 +32159,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T09:30:03Z",
-      "updated_at": "2026-04-15T14:06:25Z",
+      "updated_at": "2026-04-15T19:37:39Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33090",
-      "durationInSeconds": 102982.88,
+      "durationInSeconds": 122856.678,
       "jobs": [
         {
           "id": 330900115,
@@ -32170,10 +32170,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T09:30:03Z",
           "started_at": "2026-04-14T09:30:33Z",
-          "completed_at": "2026-04-15T14:06:25Z",
+          "completed_at": "2026-04-15T19:37:39Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33090",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 102952.88
+          "durationInSeconds": 122826.678
         }
       ]
     },
@@ -32259,9 +32259,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T08:44:04Z",
-      "updated_at": "2026-04-15T14:02:17Z",
+      "updated_at": "2026-04-15T19:34:19Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33675",
-      "durationInSeconds": 105493.302,
+      "durationInSeconds": 125415.627,
       "jobs": [
         {
           "id": 336750102,
@@ -32270,10 +32270,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T08:44:04Z",
           "started_at": "2026-04-14T08:44:34Z",
-          "completed_at": "2026-04-15T14:02:17Z",
+          "completed_at": "2026-04-15T19:34:19Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33675",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 105463.302
+          "durationInSeconds": 125385.627
         }
       ]
     },
@@ -32309,9 +32309,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T08:39:42Z",
-      "updated_at": "2026-04-15T14:02:16Z",
+      "updated_at": "2026-04-15T19:34:18Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33677",
-      "durationInSeconds": 105754.089,
+      "durationInSeconds": 125676.521,
       "jobs": [
         {
           "id": 336770102,
@@ -32320,10 +32320,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T08:39:42Z",
           "started_at": "2026-04-14T08:40:12Z",
-          "completed_at": "2026-04-15T14:02:16Z",
+          "completed_at": "2026-04-15T19:34:18Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33677",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 105724.089
+          "durationInSeconds": 125646.521
         }
       ]
     },
@@ -32359,9 +32359,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T08:38:24Z",
-      "updated_at": "2026-04-15T14:01:40Z",
+      "updated_at": "2026-04-15T19:33:54Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33681",
-      "durationInSeconds": 105796.495,
+      "durationInSeconds": 125730.558,
       "jobs": [
         {
           "id": 336810102,
@@ -32370,10 +32370,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T08:38:24Z",
           "started_at": "2026-04-14T08:38:54Z",
-          "completed_at": "2026-04-15T14:01:40Z",
+          "completed_at": "2026-04-15T19:33:54Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33681",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 105766.495
+          "durationInSeconds": 125700.558
         }
       ]
     },
@@ -32434,9 +32434,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T08:38:01Z",
-      "updated_at": "2026-04-15T14:02:21Z",
+      "updated_at": "2026-04-15T19:34:22Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33683",
-      "durationInSeconds": 105860.192,
+      "durationInSeconds": 125781.88,
       "jobs": [
         {
           "id": 336830102,
@@ -32445,10 +32445,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T08:38:01Z",
           "started_at": "2026-04-14T08:38:31Z",
-          "completed_at": "2026-04-15T14:02:21Z",
+          "completed_at": "2026-04-15T19:34:22Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33683",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 105830.192
+          "durationInSeconds": 125751.88
         }
       ]
     },
@@ -32459,9 +32459,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T08:43:23Z",
-      "updated_at": "2026-04-15T14:02:21Z",
+      "updated_at": "2026-04-15T19:34:22Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33683",
-      "durationInSeconds": 105538.192,
+      "durationInSeconds": 125459.88,
       "jobs": [
         {
           "id": 336830103,
@@ -32470,10 +32470,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T08:43:23Z",
           "started_at": "2026-04-14T08:43:53Z",
-          "completed_at": "2026-04-15T14:02:21Z",
+          "completed_at": "2026-04-15T19:34:22Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33683",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 105508.192
+          "durationInSeconds": 125429.88
         }
       ]
     },
@@ -32609,9 +32609,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T09:37:04Z",
-      "updated_at": "2026-04-15T14:06:49Z",
+      "updated_at": "2026-04-15T19:37:59Z",
       "html_url": "https://gitcode.com/Ascend/vision/merge_requests/200",
-      "durationInSeconds": 102585.625,
+      "durationInSeconds": 122455.837,
       "jobs": [
         {
           "id": 2000102,
@@ -32620,10 +32620,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T09:37:04Z",
           "started_at": "2026-04-14T09:37:34Z",
-          "completed_at": "2026-04-15T14:06:49Z",
+          "completed_at": "2026-04-15T19:37:59Z",
           "html_url": "https://gitcode.com/Ascend/vision/merge_requests/200",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 102555.625
+          "durationInSeconds": 122425.837
         }
       ]
     },
@@ -33984,9 +33984,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T13:52:39Z",
-      "updated_at": "2026-04-15T13:46:27Z",
+      "updated_at": "2026-04-15T19:23:28Z",
       "html_url": "https://gitcode.com/Ascend/msagent/merge_requests/2",
-      "durationInSeconds": 86028.606,
+      "durationInSeconds": 106249.352,
       "jobs": [
         {
           "id": 20103,
@@ -33995,10 +33995,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T13:52:39Z",
           "started_at": "2026-04-14T13:53:09Z",
-          "completed_at": "2026-04-15T13:46:27Z",
+          "completed_at": "2026-04-15T19:23:28Z",
           "html_url": "https://gitcode.com/Ascend/msagent/merge_requests/2",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 85998.606
+          "durationInSeconds": 106219.352
         }
       ]
     },
@@ -34984,9 +34984,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T14:55:09Z",
-      "updated_at": "2026-04-15T13:54:36Z",
+      "updated_at": "2026-04-15T19:28:58Z",
       "html_url": "https://gitcode.com/Ascend/msmodeling/merge_requests/123",
-      "durationInSeconds": 82767.913,
+      "durationInSeconds": 102829.926,
       "jobs": [
         {
           "id": 1230106,
@@ -34995,10 +34995,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T14:55:09Z",
           "started_at": "2026-04-14T14:55:39Z",
-          "completed_at": "2026-04-15T13:54:36Z",
+          "completed_at": "2026-04-15T19:28:58Z",
           "html_url": "https://gitcode.com/Ascend/msmodeling/merge_requests/123",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 82737.913
+          "durationInSeconds": 102799.926
         }
       ]
     },
@@ -35159,9 +35159,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T14:11:22Z",
-      "updated_at": "2026-04-15T13:58:07Z",
+      "updated_at": "2026-04-15T19:30:56Z",
       "html_url": "https://gitcode.com/Ascend/triton-ascend/merge_requests/1519",
-      "durationInSeconds": 85605.553,
+      "durationInSeconds": 105574.688,
       "jobs": [
         {
           "id": 15190116,
@@ -35170,10 +35170,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T14:11:22Z",
           "started_at": "2026-04-14T14:11:52Z",
-          "completed_at": "2026-04-15T13:58:07Z",
+          "completed_at": "2026-04-15T19:30:56Z",
           "html_url": "https://gitcode.com/Ascend/triton-ascend/merge_requests/1519",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 85575.553
+          "durationInSeconds": 105544.688
         }
       ]
     },
@@ -35184,9 +35184,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T16:44:27Z",
-      "updated_at": "2026-04-15T13:58:07Z",
+      "updated_at": "2026-04-15T19:30:56Z",
       "html_url": "https://gitcode.com/Ascend/triton-ascend/merge_requests/1519",
-      "durationInSeconds": 76420.553,
+      "durationInSeconds": 96389.688,
       "jobs": [
         {
           "id": 15190117,
@@ -35195,10 +35195,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T16:44:27Z",
           "started_at": "2026-04-14T16:44:57Z",
-          "completed_at": "2026-04-15T13:58:07Z",
+          "completed_at": "2026-04-15T19:30:56Z",
           "html_url": "https://gitcode.com/Ascend/triton-ascend/merge_requests/1519",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 76390.553
+          "durationInSeconds": 96359.688
         }
       ]
     },
@@ -35284,9 +35284,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T15:54:28Z",
-      "updated_at": "2026-04-15T14:00:08Z",
+      "updated_at": "2026-04-15T19:32:29Z",
       "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/1038",
-      "durationInSeconds": 79540.345,
+      "durationInSeconds": 99481.763,
       "jobs": [
         {
           "id": 10380101,
@@ -35295,10 +35295,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T15:54:28Z",
           "started_at": "2026-04-14T15:54:58Z",
-          "completed_at": "2026-04-15T14:00:08Z",
+          "completed_at": "2026-04-15T19:32:29Z",
           "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/1038",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 79510.345
+          "durationInSeconds": 99451.763
         }
       ]
     },
@@ -35434,9 +35434,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T15:01:24Z",
-      "updated_at": "2026-04-15T14:01:48Z",
+      "updated_at": "2026-04-15T19:33:45Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33440",
-      "durationInSeconds": 82824.193,
+      "durationInSeconds": 102741.926,
       "jobs": [
         {
           "id": 334400122,
@@ -35445,10 +35445,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T15:01:24Z",
           "started_at": "2026-04-14T15:01:54Z",
-          "completed_at": "2026-04-15T14:01:48Z",
+          "completed_at": "2026-04-15T19:33:45Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33440",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 82794.193
+          "durationInSeconds": 102711.926
         }
       ]
     },
@@ -35534,9 +35534,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T15:01:28Z",
-      "updated_at": "2026-04-15T14:01:57Z",
+      "updated_at": "2026-04-15T19:33:25Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33439",
-      "durationInSeconds": 82829.207,
+      "durationInSeconds": 102717.992,
       "jobs": [
         {
           "id": 334390121,
@@ -35545,10 +35545,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T15:01:28Z",
           "started_at": "2026-04-14T15:01:58Z",
-          "completed_at": "2026-04-15T14:01:57Z",
+          "completed_at": "2026-04-15T19:33:25Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33439",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 82799.207
+          "durationInSeconds": 102687.992
         }
       ]
     },
@@ -35584,9 +35584,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T15:01:24Z",
-      "updated_at": "2026-04-15T14:01:34Z",
+      "updated_at": "2026-04-15T19:33:35Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33441",
-      "durationInSeconds": 82810.572,
+      "durationInSeconds": 102731.967,
       "jobs": [
         {
           "id": 334410122,
@@ -35595,10 +35595,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T15:01:24Z",
           "started_at": "2026-04-14T15:01:54Z",
-          "completed_at": "2026-04-15T14:01:34Z",
+          "completed_at": "2026-04-15T19:33:35Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33441",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 82780.572
+          "durationInSeconds": 102701.967
         }
       ]
     },
@@ -35634,9 +35634,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T15:01:25Z",
-      "updated_at": "2026-04-15T14:01:31Z",
+      "updated_at": "2026-04-15T19:33:29Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33442",
-      "durationInSeconds": 82806.493,
+      "durationInSeconds": 102724.893,
       "jobs": [
         {
           "id": 334420122,
@@ -35645,10 +35645,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T15:01:25Z",
           "started_at": "2026-04-14T15:01:55Z",
-          "completed_at": "2026-04-15T14:01:31Z",
+          "completed_at": "2026-04-15T19:33:29Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33442",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 82776.493
+          "durationInSeconds": 102694.893
         }
       ]
     },
@@ -35684,9 +35684,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T14:18:19Z",
-      "updated_at": "2026-04-15T14:06:26Z",
+      "updated_at": "2026-04-15T19:37:40Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33729",
-      "durationInSeconds": 85687.839,
+      "durationInSeconds": 105561.775,
       "jobs": [
         {
           "id": 337290102,
@@ -35695,10 +35695,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T14:18:19Z",
           "started_at": "2026-04-14T14:18:49Z",
-          "completed_at": "2026-04-15T14:06:26Z",
+          "completed_at": "2026-04-15T19:37:40Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33729",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 85657.839
+          "durationInSeconds": 105531.775
         }
       ]
     },
@@ -35834,9 +35834,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-14T14:37:26Z",
-      "updated_at": "2026-04-15T14:03:52Z",
+      "updated_at": "2026-04-15T19:35:39Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33393",
-      "durationInSeconds": 84386.49,
+      "durationInSeconds": 104293.595,
       "jobs": [
         {
           "id": 333930113,
@@ -35845,10 +35845,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-14T14:37:26Z",
           "started_at": "2026-04-14T14:37:56Z",
-          "completed_at": "2026-04-15T14:03:52Z",
+          "completed_at": "2026-04-15T19:35:39Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33393",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 84356.49
+          "durationInSeconds": 104263.595
         }
       ]
     },
