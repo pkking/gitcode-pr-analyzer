@@ -1,6 +1,6 @@
 {
   "date": "2026-02-25",
-  "repo": "Ascend/MindSpeed",
+  "repo": "Ascend/MindIE-Motor",
   "runs": [
     {
       "id": 250005,
@@ -2432,23 +2432,23 @@
       "name": "PR #105 docs-ci - PD分离脚本优化",
       "head_branch": "fix_LEP",
       "status": "completed",
-      "conclusion": "pending",
+      "conclusion": "success",
       "created_at": "2026-02-25T12:00:35Z",
-      "updated_at": "2026-04-12T14:46:06Z",
+      "updated_at": "2026-04-15T02:16:02Z",
       "html_url": "https://gitcode.com/Ascend/MindIE-Motor/merge_requests/105",
-      "durationInSeconds": 3984331.363,
+      "durationInSeconds": 4198527,
       "jobs": [
         {
           "id": 1050101,
-          "name": "docs-ci",
+          "name": "docs-ci-pipeline-running",
           "status": "completed",
-          "conclusion": "pending",
+          "conclusion": "success",
           "created_at": "2026-02-25T12:00:35Z",
-          "started_at": "2026-02-25T12:01:05Z",
-          "completed_at": "2026-04-12T14:46:06Z",
+          "started_at": "2026-04-15T02:14:16Z",
+          "completed_at": "2026-04-15T02:16:02Z",
           "html_url": "https://gitcode.com/Ascend/MindIE-Motor/merge_requests/105",
-          "queueDurationInSeconds": 30,
-          "durationInSeconds": 3984301.363
+          "queueDurationInSeconds": 4198421,
+          "durationInSeconds": 106
         }
       ]
     },
