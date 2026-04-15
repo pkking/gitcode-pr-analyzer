@@ -1,6 +1,6 @@
 {
   "date": "2026-04-04",
-  "repo": "Ascend/triton-ascend",
+  "repo": "Ascend/op-plugin",
   "runs": [
     {
       "id": 1000000,
@@ -184,9 +184,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-04T08:31:34Z",
-      "updated_at": "2026-04-15T02:50:24Z",
+      "updated_at": "2026-04-15T07:54:11Z",
       "html_url": "https://gitcode.com/Ascend/Triton-distributed-ascend/merge_requests/2",
-      "durationInSeconds": 929930.816,
+      "durationInSeconds": 948157.333,
       "jobs": [
         {
           "id": 20105,
@@ -195,10 +195,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-04T08:31:34Z",
           "started_at": "2026-04-04T08:32:04Z",
-          "completed_at": "2026-04-15T02:50:24Z",
+          "completed_at": "2026-04-15T07:54:11Z",
           "html_url": "https://gitcode.com/Ascend/Triton-distributed-ascend/merge_requests/2",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 929900.816
+          "durationInSeconds": 948127.333
         }
       ]
     },
@@ -482,23 +482,23 @@
       "name": "PR #1555 docs-ci - fix(autotuner): fix compatibility of do_bench and ",
       "head_branch": "codex/fix-autotune-compatibility",
       "status": "completed",
-      "conclusion": "pending",
+      "conclusion": "success",
       "created_at": "2026-04-04T10:05:44Z",
-      "updated_at": "2026-04-15T03:00:59Z",
+      "updated_at": "2026-04-15T06:55:39Z",
       "html_url": "https://gitcode.com/Ascend/triton-ascend/merge_requests/1555",
-      "durationInSeconds": 924915.03,
+      "durationInSeconds": 938995,
       "jobs": [
         {
           "id": 15550101,
-          "name": "docs-ci",
+          "name": "docs-ci-pipeline-running",
           "status": "completed",
-          "conclusion": "pending",
+          "conclusion": "success",
           "created_at": "2026-04-04T10:05:44Z",
-          "started_at": "2026-04-04T10:06:14Z",
-          "completed_at": "2026-04-15T03:00:59Z",
+          "started_at": "2026-04-15T06:54:30Z",
+          "completed_at": "2026-04-15T06:55:39Z",
           "html_url": "https://gitcode.com/Ascend/triton-ascend/merge_requests/1555",
-          "queueDurationInSeconds": 30,
-          "durationInSeconds": 924885.03
+          "queueDurationInSeconds": 938926,
+          "durationInSeconds": 69
         }
       ]
     },
@@ -2834,9 +2834,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-04T11:26:47Z",
-      "updated_at": "2026-04-12T18:39:22Z",
+      "updated_at": "2026-04-15T08:08:40Z",
       "html_url": "https://gitcode.com/Ascend/op-plugin/merge_requests/4580",
-      "durationInSeconds": 717155.214,
+      "durationInSeconds": 938513.059,
       "jobs": [
         {
           "id": 45800103,
@@ -2845,10 +2845,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-04T11:26:47Z",
           "started_at": "2026-04-04T11:27:17Z",
-          "completed_at": "2026-04-12T18:39:22Z",
+          "completed_at": "2026-04-15T08:08:40Z",
           "html_url": "https://gitcode.com/Ascend/op-plugin/merge_requests/4580",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 717125.214
+          "durationInSeconds": 938483.059
         }
       ]
     }

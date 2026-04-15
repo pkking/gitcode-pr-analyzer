@@ -1,6 +1,6 @@
 {
   "date": "2026-03-30",
-  "repo": "Ascend/op-plugin",
+  "repo": "Ascend/MindSpeed",
   "runs": [
     {
       "id": 50000,
@@ -2709,9 +2709,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-03-30T11:13:18Z",
-      "updated_at": "2026-04-15T02:54:00Z",
+      "updated_at": "2026-04-15T07:57:55Z",
       "html_url": "https://gitcode.com/Ascend/MindIE-LLM/merge_requests/566",
-      "durationInSeconds": 1352442.764,
+      "durationInSeconds": 1370677.451,
       "jobs": [
         {
           "id": 5660101,
@@ -2720,10 +2720,10 @@
           "conclusion": "pending",
           "created_at": "2026-03-30T11:13:18Z",
           "started_at": "2026-03-30T11:13:48Z",
-          "completed_at": "2026-04-15T02:54:00Z",
+          "completed_at": "2026-04-15T07:57:55Z",
           "html_url": "https://gitcode.com/Ascend/MindIE-LLM/merge_requests/566",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 1352412.764
+          "durationInSeconds": 1370647.451
         }
       ]
     },
@@ -2734,9 +2734,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-03-30T11:15:09Z",
-      "updated_at": "2026-04-15T02:54:00Z",
+      "updated_at": "2026-04-15T07:57:55Z",
       "html_url": "https://gitcode.com/Ascend/MindIE-LLM/merge_requests/566",
-      "durationInSeconds": 1352331.764,
+      "durationInSeconds": 1370566.451,
       "jobs": [
         {
           "id": 5660102,
@@ -2745,10 +2745,10 @@
           "conclusion": "pending",
           "created_at": "2026-03-30T11:15:09Z",
           "started_at": "2026-03-30T11:15:39Z",
-          "completed_at": "2026-04-15T02:54:00Z",
+          "completed_at": "2026-04-15T07:57:55Z",
           "html_url": "https://gitcode.com/Ascend/MindIE-LLM/merge_requests/566",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 1352301.764
+          "durationInSeconds": 1370536.451
         }
       ]
     },
@@ -13232,23 +13232,23 @@
       "name": "PR #619 docs-ci - [AscendNPU IR]: Support scopeOp in TileAndBindSubB",
       "head_branch": "feature-scope-op-tile-and-bind-sub-block",
       "status": "completed",
-      "conclusion": "pending",
+      "conclusion": "success",
       "created_at": "2026-03-30T03:11:59Z",
-      "updated_at": "2026-04-15T03:02:12Z",
+      "updated_at": "2026-04-15T06:11:26Z",
       "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/619",
-      "durationInSeconds": 1381813.951,
+      "durationInSeconds": 1393167,
       "jobs": [
         {
           "id": 6190106,
           "name": "docs-ci",
           "status": "completed",
-          "conclusion": "pending",
+          "conclusion": "success",
           "created_at": "2026-03-30T03:11:59Z",
           "started_at": "2026-03-30T03:12:29Z",
-          "completed_at": "2026-04-15T03:02:12Z",
+          "completed_at": "2026-04-15T06:11:26Z",
           "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/619",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 1381783.951
+          "durationInSeconds": 1393137
         }
       ]
     },
@@ -13284,9 +13284,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-03-30T07:27:19Z",
-      "updated_at": "2026-04-15T03:02:06Z",
+      "updated_at": "2026-04-15T08:04:01Z",
       "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/751",
-      "durationInSeconds": 1366487.542,
+      "durationInSeconds": 1384602.417,
       "jobs": [
         {
           "id": 7510103,
@@ -13295,10 +13295,10 @@
           "conclusion": "pending",
           "created_at": "2026-03-30T07:27:19Z",
           "started_at": "2026-03-30T07:27:49Z",
-          "completed_at": "2026-04-15T03:02:06Z",
+          "completed_at": "2026-04-15T08:04:01Z",
           "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/751",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 1366457.542
+          "durationInSeconds": 1384572.417
         }
       ]
     },
@@ -13534,9 +13534,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-03-30T07:27:32Z",
-      "updated_at": "2026-04-15T03:02:16Z",
+      "updated_at": "2026-04-15T08:04:26Z",
       "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/748",
-      "durationInSeconds": 1366484.618,
+      "durationInSeconds": 1384614.106,
       "jobs": [
         {
           "id": 7480104,
@@ -13545,10 +13545,10 @@
           "conclusion": "pending",
           "created_at": "2026-03-30T07:27:32Z",
           "started_at": "2026-03-30T07:28:02Z",
-          "completed_at": "2026-04-15T03:02:16Z",
+          "completed_at": "2026-04-15T08:04:26Z",
           "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/748",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 1366454.618
+          "durationInSeconds": 1384584.106
         }
       ]
     },

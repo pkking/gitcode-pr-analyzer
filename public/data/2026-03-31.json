@@ -3959,9 +3959,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-03-31T03:16:34Z",
-      "updated_at": "2026-04-15T02:54:00Z",
+      "updated_at": "2026-04-15T07:57:55Z",
       "html_url": "https://gitcode.com/Ascend/MindIE-LLM/merge_requests/566",
-      "durationInSeconds": 1294646.764,
+      "durationInSeconds": 1312881.451,
       "jobs": [
         {
           "id": 5660103,
@@ -3970,10 +3970,10 @@
           "conclusion": "pending",
           "created_at": "2026-03-31T03:16:34Z",
           "started_at": "2026-03-31T03:17:04Z",
-          "completed_at": "2026-04-15T02:54:00Z",
+          "completed_at": "2026-04-15T07:57:55Z",
           "html_url": "https://gitcode.com/Ascend/MindIE-LLM/merge_requests/566",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 1294616.764
+          "durationInSeconds": 1312851.451
         }
       ]
     },
@@ -3984,9 +3984,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-03-31T12:09:51Z",
-      "updated_at": "2026-04-15T02:54:00Z",
+      "updated_at": "2026-04-15T07:57:55Z",
       "html_url": "https://gitcode.com/Ascend/MindIE-LLM/merge_requests/566",
-      "durationInSeconds": 1262649.764,
+      "durationInSeconds": 1280884.451,
       "jobs": [
         {
           "id": 5660104,
@@ -3995,10 +3995,10 @@
           "conclusion": "pending",
           "created_at": "2026-03-31T12:09:51Z",
           "started_at": "2026-03-31T12:10:21Z",
-          "completed_at": "2026-04-15T02:54:00Z",
+          "completed_at": "2026-04-15T07:57:55Z",
           "html_url": "https://gitcode.com/Ascend/MindIE-LLM/merge_requests/566",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 1262619.764
+          "durationInSeconds": 1280854.451
         }
       ]
     },
@@ -4009,9 +4009,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-03-31T12:32:02Z",
-      "updated_at": "2026-04-15T02:54:00Z",
+      "updated_at": "2026-04-15T07:57:55Z",
       "html_url": "https://gitcode.com/Ascend/MindIE-LLM/merge_requests/566",
-      "durationInSeconds": 1261318.764,
+      "durationInSeconds": 1279553.451,
       "jobs": [
         {
           "id": 5660105,
@@ -4020,10 +4020,10 @@
           "conclusion": "pending",
           "created_at": "2026-03-31T12:32:02Z",
           "started_at": "2026-03-31T12:32:32Z",
-          "completed_at": "2026-04-15T02:54:00Z",
+          "completed_at": "2026-04-15T07:57:55Z",
           "html_url": "https://gitcode.com/Ascend/MindIE-LLM/merge_requests/566",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 1261288.764
+          "durationInSeconds": 1279523.451
         }
       ]
     },
@@ -4034,9 +4034,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-03-31T12:44:05Z",
-      "updated_at": "2026-04-15T02:54:00Z",
+      "updated_at": "2026-04-15T07:57:55Z",
       "html_url": "https://gitcode.com/Ascend/MindIE-LLM/merge_requests/566",
-      "durationInSeconds": 1260595.764,
+      "durationInSeconds": 1278830.451,
       "jobs": [
         {
           "id": 5660106,
@@ -4045,10 +4045,10 @@
           "conclusion": "pending",
           "created_at": "2026-03-31T12:44:05Z",
           "started_at": "2026-03-31T12:44:35Z",
-          "completed_at": "2026-04-15T02:54:00Z",
+          "completed_at": "2026-04-15T07:57:55Z",
           "html_url": "https://gitcode.com/Ascend/MindIE-LLM/merge_requests/566",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 1260565.764
+          "durationInSeconds": 1278800.451
         }
       ]
     },
@@ -18882,23 +18882,23 @@
       "name": "PR #32846 docs-ci - [fix] fix found_inf param in async allreduce",
       "head_branch": "master",
       "status": "completed",
-      "conclusion": "pending",
+      "conclusion": "success",
       "created_at": "2026-03-31T14:18:18Z",
-      "updated_at": "2026-04-12T17:04:59Z",
+      "updated_at": "2026-04-15T07:23:49Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/32846",
-      "durationInSeconds": 1046801.592,
+      "durationInSeconds": 1271131,
       "jobs": [
         {
           "id": 328460101,
           "name": "docs-ci",
           "status": "completed",
-          "conclusion": "pending",
+          "conclusion": "success",
           "created_at": "2026-03-31T14:18:18Z",
           "started_at": "2026-03-31T14:18:48Z",
-          "completed_at": "2026-04-12T17:04:59Z",
+          "completed_at": "2026-04-15T07:23:49Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/32846",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 1046771.592
+          "durationInSeconds": 1271101
         }
       ]
     },
@@ -18932,23 +18932,23 @@
       "name": "PR #32852 docs-ci - [fix] fix found_inf param in async allreduce",
       "head_branch": "v2.8.0",
       "status": "completed",
-      "conclusion": "pending",
+      "conclusion": "success",
       "created_at": "2026-03-31T14:34:47Z",
-      "updated_at": "2026-04-12T17:05:02Z",
+      "updated_at": "2026-04-15T07:24:09Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/32852",
-      "durationInSeconds": 1045815.932,
+      "durationInSeconds": 1270162,
       "jobs": [
         {
           "id": 328520101,
           "name": "docs-ci",
           "status": "completed",
-          "conclusion": "pending",
+          "conclusion": "success",
           "created_at": "2026-03-31T14:34:47Z",
           "started_at": "2026-03-31T14:35:17Z",
-          "completed_at": "2026-04-12T17:05:02Z",
+          "completed_at": "2026-04-15T07:24:09Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/32852",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 1045785.932
+          "durationInSeconds": 1270132
         }
       ]
     },
@@ -18982,23 +18982,23 @@
       "name": "PR #32853 docs-ci - [fix] fix found_inf param in async allreduce",
       "head_branch": "v2.9.0",
       "status": "completed",
-      "conclusion": "pending",
+      "conclusion": "success",
       "created_at": "2026-03-31T14:39:37Z",
-      "updated_at": "2026-04-12T17:05:04Z",
+      "updated_at": "2026-04-15T07:24:34Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/32853",
-      "durationInSeconds": 1045527.058,
+      "durationInSeconds": 1269897,
       "jobs": [
         {
           "id": 328530101,
           "name": "docs-ci",
           "status": "completed",
-          "conclusion": "pending",
+          "conclusion": "success",
           "created_at": "2026-03-31T14:39:37Z",
           "started_at": "2026-03-31T14:40:07Z",
-          "completed_at": "2026-04-12T17:05:04Z",
+          "completed_at": "2026-04-15T07:24:34Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/32853",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 1045497.058
+          "durationInSeconds": 1269867
         }
       ]
     },
@@ -19034,9 +19034,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-03-31T14:39:45Z",
-      "updated_at": "2026-04-12T17:05:05Z",
+      "updated_at": "2026-04-15T08:06:26Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/32854",
-      "durationInSeconds": 1045520.209,
+      "durationInSeconds": 1272401.75,
       "jobs": [
         {
           "id": 328540101,
@@ -19045,10 +19045,10 @@
           "conclusion": "pending",
           "created_at": "2026-03-31T14:39:45Z",
           "started_at": "2026-03-31T14:40:15Z",
-          "completed_at": "2026-04-12T17:05:05Z",
+          "completed_at": "2026-04-15T08:06:26Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/32854",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 1045490.209
+          "durationInSeconds": 1272371.75
         }
       ]
     },
@@ -19082,23 +19082,23 @@
       "name": "PR #32855 docs-ci - [fix] fix found_inf param in async allreduce",
       "head_branch": "v2.11.0",
       "status": "completed",
-      "conclusion": "pending",
+      "conclusion": "success",
       "created_at": "2026-03-31T14:39:17Z",
-      "updated_at": "2026-04-12T17:05:06Z",
+      "updated_at": "2026-04-15T07:24:47Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/32855",
-      "durationInSeconds": 1045549.316,
+      "durationInSeconds": 1269930,
       "jobs": [
         {
           "id": 328550101,
           "name": "docs-ci",
           "status": "completed",
-          "conclusion": "pending",
+          "conclusion": "success",
           "created_at": "2026-03-31T14:39:17Z",
           "started_at": "2026-03-31T14:39:47Z",
-          "completed_at": "2026-04-12T17:05:06Z",
+          "completed_at": "2026-04-15T07:24:47Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/32855",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 1045519.316
+          "durationInSeconds": 1269900
         }
       ]
     },
