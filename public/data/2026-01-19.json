@@ -1,6 +1,6 @@
 {
   "date": "2026-01-19",
-  "repo": "Ascend/TransferQueue",
+  "repo": "Ascend/MindSpeed",
   "runs": [
     {
       "id": 150000,
@@ -34,9 +34,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-01-19T01:33:09Z",
-      "updated_at": "2026-04-16T02:59:21Z",
+      "updated_at": "2026-04-16T07:56:27Z",
       "html_url": "https://gitcode.com/Ascend/TransferQueue/merge_requests/15",
-      "durationInSeconds": 7521972.023,
+      "durationInSeconds": 7539798.696,
       "jobs": [
         {
           "id": 150101,
@@ -45,10 +45,10 @@
           "conclusion": "pending",
           "created_at": "2026-01-19T01:33:09Z",
           "started_at": "2026-01-19T01:33:39Z",
-          "completed_at": "2026-04-16T02:59:21Z",
+          "completed_at": "2026-04-16T07:56:27Z",
           "html_url": "https://gitcode.com/Ascend/TransferQueue/merge_requests/15",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 7521942.023
+          "durationInSeconds": 7539768.696
         }
       ]
     },
@@ -12082,23 +12082,23 @@
       "name": "PR #3211 docs-ci - fix: fix get_args",
       "head_branch": "get_args",
       "status": "completed",
-      "conclusion": "pending",
+      "conclusion": "success",
       "created_at": "2026-01-19T08:55:24Z",
-      "updated_at": "2026-04-12T16:47:23Z",
+      "updated_at": "2026-04-16T07:30:54Z",
       "html_url": "https://gitcode.com/Ascend/MindSpeed/merge_requests/3211",
-      "durationInSeconds": 7199519.026,
+      "durationInSeconds": 7511730,
       "jobs": [
         {
           "id": 32110101,
-          "name": "docs-ci",
+          "name": "docs-ci-pipeline-running",
           "status": "completed",
-          "conclusion": "pending",
+          "conclusion": "success",
           "created_at": "2026-01-19T08:55:24Z",
-          "started_at": "2026-01-19T08:55:54Z",
-          "completed_at": "2026-04-12T16:47:23Z",
+          "started_at": "2026-04-16T07:29:47Z",
+          "completed_at": "2026-04-16T07:30:54Z",
           "html_url": "https://gitcode.com/Ascend/MindSpeed/merge_requests/3211",
-          "queueDurationInSeconds": 30,
-          "durationInSeconds": 7199489.026
+          "queueDurationInSeconds": 7511663,
+          "durationInSeconds": 67
         }
       ]
     },

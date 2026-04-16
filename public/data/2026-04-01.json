@@ -207,23 +207,23 @@
       "name": "PR #55 docs-ci - [refractor] 提取http相关公共文件，简化utils文件夹内文件数量",
       "head_branch": "master",
       "status": "completed",
-      "conclusion": "pending",
+      "conclusion": "failure",
       "created_at": "2026-04-01T01:56:19Z",
-      "updated_at": "2026-04-12T14:10:27Z",
+      "updated_at": "2026-04-16T06:31:42Z",
       "html_url": "https://gitcode.com/Ascend/MindIE-PyMotor/merge_requests/55",
-      "durationInSeconds": 994448.668,
+      "durationInSeconds": 1312523,
       "jobs": [
         {
           "id": 550107,
-          "name": "docs-ci",
+          "name": "docs-ci-pipeline-running",
           "status": "completed",
-          "conclusion": "pending",
+          "conclusion": "failure",
           "created_at": "2026-04-01T01:56:19Z",
-          "started_at": "2026-04-01T01:56:49Z",
-          "completed_at": "2026-04-12T14:10:27Z",
+          "started_at": "2026-04-16T06:29:48Z",
+          "completed_at": "2026-04-16T06:31:42Z",
           "html_url": "https://gitcode.com/Ascend/MindIE-PyMotor/merge_requests/55",
-          "queueDurationInSeconds": 30,
-          "durationInSeconds": 994418.668
+          "queueDurationInSeconds": 1312409,
+          "durationInSeconds": 114
         }
       ]
     },
@@ -232,23 +232,23 @@
       "name": "PR #55 docs-ci - [refractor] 提取http相关公共文件，简化utils文件夹内文件数量",
       "head_branch": "master",
       "status": "completed",
-      "conclusion": "pending",
+      "conclusion": "failure",
       "created_at": "2026-04-01T09:20:25Z",
-      "updated_at": "2026-04-12T14:10:27Z",
+      "updated_at": "2026-04-16T06:31:42Z",
       "html_url": "https://gitcode.com/Ascend/MindIE-PyMotor/merge_requests/55",
-      "durationInSeconds": 967802.668,
+      "durationInSeconds": 1285877,
       "jobs": [
         {
           "id": 550108,
-          "name": "docs-ci",
+          "name": "docs-ci-pipeline-running",
           "status": "completed",
-          "conclusion": "pending",
+          "conclusion": "failure",
           "created_at": "2026-04-01T09:20:25Z",
-          "started_at": "2026-04-01T09:20:55Z",
-          "completed_at": "2026-04-12T14:10:27Z",
+          "started_at": "2026-04-16T06:29:48Z",
+          "completed_at": "2026-04-16T06:31:42Z",
           "html_url": "https://gitcode.com/Ascend/MindIE-PyMotor/merge_requests/55",
-          "queueDurationInSeconds": 30,
-          "durationInSeconds": 967772.668
+          "queueDurationInSeconds": 1285763,
+          "durationInSeconds": 114
         }
       ]
     },
@@ -807,23 +807,23 @@
       "name": "PR #94 docs-ci - [feature]]记录类型支持变长协议",
       "head_branch": "add_variable",
       "status": "completed",
-      "conclusion": "pending",
+      "conclusion": "success",
       "created_at": "2026-04-01T02:45:39Z",
-      "updated_at": "2026-04-16T02:59:30Z",
+      "updated_at": "2026-04-16T06:43:28Z",
       "html_url": "https://gitcode.com/Ascend/msopcom/merge_requests/94",
-      "durationInSeconds": 1296831.657,
+      "durationInSeconds": 1310269,
       "jobs": [
         {
           "id": 940101,
           "name": "docs-ci",
           "status": "completed",
-          "conclusion": "pending",
+          "conclusion": "success",
           "created_at": "2026-04-01T02:45:39Z",
           "started_at": "2026-04-01T02:46:09Z",
-          "completed_at": "2026-04-16T02:59:30Z",
+          "completed_at": "2026-04-16T06:43:28Z",
           "html_url": "https://gitcode.com/Ascend/msopcom/merge_requests/94",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 1296801.657
+          "durationInSeconds": 1310239
         }
       ]
     },
@@ -832,23 +832,23 @@
       "name": "PR #94 docs-ci - [feature]]记录类型支持变长协议",
       "head_branch": "add_variable",
       "status": "completed",
-      "conclusion": "pending",
+      "conclusion": "success",
       "created_at": "2026-04-01T08:59:44Z",
-      "updated_at": "2026-04-16T02:59:30Z",
+      "updated_at": "2026-04-16T06:43:28Z",
       "html_url": "https://gitcode.com/Ascend/msopcom/merge_requests/94",
-      "durationInSeconds": 1274386.657,
+      "durationInSeconds": 1287824,
       "jobs": [
         {
           "id": 940102,
           "name": "docs-ci",
           "status": "completed",
-          "conclusion": "pending",
+          "conclusion": "success",
           "created_at": "2026-04-01T08:59:44Z",
           "started_at": "2026-04-01T09:00:14Z",
-          "completed_at": "2026-04-16T02:59:30Z",
+          "completed_at": "2026-04-16T06:43:28Z",
           "html_url": "https://gitcode.com/Ascend/msopcom/merge_requests/94",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 1274356.657
+          "durationInSeconds": 1287794
         }
       ]
     },
@@ -11454,7 +11454,7 @@
     },
     {
       "id": 43630001,
-      "name": "PR #4363 compile - fix(pytorch): Parameter judgment condition",
+      "name": "PR #4363 compile - fix(pytorch): MMAdd and low_precision_optimizer pa",
       "head_branch": "fix_fused_mm_add",
       "status": "completed",
       "conclusion": "success",
@@ -11479,14 +11479,14 @@
     },
     {
       "id": 43630101,
-      "name": "PR #4363 docs-ci - fix(pytorch): Parameter judgment condition",
+      "name": "PR #4363 docs-ci - fix(pytorch): MMAdd and low_precision_optimizer pa",
       "head_branch": "fix_fused_mm_add",
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-01T01:51:09Z",
-      "updated_at": "2026-04-12T16:10:50Z",
+      "updated_at": "2026-04-16T08:02:20Z",
       "html_url": "https://gitcode.com/Ascend/MindSpeed-LLM/merge_requests/4363",
-      "durationInSeconds": 1001981.141,
+      "durationInSeconds": 1318271.237,
       "jobs": [
         {
           "id": 43630102,
@@ -11495,10 +11495,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-01T01:51:09Z",
           "started_at": "2026-04-01T01:51:39Z",
-          "completed_at": "2026-04-12T16:10:50Z",
+          "completed_at": "2026-04-16T08:02:20Z",
           "html_url": "https://gitcode.com/Ascend/MindSpeed-LLM/merge_requests/4363",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 1001951.141
+          "durationInSeconds": 1318241.237
         }
       ]
     },
@@ -11634,9 +11634,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-01T07:16:53Z",
-      "updated_at": "2026-04-16T03:07:29Z",
+      "updated_at": "2026-04-16T08:02:50Z",
       "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/913",
-      "durationInSeconds": 1281036.2,
+      "durationInSeconds": 1298757.916,
       "jobs": [
         {
           "id": 9130101,
@@ -11645,10 +11645,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-01T07:16:53Z",
           "started_at": "2026-04-01T07:17:23Z",
-          "completed_at": "2026-04-16T03:07:29Z",
+          "completed_at": "2026-04-16T08:02:50Z",
           "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/913",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 1281006.2
+          "durationInSeconds": 1298727.916
         }
       ]
     },
@@ -13004,7 +13004,7 @@
     },
     {
       "id": 33680001,
-      "name": "PR #3368 compile - [fix]:solve the UT of GDN triton.",
+      "name": "PR #3368 compile - fix:solve the UT of GDN triton.",
       "head_branch": "master_triton_gdn_ut",
       "status": "completed",
       "conclusion": "failure",
@@ -13029,7 +13029,7 @@
     },
     {
       "id": 33680002,
-      "name": "PR #3368 compile - [fix]:solve the UT of GDN triton.",
+      "name": "PR #3368 compile - fix:solve the UT of GDN triton.",
       "head_branch": "master_triton_gdn_ut",
       "status": "completed",
       "conclusion": "failure",
@@ -13054,7 +13054,7 @@
     },
     {
       "id": 33680003,
-      "name": "PR #3368 compile - [fix]:solve the UT of GDN triton.",
+      "name": "PR #3368 compile - fix:solve the UT of GDN triton.",
       "head_branch": "master_triton_gdn_ut",
       "status": "completed",
       "conclusion": "failure",
@@ -13079,7 +13079,7 @@
     },
     {
       "id": 33680101,
-      "name": "PR #3368 docs-ci - [fix]:solve the UT of GDN triton.",
+      "name": "PR #3368 docs-ci - fix:solve the UT of GDN triton.",
       "head_branch": "master_triton_gdn_ut",
       "status": "completed",
       "conclusion": "success",
@@ -13104,7 +13104,7 @@
     },
     {
       "id": 33680102,
-      "name": "PR #3368 docs-ci - [fix]:solve the UT of GDN triton.",
+      "name": "PR #3368 docs-ci - fix:solve the UT of GDN triton.",
       "head_branch": "master_triton_gdn_ut",
       "status": "completed",
       "conclusion": "success",
@@ -13129,7 +13129,7 @@
     },
     {
       "id": 33680103,
-      "name": "PR #3368 docs-ci - [fix]:solve the UT of GDN triton.",
+      "name": "PR #3368 docs-ci - fix:solve the UT of GDN triton.",
       "head_branch": "master_triton_gdn_ut",
       "status": "completed",
       "conclusion": "success",
@@ -25282,23 +25282,23 @@
       "name": "PR #4580 docs-ci - Update meta for npu_multi_head_attention",
       "head_branch": "meta_update",
       "status": "completed",
-      "conclusion": "pending",
+      "conclusion": "success",
       "created_at": "2026-04-01T15:45:10Z",
-      "updated_at": "2026-04-16T03:15:11Z",
+      "updated_at": "2026-04-16T07:19:21Z",
       "html_url": "https://gitcode.com/Ascend/op-plugin/merge_requests/4580",
-      "durationInSeconds": 1251001.686,
+      "durationInSeconds": 1265651,
       "jobs": [
         {
           "id": 45800102,
           "name": "docs-ci",
           "status": "completed",
-          "conclusion": "pending",
+          "conclusion": "success",
           "created_at": "2026-04-01T15:45:10Z",
           "started_at": "2026-04-01T15:45:40Z",
-          "completed_at": "2026-04-16T03:15:11Z",
+          "completed_at": "2026-04-16T07:19:21Z",
           "html_url": "https://gitcode.com/Ascend/op-plugin/merge_requests/4580",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 1250971.686
+          "durationInSeconds": 1265621
         }
       ]
     },

@@ -1,6 +1,6 @@
 {
   "date": "2026-04-02",
-  "repo": "Ascend/op-plugin",
+  "repo": "Ascend/pytorch",
   "runs": [
     {
       "id": 1000000,
@@ -259,9 +259,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-02T06:49:05Z",
-      "updated_at": "2026-04-16T02:57:18Z",
+      "updated_at": "2026-04-16T07:54:26Z",
       "html_url": "https://gitcode.com/Ascend/Triton-distributed-ascend/merge_requests/2",
-      "durationInSeconds": 1195693.025,
+      "durationInSeconds": 1213521.877,
       "jobs": [
         {
           "id": 20103,
@@ -270,10 +270,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-02T06:49:05Z",
           "started_at": "2026-04-02T06:49:35Z",
-          "completed_at": "2026-04-16T02:57:18Z",
+          "completed_at": "2026-04-16T07:54:26Z",
           "html_url": "https://gitcode.com/Ascend/Triton-distributed-ascend/merge_requests/2",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 1195663.025
+          "durationInSeconds": 1213491.877
         }
       ]
     },
@@ -284,9 +284,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-02T08:49:18Z",
-      "updated_at": "2026-04-16T02:57:18Z",
+      "updated_at": "2026-04-16T07:54:26Z",
       "html_url": "https://gitcode.com/Ascend/Triton-distributed-ascend/merge_requests/2",
-      "durationInSeconds": 1188480.025,
+      "durationInSeconds": 1206308.877,
       "jobs": [
         {
           "id": 20104,
@@ -295,10 +295,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-02T08:49:18Z",
           "started_at": "2026-04-02T08:49:48Z",
-          "completed_at": "2026-04-16T02:57:18Z",
+          "completed_at": "2026-04-16T07:54:26Z",
           "html_url": "https://gitcode.com/Ascend/Triton-distributed-ascend/merge_requests/2",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 1188450.025
+          "durationInSeconds": 1206278.877
         }
       ]
     },
@@ -2657,23 +2657,23 @@
       "name": "PR #117 docs-ci - [feature]记录类型支持变长协议",
       "head_branch": "add_simt_core_racecheck",
       "status": "completed",
-      "conclusion": "pending",
+      "conclusion": "success",
       "created_at": "2026-04-02T09:08:04Z",
-      "updated_at": "2026-04-16T02:59:39Z",
+      "updated_at": "2026-04-16T06:43:47Z",
       "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/117",
-      "durationInSeconds": 1187495.33,
+      "durationInSeconds": 1200943,
       "jobs": [
         {
           "id": 1170109,
           "name": "docs-ci",
           "status": "completed",
-          "conclusion": "pending",
+          "conclusion": "success",
           "created_at": "2026-04-02T09:08:04Z",
           "started_at": "2026-04-02T09:08:34Z",
-          "completed_at": "2026-04-16T02:59:39Z",
+          "completed_at": "2026-04-16T06:43:47Z",
           "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/117",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 1187465.33
+          "durationInSeconds": 1200913
         }
       ]
     },
@@ -14957,23 +14957,23 @@
       "name": "PR #1519 docs-ci - [wip] feat(autotune): fall back to SIMT mode when ",
       "head_branch": "feat/simt-fallback",
       "status": "completed",
-      "conclusion": "pending",
+      "conclusion": "success",
       "created_at": "2026-04-02T01:13:54Z",
-      "updated_at": "2026-04-16T03:06:01Z",
+      "updated_at": "2026-04-16T03:57:53Z",
       "html_url": "https://gitcode.com/Ascend/triton-ascend/merge_requests/1519",
-      "durationInSeconds": 1216327.409,
+      "durationInSeconds": 1219439,
       "jobs": [
         {
           "id": 15190101,
-          "name": "docs-ci",
+          "name": "docs-ci-pipeline-running",
           "status": "completed",
-          "conclusion": "pending",
+          "conclusion": "success",
           "created_at": "2026-04-02T01:13:54Z",
-          "started_at": "2026-04-02T01:14:24Z",
-          "completed_at": "2026-04-16T03:06:01Z",
+          "started_at": "2026-04-16T03:56:21Z",
+          "completed_at": "2026-04-16T03:57:53Z",
           "html_url": "https://gitcode.com/Ascend/triton-ascend/merge_requests/1519",
-          "queueDurationInSeconds": 30,
-          "durationInSeconds": 1216297.409
+          "queueDurationInSeconds": 1219347,
+          "durationInSeconds": 92
         }
       ]
     },
@@ -14982,23 +14982,23 @@
       "name": "PR #1519 docs-ci - [wip] feat(autotune): fall back to SIMT mode when ",
       "head_branch": "feat/simt-fallback",
       "status": "completed",
-      "conclusion": "pending",
+      "conclusion": "success",
       "created_at": "2026-04-02T01:20:47Z",
-      "updated_at": "2026-04-16T03:06:01Z",
+      "updated_at": "2026-04-16T03:57:53Z",
       "html_url": "https://gitcode.com/Ascend/triton-ascend/merge_requests/1519",
-      "durationInSeconds": 1215914.409,
+      "durationInSeconds": 1219026,
       "jobs": [
         {
           "id": 15190102,
-          "name": "docs-ci",
+          "name": "docs-ci-pipeline-running",
           "status": "completed",
-          "conclusion": "pending",
+          "conclusion": "success",
           "created_at": "2026-04-02T01:20:47Z",
-          "started_at": "2026-04-02T01:21:17Z",
-          "completed_at": "2026-04-16T03:06:01Z",
+          "started_at": "2026-04-16T03:56:21Z",
+          "completed_at": "2026-04-16T03:57:53Z",
           "html_url": "https://gitcode.com/Ascend/triton-ascend/merge_requests/1519",
-          "queueDurationInSeconds": 30,
-          "durationInSeconds": 1215884.409
+          "queueDurationInSeconds": 1218934,
+          "durationInSeconds": 92
         }
       ]
     },
@@ -15007,23 +15007,23 @@
       "name": "PR #1519 docs-ci - [wip] feat(autotune): fall back to SIMT mode when ",
       "head_branch": "feat/simt-fallback",
       "status": "completed",
-      "conclusion": "pending",
+      "conclusion": "success",
       "created_at": "2026-04-02T14:12:05Z",
-      "updated_at": "2026-04-16T03:06:01Z",
+      "updated_at": "2026-04-16T03:57:53Z",
       "html_url": "https://gitcode.com/Ascend/triton-ascend/merge_requests/1519",
-      "durationInSeconds": 1169636.409,
+      "durationInSeconds": 1172748,
       "jobs": [
         {
           "id": 15190103,
-          "name": "docs-ci",
+          "name": "docs-ci-pipeline-running",
           "status": "completed",
-          "conclusion": "pending",
+          "conclusion": "success",
           "created_at": "2026-04-02T14:12:05Z",
-          "started_at": "2026-04-02T14:12:35Z",
-          "completed_at": "2026-04-16T03:06:01Z",
+          "started_at": "2026-04-16T03:56:21Z",
+          "completed_at": "2026-04-16T03:57:53Z",
           "html_url": "https://gitcode.com/Ascend/triton-ascend/merge_requests/1519",
-          "queueDurationInSeconds": 30,
-          "durationInSeconds": 1169606.409
+          "queueDurationInSeconds": 1172656,
+          "durationInSeconds": 92
         }
       ]
     },
@@ -15032,23 +15032,23 @@
       "name": "PR #1519 docs-ci - [wip] feat(autotune): fall back to SIMT mode when ",
       "head_branch": "feat/simt-fallback",
       "status": "completed",
-      "conclusion": "pending",
+      "conclusion": "success",
       "created_at": "2026-04-02T14:12:57Z",
-      "updated_at": "2026-04-16T03:06:01Z",
+      "updated_at": "2026-04-16T03:57:53Z",
       "html_url": "https://gitcode.com/Ascend/triton-ascend/merge_requests/1519",
-      "durationInSeconds": 1169584.409,
+      "durationInSeconds": 1172696,
       "jobs": [
         {
           "id": 15190104,
-          "name": "docs-ci",
+          "name": "docs-ci-pipeline-running",
           "status": "completed",
-          "conclusion": "pending",
+          "conclusion": "success",
           "created_at": "2026-04-02T14:12:57Z",
-          "started_at": "2026-04-02T14:13:27Z",
-          "completed_at": "2026-04-16T03:06:01Z",
+          "started_at": "2026-04-16T03:56:21Z",
+          "completed_at": "2026-04-16T03:57:53Z",
           "html_url": "https://gitcode.com/Ascend/triton-ascend/merge_requests/1519",
-          "queueDurationInSeconds": 30,
-          "durationInSeconds": 1169554.409
+          "queueDurationInSeconds": 1172604,
+          "durationInSeconds": 92
         }
       ]
     },
@@ -15057,23 +15057,23 @@
       "name": "PR #1519 docs-ci - [wip] feat(autotune): fall back to SIMT mode when ",
       "head_branch": "feat/simt-fallback",
       "status": "completed",
-      "conclusion": "pending",
+      "conclusion": "success",
       "created_at": "2026-04-02T20:08:18Z",
-      "updated_at": "2026-04-16T03:06:01Z",
+      "updated_at": "2026-04-16T03:57:53Z",
       "html_url": "https://gitcode.com/Ascend/triton-ascend/merge_requests/1519",
-      "durationInSeconds": 1148263.409,
+      "durationInSeconds": 1151375,
       "jobs": [
         {
           "id": 15190105,
-          "name": "docs-ci",
+          "name": "docs-ci-pipeline-running",
           "status": "completed",
-          "conclusion": "pending",
+          "conclusion": "success",
           "created_at": "2026-04-02T20:08:18Z",
-          "started_at": "2026-04-02T20:08:48Z",
-          "completed_at": "2026-04-16T03:06:01Z",
+          "started_at": "2026-04-16T03:56:21Z",
+          "completed_at": "2026-04-16T03:57:53Z",
           "html_url": "https://gitcode.com/Ascend/triton-ascend/merge_requests/1519",
-          "queueDurationInSeconds": 30,
-          "durationInSeconds": 1148233.409
+          "queueDurationInSeconds": 1151283,
+          "durationInSeconds": 92
         }
       ]
     },
@@ -15082,23 +15082,23 @@
       "name": "PR #1519 docs-ci - [wip] feat(autotune): fall back to SIMT mode when ",
       "head_branch": "feat/simt-fallback",
       "status": "completed",
-      "conclusion": "pending",
+      "conclusion": "success",
       "created_at": "2026-04-02T20:43:59Z",
-      "updated_at": "2026-04-16T03:06:01Z",
+      "updated_at": "2026-04-16T03:57:53Z",
       "html_url": "https://gitcode.com/Ascend/triton-ascend/merge_requests/1519",
-      "durationInSeconds": 1146122.409,
+      "durationInSeconds": 1149234,
       "jobs": [
         {
           "id": 15190106,
-          "name": "docs-ci",
+          "name": "docs-ci-pipeline-running",
           "status": "completed",
-          "conclusion": "pending",
+          "conclusion": "success",
           "created_at": "2026-04-02T20:43:59Z",
-          "started_at": "2026-04-02T20:44:29Z",
-          "completed_at": "2026-04-16T03:06:01Z",
+          "started_at": "2026-04-16T03:56:21Z",
+          "completed_at": "2026-04-16T03:57:53Z",
           "html_url": "https://gitcode.com/Ascend/triton-ascend/merge_requests/1519",
-          "queueDurationInSeconds": 30,
-          "durationInSeconds": 1146092.409
+          "queueDurationInSeconds": 1149142,
+          "durationInSeconds": 92
         }
       ]
     },
@@ -15107,23 +15107,23 @@
       "name": "PR #1519 docs-ci - [wip] feat(autotune): fall back to SIMT mode when ",
       "head_branch": "feat/simt-fallback",
       "status": "completed",
-      "conclusion": "pending",
+      "conclusion": "success",
       "created_at": "2026-04-02T23:41:36Z",
-      "updated_at": "2026-04-16T03:06:01Z",
+      "updated_at": "2026-04-16T03:57:53Z",
       "html_url": "https://gitcode.com/Ascend/triton-ascend/merge_requests/1519",
-      "durationInSeconds": 1135465.409,
+      "durationInSeconds": 1138577,
       "jobs": [
         {
           "id": 15190107,
-          "name": "docs-ci",
+          "name": "docs-ci-pipeline-running",
           "status": "completed",
-          "conclusion": "pending",
+          "conclusion": "success",
           "created_at": "2026-04-02T23:41:36Z",
-          "started_at": "2026-04-02T23:42:06Z",
-          "completed_at": "2026-04-16T03:06:01Z",
+          "started_at": "2026-04-16T03:56:21Z",
+          "completed_at": "2026-04-16T03:57:53Z",
           "html_url": "https://gitcode.com/Ascend/triton-ascend/merge_requests/1519",
-          "queueDurationInSeconds": 30,
-          "durationInSeconds": 1135435.409
+          "queueDurationInSeconds": 1138485,
+          "durationInSeconds": 92
         }
       ]
     },
@@ -19029,7 +19029,7 @@
     },
     {
       "id": 33680004,
-      "name": "PR #3368 compile - [fix]:solve the UT of GDN triton.",
+      "name": "PR #3368 compile - fix:solve the UT of GDN triton.",
       "head_branch": "master_triton_gdn_ut",
       "status": "completed",
       "conclusion": "failure",
@@ -19054,7 +19054,7 @@
     },
     {
       "id": 33680005,
-      "name": "PR #3368 compile - [fix]:solve the UT of GDN triton.",
+      "name": "PR #3368 compile - fix:solve the UT of GDN triton.",
       "head_branch": "master_triton_gdn_ut",
       "status": "completed",
       "conclusion": "failure",
@@ -19079,7 +19079,7 @@
     },
     {
       "id": 33680006,
-      "name": "PR #3368 compile - [fix]:solve the UT of GDN triton.",
+      "name": "PR #3368 compile - fix:solve the UT of GDN triton.",
       "head_branch": "master_triton_gdn_ut",
       "status": "completed",
       "conclusion": "failure",
@@ -19104,7 +19104,7 @@
     },
     {
       "id": 33680007,
-      "name": "PR #3368 compile - [fix]:solve the UT of GDN triton.",
+      "name": "PR #3368 compile - fix:solve the UT of GDN triton.",
       "head_branch": "master_triton_gdn_ut",
       "status": "completed",
       "conclusion": "failure",
@@ -19129,7 +19129,7 @@
     },
     {
       "id": 33680104,
-      "name": "PR #3368 docs-ci - [fix]:solve the UT of GDN triton.",
+      "name": "PR #3368 docs-ci - fix:solve the UT of GDN triton.",
       "head_branch": "master_triton_gdn_ut",
       "status": "completed",
       "conclusion": "success",
@@ -19154,7 +19154,7 @@
     },
     {
       "id": 33680105,
-      "name": "PR #3368 docs-ci - [fix]:solve the UT of GDN triton.",
+      "name": "PR #3368 docs-ci - fix:solve the UT of GDN triton.",
       "head_branch": "master_triton_gdn_ut",
       "status": "completed",
       "conclusion": "success",
@@ -19179,7 +19179,7 @@
     },
     {
       "id": 33680106,
-      "name": "PR #3368 docs-ci - [fix]:solve the UT of GDN triton.",
+      "name": "PR #3368 docs-ci - fix:solve the UT of GDN triton.",
       "head_branch": "master_triton_gdn_ut",
       "status": "completed",
       "conclusion": "success",
@@ -19204,7 +19204,7 @@
     },
     {
       "id": 33680107,
-      "name": "PR #3368 docs-ci - [fix]:solve the UT of GDN triton.",
+      "name": "PR #3368 docs-ci - fix:solve the UT of GDN triton.",
       "head_branch": "master_triton_gdn_ut",
       "status": "completed",
       "conclusion": "success",
@@ -23034,9 +23034,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-02T01:37:27Z",
-      "updated_at": "2026-04-16T03:10:08Z",
+      "updated_at": "2026-04-16T08:05:50Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/32711",
-      "durationInSeconds": 1215161.815,
+      "durationInSeconds": 1232903.441,
       "jobs": [
         {
           "id": 327110108,
@@ -23045,10 +23045,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-02T01:37:27Z",
           "started_at": "2026-04-02T01:37:57Z",
-          "completed_at": "2026-04-16T03:10:08Z",
+          "completed_at": "2026-04-16T08:05:50Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/32711",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 1215131.815
+          "durationInSeconds": 1232873.441
         }
       ]
     },
@@ -23059,9 +23059,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-02T06:50:36Z",
-      "updated_at": "2026-04-16T03:10:08Z",
+      "updated_at": "2026-04-16T08:05:50Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/32711",
-      "durationInSeconds": 1196372.815,
+      "durationInSeconds": 1214114.441,
       "jobs": [
         {
           "id": 327110109,
@@ -23070,10 +23070,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-02T06:50:36Z",
           "started_at": "2026-04-02T06:51:06Z",
-          "completed_at": "2026-04-16T03:10:08Z",
+          "completed_at": "2026-04-16T08:05:50Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/32711",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 1196342.815
+          "durationInSeconds": 1214084.441
         }
       ]
     },
@@ -25809,9 +25809,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-02T07:20:37Z",
-      "updated_at": "2026-04-16T03:09:27Z",
+      "updated_at": "2026-04-16T08:05:27Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/31731",
-      "durationInSeconds": 1194530.411,
+      "durationInSeconds": 1212290.904,
       "jobs": [
         {
           "id": 317310102,
@@ -25820,10 +25820,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-02T07:20:37Z",
           "started_at": "2026-04-02T07:21:07Z",
-          "completed_at": "2026-04-16T03:09:27Z",
+          "completed_at": "2026-04-16T08:05:27Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/31731",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 1194500.411
+          "durationInSeconds": 1212260.904
         }
       ]
     },

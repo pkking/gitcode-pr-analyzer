@@ -1,6 +1,6 @@
 {
   "date": "2026-04-03",
-  "repo": "Ascend/op-plugin",
+  "repo": "Ascend/pytorch",
   "runs": [
     {
       "id": 1000000,
@@ -8034,9 +8034,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-03T02:52:05Z",
-      "updated_at": "2026-04-16T03:05:20Z",
+      "updated_at": "2026-04-16T08:01:23Z",
       "html_url": "https://gitcode.com/Ascend/msprobe/merge_requests/530",
-      "durationInSeconds": 1123995.791,
+      "durationInSeconds": 1141758.814,
       "jobs": [
         {
           "id": 5300101,
@@ -8045,10 +8045,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-03T02:52:05Z",
           "started_at": "2026-04-03T02:52:35Z",
-          "completed_at": "2026-04-16T03:05:20Z",
+          "completed_at": "2026-04-16T08:01:23Z",
           "html_url": "https://gitcode.com/Ascend/msprobe/merge_requests/530",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 1123965.791
+          "durationInSeconds": 1141728.814
         }
       ]
     },
@@ -9157,23 +9157,23 @@
       "name": "PR #1519 docs-ci - [wip] feat(autotune): fall back to SIMT mode when ",
       "head_branch": "feat/simt-fallback",
       "status": "completed",
-      "conclusion": "pending",
+      "conclusion": "success",
       "created_at": "2026-04-03T00:25:13Z",
-      "updated_at": "2026-04-16T03:06:01Z",
+      "updated_at": "2026-04-16T03:57:53Z",
       "html_url": "https://gitcode.com/Ascend/triton-ascend/merge_requests/1519",
-      "durationInSeconds": 1132848.409,
+      "durationInSeconds": 1135960,
       "jobs": [
         {
           "id": 15190108,
-          "name": "docs-ci",
+          "name": "docs-ci-pipeline-running",
           "status": "completed",
-          "conclusion": "pending",
+          "conclusion": "success",
           "created_at": "2026-04-03T00:25:13Z",
-          "started_at": "2026-04-03T00:25:43Z",
-          "completed_at": "2026-04-16T03:06:01Z",
+          "started_at": "2026-04-16T03:56:21Z",
+          "completed_at": "2026-04-16T03:57:53Z",
           "html_url": "https://gitcode.com/Ascend/triton-ascend/merge_requests/1519",
-          "queueDurationInSeconds": 30,
-          "durationInSeconds": 1132818.409
+          "queueDurationInSeconds": 1135868,
+          "durationInSeconds": 92
         }
       ]
     },
@@ -9182,23 +9182,23 @@
       "name": "PR #1519 docs-ci - [wip] feat(autotune): fall back to SIMT mode when ",
       "head_branch": "feat/simt-fallback",
       "status": "completed",
-      "conclusion": "pending",
+      "conclusion": "success",
       "created_at": "2026-04-03T01:53:13Z",
-      "updated_at": "2026-04-16T03:06:01Z",
+      "updated_at": "2026-04-16T03:57:53Z",
       "html_url": "https://gitcode.com/Ascend/triton-ascend/merge_requests/1519",
-      "durationInSeconds": 1127568.409,
+      "durationInSeconds": 1130680,
       "jobs": [
         {
           "id": 15190109,
-          "name": "docs-ci",
+          "name": "docs-ci-pipeline-running",
           "status": "completed",
-          "conclusion": "pending",
+          "conclusion": "success",
           "created_at": "2026-04-03T01:53:13Z",
-          "started_at": "2026-04-03T01:53:43Z",
-          "completed_at": "2026-04-16T03:06:01Z",
+          "started_at": "2026-04-16T03:56:21Z",
+          "completed_at": "2026-04-16T03:57:53Z",
           "html_url": "https://gitcode.com/Ascend/triton-ascend/merge_requests/1519",
-          "queueDurationInSeconds": 30,
-          "durationInSeconds": 1127538.409
+          "queueDurationInSeconds": 1130588,
+          "durationInSeconds": 92
         }
       ]
     },
@@ -12454,7 +12454,7 @@
     },
     {
       "id": 33680008,
-      "name": "PR #3368 compile - [fix]:solve the UT of GDN triton.",
+      "name": "PR #3368 compile - fix:solve the UT of GDN triton.",
       "head_branch": "master_triton_gdn_ut",
       "status": "completed",
       "conclusion": "failure",
@@ -12479,7 +12479,7 @@
     },
     {
       "id": 33680009,
-      "name": "PR #3368 compile - [fix]:solve the UT of GDN triton.",
+      "name": "PR #3368 compile - fix:solve the UT of GDN triton.",
       "head_branch": "master_triton_gdn_ut",
       "status": "completed",
       "conclusion": "failure",
@@ -12504,7 +12504,7 @@
     },
     {
       "id": 33680108,
-      "name": "PR #3368 docs-ci - [fix]:solve the UT of GDN triton.",
+      "name": "PR #3368 docs-ci - fix:solve the UT of GDN triton.",
       "head_branch": "master_triton_gdn_ut",
       "status": "completed",
       "conclusion": "success",
@@ -12529,7 +12529,7 @@
     },
     {
       "id": 33680109,
-      "name": "PR #3368 docs-ci - [fix]:solve the UT of GDN triton.",
+      "name": "PR #3368 docs-ci - fix:solve the UT of GDN triton.",
       "head_branch": "master_triton_gdn_ut",
       "status": "completed",
       "conclusion": "success",
@@ -14784,9 +14784,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-03T03:04:41Z",
-      "updated_at": "2026-04-16T03:09:30Z",
+      "updated_at": "2026-04-16T08:05:29Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33090",
-      "durationInSeconds": 1123489.004,
+      "durationInSeconds": 1141248.922,
       "jobs": [
         {
           "id": 330900101,
@@ -14795,10 +14795,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-03T03:04:41Z",
           "started_at": "2026-04-03T03:05:11Z",
-          "completed_at": "2026-04-16T03:09:30Z",
+          "completed_at": "2026-04-16T08:05:29Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33090",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 1123459.004
+          "durationInSeconds": 1141218.922
         }
       ]
     },
@@ -14809,9 +14809,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-03T03:09:12Z",
-      "updated_at": "2026-04-16T03:09:30Z",
+      "updated_at": "2026-04-16T08:05:29Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33090",
-      "durationInSeconds": 1123218.004,
+      "durationInSeconds": 1140977.922,
       "jobs": [
         {
           "id": 330900102,
@@ -14820,10 +14820,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-03T03:09:12Z",
           "started_at": "2026-04-03T03:09:42Z",
-          "completed_at": "2026-04-16T03:09:30Z",
+          "completed_at": "2026-04-16T08:05:29Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33090",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 1123188.004
+          "durationInSeconds": 1140947.922
         }
       ]
     },
@@ -14834,9 +14834,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-03T03:38:57Z",
-      "updated_at": "2026-04-16T03:09:30Z",
+      "updated_at": "2026-04-16T08:05:29Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33090",
-      "durationInSeconds": 1121433.005,
+      "durationInSeconds": 1139192.923,
       "jobs": [
         {
           "id": 330900103,
@@ -14845,10 +14845,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-03T03:38:57Z",
           "started_at": "2026-04-03T03:39:27Z",
-          "completed_at": "2026-04-16T03:09:30Z",
+          "completed_at": "2026-04-16T08:05:29Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33090",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 1121403.005
+          "durationInSeconds": 1139162.923
         }
       ]
     },
@@ -15884,9 +15884,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-03T08:27:51Z",
-      "updated_at": "2026-04-16T03:10:08Z",
+      "updated_at": "2026-04-16T08:05:50Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/32711",
-      "durationInSeconds": 1104137.815,
+      "durationInSeconds": 1121879.441,
       "jobs": [
         {
           "id": 327110110,
@@ -15895,10 +15895,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-03T08:27:51Z",
           "started_at": "2026-04-03T08:28:21Z",
-          "completed_at": "2026-04-16T03:10:08Z",
+          "completed_at": "2026-04-16T08:05:50Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/32711",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 1104107.815
+          "durationInSeconds": 1121849.441
         }
       ]
     },
