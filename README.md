@@ -5,7 +5,9 @@ A static dashboard backed by an ETL collector for GitCode CI run analytics.
 ## Features
 - **Organization-aware collection:** Configure explicit repositories or discover all repositories under a GitCode organization.
 - **CI run reconstruction:** Rebuild compile and CI runs from pull request comments and label events.
+- **Route-driven dashboard shell:** Home, browse, and analysis are explicit app destinations instead of one in-memory view switcher.
 - **Static dashboard:** Browse repositories, daily run history, run duration, job timing, and merge-request links from prebuilt JSON files.
+- **Standalone analysis page:** Open a specific run directly and switch between recent runs for the same repository without returning to browsing.
 
 ## Tech Stack
 - React (Vite)
@@ -67,8 +69,43 @@ Override modes:
    ```
 5. **Usage:**
    - Open the app in your browser.
-   - Choose a repository from the sidebar.
-   - Browse collected CI runs and inspect job timing details.
+   - Start at `/#/` for the home page.
+   - Use `/#/browse` to explore organizations and repositories.
+   - Use `/#/analysis/:owner/:repo/:runId` to open a specific run directly when needed.
+
+## Frontend Lint
+
+- Run the frontend lint gate manually with `npm run lint`.
+- The first pass only checks frontend source files under `src/`.
+- The lint gate is fail-only in this repo; it does not rewrite files automatically.
+
+To enable commit-time checks with `pre-commit`:
+
+```bash
+pip install pre-commit
+pre-commit install
+```
+
+After installation, commits that include matching `src/**/*.js` or `src/**/*.jsx` files will run the same frontend lint contract automatically.
+
+GitHub Actions also enforces the same command through `.github/workflows/frontend-lint.yml` on normal development pushes and pull requests.
+
+## Frontend Route Contract
+
+- `/#/`
+  Lightweight home/orientation page.
+- `/#/browse`
+  Browse landing state.
+- `/#/browse/:owner`
+  Organization-level browse view.
+- `/#/browse/:owner/:repo`
+  Repository-level browse view.
+- `/#/analysis`
+  Analysis landing state.
+- `/#/analysis/:owner/:repo`
+  Analysis page scoped to one repository with recent-run switching.
+- `/#/analysis/:owner/:repo/:runId`
+  Analysis page with a specific run selected directly.
 
 ## Collection Logic
 - **Target resolution:** The collector merges top-level repositories, explicit organization repository lists, and implicit organization discovery into one deduplicated target set.
