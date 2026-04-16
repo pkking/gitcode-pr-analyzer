@@ -73,6 +73,23 @@ Override modes:
    - Use `/#/browse` to explore organizations and repositories.
    - Use `/#/analysis/:owner/:repo/:runId` to open a specific run directly when needed.
 
+## Frontend Lint
+
+- Run the frontend lint gate manually with `npm run lint`.
+- The first pass only checks frontend source files under `src/`.
+- The lint gate is fail-only in this repo; it does not rewrite files automatically.
+
+To enable commit-time checks with `pre-commit`:
+
+```bash
+pip install pre-commit
+pre-commit install
+```
+
+After installation, commits that include matching `src/**/*.js` or `src/**/*.jsx` files will run the same frontend lint contract automatically.
+
+GitHub Actions also enforces the same command through `.github/workflows/frontend-lint.yml` on normal development pushes and pull requests.
+
 ## Frontend Route Contract
 
 - `/#/`

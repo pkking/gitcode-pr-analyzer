@@ -145,7 +145,7 @@ export function RepoView({ repo, runs, buildAnalysisHref }) {
   );
 }
 
-export function RunDetailView({ run, detail, timeline, recentRuns, buildAnalysisHref, missingRequestedRun }) {
+export function RunDetailView({ run, timeline, recentRuns, buildAnalysisHref, missingRequestedRun }) {
   const totalDuration = getRunTotalDuration(run, timeline);
   const hasTimeline = timeline.length > 0;
 

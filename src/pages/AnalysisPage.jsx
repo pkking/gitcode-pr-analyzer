@@ -40,12 +40,12 @@ export default function AnalysisPage() {
   useEffect(() => {
     if (!selectedRepo) return;
     fetchRepoRuns(selectedRepo).catch(err => setError(err.message));
-  }, [selectedRepo]);
+  }, [fetchRepoRuns, selectedRepo, setError]);
 
   useEffect(() => {
     if (!displayRun) return;
     ensureRunDetail(displayRun).catch(err => setError(err.message));
-  }, [displayRun]);
+  }, [displayRun, ensureRunDetail, setError]);
 
   if (loading && !indexData) return <FullScreenMessage tone="stone">Loading index...</FullScreenMessage>;
   if (error) return <FullScreenMessage tone="error">Error: {error}</FullScreenMessage>;
@@ -75,7 +75,6 @@ export default function AnalysisPage() {
       ) : (
         <RunDetailView
           buildAnalysisHref={run => buildAnalysisPath({ owner: selectedRepo.owner, repo: selectedRepo.repo, runId: run.id })}
-          detail={runDetail}
           missingRequestedRun={missingRequestedRun}
           recentRuns={recentRuns}
           run={displayRun}

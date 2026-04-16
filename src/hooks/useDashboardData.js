@@ -1,4 +1,4 @@
-import { createContext, createElement, useContext, useEffect, useMemo, useRef, useState } from 'react';
+import { createContext, createElement, useCallback, useContext, useEffect, useMemo, useRef, useState } from 'react';
 import {
   buildRepoRunList,
   getPrDetailEntry,
@@ -53,7 +53,7 @@ function useDashboardDataState() {
 
   const orgEntries = useMemo(() => listOrgEntries(indexData), [indexData]);
 
-  async function fetchRepoRuns(repoEntry) {
+  const fetchRepoRuns = useCallback(async function fetchRepoRuns(repoEntry) {
     if (!repoEntry) return [];
 
     const cachedRuns = repoRunsByKeyRef.current[repoEntry.key];
@@ -86,9 +86,9 @@ function useDashboardDataState() {
     } finally {
       setPanelLoading(false);
     }
-  }
+  }, []);
 
-  async function ensureOrgDetails(owner) {
+  const ensureOrgDetails = useCallback(async function ensureOrgDetails(owner) {
     if (!owner) return;
 
     const orgDetailEntries = listOrgPrDetailEntries(owner);
@@ -108,9 +108,9 @@ function useDashboardDataState() {
         setDetailByKey(prev => ({ ...prev, [entry.detailKey]: detail }));
       })
     );
-  }
+  }, []);
 
-  async function ensureRunDetail(run) {
+  const ensureRunDetail = useCallback(async function ensureRunDetail(run) {
     if (!run) return;
 
     const runRepo = getRunRepoParts(run);
@@ -128,9 +128,9 @@ function useDashboardDataState() {
     const detail = await res.json();
     detailByKeyRef.current = { ...detailByKeyRef.current, [detailEntry.detailKey]: detail };
     setDetailByKey(prev => ({ ...prev, [detailEntry.detailKey]: detail }));
-  }
+  }, []);
 
-  function getRunDetail(run) {
+  const getRunDetail = useCallback(function getRunDetail(run) {
     if (!run) return null;
     const runRepo = getRunRepoParts(run);
     const prNumber = getRunPrNumber(run);
@@ -140,7 +140,7 @@ function useDashboardDataState() {
     if (!detailEntry) return null;
 
     return detailByKey[detailEntry.detailKey] ?? null;
-  }
+  }, [detailByKey]);
 
   return {
     detailByKey,

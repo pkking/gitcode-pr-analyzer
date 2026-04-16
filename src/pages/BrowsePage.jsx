@@ -31,12 +31,12 @@ export default function BrowsePage() {
       .catch(err => setError(err.message));
 
     ensureOrgDetails(selectedOrg.owner).catch(err => setError(err.message));
-  }, [selectedOrg]);
+  }, [ensureOrgDetails, fetchRepoRuns, selectedOrg, setError]);
 
   useEffect(() => {
     if (!selectedRepo) return;
     fetchRepoRuns(selectedRepo).catch(err => setError(err.message));
-  }, [selectedRepo]);
+  }, [fetchRepoRuns, selectedRepo, setError]);
 
   const selectedRepoRuns = selectedRepo ? repoRunsByKey[selectedRepo.key] || [] : [];
   const selectedOrgRuns = useMemo(() => {
@@ -65,17 +65,6 @@ export default function BrowsePage() {
       .sort((a, b) => b.count - a.count);
   }, [selectedOrgRuns]);
 
-  const orgMergeDurations = useMemo(() => {
-    if (!selectedOrg) return [];
-
-    return selectedOrg.repos
-      .flatMap(repo => (repoRunsByKey[repo.key] || []))
-      .map(run => {
-        const detailKey = `${run.html_url}`;
-        return detailByKey[detailKey];
-      });
-  }, [detailByKey, repoRunsByKey, selectedOrg]);
-
   const orgSummary = useMemo(() => {
     const availableMergeDurations = selectedOrg
       ? Object.entries(detailByKey)
@@ -90,7 +79,7 @@ export default function BrowsePage() {
       avgCiDuration: average(selectedOrgRuns.map(run => run.durationInSeconds)),
       avgMergeDuration: average(availableMergeDurations),
     };
-  }, [detailByKey, selectedOrg, selectedOrgRuns, orgMergeDurations]);
+  }, [detailByKey, selectedOrg, selectedOrgRuns]);
 
   if (loading && !indexData) return <FullScreenMessage tone="stone">Loading index...</FullScreenMessage>;
   if (error) return <FullScreenMessage tone="error">Error: {error}</FullScreenMessage>;
