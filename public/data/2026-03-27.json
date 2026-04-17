@@ -1,6 +1,6 @@
 {
   "date": "2026-03-27",
-  "repo": "Ascend/DrivingSDK",
+  "repo": "Ascend/pytorch",
   "runs": [
     {
       "id": 20001,
@@ -32,23 +32,23 @@
       "name": "PR #2 docs-ci - feat: add ascend backend && distributed passes",
       "head_branch": "master",
       "status": "completed",
-      "conclusion": "pending",
+      "conclusion": "success",
       "created_at": "2026-03-27T04:49:05Z",
-      "updated_at": "2026-04-16T19:22:20Z",
+      "updated_at": "2026-04-17T01:04:11Z",
       "html_url": "https://gitcode.com/Ascend/Triton-distributed-ascend/merge_requests/2",
-      "durationInSeconds": 1780395.716,
+      "durationInSeconds": 1800906,
       "jobs": [
         {
           "id": 20102,
           "name": "docs-ci",
           "status": "completed",
-          "conclusion": "pending",
+          "conclusion": "success",
           "created_at": "2026-03-27T04:49:05Z",
           "started_at": "2026-03-27T04:49:35Z",
-          "completed_at": "2026-04-16T19:22:20Z",
+          "completed_at": "2026-04-17T01:04:11Z",
           "html_url": "https://gitcode.com/Ascend/Triton-distributed-ascend/merge_requests/2",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 1780365.716
+          "durationInSeconds": 1800876
         }
       ]
     },
@@ -13984,9 +13984,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-03-27T01:44:19Z",
-      "updated_at": "2026-04-16T19:32:33Z",
+      "updated_at": "2026-04-17T03:04:20Z",
       "html_url": "https://gitcode.com/Ascend/DrivingSDK/merge_requests/1952",
-      "durationInSeconds": 1792094.933,
+      "durationInSeconds": 1819201.619,
       "jobs": [
         {
           "id": 19520102,
@@ -13995,10 +13995,10 @@
           "conclusion": "pending",
           "created_at": "2026-03-27T01:44:19Z",
           "started_at": "2026-03-27T01:44:49Z",
-          "completed_at": "2026-04-16T19:32:33Z",
+          "completed_at": "2026-04-17T03:04:20Z",
           "html_url": "https://gitcode.com/Ascend/DrivingSDK/merge_requests/1952",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 1792064.933
+          "durationInSeconds": 1819171.619
         }
       ]
     },
@@ -25034,9 +25034,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-03-27T02:19:20Z",
-      "updated_at": "2026-04-16T03:12:28Z",
+      "updated_at": "2026-04-17T03:06:17Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/32497",
-      "durationInSeconds": 1731188.136,
+      "durationInSeconds": 1817217.685,
       "jobs": [
         {
           "id": 324970101,
@@ -25045,10 +25045,10 @@
           "conclusion": "pending",
           "created_at": "2026-03-27T02:19:20Z",
           "started_at": "2026-03-27T02:19:50Z",
-          "completed_at": "2026-04-16T03:12:28Z",
+          "completed_at": "2026-04-17T03:06:17Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/32497",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 1731158.136
+          "durationInSeconds": 1817187.685
         }
       ]
     },
@@ -25082,23 +25082,23 @@
       "name": "PR #32139 docs-ci - Skip failing torch official TestCase tests and dis",
       "head_branch": "cherry-pick-mr-32138-1774073465134-auto",
       "status": "completed",
-      "conclusion": "pending",
+      "conclusion": "success",
       "created_at": "2026-03-27T01:20:33Z",
-      "updated_at": "2026-04-16T03:11:58Z",
+      "updated_at": "2026-04-17T02:19:29Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/32139",
-      "durationInSeconds": 1734685.914,
+      "durationInSeconds": 1817936,
       "jobs": [
         {
           "id": 321390105,
           "name": "docs-ci",
           "status": "completed",
-          "conclusion": "pending",
+          "conclusion": "success",
           "created_at": "2026-03-27T01:20:33Z",
           "started_at": "2026-03-27T01:21:03Z",
-          "completed_at": "2026-04-16T03:11:58Z",
+          "completed_at": "2026-04-17T02:19:29Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/32139",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 1734655.914
+          "durationInSeconds": 1817906
         }
       ]
     },
