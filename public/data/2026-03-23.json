@@ -12932,23 +12932,23 @@
       "name": "PR #807 docs-ci - [AscendNPU IR] feature: PlanMemory support preload",
       "head_branch": "feature-preload-planmemory",
       "status": "completed",
-      "conclusion": "pending",
+      "conclusion": "success",
       "created_at": "2026-03-23T13:15:59Z",
-      "updated_at": "2026-04-17T08:05:34Z",
+      "updated_at": "2026-04-17T09:54:51Z",
       "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/807",
-      "durationInSeconds": 2141375.544,
+      "durationInSeconds": 2147932,
       "jobs": [
         {
           "id": 8070101,
-          "name": "docs-ci",
+          "name": "docs-ci-pipeline-running",
           "status": "completed",
-          "conclusion": "pending",
+          "conclusion": "success",
           "created_at": "2026-03-23T13:15:59Z",
-          "started_at": "2026-03-23T13:16:29Z",
-          "completed_at": "2026-04-17T08:05:34Z",
+          "started_at": "2026-04-17T09:53:25Z",
+          "completed_at": "2026-04-17T09:54:51Z",
           "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/807",
-          "queueDurationInSeconds": 30,
-          "durationInSeconds": 2141345.544
+          "queueDurationInSeconds": 2147846,
+          "durationInSeconds": 86
         }
       ]
     },
