@@ -2,8 +2,10 @@ const LABEL_ADD_PREFIX = 'add label ';
 const LABEL_REMOVE_PREFIX = 'delete label ';
 const CI_RUNNING_LABEL = 'ci-pipeline-running';
 const CI_PASSED_LABEL = 'ci-pipeline-passed';
+const CI_FAILED_LABEL = 'ci-pipeline-failed';
+const DOCS_CI_FAILED_LABEL = 'docs-ci-pipeline-failed';
 
-export const CI_FINISH_LABELS = new Set([CI_RUNNING_LABEL, CI_PASSED_LABEL]);
+export const CI_FINISH_LABELS = new Set([CI_RUNNING_LABEL, CI_PASSED_LABEL, CI_FAILED_LABEL, DOCS_CI_FAILED_LABEL]);
 
 export function extractLabelEvents({ operateLogs = [], history = [] } = {}) {
   const events = [
