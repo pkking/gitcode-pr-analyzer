@@ -71,7 +71,7 @@ export default function PRAnalysisPage() {
         const matchingPaths = prDetailPaths.filter(p => {
           const m = p.toLowerCase().match(/^([^/]+)\/(.+)\/pr-(\d+)\.json$/);
           if (!m) return false;
-          return `${m[1]}/${m[2]}` === repoKey && Number(m[3]) === prNum;
+          return `${m[1]}/${m[2]}` === repoKey.toLowerCase() && Number(m[3]) === prNum;
         });
 
         const detailResults = await Promise.all(

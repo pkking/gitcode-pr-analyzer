@@ -97,7 +97,7 @@ export default function HomePage() {
 
     return repoEntries.map(repoEntry => {
       const runs = runsByRepo.get(repoEntry.key) || [];
-      const details = prDetailsByRepo.get(repoEntry.key) || [];
+      const details = prDetailsByRepo.get(repoEntry.key.toLowerCase()) || [];
 
       const prE2EDurations = details
         .map(d => d?.prSubmitToMerge?.durationSeconds)
