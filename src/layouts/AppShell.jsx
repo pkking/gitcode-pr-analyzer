@@ -1,12 +1,10 @@
 import React, { useMemo, useState } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import RepoTreeNav from '../components/RepoTreeNav.jsx';
 
 export default function AppShell({
   buildOrgHref,
-  buildRepoHref,
   children,
-  currentSection,
   indexData,
   orgEntries,
   panelLoading,
@@ -20,6 +18,8 @@ export default function AppShell({
     selectedOrgOwner ? { ...expandedOrgs, [selectedOrgOwner]: true } : expandedOrgs
   ), [expandedOrgs, selectedOrgOwner]);
 
+  void repoRunsByKey;
+
   return (
     <div className="min-h-screen bg-[radial-gradient(circle_at_top,_rgba(253,224,71,0.12),_transparent_28%),linear-gradient(180deg,_#0c0a09_0%,_#171717_45%,_#fafaf9_45%,_#f5f5f4_100%)] text-stone-900">
       <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
@@ -27,17 +27,14 @@ export default function AppShell({
           <div className="flex flex-col gap-4 xl:flex-row xl:items-end xl:justify-between">
             <div className="space-y-2">
               <p className="text-xs uppercase tracking-[0.35em] text-amber-300/80">GitCode PR Analyzer</p>
-              <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl">组织维度的 CI 全景与独立分析页</h1>
+              <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl">PR 与 CI 指标分析</h1>
               <p className="max-w-3xl text-sm text-stone-300">
-                路由驱动的浏览与分析外壳。浏览页负责上下文探索，分析页负责单次 run 的独立拆解与切换。
+                首页总览所有仓库指标，点击仓库进入 PR 列表，点击 PR 查看 CI 分析。
               </p>
             </div>
             <div className="flex flex-col gap-3 sm:items-end">
               <nav className="flex flex-wrap items-center gap-2">
-                <TopNavLink to="/" label="Home" />
-                <TopNavLink to="/browse" label="Browse" />
-                <TopNavLink to="/analysis" label="Analysis" />
-                <TopNavLink to="/overview" label="Overview" />
+                <TopNavLink to="/" label="首页" />
               </nav>
               {indexData?.last_updated ? (
                 <div className="rounded-2xl border border-stone-800 bg-stone-900/80 px-4 py-3 text-right">
@@ -54,16 +51,14 @@ export default function AppShell({
             <div className="mb-4 flex items-center justify-between">
               <div>
                 <div className="text-xs uppercase tracking-[0.28em] text-stone-500">Navigation</div>
-                <div className="mt-1 text-lg font-semibold text-stone-900">
-                  {currentSection === 'analysis' ? '分析 / 仓库' : '组织 / 仓库'}
-                </div>
+                <div className="mt-1 text-lg font-semibold text-stone-900">组织 / 仓库</div>
               </div>
               {panelLoading ? <span className="text-xs text-amber-700">同步中...</span> : null}
             </div>
 
             <RepoTreeNav
               buildOrgHref={buildOrgHref}
-              buildRepoHref={buildRepoHref}
+              buildRepoHref={repo => `/repo/${repo.owner}/${repo.repo}`}
               expandedOrgs={mergedExpandedOrgs}
               onToggleOrg={owner => setExpandedOrgs(prev => ({ ...prev, [owner]: !(prev[owner] ?? owner === selectedOrgOwner) }))}
               orgEntries={orgEntries}
@@ -71,20 +66,6 @@ export default function AppShell({
               selectedOrgOwner={selectedOrgOwner}
               selectedRepoKey={selectedRepoKey}
             />
-
-            <div className="mt-4 rounded-2xl border border-stone-200 bg-stone-50 px-4 py-4 text-sm text-stone-600">
-              <div className="font-semibold text-stone-900">Current Area</div>
-              <div className="mt-2">
-                {currentSection === 'analysis'
-                  ? '在独立分析页中仍可切换组织与仓库上下文。'
-                  : '浏览页负责组织与仓库 drill-down。'}
-              </div>
-              <div className="mt-3">
-                <Link className="text-amber-700 hover:text-amber-800" to={currentSection === 'analysis' ? '/browse' : '/analysis'}>
-                  {currentSection === 'analysis' ? '前往 Browse' : '前往 Analysis'}
-                </Link>
-              </div>
-            </div>
           </aside>
 
           <main className="space-y-6">{children}</main>

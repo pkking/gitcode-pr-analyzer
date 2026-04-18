@@ -10,6 +10,16 @@ export function buildAnalysisPath({ owner, repo, runId } = {}) {
   return `/analysis/${owner}/${repo}/${runId}`;
 }
 
+export function buildRepoPath({ owner, repo } = {}) {
+  if (!owner || !repo) return '/';
+  return `/repo/${owner}/${repo}`;
+}
+
+export function buildPRAnalysisPath({ owner, repo, prNumber } = {}) {
+  if (!owner || !repo || !prNumber) return '/';
+  return `/repo/${owner}/${repo}/${prNumber}`;
+}
+
 export function getSelectedOrgEntry(orgEntries, params = {}) {
   if (!params.owner) return null;
   return orgEntries.find(org => org.owner === params.owner) || null;
