@@ -134,6 +134,39 @@ const DATA_DIR = path.join(process.cwd(), 'public', 'data');
 const INDEX_PATH = path.join(DATA_DIR, 'index.json');
 const REPOS_CONFIG_PATH = path.join(ETL_DIR, 'repos.yaml');
 
+/**
+ * Safely parse a date string, returning null if invalid instead of throwing.
+ * date-fns functions throw "Invalid time value" on invalid dates.
+ */
+function safeParseDate(value: string | null | undefined): Date | null {
+  if (!value) return null;
+  try {
+    const d = parseISO(value);
+    if (isNaN(d.getTime())) return null;
+    return d;
+  } catch {
+    return null;
+  }
+}
+
+/**
+ * Safely format a date, returning a fallback ISO string if the date is invalid.
+ */
+function safeFormat(date: Date, formatStr: string): string {
+  try {
+    return format(date, formatStr);
+  } catch {
+    return date.toISOString();
+  }
+}
+
+/**
+ * Check if a date value is valid (not Invalid Date).
+ */
+function isValidDate(d: Date | null | undefined): d is Date {
+  return d instanceof Date && !isNaN(d.getTime());
+}
+
 function readIndex(): Index {
   try {
     return JSON.parse(fs.readFileSync(INDEX_PATH, 'utf-8'));
@@ -290,8 +323,10 @@ function buildTimeline(
       if (phase.source === 'comment') {
         for (const c of comments) {
           if (matchesPattern(c.body.trim(), phase.pattern, phase.match)) {
+            const ts = safeParseDate(c.created_at);
+            if (!ts) continue;
             timeline.push({
-              timestamp: new Date(c.created_at),
+              timestamp: ts,
               ruleId: rule.id,
               phaseIdx: pIdx,
               detail: c.body.trim().substring(0, 80),
@@ -304,6 +339,7 @@ function buildTimeline(
       if (phase.source === 'label') {
         for (const event of labelEvents) {
           if (event.type === phase.action && matchesPattern(event.label, phase.pattern, phase.match)) {
+            if (!isValidDate(event.timestamp)) continue;
             timeline.push({
               timestamp: event.timestamp,
               ruleId: rule.id,
@@ -353,7 +389,7 @@ function reconstructCIRuns(
       // Find the first finish event after this trigger (and preferably after start)
       const matchingFinish = ruleFinishes.find(f => f.timestamp > startTime);
 
-      let endTime = matchingFinish?.timestamp || (pr.merged_at ? new Date(pr.merged_at) : null);
+      let endTime = matchingFinish?.timestamp || safeParseDate(pr.merged_at);
       let conclusion = matchingFinish?.conclusion || (endTime ? 'success' : 'pending');
       const jobName = matchingStart?.detail || matchingFinish?.detail || rule.id;
 
@@ -369,8 +405,8 @@ function reconstructCIRuns(
         head_branch: pr.head.ref,
         status: 'completed',
         conclusion,
-        created_at: format(startTime, "yyyy-MM-dd'T'HH:mm:ss'Z'"),
-        updated_at: format(resolvedEnd, "yyyy-MM-dd'T'HH:mm:ss'Z'"),
+        created_at: safeFormat(startTime, "yyyy-MM-dd'T'HH:mm:ss'Z'"),
+        updated_at: safeFormat(resolvedEnd, "yyyy-MM-dd'T'HH:mm:ss'Z'"),
         html_url: pr.html_url,
         durationInSeconds,
         jobs: [
@@ -379,9 +415,9 @@ function reconstructCIRuns(
             name: jobName,
             status: 'completed',
             conclusion,
-            created_at: format(startTime, "yyyy-MM-dd'T'HH:mm:ss'Z'"),
-            started_at: format(new Date(startTime.getTime() + queueDuration * 1000), "yyyy-MM-dd'T'HH:mm:ss'Z'"),
-            completed_at: format(resolvedEnd, "yyyy-MM-dd'T'HH:mm:ss'Z'"),
+            created_at: safeFormat(startTime, "yyyy-MM-dd'T'HH:mm:ss'Z'"),
+            started_at: safeFormat(new Date(startTime.getTime() + queueDuration * 1000), "yyyy-MM-dd'T'HH:mm:ss'Z'"),
+            completed_at: safeFormat(resolvedEnd, "yyyy-MM-dd'T'HH:mm:ss'Z'"),
             html_url: pr.html_url,
             queueDurationInSeconds: queueDuration,
             durationInSeconds: Math.max(0, durationInSeconds - queueDuration),
@@ -407,7 +443,11 @@ function buildPrDetail(
     const compileTime = run.created_at;
     const startTime = run.jobs?.[0]?.started_at || run.created_at;
     const finishTime = run.jobs?.[0]?.completed_at || run.updated_at;
-    const durationSeconds = Math.max(0, (new Date(finishTime).getTime() - new Date(compileTime).getTime()) / 1000);
+    const compileDate = safeParseDate(compileTime);
+    const finishDate = safeParseDate(finishTime);
+    const durationSeconds = (compileDate && finishDate)
+      ? Math.max(0, (finishDate.getTime() - compileDate.getTime()) / 1000)
+      : 0;
 
     return {
       compileTime,
@@ -420,15 +460,16 @@ function buildPrDetail(
   let prSubmitToMerge: PrDetail['prSubmitToMerge'] = null;
 
   if (pr.merged_at !== null) {
-    const createdAt = new Date(pr.created_at);
-    const mergedAt = new Date(pr.merged_at);
-    const durationSeconds = Math.max(0, (mergedAt.getTime() - createdAt.getTime()) / 1000);
-
-    prSubmitToMerge = {
-      durationSeconds,
-      fromTime: format(createdAt, "yyyy-MM-dd'T'HH:mm:ss'Z'"),
-      toTime: format(mergedAt, "yyyy-MM-dd'T'HH:mm:ss'Z'"),
-    };
+    const createdAt = safeParseDate(pr.created_at);
+    const mergedAt = safeParseDate(pr.merged_at);
+    if (createdAt && mergedAt) {
+      const durationSeconds = Math.max(0, (mergedAt.getTime() - createdAt.getTime()) / 1000);
+      prSubmitToMerge = {
+        durationSeconds,
+        fromTime: safeFormat(createdAt, "yyyy-MM-dd'T'HH:mm:ss'Z'"),
+        toTime: safeFormat(mergedAt, "yyyy-MM-dd'T'HH:mm:ss'Z'"),
+      };
+    }
   }
 
   let lastCiRemovalToMerge: PrDetail['lastCiRemovalToMerge'] = null;
@@ -438,21 +479,22 @@ function buildPrDetail(
 
     for (const run of runs) {
       const finishCandidate = run.jobs?.[0]?.completed_at || run.updated_at;
-      const finishDate = new Date(finishCandidate);
-      if (!lastFinishTime || finishDate > lastFinishTime) {
+      const finishDate = safeParseDate(finishCandidate);
+      if (finishDate && (!lastFinishTime || finishDate > lastFinishTime)) {
         lastFinishTime = finishDate;
       }
     }
 
     if (lastFinishTime) {
-      const mergedAt = new Date(pr.merged_at);
-      const durationSeconds = Math.max(0, (mergedAt.getTime() - lastFinishTime.getTime()) / 1000);
-
-      lastCiRemovalToMerge = {
-        durationSeconds,
-        fromTime: format(lastFinishTime, "yyyy-MM-dd'T'HH:mm:ss'Z'"),
-        toTime: format(mergedAt, "yyyy-MM-dd'T'HH:mm:ss'Z'"),
-      };
+      const mergedAt = safeParseDate(pr.merged_at);
+      if (mergedAt) {
+        const durationSeconds = Math.max(0, (mergedAt.getTime() - lastFinishTime.getTime()) / 1000);
+        lastCiRemovalToMerge = {
+          durationSeconds,
+          fromTime: safeFormat(lastFinishTime, "yyyy-MM-dd'T'HH:mm:ss'Z'"),
+          toTime: safeFormat(mergedAt, "yyyy-MM-dd'T'HH:mm:ss'Z'"),
+        };
+      }
     }
   }
 
@@ -495,9 +537,8 @@ async function main() {
       const repoPath = encodeURIComponent(repoName);
 
       const repoIndex = index.repos[canonicalRepo];
-      const lastUpdated = repoIndex?.latest
-        ? parseISO(repoIndex.latest)
-        : subDays(new Date(), retentionDays);
+      const lastUpdated = safeParseDate(repoIndex?.latest)
+        || subDays(new Date(), retentionDays);
 
       const since = format(lastUpdated, "yyyy-MM-dd'T'HH:mm:ssXXX");
       console.log(`  Fetching PRs since ${since}...`);
@@ -560,7 +601,8 @@ async function main() {
 
       const runsByDate: Record<string, Run[]> = {};
       for (const run of allRuns) {
-        const date = format(new Date(run.created_at), 'yyyy-MM-dd');
+        const runDate = safeParseDate(run.created_at);
+        const date = runDate ? format(runDate, 'yyyy-MM-dd') : 'unknown';
         if (!runsByDate[date]) runsByDate[date] = [];
         runsByDate[date].push(run);
       }
@@ -592,8 +634,8 @@ async function main() {
 
       const cutoffDate = subDays(new Date(), retentionDays);
       const filesToRemove = files.filter(f => {
-        const fileDate = parseISO(f.replace('.json', ''));
-        return isBefore(fileDate, cutoffDate);
+        const fileDate = safeParseDate(f.replace('.json', ''));
+        return fileDate && isBefore(fileDate, cutoffDate);
       });
 
       for (const file of filesToRemove) {
@@ -606,7 +648,12 @@ async function main() {
         if (idx > -1) index.repos[canonicalRepo].files.splice(idx, 1);
       }
     } catch (err) {
-      console.error(`Error processing repo ${repo}. This may indicate a non-GitCode repository, missing visibility, or a transient network problem:`, err instanceof Error ? err.message : err);
+      const errorMsg = err instanceof Error ? err.message : String(err);
+      const stack = err instanceof Error ? err.stack : '';
+      console.error(`Error processing repo ${repo}. This may indicate a non-GitCode repository, missing visibility, or a transient network problem: ${errorMsg}`);
+      if (stack && process.env.DEBUG === 'true') {
+        console.error(stack);
+      }
     }
   }
 
