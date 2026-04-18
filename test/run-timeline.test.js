@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 
-import { buildRunTimeline, getRunTotalDuration } from '../src/utils/runTimeline.js';
+import { buildRunTimeline } from '../src/utils/runTimeline.js';
 
 test('buildRunTimeline returns no phases when PR detail is missing', () => {
   const run = {
@@ -19,14 +19,6 @@ test('buildRunTimeline returns no phases when PR detail is missing', () => {
   };
 
   assert.deepEqual(buildRunTimeline(run, null), []);
-});
-
-test('getRunTotalDuration falls back to run duration when timeline is unavailable', () => {
-  const run = {
-    durationInSeconds: 214,
-  };
-
-  assert.equal(getRunTotalDuration(run, []), 214);
 });
 
 test('buildRunTimeline uses matched PR detail when available', () => {

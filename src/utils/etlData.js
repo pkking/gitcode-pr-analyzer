@@ -1,14 +1,5 @@
 import { intervalToDuration } from 'date-fns';
 
-const PR_DETAIL_FILE_PATHS = [
-  'ascend/pytorch/pr-33542.json',
-  'ascend/pytorch/pr-33543.json',
-  'ascend/pytorch/pr-33551.json',
-  'ascend/pytorch/pr-33552.json',
-  'ascend/pytorch/pr-33553.json',
-  'ascend/pytorch/pr-33554.json',
-];
-
 export function listRepoEntries(indexData) {
   return Object.entries(indexData?.repos || {})
     .map(([key, value]) => {
@@ -102,42 +93,6 @@ export function getRunRepoKey(run) {
 export function getRunPrNumber(run) {
   const match = String(run?.name || '').match(/PR\s+#(\d+)/i);
   return match ? Number(match[1]) : null;
-}
-
-export function listPrDetailEntries() {
-  return PR_DETAIL_FILE_PATHS.map(filePath => {
-    const normalizedPath = filePath.toLowerCase();
-    const match = normalizedPath.match(/^([^/]+)\/(.+)\/pr-(\d+)\.json$/);
-    if (!match) return null;
-
-    const [, owner, repoPath, prNumber] = match;
-    return {
-      owner,
-      repo: repoPath,
-      repoKey: `${owner}/${repoPath}`,
-      prNumber: Number(prNumber),
-      filePath,
-      publicPath: `/data/${filePath}`,
-      detailKey: `${owner}/${repoPath}#${prNumber}`,
-    };
-  }).filter(Boolean);
-}
-
-export function getPrDetailEntry(owner, repo, prNumber) {
-  const normalizedOwner = String(owner || '').toLowerCase();
-  const normalizedRepo = String(repo || '').toLowerCase();
-  const normalizedPrNumber = Number(prNumber);
-
-  return listPrDetailEntries().find(entry =>
-    entry.owner === normalizedOwner &&
-    entry.repo === normalizedRepo &&
-    entry.prNumber === normalizedPrNumber
-  ) || null;
-}
-
-export function listOrgPrDetailEntries(owner) {
-  const normalizedOwner = String(owner || '').toLowerCase();
-  return listPrDetailEntries().filter(entry => entry.owner === normalizedOwner);
 }
 
 export function getRunStageName(run) {
