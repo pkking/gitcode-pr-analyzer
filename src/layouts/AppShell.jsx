@@ -37,6 +37,7 @@ export default function AppShell({
                 <TopNavLink to="/" label="Home" />
                 <TopNavLink to="/browse" label="Browse" />
                 <TopNavLink to="/analysis" label="Analysis" />
+                <TopNavLink to="/overview" label="Overview" />
               </nav>
               {indexData?.last_updated ? (
                 <div className="rounded-2xl border border-stone-800 bg-stone-900/80 px-4 py-3 text-right">

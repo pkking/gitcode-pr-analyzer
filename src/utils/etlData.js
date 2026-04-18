@@ -154,6 +154,18 @@ export function average(numbers) {
   return valid.reduce((sum, value) => sum + value, 0) / valid.length;
 }
 
+export function percentile(numbers, p) {
+  const valid = numbers.filter(value => Number.isFinite(value)).sort((a, b) => a - b);
+  if (valid.length === 0) return null;
+  if (valid.length === 1) return valid[0];
+  const index = (p / 100) * (valid.length - 1);
+  const lower = Math.floor(index);
+  const upper = Math.ceil(index);
+  if (lower === upper) return valid[lower];
+  const fraction = index - lower;
+  return valid[lower] + fraction * (valid[upper] - valid[lower]);
+}
+
 export function getSuccessRate(runs) {
   if (!runs.length) return 0;
   const successCount = runs.filter(run => run.conclusion === 'success').length;
@@ -170,4 +182,51 @@ export function formatSeconds(seconds) {
   if (duration.minutes) parts.push(`${duration.minutes}m`);
   if (duration.seconds || parts.length === 0) parts.push(`${duration.seconds}s`);
   return parts.join(' ');
+}
+
+let cachedPrDetailIndex = null;
+
+export async function fetchPrDetailIndex() {
+  if (cachedPrDetailIndex) return cachedPrDetailIndex;
+  try {
+    const res = await fetch('/data/pr-details-index.json');
+    if (!res.ok) return [];
+    const paths = await res.json();
+    cachedPrDetailIndex = paths.map(filePath => {
+      const normalizedPath = filePath.toLowerCase();
+      const match = normalizedPath.match(/^([^/]+)\/(.+)\/pr-(\d+)\.json$/);
+      if (!match) return null;
+      const [, owner, repoPath, prNumber] = match;
+      return {
+        owner,
+        repo: repoPath,
+        repoKey: `${owner}/${repoPath}`,
+        prNumber: Number(prNumber),
+        filePath,
+        publicPath: `/data/${filePath}`,
+        detailKey: `${owner}/${repoPath}#${prNumber}`,
+      };
+    }).filter(Boolean);
+    return cachedPrDetailIndex;
+  } catch {
+    return [];
+  }
+}
+
+export async function fetchAllPrDetails() {
+  const entries = await fetchPrDetailIndex();
+  if (entries.length === 0) return {};
+  const results = await Promise.all(
+    entries.map(async entry => {
+      try {
+        const res = await fetch(entry.publicPath);
+        if (!res.ok) return [entry.detailKey, null];
+        const detail = await res.json();
+        return [entry.detailKey, detail];
+      } catch {
+        return [entry.detailKey, null];
+      };
+    })
+  );
+  return Object.fromEntries(results.filter(([, v]) => v !== null));
 }

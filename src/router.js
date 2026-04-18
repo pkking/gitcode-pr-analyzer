@@ -30,6 +30,10 @@ export const appRoutes = [
     load: () => import('./pages/AnalysisPage.jsx'),
   },
   {
+    path: '/overview',
+    load: () => import('./pages/OverviewPage.jsx'),
+  },
+  {
     path: '*',
     load: () => import('./pages/HomePage.jsx'),
   },

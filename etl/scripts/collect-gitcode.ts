@@ -483,6 +483,27 @@ async function main() {
   }
 
   writeIndex(index);
+
+  // Write PR details index for the overview page
+  const prDetailsIndexPath = path.join(DATA_DIR, 'pr-details-index.json');
+  const prDetailsIndex: string[] = [];
+  function collectPrDetails(dir: string) {
+    if (!fs.existsSync(dir)) return;
+    for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+      const fullPath = path.join(dir, entry.name);
+      if (entry.isDirectory()) {
+        collectPrDetails(fullPath);
+      } else if (entry.name.startsWith('pr-') && entry.name.endsWith('.json')) {
+        const relativePath = path.relative(DATA_DIR, fullPath).replace(/\\/g, '/');
+        prDetailsIndex.push(relativePath);
+      }
+    }
+  }
+  collectPrDetails(DATA_DIR);
+  prDetailsIndex.sort();
+  fs.writeFileSync(prDetailsIndexPath, JSON.stringify(prDetailsIndex, null, 2));
+  console.log(`Wrote ${prDetailsIndex.length} PR detail entries to pr-details-index.json`);
+
   console.log('Done!');
 }
 
