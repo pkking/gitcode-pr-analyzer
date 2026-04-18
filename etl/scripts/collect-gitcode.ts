@@ -104,6 +104,30 @@ interface GitCodePullRequest {
   user: { login: string; name: string };
 }
 
+interface PrDetail {
+  prNumber: number;
+  owner: string;
+  repo: string;
+  createdAt: string;
+  mergedAt: string | null;
+  prSubmitToMerge: {
+    durationSeconds: number;
+    fromTime: string;
+    toTime: string;
+  } | null;
+  compileToCiCycles: Array<{
+    compileTime: string;
+    startTime: string;
+    finishTime: string;
+    durationSeconds: number;
+  }>;
+  lastCiRemovalToMerge: {
+    durationSeconds: number;
+    fromTime: string;
+    toTime: string;
+  } | null;
+}
+
 const GITCODE_API_BASE = 'https://api.gitcode.com/api/v5';
 const ETL_DIR = path.join(process.cwd(), 'etl');
 const DATA_DIR = path.join(process.cwd(), 'public', 'data');
@@ -370,6 +394,80 @@ function reconstructCIRuns(
   return runs;
 }
 
+function buildPrDetail(
+  pr: GitCodePullRequest,
+  runs: Run[],
+  comments: GitCodeComment[],
+  logs: GitCodeOperateLog[],
+  rules: CIRule[],
+  owner: string,
+  repo: string
+): PrDetail {
+  const compileToCiCycles = runs.map(run => {
+    const compileTime = run.created_at;
+    const startTime = run.jobs?.[0]?.started_at || run.created_at;
+    const finishTime = run.jobs?.[0]?.completed_at || run.updated_at;
+    const durationSeconds = Math.max(0, (new Date(finishTime).getTime() - new Date(compileTime).getTime()) / 1000);
+
+    return {
+      compileTime,
+      startTime,
+      finishTime,
+      durationSeconds,
+    };
+  });
+
+  let prSubmitToMerge: PrDetail['prSubmitToMerge'] = null;
+
+  if (pr.merged_at !== null) {
+    const createdAt = new Date(pr.created_at);
+    const mergedAt = new Date(pr.merged_at);
+    const durationSeconds = Math.max(0, (mergedAt.getTime() - createdAt.getTime()) / 1000);
+
+    prSubmitToMerge = {
+      durationSeconds,
+      fromTime: format(createdAt, "yyyy-MM-dd'T'HH:mm:ss'Z'"),
+      toTime: format(mergedAt, "yyyy-MM-dd'T'HH:mm:ss'Z'"),
+    };
+  }
+
+  let lastCiRemovalToMerge: PrDetail['lastCiRemovalToMerge'] = null;
+
+  if (pr.merged_at !== null && runs.length > 0) {
+    let lastFinishTime: Date | null = null;
+
+    for (const run of runs) {
+      const finishCandidate = run.jobs?.[0]?.completed_at || run.updated_at;
+      const finishDate = new Date(finishCandidate);
+      if (!lastFinishTime || finishDate > lastFinishTime) {
+        lastFinishTime = finishDate;
+      }
+    }
+
+    if (lastFinishTime) {
+      const mergedAt = new Date(pr.merged_at);
+      const durationSeconds = Math.max(0, (mergedAt.getTime() - lastFinishTime.getTime()) / 1000);
+
+      lastCiRemovalToMerge = {
+        durationSeconds,
+        fromTime: format(lastFinishTime, "yyyy-MM-dd'T'HH:mm:ss'Z'"),
+        toTime: format(mergedAt, "yyyy-MM-dd'T'HH:mm:ss'Z'"),
+      };
+    }
+  }
+
+  return {
+    prNumber: pr.number,
+    owner,
+    repo,
+    createdAt: pr.created_at,
+    mergedAt: pr.merged_at,
+    prSubmitToMerge,
+    compileToCiCycles,
+    lastCiRemovalToMerge,
+  };
+}
+
 async function main() {
   const config = readConfig();
   const retentionDays = parseInt(process.env.RETENTION_DAYS || '90');
@@ -426,6 +524,17 @@ async function main() {
         const runs = reconstructCIRuns(pr, comments, logs, rules);
         console.log(`    Reconstructed ${runs.length} CI runs`);
         allRuns.push(...runs);
+
+        const prDetail = buildPrDetail(pr, runs, comments, logs, rules, owner, repoName);
+        const prDetailDir = path.join(DATA_DIR, owner, repoName);
+        const prDetailFile = path.join(prDetailDir, `pr-${pr.number}.json`);
+
+        if (!fs.existsSync(prDetailDir)) {
+          fs.mkdirSync(prDetailDir, { recursive: true });
+        }
+
+        fs.writeFileSync(prDetailFile, JSON.stringify(prDetail, null, 2));
+        console.log(`    Wrote PR detail to ${path.relative(DATA_DIR, prDetailFile)}`);
 
         await new Promise(resolve => setTimeout(resolve, 500));
       }
@@ -493,8 +602,8 @@ async function main() {
       const fullPath = path.join(dir, entry.name);
       if (entry.isDirectory()) {
         collectPrDetails(fullPath);
-      } else if (entry.name.startsWith('pr-') && entry.name.endsWith('.json')) {
-        const relativePath = path.relative(DATA_DIR, fullPath).replace(/\\/g, '/');
+      } else if (entry.name.match(/^pr-\d+\.json$/)) {
+        const relativePath = path.relative(DATA_DIR, fullPath).replace(/\\/g, '/').toLowerCase();
         prDetailsIndex.push(relativePath);
       }
     }
