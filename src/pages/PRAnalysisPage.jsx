@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo, useState } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, useSearchParams } from 'react-router-dom';
 import { RunDetailView } from '../components/DashboardViews.jsx';
 import {
   formatSeconds,
@@ -11,8 +11,10 @@ import { buildRunTimeline } from '../utils/runTimeline.js';
 
 export default function PRAnalysisPage() {
   const { owner, repo, prNumber } = useParams();
+  const [searchParams] = useSearchParams();
   const repoKey = `${owner}/${repo}`;
   const prNum = Number(prNumber);
+  const explicitRunId = searchParams.get('runId');
 
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -103,7 +105,13 @@ export default function PRAnalysisPage() {
     return () => { cancelled = true; };
   }, [repoKey, prNum]);
 
-  const selectedRun = runs[0] || null;
+  const selectedRun = useMemo(() => {
+    if (explicitRunId) {
+      const found = runs.find(r => String(r.id) === explicitRunId);
+      if (found) return found;
+    }
+    return runs[0] || null;
+  }, [runs, explicitRunId]);
   const runDetail = selectedRun ? detailByKey[`pr-${prNum}`] || null : null;
   const runTimeline = selectedRun ? buildRunTimeline(selectedRun, runDetail) : [];
 

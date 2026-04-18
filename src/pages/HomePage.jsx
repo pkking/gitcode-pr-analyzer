@@ -1,4 +1,5 @@
 import React, { useEffect, useMemo, useState } from 'react';
+import { Link } from 'react-router-dom';
 import {
   fetchAllPrDetails,
   formatSeconds,
@@ -224,9 +225,9 @@ export default function HomePage() {
                           {idx === 0 ? org.owner : ''}
                         </td>
                         <td className="px-6 py-4">
-                          <a href={`#/repo/${m.owner}/${m.repo}`} className="text-sm font-medium text-amber-700 hover:text-amber-900 hover:underline">
+                          <Link to={`/repo/${m.owner}/${m.repo}`} className="text-sm font-medium text-amber-700 hover:text-amber-900 hover:underline">
                             {m.repo}
-                          </a>
+                          </Link>
                           <span className="ml-2 text-xs text-stone-400">{m.runCount} runs</span>
                         </td>
                         <MetricCell p50={m.prE2EP50} p90={m.prE2EP90} />
