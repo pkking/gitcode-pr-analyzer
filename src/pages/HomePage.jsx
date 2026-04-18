@@ -9,12 +9,24 @@ import {
   percentile,
 } from '../utils/etlData.js';
 
+const SORT_KEYS = {
+  runCount: 'runCount',
+  prE2E: 'prE2EP50',
+  ciE2E: 'ciE2EP50',
+  ciStartup: 'ciStartupP50',
+  ciExec: 'ciExecP50',
+  prReview: 'prReviewP50',
+  compliance: 'ciComplianceRate',
+};
+
 export default function HomePage() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [indexData, setIndexData] = useState(null);
   const [allRuns, setAllRuns] = useState([]);
   const [allPrDetails, setAllPrDetails] = useState({});
+  const [sortKey, setSortKey] = useState(null);
+  const [sortDir, setSortDir] = useState('asc');
 
   useEffect(() => {
     let cancelled = false;
@@ -151,18 +163,33 @@ export default function HomePage() {
     });
   }, [indexData, allRuns, allPrDetails]);
 
-  const orgGroups = useMemo(() => {
+  const orgNames = useMemo(() => {
     if (!indexData) return [];
-    const orgEntries = listOrgEntries(indexData);
-    const metricsByKey = new Map(repoMetrics.map(m => [m.key, m]));
+    return listOrgEntries(indexData).map(o => o.owner);
+  }, [indexData]);
 
-    return orgEntries.map(org => ({
-      owner: org.owner,
-      repos: org.repos
-        .map(repo => metricsByKey.get(repo.key))
-        .filter(Boolean),
-    })).filter(org => org.repos.length > 0);
-  }, [indexData, repoMetrics]);
+  const sortedRepos = useMemo(() => {
+    if (!sortKey) return repoMetrics;
+    const sorted = [...repoMetrics];
+    sorted.sort((a, b) => {
+      const aVal = a[sortKey];
+      const bVal = b[sortKey];
+      if (aVal === null && bVal === null) return 0;
+      if (aVal === null) return 1;
+      if (bVal === null) return -1;
+      return sortDir === 'asc' ? aVal - bVal : bVal - aVal;
+    });
+    return sorted;
+  }, [repoMetrics, sortKey, sortDir]);
+
+  function handleSort(key) {
+    if (sortKey === key) {
+      setSortDir(d => (d === 'asc' ? 'desc' : 'asc'));
+    } else {
+      setSortKey(key);
+      setSortDir('asc');
+    }
+  }
 
   if (loading) {
     return <FullScreenMessage tone="stone">Loading overview data...</FullScreenMessage>;
@@ -181,13 +208,22 @@ export default function HomePage() {
           <p className="mt-4 max-w-3xl text-sm text-stone-300 sm:text-base">
             所有仓库的 PR 与 CI 核心指标一览。点击仓库名称查看该仓库的所有 PR 详情。
           </p>
+          {orgNames.length > 0 && (
+            <div className="mt-4 flex flex-wrap gap-2">
+              {orgNames.map(org => (
+                <span key={org} className="rounded-full bg-stone-800 px-3 py-1 text-xs text-stone-300">
+                  {org}
+                </span>
+              ))}
+            </div>
+          )}
         </header>
 
         <section className="mt-8 overflow-hidden rounded-[28px] border border-stone-200 bg-white/90 shadow-lg shadow-stone-200/60">
           <div className="border-b border-stone-200 bg-stone-50/80 px-6 py-4">
             <div className="text-xs uppercase tracking-[0.3em] text-stone-500">All Repositories</div>
             <div className="mt-1 text-lg font-semibold text-stone-900">
-              {orgGroups.length} 个组织 · {repoMetrics.length} 个仓库 · {allRuns.length} 次运行
+              {orgNames.length} 个组织 · {repoMetrics.length} 个仓库 · {allRuns.length} 次运行
             </div>
           </div>
 
@@ -195,58 +231,47 @@ export default function HomePage() {
             <table className="w-full text-left">
               <thead>
                 <tr className="bg-stone-50 text-xs uppercase tracking-[0.24em] text-stone-500">
-                  <th className="px-6 py-4 font-medium">组织</th>
                   <th className="px-6 py-4 font-medium">仓库</th>
-                  <th className="px-6 py-4 font-medium">PR E2E时长</th>
-                  <th className="px-6 py-4 font-medium">CI E2E时长</th>
-                  <th className="px-6 py-4 font-medium">CI启动时间</th>
-                  <th className="px-6 py-4 font-medium">CI执行时间</th>
-                  <th className="px-6 py-4 font-medium">PR检视时间</th>
-                  <th className="px-6 py-4 font-medium">CI E2E达标率</th>
+                  <SortableTh label="PR E2E时长" hint="P50 / P90" sortKey={SORT_KEYS.prE2E} activeKey={sortKey} dir={sortDir} onSort={handleSort} />
+                  <SortableTh label="CI E2E时长" hint="P50 / P90" sortKey={SORT_KEYS.ciE2E} activeKey={sortKey} dir={sortDir} onSort={handleSort} />
+                  <SortableTh label="CI启动时间" hint="P50 / P90" sortKey={SORT_KEYS.ciStartup} activeKey={sortKey} dir={sortDir} onSort={handleSort} />
+                  <SortableTh label="CI执行时间" hint="P50 / P90" sortKey={SORT_KEYS.ciExec} activeKey={sortKey} dir={sortDir} onSort={handleSort} />
+                  <SortableTh label="PR检视时间" hint="P50 / P90" sortKey={SORT_KEYS.prReview} activeKey={sortKey} dir={sortDir} onSort={handleSort} />
+                  <SortableTh label="执行次数" sortKey={SORT_KEYS.runCount} activeKey={sortKey} dir={sortDir} onSort={handleSort} />
+                  <SortableTh label="CI E2E达标率" sortKey={SORT_KEYS.compliance} activeKey={sortKey} dir={sortDir} onSort={handleSort} />
                 </tr>
               </thead>
               <tbody>
-                {orgGroups.length === 0 ? (
+                {sortedRepos.length === 0 ? (
                   <tr>
                     <td colSpan={8} className="px-6 py-16 text-center text-sm text-stone-500">
                       暂无数据。请确保 ETL 已采集并生成 index.json 与每日数据文件。
                     </td>
                   </tr>
-                ) : orgGroups.map(org => (
-                  <React.Fragment key={org.owner}>
-                    <tr className="bg-stone-100">
-                      <td colSpan={8} className="px-6 py-3 text-sm font-semibold text-stone-700">
-                        {org.owner}
-                      </td>
-                    </tr>
-                    {org.repos.map((m, idx) => (
-                      <tr key={m.key} className="border-b border-stone-100 hover:bg-stone-50/50">
-                        <td className="px-6 py-4 text-sm text-stone-500">
-                          {idx === 0 ? org.owner : ''}
-                        </td>
-                        <td className="px-6 py-4">
-                          <Link to={`/repo/${m.owner}/${m.repo}`} className="text-sm font-medium text-amber-700 hover:text-amber-900 hover:underline">
-                            {m.repo}
-                          </Link>
-                          <span className="ml-2 text-xs text-stone-400">{m.runCount} runs</span>
-                        </td>
-                        <MetricCell p50={m.prE2EP50} p90={m.prE2EP90} />
-                        <MetricCell p50={m.ciE2EP50} p90={m.ciE2EP90} />
-                        <MetricCell p50={m.ciStartupP50} p90={m.ciStartupP90} />
-                        <MetricCell p50={m.ciExecP50} p90={m.ciExecP90} />
-                        <MetricCell p50={m.prReviewP50} p90={m.prReviewP90} />
-                        <td className="px-6 py-4">
-                          {m.ciComplianceRate !== null ? (
-                            <span className={`rounded-full px-3 py-1 text-xs font-medium ${getComplianceBadgeClass(m.ciComplianceRate)}`}>
-                              {m.ciComplianceRate.toFixed(1)}%
-                            </span>
-                          ) : (
-                            <span className="text-sm text-stone-400">--</span>
-                          )}
-                        </td>
-                      </tr>
-                    ))}
-                  </React.Fragment>
+                ) : sortedRepos.map(m => (
+                  <tr key={m.key} className="border-b border-stone-100 hover:bg-stone-50/50">
+                    <td className="px-6 py-4">
+                      <Link to={`/repo/${m.owner}/${m.repo}`} className="text-sm font-medium text-amber-700 hover:text-amber-900 hover:underline">
+                        {m.repo}
+                      </Link>
+                      <span className="ml-2 text-xs text-stone-400">{m.runCount} runs</span>
+                    </td>
+                    <MetricCell p50={m.prE2EP50} p90={m.prE2EP90} />
+                    <MetricCell p50={m.ciE2EP50} p90={m.ciE2EP90} />
+                    <MetricCell p50={m.ciStartupP50} p90={m.ciStartupP90} />
+                    <MetricCell p50={m.ciExecP50} p90={m.ciExecP90} />
+                    <MetricCell p50={m.prReviewP50} p90={m.prReviewP90} />
+                    <td className="px-6 py-4 text-sm text-stone-600">{m.runCount}</td>
+                    <td className="px-6 py-4">
+                      {m.ciComplianceRate !== null ? (
+                        <span className={`rounded-full px-3 py-1 text-xs font-medium ${getComplianceBadgeClass(m.ciComplianceRate)}`}>
+                          {m.ciComplianceRate.toFixed(1)}%
+                        </span>
+                      ) : (
+                        <span className="text-sm text-stone-400">--</span>
+                      )}
+                    </td>
+                  </tr>
                 ))}
               </tbody>
             </table>
@@ -254,6 +279,24 @@ export default function HomePage() {
         </section>
       </div>
     </div>
+  );
+}
+
+function SortableTh({ label, hint, sortKey, activeKey, dir, onSort }) {
+  const isActive = activeKey === sortKey;
+  return (
+    <th
+      className="px-6 py-4 font-medium cursor-pointer select-none hover:text-stone-700 transition-colors"
+      onClick={() => onSort(sortKey)}
+    >
+      <div className="flex items-center gap-1">
+        <span>{label}</span>
+        {hint && <span className="text-[10px] text-stone-400 font-normal normal-case tracking-normal">({hint})</span>}
+        <span className="text-stone-400 ml-1">
+          {isActive ? (dir === 'asc' ? '↑' : '↓') : '↕'}
+        </span>
+      </div>
+    </th>
   );
 }
 
