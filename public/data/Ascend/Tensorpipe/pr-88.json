@@ -1,0 +1,43 @@
+{
+  "prNumber": 88,
+  "owner": "Ascend",
+  "repo": "Tensorpipe",
+  "createdAt": "2026-04-08T11:22:01+08:00",
+  "mergedAt": "2026-04-10T14:47:06+08:00",
+  "prSubmitToMerge": {
+    "durationSeconds": 185105,
+    "fromTime": "2026-04-08T03:22:01Z",
+    "toTime": "2026-04-10T06:47:06Z"
+  },
+  "compileToCiCycles": [
+    {
+      "compileTime": "2026-04-08T03:22:12Z",
+      "startTime": "2026-04-08T03:23:37Z",
+      "finishTime": "2026-04-08T03:32:56Z",
+      "durationSeconds": 644
+    },
+    {
+      "compileTime": "2026-04-09T10:46:23Z",
+      "startTime": "2026-04-09T10:46:41Z",
+      "finishTime": "2026-04-09T10:51:06Z",
+      "durationSeconds": 283
+    },
+    {
+      "compileTime": "2026-04-08T03:22:12Z",
+      "startTime": "2026-04-08T03:22:42Z",
+      "finishTime": "2026-04-10T06:47:06Z",
+      "durationSeconds": 185094
+    },
+    {
+      "compileTime": "2026-04-09T10:46:23Z",
+      "startTime": "2026-04-09T10:46:53Z",
+      "finishTime": "2026-04-10T06:47:06Z",
+      "durationSeconds": 72043
+    }
+  ],
+  "lastCiRemovalToMerge": {
+    "durationSeconds": 0,
+    "fromTime": "2026-04-10T06:47:06Z",
+    "toTime": "2026-04-10T06:47:06Z"
+  }
+}

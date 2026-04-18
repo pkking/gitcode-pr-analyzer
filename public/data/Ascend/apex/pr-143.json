@@ -1,0 +1,31 @@
+{
+  "prNumber": 143,
+  "owner": "Ascend",
+  "repo": "apex",
+  "createdAt": "2026-03-09T09:40:10+08:00",
+  "mergedAt": "2026-03-13T09:32:39+08:00",
+  "prSubmitToMerge": {
+    "durationSeconds": 345149,
+    "fromTime": "2026-03-09T01:40:10Z",
+    "toTime": "2026-03-13T01:32:39Z"
+  },
+  "compileToCiCycles": [
+    {
+      "compileTime": "2026-03-12T09:24:49Z",
+      "startTime": "2026-03-12T09:25:13Z",
+      "finishTime": "2026-03-12T09:30:05Z",
+      "durationSeconds": 316
+    },
+    {
+      "compileTime": "2026-03-12T09:24:49Z",
+      "startTime": "2026-03-12T09:25:19Z",
+      "finishTime": "2026-03-13T01:32:39Z",
+      "durationSeconds": 58070
+    }
+  ],
+  "lastCiRemovalToMerge": {
+    "durationSeconds": 0,
+    "fromTime": "2026-03-13T01:32:39Z",
+    "toTime": "2026-03-13T01:32:39Z"
+  }
+}
