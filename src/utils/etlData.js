@@ -1,14 +1,5 @@
 import { intervalToDuration } from 'date-fns';
 
-const PR_DETAIL_FILE_PATHS = [
-  'ascend/pytorch/pr-33542.json',
-  'ascend/pytorch/pr-33543.json',
-  'ascend/pytorch/pr-33551.json',
-  'ascend/pytorch/pr-33552.json',
-  'ascend/pytorch/pr-33553.json',
-  'ascend/pytorch/pr-33554.json',
-];
-
 export function listRepoEntries(indexData) {
   return Object.entries(indexData?.repos || {})
     .map(([key, value]) => {
@@ -104,42 +95,6 @@ export function getRunPrNumber(run) {
   return match ? Number(match[1]) : null;
 }
 
-export function listPrDetailEntries() {
-  return PR_DETAIL_FILE_PATHS.map(filePath => {
-    const normalizedPath = filePath.toLowerCase();
-    const match = normalizedPath.match(/^([^/]+)\/(.+)\/pr-(\d+)\.json$/);
-    if (!match) return null;
-
-    const [, owner, repoPath, prNumber] = match;
-    return {
-      owner,
-      repo: repoPath,
-      repoKey: `${owner}/${repoPath}`,
-      prNumber: Number(prNumber),
-      filePath,
-      publicPath: `/data/${filePath}`,
-      detailKey: `${owner}/${repoPath}#${prNumber}`,
-    };
-  }).filter(Boolean);
-}
-
-export function getPrDetailEntry(owner, repo, prNumber) {
-  const normalizedOwner = String(owner || '').toLowerCase();
-  const normalizedRepo = String(repo || '').toLowerCase();
-  const normalizedPrNumber = Number(prNumber);
-
-  return listPrDetailEntries().find(entry =>
-    entry.owner === normalizedOwner &&
-    entry.repo === normalizedRepo &&
-    entry.prNumber === normalizedPrNumber
-  ) || null;
-}
-
-export function listOrgPrDetailEntries(owner) {
-  const normalizedOwner = String(owner || '').toLowerCase();
-  return listPrDetailEntries().filter(entry => entry.owner === normalizedOwner);
-}
-
 export function getRunStageName(run) {
   const primaryJob = Array.isArray(run?.jobs) && run.jobs.length > 0 ? run.jobs[0].name : '';
   if (primaryJob) return primaryJob;
@@ -152,6 +107,18 @@ export function average(numbers) {
   const valid = numbers.filter(value => Number.isFinite(value));
   if (valid.length === 0) return null;
   return valid.reduce((sum, value) => sum + value, 0) / valid.length;
+}
+
+export function percentile(numbers, p) {
+  const valid = numbers.filter(value => Number.isFinite(value)).sort((a, b) => a - b);
+  if (valid.length === 0) return null;
+  if (valid.length === 1) return valid[0];
+  const index = (p / 100) * (valid.length - 1);
+  const lower = Math.floor(index);
+  const upper = Math.ceil(index);
+  if (lower === upper) return valid[lower];
+  const fraction = index - lower;
+  return valid[lower] + fraction * (valid[upper] - valid[lower]);
 }
 
 export function getSuccessRate(runs) {
@@ -170,4 +137,51 @@ export function formatSeconds(seconds) {
   if (duration.minutes) parts.push(`${duration.minutes}m`);
   if (duration.seconds || parts.length === 0) parts.push(`${duration.seconds}s`);
   return parts.join(' ');
+}
+
+let cachedPrDetailIndex = null;
+
+export async function fetchPrDetailIndex() {
+  if (cachedPrDetailIndex) return cachedPrDetailIndex;
+  try {
+    const res = await fetch('/data/pr-details-index.json');
+    if (!res.ok) return [];
+    const paths = await res.json();
+    cachedPrDetailIndex = paths.map(filePath => {
+      const normalizedPath = filePath.toLowerCase();
+      const match = normalizedPath.match(/^([^/]+)\/(.+)\/pr-(\d+)\.json$/);
+      if (!match) return null;
+      const [, owner, repoPath, prNumber] = match;
+      return {
+        owner,
+        repo: repoPath,
+        repoKey: `${owner}/${repoPath}`,
+        prNumber: Number(prNumber),
+        filePath,
+        publicPath: `/data/${filePath}`,
+        detailKey: `${owner}/${repoPath}#${prNumber}`,
+      };
+    }).filter(Boolean);
+    return cachedPrDetailIndex;
+  } catch {
+    return [];
+  }
+}
+
+export async function fetchAllPrDetails() {
+  const entries = await fetchPrDetailIndex();
+  if (entries.length === 0) return {};
+  const results = await Promise.all(
+    entries.map(async entry => {
+      try {
+        const res = await fetch(entry.publicPath);
+        if (!res.ok) return [entry.detailKey, null];
+        const detail = await res.json();
+        return [entry.detailKey, detail];
+      } catch {
+        return [entry.detailKey, null];
+      };
+    })
+  );
+  return Object.fromEntries(results.filter(([, v]) => v !== null));
 }

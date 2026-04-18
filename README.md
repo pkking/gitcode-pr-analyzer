@@ -5,9 +5,9 @@ A static dashboard backed by an ETL collector for GitCode CI run analytics.
 ## Features
 - **Organization-aware collection:** Configure explicit repositories or discover all repositories under a GitCode organization.
 - **CI run reconstruction:** Rebuild compile and CI runs from pull request comments and label events.
-- **Route-driven dashboard shell:** Home, browse, and analysis are explicit app destinations instead of one in-memory view switcher.
-- **Static dashboard:** Browse repositories, daily run history, run duration, job timing, and merge-request links from prebuilt JSON files.
-- **Standalone analysis page:** Open a specific run directly and switch between recent runs for the same repository without returning to browsing.
+- **Overview table:** All repositories displayed on the home page with P50/P90 metrics for PR E2E, CI E2E, CI startup, CI execution, PR review time, and compliance rate.
+- **Drill-down navigation:** Click a repo name to see all its PRs; click a PR to view its CI analysis with timeline and job details.
+- **Static dashboard:** All data served from prebuilt JSON files — no backend required.
 
 ## Tech Stack
 - React (Vite)
@@ -69,9 +69,9 @@ Override modes:
    ```
 5. **Usage:**
    - Open the app in your browser.
-   - Start at `/#/` for the home page.
-   - Use `/#/browse` to explore organizations and repositories.
-   - Use `/#/analysis/:owner/:repo/:runId` to open a specific run directly when needed.
+   - Start at `/#/` for the overview table showing all repositories.
+   - Click a repo name to see all PRs for that repository.
+   - Click a PR number to view its CI analysis with timeline and job details.
 
 ## Frontend Lint
 
@@ -93,19 +93,11 @@ GitHub Actions also enforces the same command through `.github/workflows/fronten
 ## Frontend Route Contract
 
 - `/#/`
-  Lightweight home/orientation page.
-- `/#/browse`
-  Browse landing state.
-- `/#/browse/:owner`
-  Organization-level browse view.
-- `/#/browse/:owner/:repo`
-  Repository-level browse view.
-- `/#/analysis`
-  Analysis landing state.
-- `/#/analysis/:owner/:repo`
-  Analysis page scoped to one repository with recent-run switching.
-- `/#/analysis/:owner/:repo/:runId`
-  Analysis page with a specific run selected directly.
+  Overview table showing all repositories with P50/P90 metrics. Click a repo name to drill down.
+- `/#/repo/:owner/:repo`
+  Repository detail page listing all PRs with run count, status, duration, and success rate.
+- `/#/repo/:owner/:repo/:prNumber`
+  CI analysis page for a specific PR with timeline, recent runs, and job breakdown.
 
 ## Collection Logic
 - **Target resolution:** The collector merges top-level repositories, explicit organization repository lists, and implicit organization discovery into one deduplicated target set.

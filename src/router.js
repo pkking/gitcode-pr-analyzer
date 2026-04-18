@@ -6,28 +6,12 @@ export const appRoutes = [
     load: () => import('./pages/HomePage.jsx'),
   },
   {
-    path: '/browse',
-    load: () => import('./pages/BrowsePage.jsx'),
+    path: '/repo/:owner/:repo',
+    load: () => import('./pages/RepoDetailPage.jsx'),
   },
   {
-    path: '/browse/:owner',
-    load: () => import('./pages/BrowsePage.jsx'),
-  },
-  {
-    path: '/browse/:owner/:repo',
-    load: () => import('./pages/BrowsePage.jsx'),
-  },
-  {
-    path: '/analysis',
-    load: () => import('./pages/AnalysisPage.jsx'),
-  },
-  {
-    path: '/analysis/:owner/:repo',
-    load: () => import('./pages/AnalysisPage.jsx'),
-  },
-  {
-    path: '/analysis/:owner/:repo/:runId',
-    load: () => import('./pages/AnalysisPage.jsx'),
+    path: '/repo/:owner/:repo/:prNumber',
+    load: () => import('./pages/PRAnalysisPage.jsx'),
   },
   {
     path: '*',

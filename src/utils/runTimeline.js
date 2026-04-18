@@ -41,14 +41,6 @@ export function buildRunTimeline(run, detail) {
   ];
 }
 
-export function getRunTotalDuration(run, timeline) {
-  if (Array.isArray(timeline) && timeline.length > 0) {
-    return timeline.reduce((sum, phase) => sum + phase.seconds, 0);
-  }
-
-  return Math.max(0, run?.durationInSeconds || 0);
-}
-
 export function matchCycleToRun(run, cycles) {
   if (!Array.isArray(cycles) || cycles.length === 0) return null;
 
