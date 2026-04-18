@@ -1,0 +1,67 @@
+{
+  "prNumber": 105,
+  "owner": "Ascend",
+  "repo": "triton-ascend-kernels",
+  "createdAt": "2026-04-08T17:30:35+08:00",
+  "mergedAt": "2026-04-09T15:54:55+08:00",
+  "prSubmitToMerge": {
+    "durationSeconds": 80660,
+    "fromTime": "2026-04-08T09:30:35Z",
+    "toTime": "2026-04-09T07:54:55Z"
+  },
+  "compileToCiCycles": [
+    {
+      "compileTime": "2026-04-08T09:30:46Z",
+      "startTime": "2026-04-08T09:31:16Z",
+      "finishTime": "2026-04-09T01:21:20Z",
+      "durationSeconds": 57034
+    },
+    {
+      "compileTime": "2026-04-08T09:46:29Z",
+      "startTime": "2026-04-08T09:46:59Z",
+      "finishTime": "2026-04-09T01:21:20Z",
+      "durationSeconds": 56091
+    },
+    {
+      "compileTime": "2026-04-09T01:11:35Z",
+      "startTime": "2026-04-09T01:12:05Z",
+      "finishTime": "2026-04-09T01:21:20Z",
+      "durationSeconds": 585
+    },
+    {
+      "compileTime": "2026-04-09T02:34:33Z",
+      "startTime": "2026-04-09T02:35:03Z",
+      "finishTime": "2026-04-09T03:15:19Z",
+      "durationSeconds": 2446
+    },
+    {
+      "compileTime": "2026-04-08T09:30:46Z",
+      "startTime": "2026-04-08T09:31:16Z",
+      "finishTime": "2026-04-09T07:54:55Z",
+      "durationSeconds": 80649
+    },
+    {
+      "compileTime": "2026-04-08T09:46:29Z",
+      "startTime": "2026-04-08T09:46:59Z",
+      "finishTime": "2026-04-09T07:54:55Z",
+      "durationSeconds": 79706
+    },
+    {
+      "compileTime": "2026-04-09T01:11:35Z",
+      "startTime": "2026-04-09T01:12:05Z",
+      "finishTime": "2026-04-09T07:54:55Z",
+      "durationSeconds": 24200
+    },
+    {
+      "compileTime": "2026-04-09T02:34:33Z",
+      "startTime": "2026-04-09T02:35:03Z",
+      "finishTime": "2026-04-09T07:54:55Z",
+      "durationSeconds": 19222
+    }
+  ],
+  "lastCiRemovalToMerge": {
+    "durationSeconds": 0,
+    "fromTime": "2026-04-09T07:54:55Z",
+    "toTime": "2026-04-09T07:54:55Z"
+  }
+}

@@ -6409,9 +6409,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-07T07:09:24Z",
-      "updated_at": "2026-04-18T07:19:26Z",
+      "updated_at": "2026-04-18T13:04:56Z",
       "html_url": "https://gitcode.com/Ascend/msmodeling/merge_requests/132",
-      "durationInSeconds": 951002.464,
+      "durationInSeconds": 971732.274,
       "jobs": [
         {
           "id": 1320101,
@@ -6420,10 +6420,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-07T07:09:24Z",
           "started_at": "2026-04-07T07:09:54Z",
-          "completed_at": "2026-04-18T07:19:26Z",
+          "completed_at": "2026-04-18T13:04:56Z",
           "html_url": "https://gitcode.com/Ascend/msmodeling/merge_requests/132",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 950972.464
+          "durationInSeconds": 971702.274
         }
       ]
     },
@@ -6434,9 +6434,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-07T12:03:05Z",
-      "updated_at": "2026-04-18T07:19:26Z",
+      "updated_at": "2026-04-18T13:04:56Z",
       "html_url": "https://gitcode.com/Ascend/msmodeling/merge_requests/132",
-      "durationInSeconds": 933381.464,
+      "durationInSeconds": 954111.274,
       "jobs": [
         {
           "id": 1320102,
@@ -6445,10 +6445,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-07T12:03:05Z",
           "started_at": "2026-04-07T12:03:35Z",
-          "completed_at": "2026-04-18T07:19:26Z",
+          "completed_at": "2026-04-18T13:04:56Z",
           "html_url": "https://gitcode.com/Ascend/msmodeling/merge_requests/132",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 933351.464
+          "durationInSeconds": 954081.274
         }
       ]
     },
@@ -6634,9 +6634,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-07T09:33:20Z",
-      "updated_at": "2026-04-18T07:21:02Z",
+      "updated_at": "2026-04-18T13:06:52Z",
       "html_url": "https://gitcode.com/Ascend/modelzoo-GPL/merge_requests/377",
-      "durationInSeconds": 942462.903,
+      "durationInSeconds": 963212.323,
       "jobs": [
         {
           "id": 3770101,
@@ -6645,10 +6645,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-07T09:33:20Z",
           "started_at": "2026-04-07T09:33:50Z",
-          "completed_at": "2026-04-18T07:21:02Z",
+          "completed_at": "2026-04-18T13:06:52Z",
           "html_url": "https://gitcode.com/Ascend/modelzoo-GPL/merge_requests/377",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 942432.903
+          "durationInSeconds": 963182.323
         }
       ]
     },
@@ -9384,9 +9384,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-07T12:27:47Z",
-      "updated_at": "2026-04-18T07:22:14Z",
+      "updated_at": "2026-04-18T13:08:23Z",
       "html_url": "https://gitcode.com/Ascend/msprobe/merge_requests/530",
-      "durationInSeconds": 932067.229,
+      "durationInSeconds": 952836.276,
       "jobs": [
         {
           "id": 5300102,
@@ -9395,10 +9395,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-07T12:27:47Z",
           "started_at": "2026-04-07T12:28:17Z",
-          "completed_at": "2026-04-18T07:22:14Z",
+          "completed_at": "2026-04-18T13:08:23Z",
           "html_url": "https://gitcode.com/Ascend/msprobe/merge_requests/530",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 932037.229
+          "durationInSeconds": 952806.276
         }
       ]
     },
@@ -11607,23 +11607,23 @@
       "name": "PR #959 docs-ci - [AscendNPU IR] feat: Necessary support for conv1d ",
       "head_branch": "conv1d_release_v2",
       "status": "completed",
-      "conclusion": "pending",
+      "conclusion": "success",
       "created_at": "2026-04-07T11:56:45Z",
-      "updated_at": "2026-04-18T07:23:25Z",
+      "updated_at": "2026-04-18T09:40:22Z",
       "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/959",
-      "durationInSeconds": 934000.449,
+      "durationInSeconds": 942217,
       "jobs": [
         {
           "id": 9590101,
-          "name": "docs-ci",
+          "name": "docs-ci-pipeline-running",
           "status": "completed",
-          "conclusion": "pending",
+          "conclusion": "success",
           "created_at": "2026-04-07T11:56:45Z",
-          "started_at": "2026-04-07T11:57:15Z",
-          "completed_at": "2026-04-18T07:23:25Z",
+          "started_at": "2026-04-18T09:39:04Z",
+          "completed_at": "2026-04-18T09:40:22Z",
           "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/959",
-          "queueDurationInSeconds": 30,
-          "durationInSeconds": 933970.449
+          "queueDurationInSeconds": 942139,
+          "durationInSeconds": 78
         }
       ]
     },
@@ -11632,23 +11632,23 @@
       "name": "PR #959 docs-ci - [AscendNPU IR] feat: Necessary support for conv1d ",
       "head_branch": "conv1d_release_v2",
       "status": "completed",
-      "conclusion": "pending",
+      "conclusion": "success",
       "created_at": "2026-04-07T12:10:18Z",
-      "updated_at": "2026-04-18T07:23:25Z",
+      "updated_at": "2026-04-18T09:40:22Z",
       "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/959",
-      "durationInSeconds": 933187.449,
+      "durationInSeconds": 941404,
       "jobs": [
         {
           "id": 9590102,
-          "name": "docs-ci",
+          "name": "docs-ci-pipeline-running",
           "status": "completed",
-          "conclusion": "pending",
+          "conclusion": "success",
           "created_at": "2026-04-07T12:10:18Z",
-          "started_at": "2026-04-07T12:10:48Z",
-          "completed_at": "2026-04-18T07:23:25Z",
+          "started_at": "2026-04-18T09:39:04Z",
+          "completed_at": "2026-04-18T09:40:22Z",
           "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/959",
-          "queueDurationInSeconds": 30,
-          "durationInSeconds": 933157.449
+          "queueDurationInSeconds": 941326,
+          "durationInSeconds": 78
         }
       ]
     },
