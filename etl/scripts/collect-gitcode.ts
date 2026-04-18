@@ -514,12 +514,31 @@ async function main() {
       for (const pr of prs) {
         console.log(`  Processing PR #${pr.number}: ${pr.title.substring(0, 40)}...`);
 
-        const [comments, logs] = await Promise.all([
+        const [reviewComments, logs] = await Promise.all([
           paginate(`/repos/${ownerPath}/${repoPath}/pulls/${pr.number}/comments`),
           paginate(`/repos/${ownerPath}/${repoPath}/pulls/${pr.number}/operate_logs`),
         ]);
 
-        console.log(`    ${comments.length} comments, ${logs.length} operate logs`);
+        // Fetch issue-style comments with fallback (endpoint may not exist for all repos)
+        let issueComments: GitCodeComment[] = [];
+        try {
+          issueComments = await paginate(`/repos/${ownerPath}/${repoPath}/issues/${pr.number}/comments`);
+        } catch {
+          // Issue comments endpoint unavailable for this PR; review comments still captured
+        }
+
+        // Merge and deduplicate comments by ID
+        const seenCommentIds = new Set<string>();
+        const comments: GitCodeComment[] = [];
+
+        for (const comment of [...reviewComments, ...issueComments]) {
+          if (!seenCommentIds.has(comment.id)) {
+            seenCommentIds.add(comment.id);
+            comments.push(comment);
+          }
+        }
+
+        console.log(`    ${reviewComments.length} review comments, ${issueComments.length} issue comments, ${logs.length} operate logs (${comments.length} merged)`);
 
         const runs = reconstructCIRuns(pr, comments, logs, rules);
         console.log(`    Reconstructed ${runs.length} CI runs`);
