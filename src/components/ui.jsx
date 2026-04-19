@@ -29,8 +29,8 @@ export function StatCard({ label, value, sublabel, tone = 'stone', className = '
   const bg = toneMap[tone] || toneMap.stone;
 
   return (
-    <div className={`rounded-2xl px-5 py-4 ${bg} ${className}`}>
-      <div className="text-[11px] uppercase tracking-[0.2em] opacity-60 font-medium">{label}</div>
+    <div className={`rounded-xl px-5 py-4 ${bg} card-hover ${className}`}>
+      <div className="text-[11px] uppercase tracking-[0.24em] opacity-60 font-medium">{label}</div>
       <div className="mt-2 text-2xl font-semibold tracking-tight font-display">{value}</div>
       {sublabel && <div className="mt-1 text-xs opacity-60">{sublabel}</div>}
     </div>

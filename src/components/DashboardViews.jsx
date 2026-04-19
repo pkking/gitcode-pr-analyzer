@@ -4,7 +4,7 @@ import {
   formatSeconds,
   getRunStageName,
 } from '../utils/etlData.js';
-import { Badge } from '../components/ui.jsx';
+import { Badge, StatCard } from '../components/ui.jsx';
 
 export function RunDetailView({ run, timeline, recentRuns, buildAnalysisHref, missingRequestedRun }) {
   const navigate = useNavigate();
@@ -144,9 +144,9 @@ export function RunDetailView({ run, timeline, recentRuns, buildAnalysisHref, mi
 
       {hasTimeline ? (
         <section className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
-          <SummaryCard label="CI启动时间" value={formatSeconds(timeline[0]?.seconds)} tone="amber" />
-          <SummaryCard label="CI运行时间" value={formatSeconds(timeline[1]?.seconds)} tone="green" />
-          <SummaryCard label="PR合入时间" value={formatSeconds(timeline[2]?.seconds)} tone="blue" />
+          <StatCard label="CI启动时间" value={formatSeconds(timeline[0]?.seconds)} tone="amber" />
+          <StatCard label="CI运行时间" value={formatSeconds(timeline[1]?.seconds)} tone="green" />
+          <StatCard label="PR合入时间" value={formatSeconds(timeline[2]?.seconds)} tone="blue" />
         </section>
       ) : null}
 
@@ -184,24 +184,6 @@ export function RunDetailView({ run, timeline, recentRuns, buildAnalysisHref, mi
           )}
         </div>
       </section>
-    </div>
-  );
-}
-
-export function SummaryCard({ label, value, sublabel, tone = 'stone' }) {
-  const toneMap = {
-    stone: 'bg-stone-50 text-stone-900 ring-1 ring-stone-200/60',
-    green: 'bg-emerald-50 text-emerald-900 ring-1 ring-emerald-200/60',
-    amber: 'bg-amber-50 text-amber-900 ring-1 ring-amber-200/60',
-    blue: 'bg-sky-50 text-sky-900 ring-1 ring-sky-200/60',
-  };
-  const bg = toneMap[tone] || toneMap.stone;
-
-  return (
-    <div className={`rounded-xl px-5 py-4 ${bg} card-hover`}>
-      <div className="text-[11px] uppercase tracking-[0.24em] opacity-60 font-medium">{label}</div>
-      <div className="mt-2 text-2xl font-semibold tracking-tight font-display">{value}</div>
-      {sublabel && <div className="mt-1 text-xs opacity-60">{sublabel}</div>}
     </div>
   );
 }
