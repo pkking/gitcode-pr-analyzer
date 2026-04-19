@@ -162,9 +162,15 @@ export default function RepoDetailPage() {
           <div className="flex items-center gap-3 text-sm text-stone-400">
             <Link to="/" className="hover:text-stone-200">首页</Link>
             <span>/</span>
-            <span className="text-stone-200">{owner} / {repo}</span>
+            <a href={`https://gitcode.com/${owner}/${repo}`} target="_blank" rel="noreferrer" className="text-stone-200 hover:text-amber-300 hover:underline">
+              {owner} / {repo}
+            </a>
           </div>
-          <h1 className="mt-3 text-4xl font-semibold tracking-tight sm:text-5xl">{owner} / {repo}</h1>
+          <h1 className="mt-3 text-4xl font-semibold tracking-tight sm:text-5xl">
+            <a href={`https://gitcode.com/${owner}/${repo}`} target="_blank" rel="noreferrer" className="hover:text-amber-300 hover:underline">
+              {owner} / {repo}
+            </a>
+          </h1>
           <p className="mt-4 max-w-3xl text-sm text-stone-300 sm:text-base">
             该仓库共 {prGroups.length} 个 PR，{runs.length} 次 CI 运行。点击 PR 进入 CI 分析页面。
           </p>
@@ -208,7 +214,14 @@ export default function RepoDetailPage() {
                       </Link>
                     </td>
                     <td className="px-6 py-4">
-                      <span className="text-sm text-stone-900">{pr.title}</span>
+                      <a
+                        href={`https://gitcode.com/${owner}/${repo}/merge_requests/${pr.prNumber}`}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="text-sm text-stone-900 hover:text-amber-700 hover:underline"
+                      >
+                        {pr.title}
+                      </a>
                     </td>
                     <td className="px-6 py-4 text-sm text-stone-900">{pr.prE2E !== null ? formatSeconds(pr.prE2E) : '--'}</td>
                     <td className="px-6 py-4 text-sm text-stone-600">{pr.runCount}</td>

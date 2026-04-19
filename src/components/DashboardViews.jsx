@@ -15,7 +15,11 @@ export function RunDetailView({ run, timeline, recentRuns, buildAnalysisHref, mi
         <div className="flex flex-col gap-5 lg:flex-row lg:items-start lg:justify-between">
           <div>
             <div className="text-xs uppercase tracking-[0.3em] text-stone-500">Analysis</div>
-            <h2 className="mt-2 text-3xl font-semibold tracking-tight">{run.name}</h2>
+            <h2 className="mt-2 text-3xl font-semibold tracking-tight">
+              <a href={run.html_url} target="_blank" rel="noreferrer" className="hover:text-amber-700 hover:underline">
+                {run.name}
+              </a>
+            </h2>
             <div className="mt-3 flex flex-wrap gap-3 text-sm text-stone-500">
               <span>创建时间 {new Date(run.created_at).toLocaleString()}</span>
               <span>阶段 {getRunStageName(run)}</span>
@@ -58,7 +62,12 @@ export function RunDetailView({ run, timeline, recentRuns, buildAnalysisHref, mi
             >
               <div className="flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
                 <div className="min-w-0">
-                  <div className="truncate text-sm font-semibold">{candidate.name}</div>
+                  <div className="truncate text-sm font-semibold">
+                    <a href={candidate.html_url} target="_blank" rel="noreferrer" className="hover:underline">
+                      {candidate.name}
+                      <span className="ml-1 text-[10px] opacity-50">↗</span>
+                    </a>
+                  </div>
                   <div className={`mt-1 text-xs ${candidate.id === run.id ? 'text-stone-300' : 'text-stone-500'}`}>
                     {new Date(candidate.created_at).toLocaleString()} · {getRunStageName(candidate)}
                   </div>
@@ -135,7 +144,14 @@ export function RunDetailView({ run, timeline, recentRuns, buildAnalysisHref, mi
                 <li key={job.id} className="rounded-3xl border border-stone-200 bg-stone-50 px-4 py-4">
                   <div className="flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
                     <div>
-                      <div className="font-semibold text-stone-900">{job.name}</div>
+                      {job.html_url ? (
+                        <a href={job.html_url} target="_blank" rel="noreferrer" className="font-semibold text-stone-900 hover:text-amber-700 hover:underline">
+                          {job.name}
+                          <span className="ml-1 text-[10px] opacity-50">↗</span>
+                        </a>
+                      ) : (
+                        <div className="font-semibold text-stone-900">{job.name}</div>
+                      )}
                       <div className="mt-1 text-sm text-stone-500">
                         Queue {formatSeconds(job.queueDurationInSeconds)} · Run {formatSeconds(job.durationInSeconds)}
                       </div>

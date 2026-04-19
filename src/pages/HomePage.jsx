@@ -29,6 +29,7 @@ export default function HomePage() {
   const [allPrDetails, setAllPrDetails] = useState({});
   const [sortKey, setSortKey] = useState(null);
   const [sortDir, setSortDir] = useState('asc');
+  const [activeOrg, setActiveOrg] = useState(null);
 
   useEffect(() => {
     let cancelled = false;
@@ -193,6 +194,11 @@ export default function HomePage() {
     }
   }
 
+  const filteredRepos = useMemo(() => {
+    if (!activeOrg) return sortedRepos;
+    return sortedRepos.filter(r => r.owner === activeOrg);
+  }, [sortedRepos, activeOrg]);
+
   if (loading) {
     return <FullScreenMessage tone="stone">Loading overview data...</FullScreenMessage>;
   }
@@ -213,9 +219,17 @@ export default function HomePage() {
           {orgNames.length > 0 && (
             <div className="mt-4 flex flex-wrap gap-2">
               {orgNames.map(org => (
-                <span key={org} className="rounded-full bg-stone-800 px-3 py-1 text-xs text-stone-300">
+                <button
+                  key={org}
+                  onClick={() => setActiveOrg(prev => (prev === org ? null : org))}
+                  className={`rounded-full px-3 py-1 text-xs transition cursor-pointer ${
+                    activeOrg === org
+                      ? 'bg-amber-400 text-stone-900 font-semibold'
+                      : 'bg-stone-800 text-stone-300 hover:bg-stone-700'
+                  }`}
+                >
                   {org}
-                </span>
+                </button>
               ))}
             </div>
           )}
@@ -226,6 +240,7 @@ export default function HomePage() {
             <div className="text-xs uppercase tracking-[0.3em] text-stone-500">All Repositories</div>
             <div className="mt-1 text-lg font-semibold text-stone-900">
               {orgNames.length} 个组织 · {repoMetrics.length} 个仓库 · {allRuns.length} 次运行
+              {activeOrg && <span className="ml-2 text-sm font-normal text-amber-700">（筛选：{activeOrg}）</span>}
             </div>
           </div>
 
@@ -244,13 +259,13 @@ export default function HomePage() {
                 </tr>
               </thead>
               <tbody>
-                {sortedRepos.length === 0 ? (
+                {filteredRepos.length === 0 ? (
                   <tr>
                     <td colSpan={8} className="px-6 py-16 text-center text-sm text-stone-500">
                       暂无数据。请确保 ETL 已采集并生成 index.json 与每日数据文件。
                     </td>
                   </tr>
-                ) : sortedRepos.map(m => (
+                ) : filteredRepos.map(m => (
                   <tr key={m.key} className="border-b border-stone-100 hover:bg-stone-50/50">
                     <td className="px-6 py-4">
                       <Link to={`/repo/${m.owner}/${m.repo}`} className="text-sm font-medium text-amber-700 hover:text-amber-900 hover:underline">

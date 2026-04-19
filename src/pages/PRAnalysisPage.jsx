@@ -150,14 +150,22 @@ export default function PRAnalysisPage() {
           <span>/</span>
           <Link to={`/repo/${owner}/${repo}`} className="hover:text-stone-200">{owner} / {repo}</Link>
           <span>/</span>
-          <span className="text-stone-200">PR #{prNumber}</span>
+          <span className="text-stone-200">
+            <a href={`https://gitcode.com/${owner}/${repo}/merge_requests/${prNumber}`} target="_blank" rel="noreferrer" className="hover:text-amber-300 hover:underline">
+              PR #{prNumber}
+              <span className="ml-1 text-[10px] opacity-50">↗</span>
+            </a>
+          </span>
         </nav>
 
         {prSummary && (
           <header className="rounded-[32px] border border-stone-800 bg-stone-950/90 px-8 py-10 text-stone-100 shadow-2xl shadow-stone-950/30">
             <p className="text-xs uppercase tracking-[0.35em] text-amber-300/80">PR CI Analysis</p>
             <h1 className="mt-3 text-4xl font-semibold tracking-tight sm:text-5xl">
-              {owner} / {repo} — PR #{prNumber}
+              <a href={`https://gitcode.com/${owner}/${repo}`} target="_blank" rel="noreferrer" className="hover:text-amber-300 hover:underline">
+                {owner} / {repo}
+              </a>
+              {' — '}PR #{prNumber}
             </h1>
             {selectedRun && (
               <div className="mt-4 flex flex-wrap gap-4 text-sm text-stone-300">
