@@ -1,0 +1,55 @@
+{
+  "prNumber": 16,
+  "owner": "Ascend",
+  "repo": "OMSDK",
+  "createdAt": "2026-03-17T15:05:45+08:00",
+  "mergedAt": "2026-03-17T17:14:50+08:00",
+  "prSubmitToMerge": {
+    "durationSeconds": 7745,
+    "fromTime": "2026-03-17T15:05:45Z",
+    "toTime": "2026-03-17T17:14:50Z"
+  },
+  "compileToCiCycles": [
+    {
+      "compileTime": "2026-03-17T15:05:46Z",
+      "startTime": "2026-03-17T15:06:10Z",
+      "finishTime": "2026-03-17T15:24:55Z",
+      "durationSeconds": 1149
+    },
+    {
+      "compileTime": "2026-03-17T16:31:09Z",
+      "startTime": "2026-03-17T16:31:33Z",
+      "finishTime": "2026-03-17T16:50:19Z",
+      "durationSeconds": 1150
+    },
+    {
+      "compileTime": "2026-03-17T16:45:19Z",
+      "startTime": "2026-03-17T16:52:55Z",
+      "finishTime": "2026-03-17T16:50:19Z",
+      "durationSeconds": 300
+    },
+    {
+      "compileTime": "2026-03-17T15:05:46Z",
+      "startTime": "2026-03-17T15:06:16Z",
+      "finishTime": "2026-03-17T17:14:50Z",
+      "durationSeconds": 7744
+    },
+    {
+      "compileTime": "2026-03-17T16:31:09Z",
+      "startTime": "2026-03-17T16:31:39Z",
+      "finishTime": "2026-03-17T17:14:50Z",
+      "durationSeconds": 2621
+    },
+    {
+      "compileTime": "2026-03-17T16:45:19Z",
+      "startTime": "2026-03-17T16:45:49Z",
+      "finishTime": "2026-03-17T17:14:50Z",
+      "durationSeconds": 1771
+    }
+  ],
+  "lastCiRemovalToMerge": {
+    "durationSeconds": 0,
+    "fromTime": "2026-03-18T01:14:50Z",
+    "toTime": "2026-03-17T17:14:50Z"
+  }
+}

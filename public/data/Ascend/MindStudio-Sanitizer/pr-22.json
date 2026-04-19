@@ -1,0 +1,31 @@
+{
+  "prNumber": 22,
+  "owner": "Ascend",
+  "repo": "MindStudio-Sanitizer",
+  "createdAt": "2026-01-23T16:18:55+08:00",
+  "mergedAt": "2026-01-23T17:30:43+08:00",
+  "prSubmitToMerge": {
+    "durationSeconds": 4308,
+    "fromTime": "2026-01-23T16:18:55Z",
+    "toTime": "2026-01-23T17:30:43Z"
+  },
+  "compileToCiCycles": [
+    {
+      "compileTime": "2026-01-23T16:35:45Z",
+      "startTime": "2026-01-23T16:36:25Z",
+      "finishTime": "2026-01-23T16:46:45Z",
+      "durationSeconds": 660
+    },
+    {
+      "compileTime": "2026-01-23T16:35:45Z",
+      "startTime": "2026-01-23T16:36:15Z",
+      "finishTime": "2026-01-23T17:30:43Z",
+      "durationSeconds": 3298
+    }
+  ],
+  "lastCiRemovalToMerge": {
+    "durationSeconds": 0,
+    "fromTime": "2026-01-24T01:30:43Z",
+    "toTime": "2026-01-23T17:30:43Z"
+  }
+}

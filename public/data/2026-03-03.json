@@ -1,29 +1,29 @@
 {
   "date": "2026-03-03",
-  "repo": "Ascend/AscendNPU-IR",
+  "repo": "Ascend/MindStudio-Ops-Profiler",
   "runs": [
     {
       "id": 10000,
-      "name": "PR #1 compile - 初始化代码仓及构建工程",
-      "head_branch": "hejianping/init_repo",
+      "name": "PR #1 compile - init slime-ascend",
+      "head_branch": "main",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-03-03T08:18:06Z",
-      "updated_at": "2026-03-04T08:18:52Z",
-      "html_url": "https://gitcode.com/Ascend/agent-skills/merge_requests/1",
-      "durationInSeconds": 86446,
+      "created_at": "2026-03-03T15:39:14Z",
+      "updated_at": "2026-03-03T16:02:19Z",
+      "html_url": "https://gitcode.com/Ascend/slime-ascend/merge_requests/1",
+      "durationInSeconds": 1385,
       "jobs": [
         {
           "id": 10001,
-          "name": "compile",
+          "name": "ci-pipeline-running",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-03-03T08:18:06Z",
-          "started_at": "2026-03-03T08:18:36Z",
-          "completed_at": "2026-03-04T08:18:52Z",
-          "html_url": "https://gitcode.com/Ascend/agent-skills/merge_requests/1",
-          "queueDurationInSeconds": 30,
-          "durationInSeconds": 86416
+          "created_at": "2026-03-03T15:39:14Z",
+          "started_at": "2026-03-03T15:55:37Z",
+          "completed_at": "2026-03-03T16:02:19Z",
+          "html_url": "https://gitcode.com/Ascend/slime-ascend/merge_requests/1",
+          "queueDurationInSeconds": 983,
+          "durationInSeconds": 402
         }
       ]
     },
@@ -33,8 +33,8 @@
       "head_branch": "main",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-03-03T07:49:11Z",
-      "updated_at": "2026-03-03T08:02:19Z",
+      "created_at": "2026-03-03T15:49:11Z",
+      "updated_at": "2026-03-03T16:02:19Z",
       "html_url": "https://gitcode.com/Ascend/slime-ascend/merge_requests/1",
       "durationInSeconds": 788,
       "jobs": [
@@ -43,9 +43,9 @@
           "name": "ci-pipeline-running",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-03-03T07:49:11Z",
-          "started_at": "2026-03-03T07:55:37Z",
-          "completed_at": "2026-03-03T08:02:19Z",
+          "created_at": "2026-03-03T15:49:11Z",
+          "started_at": "2026-03-03T15:55:37Z",
+          "completed_at": "2026-03-03T16:02:19Z",
           "html_url": "https://gitcode.com/Ascend/slime-ascend/merge_requests/1",
           "queueDurationInSeconds": 386,
           "durationInSeconds": 402
@@ -54,26 +54,26 @@
     },
     {
       "id": 10100,
-      "name": "PR #1 docs-ci - 初始化代码仓及构建工程",
-      "head_branch": "hejianping/init_repo",
+      "name": "PR #1 docs-ci - init slime-ascend",
+      "head_branch": "main",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-03-03T08:18:06Z",
-      "updated_at": "2026-03-04T08:18:52Z",
-      "html_url": "https://gitcode.com/Ascend/agent-skills/merge_requests/1",
-      "durationInSeconds": 86446,
+      "created_at": "2026-03-03T15:39:14Z",
+      "updated_at": "2026-03-03T16:15:45Z",
+      "html_url": "https://gitcode.com/Ascend/slime-ascend/merge_requests/1",
+      "durationInSeconds": 2191,
       "jobs": [
         {
           "id": 10101,
           "name": "docs-ci",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-03-03T08:18:06Z",
-          "started_at": "2026-03-03T08:18:36Z",
-          "completed_at": "2026-03-04T08:18:52Z",
-          "html_url": "https://gitcode.com/Ascend/agent-skills/merge_requests/1",
+          "created_at": "2026-03-03T15:39:14Z",
+          "started_at": "2026-03-03T15:39:44Z",
+          "completed_at": "2026-03-03T16:15:45Z",
+          "html_url": "https://gitcode.com/Ascend/slime-ascend/merge_requests/1",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 86416
+          "durationInSeconds": 2161
         }
       ]
     },
@@ -83,8 +83,8 @@
       "head_branch": "main",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-03-03T07:49:11Z",
-      "updated_at": "2026-03-03T08:15:45Z",
+      "created_at": "2026-03-03T15:49:11Z",
+      "updated_at": "2026-03-03T16:15:45Z",
       "html_url": "https://gitcode.com/Ascend/slime-ascend/merge_requests/1",
       "durationInSeconds": 1594,
       "jobs": [
@@ -93,9 +93,9 @@
           "name": "docs-ci",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-03-03T07:49:11Z",
-          "started_at": "2026-03-03T07:49:41Z",
-          "completed_at": "2026-03-03T08:15:45Z",
+          "created_at": "2026-03-03T15:49:11Z",
+          "started_at": "2026-03-03T15:49:41Z",
+          "completed_at": "2026-03-03T16:15:45Z",
           "html_url": "https://gitcode.com/Ascend/slime-ascend/merge_requests/1",
           "queueDurationInSeconds": 30,
           "durationInSeconds": 1564
@@ -108,8 +108,8 @@
       "head_branch": "master",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-03-03T03:03:21Z",
-      "updated_at": "2026-03-03T03:37:34Z",
+      "created_at": "2026-03-03T11:03:21Z",
+      "updated_at": "2026-03-03T11:37:34Z",
       "html_url": "https://gitcode.com/Ascend/docs/merge_requests/10",
       "durationInSeconds": 2053,
       "jobs": [
@@ -118,9 +118,9 @@
           "name": "compile",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-03-03T03:03:21Z",
-          "started_at": "2026-03-03T03:03:51Z",
-          "completed_at": "2026-03-03T03:37:34Z",
+          "created_at": "2026-03-03T11:03:21Z",
+          "started_at": "2026-03-03T11:03:51Z",
+          "completed_at": "2026-03-03T11:37:34Z",
           "html_url": "https://gitcode.com/Ascend/docs/merge_requests/10",
           "queueDurationInSeconds": 30,
           "durationInSeconds": 2023
@@ -133,8 +133,8 @@
       "head_branch": "master",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-03-03T03:03:21Z",
-      "updated_at": "2026-03-03T03:37:34Z",
+      "created_at": "2026-03-03T11:03:21Z",
+      "updated_at": "2026-03-03T11:37:34Z",
       "html_url": "https://gitcode.com/Ascend/docs/merge_requests/10",
       "durationInSeconds": 2053,
       "jobs": [
@@ -143,9 +143,9 @@
           "name": "docs-ci",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-03-03T03:03:21Z",
-          "started_at": "2026-03-03T03:03:51Z",
-          "completed_at": "2026-03-03T03:37:34Z",
+          "created_at": "2026-03-03T11:03:21Z",
+          "started_at": "2026-03-03T11:03:51Z",
+          "completed_at": "2026-03-03T11:37:34Z",
           "html_url": "https://gitcode.com/Ascend/docs/merge_requests/10",
           "queueDurationInSeconds": 30,
           "durationInSeconds": 2023
@@ -204,26 +204,26 @@
     },
     {
       "id": 600000,
-      "name": "PR #60 compile - [WIP]增加AgentManager部分",
-      "head_branch": "context1",
+      "name": "PR #60 compile - 【bugfix】修复劫持 MallocHost 相关接口导致出现内存未使用误报的问题",
+      "head_branch": "bugfix",
       "status": "completed",
-      "conclusion": "failure",
-      "created_at": "2026-03-03T08:41:53Z",
-      "updated_at": "2026-03-03T08:56:52Z",
-      "html_url": "https://gitcode.com/Ascend/AgentSDK/merge_requests/60",
-      "durationInSeconds": 899,
+      "conclusion": "success",
+      "created_at": "2026-03-03T11:35:07Z",
+      "updated_at": "2026-03-03T11:44:59Z",
+      "html_url": "https://gitcode.com/Ascend/msopcom/merge_requests/60",
+      "durationInSeconds": 592,
       "jobs": [
         {
           "id": 600001,
           "name": "ci-pipeline-running",
           "status": "completed",
-          "conclusion": "failure",
-          "created_at": "2026-03-03T08:41:53Z",
-          "started_at": "2026-03-03T08:42:14Z",
-          "completed_at": "2026-03-03T08:56:52Z",
-          "html_url": "https://gitcode.com/Ascend/AgentSDK/merge_requests/60",
-          "queueDurationInSeconds": 21,
-          "durationInSeconds": 878
+          "conclusion": "success",
+          "created_at": "2026-03-03T11:35:07Z",
+          "started_at": "2026-03-03T11:35:50Z",
+          "completed_at": "2026-03-03T11:44:59Z",
+          "html_url": "https://gitcode.com/Ascend/msopcom/merge_requests/60",
+          "queueDurationInSeconds": 43,
+          "durationInSeconds": 549
         }
       ]
     },
@@ -279,26 +279,26 @@
     },
     {
       "id": 600100,
-      "name": "PR #60 docs-ci - [WIP]增加AgentManager部分",
-      "head_branch": "context1",
+      "name": "PR #60 docs-ci - 【bugfix】修复劫持 MallocHost 相关接口导致出现内存未使用误报的问题",
+      "head_branch": "bugfix",
       "status": "completed",
-      "conclusion": "pending",
-      "created_at": "2026-03-03T08:41:53Z",
-      "updated_at": "2026-04-12T15:29:15Z",
-      "html_url": "https://gitcode.com/Ascend/AgentSDK/merge_requests/60",
-      "durationInSeconds": 3480442.361,
+      "conclusion": "success",
+      "created_at": "2026-03-03T11:35:07Z",
+      "updated_at": "2026-03-04T09:59:43Z",
+      "html_url": "https://gitcode.com/Ascend/msopcom/merge_requests/60",
+      "durationInSeconds": 80676,
       "jobs": [
         {
           "id": 600101,
           "name": "docs-ci",
           "status": "completed",
-          "conclusion": "pending",
-          "created_at": "2026-03-03T08:41:53Z",
-          "started_at": "2026-03-03T08:42:23Z",
-          "completed_at": "2026-04-12T15:29:15Z",
-          "html_url": "https://gitcode.com/Ascend/AgentSDK/merge_requests/60",
+          "conclusion": "success",
+          "created_at": "2026-03-03T11:35:07Z",
+          "started_at": "2026-03-03T11:35:37Z",
+          "completed_at": "2026-03-04T09:59:43Z",
+          "html_url": "https://gitcode.com/Ascend/msopcom/merge_requests/60",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 3480412.361
+          "durationInSeconds": 80646
         }
       ]
     },
@@ -358,8 +358,8 @@
       "head_branch": "master",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-03-03T03:14:14Z",
-      "updated_at": "2026-03-03T03:29:40Z",
+      "created_at": "2026-03-03T11:14:14Z",
+      "updated_at": "2026-03-03T11:29:40Z",
       "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/40",
       "durationInSeconds": 926,
       "jobs": [
@@ -368,9 +368,9 @@
           "name": "ci-pipeline-running",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-03-03T03:14:14Z",
-          "started_at": "2026-03-03T03:14:56Z",
-          "completed_at": "2026-03-03T03:29:40Z",
+          "created_at": "2026-03-03T11:14:14Z",
+          "started_at": "2026-03-03T11:14:56Z",
+          "completed_at": "2026-03-03T11:29:40Z",
           "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/40",
           "queueDurationInSeconds": 42,
           "durationInSeconds": 884
@@ -383,8 +383,8 @@
       "head_branch": "master",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-03-03T03:14:14Z",
-      "updated_at": "2026-03-05T01:39:06Z",
+      "created_at": "2026-03-03T11:14:14Z",
+      "updated_at": "2026-03-05T09:39:06Z",
       "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/40",
       "durationInSeconds": 167092,
       "jobs": [
@@ -393,9 +393,9 @@
           "name": "docs-ci",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-03-03T03:14:14Z",
-          "started_at": "2026-03-03T03:14:44Z",
-          "completed_at": "2026-03-05T01:39:06Z",
+          "created_at": "2026-03-03T11:14:14Z",
+          "started_at": "2026-03-03T11:14:44Z",
+          "completed_at": "2026-03-05T09:39:06Z",
           "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/40",
           "queueDurationInSeconds": 30,
           "durationInSeconds": 167062
@@ -458,8 +458,8 @@
       "head_branch": "dev_0229",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-03-03T01:53:21Z",
-      "updated_at": "2026-03-03T02:54:56Z",
+      "created_at": "2026-03-03T09:53:21Z",
+      "updated_at": "2026-03-03T10:54:56Z",
       "html_url": "https://gitcode.com/Ascend/msot/merge_requests/17",
       "durationInSeconds": 3695,
       "jobs": [
@@ -468,9 +468,9 @@
           "name": "ci-pipeline-running",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-03-03T01:53:21Z",
-          "started_at": "2026-03-03T01:54:07Z",
-          "completed_at": "2026-03-03T02:54:56Z",
+          "created_at": "2026-03-03T09:53:21Z",
+          "started_at": "2026-03-03T09:54:07Z",
+          "completed_at": "2026-03-03T10:54:56Z",
           "html_url": "https://gitcode.com/Ascend/msot/merge_requests/17",
           "queueDurationInSeconds": 46,
           "durationInSeconds": 3649
@@ -483,8 +483,8 @@
       "head_branch": "dev_0229",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-03-03T02:14:05Z",
-      "updated_at": "2026-03-03T02:54:56Z",
+      "created_at": "2026-03-03T10:14:05Z",
+      "updated_at": "2026-03-03T10:54:56Z",
       "html_url": "https://gitcode.com/Ascend/msot/merge_requests/17",
       "durationInSeconds": 2451,
       "jobs": [
@@ -493,9 +493,9 @@
           "name": "ci-pipeline-running",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-03-03T02:14:05Z",
-          "started_at": "2026-03-03T02:14:46Z",
-          "completed_at": "2026-03-03T02:54:56Z",
+          "created_at": "2026-03-03T10:14:05Z",
+          "started_at": "2026-03-03T10:14:46Z",
+          "completed_at": "2026-03-03T10:54:56Z",
           "html_url": "https://gitcode.com/Ascend/msot/merge_requests/17",
           "queueDurationInSeconds": 41,
           "durationInSeconds": 2410
@@ -508,8 +508,8 @@
       "head_branch": "dev_0229",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-03-03T01:53:21Z",
-      "updated_at": "2026-03-03T03:00:07Z",
+      "created_at": "2026-03-03T09:53:21Z",
+      "updated_at": "2026-03-03T11:00:07Z",
       "html_url": "https://gitcode.com/Ascend/msot/merge_requests/17",
       "durationInSeconds": 4006,
       "jobs": [
@@ -518,9 +518,9 @@
           "name": "docs-ci",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-03-03T01:53:21Z",
-          "started_at": "2026-03-03T01:53:51Z",
-          "completed_at": "2026-03-03T03:00:07Z",
+          "created_at": "2026-03-03T09:53:21Z",
+          "started_at": "2026-03-03T09:53:51Z",
+          "completed_at": "2026-03-03T11:00:07Z",
           "html_url": "https://gitcode.com/Ascend/msot/merge_requests/17",
           "queueDurationInSeconds": 30,
           "durationInSeconds": 3976
@@ -533,8 +533,8 @@
       "head_branch": "dev_0229",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-03-03T02:14:05Z",
-      "updated_at": "2026-03-03T03:00:07Z",
+      "created_at": "2026-03-03T10:14:05Z",
+      "updated_at": "2026-03-03T11:00:07Z",
       "html_url": "https://gitcode.com/Ascend/msot/merge_requests/17",
       "durationInSeconds": 2762,
       "jobs": [
@@ -543,9 +543,9 @@
           "name": "docs-ci",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-03-03T02:14:05Z",
-          "started_at": "2026-03-03T02:14:35Z",
-          "completed_at": "2026-03-03T03:00:07Z",
+          "created_at": "2026-03-03T10:14:05Z",
+          "started_at": "2026-03-03T10:14:35Z",
+          "completed_at": "2026-03-03T11:00:07Z",
           "html_url": "https://gitcode.com/Ascend/msot/merge_requests/17",
           "queueDurationInSeconds": 30,
           "durationInSeconds": 2732
@@ -608,9 +608,9 @@
       "head_branch": "msopt_master_scalar",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-03-03T02:45:07Z",
-      "updated_at": "2026-03-03T02:57:21Z",
-      "html_url": "https://gitcode.com/Ascend/msopprof/merge_requests/54",
+      "created_at": "2026-03-03T10:45:07Z",
+      "updated_at": "2026-03-03T10:57:21Z",
+      "html_url": "https://gitcode.com/Ascend/MindStudio-Ops-Profiler/merge_requests/54",
       "durationInSeconds": 734,
       "jobs": [
         {
@@ -618,10 +618,10 @@
           "name": "ci-pipeline-running",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-03-03T02:45:07Z",
-          "started_at": "2026-03-03T02:45:50Z",
-          "completed_at": "2026-03-03T02:57:21Z",
-          "html_url": "https://gitcode.com/Ascend/msopprof/merge_requests/54",
+          "created_at": "2026-03-03T10:45:07Z",
+          "started_at": "2026-03-03T10:45:50Z",
+          "completed_at": "2026-03-03T10:57:21Z",
+          "html_url": "https://gitcode.com/Ascend/MindStudio-Ops-Profiler/merge_requests/54",
           "queueDurationInSeconds": 43,
           "durationInSeconds": 691
         }
@@ -633,9 +633,9 @@
       "head_branch": "msopt_master_scalar",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-03-03T02:47:39Z",
-      "updated_at": "2026-03-03T02:57:21Z",
-      "html_url": "https://gitcode.com/Ascend/msopprof/merge_requests/54",
+      "created_at": "2026-03-03T10:47:39Z",
+      "updated_at": "2026-03-03T10:57:21Z",
+      "html_url": "https://gitcode.com/Ascend/MindStudio-Ops-Profiler/merge_requests/54",
       "durationInSeconds": 582,
       "jobs": [
         {
@@ -643,10 +643,10 @@
           "name": "ci-pipeline-passed",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-03-03T02:47:39Z",
-          "started_at": "2026-03-03T02:48:09Z",
-          "completed_at": "2026-03-03T02:57:21Z",
-          "html_url": "https://gitcode.com/Ascend/msopprof/merge_requests/54",
+          "created_at": "2026-03-03T10:47:39Z",
+          "started_at": "2026-03-03T10:48:09Z",
+          "completed_at": "2026-03-03T10:57:21Z",
+          "html_url": "https://gitcode.com/Ascend/MindStudio-Ops-Profiler/merge_requests/54",
           "queueDurationInSeconds": 30,
           "durationInSeconds": 552
         }
@@ -658,22 +658,22 @@
       "head_branch": "msopt_master_scalar",
       "status": "completed",
       "conclusion": "pending",
-      "created_at": "2026-03-03T02:45:07Z",
-      "updated_at": "2026-04-12T14:26:33Z",
-      "html_url": "https://gitcode.com/Ascend/msopprof/merge_requests/54",
-      "durationInSeconds": 3498086.378,
+      "created_at": "2026-03-03T10:45:07Z",
+      "updated_at": "2026-04-19T20:50:43Z",
+      "html_url": "https://gitcode.com/Ascend/MindStudio-Ops-Profiler/merge_requests/54",
+      "durationInSeconds": 4097136.736,
       "jobs": [
         {
           "id": 540101,
           "name": "docs-ci",
           "status": "completed",
           "conclusion": "pending",
-          "created_at": "2026-03-03T02:45:07Z",
-          "started_at": "2026-03-03T02:45:37Z",
-          "completed_at": "2026-04-12T14:26:33Z",
-          "html_url": "https://gitcode.com/Ascend/msopprof/merge_requests/54",
+          "created_at": "2026-03-03T10:45:07Z",
+          "started_at": "2026-03-03T10:45:37Z",
+          "completed_at": "2026-04-19T20:50:43Z",
+          "html_url": "https://gitcode.com/Ascend/MindStudio-Ops-Profiler/merge_requests/54",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 3498056.378
+          "durationInSeconds": 4097106.736
         }
       ]
     },
@@ -683,22 +683,22 @@
       "head_branch": "msopt_master_scalar",
       "status": "completed",
       "conclusion": "pending",
-      "created_at": "2026-03-03T02:47:39Z",
-      "updated_at": "2026-04-12T14:26:33Z",
-      "html_url": "https://gitcode.com/Ascend/msopprof/merge_requests/54",
-      "durationInSeconds": 3497934.378,
+      "created_at": "2026-03-03T10:47:39Z",
+      "updated_at": "2026-04-19T20:50:43Z",
+      "html_url": "https://gitcode.com/Ascend/MindStudio-Ops-Profiler/merge_requests/54",
+      "durationInSeconds": 4096984.736,
       "jobs": [
         {
           "id": 540102,
           "name": "docs-ci",
           "status": "completed",
           "conclusion": "pending",
-          "created_at": "2026-03-03T02:47:39Z",
-          "started_at": "2026-03-03T02:48:09Z",
-          "completed_at": "2026-04-12T14:26:33Z",
-          "html_url": "https://gitcode.com/Ascend/msopprof/merge_requests/54",
+          "created_at": "2026-03-03T10:47:39Z",
+          "started_at": "2026-03-03T10:48:09Z",
+          "completed_at": "2026-04-19T20:50:43Z",
+          "html_url": "https://gitcode.com/Ascend/MindStudio-Ops-Profiler/merge_requests/54",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 3497904.378
+          "durationInSeconds": 4096954.736
         }
       ]
     },
@@ -708,8 +708,8 @@
       "head_branch": "master",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-03-03T03:17:20Z",
-      "updated_at": "2026-03-03T03:32:03Z",
+      "created_at": "2026-03-03T11:17:20Z",
+      "updated_at": "2026-03-03T11:32:03Z",
       "html_url": "https://gitcode.com/Ascend/msopprof/merge_requests/52",
       "durationInSeconds": 883,
       "jobs": [
@@ -718,9 +718,9 @@
           "name": "ci-pipeline-running",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-03-03T03:17:20Z",
-          "started_at": "2026-03-03T03:18:04Z",
-          "completed_at": "2026-03-03T03:32:03Z",
+          "created_at": "2026-03-03T11:17:20Z",
+          "started_at": "2026-03-03T11:18:04Z",
+          "completed_at": "2026-03-03T11:32:03Z",
           "html_url": "https://gitcode.com/Ascend/msopprof/merge_requests/52",
           "queueDurationInSeconds": 44,
           "durationInSeconds": 839
@@ -733,8 +733,8 @@
       "head_branch": "master",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-03-03T03:37:09Z",
-      "updated_at": "2026-03-03T03:52:48Z",
+      "created_at": "2026-03-03T11:37:09Z",
+      "updated_at": "2026-03-03T11:52:48Z",
       "html_url": "https://gitcode.com/Ascend/msopprof/merge_requests/52",
       "durationInSeconds": 939,
       "jobs": [
@@ -743,9 +743,9 @@
           "name": "ci-pipeline-running",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-03-03T03:37:09Z",
-          "started_at": "2026-03-03T03:37:48Z",
-          "completed_at": "2026-03-03T03:52:48Z",
+          "created_at": "2026-03-03T11:37:09Z",
+          "started_at": "2026-03-03T11:37:48Z",
+          "completed_at": "2026-03-03T11:52:48Z",
           "html_url": "https://gitcode.com/Ascend/msopprof/merge_requests/52",
           "queueDurationInSeconds": 39,
           "durationInSeconds": 900
@@ -758,8 +758,8 @@
       "head_branch": "master",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-03-03T03:17:20Z",
-      "updated_at": "2026-03-03T03:52:55Z",
+      "created_at": "2026-03-03T11:17:20Z",
+      "updated_at": "2026-03-03T11:52:55Z",
       "html_url": "https://gitcode.com/Ascend/msopprof/merge_requests/52",
       "durationInSeconds": 2135,
       "jobs": [
@@ -768,9 +768,9 @@
           "name": "docs-ci",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-03-03T03:17:20Z",
-          "started_at": "2026-03-03T03:17:50Z",
-          "completed_at": "2026-03-03T03:52:55Z",
+          "created_at": "2026-03-03T11:17:20Z",
+          "started_at": "2026-03-03T11:17:50Z",
+          "completed_at": "2026-03-03T11:52:55Z",
           "html_url": "https://gitcode.com/Ascend/msopprof/merge_requests/52",
           "queueDurationInSeconds": 30,
           "durationInSeconds": 2105
@@ -783,8 +783,8 @@
       "head_branch": "master",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-03-03T03:37:09Z",
-      "updated_at": "2026-03-03T03:52:55Z",
+      "created_at": "2026-03-03T11:37:09Z",
+      "updated_at": "2026-03-03T11:52:55Z",
       "html_url": "https://gitcode.com/Ascend/msopprof/merge_requests/52",
       "durationInSeconds": 946,
       "jobs": [
@@ -793,9 +793,9 @@
           "name": "docs-ci",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-03-03T03:37:09Z",
-          "started_at": "2026-03-03T03:37:39Z",
-          "completed_at": "2026-03-03T03:52:55Z",
+          "created_at": "2026-03-03T11:37:09Z",
+          "started_at": "2026-03-03T11:37:39Z",
+          "completed_at": "2026-03-03T11:52:55Z",
           "html_url": "https://gitcode.com/Ascend/msopprof/merge_requests/52",
           "queueDurationInSeconds": 30,
           "durationInSeconds": 916
@@ -31249,6 +31249,406 @@
           "html_url": "https://gitcode.com/Ascend/op-plugin/merge_requests/4340",
           "queueDurationInSeconds": 30,
           "durationInSeconds": 10994
+        }
+      ]
+    },
+    {
+      "id": 520003,
+      "name": "PR #52 compile - 【refactor】合并相似函数，提高代码可维护性",
+      "head_branch": "optim",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-03-02T20:44:03Z",
+      "updated_at": "2026-03-02T20:53:49Z",
+      "html_url": "https://gitcode.com/Ascend/msopcom/merge_requests/52",
+      "durationInSeconds": 586,
+      "jobs": [
+        {
+          "id": 520004,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-03-02T20:44:03Z",
+          "started_at": "2026-03-02T20:44:49Z",
+          "completed_at": "2026-03-02T20:53:49Z",
+          "html_url": "https://gitcode.com/Ascend/msopcom/merge_requests/52",
+          "queueDurationInSeconds": 46,
+          "durationInSeconds": 540
+        }
+      ]
+    },
+    {
+      "id": 520103,
+      "name": "PR #52 docs-ci - 【refactor】合并相似函数，提高代码可维护性",
+      "head_branch": "optim",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-03-02T20:44:03Z",
+      "updated_at": "2026-03-03T14:34:39Z",
+      "html_url": "https://gitcode.com/Ascend/msopcom/merge_requests/52",
+      "durationInSeconds": 64236,
+      "jobs": [
+        {
+          "id": 520104,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-03-02T20:44:03Z",
+          "started_at": "2026-03-02T20:44:33Z",
+          "completed_at": "2026-03-03T14:34:39Z",
+          "html_url": "https://gitcode.com/Ascend/msopcom/merge_requests/52",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 64206
+        }
+      ]
+    },
+    {
+      "id": 400017,
+      "name": "PR #40 compile - 【feature】sanitizer支持simt核内线程间竞争检测",
+      "head_branch": "master",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-03-02T19:27:21Z",
+      "updated_at": "2026-03-02T19:42:24Z",
+      "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/40",
+      "durationInSeconds": 903,
+      "jobs": [
+        {
+          "id": 400018,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-03-02T19:27:21Z",
+          "started_at": "2026-03-02T19:28:02Z",
+          "completed_at": "2026-03-02T19:42:24Z",
+          "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/40",
+          "queueDurationInSeconds": 41,
+          "durationInSeconds": 862
+        }
+      ]
+    },
+    {
+      "id": 400117,
+      "name": "PR #40 docs-ci - 【feature】sanitizer支持simt核内线程间竞争检测",
+      "head_branch": "master",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-03-02T19:27:21Z",
+      "updated_at": "2026-03-05T09:39:06Z",
+      "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/40",
+      "durationInSeconds": 223905,
+      "jobs": [
+        {
+          "id": 400118,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-03-02T19:27:21Z",
+          "started_at": "2026-03-02T19:27:51Z",
+          "completed_at": "2026-03-05T09:39:06Z",
+          "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/40",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 223875
+        }
+      ]
+    },
+    {
+      "id": 720001,
+      "name": "PR #72 compile - 【feature】文档及注释优化",
+      "head_branch": "dev_0301",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-03-02T21:01:26Z",
+      "updated_at": "2026-03-02T21:13:15Z",
+      "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/72",
+      "durationInSeconds": 709,
+      "jobs": [
+        {
+          "id": 720002,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-03-02T21:01:26Z",
+          "started_at": "2026-03-02T21:02:06Z",
+          "completed_at": "2026-03-02T21:13:15Z",
+          "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/72",
+          "queueDurationInSeconds": 40,
+          "durationInSeconds": 669
+        }
+      ]
+    },
+    {
+      "id": 720101,
+      "name": "PR #72 docs-ci - 【feature】文档及注释优化",
+      "head_branch": "dev_0301",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-03-02T21:01:26Z",
+      "updated_at": "2026-03-03T09:29:15Z",
+      "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/72",
+      "durationInSeconds": 44869,
+      "jobs": [
+        {
+          "id": 720102,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-03-02T21:01:26Z",
+          "started_at": "2026-03-02T21:01:56Z",
+          "completed_at": "2026-03-03T09:29:15Z",
+          "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/72",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 44839
+        }
+      ]
+    },
+    {
+      "id": 730000,
+      "name": "PR #73 compile - 【bugfix】修复 DataCopy 指令非对齐检测重复报告的问题",
+      "head_branch": "bugfix",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-03-02T17:31:35Z",
+      "updated_at": "2026-03-02T17:44:37Z",
+      "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/73",
+      "durationInSeconds": 782,
+      "jobs": [
+        {
+          "id": 730001,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-03-02T17:31:35Z",
+          "started_at": "2026-03-02T17:32:16Z",
+          "completed_at": "2026-03-02T17:44:37Z",
+          "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/73",
+          "queueDurationInSeconds": 41,
+          "durationInSeconds": 741
+        }
+      ]
+    },
+    {
+      "id": 730100,
+      "name": "PR #73 docs-ci - 【bugfix】修复 DataCopy 指令非对齐检测重复报告的问题",
+      "head_branch": "bugfix",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-03-02T17:31:35Z",
+      "updated_at": "2026-03-02T17:44:43Z",
+      "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/73",
+      "durationInSeconds": 788,
+      "jobs": [
+        {
+          "id": 730101,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-03-02T17:31:35Z",
+          "started_at": "2026-03-02T17:32:05Z",
+          "completed_at": "2026-03-02T17:44:43Z",
+          "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/73",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 758
+        }
+      ]
+    },
+    {
+      "id": 330000,
+      "name": "PR #33 compile - 【feature】解决UT在门禁环境的GCC7上失败的问题，为上门禁做准备。",
+      "head_branch": "dev_0302",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-03-02T16:48:45Z",
+      "updated_at": "2026-03-02T17:16:23Z",
+      "html_url": "https://gitcode.com/Ascend/msdebug/merge_requests/33",
+      "durationInSeconds": 1658,
+      "jobs": [
+        {
+          "id": 330001,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-03-02T16:48:45Z",
+          "started_at": "2026-03-02T16:59:26Z",
+          "completed_at": "2026-03-02T17:16:23Z",
+          "html_url": "https://gitcode.com/Ascend/msdebug/merge_requests/33",
+          "queueDurationInSeconds": 641,
+          "durationInSeconds": 1017
+        }
+      ]
+    },
+    {
+      "id": 330001,
+      "name": "PR #33 compile - 【feature】解决UT在门禁环境的GCC7上失败的问题，为上门禁做准备。",
+      "head_branch": "dev_0302",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-03-02T18:12:15Z",
+      "updated_at": "2026-03-02T19:09:14Z",
+      "html_url": "https://gitcode.com/Ascend/msdebug/merge_requests/33",
+      "durationInSeconds": 3419,
+      "jobs": [
+        {
+          "id": 330002,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-03-02T18:12:15Z",
+          "started_at": "2026-03-02T18:22:41Z",
+          "completed_at": "2026-03-02T19:09:14Z",
+          "html_url": "https://gitcode.com/Ascend/msdebug/merge_requests/33",
+          "queueDurationInSeconds": 626,
+          "durationInSeconds": 2793
+        }
+      ]
+    },
+    {
+      "id": 330100,
+      "name": "PR #33 docs-ci - 【feature】解决UT在门禁环境的GCC7上失败的问题，为上门禁做准备。",
+      "head_branch": "dev_0302",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-03-02T16:48:45Z",
+      "updated_at": "2026-03-02T19:54:10Z",
+      "html_url": "https://gitcode.com/Ascend/msdebug/merge_requests/33",
+      "durationInSeconds": 11125,
+      "jobs": [
+        {
+          "id": 330101,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-03-02T16:48:45Z",
+          "started_at": "2026-03-02T16:49:15Z",
+          "completed_at": "2026-03-02T19:54:10Z",
+          "html_url": "https://gitcode.com/Ascend/msdebug/merge_requests/33",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 11095
+        }
+      ]
+    },
+    {
+      "id": 330101,
+      "name": "PR #33 docs-ci - 【feature】解决UT在门禁环境的GCC7上失败的问题，为上门禁做准备。",
+      "head_branch": "dev_0302",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-03-02T18:12:15Z",
+      "updated_at": "2026-03-02T19:54:10Z",
+      "html_url": "https://gitcode.com/Ascend/msdebug/merge_requests/33",
+      "durationInSeconds": 6115,
+      "jobs": [
+        {
+          "id": 330102,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-03-02T18:12:15Z",
+          "started_at": "2026-03-02T18:12:45Z",
+          "completed_at": "2026-03-02T19:54:10Z",
+          "html_url": "https://gitcode.com/Ascend/msdebug/merge_requests/33",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 6085
+        }
+      ]
+    },
+    {
+      "id": 170003,
+      "name": "PR #17 compile - 【feature】文档优化：门户仓字斟句酌的再全面优化一遍，确保文档专业整洁；解决资料检查工具报出的",
+      "head_branch": "dev_0229",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-03-02T20:55:56Z",
+      "updated_at": "2026-03-02T21:32:23Z",
+      "html_url": "https://gitcode.com/Ascend/msot/merge_requests/17",
+      "durationInSeconds": 2187,
+      "jobs": [
+        {
+          "id": 170004,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-03-02T20:55:56Z",
+          "started_at": "2026-03-02T20:56:36Z",
+          "completed_at": "2026-03-02T21:32:23Z",
+          "html_url": "https://gitcode.com/Ascend/msot/merge_requests/17",
+          "queueDurationInSeconds": 40,
+          "durationInSeconds": 2147
+        }
+      ]
+    },
+    {
+      "id": 170004,
+      "name": "PR #17 compile - 【feature】文档优化：门户仓字斟句酌的再全面优化一遍，确保文档专业整洁；解决资料检查工具报出的",
+      "head_branch": "dev_0229",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-03-02T22:05:30Z",
+      "updated_at": "2026-03-02T22:40:42Z",
+      "html_url": "https://gitcode.com/Ascend/msot/merge_requests/17",
+      "durationInSeconds": 2112,
+      "jobs": [
+        {
+          "id": 170005,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-03-02T22:05:30Z",
+          "started_at": "2026-03-02T22:06:10Z",
+          "completed_at": "2026-03-02T22:40:42Z",
+          "html_url": "https://gitcode.com/Ascend/msot/merge_requests/17",
+          "queueDurationInSeconds": 40,
+          "durationInSeconds": 2072
+        }
+      ]
+    },
+    {
+      "id": 170103,
+      "name": "PR #17 docs-ci - 【feature】文档优化：门户仓字斟句酌的再全面优化一遍，确保文档专业整洁；解决资料检查工具报出的",
+      "head_branch": "dev_0229",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-03-02T20:55:56Z",
+      "updated_at": "2026-03-03T11:00:07Z",
+      "html_url": "https://gitcode.com/Ascend/msot/merge_requests/17",
+      "durationInSeconds": 50651,
+      "jobs": [
+        {
+          "id": 170104,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-03-02T20:55:56Z",
+          "started_at": "2026-03-02T20:56:26Z",
+          "completed_at": "2026-03-03T11:00:07Z",
+          "html_url": "https://gitcode.com/Ascend/msot/merge_requests/17",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 50621
+        }
+      ]
+    },
+    {
+      "id": 170104,
+      "name": "PR #17 docs-ci - 【feature】文档优化：门户仓字斟句酌的再全面优化一遍，确保文档专业整洁；解决资料检查工具报出的",
+      "head_branch": "dev_0229",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-03-02T22:05:30Z",
+      "updated_at": "2026-03-03T11:00:07Z",
+      "html_url": "https://gitcode.com/Ascend/msot/merge_requests/17",
+      "durationInSeconds": 46477,
+      "jobs": [
+        {
+          "id": 170105,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-03-02T22:05:30Z",
+          "started_at": "2026-03-02T22:06:00Z",
+          "completed_at": "2026-03-03T11:00:07Z",
+          "html_url": "https://gitcode.com/Ascend/msot/merge_requests/17",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 46447
         }
       ]
     }

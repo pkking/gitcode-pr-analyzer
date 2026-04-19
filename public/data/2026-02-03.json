@@ -1,6 +1,6 @@
 {
   "date": "2026-02-03",
-  "repo": "Ascend/op-plugin",
+  "repo": "Ascend/OMSDK",
   "runs": [
     {
       "id": 50000,
@@ -58,8 +58,8 @@
       "head_branch": "master",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-02-03T01:44:47Z",
-      "updated_at": "2026-02-03T02:01:21Z",
+      "created_at": "2026-02-03T09:44:47Z",
+      "updated_at": "2026-02-03T10:01:21Z",
       "html_url": "https://gitcode.com/Ascend/docs/merge_requests/4",
       "durationInSeconds": 994,
       "jobs": [
@@ -68,9 +68,9 @@
           "name": "compile",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-02-03T01:44:47Z",
-          "started_at": "2026-02-03T01:45:17Z",
-          "completed_at": "2026-02-03T02:01:21Z",
+          "created_at": "2026-02-03T09:44:47Z",
+          "started_at": "2026-02-03T09:45:17Z",
+          "completed_at": "2026-02-03T10:01:21Z",
           "html_url": "https://gitcode.com/Ascend/docs/merge_requests/4",
           "queueDurationInSeconds": 30,
           "durationInSeconds": 964
@@ -83,8 +83,8 @@
       "head_branch": "master",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-02-03T01:44:47Z",
-      "updated_at": "2026-02-03T02:01:21Z",
+      "created_at": "2026-02-03T09:44:47Z",
+      "updated_at": "2026-02-03T10:01:21Z",
       "html_url": "https://gitcode.com/Ascend/docs/merge_requests/4",
       "durationInSeconds": 994,
       "jobs": [
@@ -93,9 +93,9 @@
           "name": "docs-ci",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-02-03T01:44:47Z",
-          "started_at": "2026-02-03T01:45:17Z",
-          "completed_at": "2026-02-03T02:01:21Z",
+          "created_at": "2026-02-03T09:44:47Z",
+          "started_at": "2026-02-03T09:45:17Z",
+          "completed_at": "2026-02-03T10:01:21Z",
           "html_url": "https://gitcode.com/Ascend/docs/merge_requests/4",
           "queueDurationInSeconds": 30,
           "durationInSeconds": 964
@@ -108,8 +108,8 @@
       "head_branch": "npu_zcopy",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-02-03T02:30:22Z",
-      "updated_at": "2026-02-03T02:34:43Z",
+      "created_at": "2026-02-03T10:30:22Z",
+      "updated_at": "2026-02-03T10:34:43Z",
       "html_url": "https://gitcode.com/Ascend/TransferQueue/merge_requests/24",
       "durationInSeconds": 261,
       "jobs": [
@@ -118,9 +118,9 @@
           "name": "ci-pipeline-running",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-02-03T02:30:22Z",
-          "started_at": "2026-02-03T02:30:40Z",
-          "completed_at": "2026-02-03T02:34:43Z",
+          "created_at": "2026-02-03T10:30:22Z",
+          "started_at": "2026-02-03T10:30:40Z",
+          "completed_at": "2026-02-03T10:34:43Z",
           "html_url": "https://gitcode.com/Ascend/TransferQueue/merge_requests/24",
           "queueDurationInSeconds": 18,
           "durationInSeconds": 243
@@ -133,8 +133,8 @@
       "head_branch": "npu_zcopy",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-02-03T02:30:22Z",
-      "updated_at": "2026-02-03T02:38:18Z",
+      "created_at": "2026-02-03T10:30:22Z",
+      "updated_at": "2026-02-03T10:38:18Z",
       "html_url": "https://gitcode.com/Ascend/TransferQueue/merge_requests/24",
       "durationInSeconds": 476,
       "jobs": [
@@ -143,9 +143,9 @@
           "name": "docs-ci",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-02-03T02:30:22Z",
-          "started_at": "2026-02-03T02:30:52Z",
-          "completed_at": "2026-02-03T02:38:18Z",
+          "created_at": "2026-02-03T10:30:22Z",
+          "started_at": "2026-02-03T10:30:52Z",
+          "completed_at": "2026-02-03T10:38:18Z",
           "html_url": "https://gitcode.com/Ascend/TransferQueue/merge_requests/24",
           "queueDurationInSeconds": 30,
           "durationInSeconds": 446
@@ -154,26 +154,26 @@
     },
     {
       "id": 400000,
-      "name": "PR #40 compile - 【feature】增加get/cls buf指令的枚举以支持毕昇编译器在对应指令上的动态插装能力",
-      "head_branch": "dev",
+      "name": "PR #40 compile - 【feature】sanitizer支持simt核内线程间竞争检测",
+      "head_branch": "master",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-02-03T11:34:47Z",
-      "updated_at": "2026-02-03T11:45:50Z",
-      "html_url": "https://gitcode.com/Ascend/msopcom/merge_requests/40",
-      "durationInSeconds": 663,
+      "created_at": "2026-02-02T19:39:26Z",
+      "updated_at": "2026-02-02T19:51:14Z",
+      "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/40",
+      "durationInSeconds": 708,
       "jobs": [
         {
           "id": 400001,
           "name": "ci-pipeline-running",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-02-03T11:34:47Z",
-          "started_at": "2026-02-03T11:35:28Z",
-          "completed_at": "2026-02-03T11:45:50Z",
-          "html_url": "https://gitcode.com/Ascend/msopcom/merge_requests/40",
-          "queueDurationInSeconds": 41,
-          "durationInSeconds": 622
+          "created_at": "2026-02-02T19:39:26Z",
+          "started_at": "2026-02-02T19:40:06Z",
+          "completed_at": "2026-02-02T19:51:14Z",
+          "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/40",
+          "queueDurationInSeconds": 40,
+          "durationInSeconds": 668
         }
       ]
     },
@@ -183,8 +183,8 @@
       "head_branch": "master",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-02-03T02:32:05Z",
-      "updated_at": "2026-02-03T02:46:07Z",
+      "created_at": "2026-02-03T10:32:05Z",
+      "updated_at": "2026-02-03T10:46:07Z",
       "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/40",
       "durationInSeconds": 842,
       "jobs": [
@@ -193,9 +193,9 @@
           "name": "ci-pipeline-running",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-02-03T02:32:05Z",
-          "started_at": "2026-02-03T02:32:47Z",
-          "completed_at": "2026-02-03T02:46:07Z",
+          "created_at": "2026-02-03T10:32:05Z",
+          "started_at": "2026-02-03T10:32:47Z",
+          "completed_at": "2026-02-03T10:46:07Z",
           "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/40",
           "queueDurationInSeconds": 42,
           "durationInSeconds": 800
@@ -204,26 +204,26 @@
     },
     {
       "id": 400100,
-      "name": "PR #40 docs-ci - 【feature】增加get/cls buf指令的枚举以支持毕昇编译器在对应指令上的动态插装能力",
-      "head_branch": "dev",
+      "name": "PR #40 docs-ci - 【feature】sanitizer支持simt核内线程间竞争检测",
+      "head_branch": "master",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-02-03T11:34:47Z",
-      "updated_at": "2026-02-03T12:40:17Z",
-      "html_url": "https://gitcode.com/Ascend/msopcom/merge_requests/40",
-      "durationInSeconds": 3930,
+      "created_at": "2026-02-02T19:39:26Z",
+      "updated_at": "2026-03-05T09:39:06Z",
+      "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/40",
+      "durationInSeconds": 2642380,
       "jobs": [
         {
           "id": 400101,
           "name": "docs-ci",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-02-03T11:34:47Z",
-          "started_at": "2026-02-03T11:35:17Z",
-          "completed_at": "2026-02-03T12:40:17Z",
-          "html_url": "https://gitcode.com/Ascend/msopcom/merge_requests/40",
+          "created_at": "2026-02-02T19:39:26Z",
+          "started_at": "2026-02-02T19:39:56Z",
+          "completed_at": "2026-03-05T09:39:06Z",
+          "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/40",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 3900
+          "durationInSeconds": 2642350
         }
       ]
     },
@@ -233,8 +233,8 @@
       "head_branch": "master",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-02-03T02:32:05Z",
-      "updated_at": "2026-03-05T01:39:06Z",
+      "created_at": "2026-02-03T10:32:05Z",
+      "updated_at": "2026-03-05T09:39:06Z",
       "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/40",
       "durationInSeconds": 2588821,
       "jobs": [
@@ -243,9 +243,9 @@
           "name": "docs-ci",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-02-03T02:32:05Z",
-          "started_at": "2026-02-03T02:32:35Z",
-          "completed_at": "2026-03-05T01:39:06Z",
+          "created_at": "2026-02-03T10:32:05Z",
+          "started_at": "2026-02-03T10:32:35Z",
+          "completed_at": "2026-03-05T09:39:06Z",
           "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/40",
           "queueDurationInSeconds": 30,
           "durationInSeconds": 2588791
@@ -304,51 +304,51 @@
     },
     {
       "id": 390000,
-      "name": "PR #39 compile - 【bugfix】 修复aclrtLaunchKernelWithHostArgs调用采集operan",
-      "head_branch": "bugfix_operand",
+      "name": "PR #39 compile - 【Bugfix】修复线程间踩踏在线检测算法中不正确使用同步指令的问题",
+      "head_branch": "fix_sync_threads",
       "status": "completed",
-      "conclusion": "success",
-      "created_at": "2026-02-03T03:06:07Z",
-      "updated_at": "2026-02-03T03:18:34Z",
-      "html_url": "https://gitcode.com/Ascend/msopcom/merge_requests/39",
-      "durationInSeconds": 747,
+      "conclusion": "failure",
+      "created_at": "2026-02-02T16:49:26Z",
+      "updated_at": "2026-02-02T17:03:48Z",
+      "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/39",
+      "durationInSeconds": 862,
       "jobs": [
         {
           "id": 390001,
           "name": "ci-pipeline-running",
           "status": "completed",
-          "conclusion": "success",
-          "created_at": "2026-02-03T03:06:07Z",
-          "started_at": "2026-02-03T03:06:55Z",
-          "completed_at": "2026-02-03T03:18:34Z",
-          "html_url": "https://gitcode.com/Ascend/msopcom/merge_requests/39",
-          "queueDurationInSeconds": 48,
-          "durationInSeconds": 699
+          "conclusion": "failure",
+          "created_at": "2026-02-02T16:49:26Z",
+          "started_at": "2026-02-02T16:50:15Z",
+          "completed_at": "2026-02-02T17:03:48Z",
+          "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/39",
+          "queueDurationInSeconds": 49,
+          "durationInSeconds": 813
         }
       ]
     },
     {
       "id": 390100,
-      "name": "PR #39 docs-ci - 【bugfix】 修复aclrtLaunchKernelWithHostArgs调用采集operan",
-      "head_branch": "bugfix_operand",
+      "name": "PR #39 docs-ci - 【Bugfix】修复线程间踩踏在线检测算法中不正确使用同步指令的问题",
+      "head_branch": "fix_sync_threads",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-02-03T03:06:07Z",
-      "updated_at": "2026-02-03T08:57:44Z",
-      "html_url": "https://gitcode.com/Ascend/msopcom/merge_requests/39",
-      "durationInSeconds": 21097,
+      "created_at": "2026-02-02T16:49:26Z",
+      "updated_at": "2026-02-10T10:17:02Z",
+      "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/39",
+      "durationInSeconds": 667656,
       "jobs": [
         {
           "id": 390101,
           "name": "docs-ci",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-02-03T03:06:07Z",
-          "started_at": "2026-02-03T03:06:37Z",
-          "completed_at": "2026-02-03T08:57:44Z",
-          "html_url": "https://gitcode.com/Ascend/msopcom/merge_requests/39",
+          "created_at": "2026-02-02T16:49:26Z",
+          "started_at": "2026-02-02T16:49:56Z",
+          "completed_at": "2026-02-10T10:17:02Z",
+          "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/39",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 21067
+          "durationInSeconds": 667626
         }
       ]
     },
@@ -654,51 +654,51 @@
     },
     {
       "id": 320000,
-      "name": "PR #32 compile - 【PR中文模版】:test",
-      "head_branch": "test_branch_0204",
+      "name": "PR #32 compile - 【Doc】msopprof资料修改-msopprof支持Scalar性能数据精细化分析+issue文",
+      "head_branch": "master",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-02-03T01:42:39Z",
-      "updated_at": "2026-02-03T02:06:07Z",
-      "html_url": "https://gitcode.com/Ascend/msmemscope/merge_requests/32",
-      "durationInSeconds": 1408,
+      "created_at": "2026-02-03T15:22:14Z",
+      "updated_at": "2026-02-03T15:37:13Z",
+      "html_url": "https://gitcode.com/Ascend/msopprof/merge_requests/32",
+      "durationInSeconds": 899,
       "jobs": [
         {
           "id": 320001,
           "name": "ci-pipeline-running",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-02-03T01:42:39Z",
-          "started_at": "2026-02-03T01:43:18Z",
-          "completed_at": "2026-02-03T02:06:07Z",
-          "html_url": "https://gitcode.com/Ascend/msmemscope/merge_requests/32",
-          "queueDurationInSeconds": 39,
-          "durationInSeconds": 1369
+          "created_at": "2026-02-03T15:22:14Z",
+          "started_at": "2026-02-03T15:22:57Z",
+          "completed_at": "2026-02-03T15:37:13Z",
+          "html_url": "https://gitcode.com/Ascend/msopprof/merge_requests/32",
+          "queueDurationInSeconds": 43,
+          "durationInSeconds": 856
         }
       ]
     },
     {
       "id": 320100,
-      "name": "PR #32 docs-ci - 【PR中文模版】:test",
-      "head_branch": "test_branch_0204",
+      "name": "PR #32 docs-ci - 【Doc】msopprof资料修改-msopprof支持Scalar性能数据精细化分析+issue文",
+      "head_branch": "master",
       "status": "completed",
-      "conclusion": "pending",
-      "created_at": "2026-02-03T01:42:39Z",
-      "updated_at": "2026-04-12T15:02:59Z",
-      "html_url": "https://gitcode.com/Ascend/msmemscope/merge_requests/32",
-      "durationInSeconds": 5923220.218,
+      "conclusion": "success",
+      "created_at": "2026-02-03T15:22:14Z",
+      "updated_at": "2026-02-09T16:35:41Z",
+      "html_url": "https://gitcode.com/Ascend/msopprof/merge_requests/32",
+      "durationInSeconds": 522807,
       "jobs": [
         {
           "id": 320101,
           "name": "docs-ci",
           "status": "completed",
-          "conclusion": "pending",
-          "created_at": "2026-02-03T01:42:39Z",
-          "started_at": "2026-02-03T01:43:09Z",
-          "completed_at": "2026-04-12T15:02:59Z",
-          "html_url": "https://gitcode.com/Ascend/msmemscope/merge_requests/32",
+          "conclusion": "success",
+          "created_at": "2026-02-03T15:22:14Z",
+          "started_at": "2026-02-03T15:22:44Z",
+          "completed_at": "2026-02-09T16:35:41Z",
+          "html_url": "https://gitcode.com/Ascend/msopprof/merge_requests/32",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 5923190.218
+          "durationInSeconds": 522777
         }
       ]
     },
@@ -8554,26 +8554,26 @@
     },
     {
       "id": 380000,
-      "name": "PR #38 compile - npu-monitor支持按算子名称进行筛选",
-      "head_branch": "main",
+      "name": "PR #38 compile - 【feature】核间同步PIPE_V类型指令补桩&mode0~2 record parse",
+      "head_branch": "for_sync",
       "status": "completed",
       "conclusion": "failure",
-      "created_at": "2026-02-03T06:46:31Z",
-      "updated_at": "2026-02-03T07:04:20Z",
-      "html_url": "https://gitcode.com/Ascend/msmonitor/merge_requests/38",
-      "durationInSeconds": 1069,
+      "created_at": "2026-02-02T20:42:56Z",
+      "updated_at": "2026-02-02T20:55:49Z",
+      "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/38",
+      "durationInSeconds": 773,
       "jobs": [
         {
           "id": 380001,
           "name": "ci-pipeline-running",
           "status": "completed",
           "conclusion": "failure",
-          "created_at": "2026-02-03T06:46:31Z",
-          "started_at": "2026-02-03T06:47:12Z",
-          "completed_at": "2026-02-03T07:04:20Z",
-          "html_url": "https://gitcode.com/Ascend/msmonitor/merge_requests/38",
-          "queueDurationInSeconds": 41,
-          "durationInSeconds": 1028
+          "created_at": "2026-02-02T20:42:56Z",
+          "started_at": "2026-02-02T20:43:41Z",
+          "completed_at": "2026-02-02T20:55:49Z",
+          "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/38",
+          "queueDurationInSeconds": 45,
+          "durationInSeconds": 728
         }
       ]
     },
@@ -8629,26 +8629,26 @@
     },
     {
       "id": 380100,
-      "name": "PR #38 docs-ci - npu-monitor支持按算子名称进行筛选",
-      "head_branch": "main",
+      "name": "PR #38 docs-ci - 【feature】核间同步PIPE_V类型指令补桩&mode0~2 record parse",
+      "head_branch": "for_sync",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-02-03T06:46:31Z",
-      "updated_at": "2026-02-05T06:59:29Z",
-      "html_url": "https://gitcode.com/Ascend/msmonitor/merge_requests/38",
-      "durationInSeconds": 173578,
+      "created_at": "2026-02-02T20:42:56Z",
+      "updated_at": "2026-02-04T15:58:28Z",
+      "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/38",
+      "durationInSeconds": 155732,
       "jobs": [
         {
           "id": 380101,
           "name": "docs-ci",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-02-03T06:46:31Z",
-          "started_at": "2026-02-03T06:47:01Z",
-          "completed_at": "2026-02-05T06:59:29Z",
-          "html_url": "https://gitcode.com/Ascend/msmonitor/merge_requests/38",
+          "created_at": "2026-02-02T20:42:56Z",
+          "started_at": "2026-02-02T20:43:26Z",
+          "completed_at": "2026-02-04T15:58:28Z",
+          "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/38",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 173548
+          "durationInSeconds": 155702
         }
       ]
     },
@@ -8704,51 +8704,51 @@
     },
     {
       "id": 370001,
-      "name": "PR #37 compile - msmonitor build fix",
-      "head_branch": "msmonitor_build_fix",
+      "name": "PR #37 compile - 【Bugfix】修复线程间踩踏在线检测算法中不正确使用同步指令的问题",
+      "head_branch": "fix_sync_threads",
       "status": "completed",
-      "conclusion": "success",
-      "created_at": "2026-02-03T02:05:13Z",
-      "updated_at": "2026-02-03T02:29:23Z",
-      "html_url": "https://gitcode.com/Ascend/msmonitor/merge_requests/37",
-      "durationInSeconds": 1450,
+      "conclusion": "failure",
+      "created_at": "2026-02-02T17:11:19Z",
+      "updated_at": "2026-02-02T17:16:43Z",
+      "html_url": "https://gitcode.com/Ascend/msopcom/merge_requests/37",
+      "durationInSeconds": 324,
       "jobs": [
         {
           "id": 370002,
           "name": "ci-pipeline-running",
           "status": "completed",
-          "conclusion": "success",
-          "created_at": "2026-02-03T02:05:13Z",
-          "started_at": "2026-02-03T02:06:00Z",
-          "completed_at": "2026-02-03T02:29:23Z",
-          "html_url": "https://gitcode.com/Ascend/msmonitor/merge_requests/37",
-          "queueDurationInSeconds": 47,
-          "durationInSeconds": 1403
+          "conclusion": "failure",
+          "created_at": "2026-02-02T17:11:19Z",
+          "started_at": "2026-02-02T17:12:02Z",
+          "completed_at": "2026-02-02T17:16:43Z",
+          "html_url": "https://gitcode.com/Ascend/msopcom/merge_requests/37",
+          "queueDurationInSeconds": 43,
+          "durationInSeconds": 281
         }
       ]
     },
     {
       "id": 370002,
-      "name": "PR #37 compile - msmonitor build fix",
-      "head_branch": "msmonitor_build_fix",
+      "name": "PR #37 compile - 【Bugfix】修复线程间踩踏在线检测算法中不正确使用同步指令的问题",
+      "head_branch": "fix_sync_threads",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-02-03T02:40:36Z",
-      "updated_at": "2026-02-03T03:19:50Z",
-      "html_url": "https://gitcode.com/Ascend/msmonitor/merge_requests/37",
-      "durationInSeconds": 2354,
+      "created_at": "2026-02-02T17:18:06Z",
+      "updated_at": "2026-02-02T17:28:03Z",
+      "html_url": "https://gitcode.com/Ascend/msopcom/merge_requests/37",
+      "durationInSeconds": 597,
       "jobs": [
         {
           "id": 370003,
           "name": "ci-pipeline-running",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-02-03T02:40:36Z",
-          "started_at": "2026-02-03T02:41:23Z",
-          "completed_at": "2026-02-03T03:19:50Z",
-          "html_url": "https://gitcode.com/Ascend/msmonitor/merge_requests/37",
-          "queueDurationInSeconds": 47,
-          "durationInSeconds": 2307
+          "created_at": "2026-02-02T17:18:06Z",
+          "started_at": "2026-02-02T17:18:45Z",
+          "completed_at": "2026-02-02T17:28:03Z",
+          "html_url": "https://gitcode.com/Ascend/msopcom/merge_requests/37",
+          "queueDurationInSeconds": 39,
+          "durationInSeconds": 558
         }
       ]
     },
@@ -8804,51 +8804,51 @@
     },
     {
       "id": 370101,
-      "name": "PR #37 docs-ci - msmonitor build fix",
-      "head_branch": "msmonitor_build_fix",
+      "name": "PR #37 docs-ci - 【Bugfix】修复线程间踩踏在线检测算法中不正确使用同步指令的问题",
+      "head_branch": "fix_sync_threads",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-02-03T02:05:13Z",
-      "updated_at": "2026-02-03T07:42:14Z",
-      "html_url": "https://gitcode.com/Ascend/msmonitor/merge_requests/37",
-      "durationInSeconds": 20221,
+      "created_at": "2026-02-02T17:11:19Z",
+      "updated_at": "2026-02-10T10:16:57Z",
+      "html_url": "https://gitcode.com/Ascend/msopcom/merge_requests/37",
+      "durationInSeconds": 666338,
       "jobs": [
         {
           "id": 370102,
           "name": "docs-ci",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-02-03T02:05:13Z",
-          "started_at": "2026-02-03T02:05:43Z",
-          "completed_at": "2026-02-03T07:42:14Z",
-          "html_url": "https://gitcode.com/Ascend/msmonitor/merge_requests/37",
+          "created_at": "2026-02-02T17:11:19Z",
+          "started_at": "2026-02-02T17:11:49Z",
+          "completed_at": "2026-02-10T10:16:57Z",
+          "html_url": "https://gitcode.com/Ascend/msopcom/merge_requests/37",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 20191
+          "durationInSeconds": 666308
         }
       ]
     },
     {
       "id": 370102,
-      "name": "PR #37 docs-ci - msmonitor build fix",
-      "head_branch": "msmonitor_build_fix",
+      "name": "PR #37 docs-ci - 【Bugfix】修复线程间踩踏在线检测算法中不正确使用同步指令的问题",
+      "head_branch": "fix_sync_threads",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-02-03T02:40:36Z",
-      "updated_at": "2026-02-03T07:42:14Z",
-      "html_url": "https://gitcode.com/Ascend/msmonitor/merge_requests/37",
-      "durationInSeconds": 18098,
+      "created_at": "2026-02-02T17:18:06Z",
+      "updated_at": "2026-02-10T10:16:57Z",
+      "html_url": "https://gitcode.com/Ascend/msopcom/merge_requests/37",
+      "durationInSeconds": 665931,
       "jobs": [
         {
           "id": 370103,
           "name": "docs-ci",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-02-03T02:40:36Z",
-          "started_at": "2026-02-03T02:41:06Z",
-          "completed_at": "2026-02-03T07:42:14Z",
-          "html_url": "https://gitcode.com/Ascend/msmonitor/merge_requests/37",
+          "created_at": "2026-02-02T17:18:06Z",
+          "started_at": "2026-02-02T17:18:36Z",
+          "completed_at": "2026-02-10T10:16:57Z",
+          "html_url": "https://gitcode.com/Ascend/msopcom/merge_requests/37",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 18068
+          "durationInSeconds": 665901
         }
       ]
     },
@@ -31599,6 +31599,256 @@
           "html_url": "https://gitcode.com/Ascend/op-plugin/merge_requests/4174",
           "queueDurationInSeconds": 30,
           "durationInSeconds": 13611
+        }
+      ]
+    },
+    {
+      "id": 370000,
+      "name": "PR #37 compile - 【Bugfix】修复线程间踩踏在线检测算法中不正确使用同步指令的问题",
+      "head_branch": "fix_sync_threads",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-02-02T16:51:10Z",
+      "updated_at": "2026-02-02T16:56:51Z",
+      "html_url": "https://gitcode.com/Ascend/msopcom/merge_requests/37",
+      "durationInSeconds": 341,
+      "jobs": [
+        {
+          "id": 370001,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-02-02T16:51:10Z",
+          "started_at": "2026-02-02T16:51:55Z",
+          "completed_at": "2026-02-02T16:56:51Z",
+          "html_url": "https://gitcode.com/Ascend/msopcom/merge_requests/37",
+          "queueDurationInSeconds": 45,
+          "durationInSeconds": 296
+        }
+      ]
+    },
+    {
+      "id": 370100,
+      "name": "PR #37 docs-ci - 【Bugfix】修复线程间踩踏在线检测算法中不正确使用同步指令的问题",
+      "head_branch": "fix_sync_threads",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-02-02T16:51:10Z",
+      "updated_at": "2026-02-10T10:16:57Z",
+      "html_url": "https://gitcode.com/Ascend/msopcom/merge_requests/37",
+      "durationInSeconds": 667547,
+      "jobs": [
+        {
+          "id": 370101,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-02-02T16:51:10Z",
+          "started_at": "2026-02-02T16:51:40Z",
+          "completed_at": "2026-02-10T10:16:57Z",
+          "html_url": "https://gitcode.com/Ascend/msopcom/merge_requests/37",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 667517
+        }
+      ]
+    },
+    {
+      "id": 360000,
+      "name": "PR #36 compile - 【feature】补充核间同步PIPE_V类型指令枚举",
+      "head_branch": "master",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-02-02T20:41:59Z",
+      "updated_at": "2026-02-02T20:51:07Z",
+      "html_url": "https://gitcode.com/Ascend/msopcom/merge_requests/36",
+      "durationInSeconds": 548,
+      "jobs": [
+        {
+          "id": 360001,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-02-02T20:41:59Z",
+          "started_at": "2026-02-02T20:42:43Z",
+          "completed_at": "2026-02-02T20:51:07Z",
+          "html_url": "https://gitcode.com/Ascend/msopcom/merge_requests/36",
+          "queueDurationInSeconds": 44,
+          "durationInSeconds": 504
+        }
+      ]
+    },
+    {
+      "id": 360100,
+      "name": "PR #36 docs-ci - 【feature】补充核间同步PIPE_V类型指令枚举",
+      "head_branch": "master",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-02-02T20:41:59Z",
+      "updated_at": "2026-02-04T11:12:32Z",
+      "html_url": "https://gitcode.com/Ascend/msopcom/merge_requests/36",
+      "durationInSeconds": 138633,
+      "jobs": [
+        {
+          "id": 360101,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-02-02T20:41:59Z",
+          "started_at": "2026-02-02T20:42:29Z",
+          "completed_at": "2026-02-04T11:12:32Z",
+          "html_url": "https://gitcode.com/Ascend/msopcom/merge_requests/36",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 138603
+        }
+      ]
+    },
+    {
+      "id": 390001,
+      "name": "PR #39 compile - 【Bugfix】修复线程间踩踏在线检测算法中不正确使用同步指令的问题",
+      "head_branch": "fix_sync_threads",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-02-02T17:16:17Z",
+      "updated_at": "2026-02-02T17:31:51Z",
+      "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/39",
+      "durationInSeconds": 934,
+      "jobs": [
+        {
+          "id": 390002,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-02-02T17:16:17Z",
+          "started_at": "2026-02-02T17:17:06Z",
+          "completed_at": "2026-02-02T17:31:51Z",
+          "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/39",
+          "queueDurationInSeconds": 49,
+          "durationInSeconds": 885
+        }
+      ]
+    },
+    {
+      "id": 390101,
+      "name": "PR #39 docs-ci - 【Bugfix】修复线程间踩踏在线检测算法中不正确使用同步指令的问题",
+      "head_branch": "fix_sync_threads",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-02-02T17:16:17Z",
+      "updated_at": "2026-02-10T10:17:02Z",
+      "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/39",
+      "durationInSeconds": 666045,
+      "jobs": [
+        {
+          "id": 390102,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-02-02T17:16:17Z",
+          "started_at": "2026-02-02T17:16:47Z",
+          "completed_at": "2026-02-10T10:17:02Z",
+          "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/39",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 666015
+        }
+      ]
+    },
+    {
+      "id": 300001,
+      "name": "PR #30 compile - 【Doc】msopprof资料修改-需求msopprof支持Scalar性能数据精细化分析+issu",
+      "head_branch": "master",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-02-02T16:23:22Z",
+      "updated_at": "2026-02-02T16:36:29Z",
+      "html_url": "https://gitcode.com/Ascend/MindStudio-Ops-Profiler/merge_requests/30",
+      "durationInSeconds": 787,
+      "jobs": [
+        {
+          "id": 300002,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-02-02T16:23:22Z",
+          "started_at": "2026-02-02T16:24:07Z",
+          "completed_at": "2026-02-02T16:36:29Z",
+          "html_url": "https://gitcode.com/Ascend/MindStudio-Ops-Profiler/merge_requests/30",
+          "queueDurationInSeconds": 45,
+          "durationInSeconds": 742
+        }
+      ]
+    },
+    {
+      "id": 300101,
+      "name": "PR #30 docs-ci - 【Doc】msopprof资料修改-需求msopprof支持Scalar性能数据精细化分析+issu",
+      "head_branch": "master",
+      "status": "completed",
+      "conclusion": "pending",
+      "created_at": "2026-02-02T16:23:22Z",
+      "updated_at": "2026-04-19T20:51:11Z",
+      "html_url": "https://gitcode.com/Ascend/MindStudio-Ops-Profiler/merge_requests/30",
+      "durationInSeconds": 6582469.928,
+      "jobs": [
+        {
+          "id": 300102,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "pending",
+          "created_at": "2026-02-02T16:23:22Z",
+          "started_at": "2026-02-02T16:23:52Z",
+          "completed_at": "2026-04-19T20:51:11Z",
+          "html_url": "https://gitcode.com/Ascend/MindStudio-Ops-Profiler/merge_requests/30",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 6582439.928
+        }
+      ]
+    },
+    {
+      "id": 100000,
+      "name": "PR #10 compile - 【docs】资料问题修复",
+      "head_branch": "master",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-02-02T16:04:53Z",
+      "updated_at": "2026-02-02T16:21:49Z",
+      "html_url": "https://gitcode.com/Ascend/OMSDK/merge_requests/10",
+      "durationInSeconds": 1016,
+      "jobs": [
+        {
+          "id": 100001,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-02-02T16:04:53Z",
+          "started_at": "2026-02-02T16:05:14Z",
+          "completed_at": "2026-02-02T16:21:49Z",
+          "html_url": "https://gitcode.com/Ascend/OMSDK/merge_requests/10",
+          "queueDurationInSeconds": 21,
+          "durationInSeconds": 995
+        }
+      ]
+    },
+    {
+      "id": 100100,
+      "name": "PR #10 docs-ci - 【docs】资料问题修复",
+      "head_branch": "master",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-02-02T16:04:53Z",
+      "updated_at": "2026-02-13T14:44:23Z",
+      "html_url": "https://gitcode.com/Ascend/OMSDK/merge_requests/10",
+      "durationInSeconds": 945570,
+      "jobs": [
+        {
+          "id": 100101,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-02-02T16:04:53Z",
+          "started_at": "2026-02-02T16:05:23Z",
+          "completed_at": "2026-02-13T14:44:23Z",
+          "html_url": "https://gitcode.com/Ascend/OMSDK/merge_requests/10",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 945540
         }
       ]
     }

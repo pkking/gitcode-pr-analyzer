@@ -1,6 +1,6 @@
 {
   "date": "2026-04-19",
-  "repo": "Ascend/pytorch",
+  "repo": "Ascend/MindStudio-Sanitizer",
   "runs": [
     {
       "id": 334400039,
@@ -308,22 +308,22 @@
       "head_branch": "pr_cyl_bessel_i0",
       "status": "completed",
       "conclusion": "pending",
-      "created_at": "2026-04-19T05:55:33Z",
-      "updated_at": "2026-04-19T07:36:17Z",
+      "created_at": "2026-04-19T13:55:33Z",
+      "updated_at": "2026-04-19T20:01:41Z",
       "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/1067",
-      "durationInSeconds": 6044.745,
+      "durationInSeconds": 21968.537,
       "jobs": [
         {
           "id": 10670001,
           "name": "compile",
           "status": "completed",
           "conclusion": "pending",
-          "created_at": "2026-04-19T05:55:33Z",
-          "started_at": "2026-04-19T05:56:03Z",
-          "completed_at": "2026-04-19T07:36:17Z",
+          "created_at": "2026-04-19T13:55:33Z",
+          "started_at": "2026-04-19T13:56:03Z",
+          "completed_at": "2026-04-19T20:01:41Z",
           "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/1067",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 6014.745
+          "durationInSeconds": 21938.537
         }
       ]
     },
@@ -333,8 +333,8 @@
       "head_branch": "pr_cyl_bessel_i0",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-04-19T05:55:33Z",
-      "updated_at": "2026-04-19T05:59:02Z",
+      "created_at": "2026-04-19T13:55:33Z",
+      "updated_at": "2026-04-19T13:59:02Z",
       "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/1067",
       "durationInSeconds": 209,
       "jobs": [
@@ -343,9 +343,9 @@
           "name": "docs-ci-pipeline-running",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-04-19T05:55:33Z",
-          "started_at": "2026-04-19T05:57:33Z",
-          "completed_at": "2026-04-19T05:59:02Z",
+          "created_at": "2026-04-19T13:55:33Z",
+          "started_at": "2026-04-19T13:57:33Z",
+          "completed_at": "2026-04-19T13:59:02Z",
           "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/1067",
           "queueDurationInSeconds": 120,
           "durationInSeconds": 89
@@ -599,6 +599,456 @@
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33910",
           "queueDurationInSeconds": 30,
           "durationInSeconds": 5040.015
+        }
+      ]
+    },
+    {
+      "id": 10660000,
+      "name": "PR #1066 compile - [AscendNPU-IR] feat: add erfinv normalize support ",
+      "head_branch": "pr_erfinv",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-04-18T21:56:40Z",
+      "updated_at": "2026-04-18T22:06:07Z",
+      "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/1066",
+      "durationInSeconds": 567,
+      "jobs": [
+        {
+          "id": 10660001,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-04-18T21:56:40Z",
+          "started_at": "2026-04-18T21:57:13Z",
+          "completed_at": "2026-04-18T22:06:07Z",
+          "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/1066",
+          "queueDurationInSeconds": 33,
+          "durationInSeconds": 534
+        }
+      ]
+    },
+    {
+      "id": 10660100,
+      "name": "PR #1066 docs-ci - [AscendNPU-IR] feat: add erfinv normalize support ",
+      "head_branch": "pr_erfinv",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-04-18T21:56:40Z",
+      "updated_at": "2026-04-18T22:00:53Z",
+      "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/1066",
+      "durationInSeconds": 253,
+      "jobs": [
+        {
+          "id": 10660101,
+          "name": "docs-ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-04-18T21:56:40Z",
+          "started_at": "2026-04-18T21:58:45Z",
+          "completed_at": "2026-04-18T22:00:53Z",
+          "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/1066",
+          "queueDurationInSeconds": 125,
+          "durationInSeconds": 128
+        }
+      ]
+    },
+    {
+      "id": 9590006,
+      "name": "PR #959 compile - [AscendNPU IR] feat: Necessary support for conv1d ",
+      "head_branch": "conv1d_release_v2",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-04-18T17:38:24Z",
+      "updated_at": "2026-04-18T17:50:52Z",
+      "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/959",
+      "durationInSeconds": 748,
+      "jobs": [
+        {
+          "id": 9590007,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-04-18T17:38:24Z",
+          "started_at": "2026-04-18T17:39:00Z",
+          "completed_at": "2026-04-18T17:50:52Z",
+          "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/959",
+          "queueDurationInSeconds": 36,
+          "durationInSeconds": 712
+        }
+      ]
+    },
+    {
+      "id": 9590007,
+      "name": "PR #959 compile - [AscendNPU IR] feat: Necessary support for conv1d ",
+      "head_branch": "conv1d_release_v2",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-04-18T17:55:02Z",
+      "updated_at": "2026-04-18T18:06:35Z",
+      "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/959",
+      "durationInSeconds": 693,
+      "jobs": [
+        {
+          "id": 9590008,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-04-18T17:55:02Z",
+          "started_at": "2026-04-18T17:55:37Z",
+          "completed_at": "2026-04-18T18:06:35Z",
+          "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/959",
+          "queueDurationInSeconds": 35,
+          "durationInSeconds": 658
+        }
+      ]
+    },
+    {
+      "id": 9590106,
+      "name": "PR #959 docs-ci - [AscendNPU IR] feat: Necessary support for conv1d ",
+      "head_branch": "conv1d_release_v2",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-04-18T17:38:24Z",
+      "updated_at": "2026-04-18T17:40:22Z",
+      "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/959",
+      "durationInSeconds": 118,
+      "jobs": [
+        {
+          "id": 9590107,
+          "name": "docs-ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-04-18T17:38:24Z",
+          "started_at": "2026-04-18T17:39:04Z",
+          "completed_at": "2026-04-18T17:40:22Z",
+          "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/959",
+          "queueDurationInSeconds": 40,
+          "durationInSeconds": 78
+        }
+      ]
+    },
+    {
+      "id": 9590107,
+      "name": "PR #959 docs-ci - [AscendNPU IR] feat: Necessary support for conv1d ",
+      "head_branch": "conv1d_release_v2",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-04-18T17:55:02Z",
+      "updated_at": "2026-04-18T17:59:02Z",
+      "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/959",
+      "durationInSeconds": 240,
+      "jobs": [
+        {
+          "id": 9590108,
+          "name": "docs-ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-04-18T17:55:02Z",
+          "started_at": "2026-04-18T17:57:13Z",
+          "completed_at": "2026-04-18T17:59:02Z",
+          "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/959",
+          "queueDurationInSeconds": 131,
+          "durationInSeconds": 109
+        }
+      ]
+    },
+    {
+      "id": 10650002,
+      "name": "PR #1065 compile - [AscendNPU IR] feat: Support layout annotation for",
+      "head_branch": "datalayout",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-04-18T17:49:42Z",
+      "updated_at": "2026-04-18T18:00:52Z",
+      "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/1065",
+      "durationInSeconds": 670,
+      "jobs": [
+        {
+          "id": 10650003,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-04-18T17:49:42Z",
+          "started_at": "2026-04-18T17:50:18Z",
+          "completed_at": "2026-04-18T18:00:52Z",
+          "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/1065",
+          "queueDurationInSeconds": 36,
+          "durationInSeconds": 634
+        }
+      ]
+    },
+    {
+      "id": 10650102,
+      "name": "PR #1065 docs-ci - [AscendNPU IR] feat: Support layout annotation for",
+      "head_branch": "datalayout",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-04-18T17:49:42Z",
+      "updated_at": "2026-04-18T17:52:18Z",
+      "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/1065",
+      "durationInSeconds": 156,
+      "jobs": [
+        {
+          "id": 10650103,
+          "name": "docs-ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-04-18T17:49:42Z",
+          "started_at": "2026-04-18T17:50:47Z",
+          "completed_at": "2026-04-18T17:52:18Z",
+          "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/1065",
+          "queueDurationInSeconds": 65,
+          "durationInSeconds": 91
+        }
+      ]
+    },
+    {
+      "id": 10460001,
+      "name": "PR #1046 compile - [Huawei][AscendNPU IR] Replace sequential reductio",
+      "head_branch": "halve_sum_prod",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-04-18T16:33:00Z",
+      "updated_at": "2026-04-18T16:42:43Z",
+      "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/1046",
+      "durationInSeconds": 583,
+      "jobs": [
+        {
+          "id": 10460002,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-04-18T16:33:00Z",
+          "started_at": "2026-04-18T16:33:51Z",
+          "completed_at": "2026-04-18T16:42:43Z",
+          "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/1046",
+          "queueDurationInSeconds": 51,
+          "durationInSeconds": 532
+        }
+      ]
+    },
+    {
+      "id": 10460101,
+      "name": "PR #1046 docs-ci - [Huawei][AscendNPU IR] Replace sequential reductio",
+      "head_branch": "halve_sum_prod",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-04-18T16:33:00Z",
+      "updated_at": "2026-04-18T16:36:45Z",
+      "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/1046",
+      "durationInSeconds": 225,
+      "jobs": [
+        {
+          "id": 10460102,
+          "name": "docs-ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-04-18T16:33:00Z",
+          "started_at": "2026-04-18T16:34:56Z",
+          "completed_at": "2026-04-18T16:36:45Z",
+          "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/1046",
+          "queueDurationInSeconds": 116,
+          "durationInSeconds": 109
+        }
+      ]
+    },
+    {
+      "id": 550000,
+      "name": "PR #55 compile - 修改执行超时提示语",
+      "head_branch": "master",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-04-18T16:02:59Z",
+      "updated_at": "2026-04-18T16:04:03Z",
+      "html_url": "https://gitcode.com/Ascend/MindStudio-CommReport/merge_requests/55",
+      "durationInSeconds": 64,
+      "jobs": [
+        {
+          "id": 550001,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-04-18T16:02:59Z",
+          "started_at": "2026-04-18T16:03:33Z",
+          "completed_at": "2026-04-18T16:04:03Z",
+          "html_url": "https://gitcode.com/Ascend/MindStudio-CommReport/merge_requests/55",
+          "queueDurationInSeconds": 34,
+          "durationInSeconds": 30
+        }
+      ]
+    },
+    {
+      "id": 550100,
+      "name": "PR #55 docs-ci - 修改执行超时提示语",
+      "head_branch": "master",
+      "status": "completed",
+      "conclusion": "pending",
+      "created_at": "2026-04-18T16:02:59Z",
+      "updated_at": "2026-04-19T20:31:09Z",
+      "html_url": "https://gitcode.com/Ascend/MindStudio-CommReport/merge_requests/55",
+      "durationInSeconds": 102490.144,
+      "jobs": [
+        {
+          "id": 550101,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "pending",
+          "created_at": "2026-04-18T16:02:59Z",
+          "started_at": "2026-04-18T16:03:29Z",
+          "completed_at": "2026-04-19T20:31:09Z",
+          "html_url": "https://gitcode.com/Ascend/MindStudio-CommReport/merge_requests/55",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 102460.144
+        }
+      ]
+    },
+    {
+      "id": 1150002,
+      "name": "PR #115 compile - [refactor]重构sanitizer init finalize逻辑",
+      "head_branch": "refactor_sanitizer_init",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-04-18T16:06:21Z",
+      "updated_at": "2026-04-18T16:12:36Z",
+      "html_url": "https://gitcode.com/Ascend/MindStudio-Ops-Common/merge_requests/115",
+      "durationInSeconds": 375,
+      "jobs": [
+        {
+          "id": 1150003,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-04-18T16:06:21Z",
+          "started_at": "2026-04-18T16:06:58Z",
+          "completed_at": "2026-04-18T16:12:36Z",
+          "html_url": "https://gitcode.com/Ascend/MindStudio-Ops-Common/merge_requests/115",
+          "queueDurationInSeconds": 37,
+          "durationInSeconds": 338
+        }
+      ]
+    },
+    {
+      "id": 1150003,
+      "name": "PR #115 compile - [refactor]重构sanitizer init finalize逻辑",
+      "head_branch": "refactor_sanitizer_init",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-04-18T17:56:32Z",
+      "updated_at": "2026-04-18T18:13:24Z",
+      "html_url": "https://gitcode.com/Ascend/MindStudio-Ops-Common/merge_requests/115",
+      "durationInSeconds": 1012,
+      "jobs": [
+        {
+          "id": 1150004,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-04-18T17:56:32Z",
+          "started_at": "2026-04-18T17:57:09Z",
+          "completed_at": "2026-04-18T18:13:24Z",
+          "html_url": "https://gitcode.com/Ascend/MindStudio-Ops-Common/merge_requests/115",
+          "queueDurationInSeconds": 37,
+          "durationInSeconds": 975
+        }
+      ]
+    },
+    {
+      "id": 1150102,
+      "name": "PR #115 docs-ci - [refactor]重构sanitizer init finalize逻辑",
+      "head_branch": "refactor_sanitizer_init",
+      "status": "completed",
+      "conclusion": "pending",
+      "created_at": "2026-04-18T16:06:21Z",
+      "updated_at": "2026-04-19T20:40:14Z",
+      "html_url": "https://gitcode.com/Ascend/MindStudio-Ops-Common/merge_requests/115",
+      "durationInSeconds": 102833.62,
+      "jobs": [
+        {
+          "id": 1150103,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "pending",
+          "created_at": "2026-04-18T16:06:21Z",
+          "started_at": "2026-04-18T16:06:51Z",
+          "completed_at": "2026-04-19T20:40:14Z",
+          "html_url": "https://gitcode.com/Ascend/MindStudio-Ops-Common/merge_requests/115",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 102803.62
+        }
+      ]
+    },
+    {
+      "id": 1150103,
+      "name": "PR #115 docs-ci - [refactor]重构sanitizer init finalize逻辑",
+      "head_branch": "refactor_sanitizer_init",
+      "status": "completed",
+      "conclusion": "pending",
+      "created_at": "2026-04-18T17:56:32Z",
+      "updated_at": "2026-04-19T20:40:14Z",
+      "html_url": "https://gitcode.com/Ascend/MindStudio-Ops-Common/merge_requests/115",
+      "durationInSeconds": 96222.62,
+      "jobs": [
+        {
+          "id": 1150104,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "pending",
+          "created_at": "2026-04-18T17:56:32Z",
+          "started_at": "2026-04-18T17:57:02Z",
+          "completed_at": "2026-04-19T20:40:14Z",
+          "html_url": "https://gitcode.com/Ascend/MindStudio-Ops-Common/merge_requests/115",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 96192.62
+        }
+      ]
+    },
+    {
+      "id": 1580000,
+      "name": "PR #158 compile - [refactor]重构sanitizer init finalize逻辑",
+      "head_branch": "refactor_sanitizer_init",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-04-18T16:08:45Z",
+      "updated_at": "2026-04-18T16:27:20Z",
+      "html_url": "https://gitcode.com/Ascend/MindStudio-Sanitizer/merge_requests/158",
+      "durationInSeconds": 1115,
+      "jobs": [
+        {
+          "id": 1580001,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-04-18T16:08:45Z",
+          "started_at": "2026-04-18T16:09:31Z",
+          "completed_at": "2026-04-18T16:27:20Z",
+          "html_url": "https://gitcode.com/Ascend/MindStudio-Sanitizer/merge_requests/158",
+          "queueDurationInSeconds": 46,
+          "durationInSeconds": 1069
+        }
+      ]
+    },
+    {
+      "id": 1580100,
+      "name": "PR #158 docs-ci - [refactor]重构sanitizer init finalize逻辑",
+      "head_branch": "refactor_sanitizer_init",
+      "status": "completed",
+      "conclusion": "pending",
+      "created_at": "2026-04-18T16:08:45Z",
+      "updated_at": "2026-04-19T20:42:28Z",
+      "html_url": "https://gitcode.com/Ascend/MindStudio-Sanitizer/merge_requests/158",
+      "durationInSeconds": 102823.079,
+      "jobs": [
+        {
+          "id": 1580101,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "pending",
+          "created_at": "2026-04-18T16:08:45Z",
+          "started_at": "2026-04-18T16:09:15Z",
+          "completed_at": "2026-04-19T20:42:28Z",
+          "html_url": "https://gitcode.com/Ascend/MindStudio-Sanitizer/merge_requests/158",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 102793.079
         }
       ]
     }

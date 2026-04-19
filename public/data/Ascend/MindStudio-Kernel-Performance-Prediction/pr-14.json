@@ -1,0 +1,31 @@
+{
+  "prNumber": 14,
+  "owner": "Ascend",
+  "repo": "MindStudio-Kernel-Performance-Prediction",
+  "createdAt": "2026-03-19T19:21:54+08:00",
+  "mergedAt": "2026-03-20T10:09:26+08:00",
+  "prSubmitToMerge": {
+    "durationSeconds": 53252,
+    "fromTime": "2026-03-19T19:21:54Z",
+    "toTime": "2026-03-20T10:09:26Z"
+  },
+  "compileToCiCycles": [
+    {
+      "compileTime": "2026-03-20T09:37:01Z",
+      "startTime": "2026-03-20T09:37:43Z",
+      "finishTime": "2026-03-20T09:47:26Z",
+      "durationSeconds": 625
+    },
+    {
+      "compileTime": "2026-03-20T09:37:01Z",
+      "startTime": "2026-03-20T09:37:29Z",
+      "finishTime": "2026-03-20T09:38:02Z",
+      "durationSeconds": 61
+    }
+  ],
+  "lastCiRemovalToMerge": {
+    "durationSeconds": 0,
+    "fromTime": "2026-03-20T17:47:26Z",
+    "toTime": "2026-03-20T10:09:26Z"
+  }
+}

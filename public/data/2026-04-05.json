@@ -1,6 +1,6 @@
 {
   "date": "2026-04-05",
-  "repo": "Ascend/AscendNPU-IR",
+  "repo": "Ascend/Triton-distributed-ascend",
   "runs": [
     {
       "id": 9430002,
@@ -8,8 +8,8 @@
       "head_branch": "feat/hfusion-sinh",
       "status": "completed",
       "conclusion": "failure",
-      "created_at": "2026-04-05T05:43:30Z",
-      "updated_at": "2026-04-05T05:50:34Z",
+      "created_at": "2026-04-05T13:43:30Z",
+      "updated_at": "2026-04-05T13:50:34Z",
       "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/943",
       "durationInSeconds": 424,
       "jobs": [
@@ -18,9 +18,9 @@
           "name": "ci-pipeline-running",
           "status": "completed",
           "conclusion": "failure",
-          "created_at": "2026-04-05T05:43:30Z",
-          "started_at": "2026-04-05T05:44:05Z",
-          "completed_at": "2026-04-05T05:50:34Z",
+          "created_at": "2026-04-05T13:43:30Z",
+          "started_at": "2026-04-05T13:44:05Z",
+          "completed_at": "2026-04-05T13:50:34Z",
           "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/943",
           "queueDurationInSeconds": 35,
           "durationInSeconds": 389
@@ -33,8 +33,8 @@
       "head_branch": "feat/hfusion-sinh",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-04-05T06:20:55Z",
-      "updated_at": "2026-04-05T06:28:39Z",
+      "created_at": "2026-04-05T14:20:55Z",
+      "updated_at": "2026-04-05T14:28:39Z",
       "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/943",
       "durationInSeconds": 464,
       "jobs": [
@@ -43,9 +43,9 @@
           "name": "ci-pipeline-running",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-04-05T06:20:55Z",
-          "started_at": "2026-04-05T06:21:32Z",
-          "completed_at": "2026-04-05T06:28:39Z",
+          "created_at": "2026-04-05T14:20:55Z",
+          "started_at": "2026-04-05T14:21:32Z",
+          "completed_at": "2026-04-05T14:28:39Z",
           "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/943",
           "queueDurationInSeconds": 37,
           "durationInSeconds": 427
@@ -58,22 +58,22 @@
       "head_branch": "feat/hfusion-sinh",
       "status": "completed",
       "conclusion": "pending",
-      "created_at": "2026-04-05T05:43:30Z",
-      "updated_at": "2026-04-17T03:03:48Z",
+      "created_at": "2026-04-05T13:43:30Z",
+      "updated_at": "2026-04-19T20:02:52Z",
       "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/943",
-      "durationInSeconds": 1027218.878,
+      "durationInSeconds": 1232362.844,
       "jobs": [
         {
           "id": 9430103,
           "name": "docs-ci",
           "status": "completed",
           "conclusion": "pending",
-          "created_at": "2026-04-05T05:43:30Z",
-          "started_at": "2026-04-05T05:44:00Z",
-          "completed_at": "2026-04-17T03:03:48Z",
+          "created_at": "2026-04-05T13:43:30Z",
+          "started_at": "2026-04-05T13:44:00Z",
+          "completed_at": "2026-04-19T20:02:52Z",
           "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/943",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 1027188.878
+          "durationInSeconds": 1232332.844
         }
       ]
     },
@@ -83,22 +83,22 @@
       "head_branch": "feat/hfusion-sinh",
       "status": "completed",
       "conclusion": "pending",
-      "created_at": "2026-04-05T06:20:55Z",
-      "updated_at": "2026-04-17T03:03:48Z",
+      "created_at": "2026-04-05T14:20:55Z",
+      "updated_at": "2026-04-19T20:02:52Z",
       "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/943",
-      "durationInSeconds": 1024973.878,
+      "durationInSeconds": 1230117.844,
       "jobs": [
         {
           "id": 9430104,
           "name": "docs-ci",
           "status": "completed",
           "conclusion": "pending",
-          "created_at": "2026-04-05T06:20:55Z",
-          "started_at": "2026-04-05T06:21:25Z",
-          "completed_at": "2026-04-17T03:03:48Z",
+          "created_at": "2026-04-05T14:20:55Z",
+          "started_at": "2026-04-05T14:21:25Z",
+          "completed_at": "2026-04-19T20:02:52Z",
           "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/943",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 1024943.878
+          "durationInSeconds": 1230087.844
         }
       ]
     },
@@ -799,6 +799,156 @@
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33158",
           "queueDurationInSeconds": 30,
           "durationInSeconds": 2846
+        }
+      ]
+    },
+    {
+      "id": 9430000,
+      "name": "PR #943 compile - Add sinh support in HFusion normalize pass",
+      "head_branch": "feat/hfusion-sinh",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-04-04T18:58:06Z",
+      "updated_at": "2026-04-04T19:06:11Z",
+      "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/943",
+      "durationInSeconds": 485,
+      "jobs": [
+        {
+          "id": 9430001,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-04-04T18:58:06Z",
+          "started_at": "2026-04-04T18:58:42Z",
+          "completed_at": "2026-04-04T19:06:11Z",
+          "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/943",
+          "queueDurationInSeconds": 36,
+          "durationInSeconds": 449
+        }
+      ]
+    },
+    {
+      "id": 9430001,
+      "name": "PR #943 compile - Add sinh support in HFusion normalize pass",
+      "head_branch": "feat/hfusion-sinh",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-04-04T19:22:37Z",
+      "updated_at": "2026-04-04T19:29:39Z",
+      "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/943",
+      "durationInSeconds": 422,
+      "jobs": [
+        {
+          "id": 9430002,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-04-04T19:22:37Z",
+          "started_at": "2026-04-04T19:23:13Z",
+          "completed_at": "2026-04-04T19:29:39Z",
+          "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/943",
+          "queueDurationInSeconds": 36,
+          "durationInSeconds": 386
+        }
+      ]
+    },
+    {
+      "id": 9430100,
+      "name": "PR #943 docs-ci - Add sinh support in HFusion normalize pass",
+      "head_branch": "feat/hfusion-sinh",
+      "status": "completed",
+      "conclusion": "pending",
+      "created_at": "2026-04-04T18:58:06Z",
+      "updated_at": "2026-04-19T20:02:52Z",
+      "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/943",
+      "durationInSeconds": 1299886.844,
+      "jobs": [
+        {
+          "id": 9430101,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "pending",
+          "created_at": "2026-04-04T18:58:06Z",
+          "started_at": "2026-04-04T18:58:36Z",
+          "completed_at": "2026-04-19T20:02:52Z",
+          "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/943",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 1299856.844
+        }
+      ]
+    },
+    {
+      "id": 9430101,
+      "name": "PR #943 docs-ci - Add sinh support in HFusion normalize pass",
+      "head_branch": "feat/hfusion-sinh",
+      "status": "completed",
+      "conclusion": "pending",
+      "created_at": "2026-04-04T19:22:37Z",
+      "updated_at": "2026-04-19T20:02:52Z",
+      "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/943",
+      "durationInSeconds": 1298415.844,
+      "jobs": [
+        {
+          "id": 9430102,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "pending",
+          "created_at": "2026-04-04T19:22:37Z",
+          "started_at": "2026-04-04T19:23:07Z",
+          "completed_at": "2026-04-19T20:02:52Z",
+          "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/943",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 1298385.844
+        }
+      ]
+    },
+    {
+      "id": 20004,
+      "name": "PR #2 compile - feat: add ascend backend && distributed passes",
+      "head_branch": "master",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-04-04T16:31:34Z",
+      "updated_at": "2026-04-04T16:34:44Z",
+      "html_url": "https://gitcode.com/Ascend/Triton-distributed-ascend/merge_requests/2",
+      "durationInSeconds": 190,
+      "jobs": [
+        {
+          "id": 20005,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-04-04T16:31:34Z",
+          "started_at": "2026-04-04T16:32:03Z",
+          "completed_at": "2026-04-04T16:34:44Z",
+          "html_url": "https://gitcode.com/Ascend/Triton-distributed-ascend/merge_requests/2",
+          "queueDurationInSeconds": 29,
+          "durationInSeconds": 161
+        }
+      ]
+    },
+    {
+      "id": 20104,
+      "name": "PR #2 docs-ci - feat: add ascend backend && distributed passes",
+      "head_branch": "master",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-04-04T16:31:34Z",
+      "updated_at": "2026-04-17T09:04:11Z",
+      "html_url": "https://gitcode.com/Ascend/Triton-distributed-ascend/merge_requests/2",
+      "durationInSeconds": 1096357,
+      "jobs": [
+        {
+          "id": 20105,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-04-04T16:31:34Z",
+          "started_at": "2026-04-04T16:32:04Z",
+          "completed_at": "2026-04-17T09:04:11Z",
+          "html_url": "https://gitcode.com/Ascend/Triton-distributed-ascend/merge_requests/2",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 1096327
         }
       ]
     }

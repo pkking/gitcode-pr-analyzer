@@ -1,0 +1,31 @@
+{
+  "prNumber": 99,
+  "owner": "Ascend",
+  "repo": "MindStudio-Ops-Profiler",
+  "createdAt": "2026-04-08T15:32:12+08:00",
+  "mergedAt": "2026-04-08T16:53:34+08:00",
+  "prSubmitToMerge": {
+    "durationSeconds": 4882,
+    "fromTime": "2026-04-08T15:32:12Z",
+    "toTime": "2026-04-08T16:53:34Z"
+  },
+  "compileToCiCycles": [
+    {
+      "compileTime": "2026-04-08T15:32:44Z",
+      "startTime": "2026-04-08T15:33:18Z",
+      "finishTime": "2026-04-08T16:43:56Z",
+      "durationSeconds": 4272
+    },
+    {
+      "compileTime": "2026-04-08T15:32:44Z",
+      "startTime": "2026-04-08T15:33:14Z",
+      "finishTime": "2026-04-08T16:53:34Z",
+      "durationSeconds": 4850
+    }
+  ],
+  "lastCiRemovalToMerge": {
+    "durationSeconds": 0,
+    "fromTime": "2026-04-09T00:53:34Z",
+    "toTime": "2026-04-08T16:53:34Z"
+  }
+}

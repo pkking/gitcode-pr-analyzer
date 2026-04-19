@@ -1,6 +1,6 @@
 {
   "date": "2026-03-08",
-  "repo": "Ascend/torchair",
+  "repo": "Ascend/MindStudio-Ops-Profiler",
   "runs": [
     {
       "id": 5220000,
@@ -1949,6 +1949,206 @@
           "html_url": "https://gitcode.com/Ascend/op-plugin/merge_requests/4306",
           "queueDurationInSeconds": 30,
           "durationInSeconds": 101494
+        }
+      ]
+    },
+    {
+      "id": 350000,
+      "name": "PR #35 compile - 【feature】支持通算融合算子AscendC api打点特性",
+      "head_branch": "msopt_tongsuan",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-03-07T16:51:21Z",
+      "updated_at": "2026-03-07T17:05:16Z",
+      "html_url": "https://gitcode.com/Ascend/msopcom/merge_requests/35",
+      "durationInSeconds": 835,
+      "jobs": [
+        {
+          "id": 350001,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-03-07T16:51:21Z",
+          "started_at": "2026-03-07T16:52:01Z",
+          "completed_at": "2026-03-07T17:05:16Z",
+          "html_url": "https://gitcode.com/Ascend/msopcom/merge_requests/35",
+          "queueDurationInSeconds": 40,
+          "durationInSeconds": 795
+        }
+      ]
+    },
+    {
+      "id": 350100,
+      "name": "PR #35 docs-ci - 【feature】支持通算融合算子AscendC api打点特性",
+      "head_branch": "msopt_tongsuan",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-03-07T16:51:21Z",
+      "updated_at": "2026-03-10T20:18:44Z",
+      "html_url": "https://gitcode.com/Ascend/msopcom/merge_requests/35",
+      "durationInSeconds": 271643,
+      "jobs": [
+        {
+          "id": 350101,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-03-07T16:51:21Z",
+          "started_at": "2026-03-07T16:51:51Z",
+          "completed_at": "2026-03-10T20:18:44Z",
+          "html_url": "https://gitcode.com/Ascend/msopcom/merge_requests/35",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 271613
+        }
+      ]
+    },
+    {
+      "id": 310002,
+      "name": "PR #31 compile - 【feature】支持通算融合算子AscendC api打点特性",
+      "head_branch": "msopt_tongsuan",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-03-07T16:51:53Z",
+      "updated_at": "2026-03-07T17:03:10Z",
+      "html_url": "https://gitcode.com/Ascend/msopprof/merge_requests/31",
+      "durationInSeconds": 677,
+      "jobs": [
+        {
+          "id": 310003,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-03-07T16:51:53Z",
+          "started_at": "2026-03-07T16:52:33Z",
+          "completed_at": "2026-03-07T17:03:10Z",
+          "html_url": "https://gitcode.com/Ascend/msopprof/merge_requests/31",
+          "queueDurationInSeconds": 40,
+          "durationInSeconds": 637
+        }
+      ]
+    },
+    {
+      "id": 310003,
+      "name": "PR #31 compile - 【feature】支持通算融合算子AscendC api打点特性",
+      "head_branch": "msopt_tongsuan",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-03-07T17:15:48Z",
+      "updated_at": "2026-03-07T17:35:23Z",
+      "html_url": "https://gitcode.com/Ascend/msopprof/merge_requests/31",
+      "durationInSeconds": 1175,
+      "jobs": [
+        {
+          "id": 310004,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-03-07T17:15:48Z",
+          "started_at": "2026-03-07T17:16:33Z",
+          "completed_at": "2026-03-07T17:35:23Z",
+          "html_url": "https://gitcode.com/Ascend/msopprof/merge_requests/31",
+          "queueDurationInSeconds": 45,
+          "durationInSeconds": 1130
+        }
+      ]
+    },
+    {
+      "id": 310004,
+      "name": "PR #31 compile - 【feature】支持通算融合算子AscendC api打点特性",
+      "head_branch": "msopt_tongsuan",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-03-07T19:32:03Z",
+      "updated_at": "2026-03-07T19:51:11Z",
+      "html_url": "https://gitcode.com/Ascend/msopprof/merge_requests/31",
+      "durationInSeconds": 1148,
+      "jobs": [
+        {
+          "id": 310005,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-03-07T19:32:03Z",
+          "started_at": "2026-03-07T19:32:47Z",
+          "completed_at": "2026-03-07T19:51:11Z",
+          "html_url": "https://gitcode.com/Ascend/msopprof/merge_requests/31",
+          "queueDurationInSeconds": 44,
+          "durationInSeconds": 1104
+        }
+      ]
+    },
+    {
+      "id": 310102,
+      "name": "PR #31 docs-ci - 【feature】支持通算融合算子AscendC api打点特性",
+      "head_branch": "msopt_tongsuan",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-03-07T16:51:53Z",
+      "updated_at": "2026-03-10T20:43:35Z",
+      "html_url": "https://gitcode.com/Ascend/msopprof/merge_requests/31",
+      "durationInSeconds": 273102,
+      "jobs": [
+        {
+          "id": 310103,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-03-07T16:51:53Z",
+          "started_at": "2026-03-07T16:52:23Z",
+          "completed_at": "2026-03-10T20:43:35Z",
+          "html_url": "https://gitcode.com/Ascend/msopprof/merge_requests/31",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 273072
+        }
+      ]
+    },
+    {
+      "id": 310103,
+      "name": "PR #31 docs-ci - 【feature】支持通算融合算子AscendC api打点特性",
+      "head_branch": "msopt_tongsuan",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-03-07T17:15:48Z",
+      "updated_at": "2026-03-10T20:43:35Z",
+      "html_url": "https://gitcode.com/Ascend/msopprof/merge_requests/31",
+      "durationInSeconds": 271667,
+      "jobs": [
+        {
+          "id": 310104,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-03-07T17:15:48Z",
+          "started_at": "2026-03-07T17:16:18Z",
+          "completed_at": "2026-03-10T20:43:35Z",
+          "html_url": "https://gitcode.com/Ascend/msopprof/merge_requests/31",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 271637
+        }
+      ]
+    },
+    {
+      "id": 310104,
+      "name": "PR #31 docs-ci - 【feature】支持通算融合算子AscendC api打点特性",
+      "head_branch": "msopt_tongsuan",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-03-07T19:32:03Z",
+      "updated_at": "2026-03-10T20:43:35Z",
+      "html_url": "https://gitcode.com/Ascend/msopprof/merge_requests/31",
+      "durationInSeconds": 263492,
+      "jobs": [
+        {
+          "id": 310105,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-03-07T19:32:03Z",
+          "started_at": "2026-03-07T19:32:33Z",
+          "completed_at": "2026-03-10T20:43:35Z",
+          "html_url": "https://gitcode.com/Ascend/msopprof/merge_requests/31",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 263462
         }
       ]
     }

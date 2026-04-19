@@ -1,0 +1,31 @@
+{
+  "prNumber": 17,
+  "owner": "Ascend",
+  "repo": "MindStudio-CommReport",
+  "createdAt": "2026-04-02T19:24:46+08:00",
+  "mergedAt": "2026-04-02T21:23:33+08:00",
+  "prSubmitToMerge": {
+    "durationSeconds": 7127,
+    "fromTime": "2026-04-02T19:24:46Z",
+    "toTime": "2026-04-02T21:23:33Z"
+  },
+  "compileToCiCycles": [
+    {
+      "compileTime": "2026-04-02T19:25:26Z",
+      "startTime": "2026-04-02T19:26:03Z",
+      "finishTime": "2026-04-02T19:27:07Z",
+      "durationSeconds": 101
+    },
+    {
+      "compileTime": "2026-04-02T19:25:26Z",
+      "startTime": "2026-04-02T19:25:56Z",
+      "finishTime": "2026-04-02T21:23:33Z",
+      "durationSeconds": 7087
+    }
+  ],
+  "lastCiRemovalToMerge": {
+    "durationSeconds": 0,
+    "fromTime": "2026-04-03T05:23:33Z",
+    "toTime": "2026-04-02T21:23:33Z"
+  }
+}

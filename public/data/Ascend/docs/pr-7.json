@@ -1,0 +1,43 @@
+{
+  "prNumber": 7,
+  "owner": "Ascend",
+  "repo": "docs",
+  "createdAt": "2026-02-09T10:50:47+08:00",
+  "mergedAt": "2026-02-13T14:42:39+08:00",
+  "prSubmitToMerge": {
+    "durationSeconds": 359512,
+    "fromTime": "2026-02-09T10:50:47Z",
+    "toTime": "2026-02-13T14:42:39Z"
+  },
+  "compileToCiCycles": [
+    {
+      "compileTime": "2026-02-09T10:53:18Z",
+      "startTime": "2026-02-09T10:53:48Z",
+      "finishTime": "2026-02-13T14:42:39Z",
+      "durationSeconds": 359361
+    },
+    {
+      "compileTime": "2026-02-13T11:58:23Z",
+      "startTime": "2026-02-13T11:58:53Z",
+      "finishTime": "2026-02-13T14:42:39Z",
+      "durationSeconds": 9856
+    },
+    {
+      "compileTime": "2026-02-09T10:53:18Z",
+      "startTime": "2026-02-09T10:53:48Z",
+      "finishTime": "2026-02-13T14:42:39Z",
+      "durationSeconds": 359361
+    },
+    {
+      "compileTime": "2026-02-13T11:58:23Z",
+      "startTime": "2026-02-13T11:58:53Z",
+      "finishTime": "2026-02-13T14:42:39Z",
+      "durationSeconds": 9856
+    }
+  ],
+  "lastCiRemovalToMerge": {
+    "durationSeconds": 0,
+    "fromTime": "2026-02-13T22:42:39Z",
+    "toTime": "2026-02-13T14:42:39Z"
+  }
+}

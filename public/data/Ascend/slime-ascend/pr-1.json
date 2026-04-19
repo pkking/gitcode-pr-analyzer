@@ -1,0 +1,43 @@
+{
+  "prNumber": 1,
+  "owner": "Ascend",
+  "repo": "slime-ascend",
+  "createdAt": "2026-03-03T15:38:57+08:00",
+  "mergedAt": "2026-03-03T16:15:45+08:00",
+  "prSubmitToMerge": {
+    "durationSeconds": 2208,
+    "fromTime": "2026-03-03T15:38:57Z",
+    "toTime": "2026-03-03T16:15:45Z"
+  },
+  "compileToCiCycles": [
+    {
+      "compileTime": "2026-03-03T15:39:14Z",
+      "startTime": "2026-03-03T15:55:37Z",
+      "finishTime": "2026-03-03T16:02:19Z",
+      "durationSeconds": 1385
+    },
+    {
+      "compileTime": "2026-03-03T15:49:11Z",
+      "startTime": "2026-03-03T15:55:37Z",
+      "finishTime": "2026-03-03T16:02:19Z",
+      "durationSeconds": 788
+    },
+    {
+      "compileTime": "2026-03-03T15:39:14Z",
+      "startTime": "2026-03-03T15:39:44Z",
+      "finishTime": "2026-03-03T16:15:45Z",
+      "durationSeconds": 2191
+    },
+    {
+      "compileTime": "2026-03-03T15:49:11Z",
+      "startTime": "2026-03-03T15:49:41Z",
+      "finishTime": "2026-03-03T16:15:45Z",
+      "durationSeconds": 1594
+    }
+  ],
+  "lastCiRemovalToMerge": {
+    "durationSeconds": 0,
+    "fromTime": "2026-03-04T00:15:45Z",
+    "toTime": "2026-03-03T16:15:45Z"
+  }
+}

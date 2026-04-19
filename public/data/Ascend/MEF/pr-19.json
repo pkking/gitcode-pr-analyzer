@@ -1,0 +1,31 @@
+{
+  "prNumber": 19,
+  "owner": "Ascend",
+  "repo": "MEF",
+  "createdAt": "2026-03-03T20:27:51+08:00",
+  "mergedAt": "2026-03-06T15:44:46+08:00",
+  "prSubmitToMerge": {
+    "durationSeconds": 242215,
+    "fromTime": "2026-03-03T20:27:51Z",
+    "toTime": "2026-03-06T15:44:46Z"
+  },
+  "compileToCiCycles": [
+    {
+      "compileTime": "2026-03-03T20:27:53Z",
+      "startTime": "2026-03-03T20:28:14Z",
+      "finishTime": "2026-03-03T20:41:12Z",
+      "durationSeconds": 799
+    },
+    {
+      "compileTime": "2026-03-03T20:27:53Z",
+      "startTime": "2026-03-03T20:28:23Z",
+      "finishTime": "2026-03-06T15:44:46Z",
+      "durationSeconds": 242213
+    }
+  ],
+  "lastCiRemovalToMerge": {
+    "durationSeconds": 0,
+    "fromTime": "2026-03-06T23:44:46Z",
+    "toTime": "2026-03-06T15:44:46Z"
+  }
+}

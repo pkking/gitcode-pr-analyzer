@@ -1,6 +1,6 @@
 {
   "date": "2026-01-25",
-  "repo": "Ascend/pytorch",
+  "repo": "Ascend/MindStudio-Ops-Profiler",
   "runs": [
     {
       "id": 2990000,
@@ -2049,6 +2049,256 @@
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/29997",
           "queueDurationInSeconds": 30,
           "durationInSeconds": 6683638.599
+        }
+      ]
+    },
+    {
+      "id": 250000,
+      "name": "PR #25 compile - 【Bugfix】修复load store指令地址空间为INVALID问题",
+      "head_branch": "fix_ls_error",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-01-24T17:27:30Z",
+      "updated_at": "2026-01-24T17:37:28Z",
+      "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/25",
+      "durationInSeconds": 598,
+      "jobs": [
+        {
+          "id": 250001,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-01-24T17:27:30Z",
+          "started_at": "2026-01-24T17:28:13Z",
+          "completed_at": "2026-01-24T17:37:28Z",
+          "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/25",
+          "queueDurationInSeconds": 43,
+          "durationInSeconds": 555
+        }
+      ]
+    },
+    {
+      "id": 250001,
+      "name": "PR #25 compile - 【Bugfix】修复load store指令地址空间为INVALID问题",
+      "head_branch": "fix_ls_error",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-01-24T17:40:12Z",
+      "updated_at": "2026-01-24T17:52:27Z",
+      "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/25",
+      "durationInSeconds": 735,
+      "jobs": [
+        {
+          "id": 250002,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-01-24T17:40:12Z",
+          "started_at": "2026-01-24T17:40:51Z",
+          "completed_at": "2026-01-24T17:52:27Z",
+          "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/25",
+          "queueDurationInSeconds": 39,
+          "durationInSeconds": 696
+        }
+      ]
+    },
+    {
+      "id": 250002,
+      "name": "PR #25 compile - 【Bugfix】修复load store指令地址空间为INVALID问题",
+      "head_branch": "fix_ls_error",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-01-24T17:52:16Z",
+      "updated_at": "2026-01-24T17:52:27Z",
+      "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/25",
+      "durationInSeconds": 11,
+      "jobs": [
+        {
+          "id": 250003,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-01-24T17:52:16Z",
+          "started_at": "2026-01-24T17:52:56Z",
+          "completed_at": "2026-01-24T17:52:27Z",
+          "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/25",
+          "queueDurationInSeconds": 40,
+          "durationInSeconds": 0
+        }
+      ]
+    },
+    {
+      "id": 250100,
+      "name": "PR #25 docs-ci - 【Bugfix】修复load store指令地址空间为INVALID问题",
+      "head_branch": "fix_ls_error",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-01-24T17:27:30Z",
+      "updated_at": "2026-01-28T09:33:35Z",
+      "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/25",
+      "durationInSeconds": 317165,
+      "jobs": [
+        {
+          "id": 250101,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-01-24T17:27:30Z",
+          "started_at": "2026-01-24T17:28:00Z",
+          "completed_at": "2026-01-28T09:33:35Z",
+          "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/25",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 317135
+        }
+      ]
+    },
+    {
+      "id": 250101,
+      "name": "PR #25 docs-ci - 【Bugfix】修复load store指令地址空间为INVALID问题",
+      "head_branch": "fix_ls_error",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-01-24T17:40:12Z",
+      "updated_at": "2026-01-28T09:33:35Z",
+      "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/25",
+      "durationInSeconds": 316403,
+      "jobs": [
+        {
+          "id": 250102,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-01-24T17:40:12Z",
+          "started_at": "2026-01-24T17:40:42Z",
+          "completed_at": "2026-01-28T09:33:35Z",
+          "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/25",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 316373
+        }
+      ]
+    },
+    {
+      "id": 250102,
+      "name": "PR #25 docs-ci - 【Bugfix】修复load store指令地址空间为INVALID问题",
+      "head_branch": "fix_ls_error",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-01-24T17:52:16Z",
+      "updated_at": "2026-01-28T09:33:35Z",
+      "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/25",
+      "durationInSeconds": 315679,
+      "jobs": [
+        {
+          "id": 250103,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-01-24T17:52:16Z",
+          "started_at": "2026-01-24T17:52:46Z",
+          "completed_at": "2026-01-28T09:33:35Z",
+          "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/25",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 315649
+        }
+      ]
+    },
+    {
+      "id": 240000,
+      "name": "PR #24 compile - 【feature】增加CMake中compile_commands.json文件导出，提升IDE开发",
+      "head_branch": "dev0124",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-01-24T16:38:41Z",
+      "updated_at": "2026-01-24T16:50:43Z",
+      "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/24",
+      "durationInSeconds": 722,
+      "jobs": [
+        {
+          "id": 240001,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-01-24T16:38:41Z",
+          "started_at": "2026-01-24T16:39:26Z",
+          "completed_at": "2026-01-24T16:50:43Z",
+          "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/24",
+          "queueDurationInSeconds": 45,
+          "durationInSeconds": 677
+        }
+      ]
+    },
+    {
+      "id": 240100,
+      "name": "PR #24 docs-ci - 【feature】增加CMake中compile_commands.json文件导出，提升IDE开发",
+      "head_branch": "dev0124",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-01-24T16:38:41Z",
+      "updated_at": "2026-01-26T10:55:12Z",
+      "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/24",
+      "durationInSeconds": 152191,
+      "jobs": [
+        {
+          "id": 240101,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-01-24T16:38:41Z",
+          "started_at": "2026-01-24T16:39:11Z",
+          "completed_at": "2026-01-26T10:55:12Z",
+          "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/24",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 152161
+        }
+      ]
+    },
+    {
+      "id": 170002,
+      "name": "PR #17 compile - 【feature】添加Scalar相关细节指标展示",
+      "head_branch": "test_scalr",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-01-24T19:03:12Z",
+      "updated_at": "2026-01-26T09:42:40Z",
+      "html_url": "https://gitcode.com/Ascend/msopprof/merge_requests/17",
+      "durationInSeconds": 139168,
+      "jobs": [
+        {
+          "id": 170003,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-01-24T19:03:12Z",
+          "started_at": "2026-01-26T09:30:27Z",
+          "completed_at": "2026-01-26T09:42:40Z",
+          "html_url": "https://gitcode.com/Ascend/msopprof/merge_requests/17",
+          "queueDurationInSeconds": 138435,
+          "durationInSeconds": 733
+        }
+      ]
+    },
+    {
+      "id": 170102,
+      "name": "PR #17 docs-ci - 【feature】添加Scalar相关细节指标展示",
+      "head_branch": "test_scalr",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-01-24T19:03:12Z",
+      "updated_at": "2026-01-26T20:02:13Z",
+      "html_url": "https://gitcode.com/Ascend/msopprof/merge_requests/17",
+      "durationInSeconds": 176341,
+      "jobs": [
+        {
+          "id": 170103,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-01-24T19:03:12Z",
+          "started_at": "2026-01-24T19:03:42Z",
+          "completed_at": "2026-01-26T20:02:13Z",
+          "html_url": "https://gitcode.com/Ascend/msopprof/merge_requests/17",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 176311
         }
       ]
     }

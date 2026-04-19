@@ -1,0 +1,55 @@
+{
+  "prNumber": 5,
+  "owner": "Ascend",
+  "repo": "MindStudio-Agent",
+  "createdAt": "2026-04-15T15:34:04+08:00",
+  "mergedAt": "2026-04-15T18:22:31+08:00",
+  "prSubmitToMerge": {
+    "durationSeconds": 10107,
+    "fromTime": "2026-04-15T15:34:04Z",
+    "toTime": "2026-04-15T18:22:31Z"
+  },
+  "compileToCiCycles": [
+    {
+      "compileTime": "2026-04-15T15:34:14Z",
+      "startTime": "2026-04-15T15:34:50Z",
+      "finishTime": "2026-04-15T15:39:57Z",
+      "durationSeconds": 343
+    },
+    {
+      "compileTime": "2026-04-15T16:40:30Z",
+      "startTime": "2026-04-15T16:41:06Z",
+      "finishTime": "2026-04-15T16:43:40Z",
+      "durationSeconds": 190
+    },
+    {
+      "compileTime": "2026-04-15T20:41:53Z",
+      "startTime": "2026-04-15T20:42:32Z",
+      "finishTime": "2026-04-15T20:45:13Z",
+      "durationSeconds": 200
+    },
+    {
+      "compileTime": "2026-04-15T15:34:14Z",
+      "startTime": "2026-04-15T15:34:44Z",
+      "finishTime": "2026-04-15T18:22:31Z",
+      "durationSeconds": 10097
+    },
+    {
+      "compileTime": "2026-04-15T16:40:30Z",
+      "startTime": "2026-04-15T16:41:00Z",
+      "finishTime": "2026-04-15T18:22:31Z",
+      "durationSeconds": 6121
+    },
+    {
+      "compileTime": "2026-04-15T20:41:53Z",
+      "startTime": "2026-04-15T20:42:23Z",
+      "finishTime": "2026-04-15T18:22:31Z",
+      "durationSeconds": 0
+    }
+  ],
+  "lastCiRemovalToMerge": {
+    "durationSeconds": 0,
+    "fromTime": "2026-04-16T04:45:13Z",
+    "toTime": "2026-04-15T18:22:31Z"
+  }
+}
