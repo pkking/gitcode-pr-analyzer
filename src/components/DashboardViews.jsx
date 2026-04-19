@@ -58,11 +58,7 @@ export function RunDetailView({ run, timeline, recentRuns, buildAnalysisHref, mi
           {recentRuns.map(candidate => (
             <div
               key={candidate.id}
-              role="button"
-              tabIndex={0}
-              onClick={() => navigate(buildAnalysisHref(candidate))}
-              onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); navigate(buildAnalysisHref(candidate)); } }}
-              className={`group rounded-xl border px-4 py-4 transition-all duration-200 cursor-pointer ${
+              className={`rounded-xl border px-4 py-4 transition-all duration-200 ${
                 candidate.id === run.id
                   ? 'border-stone-900 bg-stone-900 text-white shadow-md'
                   : 'border-stone-200 bg-stone-50 hover:bg-white hover:shadow-md hover:border-stone-300'
@@ -70,16 +66,29 @@ export function RunDetailView({ run, timeline, recentRuns, buildAnalysisHref, mi
             >
               <div className="flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
                 <div className="min-w-0">
-                  <div className="truncate text-sm font-semibold font-display">
+                  <div className="flex items-center gap-2 truncate">
                     <a
                       href={candidate.html_url}
                       target="_blank"
                       rel="noreferrer"
-                      className="hover:underline"
-                      onClick={e => e.stopPropagation()}
+                      className="truncate text-sm font-semibold font-display hover:underline"
                     >
                       {candidate.name}
                     </a>
+                    <button
+                      onClick={() => navigate(buildAnalysisHref(candidate))}
+                      className={`shrink-0 rounded-lg p-1 transition-colors ${
+                        candidate.id === run.id
+                          ? 'text-stone-300 hover:text-white hover:bg-white/10'
+                          : 'text-stone-400 hover:text-stone-700 hover:bg-stone-100'
+                      }`}
+                      title="Analyze this run"
+                      aria-label={`Analyze run: ${candidate.name}`}
+                    >
+                      <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M3 4.5h14.25M3 9h9.75M3 13.5h9.75m4.5-4.5v12m0 0-3.75-3.75M17.25 21 21 17.25" />
+                      </svg>
+                    </button>
                   </div>
                   <div className={`mt-1 text-xs ${candidate.id === run.id ? 'text-stone-300' : 'text-stone-500'}`}>
                     {new Date(candidate.created_at).toLocaleString()} · {getRunStageName(candidate)}

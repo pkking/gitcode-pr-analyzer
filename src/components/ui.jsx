@@ -10,6 +10,13 @@ const BADGE_CLASS = {
   info: 'badge badge-info',
 };
 
+const TONE_MAP = {
+  stone: 'bg-stone-50 text-stone-900 ring-1 ring-stone-200/60',
+  green: 'bg-emerald-50 text-emerald-900 ring-1 ring-emerald-200/60',
+  amber: 'bg-amber-50 text-amber-900 ring-1 ring-amber-200/60',
+  blue: 'bg-sky-50 text-sky-900 ring-1 ring-sky-200/60',
+};
+
 export function Badge({ children, variant = 'neutral', className = '' }) {
   const cls = BADGE_CLASS[variant] || BADGE_CLASS.neutral;
   return (
@@ -20,13 +27,7 @@ export function Badge({ children, variant = 'neutral', className = '' }) {
 }
 
 export function StatCard({ label, value, sublabel, tone = 'stone', className = '' }) {
-  const toneMap = {
-    stone: 'bg-stone-50 text-stone-900 ring-1 ring-stone-200/60',
-    green: 'bg-emerald-50 text-emerald-900 ring-1 ring-emerald-200/60',
-    amber: 'bg-amber-50 text-amber-900 ring-1 ring-amber-200/60',
-    blue: 'bg-sky-50 text-sky-900 ring-1 ring-sky-200/60',
-  };
-  const bg = toneMap[tone] || toneMap.stone;
+  const bg = TONE_MAP[tone] || TONE_MAP.stone;
 
   return (
     <div className={`rounded-xl px-5 py-4 ${bg} card-hover ${className}`}>
