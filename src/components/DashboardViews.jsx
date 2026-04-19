@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import {
   formatSeconds,
   getRunStageName,
@@ -7,6 +7,7 @@ import {
 import { Badge } from '../components/ui.jsx';
 
 export function RunDetailView({ run, timeline, recentRuns, buildAnalysisHref, missingRequestedRun }) {
+  const navigate = useNavigate();
   const totalDuration = getRunTotalDuration(run, timeline);
   const hasTimeline = timeline.length > 0;
 
@@ -55,10 +56,13 @@ export function RunDetailView({ run, timeline, recentRuns, buildAnalysisHref, mi
 
         <div className="mt-5 grid gap-3">
           {recentRuns.map(candidate => (
-            <Link
+            <div
               key={candidate.id}
-              to={buildAnalysisHref(candidate)}
-              className={`group rounded-xl border px-4 py-4 transition-all duration-200 ${
+              role="button"
+              tabIndex={0}
+              onClick={() => navigate(buildAnalysisHref(candidate))}
+              onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); navigate(buildAnalysisHref(candidate)); } }}
+              className={`group rounded-xl border px-4 py-4 transition-all duration-200 cursor-pointer ${
                 candidate.id === run.id
                   ? 'border-stone-900 bg-stone-900 text-white shadow-md'
                   : 'border-stone-200 bg-stone-50 hover:bg-white hover:shadow-md hover:border-stone-300'
@@ -88,7 +92,7 @@ export function RunDetailView({ run, timeline, recentRuns, buildAnalysisHref, mi
                   {candidate.conclusion || 'unknown'}
                 </Badge>
               </div>
-            </Link>
+            </div>
           ))}
         </div>
       </section>
