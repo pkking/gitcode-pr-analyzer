@@ -669,7 +669,7 @@ async function main() {
       if (entry.isDirectory()) {
         collectPrDetails(fullPath);
       } else if (entry.name.match(/^pr-\d+\.json$/)) {
-        const relativePath = path.relative(DATA_DIR, fullPath).replace(/\\/g, '/').toLowerCase();
+        const relativePath = path.relative(DATA_DIR, fullPath).replace(/\\/g, '/');
         prDetailsIndex.push(relativePath);
       }
     }

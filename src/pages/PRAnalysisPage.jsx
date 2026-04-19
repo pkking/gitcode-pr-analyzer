@@ -90,7 +90,11 @@ export default function PRAnalysisPage() {
 
         const details = {};
         for (const d of detailResults.filter(Boolean)) {
-          details[`pr-${prNum}`] = d;
+          const prNum = d.prNumber ?? d.prDetails?.number;
+          const dOwner = d.owner ?? owner;
+          const dRepo = d.repo ?? repo;
+          const detailKey = `${dOwner}/${dRepo}#${prNum}`;
+          details[detailKey] = d;
           break;
         }
         setDetailByKey(details);
@@ -103,7 +107,7 @@ export default function PRAnalysisPage() {
 
     loadData();
     return () => { cancelled = true; };
-  }, [repoKey, prNum]);
+  }, [repoKey, prNum, owner, repo]);
 
   const selectedRun = useMemo(() => {
     if (explicitRunId) {
@@ -112,11 +116,13 @@ export default function PRAnalysisPage() {
     }
     return runs[0] || null;
   }, [runs, explicitRunId]);
-  const runDetail = selectedRun ? detailByKey[`pr-${prNum}`] || null : null;
+  const detailKey = `${owner}/${repo}#${prNum}`;
+  const runDetail = selectedRun ? detailByKey[detailKey] || null : null;
   const runTimeline = selectedRun ? buildRunTimeline(selectedRun, runDetail) : [];
 
   const prSummary = useMemo(() => {
     if (runs.length === 0) return null;
+    const prE2E = runDetail?.prSubmitToMerge?.durationSeconds ?? null;
     return {
       prNumber: prNum,
       runCount: runs.length,
@@ -124,8 +130,9 @@ export default function PRAnalysisPage() {
       avgDuration: runs.reduce((sum, r) => sum + (r.durationInSeconds || 0), 0) / runs.length,
       latestStatus: runs[0].conclusion,
       latestCreatedAt: runs[0].created_at,
+      prE2E,
     };
-  }, [runs, prNum]);
+  }, [runs, prNum, runDetail]);
 
   if (loading) {
     return <FullScreenMessage tone="stone">Loading PR analysis...</FullScreenMessage>;
@@ -157,6 +164,7 @@ export default function PRAnalysisPage() {
                 <span>共 {prSummary.runCount} 次运行</span>
                 <span>成功率 {(prSummary.successRate * 100).toFixed(1)}%</span>
                 <span>平均耗时 {formatSeconds(prSummary.avgDuration)}</span>
+                {prSummary.prE2E !== null && <span>PR E2E {formatSeconds(prSummary.prE2E)}</span>}
                 <span>最新 {new Date(prSummary.latestCreatedAt).toLocaleString()}</span>
               </div>
             )}

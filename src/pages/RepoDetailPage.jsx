@@ -6,6 +6,45 @@ import {
   listRepoEntries,
 } from '../utils/etlData.js';
 
+/**
+ * Fetch the PR details index and return a map of prNumber -> prSubmitToMerge duration.
+ */
+async function fetchPrE2EForRepo(repoKey) {
+  try {
+    const res = await fetch('/data/pr-details-index.json');
+    if (!res.ok) return {};
+    const paths = await res.json();
+    const matchingPaths = paths.filter(p => {
+      const m = p.toLowerCase().match(/^([^/]+)\/(.+)\/pr-(\d+)\.json$/);
+      if (!m) return false;
+      return `${m[1]}/${m[2]}` === repoKey.toLowerCase();
+    });
+
+    const results = await Promise.all(
+      matchingPaths.map(async p => {
+        try {
+          const detailRes = await fetch(`/data/${p}`);
+          if (!detailRes.ok) return null;
+          return detailRes.json();
+        } catch {
+          return null;
+        }
+      })
+    );
+
+    const e2eMap = {};
+    for (const d of results.filter(Boolean)) {
+      const prNum = d.prNumber ?? d.prDetails?.number;
+      if (prNum != null && d.prSubmitToMerge?.durationSeconds != null) {
+        e2eMap[prNum] = d.prSubmitToMerge.durationSeconds;
+      }
+    }
+    return e2eMap;
+  } catch {
+    return {};
+  }
+}
+
 export default function RepoDetailPage() {
   const { owner, repo } = useParams();
   const repoKey = `${owner}/${repo}`;
@@ -13,6 +52,7 @@ export default function RepoDetailPage() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [runs, setRuns] = useState([]);
+  const [prE2EMap, setPrE2EMap] = useState({});
 
   useEffect(() => {
     let cancelled = false;
@@ -62,6 +102,9 @@ export default function RepoDetailPage() {
           .sort((a, b) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime());
 
         setRuns(allRuns);
+
+        const e2eMap = await fetchPrE2EForRepo(repoKey);
+        if (!cancelled) setPrE2EMap(e2eMap);
       } catch (err) {
         if (!cancelled) setError(err.message);
       } finally {
@@ -98,10 +141,11 @@ export default function RepoDetailPage() {
           latestCreatedAt: latestRun.created_at,
           successRate: getSuccessRate(pr.runs),
           avgDuration: pr.runs.reduce((sum, r) => sum + (r.durationInSeconds || 0), 0) / pr.runs.length,
+          prE2E: prE2EMap[pr.prNumber] ?? null,
         };
       })
       .sort((a, b) => new Date(b.latestCreatedAt).getTime() - new Date(a.latestCreatedAt).getTime());
-  }, [runs]);
+  }, [runs, prE2EMap]);
 
   if (loading) {
     return <FullScreenMessage tone="stone">Loading repository data...</FullScreenMessage>;
@@ -140,6 +184,7 @@ export default function RepoDetailPage() {
                 <tr className="bg-stone-50 text-xs uppercase tracking-[0.24em] text-stone-500">
                   <th className="px-6 py-4 font-medium">PR 编号</th>
                   <th className="px-6 py-4 font-medium">标题</th>
+                  <th className="px-6 py-4 font-medium">PR E2E时长</th>
                   <th className="px-6 py-4 font-medium">运行次数</th>
                   <th className="px-6 py-4 font-medium">最新状态</th>
                   <th className="px-6 py-4 font-medium">最新耗时</th>
@@ -151,7 +196,7 @@ export default function RepoDetailPage() {
               <tbody>
                 {prGroups.length === 0 ? (
                   <tr>
-                    <td colSpan={8} className="px-6 py-16 text-center text-sm text-stone-500">
+                    <td colSpan={9} className="px-6 py-16 text-center text-sm text-stone-500">
                       暂无 PR 数据。
                     </td>
                   </tr>
@@ -165,6 +210,7 @@ export default function RepoDetailPage() {
                     <td className="px-6 py-4">
                       <span className="text-sm text-stone-900">{pr.title}</span>
                     </td>
+                    <td className="px-6 py-4 text-sm text-stone-900">{pr.prE2E !== null ? formatSeconds(pr.prE2E) : '--'}</td>
                     <td className="px-6 py-4 text-sm text-stone-600">{pr.runCount}</td>
                     <td className="px-6 py-4">
                       <span className={`rounded-full px-3 py-1 text-xs font-medium ${getConclusionBadgeClass(pr.latestStatus)}`}>
