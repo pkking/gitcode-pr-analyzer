@@ -1,7 +1,14 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 
-import { listRepoEntries, buildRunList, summarizeRun, getPrMergeWaitDuration } from '../src/utils/etlData.js';
+import {
+  listRepoEntries,
+  buildRunList,
+  summarizeRun,
+  getPrMergeWaitDuration,
+  getPrDetailRepoKey,
+  normalizeRepoKey,
+} from '../src/utils/etlData.js';
 
 test('listRepoEntries converts ETL index repos map into sorted repo entries', () => {
   const indexData = {
@@ -99,4 +106,13 @@ test('getPrMergeWaitDuration uses label-removal-to-merge duration', () => {
   };
 
   assert.equal(getPrMergeWaitDuration(detail), 572);
+});
+
+test('normalizeRepoKey and getPrDetailRepoKey align mixed-case repo keys', () => {
+  assert.equal(getPrDetailRepoKey('ascend/pytorch#33962'), 'ascend/pytorch');
+  assert.equal(normalizeRepoKey('Ascend/pytorch'), 'ascend/pytorch');
+  assert.equal(
+    normalizeRepoKey(getPrDetailRepoKey('ascend/pytorch#33962')),
+    normalizeRepoKey('Ascend/pytorch')
+  );
 });

@@ -3,9 +3,11 @@ import { Link } from 'react-router-dom';
 import {
   fetchAllPrDetails,
   formatSeconds,
+  getPrDetailRepoKey,
   getRunRepoKey,
   listOrgEntries,
   listRepoEntries,
+  normalizeRepoKey,
   percentile,
 } from '../utils/etlData.js';
 
@@ -90,7 +92,7 @@ export default function HomePage() {
 
     const runsByRepo = new Map();
     for (const run of allRuns) {
-      const key = getRunRepoKey(run);
+      const key = normalizeRepoKey(getRunRepoKey(run));
       if (!key) continue;
       if (!runsByRepo.has(key)) runsByRepo.set(key, []);
       runsByRepo.get(key).push(run);
@@ -98,9 +100,8 @@ export default function HomePage() {
 
     const prDetailsByRepo = new Map();
     for (const [detailKey, detail] of Object.entries(allPrDetails)) {
-      const repoKeyMatch = detailKey.match(/^(.+\/.+?)#/);
-      if (!repoKeyMatch) continue;
-      const repoKey = repoKeyMatch[1];
+      const repoKey = normalizeRepoKey(getPrDetailRepoKey(detailKey));
+      if (!repoKey) continue;
       if (!prDetailsByRepo.has(repoKey)) prDetailsByRepo.set(repoKey, []);
       prDetailsByRepo.get(repoKey).push(detail);
     }
@@ -108,8 +109,9 @@ export default function HomePage() {
     const repoEntries = listRepoEntries(indexData);
 
     return repoEntries.map(repoEntry => {
-      const runs = runsByRepo.get(repoEntry.key) || [];
-      const details = prDetailsByRepo.get(repoEntry.key.toLowerCase()) || [];
+      const repoKey = normalizeRepoKey(repoEntry.key);
+      const runs = runsByRepo.get(repoKey) || [];
+      const details = prDetailsByRepo.get(repoKey) || [];
 
       const prE2EDurations = details
         .map(d => d?.prSubmitToMerge?.durationSeconds)

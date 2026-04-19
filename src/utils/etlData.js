@@ -1,5 +1,9 @@
 import { intervalToDuration } from 'date-fns';
 
+export function normalizeRepoKey(repoKey) {
+  return String(repoKey || '').trim().toLowerCase();
+}
+
 export function listRepoEntries(indexData) {
   return Object.entries(indexData?.repos || {})
     .map(([key, value]) => {
@@ -90,6 +94,11 @@ export function getRunRepoKey(run) {
   return getRunRepoParts(run)?.key || '';
 }
 
+export function getPrDetailRepoKey(detailKey) {
+  const repoKeyMatch = String(detailKey || '').match(/^(.+\/.+?)#/);
+  return repoKeyMatch ? repoKeyMatch[1] : '';
+}
+
 export function getRunPrNumber(run) {
   const match = String(run?.name || '').match(/PR\s+#(\d+)/i);
   return match ? Number(match[1]) : null;
@@ -148,8 +157,7 @@ export async function fetchPrDetailIndex() {
     if (!res.ok) return [];
     const paths = await res.json();
     cachedPrDetailIndex = paths.map(filePath => {
-      const normalizedPath = filePath.toLowerCase();
-      const match = normalizedPath.match(/^([^/]+)\/(.+)\/pr-(\d+)\.json$/);
+      const match = filePath.match(/^([^/]+)\/(.+)\/pr-(\d+)\.json$/);
       if (!match) return null;
       const [, owner, repoPath, prNumber] = match;
       return {
