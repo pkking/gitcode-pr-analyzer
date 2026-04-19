@@ -4,6 +4,7 @@ import * as path from 'path';
 import * as yaml from 'js-yaml';
 import { extractLabelEvents } from '../../src/utils/gitcodeCiEvents.js';
 import { normalizeConfig, normalizeRepoIdentifier, resolveRepoTargets } from '../lib/config.js';
+import { mergePullRequestData, needsPullRequestHydration, normalizeMergedAt } from '../lib/pull-request.js';
 
 interface Run {
   id: number;
@@ -180,11 +181,12 @@ function writeIndex(index: Index) {
 }
 
 function readConfig(): ReposConfig {
+  const fallbackRepos = (process.env.TARGET_REPOS || '').split(',').map(s => s.trim()).filter(Boolean);
   try {
     const content = fs.readFileSync(REPOS_CONFIG_PATH, 'utf-8');
     return normalizeConfig(yaml.load(content) as ReposConfig);
   } catch {
-    return normalizeConfig({}, (process.env.TARGET_REPOS || '').split(',').map(s => s.trim()).filter(Boolean));
+    return normalizeConfig({}, fallbackRepos);
   }
 }
 
@@ -458,10 +460,11 @@ function buildPrDetail(
   });
 
   let prSubmitToMerge: PrDetail['prSubmitToMerge'] = null;
+  const mergedAtValue = normalizeMergedAt(pr.merged_at);
 
-  if (pr.merged_at !== null) {
+  if (mergedAtValue) {
     const createdAt = safeParseDate(pr.created_at);
-    const mergedAt = safeParseDate(pr.merged_at);
+    const mergedAt = safeParseDate(mergedAtValue);
     if (createdAt && mergedAt) {
       const durationSeconds = Math.max(0, (mergedAt.getTime() - createdAt.getTime()) / 1000);
       prSubmitToMerge = {
@@ -474,7 +477,7 @@ function buildPrDetail(
 
   let lastCiRemovalToMerge: PrDetail['lastCiRemovalToMerge'] = null;
 
-  if (pr.merged_at !== null && runs.length > 0) {
+  if (mergedAtValue && runs.length > 0) {
     let lastFinishTime: Date | null = null;
 
     for (const run of runs) {
@@ -486,7 +489,7 @@ function buildPrDetail(
     }
 
     if (lastFinishTime) {
-      const mergedAt = safeParseDate(pr.merged_at);
+      const mergedAt = safeParseDate(mergedAtValue);
       if (mergedAt) {
         const durationSeconds = Math.max(0, (mergedAt.getTime() - lastFinishTime.getTime()) / 1000);
         lastCiRemovalToMerge = {
@@ -503,17 +506,46 @@ function buildPrDetail(
     owner,
     repo,
     createdAt: pr.created_at,
-    mergedAt: pr.merged_at,
+    mergedAt: mergedAtValue,
     prSubmitToMerge,
     compileToCiCycles,
     lastCiRemovalToMerge,
   };
 }
 
+async function hydratePullRequest(
+  ownerPath: string,
+  repoPath: string,
+  pr: GitCodePullRequest
+): Promise<GitCodePullRequest> {
+  if (!needsPullRequestHydration(pr)) {
+    return mergePullRequestData(pr, {});
+  }
+
+  try {
+    const detail = await gitcodeFetch(`/repos/${ownerPath}/${repoPath}/pulls/${pr.number}`);
+    return mergePullRequestData(pr, detail);
+  } catch (error) {
+    console.warn(
+      `    Failed to hydrate PR #${pr.number}; continuing with list payload:`,
+      error instanceof Error ? error.message : error
+    );
+    return mergePullRequestData(pr, {});
+  }
+}
+
 async function main() {
   const config = readConfig();
   const retentionDays = parseInt(process.env.RETENTION_DAYS || '90');
-  const targets = await resolveRepoTargets(config, discoverOrgRepos);
+  const requestedRepos = (process.env.TARGET_REPOS || '')
+    .split(',')
+    .map(repo => normalizeRepoIdentifier(repo))
+    .filter(Boolean);
+  const requestedRepoSet = new Set(requestedRepos);
+  const resolvedTargets = await resolveRepoTargets(config, discoverOrgRepos);
+  const targets = requestedRepoSet.size > 0
+    ? resolvedTargets.filter(target => requestedRepoSet.has(normalizeRepoIdentifier(target.repo)))
+    : resolvedTargets;
 
   if (targets.length === 0) {
     console.log('No repositories configured. Skipping collection.');
@@ -554,6 +586,7 @@ async function main() {
 
       for (const pr of prs) {
         console.log(`  Processing PR #${pr.number}: ${pr.title.substring(0, 40)}...`);
+        const hydratedPr = await hydratePullRequest(ownerPath, repoPath, pr);
 
         const [reviewComments, logs] = await Promise.all([
           paginate(`/repos/${ownerPath}/${repoPath}/pulls/${pr.number}/comments`),
@@ -581,13 +614,13 @@ async function main() {
 
         console.log(`    ${reviewComments.length} review comments, ${issueComments.length} issue comments, ${logs.length} operate logs (${comments.length} merged)`);
 
-        const runs = reconstructCIRuns(pr, comments, logs, rules);
+        const runs = reconstructCIRuns(hydratedPr, comments, logs, rules);
         console.log(`    Reconstructed ${runs.length} CI runs`);
         allRuns.push(...runs);
 
-        const prDetail = buildPrDetail(pr, runs, comments, logs, rules, owner, repoName);
+        const prDetail = buildPrDetail(hydratedPr, runs, comments, logs, rules, owner, repoName);
         const prDetailDir = path.join(DATA_DIR, owner, repoName);
-        const prDetailFile = path.join(prDetailDir, `pr-${pr.number}.json`);
+        const prDetailFile = path.join(prDetailDir, `pr-${hydratedPr.number}.json`);
 
         if (!fs.existsSync(prDetailDir)) {
           fs.mkdirSync(prDetailDir, { recursive: true });

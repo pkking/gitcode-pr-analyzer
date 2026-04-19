@@ -1,6 +1,6 @@
 {
   "date": "2026-03-19",
-  "repo": "Ascend/MindInferenceService",
+  "repo": "Ascend/AscendNPU-IR",
   "runs": [
     {
       "id": 150000,
@@ -35549,6 +35549,206 @@
           "html_url": "https://gitcode.com/Ascend/op-plugin/merge_requests/4171",
           "queueDurationInSeconds": 30,
           "durationInSeconds": 2136722.902
+        }
+      ]
+    },
+    {
+      "id": 7140002,
+      "name": "PR #714 compile - [Huawei][MLIR] Fix ViewLikeInterface folding to ma",
+      "head_branch": "fix-view-like-interface-folding-pattern",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-03-18T17:27:11Z",
+      "updated_at": "2026-03-18T17:37:41Z",
+      "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/714",
+      "durationInSeconds": 630,
+      "jobs": [
+        {
+          "id": 7140003,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-03-18T17:27:11Z",
+          "started_at": "2026-03-18T17:27:49Z",
+          "completed_at": "2026-03-18T17:37:41Z",
+          "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/714",
+          "queueDurationInSeconds": 38,
+          "durationInSeconds": 592
+        }
+      ]
+    },
+    {
+      "id": 7140102,
+      "name": "PR #714 docs-ci - [Huawei][MLIR] Fix ViewLikeInterface folding to ma",
+      "head_branch": "fix-view-like-interface-folding-pattern",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-03-18T17:27:11Z",
+      "updated_at": "2026-04-16T16:15:28Z",
+      "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/714",
+      "durationInSeconds": 2501297,
+      "jobs": [
+        {
+          "id": 7140103,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-03-18T17:27:11Z",
+          "started_at": "2026-03-18T17:27:41Z",
+          "completed_at": "2026-04-16T16:15:28Z",
+          "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/714",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 2501267
+        }
+      ]
+    },
+    {
+      "id": 7480000,
+      "name": "PR #748 compile - [Huawei][MLIR] Fix OneShotBufferize to maintain at",
+      "head_branch": "fix-one-shot-bufferize-attribute",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-03-18T17:33:11Z",
+      "updated_at": "2026-03-18T17:43:51Z",
+      "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/748",
+      "durationInSeconds": 640,
+      "jobs": [
+        {
+          "id": 7480001,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-03-18T17:33:11Z",
+          "started_at": "2026-03-18T17:33:43Z",
+          "completed_at": "2026-03-18T17:43:51Z",
+          "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/748",
+          "queueDurationInSeconds": 32,
+          "durationInSeconds": 608
+        }
+      ]
+    },
+    {
+      "id": 7480001,
+      "name": "PR #748 compile - [Huawei][MLIR] Fix OneShotBufferize to maintain at",
+      "head_branch": "fix-one-shot-bufferize-attribute",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-03-18T18:19:45Z",
+      "updated_at": "2026-03-18T18:49:18Z",
+      "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/748",
+      "durationInSeconds": 1773,
+      "jobs": [
+        {
+          "id": 7480002,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-03-18T18:19:45Z",
+          "started_at": "2026-03-18T18:20:23Z",
+          "completed_at": "2026-03-18T18:49:18Z",
+          "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/748",
+          "queueDurationInSeconds": 38,
+          "durationInSeconds": 1735
+        }
+      ]
+    },
+    {
+      "id": 7480100,
+      "name": "PR #748 docs-ci - [Huawei][MLIR] Fix OneShotBufferize to maintain at",
+      "head_branch": "fix-one-shot-bufferize-attribute",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-03-18T17:33:11Z",
+      "updated_at": "2026-04-16T16:15:27Z",
+      "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/748",
+      "durationInSeconds": 2500936,
+      "jobs": [
+        {
+          "id": 7480101,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-03-18T17:33:11Z",
+          "started_at": "2026-03-18T17:33:41Z",
+          "completed_at": "2026-04-16T16:15:27Z",
+          "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/748",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 2500906
+        }
+      ]
+    },
+    {
+      "id": 7480101,
+      "name": "PR #748 docs-ci - [Huawei][MLIR] Fix OneShotBufferize to maintain at",
+      "head_branch": "fix-one-shot-bufferize-attribute",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-03-18T18:19:45Z",
+      "updated_at": "2026-04-16T16:15:27Z",
+      "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/748",
+      "durationInSeconds": 2498142,
+      "jobs": [
+        {
+          "id": 7480102,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-03-18T18:19:45Z",
+          "started_at": "2026-03-18T18:20:15Z",
+          "completed_at": "2026-04-16T16:15:27Z",
+          "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/748",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 2498112
+        }
+      ]
+    },
+    {
+      "id": 7510000,
+      "name": "PR #751 compile - [AscendNPU IR]: Fix BubbleUpExtractSlice to mainta",
+      "head_branch": "fix-tile-and-bind-sub-block-attribute",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-03-18T18:19:53Z",
+      "updated_at": "2026-03-18T18:27:18Z",
+      "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/751",
+      "durationInSeconds": 445,
+      "jobs": [
+        {
+          "id": 7510001,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-03-18T18:19:53Z",
+          "started_at": "2026-03-18T18:20:28Z",
+          "completed_at": "2026-03-18T18:27:18Z",
+          "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/751",
+          "queueDurationInSeconds": 35,
+          "durationInSeconds": 410
+        }
+      ]
+    },
+    {
+      "id": 7510100,
+      "name": "PR #751 docs-ci - [AscendNPU IR]: Fix BubbleUpExtractSlice to mainta",
+      "head_branch": "fix-tile-and-bind-sub-block-attribute",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-03-18T18:19:53Z",
+      "updated_at": "2026-04-15T16:04:25Z",
+      "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/751",
+      "durationInSeconds": 2411072,
+      "jobs": [
+        {
+          "id": 7510101,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-03-18T18:19:53Z",
+          "started_at": "2026-03-18T18:20:23Z",
+          "completed_at": "2026-04-15T16:04:25Z",
+          "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/751",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 2411042
         }
       ]
     }

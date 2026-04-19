@@ -1,6 +1,6 @@
 {
   "date": "2026-04-14",
-  "repo": "Ascend/RecSDK",
+  "repo": "Ascend/AscendNPU-IR",
   "runs": [
     {
       "id": 120002,
@@ -12258,8 +12258,8 @@
       "head_branch": "feature-gss-double-flag-ids",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-04-14T06:34:21Z",
-      "updated_at": "2026-04-14T06:42:24Z",
+      "created_at": "2026-04-14T14:34:21Z",
+      "updated_at": "2026-04-14T14:42:24Z",
       "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/1009",
       "durationInSeconds": 483,
       "jobs": [
@@ -12268,9 +12268,9 @@
           "name": "ci-pipeline-running",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-04-14T06:34:21Z",
-          "started_at": "2026-04-14T06:34:53Z",
-          "completed_at": "2026-04-14T06:42:24Z",
+          "created_at": "2026-04-14T14:34:21Z",
+          "started_at": "2026-04-14T14:34:53Z",
+          "completed_at": "2026-04-14T14:42:24Z",
           "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/1009",
           "queueDurationInSeconds": 32,
           "durationInSeconds": 451
@@ -12283,22 +12283,22 @@
       "head_branch": "feature-gss-double-flag-ids",
       "status": "completed",
       "conclusion": "pending",
-      "created_at": "2026-04-14T06:34:21Z",
-      "updated_at": "2026-04-17T03:03:37Z",
+      "created_at": "2026-04-14T14:34:21Z",
+      "updated_at": "2026-04-19T20:02:37Z",
       "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/1009",
-      "durationInSeconds": 246556.255,
+      "durationInSeconds": 451696.564,
       "jobs": [
         {
           "id": 10090102,
           "name": "docs-ci",
           "status": "completed",
           "conclusion": "pending",
-          "created_at": "2026-04-14T06:34:21Z",
-          "started_at": "2026-04-14T06:34:51Z",
-          "completed_at": "2026-04-17T03:03:37Z",
+          "created_at": "2026-04-14T14:34:21Z",
+          "started_at": "2026-04-14T14:34:51Z",
+          "completed_at": "2026-04-19T20:02:37Z",
           "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/1009",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 246526.255
+          "durationInSeconds": 451666.564
         }
       ]
     },
@@ -12308,8 +12308,8 @@
       "head_branch": "fix-mrct-support-core-type-interface",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-04-14T06:33:12Z",
-      "updated_at": "2026-04-14T06:51:38Z",
+      "created_at": "2026-04-14T14:33:12Z",
+      "updated_at": "2026-04-14T14:51:38Z",
       "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/1014",
       "durationInSeconds": 1106,
       "jobs": [
@@ -12318,9 +12318,9 @@
           "name": "ci-pipeline-running",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-04-14T06:33:12Z",
-          "started_at": "2026-04-14T06:33:52Z",
-          "completed_at": "2026-04-14T06:51:38Z",
+          "created_at": "2026-04-14T14:33:12Z",
+          "started_at": "2026-04-14T14:33:52Z",
+          "completed_at": "2026-04-14T14:51:38Z",
           "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/1014",
           "queueDurationInSeconds": 40,
           "durationInSeconds": 1066
@@ -12333,22 +12333,22 @@
       "head_branch": "fix-mrct-support-core-type-interface",
       "status": "completed",
       "conclusion": "pending",
-      "created_at": "2026-04-14T06:33:12Z",
-      "updated_at": "2026-04-17T03:03:36Z",
+      "created_at": "2026-04-14T14:33:12Z",
+      "updated_at": "2026-04-19T20:02:35Z",
       "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/1014",
-      "durationInSeconds": 246624.195,
+      "durationInSeconds": 451763.879,
       "jobs": [
         {
           "id": 10140102,
           "name": "docs-ci",
           "status": "completed",
           "conclusion": "pending",
-          "created_at": "2026-04-14T06:33:12Z",
-          "started_at": "2026-04-14T06:33:42Z",
-          "completed_at": "2026-04-17T03:03:36Z",
+          "created_at": "2026-04-14T14:33:12Z",
+          "started_at": "2026-04-14T14:33:42Z",
+          "completed_at": "2026-04-19T20:02:35Z",
           "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/1014",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 246594.195
+          "durationInSeconds": 451733.879
         }
       ]
     },
@@ -12358,8 +12358,8 @@
       "head_branch": "feature-gss-preload-r",
       "status": "completed",
       "conclusion": "failure",
-      "created_at": "2026-04-14T06:28:06Z",
-      "updated_at": "2026-04-14T06:36:18Z",
+      "created_at": "2026-04-14T14:28:06Z",
+      "updated_at": "2026-04-14T14:36:18Z",
       "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/1028",
       "durationInSeconds": 492,
       "jobs": [
@@ -12368,9 +12368,9 @@
           "name": "ci-pipeline-running",
           "status": "completed",
           "conclusion": "failure",
-          "created_at": "2026-04-14T06:28:06Z",
-          "started_at": "2026-04-14T06:28:40Z",
-          "completed_at": "2026-04-14T06:36:18Z",
+          "created_at": "2026-04-14T14:28:06Z",
+          "started_at": "2026-04-14T14:28:40Z",
+          "completed_at": "2026-04-14T14:36:18Z",
           "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/1028",
           "queueDurationInSeconds": 34,
           "durationInSeconds": 458
@@ -12383,22 +12383,22 @@
       "head_branch": "feature-gss-preload-r",
       "status": "completed",
       "conclusion": "pending",
-      "created_at": "2026-04-14T06:28:06Z",
-      "updated_at": "2026-04-17T03:03:40Z",
+      "created_at": "2026-04-14T14:28:06Z",
+      "updated_at": "2026-04-19T20:02:42Z",
       "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/1028",
-      "durationInSeconds": 246934.441,
+      "durationInSeconds": 452076.27,
       "jobs": [
         {
           "id": 10280101,
           "name": "docs-ci",
           "status": "completed",
           "conclusion": "pending",
-          "created_at": "2026-04-14T06:28:06Z",
-          "started_at": "2026-04-14T06:28:36Z",
-          "completed_at": "2026-04-17T03:03:40Z",
+          "created_at": "2026-04-14T14:28:06Z",
+          "started_at": "2026-04-14T14:28:36Z",
+          "completed_at": "2026-04-19T20:02:42Z",
           "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/1028",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 246904.441
+          "durationInSeconds": 452046.27
         }
       ]
     },
@@ -12408,8 +12408,8 @@
       "head_branch": "feature-support-nonzero-offset",
       "status": "completed",
       "conclusion": "failure",
-      "created_at": "2026-04-14T03:54:20Z",
-      "updated_at": "2026-04-14T04:06:05Z",
+      "created_at": "2026-04-14T11:54:20Z",
+      "updated_at": "2026-04-14T12:06:05Z",
       "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/1025",
       "durationInSeconds": 705,
       "jobs": [
@@ -12418,9 +12418,9 @@
           "name": "ci-pipeline-running",
           "status": "completed",
           "conclusion": "failure",
-          "created_at": "2026-04-14T03:54:20Z",
-          "started_at": "2026-04-14T03:54:58Z",
-          "completed_at": "2026-04-14T04:06:05Z",
+          "created_at": "2026-04-14T11:54:20Z",
+          "started_at": "2026-04-14T11:54:58Z",
+          "completed_at": "2026-04-14T12:06:05Z",
           "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/1025",
           "queueDurationInSeconds": 38,
           "durationInSeconds": 667
@@ -12433,8 +12433,8 @@
       "head_branch": "feature-support-nonzero-offset",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-04-14T03:54:20Z",
-      "updated_at": "2026-04-17T09:22:27Z",
+      "created_at": "2026-04-14T11:54:20Z",
+      "updated_at": "2026-04-17T17:22:27Z",
       "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/1025",
       "durationInSeconds": 278887,
       "jobs": [
@@ -12443,9 +12443,9 @@
           "name": "docs-ci-pipeline-running",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-04-14T03:54:20Z",
-          "started_at": "2026-04-17T09:21:24Z",
-          "completed_at": "2026-04-17T09:22:27Z",
+          "created_at": "2026-04-14T11:54:20Z",
+          "started_at": "2026-04-17T17:21:24Z",
+          "completed_at": "2026-04-17T17:22:27Z",
           "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/1025",
           "queueDurationInSeconds": 278824,
           "durationInSeconds": 63
@@ -36699,6 +36699,106 @@
           "html_url": "https://gitcode.com/Ascend/MindIE-LLM/merge_requests/876",
           "queueDurationInSeconds": 49,
           "durationInSeconds": 48
+        }
+      ]
+    },
+    {
+      "id": 6180010,
+      "name": "PR #618 compile - [AscendNPU IR]: Support CreatePreloadPass",
+      "head_branch": "feature-create-preload",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-04-13T16:57:42Z",
+      "updated_at": "2026-04-13T17:05:34Z",
+      "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/618",
+      "durationInSeconds": 472,
+      "jobs": [
+        {
+          "id": 6180011,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-04-13T16:57:42Z",
+          "started_at": "2026-04-13T16:58:20Z",
+          "completed_at": "2026-04-13T17:05:34Z",
+          "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/618",
+          "queueDurationInSeconds": 38,
+          "durationInSeconds": 434
+        }
+      ]
+    },
+    {
+      "id": 6180011,
+      "name": "PR #618 compile - [AscendNPU IR]: Support CreatePreloadPass",
+      "head_branch": "feature-create-preload",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-04-13T17:40:32Z",
+      "updated_at": "2026-04-13T17:50:50Z",
+      "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/618",
+      "durationInSeconds": 618,
+      "jobs": [
+        {
+          "id": 6180012,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-04-13T17:40:32Z",
+          "started_at": "2026-04-13T17:41:22Z",
+          "completed_at": "2026-04-13T17:50:50Z",
+          "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/618",
+          "queueDurationInSeconds": 50,
+          "durationInSeconds": 568
+        }
+      ]
+    },
+    {
+      "id": 6180110,
+      "name": "PR #618 docs-ci - [AscendNPU IR]: Support CreatePreloadPass",
+      "head_branch": "feature-create-preload",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-04-13T16:57:42Z",
+      "updated_at": "2026-04-15T09:27:55Z",
+      "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/618",
+      "durationInSeconds": 145813,
+      "jobs": [
+        {
+          "id": 6180111,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-04-13T16:57:42Z",
+          "started_at": "2026-04-13T16:58:12Z",
+          "completed_at": "2026-04-15T09:27:55Z",
+          "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/618",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 145783
+        }
+      ]
+    },
+    {
+      "id": 6180111,
+      "name": "PR #618 docs-ci - [AscendNPU IR]: Support CreatePreloadPass",
+      "head_branch": "feature-create-preload",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-04-13T17:40:32Z",
+      "updated_at": "2026-04-15T09:27:55Z",
+      "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/618",
+      "durationInSeconds": 143243,
+      "jobs": [
+        {
+          "id": 6180112,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-04-13T17:40:32Z",
+          "started_at": "2026-04-13T17:41:02Z",
+          "completed_at": "2026-04-15T09:27:55Z",
+          "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/618",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 143213
         }
       ]
     }

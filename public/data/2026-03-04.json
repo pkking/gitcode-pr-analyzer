@@ -1,6 +1,6 @@
 {
   "date": "2026-03-04",
-  "repo": "Ascend/MindIE-LLM",
+  "repo": "Ascend/AscendNPU-IR",
   "runs": [
     {
       "id": 20000,
@@ -37199,6 +37199,106 @@
           "html_url": "https://gitcode.com/Ascend/op-plugin/merge_requests/4342",
           "queueDurationInSeconds": 30,
           "durationInSeconds": 10254
+        }
+      ]
+    },
+    {
+      "id": 6190000,
+      "name": "PR #619 compile - [AscendNPU IR]: Support scopeOp in TileAndBindSubB",
+      "head_branch": "feature-scope-op-tile-and-bind-sub-block",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-03-03T17:05:32Z",
+      "updated_at": "2026-03-03T17:10:05Z",
+      "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/619",
+      "durationInSeconds": 273,
+      "jobs": [
+        {
+          "id": 6190001,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-03-03T17:05:32Z",
+          "started_at": "2026-03-03T17:06:10Z",
+          "completed_at": "2026-03-03T17:10:05Z",
+          "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/619",
+          "queueDurationInSeconds": 38,
+          "durationInSeconds": 235
+        }
+      ]
+    },
+    {
+      "id": 6190001,
+      "name": "PR #619 compile - [AscendNPU IR]: Support scopeOp in TileAndBindSubB",
+      "head_branch": "feature-scope-op-tile-and-bind-sub-block",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-03-03T17:23:49Z",
+      "updated_at": "2026-03-03T17:28:12Z",
+      "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/619",
+      "durationInSeconds": 263,
+      "jobs": [
+        {
+          "id": 6190002,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-03-03T17:23:49Z",
+          "started_at": "2026-03-03T17:24:23Z",
+          "completed_at": "2026-03-03T17:28:12Z",
+          "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/619",
+          "queueDurationInSeconds": 34,
+          "durationInSeconds": 229
+        }
+      ]
+    },
+    {
+      "id": 6190100,
+      "name": "PR #619 docs-ci - [AscendNPU IR]: Support scopeOp in TileAndBindSubB",
+      "head_branch": "feature-scope-op-tile-and-bind-sub-block",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-03-03T17:05:32Z",
+      "updated_at": "2026-04-15T14:11:26Z",
+      "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/619",
+      "durationInSeconds": 3704754,
+      "jobs": [
+        {
+          "id": 6190101,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-03-03T17:05:32Z",
+          "started_at": "2026-03-03T17:06:02Z",
+          "completed_at": "2026-04-15T14:11:26Z",
+          "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/619",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 3704724
+        }
+      ]
+    },
+    {
+      "id": 6190101,
+      "name": "PR #619 docs-ci - [AscendNPU IR]: Support scopeOp in TileAndBindSubB",
+      "head_branch": "feature-scope-op-tile-and-bind-sub-block",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-03-03T17:23:49Z",
+      "updated_at": "2026-04-15T14:11:26Z",
+      "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/619",
+      "durationInSeconds": 3703657,
+      "jobs": [
+        {
+          "id": 6190102,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-03-03T17:23:49Z",
+          "started_at": "2026-03-03T17:24:19Z",
+          "completed_at": "2026-04-15T14:11:26Z",
+          "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/619",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 3703627
         }
       ]
     }
