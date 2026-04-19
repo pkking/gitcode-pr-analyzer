@@ -34,9 +34,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-19T02:01:31Z",
-      "updated_at": "2026-04-19T03:29:35Z",
+      "updated_at": "2026-04-19T07:37:42Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33440",
-      "durationInSeconds": 5284.447,
+      "durationInSeconds": 20171.594,
       "jobs": [
         {
           "id": 334400140,
@@ -45,10 +45,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-19T02:01:31Z",
           "started_at": "2026-04-19T02:02:01Z",
-          "completed_at": "2026-04-19T03:29:35Z",
+          "completed_at": "2026-04-19T07:37:42Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33440",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 5254.447
+          "durationInSeconds": 20141.594
         }
       ]
     },
@@ -84,9 +84,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-19T02:01:30Z",
-      "updated_at": "2026-04-19T03:29:39Z",
+      "updated_at": "2026-04-19T07:37:47Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33441",
-      "durationInSeconds": 5289.845,
+      "durationInSeconds": 20177.093,
       "jobs": [
         {
           "id": 334410139,
@@ -95,10 +95,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-19T02:01:30Z",
           "started_at": "2026-04-19T02:02:00Z",
-          "completed_at": "2026-04-19T03:29:39Z",
+          "completed_at": "2026-04-19T07:37:47Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33441",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 5259.845
+          "durationInSeconds": 20147.093
         }
       ]
     },
@@ -134,9 +134,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-19T02:01:32Z",
-      "updated_at": "2026-04-19T03:29:43Z",
+      "updated_at": "2026-04-19T07:37:51Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33442",
-      "durationInSeconds": 5291.861,
+      "durationInSeconds": 20179.311,
       "jobs": [
         {
           "id": 334420139,
@@ -145,10 +145,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-19T02:01:32Z",
           "started_at": "2026-04-19T02:02:02Z",
-          "completed_at": "2026-04-19T03:29:43Z",
+          "completed_at": "2026-04-19T07:37:51Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33442",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 5261.861
+          "durationInSeconds": 20149.311
         }
       ]
     },
@@ -184,9 +184,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-19T02:01:40Z",
-      "updated_at": "2026-04-19T03:29:48Z",
+      "updated_at": "2026-04-19T07:37:55Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33439",
-      "durationInSeconds": 5288.166,
+      "durationInSeconds": 20175.903,
       "jobs": [
         {
           "id": 334390138,
@@ -195,10 +195,410 @@
           "conclusion": "pending",
           "created_at": "2026-04-19T02:01:40Z",
           "started_at": "2026-04-19T02:02:10Z",
-          "completed_at": "2026-04-19T03:29:48Z",
+          "completed_at": "2026-04-19T07:37:55Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33439",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 5258.166
+          "durationInSeconds": 20145.903
+        }
+      ]
+    },
+    {
+      "id": 680010,
+      "name": "PR #68 compile - 【WIP】邮政知识图谱适配",
+      "head_branch": "youzhen",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-04-19T03:32:42Z",
+      "updated_at": "2026-04-19T03:50:05Z",
+      "html_url": "https://gitcode.com/Ascend/RAGSDK/merge_requests/68",
+      "durationInSeconds": 1043,
+      "jobs": [
+        {
+          "id": 680011,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-04-19T03:32:42Z",
+          "started_at": "2026-04-19T03:33:06Z",
+          "completed_at": "2026-04-19T03:50:05Z",
+          "html_url": "https://gitcode.com/Ascend/RAGSDK/merge_requests/68",
+          "queueDurationInSeconds": 24,
+          "durationInSeconds": 1019
+        }
+      ]
+    },
+    {
+      "id": 680110,
+      "name": "PR #68 docs-ci - 【WIP】邮政知识图谱适配",
+      "head_branch": "youzhen",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-04-19T03:32:42Z",
+      "updated_at": "2026-04-19T03:33:40Z",
+      "html_url": "https://gitcode.com/Ascend/RAGSDK/merge_requests/68",
+      "durationInSeconds": 58,
+      "jobs": [
+        {
+          "id": 680111,
+          "name": "docs-ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-04-19T03:32:42Z",
+          "started_at": "2026-04-19T03:33:42Z",
+          "completed_at": "2026-04-19T03:33:40Z",
+          "html_url": "https://gitcode.com/Ascend/RAGSDK/merge_requests/68",
+          "queueDurationInSeconds": 60,
+          "durationInSeconds": 0
+        }
+      ]
+    },
+    {
+      "id": 1420003,
+      "name": "PR #142 compile - IVFPQ添加A3适配：新增三阶段算子SIMD实现（小batch多核加速）",
+      "head_branch": "ivfpq_simd_poc",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-04-19T04:24:52Z",
+      "updated_at": "2026-04-19T04:31:34Z",
+      "html_url": "https://gitcode.com/Ascend/IndexSDK/merge_requests/142",
+      "durationInSeconds": 402,
+      "jobs": [
+        {
+          "id": 1420004,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-04-19T04:24:52Z",
+          "started_at": "2026-04-19T04:25:15Z",
+          "completed_at": "2026-04-19T04:31:34Z",
+          "html_url": "https://gitcode.com/Ascend/IndexSDK/merge_requests/142",
+          "queueDurationInSeconds": 23,
+          "durationInSeconds": 379
+        }
+      ]
+    },
+    {
+      "id": 1420103,
+      "name": "PR #142 docs-ci - IVFPQ添加A3适配：新增三阶段算子SIMD实现（小batch多核加速）",
+      "head_branch": "ivfpq_simd_poc",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-04-19T04:24:52Z",
+      "updated_at": "2026-04-19T04:27:26Z",
+      "html_url": "https://gitcode.com/Ascend/IndexSDK/merge_requests/142",
+      "durationInSeconds": 154,
+      "jobs": [
+        {
+          "id": 1420104,
+          "name": "docs-ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-04-19T04:24:52Z",
+          "started_at": "2026-04-19T04:26:05Z",
+          "completed_at": "2026-04-19T04:27:26Z",
+          "html_url": "https://gitcode.com/Ascend/IndexSDK/merge_requests/142",
+          "queueDurationInSeconds": 73,
+          "durationInSeconds": 81
+        }
+      ]
+    },
+    {
+      "id": 10670000,
+      "name": "PR #1067 compile - [AscendNPU-IR] feat: add cyl_bessel_i0 normalize s",
+      "head_branch": "pr_cyl_bessel_i0",
+      "status": "completed",
+      "conclusion": "pending",
+      "created_at": "2026-04-19T05:55:33Z",
+      "updated_at": "2026-04-19T07:36:17Z",
+      "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/1067",
+      "durationInSeconds": 6044.745,
+      "jobs": [
+        {
+          "id": 10670001,
+          "name": "compile",
+          "status": "completed",
+          "conclusion": "pending",
+          "created_at": "2026-04-19T05:55:33Z",
+          "started_at": "2026-04-19T05:56:03Z",
+          "completed_at": "2026-04-19T07:36:17Z",
+          "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/1067",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 6014.745
+        }
+      ]
+    },
+    {
+      "id": 10670100,
+      "name": "PR #1067 docs-ci - [AscendNPU-IR] feat: add cyl_bessel_i0 normalize s",
+      "head_branch": "pr_cyl_bessel_i0",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-04-19T05:55:33Z",
+      "updated_at": "2026-04-19T05:59:02Z",
+      "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/1067",
+      "durationInSeconds": 209,
+      "jobs": [
+        {
+          "id": 10670101,
+          "name": "docs-ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-04-19T05:55:33Z",
+          "started_at": "2026-04-19T05:57:33Z",
+          "completed_at": "2026-04-19T05:59:02Z",
+          "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/1067",
+          "queueDurationInSeconds": 120,
+          "durationInSeconds": 89
+        }
+      ]
+    },
+    {
+      "id": 339640000,
+      "name": "PR #33964 compile - test(distributed/checkpoint): replace transfer_to_",
+      "head_branch": "test-upstream-checkpoint-storage-v2.7.1",
+      "status": "completed",
+      "conclusion": "pending",
+      "created_at": "2026-04-19T06:59:49Z",
+      "updated_at": "2026-04-19T07:37:29Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33964",
+      "durationInSeconds": 2260.116,
+      "jobs": [
+        {
+          "id": 339640001,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "pending",
+          "created_at": "2026-04-19T06:59:49Z",
+          "started_at": "2026-04-19T07:00:19Z",
+          "completed_at": "2026-04-19T07:37:29Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33964",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 2230.116
+        }
+      ]
+    },
+    {
+      "id": 339640100,
+      "name": "PR #33964 docs-ci - test(distributed/checkpoint): replace transfer_to_",
+      "head_branch": "test-upstream-checkpoint-storage-v2.7.1",
+      "status": "completed",
+      "conclusion": "pending",
+      "created_at": "2026-04-19T06:59:49Z",
+      "updated_at": "2026-04-19T07:37:29Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33964",
+      "durationInSeconds": 2260.116,
+      "jobs": [
+        {
+          "id": 339640101,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "pending",
+          "created_at": "2026-04-19T06:59:49Z",
+          "started_at": "2026-04-19T07:00:19Z",
+          "completed_at": "2026-04-19T07:37:29Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33964",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 2230.116
+        }
+      ]
+    },
+    {
+      "id": 339660000,
+      "name": "PR #33966 compile - test(distributed/checkpoint): add NPU adaptation p",
+      "head_branch": "test-upstream-checkpoint-storage-v2.10.0",
+      "status": "completed",
+      "conclusion": "pending",
+      "created_at": "2026-04-19T07:30:29Z",
+      "updated_at": "2026-04-19T07:37:30Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33966",
+      "durationInSeconds": 421.709,
+      "jobs": [
+        {
+          "id": 339660001,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "pending",
+          "created_at": "2026-04-19T07:30:29Z",
+          "started_at": "2026-04-19T07:31:00Z",
+          "completed_at": "2026-04-19T07:37:30Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33966",
+          "queueDurationInSeconds": 31,
+          "durationInSeconds": 390.709
+        }
+      ]
+    },
+    {
+      "id": 339660100,
+      "name": "PR #33966 docs-ci - test(distributed/checkpoint): add NPU adaptation p",
+      "head_branch": "test-upstream-checkpoint-storage-v2.10.0",
+      "status": "completed",
+      "conclusion": "pending",
+      "created_at": "2026-04-19T07:30:29Z",
+      "updated_at": "2026-04-19T07:37:30Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33966",
+      "durationInSeconds": 421.709,
+      "jobs": [
+        {
+          "id": 339660101,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "pending",
+          "created_at": "2026-04-19T07:30:29Z",
+          "started_at": "2026-04-19T07:30:59Z",
+          "completed_at": "2026-04-19T07:37:30Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33966",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 391.709
+        }
+      ]
+    },
+    {
+      "id": 339650000,
+      "name": "PR #33965 compile - test(distributed/checkpoint): add NPU adaptation p",
+      "head_branch": "test-upstream-checkpoint-storage-v2.8.0",
+      "status": "completed",
+      "conclusion": "pending",
+      "created_at": "2026-04-19T07:17:26Z",
+      "updated_at": "2026-04-19T07:37:32Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33965",
+      "durationInSeconds": 1206.297,
+      "jobs": [
+        {
+          "id": 339650001,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "pending",
+          "created_at": "2026-04-19T07:17:26Z",
+          "started_at": "2026-04-19T07:18:01Z",
+          "completed_at": "2026-04-19T07:37:32Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33965",
+          "queueDurationInSeconds": 35,
+          "durationInSeconds": 1171.297
+        }
+      ]
+    },
+    {
+      "id": 339650100,
+      "name": "PR #33965 docs-ci - test(distributed/checkpoint): add NPU adaptation p",
+      "head_branch": "test-upstream-checkpoint-storage-v2.8.0",
+      "status": "completed",
+      "conclusion": "pending",
+      "created_at": "2026-04-19T07:17:26Z",
+      "updated_at": "2026-04-19T07:37:32Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33965",
+      "durationInSeconds": 1206.297,
+      "jobs": [
+        {
+          "id": 339650101,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "pending",
+          "created_at": "2026-04-19T07:17:26Z",
+          "started_at": "2026-04-19T07:17:56Z",
+          "completed_at": "2026-04-19T07:37:32Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33965",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 1176.297
+        }
+      ]
+    },
+    {
+      "id": 337860002,
+      "name": "PR #33786 compile - fix(npu):update Store test patch;",
+      "head_branch": "v2.7.1",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-04-19T06:20:18Z",
+      "updated_at": "2026-04-19T07:19:05Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33786",
+      "durationInSeconds": 3527,
+      "jobs": [
+        {
+          "id": 337860003,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-04-19T06:20:18Z",
+          "started_at": "2026-04-19T06:20:48Z",
+          "completed_at": "2026-04-19T07:19:05Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33786",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 3497
+        }
+      ]
+    },
+    {
+      "id": 337860102,
+      "name": "PR #33786 docs-ci - fix(npu):update Store test patch;",
+      "head_branch": "v2.7.1",
+      "status": "completed",
+      "conclusion": "pending",
+      "created_at": "2026-04-19T06:20:18Z",
+      "updated_at": "2026-04-19T07:37:33Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33786",
+      "durationInSeconds": 4635.944,
+      "jobs": [
+        {
+          "id": 337860103,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "pending",
+          "created_at": "2026-04-19T06:20:18Z",
+          "started_at": "2026-04-19T06:20:48Z",
+          "completed_at": "2026-04-19T07:37:33Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33786",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 4605.944
+        }
+      ]
+    },
+    {
+      "id": 339100000,
+      "name": "PR #33910 compile - test(rendezvous): add test for RendezvousHandler,R",
+      "head_branch": "master",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-04-19T06:13:06Z",
+      "updated_at": "2026-04-19T06:48:05Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33910",
+      "durationInSeconds": 2099,
+      "jobs": [
+        {
+          "id": 339100001,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-04-19T06:13:06Z",
+          "started_at": "2026-04-19T06:13:37Z",
+          "completed_at": "2026-04-19T06:48:05Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33910",
+          "queueDurationInSeconds": 31,
+          "durationInSeconds": 2068
+        }
+      ]
+    },
+    {
+      "id": 339100100,
+      "name": "PR #33910 docs-ci - test(rendezvous): add test for RendezvousHandler,R",
+      "head_branch": "master",
+      "status": "completed",
+      "conclusion": "pending",
+      "created_at": "2026-04-19T06:13:06Z",
+      "updated_at": "2026-04-19T07:37:36Z",
+      "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33910",
+      "durationInSeconds": 5070.015,
+      "jobs": [
+        {
+          "id": 339100101,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "pending",
+          "created_at": "2026-04-19T06:13:06Z",
+          "started_at": "2026-04-19T06:13:36Z",
+          "completed_at": "2026-04-19T07:37:36Z",
+          "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33910",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 5040.015
         }
       ]
     }
