@@ -1,0 +1,55 @@
+{
+  "prNumber": 11,
+  "owner": "Ascend",
+  "repo": "MindStudio-CommReport",
+  "createdAt": "2026-04-02T11:06:44+08:00",
+  "mergedAt": "2026-04-02T12:50:09+08:00",
+  "prSubmitToMerge": {
+    "durationSeconds": 6205,
+    "fromTime": "2026-04-02T11:06:44Z",
+    "toTime": "2026-04-02T12:50:09Z"
+  },
+  "compileToCiCycles": [
+    {
+      "compileTime": "2026-04-02T11:08:12Z",
+      "startTime": "2026-04-02T11:08:47Z",
+      "finishTime": "2026-04-02T11:11:41Z",
+      "durationSeconds": 209
+    },
+    {
+      "compileTime": "2026-04-02T12:05:19Z",
+      "startTime": "2026-04-02T12:11:50Z",
+      "finishTime": "2026-04-02T12:14:40Z",
+      "durationSeconds": 561
+    },
+    {
+      "compileTime": "2026-04-02T12:09:44Z",
+      "startTime": "2026-04-02T12:11:50Z",
+      "finishTime": "2026-04-02T12:14:40Z",
+      "durationSeconds": 296
+    },
+    {
+      "compileTime": "2026-04-02T11:08:12Z",
+      "startTime": "2026-04-02T11:08:42Z",
+      "finishTime": "2026-04-02T12:50:09Z",
+      "durationSeconds": 6117
+    },
+    {
+      "compileTime": "2026-04-02T12:05:19Z",
+      "startTime": "2026-04-02T12:05:49Z",
+      "finishTime": "2026-04-02T12:50:09Z",
+      "durationSeconds": 2690
+    },
+    {
+      "compileTime": "2026-04-02T12:09:44Z",
+      "startTime": "2026-04-02T12:10:14Z",
+      "finishTime": "2026-04-02T12:50:09Z",
+      "durationSeconds": 2425
+    }
+  ],
+  "lastCiRemovalToMerge": {
+    "durationSeconds": 0,
+    "fromTime": "2026-04-02T20:50:09Z",
+    "toTime": "2026-04-02T12:50:09Z"
+  }
+}

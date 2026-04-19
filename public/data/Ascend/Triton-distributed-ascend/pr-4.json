@@ -1,0 +1,43 @@
+{
+  "prNumber": 4,
+  "owner": "Ascend",
+  "repo": "Triton-distributed-ascend",
+  "createdAt": "2026-03-28T15:07:32+08:00",
+  "mergedAt": "2026-03-28T15:52:34+08:00",
+  "prSubmitToMerge": {
+    "durationSeconds": 2702,
+    "fromTime": "2026-03-28T15:07:32Z",
+    "toTime": "2026-03-28T15:52:34Z"
+  },
+  "compileToCiCycles": [
+    {
+      "compileTime": "2026-03-28T15:11:37Z",
+      "startTime": "2026-03-28T15:12:18Z",
+      "finishTime": "2026-03-28T15:15:54Z",
+      "durationSeconds": 257
+    },
+    {
+      "compileTime": "2026-03-28T15:25:42Z",
+      "startTime": "2026-03-28T15:26:17Z",
+      "finishTime": "2026-03-28T15:32:24Z",
+      "durationSeconds": 402
+    },
+    {
+      "compileTime": "2026-03-28T15:11:37Z",
+      "startTime": "2026-03-28T15:12:07Z",
+      "finishTime": "2026-03-28T15:52:34Z",
+      "durationSeconds": 2457
+    },
+    {
+      "compileTime": "2026-03-28T15:25:42Z",
+      "startTime": "2026-03-28T15:26:12Z",
+      "finishTime": "2026-03-28T15:52:34Z",
+      "durationSeconds": 1612
+    }
+  ],
+  "lastCiRemovalToMerge": {
+    "durationSeconds": 0,
+    "fromTime": "2026-03-28T23:52:34Z",
+    "toTime": "2026-03-28T15:52:34Z"
+  }
+}

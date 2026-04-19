@@ -190,6 +190,12 @@ function readConfig(): ReposConfig {
   }
 }
 
+function getBackfillSince(): Date | null {
+  const value = String(process.env.BACKFILL_SINCE || '').trim();
+  if (!value) return null;
+  return safeParseDate(value);
+}
+
 function readDayData(date: string): DayData {
   const filePath = path.join(DATA_DIR, `${date}.json`);
   try {
@@ -537,6 +543,7 @@ async function hydratePullRequest(
 async function main() {
   const config = readConfig();
   const retentionDays = parseInt(process.env.RETENTION_DAYS || '90');
+  const backfillSince = getBackfillSince();
   const requestedRepos = (process.env.TARGET_REPOS || '')
     .split(',')
     .map(repo => normalizeRepoIdentifier(repo))
@@ -569,7 +576,8 @@ async function main() {
       const repoPath = encodeURIComponent(repoName);
 
       const repoIndex = index.repos[canonicalRepo];
-      const lastUpdated = safeParseDate(repoIndex?.latest)
+      const lastUpdated = backfillSince
+        || safeParseDate(repoIndex?.latest)
         || subDays(new Date(), retentionDays);
 
       const since = format(lastUpdated, "yyyy-MM-dd'T'HH:mm:ssXXX");

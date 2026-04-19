@@ -1,0 +1,31 @@
+{
+  "prNumber": 23,
+  "owner": "Ascend",
+  "repo": "TransferQueue",
+  "createdAt": "2026-01-30T09:38:22+08:00",
+  "mergedAt": "2026-01-30T10:00:35+08:00",
+  "prSubmitToMerge": {
+    "durationSeconds": 1333,
+    "fromTime": "2026-01-30T09:38:22Z",
+    "toTime": "2026-01-30T10:00:35Z"
+  },
+  "compileToCiCycles": [
+    {
+      "compileTime": "2026-01-30T09:40:16Z",
+      "startTime": "2026-01-30T09:40:33Z",
+      "finishTime": "2026-01-30T09:42:42Z",
+      "durationSeconds": 146
+    },
+    {
+      "compileTime": "2026-01-30T09:40:16Z",
+      "startTime": "2026-01-30T09:40:46Z",
+      "finishTime": "2026-01-30T10:00:35Z",
+      "durationSeconds": 1219
+    }
+  ],
+  "lastCiRemovalToMerge": {
+    "durationSeconds": 0,
+    "fromTime": "2026-01-30T18:00:35Z",
+    "toTime": "2026-01-30T10:00:35Z"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "prNumber": 13,
+  "owner": "Ascend",
+  "repo": "OMSDK",
+  "createdAt": "2026-02-13T18:04:13+08:00",
+  "mergedAt": "2026-02-14T15:34:43+08:00",
+  "prSubmitToMerge": {
+    "durationSeconds": 77430,
+    "fromTime": "2026-02-13T18:04:13Z",
+    "toTime": "2026-02-14T15:34:43Z"
+  },
+  "compileToCiCycles": [
+    {
+      "compileTime": "2026-02-13T18:04:14Z",
+      "startTime": "2026-02-13T18:04:36Z",
+      "finishTime": "2026-02-13T18:21:34Z",
+      "durationSeconds": 1040
+    },
+    {
+      "compileTime": "2026-02-13T18:04:14Z",
+      "startTime": "2026-02-13T18:04:44Z",
+      "finishTime": "2026-02-14T15:34:43Z",
+      "durationSeconds": 77429
+    }
+  ],
+  "lastCiRemovalToMerge": {
+    "durationSeconds": 0,
+    "fromTime": "2026-02-14T23:34:43Z",
+    "toTime": "2026-02-14T15:34:43Z"
+  }
+}

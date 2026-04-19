@@ -1,0 +1,43 @@
+{
+  "prNumber": 32,
+  "owner": "Ascend",
+  "repo": "HierarchicalKV-ascend",
+  "createdAt": "2026-03-23T15:29:49+08:00",
+  "mergedAt": "2026-03-23T17:16:14+08:00",
+  "prSubmitToMerge": {
+    "durationSeconds": 6385,
+    "fromTime": "2026-03-23T15:29:49Z",
+    "toTime": "2026-03-23T17:16:14Z"
+  },
+  "compileToCiCycles": [
+    {
+      "compileTime": "2026-03-23T15:29:51Z",
+      "startTime": "2026-03-23T15:30:20Z",
+      "finishTime": "2026-03-23T15:34:39Z",
+      "durationSeconds": 288
+    },
+    {
+      "compileTime": "2026-03-23T15:36:13Z",
+      "startTime": "2026-03-23T15:36:41Z",
+      "finishTime": "2026-03-23T15:39:40Z",
+      "durationSeconds": 207
+    },
+    {
+      "compileTime": "2026-03-23T15:29:51Z",
+      "startTime": "2026-03-23T15:30:21Z",
+      "finishTime": "2026-03-23T17:16:14Z",
+      "durationSeconds": 6383
+    },
+    {
+      "compileTime": "2026-03-23T15:36:13Z",
+      "startTime": "2026-03-23T15:36:43Z",
+      "finishTime": "2026-03-23T17:16:14Z",
+      "durationSeconds": 6001
+    }
+  ],
+  "lastCiRemovalToMerge": {
+    "durationSeconds": 0,
+    "fromTime": "2026-03-24T01:16:14Z",
+    "toTime": "2026-03-23T17:16:14Z"
+  }
+}

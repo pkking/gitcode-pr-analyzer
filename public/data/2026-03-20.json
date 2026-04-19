@@ -1,6 +1,6 @@
 {
   "date": "2026-03-20",
-  "repo": "Ascend/AscendNPU-IR",
+  "repo": "Ascend/MindStudio-Ops-Profiler",
   "runs": [
     {
       "id": 40000,
@@ -8,8 +8,8 @@
       "head_branch": "qwen3-8b-npu",
       "status": "completed",
       "conclusion": "failure",
-      "created_at": "2026-03-20T02:40:25Z",
-      "updated_at": "2026-03-20T02:43:16Z",
+      "created_at": "2026-03-20T10:40:25Z",
+      "updated_at": "2026-03-20T10:43:16Z",
       "html_url": "https://gitcode.com/Ascend/slime-ascend/merge_requests/4",
       "durationInSeconds": 171,
       "jobs": [
@@ -18,9 +18,9 @@
           "name": "ci-pipeline-running",
           "status": "completed",
           "conclusion": "failure",
-          "created_at": "2026-03-20T02:40:25Z",
-          "started_at": "2026-03-20T02:40:46Z",
-          "completed_at": "2026-03-20T02:43:16Z",
+          "created_at": "2026-03-20T10:40:25Z",
+          "started_at": "2026-03-20T10:40:46Z",
+          "completed_at": "2026-03-20T10:43:16Z",
           "html_url": "https://gitcode.com/Ascend/slime-ascend/merge_requests/4",
           "queueDurationInSeconds": 21,
           "durationInSeconds": 150
@@ -33,8 +33,8 @@
       "head_branch": "qwen3-8b-npu",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-03-20T02:40:25Z",
-      "updated_at": "2026-04-11T10:08:35Z",
+      "created_at": "2026-03-20T10:40:25Z",
+      "updated_at": "2026-04-11T18:08:35Z",
       "html_url": "https://gitcode.com/Ascend/slime-ascend/merge_requests/4",
       "durationInSeconds": 1927690,
       "jobs": [
@@ -43,9 +43,9 @@
           "name": "docs-ci",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-03-20T02:40:25Z",
-          "started_at": "2026-03-20T02:40:55Z",
-          "completed_at": "2026-04-11T10:08:35Z",
+          "created_at": "2026-03-20T10:40:25Z",
+          "started_at": "2026-03-20T10:40:55Z",
+          "completed_at": "2026-04-11T18:08:35Z",
           "html_url": "https://gitcode.com/Ascend/slime-ascend/merge_requests/4",
           "queueDurationInSeconds": 30,
           "durationInSeconds": 1927660
@@ -54,51 +54,51 @@
     },
     {
       "id": 170000,
-      "name": "PR #17 compile - [doc] Add home page readme for slime-ascend",
-      "head_branch": "main",
+      "name": "PR #17 compile - 支持docker部署pd分离",
+      "head_branch": "docker-only",
       "status": "completed",
-      "conclusion": "success",
-      "created_at": "2026-03-20T02:41:45Z",
-      "updated_at": "2026-03-20T02:46:31Z",
-      "html_url": "https://gitcode.com/Ascend/slime-ascend/merge_requests/17",
-      "durationInSeconds": 286,
+      "conclusion": "failure",
+      "created_at": "2026-03-19T18:12:54Z",
+      "updated_at": "2026-03-19T18:17:48Z",
+      "html_url": "https://gitcode.com/Ascend/MindIE-PyMotor/merge_requests/17",
+      "durationInSeconds": 294,
       "jobs": [
         {
           "id": 170001,
           "name": "ci-pipeline-running",
           "status": "completed",
-          "conclusion": "success",
-          "created_at": "2026-03-20T02:41:45Z",
-          "started_at": "2026-03-20T02:42:08Z",
-          "completed_at": "2026-03-20T02:46:31Z",
-          "html_url": "https://gitcode.com/Ascend/slime-ascend/merge_requests/17",
-          "queueDurationInSeconds": 23,
-          "durationInSeconds": 263
+          "conclusion": "failure",
+          "created_at": "2026-03-19T18:12:54Z",
+          "started_at": "2026-03-19T18:13:19Z",
+          "completed_at": "2026-03-19T18:17:48Z",
+          "html_url": "https://gitcode.com/Ascend/MindIE-PyMotor/merge_requests/17",
+          "queueDurationInSeconds": 25,
+          "durationInSeconds": 269
         }
       ]
     },
     {
       "id": 170100,
-      "name": "PR #17 docs-ci - [doc] Add home page readme for slime-ascend",
-      "head_branch": "main",
+      "name": "PR #17 docs-ci - 支持docker部署pd分离",
+      "head_branch": "docker-only",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-03-20T02:41:45Z",
-      "updated_at": "2026-03-21T06:41:33Z",
-      "html_url": "https://gitcode.com/Ascend/slime-ascend/merge_requests/17",
-      "durationInSeconds": 100788,
+      "created_at": "2026-03-19T18:12:54Z",
+      "updated_at": "2026-03-26T16:46:10Z",
+      "html_url": "https://gitcode.com/Ascend/MindIE-PyMotor/merge_requests/17",
+      "durationInSeconds": 599596,
       "jobs": [
         {
           "id": 170101,
           "name": "docs-ci",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-03-20T02:41:45Z",
-          "started_at": "2026-03-20T02:42:15Z",
-          "completed_at": "2026-03-21T06:41:33Z",
-          "html_url": "https://gitcode.com/Ascend/slime-ascend/merge_requests/17",
+          "created_at": "2026-03-19T18:12:54Z",
+          "started_at": "2026-03-19T18:13:24Z",
+          "completed_at": "2026-03-26T16:46:10Z",
+          "html_url": "https://gitcode.com/Ascend/MindIE-PyMotor/merge_requests/17",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 100758
+          "durationInSeconds": 599566
         }
       ]
     },
@@ -108,8 +108,8 @@
       "head_branch": "add-8B",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-03-20T03:33:51Z",
-      "updated_at": "2026-03-20T03:37:27Z",
+      "created_at": "2026-03-20T11:33:51Z",
+      "updated_at": "2026-03-20T11:37:27Z",
       "html_url": "https://gitcode.com/Ascend/slime-ascend/merge_requests/19",
       "durationInSeconds": 216,
       "jobs": [
@@ -118,9 +118,9 @@
           "name": "ci-pipeline-running",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-03-20T03:33:51Z",
-          "started_at": "2026-03-20T03:34:09Z",
-          "completed_at": "2026-03-20T03:37:27Z",
+          "created_at": "2026-03-20T11:33:51Z",
+          "started_at": "2026-03-20T11:34:09Z",
+          "completed_at": "2026-03-20T11:37:27Z",
           "html_url": "https://gitcode.com/Ascend/slime-ascend/merge_requests/19",
           "queueDurationInSeconds": 18,
           "durationInSeconds": 198
@@ -133,22 +133,22 @@
       "head_branch": "add-8B",
       "status": "completed",
       "conclusion": "pending",
-      "created_at": "2026-03-20T03:33:51Z",
-      "updated_at": "2026-04-12T14:08:22Z",
+      "created_at": "2026-03-20T11:33:51Z",
+      "updated_at": "2026-04-19T20:32:22Z",
       "html_url": "https://gitcode.com/Ascend/slime-ascend/merge_requests/19",
-      "durationInSeconds": 2025271.249,
+      "durationInSeconds": 2624311.285,
       "jobs": [
         {
           "id": 190101,
           "name": "docs-ci",
           "status": "completed",
           "conclusion": "pending",
-          "created_at": "2026-03-20T03:33:51Z",
-          "started_at": "2026-03-20T03:34:21Z",
-          "completed_at": "2026-04-12T14:08:22Z",
+          "created_at": "2026-03-20T11:33:51Z",
+          "started_at": "2026-03-20T11:34:21Z",
+          "completed_at": "2026-04-19T20:32:22Z",
           "html_url": "https://gitcode.com/Ascend/slime-ascend/merge_requests/19",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 2025241.249
+          "durationInSeconds": 2624281.285
         }
       ]
     },
@@ -158,8 +158,8 @@
       "head_branch": "docker-only",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-03-20T07:33:37Z",
-      "updated_at": "2026-03-20T07:40:12Z",
+      "created_at": "2026-03-20T15:33:37Z",
+      "updated_at": "2026-03-20T15:40:12Z",
       "html_url": "https://gitcode.com/Ascend/MindIE-PyMotor/merge_requests/17",
       "durationInSeconds": 395,
       "jobs": [
@@ -168,9 +168,9 @@
           "name": "ci-pipeline-running",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-03-20T07:33:37Z",
-          "started_at": "2026-03-20T07:34:04Z",
-          "completed_at": "2026-03-20T07:40:12Z",
+          "created_at": "2026-03-20T15:33:37Z",
+          "started_at": "2026-03-20T15:34:04Z",
+          "completed_at": "2026-03-20T15:40:12Z",
           "html_url": "https://gitcode.com/Ascend/MindIE-PyMotor/merge_requests/17",
           "queueDurationInSeconds": 27,
           "durationInSeconds": 368
@@ -183,8 +183,8 @@
       "head_branch": "docker-only",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-03-20T07:33:37Z",
-      "updated_at": "2026-03-26T08:46:10Z",
+      "created_at": "2026-03-20T15:33:37Z",
+      "updated_at": "2026-03-26T16:46:10Z",
       "html_url": "https://gitcode.com/Ascend/MindIE-PyMotor/merge_requests/17",
       "durationInSeconds": 522753,
       "jobs": [
@@ -193,9 +193,9 @@
           "name": "docs-ci",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-03-20T07:33:37Z",
-          "started_at": "2026-03-20T07:34:07Z",
-          "completed_at": "2026-03-26T08:46:10Z",
+          "created_at": "2026-03-20T15:33:37Z",
+          "started_at": "2026-03-20T15:34:07Z",
+          "completed_at": "2026-03-26T16:46:10Z",
           "html_url": "https://gitcode.com/Ascend/MindIE-PyMotor/merge_requests/17",
           "queueDurationInSeconds": 30,
           "durationInSeconds": 522723
@@ -208,8 +208,8 @@
       "head_branch": "master",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-03-20T06:24:07Z",
-      "updated_at": "2026-03-20T06:32:09Z",
+      "created_at": "2026-03-20T14:24:07Z",
+      "updated_at": "2026-03-20T14:32:09Z",
       "html_url": "https://gitcode.com/Ascend/MindIE-PyMotor/merge_requests/5",
       "durationInSeconds": 482,
       "jobs": [
@@ -218,9 +218,9 @@
           "name": "ci-pipeline-running",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-03-20T06:24:07Z",
-          "started_at": "2026-03-20T06:24:31Z",
-          "completed_at": "2026-03-20T06:32:09Z",
+          "created_at": "2026-03-20T14:24:07Z",
+          "started_at": "2026-03-20T14:24:31Z",
+          "completed_at": "2026-03-20T14:32:09Z",
           "html_url": "https://gitcode.com/Ascend/MindIE-PyMotor/merge_requests/5",
           "queueDurationInSeconds": 24,
           "durationInSeconds": 458
@@ -233,8 +233,8 @@
       "head_branch": "master",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-03-20T07:04:01Z",
-      "updated_at": "2026-03-20T07:14:18Z",
+      "created_at": "2026-03-20T15:04:01Z",
+      "updated_at": "2026-03-20T15:14:18Z",
       "html_url": "https://gitcode.com/Ascend/MindIE-PyMotor/merge_requests/5",
       "durationInSeconds": 617,
       "jobs": [
@@ -243,9 +243,9 @@
           "name": "ci-pipeline-running",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-03-20T07:04:01Z",
-          "started_at": "2026-03-20T07:04:25Z",
-          "completed_at": "2026-03-20T07:14:18Z",
+          "created_at": "2026-03-20T15:04:01Z",
+          "started_at": "2026-03-20T15:04:25Z",
+          "completed_at": "2026-03-20T15:14:18Z",
           "html_url": "https://gitcode.com/Ascend/MindIE-PyMotor/merge_requests/5",
           "queueDurationInSeconds": 24,
           "durationInSeconds": 593
@@ -283,8 +283,8 @@
       "head_branch": "master",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-03-20T06:24:07Z",
-      "updated_at": "2026-03-24T02:22:05Z",
+      "created_at": "2026-03-20T14:24:07Z",
+      "updated_at": "2026-03-24T10:22:05Z",
       "html_url": "https://gitcode.com/Ascend/MindIE-PyMotor/merge_requests/5",
       "durationInSeconds": 331078,
       "jobs": [
@@ -293,9 +293,9 @@
           "name": "docs-ci",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-03-20T06:24:07Z",
-          "started_at": "2026-03-20T06:24:37Z",
-          "completed_at": "2026-03-24T02:22:05Z",
+          "created_at": "2026-03-20T14:24:07Z",
+          "started_at": "2026-03-20T14:24:37Z",
+          "completed_at": "2026-03-24T10:22:05Z",
           "html_url": "https://gitcode.com/Ascend/MindIE-PyMotor/merge_requests/5",
           "queueDurationInSeconds": 30,
           "durationInSeconds": 331048
@@ -308,8 +308,8 @@
       "head_branch": "master",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-03-20T07:04:01Z",
-      "updated_at": "2026-03-24T02:22:05Z",
+      "created_at": "2026-03-20T15:04:01Z",
+      "updated_at": "2026-03-24T10:22:05Z",
       "html_url": "https://gitcode.com/Ascend/MindIE-PyMotor/merge_requests/5",
       "durationInSeconds": 328684,
       "jobs": [
@@ -318,9 +318,9 @@
           "name": "docs-ci",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-03-20T07:04:01Z",
-          "started_at": "2026-03-20T07:04:31Z",
-          "completed_at": "2026-03-24T02:22:05Z",
+          "created_at": "2026-03-20T15:04:01Z",
+          "started_at": "2026-03-20T15:04:31Z",
+          "completed_at": "2026-03-24T10:22:05Z",
           "html_url": "https://gitcode.com/Ascend/MindIE-PyMotor/merge_requests/5",
           "queueDurationInSeconds": 30,
           "durationInSeconds": 328654
@@ -358,8 +358,8 @@
       "head_branch": "develop_erase_if",
       "status": "completed",
       "conclusion": "failure",
-      "created_at": "2026-03-20T03:01:39Z",
-      "updated_at": "2026-03-20T03:08:23Z",
+      "created_at": "2026-03-20T11:01:39Z",
+      "updated_at": "2026-03-20T11:08:23Z",
       "html_url": "https://gitcode.com/Ascend/HierarchicalKV-ascend/merge_requests/28",
       "durationInSeconds": 404,
       "jobs": [
@@ -368,9 +368,9 @@
           "name": "ci-pipeline-running",
           "status": "completed",
           "conclusion": "failure",
-          "created_at": "2026-03-20T03:01:39Z",
-          "started_at": "2026-03-20T03:02:06Z",
-          "completed_at": "2026-03-20T03:08:23Z",
+          "created_at": "2026-03-20T11:01:39Z",
+          "started_at": "2026-03-20T11:02:06Z",
+          "completed_at": "2026-03-20T11:08:23Z",
           "html_url": "https://gitcode.com/Ascend/HierarchicalKV-ascend/merge_requests/28",
           "queueDurationInSeconds": 27,
           "durationInSeconds": 377
@@ -383,8 +383,8 @@
       "head_branch": "develop_erase_if",
       "status": "completed",
       "conclusion": "failure",
-      "created_at": "2026-03-20T04:10:34Z",
-      "updated_at": "2026-03-20T04:15:52Z",
+      "created_at": "2026-03-20T12:10:34Z",
+      "updated_at": "2026-03-20T12:15:52Z",
       "html_url": "https://gitcode.com/Ascend/HierarchicalKV-ascend/merge_requests/28",
       "durationInSeconds": 318,
       "jobs": [
@@ -393,9 +393,9 @@
           "name": "ci-pipeline-running",
           "status": "completed",
           "conclusion": "failure",
-          "created_at": "2026-03-20T04:10:34Z",
-          "started_at": "2026-03-20T04:10:57Z",
-          "completed_at": "2026-03-20T04:15:52Z",
+          "created_at": "2026-03-20T12:10:34Z",
+          "started_at": "2026-03-20T12:10:57Z",
+          "completed_at": "2026-03-20T12:15:52Z",
           "html_url": "https://gitcode.com/Ascend/HierarchicalKV-ascend/merge_requests/28",
           "queueDurationInSeconds": 23,
           "durationInSeconds": 295
@@ -408,8 +408,8 @@
       "head_branch": "develop_erase_if",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-03-20T03:01:39Z",
-      "updated_at": "2026-03-23T02:10:42Z",
+      "created_at": "2026-03-20T11:01:39Z",
+      "updated_at": "2026-03-23T10:10:42Z",
       "html_url": "https://gitcode.com/Ascend/HierarchicalKV-ascend/merge_requests/28",
       "durationInSeconds": 256143,
       "jobs": [
@@ -418,9 +418,9 @@
           "name": "docs-ci",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-03-20T03:01:39Z",
-          "started_at": "2026-03-20T03:02:09Z",
-          "completed_at": "2026-03-23T02:10:42Z",
+          "created_at": "2026-03-20T11:01:39Z",
+          "started_at": "2026-03-20T11:02:09Z",
+          "completed_at": "2026-03-23T10:10:42Z",
           "html_url": "https://gitcode.com/Ascend/HierarchicalKV-ascend/merge_requests/28",
           "queueDurationInSeconds": 30,
           "durationInSeconds": 256113
@@ -433,8 +433,8 @@
       "head_branch": "develop_erase_if",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-03-20T04:10:34Z",
-      "updated_at": "2026-03-23T02:10:42Z",
+      "created_at": "2026-03-20T12:10:34Z",
+      "updated_at": "2026-03-23T10:10:42Z",
       "html_url": "https://gitcode.com/Ascend/HierarchicalKV-ascend/merge_requests/28",
       "durationInSeconds": 252008,
       "jobs": [
@@ -443,9 +443,9 @@
           "name": "docs-ci",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-03-20T04:10:34Z",
-          "started_at": "2026-03-20T04:11:04Z",
-          "completed_at": "2026-03-23T02:10:42Z",
+          "created_at": "2026-03-20T12:10:34Z",
+          "started_at": "2026-03-20T12:11:04Z",
+          "completed_at": "2026-03-23T10:10:42Z",
           "html_url": "https://gitcode.com/Ascend/HierarchicalKV-ascend/merge_requests/28",
           "queueDurationInSeconds": 30,
           "durationInSeconds": 251978
@@ -458,8 +458,8 @@
       "head_branch": "http",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-03-20T01:23:09Z",
-      "updated_at": "2026-03-20T01:31:15Z",
+      "created_at": "2026-03-20T09:23:09Z",
+      "updated_at": "2026-03-20T09:31:15Z",
       "html_url": "https://gitcode.com/Ascend/MindIE-PyMotor/merge_requests/25",
       "durationInSeconds": 486,
       "jobs": [
@@ -468,9 +468,9 @@
           "name": "ci-pipeline-running",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-03-20T01:23:09Z",
-          "started_at": "2026-03-20T01:23:35Z",
-          "completed_at": "2026-03-20T01:31:15Z",
+          "created_at": "2026-03-20T09:23:09Z",
+          "started_at": "2026-03-20T09:23:35Z",
+          "completed_at": "2026-03-20T09:31:15Z",
           "html_url": "https://gitcode.com/Ascend/MindIE-PyMotor/merge_requests/25",
           "queueDurationInSeconds": 26,
           "durationInSeconds": 460
@@ -483,8 +483,8 @@
       "head_branch": "http",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-03-20T01:23:09Z",
-      "updated_at": "2026-03-23T08:39:36Z",
+      "created_at": "2026-03-20T09:23:09Z",
+      "updated_at": "2026-03-23T16:39:36Z",
       "html_url": "https://gitcode.com/Ascend/MindIE-PyMotor/merge_requests/25",
       "durationInSeconds": 285387,
       "jobs": [
@@ -493,9 +493,9 @@
           "name": "docs-ci",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-03-20T01:23:09Z",
-          "started_at": "2026-03-20T01:23:39Z",
-          "completed_at": "2026-03-23T08:39:36Z",
+          "created_at": "2026-03-20T09:23:09Z",
+          "started_at": "2026-03-20T09:23:39Z",
+          "completed_at": "2026-03-23T16:39:36Z",
           "html_url": "https://gitcode.com/Ascend/MindIE-PyMotor/merge_requests/25",
           "queueDurationInSeconds": 30,
           "durationInSeconds": 285357
@@ -508,8 +508,8 @@
       "head_branch": "assign_values_with_unique_key_is_false",
       "status": "completed",
       "conclusion": "failure",
-      "created_at": "2026-03-20T07:46:55Z",
-      "updated_at": "2026-03-20T07:53:12Z",
+      "created_at": "2026-03-20T15:46:55Z",
+      "updated_at": "2026-03-20T15:53:12Z",
       "html_url": "https://gitcode.com/Ascend/HierarchicalKV-ascend/merge_requests/29",
       "durationInSeconds": 377,
       "jobs": [
@@ -518,9 +518,9 @@
           "name": "ci-pipeline-running",
           "status": "completed",
           "conclusion": "failure",
-          "created_at": "2026-03-20T07:46:55Z",
-          "started_at": "2026-03-20T07:47:23Z",
-          "completed_at": "2026-03-20T07:53:12Z",
+          "created_at": "2026-03-20T15:46:55Z",
+          "started_at": "2026-03-20T15:47:23Z",
+          "completed_at": "2026-03-20T15:53:12Z",
           "html_url": "https://gitcode.com/Ascend/HierarchicalKV-ascend/merge_requests/29",
           "queueDurationInSeconds": 28,
           "durationInSeconds": 349
@@ -533,8 +533,8 @@
       "head_branch": "assign_values_with_unique_key_is_false",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-03-20T07:46:55Z",
-      "updated_at": "2026-03-23T03:11:27Z",
+      "created_at": "2026-03-20T15:46:55Z",
+      "updated_at": "2026-03-23T11:11:27Z",
       "html_url": "https://gitcode.com/Ascend/HierarchicalKV-ascend/merge_requests/29",
       "durationInSeconds": 242672,
       "jobs": [
@@ -543,9 +543,9 @@
           "name": "docs-ci",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-03-20T07:46:55Z",
-          "started_at": "2026-03-20T07:47:25Z",
-          "completed_at": "2026-03-23T03:11:27Z",
+          "created_at": "2026-03-20T15:46:55Z",
+          "started_at": "2026-03-20T15:47:25Z",
+          "completed_at": "2026-03-23T11:11:27Z",
           "html_url": "https://gitcode.com/Ascend/HierarchicalKV-ascend/merge_requests/29",
           "queueDurationInSeconds": 30,
           "durationInSeconds": 242642
@@ -558,8 +558,8 @@
       "head_branch": "assign_values_with_unique_key_is_false",
       "status": "completed",
       "conclusion": "failure",
-      "created_at": "2026-03-20T07:51:38Z",
-      "updated_at": "2026-03-20T07:53:12Z",
+      "created_at": "2026-03-20T15:51:38Z",
+      "updated_at": "2026-03-20T15:53:12Z",
       "html_url": "https://gitcode.com/Ascend/HierarchicalKV-ascend/merge_requests/29",
       "durationInSeconds": 94,
       "jobs": [
@@ -568,9 +568,9 @@
           "name": "ci-pipeline-running",
           "status": "completed",
           "conclusion": "failure",
-          "created_at": "2026-03-20T07:51:38Z",
-          "started_at": "2026-03-20T07:55:35Z",
-          "completed_at": "2026-03-20T07:53:12Z",
+          "created_at": "2026-03-20T15:51:38Z",
+          "started_at": "2026-03-20T15:55:35Z",
+          "completed_at": "2026-03-20T15:53:12Z",
           "html_url": "https://gitcode.com/Ascend/HierarchicalKV-ascend/merge_requests/29",
           "queueDurationInSeconds": 237,
           "durationInSeconds": 0
@@ -683,8 +683,8 @@
       "head_branch": "assign_values_with_unique_key_is_false",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-03-20T07:51:38Z",
-      "updated_at": "2026-03-23T03:11:27Z",
+      "created_at": "2026-03-20T15:51:38Z",
+      "updated_at": "2026-03-23T11:11:27Z",
       "html_url": "https://gitcode.com/Ascend/HierarchicalKV-ascend/merge_requests/29",
       "durationInSeconds": 242389,
       "jobs": [
@@ -693,9 +693,9 @@
           "name": "docs-ci",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-03-20T07:51:38Z",
-          "started_at": "2026-03-20T07:52:08Z",
-          "completed_at": "2026-03-23T03:11:27Z",
+          "created_at": "2026-03-20T15:51:38Z",
+          "started_at": "2026-03-20T15:52:08Z",
+          "completed_at": "2026-03-23T11:11:27Z",
           "html_url": "https://gitcode.com/Ascend/HierarchicalKV-ascend/merge_requests/29",
           "queueDurationInSeconds": 30,
           "durationInSeconds": 242359
@@ -808,8 +808,8 @@
       "head_branch": "assign_scores_unique_key_false",
       "status": "completed",
       "conclusion": "failure",
-      "created_at": "2026-03-20T03:45:46Z",
-      "updated_at": "2026-03-20T03:50:31Z",
+      "created_at": "2026-03-20T11:45:46Z",
+      "updated_at": "2026-03-20T11:50:31Z",
       "html_url": "https://gitcode.com/Ascend/HierarchicalKV-ascend/merge_requests/26",
       "durationInSeconds": 285,
       "jobs": [
@@ -818,9 +818,9 @@
           "name": "ci-pipeline-running",
           "status": "completed",
           "conclusion": "failure",
-          "created_at": "2026-03-20T03:45:46Z",
-          "started_at": "2026-03-20T03:46:09Z",
-          "completed_at": "2026-03-20T03:50:31Z",
+          "created_at": "2026-03-20T11:45:46Z",
+          "started_at": "2026-03-20T11:46:09Z",
+          "completed_at": "2026-03-20T11:50:31Z",
           "html_url": "https://gitcode.com/Ascend/HierarchicalKV-ascend/merge_requests/26",
           "queueDurationInSeconds": 23,
           "durationInSeconds": 262
@@ -833,8 +833,8 @@
       "head_branch": "assign_scores_unique_key_false",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-03-20T06:53:20Z",
-      "updated_at": "2026-03-20T06:57:34Z",
+      "created_at": "2026-03-20T14:53:20Z",
+      "updated_at": "2026-03-20T14:57:34Z",
       "html_url": "https://gitcode.com/Ascend/HierarchicalKV-ascend/merge_requests/26",
       "durationInSeconds": 254,
       "jobs": [
@@ -843,9 +843,9 @@
           "name": "ci-pipeline-running",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-03-20T06:53:20Z",
-          "started_at": "2026-03-20T06:53:43Z",
-          "completed_at": "2026-03-20T06:57:34Z",
+          "created_at": "2026-03-20T14:53:20Z",
+          "started_at": "2026-03-20T14:53:43Z",
+          "completed_at": "2026-03-20T14:57:34Z",
           "html_url": "https://gitcode.com/Ascend/HierarchicalKV-ascend/merge_requests/26",
           "queueDurationInSeconds": 23,
           "durationInSeconds": 231
@@ -858,8 +858,8 @@
       "head_branch": "assign_scores_unique_key_false",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-03-20T03:45:46Z",
-      "updated_at": "2026-03-20T09:23:13Z",
+      "created_at": "2026-03-20T11:45:46Z",
+      "updated_at": "2026-03-20T17:23:13Z",
       "html_url": "https://gitcode.com/Ascend/HierarchicalKV-ascend/merge_requests/26",
       "durationInSeconds": 20247,
       "jobs": [
@@ -868,9 +868,9 @@
           "name": "docs-ci",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-03-20T03:45:46Z",
-          "started_at": "2026-03-20T03:46:16Z",
-          "completed_at": "2026-03-20T09:23:13Z",
+          "created_at": "2026-03-20T11:45:46Z",
+          "started_at": "2026-03-20T11:46:16Z",
+          "completed_at": "2026-03-20T17:23:13Z",
           "html_url": "https://gitcode.com/Ascend/HierarchicalKV-ascend/merge_requests/26",
           "queueDurationInSeconds": 30,
           "durationInSeconds": 20217
@@ -883,8 +883,8 @@
       "head_branch": "assign_scores_unique_key_false",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-03-20T06:53:20Z",
-      "updated_at": "2026-03-20T09:23:13Z",
+      "created_at": "2026-03-20T14:53:20Z",
+      "updated_at": "2026-03-20T17:23:13Z",
       "html_url": "https://gitcode.com/Ascend/HierarchicalKV-ascend/merge_requests/26",
       "durationInSeconds": 8993,
       "jobs": [
@@ -893,9 +893,9 @@
           "name": "docs-ci",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-03-20T06:53:20Z",
-          "started_at": "2026-03-20T06:53:50Z",
-          "completed_at": "2026-03-20T09:23:13Z",
+          "created_at": "2026-03-20T14:53:20Z",
+          "started_at": "2026-03-20T14:53:50Z",
+          "completed_at": "2026-03-20T17:23:13Z",
           "html_url": "https://gitcode.com/Ascend/HierarchicalKV-ascend/merge_requests/26",
           "queueDurationInSeconds": 30,
           "durationInSeconds": 8963
@@ -908,8 +908,8 @@
       "head_branch": "260320/mssanitizer_fix_lrelu_alpha",
       "status": "completed",
       "conclusion": "failure",
-      "created_at": "2026-03-20T01:54:22Z",
-      "updated_at": "2026-03-20T01:56:26Z",
+      "created_at": "2026-03-20T09:54:22Z",
+      "updated_at": "2026-03-20T09:56:26Z",
       "html_url": "https://gitcode.com/Ascend/msopcom/merge_requests/76",
       "durationInSeconds": 124,
       "jobs": [
@@ -918,9 +918,9 @@
           "name": "ci-pipeline-running",
           "status": "completed",
           "conclusion": "failure",
-          "created_at": "2026-03-20T01:54:22Z",
-          "started_at": "2026-03-20T01:56:10Z",
-          "completed_at": "2026-03-20T01:56:26Z",
+          "created_at": "2026-03-20T09:54:22Z",
+          "started_at": "2026-03-20T09:56:10Z",
+          "completed_at": "2026-03-20T09:56:26Z",
           "html_url": "https://gitcode.com/Ascend/msopcom/merge_requests/76",
           "queueDurationInSeconds": 108,
           "durationInSeconds": 16
@@ -933,8 +933,8 @@
       "head_branch": "260320/mssanitizer_fix_lrelu_alpha",
       "status": "completed",
       "conclusion": "failure",
-      "created_at": "2026-03-20T03:27:29Z",
-      "updated_at": "2026-03-20T03:36:07Z",
+      "created_at": "2026-03-20T11:27:29Z",
+      "updated_at": "2026-03-20T11:36:07Z",
       "html_url": "https://gitcode.com/Ascend/msopcom/merge_requests/76",
       "durationInSeconds": 518,
       "jobs": [
@@ -943,9 +943,9 @@
           "name": "ci-pipeline-running",
           "status": "completed",
           "conclusion": "failure",
-          "created_at": "2026-03-20T03:27:29Z",
-          "started_at": "2026-03-20T03:28:18Z",
-          "completed_at": "2026-03-20T03:36:07Z",
+          "created_at": "2026-03-20T11:27:29Z",
+          "started_at": "2026-03-20T11:28:18Z",
+          "completed_at": "2026-03-20T11:36:07Z",
           "html_url": "https://gitcode.com/Ascend/msopcom/merge_requests/76",
           "queueDurationInSeconds": 49,
           "durationInSeconds": 469
@@ -958,8 +958,8 @@
       "head_branch": "260320/mssanitizer_fix_lrelu_alpha",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-03-20T01:54:22Z",
-      "updated_at": "2026-03-20T01:55:24Z",
+      "created_at": "2026-03-20T09:54:22Z",
+      "updated_at": "2026-03-20T09:55:24Z",
       "html_url": "https://gitcode.com/Ascend/msopcom/merge_requests/76",
       "durationInSeconds": 62,
       "jobs": [
@@ -968,9 +968,9 @@
           "name": "docs-ci-pipeline-running",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-03-20T01:54:22Z",
-          "started_at": "2026-03-20T01:54:50Z",
-          "completed_at": "2026-03-20T01:55:24Z",
+          "created_at": "2026-03-20T09:54:22Z",
+          "started_at": "2026-03-20T09:54:50Z",
+          "completed_at": "2026-03-20T09:55:24Z",
           "html_url": "https://gitcode.com/Ascend/msopcom/merge_requests/76",
           "queueDurationInSeconds": 28,
           "durationInSeconds": 34
@@ -983,8 +983,8 @@
       "head_branch": "260320/mssanitizer_fix_lrelu_alpha",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-03-20T03:27:29Z",
-      "updated_at": "2026-03-20T03:28:42Z",
+      "created_at": "2026-03-20T11:27:29Z",
+      "updated_at": "2026-03-20T11:28:42Z",
       "html_url": "https://gitcode.com/Ascend/msopcom/merge_requests/76",
       "durationInSeconds": 73,
       "jobs": [
@@ -993,9 +993,9 @@
           "name": "docs-ci-pipeline-running",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-03-20T03:27:29Z",
-          "started_at": "2026-03-20T03:28:07Z",
-          "completed_at": "2026-03-20T03:28:42Z",
+          "created_at": "2026-03-20T11:27:29Z",
+          "started_at": "2026-03-20T11:28:07Z",
+          "completed_at": "2026-03-20T11:28:42Z",
           "html_url": "https://gitcode.com/Ascend/msopcom/merge_requests/76",
           "queueDurationInSeconds": 38,
           "durationInSeconds": 35
@@ -1108,8 +1108,8 @@
       "head_branch": "bugfix",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-03-20T01:43:50Z",
-      "updated_at": "2026-03-20T01:56:56Z",
+      "created_at": "2026-03-20T09:43:50Z",
+      "updated_at": "2026-03-20T09:56:56Z",
       "html_url": "https://gitcode.com/Ascend/msopcom/merge_requests/69",
       "durationInSeconds": 786,
       "jobs": [
@@ -1118,9 +1118,9 @@
           "name": "ci-pipeline-running",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-03-20T01:43:50Z",
-          "started_at": "2026-03-20T01:44:33Z",
-          "completed_at": "2026-03-20T01:56:56Z",
+          "created_at": "2026-03-20T09:43:50Z",
+          "started_at": "2026-03-20T09:44:33Z",
+          "completed_at": "2026-03-20T09:56:56Z",
           "html_url": "https://gitcode.com/Ascend/msopcom/merge_requests/69",
           "queueDurationInSeconds": 43,
           "durationInSeconds": 743
@@ -1133,8 +1133,8 @@
       "head_branch": "bugfix",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-03-20T01:43:50Z",
-      "updated_at": "2026-03-20T01:44:52Z",
+      "created_at": "2026-03-20T09:43:50Z",
+      "updated_at": "2026-03-20T09:44:52Z",
       "html_url": "https://gitcode.com/Ascend/msopcom/merge_requests/69",
       "durationInSeconds": 62,
       "jobs": [
@@ -1143,9 +1143,9 @@
           "name": "docs-ci-pipeline-running",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-03-20T01:43:50Z",
-          "started_at": "2026-03-20T01:44:20Z",
-          "completed_at": "2026-03-20T01:44:52Z",
+          "created_at": "2026-03-20T09:43:50Z",
+          "started_at": "2026-03-20T09:44:20Z",
+          "completed_at": "2026-03-20T09:44:52Z",
           "html_url": "https://gitcode.com/Ascend/msopcom/merge_requests/69",
           "queueDurationInSeconds": 30,
           "durationInSeconds": 32
@@ -1158,8 +1158,8 @@
       "head_branch": "br_cc",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-03-20T01:37:01Z",
-      "updated_at": "2026-03-20T01:47:26Z",
+      "created_at": "2026-03-20T09:37:01Z",
+      "updated_at": "2026-03-20T09:47:26Z",
       "html_url": "https://gitcode.com/Ascend/mskpp/merge_requests/14",
       "durationInSeconds": 625,
       "jobs": [
@@ -1168,9 +1168,9 @@
           "name": "ci-pipeline-running",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-03-20T01:37:01Z",
-          "started_at": "2026-03-20T01:37:43Z",
-          "completed_at": "2026-03-20T01:47:26Z",
+          "created_at": "2026-03-20T09:37:01Z",
+          "started_at": "2026-03-20T09:37:43Z",
+          "completed_at": "2026-03-20T09:47:26Z",
           "html_url": "https://gitcode.com/Ascend/mskpp/merge_requests/14",
           "queueDurationInSeconds": 42,
           "durationInSeconds": 583
@@ -1183,8 +1183,8 @@
       "head_branch": "br_cc",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-03-20T01:37:01Z",
-      "updated_at": "2026-03-20T01:38:02Z",
+      "created_at": "2026-03-20T09:37:01Z",
+      "updated_at": "2026-03-20T09:38:02Z",
       "html_url": "https://gitcode.com/Ascend/mskpp/merge_requests/14",
       "durationInSeconds": 61,
       "jobs": [
@@ -1193,9 +1193,9 @@
           "name": "docs-ci-pipeline-running",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-03-20T01:37:01Z",
-          "started_at": "2026-03-20T01:37:29Z",
-          "completed_at": "2026-03-20T01:38:02Z",
+          "created_at": "2026-03-20T09:37:01Z",
+          "started_at": "2026-03-20T09:37:29Z",
+          "completed_at": "2026-03-20T09:38:02Z",
           "html_url": "https://gitcode.com/Ascend/mskpp/merge_requests/14",
           "queueDurationInSeconds": 28,
           "durationInSeconds": 33
@@ -1208,8 +1208,8 @@
       "head_branch": "260320/mssanitizer_fix_lrelu_alpha",
       "status": "completed",
       "conclusion": "failure",
-      "created_at": "2026-03-20T01:54:00Z",
-      "updated_at": "2026-03-20T02:03:16Z",
+      "created_at": "2026-03-20T09:54:00Z",
+      "updated_at": "2026-03-20T10:03:16Z",
       "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/99",
       "durationInSeconds": 556,
       "jobs": [
@@ -1218,9 +1218,9 @@
           "name": "ci-pipeline-running",
           "status": "completed",
           "conclusion": "failure",
-          "created_at": "2026-03-20T01:54:00Z",
-          "started_at": "2026-03-20T01:54:41Z",
-          "completed_at": "2026-03-20T02:03:16Z",
+          "created_at": "2026-03-20T09:54:00Z",
+          "started_at": "2026-03-20T09:54:41Z",
+          "completed_at": "2026-03-20T10:03:16Z",
           "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/99",
           "queueDurationInSeconds": 41,
           "durationInSeconds": 515
@@ -1233,8 +1233,8 @@
       "head_branch": "260320/mssanitizer_fix_lrelu_alpha",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-03-20T01:54:00Z",
-      "updated_at": "2026-03-20T01:54:58Z",
+      "created_at": "2026-03-20T09:54:00Z",
+      "updated_at": "2026-03-20T09:54:58Z",
       "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/99",
       "durationInSeconds": 58,
       "jobs": [
@@ -1243,9 +1243,9 @@
           "name": "docs-ci-pipeline-running",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-03-20T01:54:00Z",
-          "started_at": "2026-03-20T01:54:27Z",
-          "completed_at": "2026-03-20T01:54:58Z",
+          "created_at": "2026-03-20T09:54:00Z",
+          "started_at": "2026-03-20T09:54:27Z",
+          "completed_at": "2026-03-20T09:54:58Z",
           "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/99",
           "queueDurationInSeconds": 27,
           "durationInSeconds": 31
@@ -1258,8 +1258,8 @@
       "head_branch": "create_link",
       "status": "completed",
       "conclusion": "failure",
-      "created_at": "2026-03-20T03:23:26Z",
-      "updated_at": "2026-03-20T06:16:35Z",
+      "created_at": "2026-03-20T11:23:26Z",
+      "updated_at": "2026-03-20T14:16:35Z",
       "html_url": "https://gitcode.com/Ascend/msopgen/merge_requests/15",
       "durationInSeconds": 10389,
       "jobs": [
@@ -1268,9 +1268,9 @@
           "name": "ci-pipeline-running",
           "status": "completed",
           "conclusion": "failure",
-          "created_at": "2026-03-20T03:23:26Z",
-          "started_at": "2026-03-20T06:11:00Z",
-          "completed_at": "2026-03-20T06:16:35Z",
+          "created_at": "2026-03-20T11:23:26Z",
+          "started_at": "2026-03-20T14:11:00Z",
+          "completed_at": "2026-03-20T14:16:35Z",
           "html_url": "https://gitcode.com/Ascend/msopgen/merge_requests/15",
           "queueDurationInSeconds": 10054,
           "durationInSeconds": 335
@@ -1283,8 +1283,8 @@
       "head_branch": "create_link",
       "status": "completed",
       "conclusion": "failure",
-      "created_at": "2026-03-20T06:10:21Z",
-      "updated_at": "2026-03-20T06:16:35Z",
+      "created_at": "2026-03-20T14:10:21Z",
+      "updated_at": "2026-03-20T14:16:35Z",
       "html_url": "https://gitcode.com/Ascend/msopgen/merge_requests/15",
       "durationInSeconds": 374,
       "jobs": [
@@ -1293,9 +1293,9 @@
           "name": "ci-pipeline-running",
           "status": "completed",
           "conclusion": "failure",
-          "created_at": "2026-03-20T06:10:21Z",
-          "started_at": "2026-03-20T06:11:00Z",
-          "completed_at": "2026-03-20T06:16:35Z",
+          "created_at": "2026-03-20T14:10:21Z",
+          "started_at": "2026-03-20T14:11:00Z",
+          "completed_at": "2026-03-20T14:16:35Z",
           "html_url": "https://gitcode.com/Ascend/msopgen/merge_requests/15",
           "queueDurationInSeconds": 39,
           "durationInSeconds": 335
@@ -1308,8 +1308,8 @@
       "head_branch": "create_link",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-03-20T07:39:28Z",
-      "updated_at": "2026-03-20T07:48:19Z",
+      "created_at": "2026-03-20T15:39:28Z",
+      "updated_at": "2026-03-20T15:48:19Z",
       "html_url": "https://gitcode.com/Ascend/msopgen/merge_requests/15",
       "durationInSeconds": 531,
       "jobs": [
@@ -1318,9 +1318,9 @@
           "name": "ci-pipeline-running",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-03-20T07:39:28Z",
-          "started_at": "2026-03-20T07:40:09Z",
-          "completed_at": "2026-03-20T07:48:19Z",
+          "created_at": "2026-03-20T15:39:28Z",
+          "started_at": "2026-03-20T15:40:09Z",
+          "completed_at": "2026-03-20T15:48:19Z",
           "html_url": "https://gitcode.com/Ascend/msopgen/merge_requests/15",
           "queueDurationInSeconds": 41,
           "durationInSeconds": 490
@@ -1333,8 +1333,8 @@
       "head_branch": "create_link",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-03-20T03:23:26Z",
-      "updated_at": "2026-03-20T03:24:18Z",
+      "created_at": "2026-03-20T11:23:26Z",
+      "updated_at": "2026-03-20T11:24:18Z",
       "html_url": "https://gitcode.com/Ascend/msopgen/merge_requests/15",
       "durationInSeconds": 52,
       "jobs": [
@@ -1343,9 +1343,9 @@
           "name": "docs-ci-pipeline-running",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-03-20T03:23:26Z",
-          "started_at": "2026-03-20T03:23:44Z",
-          "completed_at": "2026-03-20T03:24:18Z",
+          "created_at": "2026-03-20T11:23:26Z",
+          "started_at": "2026-03-20T11:23:44Z",
+          "completed_at": "2026-03-20T11:24:18Z",
           "html_url": "https://gitcode.com/Ascend/msopgen/merge_requests/15",
           "queueDurationInSeconds": 18,
           "durationInSeconds": 34
@@ -1358,8 +1358,8 @@
       "head_branch": "create_link",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-03-20T06:10:21Z",
-      "updated_at": "2026-03-20T06:11:21Z",
+      "created_at": "2026-03-20T14:10:21Z",
+      "updated_at": "2026-03-20T14:11:21Z",
       "html_url": "https://gitcode.com/Ascend/msopgen/merge_requests/15",
       "durationInSeconds": 60,
       "jobs": [
@@ -1368,9 +1368,9 @@
           "name": "docs-ci-pipeline-running",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-03-20T06:10:21Z",
-          "started_at": "2026-03-20T06:10:48Z",
-          "completed_at": "2026-03-20T06:11:21Z",
+          "created_at": "2026-03-20T14:10:21Z",
+          "started_at": "2026-03-20T14:10:48Z",
+          "completed_at": "2026-03-20T14:11:21Z",
           "html_url": "https://gitcode.com/Ascend/msopgen/merge_requests/15",
           "queueDurationInSeconds": 27,
           "durationInSeconds": 33
@@ -1383,8 +1383,8 @@
       "head_branch": "create_link",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-03-20T07:39:28Z",
-      "updated_at": "2026-03-20T07:40:32Z",
+      "created_at": "2026-03-20T15:39:28Z",
+      "updated_at": "2026-03-20T15:40:32Z",
       "html_url": "https://gitcode.com/Ascend/msopgen/merge_requests/15",
       "durationInSeconds": 64,
       "jobs": [
@@ -1393,9 +1393,9 @@
           "name": "docs-ci-pipeline-running",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-03-20T07:39:28Z",
-          "started_at": "2026-03-20T07:39:54Z",
-          "completed_at": "2026-03-20T07:40:32Z",
+          "created_at": "2026-03-20T15:39:28Z",
+          "started_at": "2026-03-20T15:39:54Z",
+          "completed_at": "2026-03-20T15:40:32Z",
           "html_url": "https://gitcode.com/Ascend/msopgen/merge_requests/15",
           "queueDurationInSeconds": 26,
           "durationInSeconds": 38
@@ -1508,8 +1508,8 @@
       "head_branch": "dev_0320",
       "status": "completed",
       "conclusion": "failure",
-      "created_at": "2026-03-20T07:13:45Z",
-      "updated_at": "2026-03-20T07:19:57Z",
+      "created_at": "2026-03-20T15:13:45Z",
+      "updated_at": "2026-03-20T15:19:57Z",
       "html_url": "https://gitcode.com/Ascend/msot/merge_requests/31",
       "durationInSeconds": 372,
       "jobs": [
@@ -1518,9 +1518,9 @@
           "name": "ci-pipeline-running",
           "status": "completed",
           "conclusion": "failure",
-          "created_at": "2026-03-20T07:13:45Z",
-          "started_at": "2026-03-20T07:14:30Z",
-          "completed_at": "2026-03-20T07:19:57Z",
+          "created_at": "2026-03-20T15:13:45Z",
+          "started_at": "2026-03-20T15:14:30Z",
+          "completed_at": "2026-03-20T15:19:57Z",
           "html_url": "https://gitcode.com/Ascend/msot/merge_requests/31",
           "queueDurationInSeconds": 45,
           "durationInSeconds": 327
@@ -1533,8 +1533,8 @@
       "head_branch": "dev_0320",
       "status": "completed",
       "conclusion": "failure",
-      "created_at": "2026-03-20T07:25:14Z",
-      "updated_at": "2026-03-20T07:30:56Z",
+      "created_at": "2026-03-20T15:25:14Z",
+      "updated_at": "2026-03-20T15:30:56Z",
       "html_url": "https://gitcode.com/Ascend/msot/merge_requests/31",
       "durationInSeconds": 342,
       "jobs": [
@@ -1543,9 +1543,9 @@
           "name": "ci-pipeline-running",
           "status": "completed",
           "conclusion": "failure",
-          "created_at": "2026-03-20T07:25:14Z",
-          "started_at": "2026-03-20T07:26:01Z",
-          "completed_at": "2026-03-20T07:30:56Z",
+          "created_at": "2026-03-20T15:25:14Z",
+          "started_at": "2026-03-20T15:26:01Z",
+          "completed_at": "2026-03-20T15:30:56Z",
           "html_url": "https://gitcode.com/Ascend/msot/merge_requests/31",
           "queueDurationInSeconds": 47,
           "durationInSeconds": 295
@@ -1558,8 +1558,8 @@
       "head_branch": "dev_0320",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-03-20T07:33:57Z",
-      "updated_at": "2026-03-20T08:34:02Z",
+      "created_at": "2026-03-20T15:33:57Z",
+      "updated_at": "2026-03-20T16:34:02Z",
       "html_url": "https://gitcode.com/Ascend/msot/merge_requests/31",
       "durationInSeconds": 3605,
       "jobs": [
@@ -1568,9 +1568,9 @@
           "name": "ci-pipeline-running",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-03-20T07:33:57Z",
-          "started_at": "2026-03-20T07:34:42Z",
-          "completed_at": "2026-03-20T08:34:02Z",
+          "created_at": "2026-03-20T15:33:57Z",
+          "started_at": "2026-03-20T15:34:42Z",
+          "completed_at": "2026-03-20T16:34:02Z",
           "html_url": "https://gitcode.com/Ascend/msot/merge_requests/31",
           "queueDurationInSeconds": 45,
           "durationInSeconds": 3560
@@ -1583,8 +1583,8 @@
       "head_branch": "dev_0320",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-03-20T07:54:17Z",
-      "updated_at": "2026-03-20T08:34:02Z",
+      "created_at": "2026-03-20T15:54:17Z",
+      "updated_at": "2026-03-20T16:34:02Z",
       "html_url": "https://gitcode.com/Ascend/msot/merge_requests/31",
       "durationInSeconds": 2385,
       "jobs": [
@@ -1593,9 +1593,9 @@
           "name": "ci-pipeline-running",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-03-20T07:54:17Z",
-          "started_at": "2026-03-20T07:57:39Z",
-          "completed_at": "2026-03-20T08:34:02Z",
+          "created_at": "2026-03-20T15:54:17Z",
+          "started_at": "2026-03-20T15:57:39Z",
+          "completed_at": "2026-03-20T16:34:02Z",
           "html_url": "https://gitcode.com/Ascend/msot/merge_requests/31",
           "queueDurationInSeconds": 202,
           "durationInSeconds": 2183
@@ -1608,8 +1608,8 @@
       "head_branch": "dev_0320",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-03-20T07:13:45Z",
-      "updated_at": "2026-03-20T07:14:50Z",
+      "created_at": "2026-03-20T15:13:45Z",
+      "updated_at": "2026-03-20T15:14:50Z",
       "html_url": "https://gitcode.com/Ascend/msot/merge_requests/31",
       "durationInSeconds": 65,
       "jobs": [
@@ -1618,9 +1618,9 @@
           "name": "docs-ci-pipeline-running",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-03-20T07:13:45Z",
-          "started_at": "2026-03-20T07:14:11Z",
-          "completed_at": "2026-03-20T07:14:50Z",
+          "created_at": "2026-03-20T15:13:45Z",
+          "started_at": "2026-03-20T15:14:11Z",
+          "completed_at": "2026-03-20T15:14:50Z",
           "html_url": "https://gitcode.com/Ascend/msot/merge_requests/31",
           "queueDurationInSeconds": 26,
           "durationInSeconds": 39
@@ -1633,8 +1633,8 @@
       "head_branch": "dev_0320",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-03-20T07:25:14Z",
-      "updated_at": "2026-03-20T07:26:31Z",
+      "created_at": "2026-03-20T15:25:14Z",
+      "updated_at": "2026-03-20T15:26:31Z",
       "html_url": "https://gitcode.com/Ascend/msot/merge_requests/31",
       "durationInSeconds": 77,
       "jobs": [
@@ -1643,9 +1643,9 @@
           "name": "docs-ci-pipeline-running",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-03-20T07:25:14Z",
-          "started_at": "2026-03-20T07:25:51Z",
-          "completed_at": "2026-03-20T07:26:31Z",
+          "created_at": "2026-03-20T15:25:14Z",
+          "started_at": "2026-03-20T15:25:51Z",
+          "completed_at": "2026-03-20T15:26:31Z",
           "html_url": "https://gitcode.com/Ascend/msot/merge_requests/31",
           "queueDurationInSeconds": 37,
           "durationInSeconds": 40
@@ -1658,8 +1658,8 @@
       "head_branch": "dev_0320",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-03-20T07:33:57Z",
-      "updated_at": "2026-03-20T07:35:23Z",
+      "created_at": "2026-03-20T15:33:57Z",
+      "updated_at": "2026-03-20T15:35:23Z",
       "html_url": "https://gitcode.com/Ascend/msot/merge_requests/31",
       "durationInSeconds": 86,
       "jobs": [
@@ -1668,9 +1668,9 @@
           "name": "docs-ci-pipeline-running",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-03-20T07:33:57Z",
-          "started_at": "2026-03-20T07:34:25Z",
-          "completed_at": "2026-03-20T07:35:23Z",
+          "created_at": "2026-03-20T15:33:57Z",
+          "started_at": "2026-03-20T15:34:25Z",
+          "completed_at": "2026-03-20T15:35:23Z",
           "html_url": "https://gitcode.com/Ascend/msot/merge_requests/31",
           "queueDurationInSeconds": 28,
           "durationInSeconds": 58
@@ -1683,8 +1683,8 @@
       "head_branch": "dev_0320",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-03-20T07:54:17Z",
-      "updated_at": "2026-03-20T07:55:23Z",
+      "created_at": "2026-03-20T15:54:17Z",
+      "updated_at": "2026-03-20T15:55:23Z",
       "html_url": "https://gitcode.com/Ascend/msot/merge_requests/31",
       "durationInSeconds": 66,
       "jobs": [
@@ -1693,9 +1693,9 @@
           "name": "docs-ci-pipeline-running",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-03-20T07:54:17Z",
-          "started_at": "2026-03-20T07:54:45Z",
-          "completed_at": "2026-03-20T07:55:23Z",
+          "created_at": "2026-03-20T15:54:17Z",
+          "started_at": "2026-03-20T15:54:45Z",
+          "completed_at": "2026-03-20T15:55:23Z",
           "html_url": "https://gitcode.com/Ascend/msot/merge_requests/31",
           "queueDurationInSeconds": 28,
           "durationInSeconds": 38
@@ -1704,101 +1704,101 @@
     },
     {
       "id": 720000,
-      "name": "PR #72 compile - 【clean code】：修改clean code",
-      "head_branch": "master",
+      "name": "PR #72 compile - [refactor]cleancode问题修改",
+      "head_branch": "cleancode",
       "status": "completed",
       "conclusion": "failure",
-      "created_at": "2026-03-20T07:43:06Z",
-      "updated_at": "2026-03-20T08:06:47Z",
-      "html_url": "https://gitcode.com/Ascend/msmemscope/merge_requests/72",
-      "durationInSeconds": 1421,
+      "created_at": "2026-03-20T15:09:19Z",
+      "updated_at": "2026-03-20T15:18:22Z",
+      "html_url": "https://gitcode.com/Ascend/msopprof/merge_requests/72",
+      "durationInSeconds": 543,
       "jobs": [
         {
           "id": 720001,
           "name": "ci-pipeline-running",
           "status": "completed",
           "conclusion": "failure",
-          "created_at": "2026-03-20T07:43:06Z",
-          "started_at": "2026-03-20T07:43:54Z",
-          "completed_at": "2026-03-20T08:06:47Z",
-          "html_url": "https://gitcode.com/Ascend/msmemscope/merge_requests/72",
-          "queueDurationInSeconds": 48,
-          "durationInSeconds": 1373
+          "created_at": "2026-03-20T15:09:19Z",
+          "started_at": "2026-03-20T15:10:09Z",
+          "completed_at": "2026-03-20T15:18:22Z",
+          "html_url": "https://gitcode.com/Ascend/msopprof/merge_requests/72",
+          "queueDurationInSeconds": 50,
+          "durationInSeconds": 493
         }
       ]
     },
     {
       "id": 720001,
-      "name": "PR #72 compile - 【clean code】：修改clean code",
-      "head_branch": "master",
+      "name": "PR #72 compile - [refactor]cleancode问题修改",
+      "head_branch": "cleancode",
       "status": "completed",
-      "conclusion": "failure",
-      "created_at": "2026-03-20T08:28:56Z",
-      "updated_at": "2026-03-20T08:32:44Z",
-      "html_url": "https://gitcode.com/Ascend/msmemscope/merge_requests/72",
-      "durationInSeconds": 228,
+      "conclusion": "success",
+      "created_at": "2026-03-20T15:43:05Z",
+      "updated_at": "2026-03-20T16:09:24Z",
+      "html_url": "https://gitcode.com/Ascend/msopprof/merge_requests/72",
+      "durationInSeconds": 1579,
       "jobs": [
         {
           "id": 720002,
           "name": "ci-pipeline-running",
           "status": "completed",
-          "conclusion": "failure",
-          "created_at": "2026-03-20T08:28:56Z",
-          "started_at": "2026-03-20T08:30:44Z",
-          "completed_at": "2026-03-20T08:32:44Z",
-          "html_url": "https://gitcode.com/Ascend/msmemscope/merge_requests/72",
-          "queueDurationInSeconds": 108,
-          "durationInSeconds": 120
+          "conclusion": "success",
+          "created_at": "2026-03-20T15:43:05Z",
+          "started_at": "2026-03-20T15:43:57Z",
+          "completed_at": "2026-03-20T16:09:24Z",
+          "html_url": "https://gitcode.com/Ascend/msopprof/merge_requests/72",
+          "queueDurationInSeconds": 52,
+          "durationInSeconds": 1527
         }
       ]
     },
     {
       "id": 720100,
-      "name": "PR #72 docs-ci - 【clean code】：修改clean code",
-      "head_branch": "master",
+      "name": "PR #72 docs-ci - [refactor]cleancode问题修改",
+      "head_branch": "cleancode",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-03-20T07:43:06Z",
-      "updated_at": "2026-03-20T07:44:06Z",
-      "html_url": "https://gitcode.com/Ascend/msmemscope/merge_requests/72",
-      "durationInSeconds": 60,
+      "created_at": "2026-03-20T15:09:19Z",
+      "updated_at": "2026-03-20T15:10:18Z",
+      "html_url": "https://gitcode.com/Ascend/msopprof/merge_requests/72",
+      "durationInSeconds": 59,
       "jobs": [
         {
           "id": 720101,
           "name": "docs-ci-pipeline-running",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-03-20T07:43:06Z",
-          "started_at": "2026-03-20T07:43:33Z",
-          "completed_at": "2026-03-20T07:44:06Z",
-          "html_url": "https://gitcode.com/Ascend/msmemscope/merge_requests/72",
-          "queueDurationInSeconds": 27,
+          "created_at": "2026-03-20T15:09:19Z",
+          "started_at": "2026-03-20T15:09:45Z",
+          "completed_at": "2026-03-20T15:10:18Z",
+          "html_url": "https://gitcode.com/Ascend/msopprof/merge_requests/72",
+          "queueDurationInSeconds": 26,
           "durationInSeconds": 33
         }
       ]
     },
     {
       "id": 720101,
-      "name": "PR #72 docs-ci - 【clean code】：修改clean code",
-      "head_branch": "master",
+      "name": "PR #72 docs-ci - [refactor]cleancode问题修改",
+      "head_branch": "cleancode",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-03-20T08:28:56Z",
-      "updated_at": "2026-03-20T08:30:02Z",
-      "html_url": "https://gitcode.com/Ascend/msmemscope/merge_requests/72",
-      "durationInSeconds": 66,
+      "created_at": "2026-03-20T15:43:05Z",
+      "updated_at": "2026-03-20T15:44:06Z",
+      "html_url": "https://gitcode.com/Ascend/msopprof/merge_requests/72",
+      "durationInSeconds": 61,
       "jobs": [
         {
           "id": 720102,
           "name": "docs-ci-pipeline-running",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-03-20T08:28:56Z",
-          "started_at": "2026-03-20T08:29:24Z",
-          "completed_at": "2026-03-20T08:30:02Z",
-          "html_url": "https://gitcode.com/Ascend/msmemscope/merge_requests/72",
-          "queueDurationInSeconds": 28,
-          "durationInSeconds": 38
+          "created_at": "2026-03-20T15:43:05Z",
+          "started_at": "2026-03-20T15:43:35Z",
+          "completed_at": "2026-03-20T15:44:06Z",
+          "html_url": "https://gitcode.com/Ascend/msopprof/merge_requests/72",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 31
         }
       ]
     },
@@ -25449,6 +25449,1256 @@
           "html_url": "https://gitcode.com/Ascend/op-plugin/merge_requests/4511",
           "queueDurationInSeconds": 30,
           "durationInSeconds": 2026395.164
+        }
+      ]
+    },
+    {
+      "id": 170001,
+      "name": "PR #17 compile - 支持docker部署pd分离",
+      "head_branch": "docker-only",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-03-19T18:45:41Z",
+      "updated_at": "2026-03-19T18:52:04Z",
+      "html_url": "https://gitcode.com/Ascend/MindIE-PyMotor/merge_requests/17",
+      "durationInSeconds": 383,
+      "jobs": [
+        {
+          "id": 170002,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-03-19T18:45:41Z",
+          "started_at": "2026-03-19T18:46:08Z",
+          "completed_at": "2026-03-19T18:52:04Z",
+          "html_url": "https://gitcode.com/Ascend/MindIE-PyMotor/merge_requests/17",
+          "queueDurationInSeconds": 27,
+          "durationInSeconds": 356
+        }
+      ]
+    },
+    {
+      "id": 170101,
+      "name": "PR #17 docs-ci - 支持docker部署pd分离",
+      "head_branch": "docker-only",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-03-19T18:45:41Z",
+      "updated_at": "2026-03-26T16:46:10Z",
+      "html_url": "https://gitcode.com/Ascend/MindIE-PyMotor/merge_requests/17",
+      "durationInSeconds": 597629,
+      "jobs": [
+        {
+          "id": 170102,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-03-19T18:45:41Z",
+          "started_at": "2026-03-19T18:46:11Z",
+          "completed_at": "2026-03-26T16:46:10Z",
+          "html_url": "https://gitcode.com/Ascend/MindIE-PyMotor/merge_requests/17",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 597599
+        }
+      ]
+    },
+    {
+      "id": 260000,
+      "name": "PR #26 compile - 虚推decode请求设置do_virtual",
+      "head_branch": "fix_sim_decode",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-03-19T20:21:07Z",
+      "updated_at": "2026-03-19T20:33:14Z",
+      "html_url": "https://gitcode.com/Ascend/MindIE-PyMotor/merge_requests/26",
+      "durationInSeconds": 727,
+      "jobs": [
+        {
+          "id": 260001,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-03-19T20:21:07Z",
+          "started_at": "2026-03-19T20:21:33Z",
+          "completed_at": "2026-03-19T20:33:14Z",
+          "html_url": "https://gitcode.com/Ascend/MindIE-PyMotor/merge_requests/26",
+          "queueDurationInSeconds": 26,
+          "durationInSeconds": 701
+        }
+      ]
+    },
+    {
+      "id": 260100,
+      "name": "PR #26 docs-ci - 虚推decode请求设置do_virtual",
+      "head_branch": "fix_sim_decode",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-03-19T20:21:07Z",
+      "updated_at": "2026-03-24T00:05:59Z",
+      "html_url": "https://gitcode.com/Ascend/MindIE-PyMotor/merge_requests/26",
+      "durationInSeconds": 359092,
+      "jobs": [
+        {
+          "id": 260101,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-03-19T20:21:07Z",
+          "started_at": "2026-03-19T20:21:37Z",
+          "completed_at": "2026-03-24T00:05:59Z",
+          "html_url": "https://gitcode.com/Ascend/MindIE-PyMotor/merge_requests/26",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 359062
+        }
+      ]
+    },
+    {
+      "id": 90004,
+      "name": "PR #9 compile - [feature]对接SGLang — coordinator、deploy",
+      "head_branch": "lhb_sglang_dev",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-03-19T16:07:50Z",
+      "updated_at": "2026-03-19T21:52:23Z",
+      "html_url": "https://gitcode.com/Ascend/MindIE-PyMotor/merge_requests/9",
+      "durationInSeconds": 20673,
+      "jobs": [
+        {
+          "id": 90005,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-03-19T16:07:50Z",
+          "started_at": "2026-03-19T16:08:15Z",
+          "completed_at": "2026-03-19T21:52:23Z",
+          "html_url": "https://gitcode.com/Ascend/MindIE-PyMotor/merge_requests/9",
+          "queueDurationInSeconds": 25,
+          "durationInSeconds": 20648
+        }
+      ]
+    },
+    {
+      "id": 90005,
+      "name": "PR #9 compile - [feature]对接SGLang — coordinator、deploy",
+      "head_branch": "lhb_sglang_dev",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-03-19T20:41:19Z",
+      "updated_at": "2026-03-19T21:52:23Z",
+      "html_url": "https://gitcode.com/Ascend/MindIE-PyMotor/merge_requests/9",
+      "durationInSeconds": 4264,
+      "jobs": [
+        {
+          "id": 90006,
+          "name": "ci-pipeline-passed",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-03-19T20:41:19Z",
+          "started_at": "2026-03-19T20:41:49Z",
+          "completed_at": "2026-03-19T21:52:23Z",
+          "html_url": "https://gitcode.com/Ascend/MindIE-PyMotor/merge_requests/9",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 4234
+        }
+      ]
+    },
+    {
+      "id": 90006,
+      "name": "PR #9 compile - [feature]对接SGLang — coordinator、deploy",
+      "head_branch": "lhb_sglang_dev",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-03-19T21:43:00Z",
+      "updated_at": "2026-03-19T21:52:23Z",
+      "html_url": "https://gitcode.com/Ascend/MindIE-PyMotor/merge_requests/9",
+      "durationInSeconds": 563,
+      "jobs": [
+        {
+          "id": 90007,
+          "name": "ci-pipeline-passed",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-03-19T21:43:00Z",
+          "started_at": "2026-03-19T21:43:30Z",
+          "completed_at": "2026-03-19T21:52:23Z",
+          "html_url": "https://gitcode.com/Ascend/MindIE-PyMotor/merge_requests/9",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 533
+        }
+      ]
+    },
+    {
+      "id": 90104,
+      "name": "PR #9 docs-ci - [feature]对接SGLang — coordinator、deploy",
+      "head_branch": "lhb_sglang_dev",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-03-19T16:07:50Z",
+      "updated_at": "2026-03-20T14:53:22Z",
+      "html_url": "https://gitcode.com/Ascend/MindIE-PyMotor/merge_requests/9",
+      "durationInSeconds": 81932,
+      "jobs": [
+        {
+          "id": 90105,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-03-19T16:07:50Z",
+          "started_at": "2026-03-19T16:08:20Z",
+          "completed_at": "2026-03-20T14:53:22Z",
+          "html_url": "https://gitcode.com/Ascend/MindIE-PyMotor/merge_requests/9",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 81902
+        }
+      ]
+    },
+    {
+      "id": 90105,
+      "name": "PR #9 docs-ci - [feature]对接SGLang — coordinator、deploy",
+      "head_branch": "lhb_sglang_dev",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-03-19T20:41:19Z",
+      "updated_at": "2026-03-20T14:53:22Z",
+      "html_url": "https://gitcode.com/Ascend/MindIE-PyMotor/merge_requests/9",
+      "durationInSeconds": 65523,
+      "jobs": [
+        {
+          "id": 90106,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-03-19T20:41:19Z",
+          "started_at": "2026-03-19T20:41:49Z",
+          "completed_at": "2026-03-20T14:53:22Z",
+          "html_url": "https://gitcode.com/Ascend/MindIE-PyMotor/merge_requests/9",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 65493
+        }
+      ]
+    },
+    {
+      "id": 90106,
+      "name": "PR #9 docs-ci - [feature]对接SGLang — coordinator、deploy",
+      "head_branch": "lhb_sglang_dev",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-03-19T21:43:00Z",
+      "updated_at": "2026-03-20T14:53:22Z",
+      "html_url": "https://gitcode.com/Ascend/MindIE-PyMotor/merge_requests/9",
+      "durationInSeconds": 61822,
+      "jobs": [
+        {
+          "id": 90107,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-03-19T21:43:00Z",
+          "started_at": "2026-03-19T21:43:30Z",
+          "completed_at": "2026-03-20T14:53:22Z",
+          "html_url": "https://gitcode.com/Ascend/MindIE-PyMotor/merge_requests/9",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 61792
+        }
+      ]
+    },
+    {
+      "id": 160007,
+      "name": "PR #16 compile - 虚推bug修复——A2 ranktable判断和重试机制",
+      "head_branch": "fix_sim_retry",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-03-19T16:59:07Z",
+      "updated_at": "2026-03-19T17:08:23Z",
+      "html_url": "https://gitcode.com/Ascend/MindIE-PyMotor/merge_requests/16",
+      "durationInSeconds": 556,
+      "jobs": [
+        {
+          "id": 160008,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-03-19T16:59:07Z",
+          "started_at": "2026-03-19T16:59:31Z",
+          "completed_at": "2026-03-19T17:08:23Z",
+          "html_url": "https://gitcode.com/Ascend/MindIE-PyMotor/merge_requests/16",
+          "queueDurationInSeconds": 24,
+          "durationInSeconds": 532
+        }
+      ]
+    },
+    {
+      "id": 160008,
+      "name": "PR #16 compile - 虚推bug修复——A2 ranktable判断和重试机制",
+      "head_branch": "fix_sim_retry",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-03-19T19:37:33Z",
+      "updated_at": "2026-03-19T19:46:20Z",
+      "html_url": "https://gitcode.com/Ascend/MindIE-PyMotor/merge_requests/16",
+      "durationInSeconds": 527,
+      "jobs": [
+        {
+          "id": 160009,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-03-19T19:37:33Z",
+          "started_at": "2026-03-19T19:38:21Z",
+          "completed_at": "2026-03-19T19:46:20Z",
+          "html_url": "https://gitcode.com/Ascend/MindIE-PyMotor/merge_requests/16",
+          "queueDurationInSeconds": 48,
+          "durationInSeconds": 479
+        }
+      ]
+    },
+    {
+      "id": 160009,
+      "name": "PR #16 compile - 虚推bug修复——A2 ranktable判断和重试机制",
+      "head_branch": "fix_sim_retry",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-03-19T19:49:42Z",
+      "updated_at": "2026-03-19T19:58:50Z",
+      "html_url": "https://gitcode.com/Ascend/MindIE-PyMotor/merge_requests/16",
+      "durationInSeconds": 548,
+      "jobs": [
+        {
+          "id": 160010,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-03-19T19:49:42Z",
+          "started_at": "2026-03-19T19:50:11Z",
+          "completed_at": "2026-03-19T19:58:50Z",
+          "html_url": "https://gitcode.com/Ascend/MindIE-PyMotor/merge_requests/16",
+          "queueDurationInSeconds": 29,
+          "durationInSeconds": 519
+        }
+      ]
+    },
+    {
+      "id": 160010,
+      "name": "PR #16 compile - 虚推bug修复——A2 ranktable判断和重试机制",
+      "head_branch": "fix_sim_retry",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-03-19T20:00:27Z",
+      "updated_at": "2026-03-19T20:09:34Z",
+      "html_url": "https://gitcode.com/Ascend/MindIE-PyMotor/merge_requests/16",
+      "durationInSeconds": 547,
+      "jobs": [
+        {
+          "id": 160011,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-03-19T20:00:27Z",
+          "started_at": "2026-03-19T20:00:51Z",
+          "completed_at": "2026-03-19T20:09:34Z",
+          "html_url": "https://gitcode.com/Ascend/MindIE-PyMotor/merge_requests/16",
+          "queueDurationInSeconds": 24,
+          "durationInSeconds": 523
+        }
+      ]
+    },
+    {
+      "id": 160107,
+      "name": "PR #16 docs-ci - 虚推bug修复——A2 ranktable判断和重试机制",
+      "head_branch": "fix_sim_retry",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-03-19T16:59:07Z",
+      "updated_at": "2026-03-23T16:40:29Z",
+      "html_url": "https://gitcode.com/Ascend/MindIE-PyMotor/merge_requests/16",
+      "durationInSeconds": 344482,
+      "jobs": [
+        {
+          "id": 160108,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-03-19T16:59:07Z",
+          "started_at": "2026-03-19T16:59:37Z",
+          "completed_at": "2026-03-23T16:40:29Z",
+          "html_url": "https://gitcode.com/Ascend/MindIE-PyMotor/merge_requests/16",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 344452
+        }
+      ]
+    },
+    {
+      "id": 160108,
+      "name": "PR #16 docs-ci - 虚推bug修复——A2 ranktable判断和重试机制",
+      "head_branch": "fix_sim_retry",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-03-19T19:37:33Z",
+      "updated_at": "2026-03-23T16:40:29Z",
+      "html_url": "https://gitcode.com/Ascend/MindIE-PyMotor/merge_requests/16",
+      "durationInSeconds": 334976,
+      "jobs": [
+        {
+          "id": 160109,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-03-19T19:37:33Z",
+          "started_at": "2026-03-19T19:38:03Z",
+          "completed_at": "2026-03-23T16:40:29Z",
+          "html_url": "https://gitcode.com/Ascend/MindIE-PyMotor/merge_requests/16",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 334946
+        }
+      ]
+    },
+    {
+      "id": 160109,
+      "name": "PR #16 docs-ci - 虚推bug修复——A2 ranktable判断和重试机制",
+      "head_branch": "fix_sim_retry",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-03-19T19:49:42Z",
+      "updated_at": "2026-03-23T16:40:29Z",
+      "html_url": "https://gitcode.com/Ascend/MindIE-PyMotor/merge_requests/16",
+      "durationInSeconds": 334247,
+      "jobs": [
+        {
+          "id": 160110,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-03-19T19:49:42Z",
+          "started_at": "2026-03-19T19:50:12Z",
+          "completed_at": "2026-03-23T16:40:29Z",
+          "html_url": "https://gitcode.com/Ascend/MindIE-PyMotor/merge_requests/16",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 334217
+        }
+      ]
+    },
+    {
+      "id": 160110,
+      "name": "PR #16 docs-ci - 虚推bug修复——A2 ranktable判断和重试机制",
+      "head_branch": "fix_sim_retry",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-03-19T20:00:27Z",
+      "updated_at": "2026-03-23T16:40:29Z",
+      "html_url": "https://gitcode.com/Ascend/MindIE-PyMotor/merge_requests/16",
+      "durationInSeconds": 333602,
+      "jobs": [
+        {
+          "id": 160111,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-03-19T20:00:27Z",
+          "started_at": "2026-03-19T20:00:57Z",
+          "completed_at": "2026-03-23T16:40:29Z",
+          "html_url": "https://gitcode.com/Ascend/MindIE-PyMotor/merge_requests/16",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 333572
+        }
+      ]
+    },
+    {
+      "id": 270000,
+      "name": "PR #27 compile - [fix]解决算子编译与预期不符，导致算子调飞的问题",
+      "head_branch": "develop_insert_or_assign_fix",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-03-19T16:43:25Z",
+      "updated_at": "2026-03-19T16:50:37Z",
+      "html_url": "https://gitcode.com/Ascend/HierarchicalKV-ascend/merge_requests/27",
+      "durationInSeconds": 432,
+      "jobs": [
+        {
+          "id": 270001,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-03-19T16:43:25Z",
+          "started_at": "2026-03-19T16:43:47Z",
+          "completed_at": "2026-03-19T16:50:37Z",
+          "html_url": "https://gitcode.com/Ascend/HierarchicalKV-ascend/merge_requests/27",
+          "queueDurationInSeconds": 22,
+          "durationInSeconds": 410
+        }
+      ]
+    },
+    {
+      "id": 270100,
+      "name": "PR #27 docs-ci - [fix]解决算子编译与预期不符，导致算子调飞的问题",
+      "head_branch": "develop_insert_or_assign_fix",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-03-19T16:43:25Z",
+      "updated_at": "2026-03-23T09:36:54Z",
+      "html_url": "https://gitcode.com/Ascend/HierarchicalKV-ascend/merge_requests/27",
+      "durationInSeconds": 320009,
+      "jobs": [
+        {
+          "id": 270101,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-03-19T16:43:25Z",
+          "started_at": "2026-03-19T16:43:55Z",
+          "completed_at": "2026-03-23T09:36:54Z",
+          "html_url": "https://gitcode.com/Ascend/HierarchicalKV-ascend/merge_requests/27",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 319979
+        }
+      ]
+    },
+    {
+      "id": 250000,
+      "name": "PR #25 compile - HTTP状态码和报错信息优化",
+      "head_branch": "http",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-03-19T19:53:00Z",
+      "updated_at": "2026-03-19T19:58:18Z",
+      "html_url": "https://gitcode.com/Ascend/MindIE-PyMotor/merge_requests/25",
+      "durationInSeconds": 318,
+      "jobs": [
+        {
+          "id": 250001,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-03-19T19:53:00Z",
+          "started_at": "2026-03-19T19:53:24Z",
+          "completed_at": "2026-03-19T19:58:18Z",
+          "html_url": "https://gitcode.com/Ascend/MindIE-PyMotor/merge_requests/25",
+          "queueDurationInSeconds": 24,
+          "durationInSeconds": 294
+        }
+      ]
+    },
+    {
+      "id": 250001,
+      "name": "PR #25 compile - HTTP状态码和报错信息优化",
+      "head_branch": "http",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-03-19T22:15:26Z",
+      "updated_at": "2026-03-20T00:24:44Z",
+      "html_url": "https://gitcode.com/Ascend/MindIE-PyMotor/merge_requests/25",
+      "durationInSeconds": 7758,
+      "jobs": [
+        {
+          "id": 250002,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-03-19T22:15:26Z",
+          "started_at": "2026-03-20T00:20:16Z",
+          "completed_at": "2026-03-20T00:24:44Z",
+          "html_url": "https://gitcode.com/Ascend/MindIE-PyMotor/merge_requests/25",
+          "queueDurationInSeconds": 7490,
+          "durationInSeconds": 268
+        }
+      ]
+    },
+    {
+      "id": 250002,
+      "name": "PR #25 compile - HTTP状态码和报错信息优化",
+      "head_branch": "http",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-03-20T00:19:52Z",
+      "updated_at": "2026-03-20T00:24:44Z",
+      "html_url": "https://gitcode.com/Ascend/MindIE-PyMotor/merge_requests/25",
+      "durationInSeconds": 292,
+      "jobs": [
+        {
+          "id": 250003,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-03-20T00:19:52Z",
+          "started_at": "2026-03-20T00:20:16Z",
+          "completed_at": "2026-03-20T00:24:44Z",
+          "html_url": "https://gitcode.com/Ascend/MindIE-PyMotor/merge_requests/25",
+          "queueDurationInSeconds": 24,
+          "durationInSeconds": 268
+        }
+      ]
+    },
+    {
+      "id": 250003,
+      "name": "PR #25 compile - HTTP状态码和报错信息优化",
+      "head_branch": "http",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-03-20T01:02:31Z",
+      "updated_at": "2026-03-20T01:06:34Z",
+      "html_url": "https://gitcode.com/Ascend/MindIE-PyMotor/merge_requests/25",
+      "durationInSeconds": 243,
+      "jobs": [
+        {
+          "id": 250004,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-03-20T01:02:31Z",
+          "started_at": "2026-03-20T01:02:56Z",
+          "completed_at": "2026-03-20T01:06:34Z",
+          "html_url": "https://gitcode.com/Ascend/MindIE-PyMotor/merge_requests/25",
+          "queueDurationInSeconds": 25,
+          "durationInSeconds": 218
+        }
+      ]
+    },
+    {
+      "id": 250004,
+      "name": "PR #25 compile - HTTP状态码和报错信息优化",
+      "head_branch": "http",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-03-20T01:45:34Z",
+      "updated_at": "2026-03-20T01:51:34Z",
+      "html_url": "https://gitcode.com/Ascend/MindIE-PyMotor/merge_requests/25",
+      "durationInSeconds": 360,
+      "jobs": [
+        {
+          "id": 250005,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-03-20T01:45:34Z",
+          "started_at": "2026-03-20T01:45:59Z",
+          "completed_at": "2026-03-20T01:51:34Z",
+          "html_url": "https://gitcode.com/Ascend/MindIE-PyMotor/merge_requests/25",
+          "queueDurationInSeconds": 25,
+          "durationInSeconds": 335
+        }
+      ]
+    },
+    {
+      "id": 250100,
+      "name": "PR #25 docs-ci - HTTP状态码和报错信息优化",
+      "head_branch": "http",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-03-19T19:53:00Z",
+      "updated_at": "2026-03-23T16:39:36Z",
+      "html_url": "https://gitcode.com/Ascend/MindIE-PyMotor/merge_requests/25",
+      "durationInSeconds": 333996,
+      "jobs": [
+        {
+          "id": 250101,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-03-19T19:53:00Z",
+          "started_at": "2026-03-19T19:53:30Z",
+          "completed_at": "2026-03-23T16:39:36Z",
+          "html_url": "https://gitcode.com/Ascend/MindIE-PyMotor/merge_requests/25",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 333966
+        }
+      ]
+    },
+    {
+      "id": 250101,
+      "name": "PR #25 docs-ci - HTTP状态码和报错信息优化",
+      "head_branch": "http",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-03-19T22:15:26Z",
+      "updated_at": "2026-03-23T16:39:36Z",
+      "html_url": "https://gitcode.com/Ascend/MindIE-PyMotor/merge_requests/25",
+      "durationInSeconds": 325450,
+      "jobs": [
+        {
+          "id": 250102,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-03-19T22:15:26Z",
+          "started_at": "2026-03-19T22:15:56Z",
+          "completed_at": "2026-03-23T16:39:36Z",
+          "html_url": "https://gitcode.com/Ascend/MindIE-PyMotor/merge_requests/25",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 325420
+        }
+      ]
+    },
+    {
+      "id": 250102,
+      "name": "PR #25 docs-ci - HTTP状态码和报错信息优化",
+      "head_branch": "http",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-03-20T00:19:52Z",
+      "updated_at": "2026-03-23T16:39:36Z",
+      "html_url": "https://gitcode.com/Ascend/MindIE-PyMotor/merge_requests/25",
+      "durationInSeconds": 317984,
+      "jobs": [
+        {
+          "id": 250103,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-03-20T00:19:52Z",
+          "started_at": "2026-03-20T00:20:22Z",
+          "completed_at": "2026-03-23T16:39:36Z",
+          "html_url": "https://gitcode.com/Ascend/MindIE-PyMotor/merge_requests/25",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 317954
+        }
+      ]
+    },
+    {
+      "id": 250103,
+      "name": "PR #25 docs-ci - HTTP状态码和报错信息优化",
+      "head_branch": "http",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-03-20T01:02:31Z",
+      "updated_at": "2026-03-23T16:39:36Z",
+      "html_url": "https://gitcode.com/Ascend/MindIE-PyMotor/merge_requests/25",
+      "durationInSeconds": 315425,
+      "jobs": [
+        {
+          "id": 250104,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-03-20T01:02:31Z",
+          "started_at": "2026-03-20T01:03:01Z",
+          "completed_at": "2026-03-23T16:39:36Z",
+          "html_url": "https://gitcode.com/Ascend/MindIE-PyMotor/merge_requests/25",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 315395
+        }
+      ]
+    },
+    {
+      "id": 250104,
+      "name": "PR #25 docs-ci - HTTP状态码和报错信息优化",
+      "head_branch": "http",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-03-20T01:45:34Z",
+      "updated_at": "2026-03-23T16:39:36Z",
+      "html_url": "https://gitcode.com/Ascend/MindIE-PyMotor/merge_requests/25",
+      "durationInSeconds": 312842,
+      "jobs": [
+        {
+          "id": 250105,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-03-20T01:45:34Z",
+          "started_at": "2026-03-20T01:46:04Z",
+          "completed_at": "2026-03-23T16:39:36Z",
+          "html_url": "https://gitcode.com/Ascend/MindIE-PyMotor/merge_requests/25",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 312812
+        }
+      ]
+    },
+    {
+      "id": 260001,
+      "name": "PR #26 compile - [feat][A5]assign_scores支持unique_key=false",
+      "head_branch": "assign_scores_unique_key_false",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-03-19T17:06:55Z",
+      "updated_at": "2026-03-19T17:12:26Z",
+      "html_url": "https://gitcode.com/Ascend/HierarchicalKV-ascend/merge_requests/26",
+      "durationInSeconds": 331,
+      "jobs": [
+        {
+          "id": 260002,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-03-19T17:06:55Z",
+          "started_at": "2026-03-19T17:07:20Z",
+          "completed_at": "2026-03-19T17:12:26Z",
+          "html_url": "https://gitcode.com/Ascend/HierarchicalKV-ascend/merge_requests/26",
+          "queueDurationInSeconds": 25,
+          "durationInSeconds": 306
+        }
+      ]
+    },
+    {
+      "id": 260101,
+      "name": "PR #26 docs-ci - [feat][A5]assign_scores支持unique_key=false",
+      "head_branch": "assign_scores_unique_key_false",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-03-19T17:06:55Z",
+      "updated_at": "2026-03-20T17:23:13Z",
+      "html_url": "https://gitcode.com/Ascend/HierarchicalKV-ascend/merge_requests/26",
+      "durationInSeconds": 87378,
+      "jobs": [
+        {
+          "id": 260102,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-03-19T17:06:55Z",
+          "started_at": "2026-03-19T17:07:25Z",
+          "completed_at": "2026-03-20T17:23:13Z",
+          "html_url": "https://gitcode.com/Ascend/HierarchicalKV-ascend/merge_requests/26",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 87348
+        }
+      ]
+    },
+    {
+      "id": 750000,
+      "name": "PR #75 compile - 【Doc】新增安全声明和漏洞声明+doctool工具检查低错修改",
+      "head_branch": "master",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-03-19T17:20:53Z",
+      "updated_at": "2026-03-19T19:02:31Z",
+      "html_url": "https://gitcode.com/Ascend/msopcom/merge_requests/75",
+      "durationInSeconds": 6098,
+      "jobs": [
+        {
+          "id": 750001,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-03-19T17:20:53Z",
+          "started_at": "2026-03-19T18:51:07Z",
+          "completed_at": "2026-03-19T19:02:31Z",
+          "html_url": "https://gitcode.com/Ascend/msopcom/merge_requests/75",
+          "queueDurationInSeconds": 5414,
+          "durationInSeconds": 684
+        }
+      ]
+    },
+    {
+      "id": 750001,
+      "name": "PR #75 compile - 【Doc】新增安全声明和漏洞声明+doctool工具检查低错修改",
+      "head_branch": "master",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-03-19T17:29:36Z",
+      "updated_at": "2026-03-19T19:02:31Z",
+      "html_url": "https://gitcode.com/Ascend/msopcom/merge_requests/75",
+      "durationInSeconds": 5575,
+      "jobs": [
+        {
+          "id": 750002,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-03-19T17:29:36Z",
+          "started_at": "2026-03-19T18:51:07Z",
+          "completed_at": "2026-03-19T19:02:31Z",
+          "html_url": "https://gitcode.com/Ascend/msopcom/merge_requests/75",
+          "queueDurationInSeconds": 4891,
+          "durationInSeconds": 684
+        }
+      ]
+    },
+    {
+      "id": 750002,
+      "name": "PR #75 compile - 【Doc】新增安全声明和漏洞声明+doctool工具检查低错修改",
+      "head_branch": "master",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-03-19T18:50:25Z",
+      "updated_at": "2026-03-19T19:02:31Z",
+      "html_url": "https://gitcode.com/Ascend/msopcom/merge_requests/75",
+      "durationInSeconds": 726,
+      "jobs": [
+        {
+          "id": 750003,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-03-19T18:50:25Z",
+          "started_at": "2026-03-19T18:51:07Z",
+          "completed_at": "2026-03-19T19:02:31Z",
+          "html_url": "https://gitcode.com/Ascend/msopcom/merge_requests/75",
+          "queueDurationInSeconds": 42,
+          "durationInSeconds": 684
+        }
+      ]
+    },
+    {
+      "id": 750100,
+      "name": "PR #75 docs-ci - 【Doc】新增安全声明和漏洞声明+doctool工具检查低错修改",
+      "head_branch": "master",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-03-19T17:20:53Z",
+      "updated_at": "2026-03-19T17:21:56Z",
+      "html_url": "https://gitcode.com/Ascend/msopcom/merge_requests/75",
+      "durationInSeconds": 63,
+      "jobs": [
+        {
+          "id": 750101,
+          "name": "docs-ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-03-19T17:20:53Z",
+          "started_at": "2026-03-19T17:21:22Z",
+          "completed_at": "2026-03-19T17:21:56Z",
+          "html_url": "https://gitcode.com/Ascend/msopcom/merge_requests/75",
+          "queueDurationInSeconds": 29,
+          "durationInSeconds": 34
+        }
+      ]
+    },
+    {
+      "id": 750101,
+      "name": "PR #75 docs-ci - 【Doc】新增安全声明和漏洞声明+doctool工具检查低错修改",
+      "head_branch": "master",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-03-19T17:29:36Z",
+      "updated_at": "2026-03-19T17:30:36Z",
+      "html_url": "https://gitcode.com/Ascend/msopcom/merge_requests/75",
+      "durationInSeconds": 60,
+      "jobs": [
+        {
+          "id": 750102,
+          "name": "docs-ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-03-19T17:29:36Z",
+          "started_at": "2026-03-19T17:30:02Z",
+          "completed_at": "2026-03-19T17:30:36Z",
+          "html_url": "https://gitcode.com/Ascend/msopcom/merge_requests/75",
+          "queueDurationInSeconds": 26,
+          "durationInSeconds": 34
+        }
+      ]
+    },
+    {
+      "id": 750102,
+      "name": "PR #75 docs-ci - 【Doc】新增安全声明和漏洞声明+doctool工具检查低错修改",
+      "head_branch": "master",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-03-19T18:50:25Z",
+      "updated_at": "2026-03-19T18:51:28Z",
+      "html_url": "https://gitcode.com/Ascend/msopcom/merge_requests/75",
+      "durationInSeconds": 63,
+      "jobs": [
+        {
+          "id": 750103,
+          "name": "docs-ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-03-19T18:50:25Z",
+          "started_at": "2026-03-19T18:50:51Z",
+          "completed_at": "2026-03-19T18:51:28Z",
+          "html_url": "https://gitcode.com/Ascend/msopcom/merge_requests/75",
+          "queueDurationInSeconds": 26,
+          "durationInSeconds": 37
+        }
+      ]
+    },
+    {
+      "id": 970000,
+      "name": "PR #97 compile - [feature] 补充ut 用例test/ut/plugin/ccec/dbi/test_load",
+      "head_branch": "ut_load_store",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-03-19T19:13:47Z",
+      "updated_at": "2026-03-19T19:18:44Z",
+      "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/97",
+      "durationInSeconds": 297,
+      "jobs": [
+        {
+          "id": 970001,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-03-19T19:13:47Z",
+          "started_at": "2026-03-19T19:14:30Z",
+          "completed_at": "2026-03-19T19:18:44Z",
+          "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/97",
+          "queueDurationInSeconds": 43,
+          "durationInSeconds": 254
+        }
+      ]
+    },
+    {
+      "id": 970001,
+      "name": "PR #97 compile - [feature] 补充ut 用例test/ut/plugin/ccec/dbi/test_load",
+      "head_branch": "ut_load_store",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-03-19T19:36:23Z",
+      "updated_at": "2026-03-19T19:46:59Z",
+      "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/97",
+      "durationInSeconds": 636,
+      "jobs": [
+        {
+          "id": 970002,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-03-19T19:36:23Z",
+          "started_at": "2026-03-19T19:37:04Z",
+          "completed_at": "2026-03-19T19:46:59Z",
+          "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/97",
+          "queueDurationInSeconds": 41,
+          "durationInSeconds": 595
+        }
+      ]
+    },
+    {
+      "id": 970100,
+      "name": "PR #97 docs-ci - [feature] 补充ut 用例test/ut/plugin/ccec/dbi/test_load",
+      "head_branch": "ut_load_store",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-03-19T19:13:47Z",
+      "updated_at": "2026-03-19T19:14:43Z",
+      "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/97",
+      "durationInSeconds": 56,
+      "jobs": [
+        {
+          "id": 970101,
+          "name": "docs-ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-03-19T19:13:47Z",
+          "started_at": "2026-03-19T19:14:13Z",
+          "completed_at": "2026-03-19T19:14:43Z",
+          "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/97",
+          "queueDurationInSeconds": 26,
+          "durationInSeconds": 30
+        }
+      ]
+    },
+    {
+      "id": 970101,
+      "name": "PR #97 docs-ci - [feature] 补充ut 用例test/ut/plugin/ccec/dbi/test_load",
+      "head_branch": "ut_load_store",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-03-19T19:36:23Z",
+      "updated_at": "2026-03-19T19:37:19Z",
+      "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/97",
+      "durationInSeconds": 56,
+      "jobs": [
+        {
+          "id": 970102,
+          "name": "docs-ci-pipeline-success",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-03-19T19:36:23Z",
+          "started_at": "2026-03-19T19:36:53Z",
+          "completed_at": "2026-03-19T19:37:19Z",
+          "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/97",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 26
+        }
+      ]
+    },
+    {
+      "id": 980000,
+      "name": "PR #98 compile - [feature] 补充ut用例： test/ut/plugin/ccec/dbi/test_mov",
+      "head_branch": "ut_mov_fp",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-03-19T19:14:03Z",
+      "updated_at": "2026-03-19T19:30:18Z",
+      "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/98",
+      "durationInSeconds": 975,
+      "jobs": [
+        {
+          "id": 980001,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-03-19T19:14:03Z",
+          "started_at": "2026-03-19T19:14:44Z",
+          "completed_at": "2026-03-19T19:30:18Z",
+          "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/98",
+          "queueDurationInSeconds": 41,
+          "durationInSeconds": 934
+        }
+      ]
+    },
+    {
+      "id": 980001,
+      "name": "PR #98 compile - [feature] 补充ut用例： test/ut/plugin/ccec/dbi/test_mov",
+      "head_branch": "ut_mov_fp",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-03-19T19:46:41Z",
+      "updated_at": "2026-03-19T21:06:24Z",
+      "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/98",
+      "durationInSeconds": 4783,
+      "jobs": [
+        {
+          "id": 980002,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-03-19T19:46:41Z",
+          "started_at": "2026-03-19T19:47:28Z",
+          "completed_at": "2026-03-19T21:06:24Z",
+          "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/98",
+          "queueDurationInSeconds": 47,
+          "durationInSeconds": 4736
+        }
+      ]
+    },
+    {
+      "id": 980100,
+      "name": "PR #98 docs-ci - [feature] 补充ut用例： test/ut/plugin/ccec/dbi/test_mov",
+      "head_branch": "ut_mov_fp",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-03-19T19:14:03Z",
+      "updated_at": "2026-03-19T19:15:00Z",
+      "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/98",
+      "durationInSeconds": 57,
+      "jobs": [
+        {
+          "id": 980101,
+          "name": "docs-ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-03-19T19:14:03Z",
+          "started_at": "2026-03-19T19:14:30Z",
+          "completed_at": "2026-03-19T19:15:00Z",
+          "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/98",
+          "queueDurationInSeconds": 27,
+          "durationInSeconds": 30
+        }
+      ]
+    },
+    {
+      "id": 980101,
+      "name": "PR #98 docs-ci - [feature] 补充ut用例： test/ut/plugin/ccec/dbi/test_mov",
+      "head_branch": "ut_mov_fp",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-03-19T19:46:41Z",
+      "updated_at": "2026-03-19T19:47:43Z",
+      "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/98",
+      "durationInSeconds": 62,
+      "jobs": [
+        {
+          "id": 980102,
+          "name": "docs-ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-03-19T19:46:41Z",
+          "started_at": "2026-03-19T19:47:09Z",
+          "completed_at": "2026-03-19T19:47:43Z",
+          "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/98",
+          "queueDurationInSeconds": 28,
+          "durationInSeconds": 34
+        }
+      ]
+    },
+    {
+      "id": 90000,
+      "name": "PR #9 compile - 【Doc】新增安全声明和漏洞声明+doctool工具检查低错修改",
+      "head_branch": "master",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-03-19T16:41:45Z",
+      "updated_at": "2026-03-19T17:46:04Z",
+      "html_url": "https://gitcode.com/Ascend/MindStudio-Ops-Tuner/merge_requests/9",
+      "durationInSeconds": 3859,
+      "jobs": [
+        {
+          "id": 90001,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-03-19T16:41:45Z",
+          "started_at": "2026-03-19T16:42:27Z",
+          "completed_at": "2026-03-19T17:46:04Z",
+          "html_url": "https://gitcode.com/Ascend/MindStudio-Ops-Tuner/merge_requests/9",
+          "queueDurationInSeconds": 42,
+          "durationInSeconds": 3817
+        }
+      ]
+    },
+    {
+      "id": 90001,
+      "name": "PR #9 compile - 【Doc】新增安全声明和漏洞声明+doctool工具检查低错修改",
+      "head_branch": "master",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-03-19T19:12:52Z",
+      "updated_at": "2026-03-19T19:18:24Z",
+      "html_url": "https://gitcode.com/Ascend/MindStudio-Ops-Tuner/merge_requests/9",
+      "durationInSeconds": 332,
+      "jobs": [
+        {
+          "id": 90002,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-03-19T19:12:52Z",
+          "started_at": "2026-03-19T19:13:37Z",
+          "completed_at": "2026-03-19T19:18:24Z",
+          "html_url": "https://gitcode.com/Ascend/MindStudio-Ops-Tuner/merge_requests/9",
+          "queueDurationInSeconds": 45,
+          "durationInSeconds": 287
+        }
+      ]
+    },
+    {
+      "id": 90100,
+      "name": "PR #9 docs-ci - 【Doc】新增安全声明和漏洞声明+doctool工具检查低错修改",
+      "head_branch": "master",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-03-19T16:41:45Z",
+      "updated_at": "2026-03-19T16:42:46Z",
+      "html_url": "https://gitcode.com/Ascend/MindStudio-Ops-Tuner/merge_requests/9",
+      "durationInSeconds": 61,
+      "jobs": [
+        {
+          "id": 90101,
+          "name": "docs-ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-03-19T16:41:45Z",
+          "started_at": "2026-03-19T16:42:12Z",
+          "completed_at": "2026-03-19T16:42:46Z",
+          "html_url": "https://gitcode.com/Ascend/MindStudio-Ops-Tuner/merge_requests/9",
+          "queueDurationInSeconds": 27,
+          "durationInSeconds": 34
+        }
+      ]
+    },
+    {
+      "id": 90101,
+      "name": "PR #9 docs-ci - 【Doc】新增安全声明和漏洞声明+doctool工具检查低错修改",
+      "head_branch": "master",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-03-19T19:12:52Z",
+      "updated_at": "2026-03-19T19:14:12Z",
+      "html_url": "https://gitcode.com/Ascend/MindStudio-Ops-Tuner/merge_requests/9",
+      "durationInSeconds": 80,
+      "jobs": [
+        {
+          "id": 90102,
+          "name": "docs-ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-03-19T19:12:52Z",
+          "started_at": "2026-03-19T19:13:39Z",
+          "completed_at": "2026-03-19T19:14:12Z",
+          "html_url": "https://gitcode.com/Ascend/MindStudio-Ops-Tuner/merge_requests/9",
+          "queueDurationInSeconds": 47,
+          "durationInSeconds": 33
         }
       ]
     }

@@ -1,0 +1,31 @@
+{
+  "prNumber": 48,
+  "owner": "Ascend",
+  "repo": "HierarchicalKV-ascend",
+  "createdAt": "2026-04-08T10:37:46+08:00",
+  "mergedAt": "2026-04-08T19:04:03+08:00",
+  "prSubmitToMerge": {
+    "durationSeconds": 30377,
+    "fromTime": "2026-04-08T10:37:46Z",
+    "toTime": "2026-04-08T19:04:03Z"
+  },
+  "compileToCiCycles": [
+    {
+      "compileTime": "2026-04-08T10:37:48Z",
+      "startTime": "2026-04-08T10:38:10Z",
+      "finishTime": "2026-04-08T10:41:48Z",
+      "durationSeconds": 240
+    },
+    {
+      "compileTime": "2026-04-08T10:37:48Z",
+      "startTime": "2026-04-08T10:38:18Z",
+      "finishTime": "2026-04-08T19:04:03Z",
+      "durationSeconds": 30375
+    }
+  ],
+  "lastCiRemovalToMerge": {
+    "durationSeconds": 0,
+    "fromTime": "2026-04-09T03:04:03Z",
+    "toTime": "2026-04-08T19:04:03Z"
+  }
+}

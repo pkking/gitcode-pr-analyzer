@@ -1,0 +1,55 @@
+{
+  "prNumber": 14,
+  "owner": "Ascend",
+  "repo": "slime-ascend",
+  "createdAt": "2026-03-19T00:35:18+08:00",
+  "mergedAt": "2026-03-19T09:51:56+08:00",
+  "prSubmitToMerge": {
+    "durationSeconds": 33398,
+    "fromTime": "2026-03-19T00:35:18Z",
+    "toTime": "2026-03-19T09:51:56Z"
+  },
+  "compileToCiCycles": [
+    {
+      "compileTime": "2026-03-19T00:41:24Z",
+      "startTime": "2026-03-19T00:41:42Z",
+      "finishTime": "2026-03-19T00:45:43Z",
+      "durationSeconds": 259
+    },
+    {
+      "compileTime": "2026-03-19T00:58:32Z",
+      "startTime": "2026-03-19T00:58:53Z",
+      "finishTime": "2026-03-19T01:00:34Z",
+      "durationSeconds": 122
+    },
+    {
+      "compileTime": "2026-03-19T09:17:53Z",
+      "startTime": "2026-03-19T09:18:14Z",
+      "finishTime": "2026-03-19T09:23:11Z",
+      "durationSeconds": 318
+    },
+    {
+      "compileTime": "2026-03-19T00:41:24Z",
+      "startTime": "2026-03-19T00:41:54Z",
+      "finishTime": "2026-03-19T09:51:56Z",
+      "durationSeconds": 33032
+    },
+    {
+      "compileTime": "2026-03-19T00:58:32Z",
+      "startTime": "2026-03-19T00:59:02Z",
+      "finishTime": "2026-03-19T09:51:56Z",
+      "durationSeconds": 32004
+    },
+    {
+      "compileTime": "2026-03-19T09:17:53Z",
+      "startTime": "2026-03-19T09:18:23Z",
+      "finishTime": "2026-03-19T09:51:56Z",
+      "durationSeconds": 2043
+    }
+  ],
+  "lastCiRemovalToMerge": {
+    "durationSeconds": 0,
+    "fromTime": "2026-03-19T17:51:56Z",
+    "toTime": "2026-03-19T09:51:56Z"
+  }
+}

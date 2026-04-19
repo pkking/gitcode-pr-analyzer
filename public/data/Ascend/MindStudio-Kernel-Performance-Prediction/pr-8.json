@@ -1,0 +1,67 @@
+{
+  "prNumber": 8,
+  "owner": "Ascend",
+  "repo": "MindStudio-Kernel-Performance-Prediction",
+  "createdAt": "2026-02-06T20:03:27+08:00",
+  "mergedAt": "2026-02-09T15:53:47+08:00",
+  "prSubmitToMerge": {
+    "durationSeconds": 244220,
+    "fromTime": "2026-02-06T20:03:27Z",
+    "toTime": "2026-02-09T15:53:47Z"
+  },
+  "compileToCiCycles": [
+    {
+      "compileTime": "2026-02-07T15:53:34Z",
+      "startTime": "2026-02-07T15:54:16Z",
+      "finishTime": "2026-02-07T15:58:16Z",
+      "durationSeconds": 282
+    },
+    {
+      "compileTime": "2026-02-09T10:14:27Z",
+      "startTime": "2026-02-09T10:15:13Z",
+      "finishTime": "2026-02-09T10:21:51Z",
+      "durationSeconds": 444
+    },
+    {
+      "compileTime": "2026-02-09T10:36:59Z",
+      "startTime": "2026-02-09T10:37:40Z",
+      "finishTime": "2026-02-09T10:44:57Z",
+      "durationSeconds": 478
+    },
+    {
+      "compileTime": "2026-02-09T15:24:17Z",
+      "startTime": "2026-02-09T15:24:56Z",
+      "finishTime": "2026-02-09T15:31:07Z",
+      "durationSeconds": 410
+    },
+    {
+      "compileTime": "2026-02-07T15:53:34Z",
+      "startTime": "2026-02-07T15:54:04Z",
+      "finishTime": "2026-02-09T15:53:47Z",
+      "durationSeconds": 172813
+    },
+    {
+      "compileTime": "2026-02-09T10:14:27Z",
+      "startTime": "2026-02-09T10:14:57Z",
+      "finishTime": "2026-02-09T15:53:47Z",
+      "durationSeconds": 20360
+    },
+    {
+      "compileTime": "2026-02-09T10:36:59Z",
+      "startTime": "2026-02-09T10:37:29Z",
+      "finishTime": "2026-02-09T15:53:47Z",
+      "durationSeconds": 19008
+    },
+    {
+      "compileTime": "2026-02-09T15:24:17Z",
+      "startTime": "2026-02-09T15:24:47Z",
+      "finishTime": "2026-02-09T15:53:47Z",
+      "durationSeconds": 1770
+    }
+  ],
+  "lastCiRemovalToMerge": {
+    "durationSeconds": 0,
+    "fromTime": "2026-02-09T23:53:47Z",
+    "toTime": "2026-02-09T15:53:47Z"
+  }
+}

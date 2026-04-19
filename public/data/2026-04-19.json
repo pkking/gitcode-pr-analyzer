@@ -1,6 +1,6 @@
 {
   "date": "2026-04-19",
-  "repo": "Ascend/AscendNPU-IR",
+  "repo": "Ascend/MindStudio-Sanitizer",
   "runs": [
     {
       "id": 334400039,
@@ -849,6 +849,206 @@
           "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/1046",
           "queueDurationInSeconds": 116,
           "durationInSeconds": 109
+        }
+      ]
+    },
+    {
+      "id": 550000,
+      "name": "PR #55 compile - 修改执行超时提示语",
+      "head_branch": "master",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-04-18T16:02:59Z",
+      "updated_at": "2026-04-18T16:04:03Z",
+      "html_url": "https://gitcode.com/Ascend/MindStudio-CommReport/merge_requests/55",
+      "durationInSeconds": 64,
+      "jobs": [
+        {
+          "id": 550001,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-04-18T16:02:59Z",
+          "started_at": "2026-04-18T16:03:33Z",
+          "completed_at": "2026-04-18T16:04:03Z",
+          "html_url": "https://gitcode.com/Ascend/MindStudio-CommReport/merge_requests/55",
+          "queueDurationInSeconds": 34,
+          "durationInSeconds": 30
+        }
+      ]
+    },
+    {
+      "id": 550100,
+      "name": "PR #55 docs-ci - 修改执行超时提示语",
+      "head_branch": "master",
+      "status": "completed",
+      "conclusion": "pending",
+      "created_at": "2026-04-18T16:02:59Z",
+      "updated_at": "2026-04-19T20:31:09Z",
+      "html_url": "https://gitcode.com/Ascend/MindStudio-CommReport/merge_requests/55",
+      "durationInSeconds": 102490.144,
+      "jobs": [
+        {
+          "id": 550101,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "pending",
+          "created_at": "2026-04-18T16:02:59Z",
+          "started_at": "2026-04-18T16:03:29Z",
+          "completed_at": "2026-04-19T20:31:09Z",
+          "html_url": "https://gitcode.com/Ascend/MindStudio-CommReport/merge_requests/55",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 102460.144
+        }
+      ]
+    },
+    {
+      "id": 1150002,
+      "name": "PR #115 compile - [refactor]重构sanitizer init finalize逻辑",
+      "head_branch": "refactor_sanitizer_init",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-04-18T16:06:21Z",
+      "updated_at": "2026-04-18T16:12:36Z",
+      "html_url": "https://gitcode.com/Ascend/MindStudio-Ops-Common/merge_requests/115",
+      "durationInSeconds": 375,
+      "jobs": [
+        {
+          "id": 1150003,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-04-18T16:06:21Z",
+          "started_at": "2026-04-18T16:06:58Z",
+          "completed_at": "2026-04-18T16:12:36Z",
+          "html_url": "https://gitcode.com/Ascend/MindStudio-Ops-Common/merge_requests/115",
+          "queueDurationInSeconds": 37,
+          "durationInSeconds": 338
+        }
+      ]
+    },
+    {
+      "id": 1150003,
+      "name": "PR #115 compile - [refactor]重构sanitizer init finalize逻辑",
+      "head_branch": "refactor_sanitizer_init",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-04-18T17:56:32Z",
+      "updated_at": "2026-04-18T18:13:24Z",
+      "html_url": "https://gitcode.com/Ascend/MindStudio-Ops-Common/merge_requests/115",
+      "durationInSeconds": 1012,
+      "jobs": [
+        {
+          "id": 1150004,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-04-18T17:56:32Z",
+          "started_at": "2026-04-18T17:57:09Z",
+          "completed_at": "2026-04-18T18:13:24Z",
+          "html_url": "https://gitcode.com/Ascend/MindStudio-Ops-Common/merge_requests/115",
+          "queueDurationInSeconds": 37,
+          "durationInSeconds": 975
+        }
+      ]
+    },
+    {
+      "id": 1150102,
+      "name": "PR #115 docs-ci - [refactor]重构sanitizer init finalize逻辑",
+      "head_branch": "refactor_sanitizer_init",
+      "status": "completed",
+      "conclusion": "pending",
+      "created_at": "2026-04-18T16:06:21Z",
+      "updated_at": "2026-04-19T20:40:14Z",
+      "html_url": "https://gitcode.com/Ascend/MindStudio-Ops-Common/merge_requests/115",
+      "durationInSeconds": 102833.62,
+      "jobs": [
+        {
+          "id": 1150103,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "pending",
+          "created_at": "2026-04-18T16:06:21Z",
+          "started_at": "2026-04-18T16:06:51Z",
+          "completed_at": "2026-04-19T20:40:14Z",
+          "html_url": "https://gitcode.com/Ascend/MindStudio-Ops-Common/merge_requests/115",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 102803.62
+        }
+      ]
+    },
+    {
+      "id": 1150103,
+      "name": "PR #115 docs-ci - [refactor]重构sanitizer init finalize逻辑",
+      "head_branch": "refactor_sanitizer_init",
+      "status": "completed",
+      "conclusion": "pending",
+      "created_at": "2026-04-18T17:56:32Z",
+      "updated_at": "2026-04-19T20:40:14Z",
+      "html_url": "https://gitcode.com/Ascend/MindStudio-Ops-Common/merge_requests/115",
+      "durationInSeconds": 96222.62,
+      "jobs": [
+        {
+          "id": 1150104,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "pending",
+          "created_at": "2026-04-18T17:56:32Z",
+          "started_at": "2026-04-18T17:57:02Z",
+          "completed_at": "2026-04-19T20:40:14Z",
+          "html_url": "https://gitcode.com/Ascend/MindStudio-Ops-Common/merge_requests/115",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 96192.62
+        }
+      ]
+    },
+    {
+      "id": 1580000,
+      "name": "PR #158 compile - [refactor]重构sanitizer init finalize逻辑",
+      "head_branch": "refactor_sanitizer_init",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-04-18T16:08:45Z",
+      "updated_at": "2026-04-18T16:27:20Z",
+      "html_url": "https://gitcode.com/Ascend/MindStudio-Sanitizer/merge_requests/158",
+      "durationInSeconds": 1115,
+      "jobs": [
+        {
+          "id": 1580001,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-04-18T16:08:45Z",
+          "started_at": "2026-04-18T16:09:31Z",
+          "completed_at": "2026-04-18T16:27:20Z",
+          "html_url": "https://gitcode.com/Ascend/MindStudio-Sanitizer/merge_requests/158",
+          "queueDurationInSeconds": 46,
+          "durationInSeconds": 1069
+        }
+      ]
+    },
+    {
+      "id": 1580100,
+      "name": "PR #158 docs-ci - [refactor]重构sanitizer init finalize逻辑",
+      "head_branch": "refactor_sanitizer_init",
+      "status": "completed",
+      "conclusion": "pending",
+      "created_at": "2026-04-18T16:08:45Z",
+      "updated_at": "2026-04-19T20:42:28Z",
+      "html_url": "https://gitcode.com/Ascend/MindStudio-Sanitizer/merge_requests/158",
+      "durationInSeconds": 102823.079,
+      "jobs": [
+        {
+          "id": 1580101,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "pending",
+          "created_at": "2026-04-18T16:08:45Z",
+          "started_at": "2026-04-18T16:09:15Z",
+          "completed_at": "2026-04-19T20:42:28Z",
+          "html_url": "https://gitcode.com/Ascend/MindStudio-Sanitizer/merge_requests/158",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 102793.079
         }
       ]
     }

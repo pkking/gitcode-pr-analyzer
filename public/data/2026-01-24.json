@@ -1,6 +1,6 @@
 {
   "date": "2026-01-24",
-  "repo": "Ascend/op-plugin",
+  "repo": "Ascend/MindStudio-Operator-Tools",
   "runs": [
     {
       "id": 120002,
@@ -8,8 +8,8 @@
       "head_branch": "dpj/optimize_KVSmanager",
       "status": "completed",
       "conclusion": "failure",
-      "created_at": "2026-01-24T04:15:46Z",
-      "updated_at": "2026-01-26T01:19:10Z",
+      "created_at": "2026-01-24T12:15:46Z",
+      "updated_at": "2026-01-26T09:19:10Z",
       "html_url": "https://gitcode.com/Ascend/TransferQueue/merge_requests/12",
       "durationInSeconds": 162204,
       "jobs": [
@@ -18,9 +18,9 @@
           "name": "ci-pipeline-running",
           "status": "completed",
           "conclusion": "failure",
-          "created_at": "2026-01-24T04:15:46Z",
-          "started_at": "2026-01-26T01:16:13Z",
-          "completed_at": "2026-01-26T01:19:10Z",
+          "created_at": "2026-01-24T12:15:46Z",
+          "started_at": "2026-01-26T09:16:13Z",
+          "completed_at": "2026-01-26T09:19:10Z",
           "html_url": "https://gitcode.com/Ascend/TransferQueue/merge_requests/12",
           "queueDurationInSeconds": 162027,
           "durationInSeconds": 177
@@ -33,8 +33,8 @@
       "head_branch": "dpj/optimize_KVSmanager",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-01-24T04:15:46Z",
-      "updated_at": "2026-01-26T03:34:03Z",
+      "created_at": "2026-01-24T12:15:46Z",
+      "updated_at": "2026-01-26T11:34:03Z",
       "html_url": "https://gitcode.com/Ascend/TransferQueue/merge_requests/12",
       "durationInSeconds": 170297,
       "jobs": [
@@ -43,9 +43,9 @@
           "name": "docs-ci",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-01-24T04:15:46Z",
-          "started_at": "2026-01-24T04:16:16Z",
-          "completed_at": "2026-01-26T03:34:03Z",
+          "created_at": "2026-01-24T12:15:46Z",
+          "started_at": "2026-01-24T12:16:16Z",
+          "completed_at": "2026-01-26T11:34:03Z",
           "html_url": "https://gitcode.com/Ascend/TransferQueue/merge_requests/12",
           "queueDurationInSeconds": 30,
           "durationInSeconds": 170267
@@ -254,51 +254,51 @@
     },
     {
       "id": 170002,
-      "name": "PR #17 compile - 【feature】添加Scalar相关细节指标展示",
-      "head_branch": "test_scalr",
+      "name": "PR #17 compile - 【feature】核间同步指令补桩开发",
+      "head_branch": "for_sync",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-01-24T11:03:12Z",
-      "updated_at": "2026-01-26T01:42:40Z",
-      "html_url": "https://gitcode.com/Ascend/msopprof/merge_requests/17",
-      "durationInSeconds": 139168,
+      "created_at": "2026-01-23T17:43:45Z",
+      "updated_at": "2026-01-23T17:56:06Z",
+      "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/17",
+      "durationInSeconds": 741,
       "jobs": [
         {
           "id": 170003,
           "name": "ci-pipeline-running",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-01-24T11:03:12Z",
-          "started_at": "2026-01-26T01:30:27Z",
-          "completed_at": "2026-01-26T01:42:40Z",
-          "html_url": "https://gitcode.com/Ascend/msopprof/merge_requests/17",
-          "queueDurationInSeconds": 138435,
-          "durationInSeconds": 733
+          "created_at": "2026-01-23T17:43:45Z",
+          "started_at": "2026-01-23T17:44:27Z",
+          "completed_at": "2026-01-23T17:56:06Z",
+          "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/17",
+          "queueDurationInSeconds": 42,
+          "durationInSeconds": 699
         }
       ]
     },
     {
       "id": 170102,
-      "name": "PR #17 docs-ci - 【feature】添加Scalar相关细节指标展示",
-      "head_branch": "test_scalr",
+      "name": "PR #17 docs-ci - 【feature】核间同步指令补桩开发",
+      "head_branch": "for_sync",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-01-24T11:03:12Z",
-      "updated_at": "2026-01-26T12:02:13Z",
-      "html_url": "https://gitcode.com/Ascend/msopprof/merge_requests/17",
-      "durationInSeconds": 176341,
+      "created_at": "2026-01-23T17:43:45Z",
+      "updated_at": "2026-01-26T09:56:11Z",
+      "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/17",
+      "durationInSeconds": 231146,
       "jobs": [
         {
           "id": 170103,
           "name": "docs-ci",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-01-24T11:03:12Z",
-          "started_at": "2026-01-24T11:03:42Z",
-          "completed_at": "2026-01-26T12:02:13Z",
-          "html_url": "https://gitcode.com/Ascend/msopprof/merge_requests/17",
+          "created_at": "2026-01-23T17:43:45Z",
+          "started_at": "2026-01-23T17:44:15Z",
+          "completed_at": "2026-01-26T09:56:11Z",
+          "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/17",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 176311
+          "durationInSeconds": 231116
         }
       ]
     },
@@ -1004,101 +1004,101 @@
     },
     {
       "id": 120001,
-      "name": "PR #12 compile - 增加MIndStudio 26.0.0版本的msPTI需求设计内容",
-      "head_branch": "master",
+      "name": "PR #12 compile - [perf] Performance optimization of 'KVStorageManag",
+      "head_branch": "dpj/optimize_KVSmanager",
       "status": "completed",
-      "conclusion": "success",
-      "created_at": "2026-01-24T01:28:35Z",
-      "updated_at": "2026-01-24T01:40:33Z",
-      "html_url": "https://gitcode.com/Ascend/mspti/merge_requests/12",
-      "durationInSeconds": 718,
+      "conclusion": "failure",
+      "created_at": "2026-01-23T17:18:31Z",
+      "updated_at": "2026-01-26T09:19:10Z",
+      "html_url": "https://gitcode.com/Ascend/TransferQueue/merge_requests/12",
+      "durationInSeconds": 230439,
       "jobs": [
         {
           "id": 120002,
           "name": "ci-pipeline-running",
           "status": "completed",
-          "conclusion": "success",
-          "created_at": "2026-01-24T01:28:35Z",
-          "started_at": "2026-01-24T01:29:15Z",
-          "completed_at": "2026-01-24T01:40:33Z",
-          "html_url": "https://gitcode.com/Ascend/mspti/merge_requests/12",
-          "queueDurationInSeconds": 40,
-          "durationInSeconds": 678
+          "conclusion": "failure",
+          "created_at": "2026-01-23T17:18:31Z",
+          "started_at": "2026-01-26T09:16:13Z",
+          "completed_at": "2026-01-26T09:19:10Z",
+          "html_url": "https://gitcode.com/Ascend/TransferQueue/merge_requests/12",
+          "queueDurationInSeconds": 230262,
+          "durationInSeconds": 177
         }
       ]
     },
     {
       "id": 120101,
-      "name": "PR #12 docs-ci - 增加MIndStudio 26.0.0版本的msPTI需求设计内容",
-      "head_branch": "master",
+      "name": "PR #12 docs-ci - [perf] Performance optimization of 'KVStorageManag",
+      "head_branch": "dpj/optimize_KVSmanager",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-01-24T01:28:35Z",
-      "updated_at": "2026-02-27T01:34:41Z",
-      "html_url": "https://gitcode.com/Ascend/mspti/merge_requests/12",
-      "durationInSeconds": 2937966,
+      "created_at": "2026-01-23T17:18:31Z",
+      "updated_at": "2026-01-26T11:34:03Z",
+      "html_url": "https://gitcode.com/Ascend/TransferQueue/merge_requests/12",
+      "durationInSeconds": 238532,
       "jobs": [
         {
           "id": 120102,
           "name": "docs-ci",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-01-24T01:28:35Z",
-          "started_at": "2026-01-24T01:29:05Z",
-          "completed_at": "2026-02-27T01:34:41Z",
-          "html_url": "https://gitcode.com/Ascend/mspti/merge_requests/12",
+          "created_at": "2026-01-23T17:18:31Z",
+          "started_at": "2026-01-23T17:19:01Z",
+          "completed_at": "2026-01-26T11:34:03Z",
+          "html_url": "https://gitcode.com/Ascend/TransferQueue/merge_requests/12",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 2937936
+          "durationInSeconds": 238502
         }
       ]
     },
     {
       "id": 190000,
-      "name": "PR #19 compile - 【Feature】: 添加msmemscope.take_snapshot接口",
-      "head_branch": "master",
+      "name": "PR #19 compile - 【feature】流水内竞争功能适配",
+      "head_branch": "dev2",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-01-24T10:19:16Z",
-      "updated_at": "2026-01-24T10:44:25Z",
-      "html_url": "https://gitcode.com/Ascend/msmemscope/merge_requests/19",
-      "durationInSeconds": 1509,
+      "created_at": "2026-01-23T16:01:46Z",
+      "updated_at": "2026-01-23T16:13:02Z",
+      "html_url": "https://gitcode.com/Ascend/msopcom/merge_requests/19",
+      "durationInSeconds": 676,
       "jobs": [
         {
           "id": 190001,
           "name": "ci-pipeline-running",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-01-24T10:19:16Z",
-          "started_at": "2026-01-24T10:19:59Z",
-          "completed_at": "2026-01-24T10:44:25Z",
-          "html_url": "https://gitcode.com/Ascend/msmemscope/merge_requests/19",
-          "queueDurationInSeconds": 43,
-          "durationInSeconds": 1466
+          "created_at": "2026-01-23T16:01:46Z",
+          "started_at": "2026-01-23T16:02:28Z",
+          "completed_at": "2026-01-23T16:13:02Z",
+          "html_url": "https://gitcode.com/Ascend/msopcom/merge_requests/19",
+          "queueDurationInSeconds": 42,
+          "durationInSeconds": 634
         }
       ]
     },
     {
       "id": 190100,
-      "name": "PR #19 docs-ci - 【Feature】: 添加msmemscope.take_snapshot接口",
-      "head_branch": "master",
+      "name": "PR #19 docs-ci - 【feature】流水内竞争功能适配",
+      "head_branch": "dev2",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-01-24T10:19:16Z",
-      "updated_at": "2026-01-28T08:48:36Z",
-      "html_url": "https://gitcode.com/Ascend/msmemscope/merge_requests/19",
-      "durationInSeconds": 340160,
+      "created_at": "2026-01-23T16:01:46Z",
+      "updated_at": "2026-01-23T16:33:00Z",
+      "html_url": "https://gitcode.com/Ascend/msopcom/merge_requests/19",
+      "durationInSeconds": 1874,
       "jobs": [
         {
           "id": 190101,
           "name": "docs-ci",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-01-24T10:19:16Z",
-          "started_at": "2026-01-24T10:19:46Z",
-          "completed_at": "2026-01-28T08:48:36Z",
-          "html_url": "https://gitcode.com/Ascend/msmemscope/merge_requests/19",
+          "created_at": "2026-01-23T16:01:46Z",
+          "started_at": "2026-01-23T16:02:16Z",
+          "completed_at": "2026-01-23T16:33:00Z",
+          "html_url": "https://gitcode.com/Ascend/msopcom/merge_requests/19",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 340130
+          "durationInSeconds": 1844
         }
       ]
     },
@@ -7049,6 +7049,406 @@
           "html_url": "https://gitcode.com/Ascend/op-plugin/merge_requests/4106",
           "queueDurationInSeconds": 30,
           "durationInSeconds": 7451
+        }
+      ]
+    },
+    {
+      "id": 100000,
+      "name": "PR #10 compile - [feat] Introduce Zero-Copy to use YuanrongStorageC",
+      "head_branch": "ds_zero_copy",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-01-23T17:19:55Z",
+      "updated_at": "2026-01-26T11:09:55Z",
+      "html_url": "https://gitcode.com/Ascend/TransferQueue/merge_requests/10",
+      "durationInSeconds": 237000,
+      "jobs": [
+        {
+          "id": 100001,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-01-23T17:19:55Z",
+          "started_at": "2026-01-26T11:06:17Z",
+          "completed_at": "2026-01-26T11:09:55Z",
+          "html_url": "https://gitcode.com/Ascend/TransferQueue/merge_requests/10",
+          "queueDurationInSeconds": 236782,
+          "durationInSeconds": 218
+        }
+      ]
+    },
+    {
+      "id": 100100,
+      "name": "PR #10 docs-ci - [feat] Introduce Zero-Copy to use YuanrongStorageC",
+      "head_branch": "ds_zero_copy",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-01-23T17:19:55Z",
+      "updated_at": "2026-01-26T11:40:20Z",
+      "html_url": "https://gitcode.com/Ascend/TransferQueue/merge_requests/10",
+      "durationInSeconds": 238825,
+      "jobs": [
+        {
+          "id": 100101,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-01-23T17:19:55Z",
+          "started_at": "2026-01-23T17:20:25Z",
+          "completed_at": "2026-01-26T11:40:20Z",
+          "html_url": "https://gitcode.com/Ascend/TransferQueue/merge_requests/10",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 238795
+        }
+      ]
+    },
+    {
+      "id": 70001,
+      "name": "PR #7 compile - 【feature】配置新增 demangle 设置",
+      "head_branch": "feature",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-01-23T17:25:01Z",
+      "updated_at": "2026-01-23T17:36:45Z",
+      "html_url": "https://gitcode.com/Ascend/msopcom/merge_requests/7",
+      "durationInSeconds": 704,
+      "jobs": [
+        {
+          "id": 70002,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-01-23T17:25:01Z",
+          "started_at": "2026-01-23T17:25:42Z",
+          "completed_at": "2026-01-23T17:36:45Z",
+          "html_url": "https://gitcode.com/Ascend/msopcom/merge_requests/7",
+          "queueDurationInSeconds": 41,
+          "durationInSeconds": 663
+        }
+      ]
+    },
+    {
+      "id": 70101,
+      "name": "PR #7 docs-ci - 【feature】配置新增 demangle 设置",
+      "head_branch": "feature",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-01-23T17:25:01Z",
+      "updated_at": "2026-01-26T10:40:58Z",
+      "html_url": "https://gitcode.com/Ascend/msopcom/merge_requests/7",
+      "durationInSeconds": 234957,
+      "jobs": [
+        {
+          "id": 70102,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-01-23T17:25:01Z",
+          "started_at": "2026-01-23T17:25:31Z",
+          "completed_at": "2026-01-26T10:40:58Z",
+          "html_url": "https://gitcode.com/Ascend/msopcom/merge_requests/7",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 234927
+        }
+      ]
+    },
+    {
+      "id": 210000,
+      "name": "PR #21 compile - 【feature】新增同步指令bishengtune id对应枚举",
+      "head_branch": "master",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-01-23T16:58:26Z",
+      "updated_at": "2026-01-23T17:09:04Z",
+      "html_url": "https://gitcode.com/Ascend/msopcom/merge_requests/21",
+      "durationInSeconds": 638,
+      "jobs": [
+        {
+          "id": 210001,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-01-23T16:58:26Z",
+          "started_at": "2026-01-23T16:59:15Z",
+          "completed_at": "2026-01-23T17:09:04Z",
+          "html_url": "https://gitcode.com/Ascend/msopcom/merge_requests/21",
+          "queueDurationInSeconds": 49,
+          "durationInSeconds": 589
+        }
+      ]
+    },
+    {
+      "id": 210100,
+      "name": "PR #21 docs-ci - 【feature】新增同步指令bishengtune id对应枚举",
+      "head_branch": "master",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-01-23T16:58:26Z",
+      "updated_at": "2026-01-23T17:14:33Z",
+      "html_url": "https://gitcode.com/Ascend/msopcom/merge_requests/21",
+      "durationInSeconds": 967,
+      "jobs": [
+        {
+          "id": 210101,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-01-23T16:58:26Z",
+          "started_at": "2026-01-23T16:58:56Z",
+          "completed_at": "2026-01-23T17:14:33Z",
+          "html_url": "https://gitcode.com/Ascend/msopcom/merge_requests/21",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 937
+        }
+      ]
+    },
+    {
+      "id": 80004,
+      "name": "PR #8 compile - 【feature】kernel 检测时显示 kernel 信息",
+      "head_branch": "master",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-01-23T17:22:27Z",
+      "updated_at": "2026-01-23T17:34:57Z",
+      "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/8",
+      "durationInSeconds": 750,
+      "jobs": [
+        {
+          "id": 80005,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-01-23T17:22:27Z",
+          "started_at": "2026-01-23T17:23:10Z",
+          "completed_at": "2026-01-23T17:34:57Z",
+          "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/8",
+          "queueDurationInSeconds": 43,
+          "durationInSeconds": 707
+        }
+      ]
+    },
+    {
+      "id": 80005,
+      "name": "PR #8 compile - 【feature】kernel 检测时显示 kernel 信息",
+      "head_branch": "master",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-01-23T17:53:53Z",
+      "updated_at": "2026-01-23T18:07:39Z",
+      "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/8",
+      "durationInSeconds": 826,
+      "jobs": [
+        {
+          "id": 80006,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-01-23T17:53:53Z",
+          "started_at": "2026-01-23T17:54:33Z",
+          "completed_at": "2026-01-23T18:07:39Z",
+          "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/8",
+          "queueDurationInSeconds": 40,
+          "durationInSeconds": 786
+        }
+      ]
+    },
+    {
+      "id": 80104,
+      "name": "PR #8 docs-ci - 【feature】kernel 检测时显示 kernel 信息",
+      "head_branch": "master",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-01-23T17:22:27Z",
+      "updated_at": "2026-01-26T10:01:59Z",
+      "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/8",
+      "durationInSeconds": 232772,
+      "jobs": [
+        {
+          "id": 80105,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-01-23T17:22:27Z",
+          "started_at": "2026-01-23T17:22:57Z",
+          "completed_at": "2026-01-26T10:01:59Z",
+          "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/8",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 232742
+        }
+      ]
+    },
+    {
+      "id": 80105,
+      "name": "PR #8 docs-ci - 【feature】kernel 检测时显示 kernel 信息",
+      "head_branch": "master",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-01-23T17:53:53Z",
+      "updated_at": "2026-01-26T10:01:59Z",
+      "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/8",
+      "durationInSeconds": 230886,
+      "jobs": [
+        {
+          "id": 80106,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-01-23T17:53:53Z",
+          "started_at": "2026-01-23T17:54:23Z",
+          "completed_at": "2026-01-26T10:01:59Z",
+          "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/8",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 230856
+        }
+      ]
+    },
+    {
+      "id": 170001,
+      "name": "PR #17 compile - 【feature】核间同步指令补桩开发",
+      "head_branch": "for_sync",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-01-23T17:16:49Z",
+      "updated_at": "2026-01-23T17:29:35Z",
+      "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/17",
+      "durationInSeconds": 766,
+      "jobs": [
+        {
+          "id": 170002,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-01-23T17:16:49Z",
+          "started_at": "2026-01-23T17:17:31Z",
+          "completed_at": "2026-01-23T17:29:35Z",
+          "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/17",
+          "queueDurationInSeconds": 42,
+          "durationInSeconds": 724
+        }
+      ]
+    },
+    {
+      "id": 170101,
+      "name": "PR #17 docs-ci - 【feature】核间同步指令补桩开发",
+      "head_branch": "for_sync",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-01-23T17:16:49Z",
+      "updated_at": "2026-01-26T09:56:11Z",
+      "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/17",
+      "durationInSeconds": 232762,
+      "jobs": [
+        {
+          "id": 170102,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-01-23T17:16:49Z",
+          "started_at": "2026-01-23T17:17:19Z",
+          "completed_at": "2026-01-26T09:56:11Z",
+          "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/17",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 232732
+        }
+      ]
+    },
+    {
+      "id": 220000,
+      "name": "PR #22 compile - 【feature】流水内竞争适配动态插桩功能",
+      "head_branch": "master",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-01-23T16:35:45Z",
+      "updated_at": "2026-01-23T16:46:45Z",
+      "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/22",
+      "durationInSeconds": 660,
+      "jobs": [
+        {
+          "id": 220001,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-01-23T16:35:45Z",
+          "started_at": "2026-01-23T16:36:25Z",
+          "completed_at": "2026-01-23T16:46:45Z",
+          "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/22",
+          "queueDurationInSeconds": 40,
+          "durationInSeconds": 620
+        }
+      ]
+    },
+    {
+      "id": 220100,
+      "name": "PR #22 docs-ci - 【feature】流水内竞争适配动态插桩功能",
+      "head_branch": "master",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-01-23T16:35:45Z",
+      "updated_at": "2026-01-23T17:30:43Z",
+      "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/22",
+      "durationInSeconds": 3298,
+      "jobs": [
+        {
+          "id": 220101,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-01-23T16:35:45Z",
+          "started_at": "2026-01-23T16:36:15Z",
+          "completed_at": "2026-01-23T17:30:43Z",
+          "html_url": "https://gitcode.com/Ascend/mssanitizer/merge_requests/22",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 3268
+        }
+      ]
+    },
+    {
+      "id": 60000,
+      "name": "PR #6 compile - 【Doc】上传初版算子检测工具功能设计文档",
+      "head_branch": "san_doc",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-01-23T16:18:55Z",
+      "updated_at": "2026-01-23T17:11:47Z",
+      "html_url": "https://gitcode.com/Ascend/msot/merge_requests/6",
+      "durationInSeconds": 3172,
+      "jobs": [
+        {
+          "id": 60001,
+          "name": "ci-pipeline-running",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-01-23T16:18:55Z",
+          "started_at": "2026-01-23T16:19:40Z",
+          "completed_at": "2026-01-23T17:11:47Z",
+          "html_url": "https://gitcode.com/Ascend/msot/merge_requests/6",
+          "queueDurationInSeconds": 45,
+          "durationInSeconds": 3127
+        }
+      ]
+    },
+    {
+      "id": 60100,
+      "name": "PR #6 docs-ci - 【Doc】上传初版算子检测工具功能设计文档",
+      "head_branch": "san_doc",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-01-23T16:18:55Z",
+      "updated_at": "2026-01-23T17:11:53Z",
+      "html_url": "https://gitcode.com/Ascend/msot/merge_requests/6",
+      "durationInSeconds": 3178,
+      "jobs": [
+        {
+          "id": 60101,
+          "name": "docs-ci",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-01-23T16:18:55Z",
+          "started_at": "2026-01-23T16:19:25Z",
+          "completed_at": "2026-01-23T17:11:53Z",
+          "html_url": "https://gitcode.com/Ascend/msot/merge_requests/6",
+          "queueDurationInSeconds": 30,
+          "durationInSeconds": 3148
         }
       ]
     }
