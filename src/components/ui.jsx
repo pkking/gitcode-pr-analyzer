@@ -17,8 +17,20 @@ const TONE_MAP = {
   blue: 'bg-sky-50 text-sky-900 ring-1 ring-sky-200/60',
 };
 
-export function Badge({ children, variant = 'neutral', className = '' }) {
-  const cls = BADGE_CLASS[variant] || BADGE_CLASS.neutral;
+const STATUS_TO_VARIANT = {
+  success: 'success',
+  failure: 'error',
+  failed: 'error',
+  pending: 'warning',
+  running: 'info',
+  cancelled: 'neutral',
+  skipped: 'neutral',
+  unknown: 'neutral',
+};
+
+export function Badge({ children, variant, className = '' }) {
+  const resolved = variant || STATUS_TO_VARIANT[String(children).toLowerCase()] || 'neutral';
+  const cls = BADGE_CLASS[resolved] || BADGE_CLASS.neutral;
   return (
     <span className={`${cls} ${className}`}>
       {children}

@@ -95,7 +95,6 @@ export function RunDetailView({ run, timeline, recentRuns, buildAnalysisHref, mi
                   </div>
                 </div>
                 <Badge
-                  variant={candidate.conclusion === 'success' ? 'success' : candidate.conclusion === 'failure' ? 'error' : candidate.conclusion === 'pending' ? 'warning' : 'neutral'}
                   className={candidate.id === run.id ? '!bg-white/15 !text-white !ring-white/20' : ''}
                 >
                   {candidate.conclusion || 'unknown'}
@@ -181,9 +180,7 @@ export function RunDetailView({ run, timeline, recentRuns, buildAnalysisHref, mi
                         Queue {formatSeconds(job.queueDurationInSeconds)} · Run {formatSeconds(job.durationInSeconds)}
                       </div>
                     </div>
-                    <Badge variant={job.conclusion === 'success' ? 'success' : job.conclusion === 'failure' ? 'error' : job.conclusion === 'pending' ? 'warning' : 'neutral'}>
-                      {job.conclusion}
-                    </Badge>
+                    <Badge>{job.conclusion}</Badge>
                   </div>
                 </li>
               ))}

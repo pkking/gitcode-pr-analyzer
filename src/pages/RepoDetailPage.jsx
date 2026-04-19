@@ -251,9 +251,7 @@ export default function RepoDetailPage() {
                     <td className="px-6 py-4"><MetricValue p50={pr.prE2E} p90={null} /></td>
                     <td className="px-6 py-4 text-sm text-stone-600 font-mono">{pr.runCount}</td>
                     <td className="px-6 py-4">
-                      <Badge variant={pr.latestStatus === 'success' ? 'success' : pr.latestStatus === 'failure' ? 'error' : pr.latestStatus === 'pending' ? 'warning' : 'neutral'}>
-                        {pr.latestStatus}
-                      </Badge>
+                      <Badge>{pr.latestStatus}</Badge>
                     </td>
                     <td className="px-6 py-4 text-sm text-stone-900">{formatSeconds(pr.latestDuration)}</td>
                     <td className="px-6 py-4 text-sm text-stone-900">{formatSeconds(pr.avgDuration)}</td>
