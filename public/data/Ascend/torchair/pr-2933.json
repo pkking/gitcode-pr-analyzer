@@ -1,0 +1,31 @@
+{
+  "prNumber": 2933,
+  "owner": "Ascend",
+  "repo": "torchair",
+  "createdAt": "2026-04-20T18:31:40+08:00",
+  "mergedAt": "2026-04-20T19:37:09+08:00",
+  "prSubmitToMerge": {
+    "durationSeconds": 3929,
+    "fromTime": "2026-04-20T10:31:40Z",
+    "toTime": "2026-04-20T11:37:09Z"
+  },
+  "compileToCiCycles": [
+    {
+      "compileTime": "2026-04-20T10:40:32Z",
+      "startTime": "2026-04-20T10:40:56Z",
+      "finishTime": "2026-04-20T10:49:21Z",
+      "durationSeconds": 529
+    },
+    {
+      "compileTime": "2026-04-20T10:40:32Z",
+      "startTime": "2026-04-20T10:41:52Z",
+      "finishTime": "2026-04-20T10:43:03Z",
+      "durationSeconds": 151
+    }
+  ],
+  "lastCiRemovalToMerge": {
+    "durationSeconds": 2868,
+    "fromTime": "2026-04-20T10:49:21Z",
+    "toTime": "2026-04-20T11:37:09Z"
+  }
+}

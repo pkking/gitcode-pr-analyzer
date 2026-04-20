@@ -3,8 +3,12 @@
   "owner": "Ascend",
   "repo": "community",
   "createdAt": "2026-04-20T16:01:34+08:00",
-  "mergedAt": null,
-  "prSubmitToMerge": null,
+  "mergedAt": "2026-04-20T19:56:41+08:00",
+  "prSubmitToMerge": {
+    "durationSeconds": 14107,
+    "fromTime": "2026-04-20T08:01:34Z",
+    "toTime": "2026-04-20T11:56:41Z"
+  },
   "compileToCiCycles": [
     {
       "compileTime": "2026-04-20T08:04:02Z",
@@ -13,5 +17,9 @@
       "durationSeconds": 237
     }
   ],
-  "lastCiRemovalToMerge": null
+  "lastCiRemovalToMerge": {
+    "durationSeconds": 13722,
+    "fromTime": "2026-04-20T08:07:59Z",
+    "toTime": "2026-04-20T11:56:41Z"
+  }
 }

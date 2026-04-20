@@ -3,8 +3,12 @@
   "owner": "Ascend",
   "repo": "IndexSDK",
   "createdAt": "2026-04-17T11:16:41+08:00",
-  "mergedAt": null,
-  "prSubmitToMerge": null,
+  "mergedAt": "2026-04-20T20:03:43+08:00",
+  "prSubmitToMerge": {
+    "durationSeconds": 290822,
+    "fromTime": "2026-04-17T03:16:41Z",
+    "toTime": "2026-04-20T12:03:43Z"
+  },
   "compileToCiCycles": [
     {
       "compileTime": "2026-04-17T03:16:43Z",
@@ -61,6 +65,18 @@
       "durationSeconds": 1027
     },
     {
+      "compileTime": "2026-04-20T11:28:58Z",
+      "startTime": "2026-04-20T11:29:21Z",
+      "finishTime": "2026-04-20T11:45:33Z",
+      "durationSeconds": 995
+    },
+    {
+      "compileTime": "2026-04-20T11:30:19Z",
+      "startTime": "2026-04-20T11:32:15Z",
+      "finishTime": "2026-04-20T11:45:33Z",
+      "durationSeconds": 914
+    },
+    {
       "compileTime": "2026-04-17T03:16:43Z",
       "startTime": "2026-04-17T03:17:47Z",
       "finishTime": "2026-04-17T03:19:35Z",
@@ -113,7 +129,23 @@
       "startTime": "2026-04-20T01:45:30Z",
       "finishTime": "2026-04-20T01:47:37Z",
       "durationSeconds": 209
+    },
+    {
+      "compileTime": "2026-04-20T11:28:58Z",
+      "startTime": "2026-04-20T11:30:22Z",
+      "finishTime": "2026-04-20T11:31:34Z",
+      "durationSeconds": 156
+    },
+    {
+      "compileTime": "2026-04-20T11:30:19Z",
+      "startTime": "2026-04-20T11:30:22Z",
+      "finishTime": "2026-04-20T11:31:34Z",
+      "durationSeconds": 75
     }
   ],
-  "lastCiRemovalToMerge": null
+  "lastCiRemovalToMerge": {
+    "durationSeconds": 1090,
+    "fromTime": "2026-04-20T11:45:33Z",
+    "toTime": "2026-04-20T12:03:43Z"
+  }
 }

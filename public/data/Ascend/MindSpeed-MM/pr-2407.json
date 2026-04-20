@@ -3,8 +3,12 @@
   "owner": "Ascend",
   "repo": "MindSpeed-MM",
   "createdAt": "2026-04-18T11:12:38+08:00",
-  "mergedAt": null,
-  "prSubmitToMerge": null,
+  "mergedAt": "2026-04-20T21:29:13+08:00",
+  "prSubmitToMerge": {
+    "durationSeconds": 209795,
+    "fromTime": "2026-04-18T03:12:38Z",
+    "toTime": "2026-04-20T13:29:13Z"
+  },
   "compileToCiCycles": [
     {
       "compileTime": "2026-04-18T03:12:51Z",
@@ -31,29 +35,45 @@
       "durationSeconds": 3756
     },
     {
+      "compileTime": "2026-04-20T08:45:15Z",
+      "startTime": "2026-04-20T08:46:37Z",
+      "finishTime": "2026-04-20T08:52:44Z",
+      "durationSeconds": 449
+    },
+    {
       "compileTime": "2026-04-18T03:12:51Z",
       "startTime": "2026-04-18T03:13:21Z",
-      "finishTime": "2026-04-20T08:33:06Z",
-      "durationSeconds": 192015
+      "finishTime": "2026-04-20T13:29:13Z",
+      "durationSeconds": 209782
     },
     {
       "compileTime": "2026-04-20T02:44:18Z",
       "startTime": "2026-04-20T02:44:48Z",
-      "finishTime": "2026-04-20T08:33:06Z",
-      "durationSeconds": 20928
+      "finishTime": "2026-04-20T13:29:13Z",
+      "durationSeconds": 38695
     },
     {
       "compileTime": "2026-04-20T03:44:35Z",
       "startTime": "2026-04-20T03:45:05Z",
-      "finishTime": "2026-04-20T08:33:06Z",
-      "durationSeconds": 17311
+      "finishTime": "2026-04-20T13:29:13Z",
+      "durationSeconds": 35078
     },
     {
       "compileTime": "2026-04-20T06:48:02Z",
       "startTime": "2026-04-20T06:48:32Z",
-      "finishTime": "2026-04-20T08:33:06Z",
-      "durationSeconds": 6304
+      "finishTime": "2026-04-20T13:29:13Z",
+      "durationSeconds": 24071
+    },
+    {
+      "compileTime": "2026-04-20T08:45:15Z",
+      "startTime": "2026-04-20T08:45:45Z",
+      "finishTime": "2026-04-20T13:29:13Z",
+      "durationSeconds": 17038
     }
   ],
-  "lastCiRemovalToMerge": null
+  "lastCiRemovalToMerge": {
+    "durationSeconds": 0,
+    "fromTime": "2026-04-20T13:29:13Z",
+    "toTime": "2026-04-20T13:29:13Z"
+  }
 }

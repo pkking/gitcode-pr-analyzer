@@ -3,8 +3,12 @@
   "owner": "Ascend",
   "repo": "MindSpeed-Ops",
   "createdAt": "2026-04-17T10:37:33+08:00",
-  "mergedAt": null,
-  "prSubmitToMerge": null,
+  "mergedAt": "2026-04-20T20:53:19+08:00",
+  "prSubmitToMerge": {
+    "durationSeconds": 296146,
+    "fromTime": "2026-04-17T02:37:33Z",
+    "toTime": "2026-04-20T12:53:19Z"
+  },
   "compileToCiCycles": [
     {
       "compileTime": "2026-04-17T02:40:07Z",
@@ -13,11 +17,75 @@
       "durationSeconds": 660
     },
     {
+      "compileTime": "2026-04-20T08:58:52Z",
+      "startTime": "2026-04-20T08:59:13Z",
+      "finishTime": "2026-04-20T09:04:30Z",
+      "durationSeconds": 338
+    },
+    {
+      "compileTime": "2026-04-20T11:35:58Z",
+      "startTime": "2026-04-20T11:36:21Z",
+      "finishTime": "2026-04-20T11:40:33Z",
+      "durationSeconds": 275
+    },
+    {
+      "compileTime": "2026-04-20T11:42:42Z",
+      "startTime": "2026-04-20T11:43:02Z",
+      "finishTime": "2026-04-20T11:51:28Z",
+      "durationSeconds": 526
+    },
+    {
+      "compileTime": "2026-04-20T12:19:54Z",
+      "startTime": "2026-04-20T12:20:15Z",
+      "finishTime": "2026-04-20T12:23:16Z",
+      "durationSeconds": 202
+    },
+    {
+      "compileTime": "2026-04-20T12:34:00Z",
+      "startTime": "2026-04-20T12:34:23Z",
+      "finishTime": "2026-04-20T12:36:50Z",
+      "durationSeconds": 170
+    },
+    {
       "compileTime": "2026-04-17T02:40:07Z",
       "startTime": "2026-04-17T02:40:37Z",
-      "finishTime": "2026-04-20T08:15:14Z",
-      "durationSeconds": 279307
+      "finishTime": "2026-04-20T12:53:19Z",
+      "durationSeconds": 295992
+    },
+    {
+      "compileTime": "2026-04-20T08:58:52Z",
+      "startTime": "2026-04-20T08:59:22Z",
+      "finishTime": "2026-04-20T12:53:19Z",
+      "durationSeconds": 14067
+    },
+    {
+      "compileTime": "2026-04-20T11:35:58Z",
+      "startTime": "2026-04-20T11:36:28Z",
+      "finishTime": "2026-04-20T12:53:19Z",
+      "durationSeconds": 4641
+    },
+    {
+      "compileTime": "2026-04-20T11:42:42Z",
+      "startTime": "2026-04-20T11:43:12Z",
+      "finishTime": "2026-04-20T12:53:19Z",
+      "durationSeconds": 4237
+    },
+    {
+      "compileTime": "2026-04-20T12:19:54Z",
+      "startTime": "2026-04-20T12:20:24Z",
+      "finishTime": "2026-04-20T12:53:19Z",
+      "durationSeconds": 2005
+    },
+    {
+      "compileTime": "2026-04-20T12:34:00Z",
+      "startTime": "2026-04-20T12:34:30Z",
+      "finishTime": "2026-04-20T12:53:19Z",
+      "durationSeconds": 1159
     }
   ],
-  "lastCiRemovalToMerge": null
+  "lastCiRemovalToMerge": {
+    "durationSeconds": 0,
+    "fromTime": "2026-04-20T12:53:19Z",
+    "toTime": "2026-04-20T12:53:19Z"
+  }
 }

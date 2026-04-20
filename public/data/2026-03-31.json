@@ -3804,7 +3804,7 @@
     },
     {
       "id": 7290000,
-      "name": "PR #729 compile - [WIP] MindIE Server Python重构",
+      "name": "PR #729 compile - MindIE Server Python重构",
       "head_branch": "br_develop_pyserver_0328",
       "status": "completed",
       "conclusion": "failure",
@@ -3829,26 +3829,26 @@
     },
     {
       "id": 7290100,
-      "name": "PR #729 docs-ci - [WIP] MindIE Server Python重构",
+      "name": "PR #729 docs-ci - MindIE Server Python重构",
       "head_branch": "br_develop_pyserver_0328",
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-03-31T07:52:44Z",
-      "updated_at": "2026-04-17T02:56:41Z",
+      "updated_at": "2026-04-20T13:58:23Z",
       "html_url": "https://gitcode.com/Ascend/MindIE-LLM/merge_requests/729",
-      "durationInSeconds": 1451037.366,
+      "durationInSeconds": 1749939.535,
       "jobs": [
         {
           "id": 7290101,
-          "name": "docs-ci",
+          "name": "docs-ci-pipeline-running",
           "status": "completed",
           "conclusion": "pending",
           "created_at": "2026-03-31T07:52:44Z",
-          "started_at": "2026-03-31T07:53:14Z",
-          "completed_at": "2026-04-17T02:56:41Z",
+          "started_at": "2026-04-20T08:55:54Z",
+          "completed_at": "2026-04-20T13:58:23Z",
           "html_url": "https://gitcode.com/Ascend/MindIE-LLM/merge_requests/729",
-          "queueDurationInSeconds": 30,
-          "durationInSeconds": 1451007.366
+          "queueDurationInSeconds": 1731790,
+          "durationInSeconds": 18149.534999999916
         }
       ]
     },
@@ -5159,9 +5159,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-03-31T01:55:55Z",
-      "updated_at": "2026-04-12T14:32:55Z",
+      "updated_at": "2026-04-20T13:58:20Z",
       "html_url": "https://gitcode.com/Ascend/MindIE-LLM/merge_requests/675",
-      "durationInSeconds": 1082220.878,
+      "durationInSeconds": 1771345.096,
       "jobs": [
         {
           "id": 6750109,
@@ -5170,10 +5170,10 @@
           "conclusion": "pending",
           "created_at": "2026-03-31T01:55:55Z",
           "started_at": "2026-03-31T01:56:25Z",
-          "completed_at": "2026-04-12T14:32:55Z",
+          "completed_at": "2026-04-20T13:58:20Z",
           "html_url": "https://gitcode.com/Ascend/MindIE-LLM/merge_requests/675",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 1082190.878
+          "durationInSeconds": 1771315.096
         }
       ]
     },
@@ -5184,9 +5184,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-03-31T03:56:50Z",
-      "updated_at": "2026-04-12T14:32:55Z",
+      "updated_at": "2026-04-20T13:58:20Z",
       "html_url": "https://gitcode.com/Ascend/MindIE-LLM/merge_requests/675",
-      "durationInSeconds": 1074965.878,
+      "durationInSeconds": 1764090.096,
       "jobs": [
         {
           "id": 6750110,
@@ -5195,10 +5195,10 @@
           "conclusion": "pending",
           "created_at": "2026-03-31T03:56:50Z",
           "started_at": "2026-03-31T03:57:20Z",
-          "completed_at": "2026-04-12T14:32:55Z",
+          "completed_at": "2026-04-20T13:58:20Z",
           "html_url": "https://gitcode.com/Ascend/MindIE-LLM/merge_requests/675",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 1074935.878
+          "durationInSeconds": 1764060.096
         }
       ]
     },

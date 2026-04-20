@@ -3,8 +3,12 @@
   "owner": "Ascend",
   "repo": "MindStudio-Probe",
   "createdAt": "2026-04-15T17:41:27+08:00",
-  "mergedAt": null,
-  "prSubmitToMerge": null,
+  "mergedAt": "2026-04-20T20:57:28+08:00",
+  "prSubmitToMerge": {
+    "durationSeconds": 443761,
+    "fromTime": "2026-04-15T09:41:27Z",
+    "toTime": "2026-04-20T12:57:28Z"
+  },
   "compileToCiCycles": [
     {
       "compileTime": "2026-04-17T03:42:16Z",
@@ -13,11 +17,111 @@
       "durationSeconds": 660
     },
     {
+      "compileTime": "2026-04-20T09:13:24Z",
+      "startTime": "2026-04-20T09:14:02Z",
+      "finishTime": "2026-04-20T09:19:23Z",
+      "durationSeconds": 359
+    },
+    {
+      "compileTime": "2026-04-20T09:18:29Z",
+      "startTime": "2026-04-20T09:27:37Z",
+      "finishTime": "2026-04-20T09:19:23Z",
+      "durationSeconds": 54
+    },
+    {
+      "compileTime": "2026-04-20T09:26:14Z",
+      "startTime": "2026-04-20T09:27:37Z",
+      "finishTime": "2026-04-20T09:38:01Z",
+      "durationSeconds": 707
+    },
+    {
+      "compileTime": "2026-04-20T09:27:34Z",
+      "startTime": "2026-04-20T09:27:37Z",
+      "finishTime": "2026-04-20T09:38:01Z",
+      "durationSeconds": 627
+    },
+    {
+      "compileTime": "2026-04-20T11:46:05Z",
+      "startTime": "2026-04-20T11:46:43Z",
+      "finishTime": "2026-04-20T11:56:23Z",
+      "durationSeconds": 618
+    },
+    {
+      "compileTime": "2026-04-20T11:59:11Z",
+      "startTime": "2026-04-20T11:59:51Z",
+      "finishTime": "2026-04-20T12:14:03Z",
+      "durationSeconds": 892
+    },
+    {
+      "compileTime": "2026-04-20T12:21:49Z",
+      "startTime": "2026-04-20T12:22:31Z",
+      "finishTime": "2026-04-20T12:31:12Z",
+      "durationSeconds": 563
+    },
+    {
+      "compileTime": "2026-04-20T12:35:59Z",
+      "startTime": "2026-04-20T12:36:38Z",
+      "finishTime": "2026-04-20T12:50:07Z",
+      "durationSeconds": 848
+    },
+    {
       "compileTime": "2026-04-17T03:42:16Z",
       "startTime": "2026-04-17T03:42:46Z",
-      "finishTime": "2026-04-20T08:28:32Z",
-      "durationSeconds": 276376
+      "finishTime": "2026-04-20T12:57:28Z",
+      "durationSeconds": 292512
+    },
+    {
+      "compileTime": "2026-04-20T09:13:24Z",
+      "startTime": "2026-04-20T09:13:54Z",
+      "finishTime": "2026-04-20T12:57:28Z",
+      "durationSeconds": 13444
+    },
+    {
+      "compileTime": "2026-04-20T09:18:29Z",
+      "startTime": "2026-04-20T09:18:59Z",
+      "finishTime": "2026-04-20T12:57:28Z",
+      "durationSeconds": 13139
+    },
+    {
+      "compileTime": "2026-04-20T09:26:14Z",
+      "startTime": "2026-04-20T09:26:44Z",
+      "finishTime": "2026-04-20T12:57:28Z",
+      "durationSeconds": 12674
+    },
+    {
+      "compileTime": "2026-04-20T09:27:34Z",
+      "startTime": "2026-04-20T09:28:04Z",
+      "finishTime": "2026-04-20T12:57:28Z",
+      "durationSeconds": 12594
+    },
+    {
+      "compileTime": "2026-04-20T11:46:05Z",
+      "startTime": "2026-04-20T11:46:35Z",
+      "finishTime": "2026-04-20T12:57:28Z",
+      "durationSeconds": 4283
+    },
+    {
+      "compileTime": "2026-04-20T11:59:11Z",
+      "startTime": "2026-04-20T11:59:41Z",
+      "finishTime": "2026-04-20T12:57:28Z",
+      "durationSeconds": 3497
+    },
+    {
+      "compileTime": "2026-04-20T12:21:49Z",
+      "startTime": "2026-04-20T12:22:19Z",
+      "finishTime": "2026-04-20T12:57:28Z",
+      "durationSeconds": 2139
+    },
+    {
+      "compileTime": "2026-04-20T12:35:59Z",
+      "startTime": "2026-04-20T12:36:29Z",
+      "finishTime": "2026-04-20T12:57:28Z",
+      "durationSeconds": 1289
     }
   ],
-  "lastCiRemovalToMerge": null
+  "lastCiRemovalToMerge": {
+    "durationSeconds": 0,
+    "fromTime": "2026-04-20T12:57:28Z",
+    "toTime": "2026-04-20T12:57:28Z"
+  }
 }
