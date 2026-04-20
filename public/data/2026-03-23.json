@@ -1,6 +1,6 @@
 {
   "date": "2026-03-23",
-  "repo": "Ascend/HierarchicalKV-ascend",
+  "repo": "Ascend/MindSpeed",
   "runs": [
     {
       "id": 10000,
@@ -13332,23 +13332,23 @@
       "name": "PR #729 docs-ci - added pattern to convert mod N to and (N-1), when ",
       "head_branch": "mod_to_and_pow_two",
       "status": "completed",
-      "conclusion": "pending",
+      "conclusion": "success",
       "created_at": "2026-03-23T08:28:47Z",
-      "updated_at": "2026-04-12T16:25:16Z",
+      "updated_at": "2026-04-20T07:43:51Z",
       "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/729",
-      "durationInSeconds": 1756589.088,
+      "durationInSeconds": 2416504,
       "jobs": [
         {
           "id": 7290110,
-          "name": "docs-ci",
+          "name": "docs-ci-pipeline-running",
           "status": "completed",
-          "conclusion": "pending",
+          "conclusion": "success",
           "created_at": "2026-03-23T08:28:47Z",
-          "started_at": "2026-03-23T08:29:17Z",
-          "completed_at": "2026-04-12T16:25:16Z",
+          "started_at": "2026-04-20T07:42:00Z",
+          "completed_at": "2026-04-20T07:43:51Z",
           "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/729",
-          "queueDurationInSeconds": 30,
-          "durationInSeconds": 1756559.088
+          "queueDurationInSeconds": 2416393,
+          "durationInSeconds": 111
         }
       ]
     },
@@ -14884,9 +14884,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-03-23T01:49:14Z",
-      "updated_at": "2026-04-12T16:45:33Z",
+      "updated_at": "2026-04-20T08:32:13Z",
       "html_url": "https://gitcode.com/Ascend/MindSpeed/merge_requests/3331",
-      "durationInSeconds": 1781779.703,
+      "durationInSeconds": 2443379.202,
       "jobs": [
         {
           "id": 33310101,
@@ -14895,10 +14895,10 @@
           "conclusion": "pending",
           "created_at": "2026-03-23T01:49:14Z",
           "started_at": "2026-03-23T01:49:44Z",
-          "completed_at": "2026-04-12T16:45:33Z",
+          "completed_at": "2026-04-20T08:32:13Z",
           "html_url": "https://gitcode.com/Ascend/MindSpeed/merge_requests/3331",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 1781749.703
+          "durationInSeconds": 2443349.202
         }
       ]
     },

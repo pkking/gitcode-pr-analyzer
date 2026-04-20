@@ -1,6 +1,6 @@
 {
   "date": "2026-03-16",
-  "repo": "Ascend/MindStudio-Ops-Profiler",
+  "repo": "Ascend/AscendNPU-IR",
   "runs": [
     {
       "id": 110000,
@@ -10707,23 +10707,23 @@
       "name": "PR #729 docs-ci - added pattern to convert mod N to and (N-1), when ",
       "head_branch": "mod_to_and_pow_two",
       "status": "completed",
-      "conclusion": "pending",
+      "conclusion": "success",
       "created_at": "2026-03-16T16:02:04Z",
-      "updated_at": "2026-04-12T16:25:16Z",
+      "updated_at": "2026-04-20T07:43:51Z",
       "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/729",
-      "durationInSeconds": 2334192.087,
+      "durationInSeconds": 2994107,
       "jobs": [
         {
           "id": 7290101,
-          "name": "docs-ci",
+          "name": "docs-ci-pipeline-running",
           "status": "completed",
-          "conclusion": "pending",
+          "conclusion": "success",
           "created_at": "2026-03-16T16:02:04Z",
-          "started_at": "2026-03-16T16:02:34Z",
-          "completed_at": "2026-04-12T16:25:16Z",
+          "started_at": "2026-04-20T07:42:00Z",
+          "completed_at": "2026-04-20T07:43:51Z",
           "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/729",
-          "queueDurationInSeconds": 30,
-          "durationInSeconds": 2334162.087
+          "queueDurationInSeconds": 2993996,
+          "durationInSeconds": 111
         }
       ]
     },
@@ -10732,23 +10732,23 @@
       "name": "PR #729 docs-ci - added pattern to convert mod N to and (N-1), when ",
       "head_branch": "mod_to_and_pow_two",
       "status": "completed",
-      "conclusion": "pending",
+      "conclusion": "success",
       "created_at": "2026-03-16T16:14:00Z",
-      "updated_at": "2026-04-12T16:25:16Z",
+      "updated_at": "2026-04-20T07:43:51Z",
       "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/729",
-      "durationInSeconds": 2333476.087,
+      "durationInSeconds": 2993391,
       "jobs": [
         {
           "id": 7290102,
-          "name": "docs-ci",
+          "name": "docs-ci-pipeline-running",
           "status": "completed",
-          "conclusion": "pending",
+          "conclusion": "success",
           "created_at": "2026-03-16T16:14:00Z",
-          "started_at": "2026-03-16T16:14:30Z",
-          "completed_at": "2026-04-12T16:25:16Z",
+          "started_at": "2026-04-20T07:42:00Z",
+          "completed_at": "2026-04-20T07:43:51Z",
           "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/729",
-          "queueDurationInSeconds": 30,
-          "durationInSeconds": 2333446.087
+          "queueDurationInSeconds": 2993280,
+          "durationInSeconds": 111
         }
       ]
     },
