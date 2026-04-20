@@ -3,8 +3,12 @@
   "owner": "Ascend",
   "repo": "MindStudio-Modeling",
   "createdAt": "2026-04-17T10:47:00+08:00",
-  "mergedAt": null,
-  "prSubmitToMerge": null,
+  "mergedAt": "2026-04-20T10:34:39+08:00",
+  "prSubmitToMerge": {
+    "durationSeconds": 258459,
+    "fromTime": "2026-04-17T02:47:00Z",
+    "toTime": "2026-04-20T02:34:39Z"
+  },
   "compileToCiCycles": [
     {
       "compileTime": "2026-04-17T03:28:14Z",
@@ -13,11 +17,27 @@
       "durationSeconds": 2487
     },
     {
+      "compileTime": "2026-04-20T02:07:29Z",
+      "startTime": "2026-04-20T02:08:06Z",
+      "finishTime": "2026-04-20T02:25:40Z",
+      "durationSeconds": 1091
+    },
+    {
       "compileTime": "2026-04-17T03:28:14Z",
       "startTime": "2026-04-17T03:28:44Z",
-      "finishTime": "2026-04-19T19:04:53Z",
-      "durationSeconds": 228999
+      "finishTime": "2026-04-20T02:34:39Z",
+      "durationSeconds": 255985
+    },
+    {
+      "compileTime": "2026-04-20T02:07:29Z",
+      "startTime": "2026-04-20T02:07:59Z",
+      "finishTime": "2026-04-20T02:34:39Z",
+      "durationSeconds": 1630
     }
   ],
-  "lastCiRemovalToMerge": null
+  "lastCiRemovalToMerge": {
+    "durationSeconds": 0,
+    "fromTime": "2026-04-20T02:34:39Z",
+    "toTime": "2026-04-20T02:34:39Z"
+  }
 }
