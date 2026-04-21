@@ -3,8 +3,12 @@
   "owner": "Ascend",
   "repo": "MindStudio-Profiler",
   "createdAt": "2026-04-17T16:17:29+08:00",
-  "mergedAt": null,
-  "prSubmitToMerge": null,
+  "mergedAt": "2026-04-21T19:28:26+08:00",
+  "prSubmitToMerge": {
+    "durationSeconds": 357057,
+    "fromTime": "2026-04-17T08:17:29Z",
+    "toTime": "2026-04-21T11:28:26Z"
+  },
   "compileToCiCycles": [
     {
       "compileTime": "2026-04-17T08:18:17Z",
@@ -31,29 +35,45 @@
       "durationSeconds": 1691
     },
     {
+      "compileTime": "2026-04-21T08:46:53Z",
+      "startTime": "2026-04-21T08:47:35Z",
+      "finishTime": "2026-04-21T09:11:21Z",
+      "durationSeconds": 1468
+    },
+    {
       "compileTime": "2026-04-17T08:18:17Z",
       "startTime": "2026-04-17T08:18:47Z",
-      "finishTime": "2026-04-21T03:04:16Z",
-      "durationSeconds": 326759
+      "finishTime": "2026-04-21T11:28:26Z",
+      "durationSeconds": 357009
     },
     {
       "compileTime": "2026-04-17T08:19:42Z",
       "startTime": "2026-04-17T08:20:12Z",
-      "finishTime": "2026-04-21T03:04:16Z",
-      "durationSeconds": 326674
+      "finishTime": "2026-04-21T11:28:26Z",
+      "durationSeconds": 356924
     },
     {
       "compileTime": "2026-04-17T08:44:22Z",
       "startTime": "2026-04-17T08:44:52Z",
-      "finishTime": "2026-04-21T03:04:16Z",
-      "durationSeconds": 325194
+      "finishTime": "2026-04-21T11:28:26Z",
+      "durationSeconds": 355444
     },
     {
       "compileTime": "2026-04-20T12:08:45Z",
       "startTime": "2026-04-20T12:09:15Z",
-      "finishTime": "2026-04-21T03:04:16Z",
-      "durationSeconds": 53731
+      "finishTime": "2026-04-21T11:28:26Z",
+      "durationSeconds": 83981
+    },
+    {
+      "compileTime": "2026-04-21T08:46:53Z",
+      "startTime": "2026-04-21T08:47:23Z",
+      "finishTime": "2026-04-21T11:28:26Z",
+      "durationSeconds": 9693
     }
   ],
-  "lastCiRemovalToMerge": null
+  "lastCiRemovalToMerge": {
+    "durationSeconds": 0,
+    "fromTime": "2026-04-21T11:28:26Z",
+    "toTime": "2026-04-21T11:28:26Z"
+  }
 }

@@ -3,8 +3,12 @@
   "owner": "Ascend",
   "repo": "MindStudio-Insight",
   "createdAt": "2026-04-20T15:07:03+08:00",
-  "mergedAt": null,
-  "prSubmitToMerge": null,
+  "mergedAt": "2026-04-21T19:44:36+08:00",
+  "prSubmitToMerge": {
+    "durationSeconds": 103053,
+    "fromTime": "2026-04-20T07:07:03Z",
+    "toTime": "2026-04-21T11:44:36Z"
+  },
   "compileToCiCycles": [
     {
       "compileTime": "2026-04-20T07:21:38Z",
@@ -15,9 +19,13 @@
     {
       "compileTime": "2026-04-20T07:21:38Z",
       "startTime": "2026-04-20T07:22:08Z",
-      "finishTime": "2026-04-21T08:07:31Z",
-      "durationSeconds": 89153
+      "finishTime": "2026-04-21T11:44:36Z",
+      "durationSeconds": 102178
     }
   ],
-  "lastCiRemovalToMerge": null
+  "lastCiRemovalToMerge": {
+    "durationSeconds": 0,
+    "fromTime": "2026-04-21T11:44:36Z",
+    "toTime": "2026-04-21T11:44:36Z"
+  }
 }

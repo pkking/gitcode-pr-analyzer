@@ -3,8 +3,12 @@
   "owner": "Ascend",
   "repo": "MindStudio-Insight",
   "createdAt": "2026-04-20T15:24:59+08:00",
-  "mergedAt": null,
-  "prSubmitToMerge": null,
+  "mergedAt": "2026-04-21T19:21:00+08:00",
+  "prSubmitToMerge": {
+    "durationSeconds": 100561,
+    "fromTime": "2026-04-20T07:24:59Z",
+    "toTime": "2026-04-21T11:21:00Z"
+  },
   "compileToCiCycles": [
     {
       "compileTime": "2026-04-20T07:25:09Z",
@@ -27,21 +31,25 @@
     {
       "compileTime": "2026-04-20T07:25:09Z",
       "startTime": "2026-04-20T07:25:39Z",
-      "finishTime": "2026-04-21T08:07:24Z",
-      "durationSeconds": 88935
+      "finishTime": "2026-04-21T11:21:00Z",
+      "durationSeconds": 100551
     },
     {
       "compileTime": "2026-04-21T06:08:31Z",
       "startTime": "2026-04-21T06:09:01Z",
-      "finishTime": "2026-04-21T08:07:24Z",
-      "durationSeconds": 7133
+      "finishTime": "2026-04-21T11:21:00Z",
+      "durationSeconds": 18749
     },
     {
       "compileTime": "2026-04-21T07:25:00Z",
       "startTime": "2026-04-21T07:25:30Z",
-      "finishTime": "2026-04-21T08:07:24Z",
-      "durationSeconds": 2544
+      "finishTime": "2026-04-21T11:21:00Z",
+      "durationSeconds": 14160
     }
   ],
-  "lastCiRemovalToMerge": null
+  "lastCiRemovalToMerge": {
+    "durationSeconds": 0,
+    "fromTime": "2026-04-21T11:21:00Z",
+    "toTime": "2026-04-21T11:21:00Z"
+  }
 }

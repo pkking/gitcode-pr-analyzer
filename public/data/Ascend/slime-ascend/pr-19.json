@@ -3,8 +3,12 @@
   "owner": "Ascend",
   "repo": "slime-ascend",
   "createdAt": "2026-03-20T10:54:17+08:00",
-  "mergedAt": null,
-  "prSubmitToMerge": null,
+  "mergedAt": "2026-04-21T21:33:04+08:00",
+  "prSubmitToMerge": {
+    "durationSeconds": 2803127,
+    "fromTime": "2026-03-20T02:54:17Z",
+    "toTime": "2026-04-21T13:33:04Z"
+  },
   "compileToCiCycles": [
     {
       "compileTime": "2026-03-20T03:33:51Z",
@@ -15,9 +19,13 @@
     {
       "compileTime": "2026-03-20T03:33:51Z",
       "startTime": "2026-03-20T03:34:21Z",
-      "finishTime": "2026-04-21T08:00:20Z",
-      "durationSeconds": 2780789
+      "finishTime": "2026-04-21T13:33:04Z",
+      "durationSeconds": 2800753
     }
   ],
-  "lastCiRemovalToMerge": null
+  "lastCiRemovalToMerge": {
+    "durationSeconds": 0,
+    "fromTime": "2026-04-21T13:33:04Z",
+    "toTime": "2026-04-21T13:33:04Z"
+  }
 }

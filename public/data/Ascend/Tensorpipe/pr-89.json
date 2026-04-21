@@ -3,8 +3,12 @@
   "owner": "Ascend",
   "repo": "Tensorpipe",
   "createdAt": "2026-04-21T11:10:35+08:00",
-  "mergedAt": null,
-  "prSubmitToMerge": null,
+  "mergedAt": "2026-04-21T20:38:09+08:00",
+  "prSubmitToMerge": {
+    "durationSeconds": 34054,
+    "fromTime": "2026-04-21T03:10:35Z",
+    "toTime": "2026-04-21T12:38:09Z"
+  },
   "compileToCiCycles": [
     {
       "compileTime": "2026-04-21T03:10:59Z",
@@ -31,5 +35,9 @@
       "durationSeconds": 440
     }
   ],
-  "lastCiRemovalToMerge": null
+  "lastCiRemovalToMerge": {
+    "durationSeconds": 19152,
+    "fromTime": "2026-04-21T07:18:57Z",
+    "toTime": "2026-04-21T12:38:09Z"
+  }
 }
