@@ -1,6 +1,6 @@
 {
   "date": "2026-03-25",
-  "repo": "Ascend/pytorch",
+  "repo": "Ascend/AscendNPU-IR",
   "runs": [
     {
       "id": 30000,
@@ -9932,23 +9932,23 @@
       "name": "PR #1452 docs-ci - testing: Add select analysis test cases",
       "head_branch": "main4",
       "status": "completed",
-      "conclusion": "pending",
+      "conclusion": "success",
       "created_at": "2026-03-25T07:44:04Z",
-      "updated_at": "2026-04-21T03:14:36Z",
+      "updated_at": "2026-04-21T03:47:38Z",
       "html_url": "https://gitcode.com/Ascend/triton-ascend/merge_requests/1452",
-      "durationInSeconds": 2316632.738,
+      "durationInSeconds": 2318614,
       "jobs": [
         {
           "id": 14520101,
-          "name": "docs-ci",
+          "name": "docs-ci-pipeline-running",
           "status": "completed",
-          "conclusion": "pending",
+          "conclusion": "success",
           "created_at": "2026-03-25T07:44:04Z",
-          "started_at": "2026-03-25T07:44:34Z",
-          "completed_at": "2026-04-21T03:14:36Z",
+          "started_at": "2026-04-21T03:45:59Z",
+          "completed_at": "2026-04-21T03:47:38Z",
           "html_url": "https://gitcode.com/Ascend/triton-ascend/merge_requests/1452",
-          "queueDurationInSeconds": 30,
-          "durationInSeconds": 2316602.738
+          "queueDurationInSeconds": 2318515,
+          "durationInSeconds": 99
         }
       ]
     },
@@ -13482,23 +13482,23 @@
       "name": "PR #841 docs-ci - [AscendNPU IR] Support LHS scalar constant inlinin",
       "head_branch": "shrop_inline_lhs_constant",
       "status": "completed",
-      "conclusion": "pending",
+      "conclusion": "success",
       "created_at": "2026-03-25T03:58:15Z",
-      "updated_at": "2026-04-12T16:24:55Z",
+      "updated_at": "2026-04-21T06:32:42Z",
       "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/841",
-      "durationInSeconds": 1600000.281,
+      "durationInSeconds": 2342067,
       "jobs": [
         {
           "id": 8410101,
-          "name": "docs-ci",
+          "name": "docs-ci-pipeline-running",
           "status": "completed",
-          "conclusion": "pending",
+          "conclusion": "success",
           "created_at": "2026-03-25T03:58:15Z",
-          "started_at": "2026-03-25T03:58:45Z",
-          "completed_at": "2026-04-12T16:24:55Z",
+          "started_at": "2026-04-21T06:31:11Z",
+          "completed_at": "2026-04-21T06:32:42Z",
           "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/841",
-          "queueDurationInSeconds": 30,
-          "durationInSeconds": 1599970.281
+          "queueDurationInSeconds": 2341976,
+          "durationInSeconds": 91
         }
       ]
     },

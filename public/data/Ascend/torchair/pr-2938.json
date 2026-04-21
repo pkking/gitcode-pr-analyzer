@@ -3,8 +3,12 @@
   "owner": "Ascend",
   "repo": "torchair",
   "createdAt": "2026-04-21T10:55:12+08:00",
-  "mergedAt": null,
-  "prSubmitToMerge": null,
+  "mergedAt": "2026-04-21T15:46:27+08:00",
+  "prSubmitToMerge": {
+    "durationSeconds": 17475,
+    "fromTime": "2026-04-21T02:55:12Z",
+    "toTime": "2026-04-21T07:46:27Z"
+  },
   "compileToCiCycles": [
     {
       "compileTime": "2026-04-21T02:55:35Z",
@@ -13,11 +17,39 @@
       "durationSeconds": 710
     },
     {
+      "compileTime": "2026-04-21T03:14:01Z",
+      "startTime": "2026-04-21T03:14:25Z",
+      "finishTime": "2026-04-21T03:23:35Z",
+      "durationSeconds": 574
+    },
+    {
+      "compileTime": "2026-04-21T07:19:11Z",
+      "startTime": "2026-04-21T07:22:16Z",
+      "finishTime": "2026-04-21T07:34:21Z",
+      "durationSeconds": 910
+    },
+    {
       "compileTime": "2026-04-21T02:55:35Z",
       "startTime": "2026-04-21T02:56:39Z",
       "finishTime": "2026-04-21T02:57:56Z",
       "durationSeconds": 141
+    },
+    {
+      "compileTime": "2026-04-21T03:14:01Z",
+      "startTime": "2026-04-21T03:15:43Z",
+      "finishTime": "2026-04-21T03:16:41Z",
+      "durationSeconds": 160
+    },
+    {
+      "compileTime": "2026-04-21T07:19:11Z",
+      "startTime": "2026-04-21T07:20:12Z",
+      "finishTime": "2026-04-21T07:21:39Z",
+      "durationSeconds": 148
     }
   ],
-  "lastCiRemovalToMerge": null
+  "lastCiRemovalToMerge": {
+    "durationSeconds": 726,
+    "fromTime": "2026-04-21T07:34:21Z",
+    "toTime": "2026-04-21T07:46:27Z"
+  }
 }

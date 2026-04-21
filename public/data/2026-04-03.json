@@ -2554,7 +2554,7 @@
     },
     {
       "id": 6860001,
-      "name": "PR #686 compile - DeepSeek V3.2部署指导",
+      "name": "PR #686 compile - [doc]DeepSeek V3.2部署指导",
       "head_branch": "dev_dsv32_doc",
       "status": "completed",
       "conclusion": "success",
@@ -2579,7 +2579,7 @@
     },
     {
       "id": 6860002,
-      "name": "PR #686 compile - DeepSeek V3.2部署指导",
+      "name": "PR #686 compile - [doc]DeepSeek V3.2部署指导",
       "head_branch": "dev_dsv32_doc",
       "status": "completed",
       "conclusion": "success",
@@ -2604,7 +2604,7 @@
     },
     {
       "id": 6860003,
-      "name": "PR #686 compile - DeepSeek V3.2部署指导",
+      "name": "PR #686 compile - [doc]DeepSeek V3.2部署指导",
       "head_branch": "dev_dsv32_doc",
       "status": "completed",
       "conclusion": "failure",
@@ -2629,7 +2629,7 @@
     },
     {
       "id": 6860004,
-      "name": "PR #686 compile - DeepSeek V3.2部署指导",
+      "name": "PR #686 compile - [doc]DeepSeek V3.2部署指导",
       "head_branch": "dev_dsv32_doc",
       "status": "completed",
       "conclusion": "success",
@@ -2654,7 +2654,7 @@
     },
     {
       "id": 6860101,
-      "name": "PR #686 docs-ci - DeepSeek V3.2部署指导",
+      "name": "PR #686 docs-ci - [doc]DeepSeek V3.2部署指导",
       "head_branch": "dev_dsv32_doc",
       "status": "completed",
       "conclusion": "failure",
@@ -2679,7 +2679,7 @@
     },
     {
       "id": 6860102,
-      "name": "PR #686 docs-ci - DeepSeek V3.2部署指导",
+      "name": "PR #686 docs-ci - [doc]DeepSeek V3.2部署指导",
       "head_branch": "dev_dsv32_doc",
       "status": "completed",
       "conclusion": "failure",
@@ -2704,7 +2704,7 @@
     },
     {
       "id": 6860103,
-      "name": "PR #686 docs-ci - DeepSeek V3.2部署指导",
+      "name": "PR #686 docs-ci - [doc]DeepSeek V3.2部署指导",
       "head_branch": "dev_dsv32_doc",
       "status": "completed",
       "conclusion": "success",
@@ -2729,7 +2729,7 @@
     },
     {
       "id": 6860104,
-      "name": "PR #686 docs-ci - DeepSeek V3.2部署指导",
+      "name": "PR #686 docs-ci - [doc]DeepSeek V3.2部署指导",
       "head_branch": "dev_dsv32_doc",
       "status": "completed",
       "conclusion": "success",
@@ -9232,23 +9232,23 @@
       "name": "PR #1553 docs-ci - fix: Handle Name node only when parsing split axis",
       "head_branch": "main2",
       "status": "completed",
-      "conclusion": "pending",
+      "conclusion": "success",
       "created_at": "2026-04-03T10:18:37Z",
-      "updated_at": "2026-04-21T03:14:32Z",
+      "updated_at": "2026-04-21T03:50:50Z",
       "html_url": "https://gitcode.com/Ascend/triton-ascend/merge_requests/1553",
-      "durationInSeconds": 1529755.707,
+      "durationInSeconds": 1531933,
       "jobs": [
         {
           "id": 15530101,
-          "name": "docs-ci",
+          "name": "docs-ci-pipeline-running",
           "status": "completed",
-          "conclusion": "pending",
+          "conclusion": "success",
           "created_at": "2026-04-03T10:18:37Z",
-          "started_at": "2026-04-03T10:19:07Z",
-          "completed_at": "2026-04-21T03:14:32Z",
+          "started_at": "2026-04-21T03:49:58Z",
+          "completed_at": "2026-04-21T03:50:50Z",
           "html_url": "https://gitcode.com/Ascend/triton-ascend/merge_requests/1553",
-          "queueDurationInSeconds": 30,
-          "durationInSeconds": 1529725.707
+          "queueDurationInSeconds": 1531881,
+          "durationInSeconds": 52
         }
       ]
     },
@@ -14784,9 +14784,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-03T03:04:41Z",
-      "updated_at": "2026-04-21T03:27:13Z",
+      "updated_at": "2026-04-21T08:24:46Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33090",
-      "durationInSeconds": 1556552.371,
+      "durationInSeconds": 1574405.097,
       "jobs": [
         {
           "id": 330900101,
@@ -14795,10 +14795,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-03T03:04:41Z",
           "started_at": "2026-04-03T03:05:11Z",
-          "completed_at": "2026-04-21T03:27:13Z",
+          "completed_at": "2026-04-21T08:24:46Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33090",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 1556522.371
+          "durationInSeconds": 1574375.097
         }
       ]
     },
@@ -14809,9 +14809,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-03T03:09:12Z",
-      "updated_at": "2026-04-21T03:27:13Z",
+      "updated_at": "2026-04-21T08:24:46Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33090",
-      "durationInSeconds": 1556281.371,
+      "durationInSeconds": 1574134.097,
       "jobs": [
         {
           "id": 330900102,
@@ -14820,10 +14820,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-03T03:09:12Z",
           "started_at": "2026-04-03T03:09:42Z",
-          "completed_at": "2026-04-21T03:27:13Z",
+          "completed_at": "2026-04-21T08:24:46Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33090",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 1556251.371
+          "durationInSeconds": 1574104.097
         }
       ]
     },
@@ -14834,9 +14834,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-03T03:38:57Z",
-      "updated_at": "2026-04-21T03:27:13Z",
+      "updated_at": "2026-04-21T08:24:46Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33090",
-      "durationInSeconds": 1554496.371,
+      "durationInSeconds": 1572349.097,
       "jobs": [
         {
           "id": 330900103,
@@ -14845,10 +14845,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-03T03:38:57Z",
           "started_at": "2026-04-03T03:39:27Z",
-          "completed_at": "2026-04-21T03:27:13Z",
+          "completed_at": "2026-04-21T08:24:46Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33090",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 1554466.371
+          "durationInSeconds": 1572319.097
         }
       ]
     },
