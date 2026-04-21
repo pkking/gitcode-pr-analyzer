@@ -3,8 +3,12 @@
   "owner": "Ascend",
   "repo": "DrivingSDK",
   "createdAt": "2026-04-20T18:55:00+08:00",
-  "mergedAt": null,
-  "prSubmitToMerge": null,
+  "mergedAt": "2026-04-21T11:07:50+08:00",
+  "prSubmitToMerge": {
+    "durationSeconds": 58370,
+    "fromTime": "2026-04-20T10:55:00Z",
+    "toTime": "2026-04-21T03:07:50Z"
+  },
   "compileToCiCycles": [
     {
       "compileTime": "2026-04-20T10:55:19Z",
@@ -13,11 +17,63 @@
       "durationSeconds": 167
     },
     {
+      "compileTime": "2026-04-21T01:17:53Z",
+      "startTime": "2026-04-21T01:18:21Z",
+      "finishTime": "2026-04-21T01:21:18Z",
+      "durationSeconds": 205
+    },
+    {
+      "compileTime": "2026-04-21T01:24:34Z",
+      "startTime": "2026-04-21T01:24:54Z",
+      "finishTime": "2026-04-21T01:24:35Z",
+      "durationSeconds": 1
+    },
+    {
+      "compileTime": "2026-04-21T01:29:00Z",
+      "startTime": "2026-04-21T01:29:20Z",
+      "finishTime": "2026-04-21T01:32:27Z",
+      "durationSeconds": 207
+    },
+    {
+      "compileTime": "2026-04-21T01:34:55Z",
+      "startTime": "2026-04-21T01:35:15Z",
+      "finishTime": "2026-04-21T01:37:28Z",
+      "durationSeconds": 153
+    },
+    {
       "compileTime": "2026-04-20T10:55:19Z",
       "startTime": "2026-04-20T10:56:23Z",
       "finishTime": "2026-04-20T10:57:37Z",
       "durationSeconds": 138
+    },
+    {
+      "compileTime": "2026-04-21T01:17:53Z",
+      "startTime": "2026-04-21T01:25:17Z",
+      "finishTime": "2026-04-21T01:20:14Z",
+      "durationSeconds": 141
+    },
+    {
+      "compileTime": "2026-04-21T01:24:34Z",
+      "startTime": "2026-04-21T01:25:17Z",
+      "finishTime": "2026-04-21T01:26:38Z",
+      "durationSeconds": 124
+    },
+    {
+      "compileTime": "2026-04-21T01:29:00Z",
+      "startTime": "2026-04-21T01:29:49Z",
+      "finishTime": "2026-04-21T01:30:58Z",
+      "durationSeconds": 118
+    },
+    {
+      "compileTime": "2026-04-21T01:34:55Z",
+      "startTime": "2026-04-21T01:35:13Z",
+      "finishTime": "2026-04-21T01:37:15Z",
+      "durationSeconds": 140
     }
   ],
-  "lastCiRemovalToMerge": null
+  "lastCiRemovalToMerge": {
+    "durationSeconds": 5422,
+    "fromTime": "2026-04-21T01:37:28Z",
+    "toTime": "2026-04-21T03:07:50Z"
+  }
 }

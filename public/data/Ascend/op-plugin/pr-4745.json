@@ -3,8 +3,12 @@
   "owner": "Ascend",
   "repo": "op-plugin",
   "createdAt": "2026-04-17T14:13:22+08:00",
-  "mergedAt": null,
-  "prSubmitToMerge": null,
+  "mergedAt": "2026-04-21T10:06:58+08:00",
+  "prSubmitToMerge": {
+    "durationSeconds": 330816,
+    "fromTime": "2026-04-17T06:13:22Z",
+    "toTime": "2026-04-21T02:06:58Z"
+  },
   "compileToCiCycles": [
     {
       "compileTime": "2026-04-17T06:19:35Z",
@@ -43,5 +47,9 @@
       "durationSeconds": 177
     }
   ],
-  "lastCiRemovalToMerge": null
+  "lastCiRemovalToMerge": {
+    "durationSeconds": 321480,
+    "fromTime": "2026-04-17T08:48:58Z",
+    "toTime": "2026-04-21T02:06:58Z"
+  }
 }

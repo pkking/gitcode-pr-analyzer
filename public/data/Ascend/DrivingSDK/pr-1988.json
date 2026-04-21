@@ -3,8 +3,12 @@
   "owner": "Ascend",
   "repo": "DrivingSDK",
   "createdAt": "2026-04-14T10:42:25+08:00",
-  "mergedAt": null,
-  "prSubmitToMerge": null,
+  "mergedAt": "2026-04-21T11:18:42+08:00",
+  "prSubmitToMerge": {
+    "durationSeconds": 606977,
+    "fromTime": "2026-04-14T02:42:25Z",
+    "toTime": "2026-04-21T03:18:42Z"
+  },
   "compileToCiCycles": [
     {
       "compileTime": "2026-04-14T02:49:52Z",
@@ -19,5 +23,9 @@
       "durationSeconds": 157
     }
   ],
-  "lastCiRemovalToMerge": null
+  "lastCiRemovalToMerge": {
+    "durationSeconds": 606263,
+    "fromTime": "2026-04-14T02:54:19Z",
+    "toTime": "2026-04-21T03:18:42Z"
+  }
 }

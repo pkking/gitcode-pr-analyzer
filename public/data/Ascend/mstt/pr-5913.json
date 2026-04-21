@@ -3,8 +3,12 @@
   "owner": "Ascend",
   "repo": "mstt",
   "createdAt": "2026-04-16T19:13:27+08:00",
-  "mergedAt": null,
-  "prSubmitToMerge": null,
+  "mergedAt": "2026-04-21T09:41:00+08:00",
+  "prSubmitToMerge": {
+    "durationSeconds": 397653,
+    "fromTime": "2026-04-16T11:13:27Z",
+    "toTime": "2026-04-21T01:41:00Z"
+  },
   "compileToCiCycles": [
     {
       "compileTime": "2026-04-16T11:22:21Z",
@@ -43,5 +47,9 @@
       "durationSeconds": 241
     }
   ],
-  "lastCiRemovalToMerge": null
+  "lastCiRemovalToMerge": {
+    "durationSeconds": 393518,
+    "fromTime": "2026-04-16T12:22:22Z",
+    "toTime": "2026-04-21T01:41:00Z"
+  }
 }

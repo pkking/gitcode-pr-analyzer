@@ -1,0 +1,31 @@
+{
+  "prNumber": 34077,
+  "owner": "Ascend",
+  "repo": "pytorch",
+  "createdAt": "2026-04-21T10:01:41+08:00",
+  "mergedAt": "2026-04-21T11:13:57+08:00",
+  "prSubmitToMerge": {
+    "durationSeconds": 4336,
+    "fromTime": "2026-04-21T02:01:41Z",
+    "toTime": "2026-04-21T03:13:57Z"
+  },
+  "compileToCiCycles": [
+    {
+      "compileTime": "2026-04-21T02:01:47Z",
+      "startTime": "2026-04-21T02:08:41Z",
+      "finishTime": "2026-04-21T03:13:26Z",
+      "durationSeconds": 4299
+    },
+    {
+      "compileTime": "2026-04-21T02:01:47Z",
+      "startTime": "2026-04-21T02:02:17Z",
+      "finishTime": "2026-04-21T03:13:57Z",
+      "durationSeconds": 4330
+    }
+  ],
+  "lastCiRemovalToMerge": {
+    "durationSeconds": 0,
+    "fromTime": "2026-04-21T03:13:57Z",
+    "toTime": "2026-04-21T03:13:57Z"
+  }
+}
