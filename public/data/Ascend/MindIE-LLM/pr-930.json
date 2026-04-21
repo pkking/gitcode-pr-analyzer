@@ -3,8 +3,12 @@
   "owner": "Ascend",
   "repo": "MindIE-LLM",
   "createdAt": "2026-04-21T19:56:07+08:00",
-  "mergedAt": null,
-  "prSubmitToMerge": null,
+  "mergedAt": "2026-04-22T00:38:39+08:00",
+  "prSubmitToMerge": {
+    "durationSeconds": 16952,
+    "fromTime": "2026-04-21T11:56:07Z",
+    "toTime": "2026-04-21T16:38:39Z"
+  },
   "compileToCiCycles": [
     {
       "compileTime": "2026-04-21T11:56:20Z",
@@ -25,6 +29,18 @@
       "durationSeconds": 2870
     },
     {
+      "compileTime": "2026-04-21T14:07:35Z",
+      "startTime": "2026-04-21T14:08:02Z",
+      "finishTime": "2026-04-21T14:51:38Z",
+      "durationSeconds": 2643
+    },
+    {
+      "compileTime": "2026-04-21T15:02:35Z",
+      "startTime": "2026-04-21T15:03:02Z",
+      "finishTime": "2026-04-21T16:08:56Z",
+      "durationSeconds": 3981
+    },
+    {
       "compileTime": "2026-04-21T11:56:20Z",
       "startTime": "2026-04-21T11:59:11Z",
       "finishTime": "2026-04-21T12:02:09Z",
@@ -41,7 +57,23 @@
       "startTime": "2026-04-21T13:23:14Z",
       "finishTime": "2026-04-21T13:26:18Z",
       "durationSeconds": 1090
+    },
+    {
+      "compileTime": "2026-04-21T14:07:35Z",
+      "startTime": "2026-04-21T14:08:43Z",
+      "finishTime": "2026-04-21T14:10:17Z",
+      "durationSeconds": 162
+    },
+    {
+      "compileTime": "2026-04-21T15:02:35Z",
+      "startTime": "2026-04-21T15:03:44Z",
+      "finishTime": "2026-04-21T15:05:29Z",
+      "durationSeconds": 174
     }
   ],
-  "lastCiRemovalToMerge": null
+  "lastCiRemovalToMerge": {
+    "durationSeconds": 1783,
+    "fromTime": "2026-04-21T16:08:56Z",
+    "toTime": "2026-04-21T16:38:39Z"
+  }
 }

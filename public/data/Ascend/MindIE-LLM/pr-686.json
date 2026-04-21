@@ -3,8 +3,12 @@
   "owner": "Ascend",
   "repo": "MindIE-LLM",
   "createdAt": "2026-03-27T03:10:20+08:00",
-  "mergedAt": null,
-  "prSubmitToMerge": null,
+  "mergedAt": "2026-04-21T23:09:46+08:00",
+  "prSubmitToMerge": {
+    "durationSeconds": 2231966,
+    "fromTime": "2026-03-26T19:10:20Z",
+    "toTime": "2026-04-21T15:09:46Z"
+  },
   "compileToCiCycles": [
     {
       "compileTime": "2026-03-29T15:58:51Z",
@@ -211,5 +215,9 @@
       "durationSeconds": 1080
     }
   ],
-  "lastCiRemovalToMerge": null
+  "lastCiRemovalToMerge": {
+    "durationSeconds": 11214,
+    "fromTime": "2026-04-21T12:02:52Z",
+    "toTime": "2026-04-21T15:09:46Z"
+  }
 }

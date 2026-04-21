@@ -3,45 +3,53 @@
   "owner": "Ascend",
   "repo": "MindIE-LLM",
   "createdAt": "2026-04-13T17:23:30+08:00",
-  "mergedAt": null,
-  "prSubmitToMerge": null,
+  "mergedAt": "2026-04-21T23:13:08+08:00",
+  "prSubmitToMerge": {
+    "durationSeconds": 712178,
+    "fromTime": "2026-04-13T09:23:30Z",
+    "toTime": "2026-04-21T15:13:08Z"
+  },
   "compileToCiCycles": [
     {
-      "compileTime": "2026-04-13T17:24:07Z",
-      "startTime": "2026-04-13T17:24:35Z",
-      "finishTime": "2026-04-13T17:33:03Z",
+      "compileTime": "2026-04-13T09:24:07Z",
+      "startTime": "2026-04-13T09:24:35Z",
+      "finishTime": "2026-04-13T09:33:03Z",
       "durationSeconds": 536
     },
     {
-      "compileTime": "2026-04-13T17:46:49Z",
-      "startTime": "2026-04-13T17:47:17Z",
-      "finishTime": "2026-04-13T17:50:49Z",
+      "compileTime": "2026-04-13T09:46:49Z",
+      "startTime": "2026-04-13T09:47:17Z",
+      "finishTime": "2026-04-13T09:50:49Z",
       "durationSeconds": 240
     },
     {
-      "compileTime": "2026-04-13T17:58:26Z",
-      "startTime": "2026-04-13T17:58:52Z",
-      "finishTime": "2026-04-13T19:04:35Z",
+      "compileTime": "2026-04-13T09:58:26Z",
+      "startTime": "2026-04-13T09:58:52Z",
+      "finishTime": "2026-04-13T11:04:35Z",
       "durationSeconds": 3969
     },
     {
-      "compileTime": "2026-04-13T17:24:07Z",
-      "startTime": "2026-04-13T17:24:26Z",
-      "finishTime": "2026-04-13T17:26:31Z",
+      "compileTime": "2026-04-13T09:24:07Z",
+      "startTime": "2026-04-13T09:24:26Z",
+      "finishTime": "2026-04-13T09:26:31Z",
       "durationSeconds": 144
     },
     {
-      "compileTime": "2026-04-13T17:46:49Z",
-      "startTime": "2026-04-13T17:48:44Z",
-      "finishTime": "2026-04-13T17:50:44Z",
+      "compileTime": "2026-04-13T09:46:49Z",
+      "startTime": "2026-04-13T09:48:44Z",
+      "finishTime": "2026-04-13T09:50:44Z",
       "durationSeconds": 235
     },
     {
-      "compileTime": "2026-04-13T17:58:26Z",
-      "startTime": "2026-04-13T17:59:33Z",
-      "finishTime": "2026-04-13T18:01:33Z",
+      "compileTime": "2026-04-13T09:58:26Z",
+      "startTime": "2026-04-13T09:59:33Z",
+      "finishTime": "2026-04-13T10:01:33Z",
       "durationSeconds": 187
     }
   ],
-  "lastCiRemovalToMerge": null
+  "lastCiRemovalToMerge": {
+    "durationSeconds": 706113,
+    "fromTime": "2026-04-13T11:04:35Z",
+    "toTime": "2026-04-21T15:13:08Z"
+  }
 }
