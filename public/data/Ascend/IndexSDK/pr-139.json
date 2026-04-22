@@ -6,9 +6,26 @@
   "mergedAt": "2026-04-17T16:28:54+08:00",
   "prSubmitToMerge": {
     "durationSeconds": 3044,
-    "fromTime": "2026-04-17T15:38:10Z",
-    "toTime": "2026-04-17T16:28:54Z"
+    "fromTime": "2026-04-17T07:38:10Z",
+    "toTime": "2026-04-17T08:28:54Z"
   },
-  "lastCiRemovalToMerge": null,
-  "compileToCiCycles": []
+  "compileToCiCycles": [
+    {
+      "compileTime": "2026-04-17T07:38:12Z",
+      "startTime": "2026-04-17T07:38:34Z",
+      "finishTime": "2026-04-17T07:41:00Z",
+      "durationSeconds": 168
+    },
+    {
+      "compileTime": "2026-04-17T07:38:12Z",
+      "startTime": "2026-04-17T07:40:09Z",
+      "finishTime": "2026-04-17T07:41:27Z",
+      "durationSeconds": 195
+    }
+  ],
+  "lastCiRemovalToMerge": {
+    "durationSeconds": 2847,
+    "fromTime": "2026-04-17T07:41:27Z",
+    "toTime": "2026-04-17T08:28:54Z"
+  }
 }

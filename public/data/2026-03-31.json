@@ -1,6 +1,6 @@
 {
   "date": "2026-03-31",
-  "repo": "Ascend/MindSpeed",
+  "repo": "Ascend/pytorch",
   "runs": [
     {
       "id": 50002,
@@ -3959,9 +3959,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-03-31T03:16:34Z",
-      "updated_at": "2026-04-21T19:25:03Z",
+      "updated_at": "2026-04-22T03:00:07Z",
       "html_url": "https://gitcode.com/Ascend/MindIE-LLM/merge_requests/566",
-      "durationInSeconds": 1872509.663,
+      "durationInSeconds": 1899813.021,
       "jobs": [
         {
           "id": 5660103,
@@ -3970,10 +3970,10 @@
           "conclusion": "pending",
           "created_at": "2026-03-31T03:16:34Z",
           "started_at": "2026-03-31T03:17:04Z",
-          "completed_at": "2026-04-21T19:25:03Z",
+          "completed_at": "2026-04-22T03:00:07Z",
           "html_url": "https://gitcode.com/Ascend/MindIE-LLM/merge_requests/566",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 1872479.663
+          "durationInSeconds": 1899783.021
         }
       ]
     },
@@ -3984,9 +3984,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-03-31T12:09:51Z",
-      "updated_at": "2026-04-21T19:25:03Z",
+      "updated_at": "2026-04-22T03:00:07Z",
       "html_url": "https://gitcode.com/Ascend/MindIE-LLM/merge_requests/566",
-      "durationInSeconds": 1840512.663,
+      "durationInSeconds": 1867816.021,
       "jobs": [
         {
           "id": 5660104,
@@ -3995,10 +3995,10 @@
           "conclusion": "pending",
           "created_at": "2026-03-31T12:09:51Z",
           "started_at": "2026-03-31T12:10:21Z",
-          "completed_at": "2026-04-21T19:25:03Z",
+          "completed_at": "2026-04-22T03:00:07Z",
           "html_url": "https://gitcode.com/Ascend/MindIE-LLM/merge_requests/566",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 1840482.663
+          "durationInSeconds": 1867786.021
         }
       ]
     },
@@ -4009,9 +4009,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-03-31T12:32:02Z",
-      "updated_at": "2026-04-21T19:25:03Z",
+      "updated_at": "2026-04-22T03:00:07Z",
       "html_url": "https://gitcode.com/Ascend/MindIE-LLM/merge_requests/566",
-      "durationInSeconds": 1839181.663,
+      "durationInSeconds": 1866485.021,
       "jobs": [
         {
           "id": 5660105,
@@ -4020,10 +4020,10 @@
           "conclusion": "pending",
           "created_at": "2026-03-31T12:32:02Z",
           "started_at": "2026-03-31T12:32:32Z",
-          "completed_at": "2026-04-21T19:25:03Z",
+          "completed_at": "2026-04-22T03:00:07Z",
           "html_url": "https://gitcode.com/Ascend/MindIE-LLM/merge_requests/566",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 1839151.663
+          "durationInSeconds": 1866455.021
         }
       ]
     },
@@ -4034,9 +4034,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-03-31T12:44:05Z",
-      "updated_at": "2026-04-21T19:25:03Z",
+      "updated_at": "2026-04-22T03:00:07Z",
       "html_url": "https://gitcode.com/Ascend/MindIE-LLM/merge_requests/566",
-      "durationInSeconds": 1838458.663,
+      "durationInSeconds": 1865762.021,
       "jobs": [
         {
           "id": 5660106,
@@ -4045,10 +4045,10 @@
           "conclusion": "pending",
           "created_at": "2026-03-31T12:44:05Z",
           "started_at": "2026-03-31T12:44:35Z",
-          "completed_at": "2026-04-21T19:25:03Z",
+          "completed_at": "2026-04-22T03:00:07Z",
           "html_url": "https://gitcode.com/Ascend/MindIE-LLM/merge_requests/566",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 1838428.663
+          "durationInSeconds": 1865732.021
         }
       ]
     },
@@ -29707,23 +29707,23 @@
       "name": "PR #32395 compile - test(distributed): add NPU test cases for 11 distr",
       "head_branch": "test-distributed-checkpoint-api",
       "status": "completed",
-      "conclusion": "pending",
+      "conclusion": "success",
       "created_at": "2026-03-31T09:24:29Z",
-      "updated_at": "2026-04-12T17:20:01Z",
+      "updated_at": "2026-04-22T01:22:10Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/32395",
-      "durationInSeconds": 1065332.041,
+      "durationInSeconds": 1871861,
       "jobs": [
         {
           "id": 323950001,
-          "name": "compile",
+          "name": "ci-pipeline-running",
           "status": "completed",
-          "conclusion": "pending",
+          "conclusion": "success",
           "created_at": "2026-03-31T09:24:29Z",
-          "started_at": "2026-03-31T09:24:59Z",
-          "completed_at": "2026-04-12T17:20:01Z",
+          "started_at": "2026-04-22T00:51:53Z",
+          "completed_at": "2026-04-22T01:22:10Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/32395",
-          "queueDurationInSeconds": 30,
-          "durationInSeconds": 1065302.041
+          "queueDurationInSeconds": 1870044,
+          "durationInSeconds": 1817
         }
       ]
     },
@@ -29734,9 +29734,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-03-31T09:24:29Z",
-      "updated_at": "2026-04-12T17:20:01Z",
+      "updated_at": "2026-04-22T03:17:09Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/32395",
-      "durationInSeconds": 1065332.041,
+      "durationInSeconds": 1878760.791,
       "jobs": [
         {
           "id": 323950101,
@@ -29745,10 +29745,10 @@
           "conclusion": "pending",
           "created_at": "2026-03-31T09:24:29Z",
           "started_at": "2026-03-31T09:24:59Z",
-          "completed_at": "2026-04-12T17:20:01Z",
+          "completed_at": "2026-04-22T03:17:09Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/32395",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 1065302.041
+          "durationInSeconds": 1878730.791
         }
       ]
     },

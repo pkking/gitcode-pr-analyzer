@@ -3,8 +3,12 @@
   "owner": "Ascend",
   "repo": "triton-ascend",
   "createdAt": "2026-04-16T21:31:04+08:00",
-  "mergedAt": null,
-  "prSubmitToMerge": null,
+  "mergedAt": "2026-04-22T10:41:07+08:00",
+  "prSubmitToMerge": {
+    "durationSeconds": 479403,
+    "fromTime": "2026-04-16T13:31:04Z",
+    "toTime": "2026-04-22T02:41:07Z"
+  },
   "compileToCiCycles": [
     {
       "compileTime": "2026-04-16T13:53:05Z",
@@ -75,21 +79,25 @@
     {
       "compileTime": "2026-04-18T02:33:29Z",
       "startTime": "2026-04-18T02:33:59Z",
-      "finishTime": "2026-04-21T19:32:11Z",
-      "durationSeconds": 320322
+      "finishTime": "2026-04-22T02:41:07Z",
+      "durationSeconds": 346058
     },
     {
       "compileTime": "2026-04-20T01:15:35Z",
       "startTime": "2026-04-20T01:16:05Z",
-      "finishTime": "2026-04-21T19:32:11Z",
-      "durationSeconds": 152196
+      "finishTime": "2026-04-22T02:41:07Z",
+      "durationSeconds": 177932
     },
     {
       "compileTime": "2026-04-21T07:11:49Z",
       "startTime": "2026-04-21T07:12:19Z",
-      "finishTime": "2026-04-21T19:32:11Z",
-      "durationSeconds": 44422
+      "finishTime": "2026-04-22T02:41:07Z",
+      "durationSeconds": 70158
     }
   ],
-  "lastCiRemovalToMerge": null
+  "lastCiRemovalToMerge": {
+    "durationSeconds": 0,
+    "fromTime": "2026-04-22T02:41:07Z",
+    "toTime": "2026-04-22T02:41:07Z"
+  }
 }

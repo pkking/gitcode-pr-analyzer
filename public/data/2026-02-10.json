@@ -1,6 +1,6 @@
 {
   "date": "2026-02-10",
-  "repo": "Ascend/MindStudio-Ops-Profiler",
+  "repo": "Ascend/AscendNPU-IR",
   "runs": [
     {
       "id": 260004,
@@ -9258,8 +9258,8 @@
       "head_branch": "feature-add-inline-cmp",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-02-10T10:32:55Z",
-      "updated_at": "2026-02-10T10:38:33Z",
+      "created_at": "2026-02-10T02:32:55Z",
+      "updated_at": "2026-02-10T02:38:33Z",
       "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/540",
       "durationInSeconds": 338,
       "jobs": [
@@ -9268,9 +9268,9 @@
           "name": "ci-pipeline-running",
           "status": "completed",
           "conclusion": "success",
-          "created_at": "2026-02-10T10:32:55Z",
-          "started_at": "2026-02-10T10:33:27Z",
-          "completed_at": "2026-02-10T10:38:33Z",
+          "created_at": "2026-02-10T02:32:55Z",
+          "started_at": "2026-02-10T02:33:27Z",
+          "completed_at": "2026-02-10T02:38:33Z",
           "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/540",
           "queueDurationInSeconds": 32,
           "durationInSeconds": 306
@@ -9282,23 +9282,23 @@
       "name": "PR #540 docs-ci - [AscendNPU IR]: test",
       "head_branch": "feature-add-inline-cmp",
       "status": "completed",
-      "conclusion": "pending",
-      "created_at": "2026-02-10T10:32:55Z",
-      "updated_at": "2026-04-19T20:03:01Z",
+      "conclusion": "success",
+      "created_at": "2026-02-10T02:32:55Z",
+      "updated_at": "2026-04-22T02:40:35Z",
       "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/540",
-      "durationInSeconds": 5909406.222,
+      "durationInSeconds": 6134860,
       "jobs": [
         {
           "id": 5400101,
-          "name": "docs-ci",
+          "name": "docs-ci-pipeline-running",
           "status": "completed",
-          "conclusion": "pending",
-          "created_at": "2026-02-10T10:32:55Z",
-          "started_at": "2026-02-10T10:33:25Z",
-          "completed_at": "2026-04-19T20:03:01Z",
+          "conclusion": "success",
+          "created_at": "2026-02-10T02:32:55Z",
+          "started_at": "2026-04-22T02:38:39Z",
+          "completed_at": "2026-04-22T02:40:35Z",
           "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/540",
-          "queueDurationInSeconds": 30,
-          "durationInSeconds": 5909376.222
+          "queueDurationInSeconds": 6134744,
+          "durationInSeconds": 116
         }
       ]
     },
