@@ -3,8 +3,12 @@
   "owner": "Ascend",
   "repo": "triton-ascend",
   "createdAt": "2026-04-21T16:48:29+08:00",
-  "mergedAt": null,
-  "prSubmitToMerge": null,
+  "mergedAt": "2026-04-22T17:18:50+08:00",
+  "prSubmitToMerge": {
+    "durationSeconds": 88221,
+    "fromTime": "2026-04-21T08:48:29Z",
+    "toTime": "2026-04-22T09:18:50Z"
+  },
   "compileToCiCycles": [
     {
       "compileTime": "2026-04-21T08:51:06Z",
@@ -39,9 +43,13 @@
     {
       "compileTime": "2026-04-22T04:01:08Z",
       "startTime": "2026-04-22T04:01:38Z",
-      "finishTime": "2026-04-22T08:09:53Z",
-      "durationSeconds": 14925
+      "finishTime": "2026-04-22T09:18:50Z",
+      "durationSeconds": 19062
     }
   ],
-  "lastCiRemovalToMerge": null
+  "lastCiRemovalToMerge": {
+    "durationSeconds": 0,
+    "fromTime": "2026-04-22T09:18:50Z",
+    "toTime": "2026-04-22T09:18:50Z"
+  }
 }

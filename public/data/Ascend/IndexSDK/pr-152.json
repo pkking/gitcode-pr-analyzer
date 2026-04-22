@@ -3,8 +3,12 @@
   "owner": "Ascend",
   "repo": "IndexSDK",
   "createdAt": "2026-04-21T21:02:36+08:00",
-  "mergedAt": null,
-  "prSubmitToMerge": null,
+  "mergedAt": "2026-04-22T17:37:42+08:00",
+  "prSubmitToMerge": {
+    "durationSeconds": 74106,
+    "fromTime": "2026-04-21T13:02:36Z",
+    "toTime": "2026-04-22T09:37:42Z"
+  },
   "compileToCiCycles": [
     {
       "compileTime": "2026-04-21T13:02:39Z",
@@ -15,9 +19,13 @@
     {
       "compileTime": "2026-04-21T13:02:39Z",
       "startTime": "2026-04-21T13:03:09Z",
-      "finishTime": "2026-04-22T08:07:30Z",
-      "durationSeconds": 68691
+      "finishTime": "2026-04-22T09:37:42Z",
+      "durationSeconds": 74103
     }
   ],
-  "lastCiRemovalToMerge": null
+  "lastCiRemovalToMerge": {
+    "durationSeconds": 0,
+    "fromTime": "2026-04-22T09:37:42Z",
+    "toTime": "2026-04-22T09:37:42Z"
+  }
 }

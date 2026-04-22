@@ -1,0 +1,31 @@
+{
+  "prNumber": 2331,
+  "owner": "Ascend",
+  "repo": "MindSpeed-MM",
+  "createdAt": "2026-03-30T11:01:26+08:00",
+  "mergedAt": "2026-03-30T15:16:09+08:00",
+  "prSubmitToMerge": {
+    "durationSeconds": 15283,
+    "fromTime": "2026-03-30T03:01:26Z",
+    "toTime": "2026-03-30T07:16:09Z"
+  },
+  "compileToCiCycles": [
+    {
+      "compileTime": "2026-03-30T03:01:47Z",
+      "startTime": "2026-03-30T03:02:13Z",
+      "finishTime": "2026-03-30T03:11:25Z",
+      "durationSeconds": 578
+    },
+    {
+      "compileTime": "2026-03-30T03:01:47Z",
+      "startTime": "2026-03-30T03:02:17Z",
+      "finishTime": "2026-03-30T07:16:09Z",
+      "durationSeconds": 15262
+    }
+  ],
+  "lastCiRemovalToMerge": {
+    "durationSeconds": 0,
+    "fromTime": "2026-03-30T07:16:09Z",
+    "toTime": "2026-03-30T07:16:09Z"
+  }
+}

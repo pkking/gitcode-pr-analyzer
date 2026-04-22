@@ -1,0 +1,31 @@
+{
+  "prNumber": 1091,
+  "owner": "Ascend",
+  "repo": "AscendNPU-IR",
+  "createdAt": "2026-04-22T16:12:33+08:00",
+  "mergedAt": "2026-04-22T20:00:55+08:00",
+  "prSubmitToMerge": {
+    "durationSeconds": 13702,
+    "fromTime": "2026-04-22T08:12:33Z",
+    "toTime": "2026-04-22T12:00:55Z"
+  },
+  "compileToCiCycles": [
+    {
+      "compileTime": "2026-04-22T08:13:15Z",
+      "startTime": "2026-04-22T08:19:32Z",
+      "finishTime": "2026-04-22T08:42:22Z",
+      "durationSeconds": 1747
+    },
+    {
+      "compileTime": "2026-04-22T08:13:15Z",
+      "startTime": "2026-04-22T08:36:17Z",
+      "finishTime": "2026-04-22T08:41:56Z",
+      "durationSeconds": 1721
+    }
+  ],
+  "lastCiRemovalToMerge": {
+    "durationSeconds": 11913,
+    "fromTime": "2026-04-22T08:42:22Z",
+    "toTime": "2026-04-22T12:00:55Z"
+  }
+}
