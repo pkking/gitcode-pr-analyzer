@@ -3,8 +3,12 @@
   "owner": "Ascend",
   "repo": "MindIE-PyMotor",
   "createdAt": "2026-03-31T15:35:02+08:00",
-  "mergedAt": null,
-  "prSubmitToMerge": null,
+  "mergedAt": "2026-04-22T14:47:12+08:00",
+  "prSubmitToMerge": {
+    "durationSeconds": 1897930,
+    "fromTime": "2026-03-31T07:35:02Z",
+    "toTime": "2026-04-22T06:47:12Z"
+  },
   "compileToCiCycles": [
     {
       "compileTime": "2026-03-31T07:38:10Z",
@@ -175,5 +179,9 @@
       "durationSeconds": 219
     }
   ],
-  "lastCiRemovalToMerge": null
+  "lastCiRemovalToMerge": {
+    "durationSeconds": 85650,
+    "fromTime": "2026-04-21T06:59:42Z",
+    "toTime": "2026-04-22T06:47:12Z"
+  }
 }

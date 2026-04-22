@@ -3,14 +3,18 @@
   "owner": "Ascend",
   "repo": "docs",
   "createdAt": "2026-04-22T10:39:47+08:00",
-  "mergedAt": null,
-  "prSubmitToMerge": null,
+  "mergedAt": "2026-04-22T11:19:49+08:00",
+  "prSubmitToMerge": {
+    "durationSeconds": 2402,
+    "fromTime": "2026-04-22T02:39:47Z",
+    "toTime": "2026-04-22T03:19:49Z"
+  },
   "compileToCiCycles": [
     {
       "compileTime": "2026-04-22T02:41:09Z",
       "startTime": "2026-04-22T02:41:39Z",
-      "finishTime": "2026-04-22T02:56:39Z",
-      "durationSeconds": 930
+      "finishTime": "2026-04-22T03:19:49Z",
+      "durationSeconds": 2320
     },
     {
       "compileTime": "2026-04-22T02:41:09Z",
@@ -19,5 +23,9 @@
       "durationSeconds": 92
     }
   ],
-  "lastCiRemovalToMerge": null
+  "lastCiRemovalToMerge": {
+    "durationSeconds": 0,
+    "fromTime": "2026-04-22T03:19:49Z",
+    "toTime": "2026-04-22T03:19:49Z"
+  }
 }

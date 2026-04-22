@@ -1,6 +1,6 @@
 {
   "date": "2026-04-04",
-  "repo": "Ascend/MindIE-LLM",
+  "repo": "Ascend/AscendNPU-IR",
   "runs": [
     {
       "id": 1000000,
@@ -657,23 +657,23 @@
       "name": "PR #943 docs-ci - Add sinh support in HFusion normalize pass",
       "head_branch": "feat/hfusion-sinh",
       "status": "completed",
-      "conclusion": "pending",
+      "conclusion": "success",
       "created_at": "2026-04-04T10:58:06Z",
-      "updated_at": "2026-04-17T03:03:48Z",
+      "updated_at": "2026-04-22T05:48:14Z",
       "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/943",
-      "durationInSeconds": 1094742.878,
+      "durationInSeconds": 1536608,
       "jobs": [
         {
           "id": 9430101,
-          "name": "docs-ci",
+          "name": "docs-ci-pipeline-running",
           "status": "completed",
-          "conclusion": "pending",
+          "conclusion": "success",
           "created_at": "2026-04-04T10:58:06Z",
-          "started_at": "2026-04-04T10:58:36Z",
-          "completed_at": "2026-04-17T03:03:48Z",
+          "started_at": "2026-04-22T05:47:02Z",
+          "completed_at": "2026-04-22T05:48:14Z",
           "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/943",
-          "queueDurationInSeconds": 30,
-          "durationInSeconds": 1094712.878
+          "queueDurationInSeconds": 1536536,
+          "durationInSeconds": 72
         }
       ]
     },
@@ -682,23 +682,23 @@
       "name": "PR #943 docs-ci - Add sinh support in HFusion normalize pass",
       "head_branch": "feat/hfusion-sinh",
       "status": "completed",
-      "conclusion": "pending",
+      "conclusion": "success",
       "created_at": "2026-04-04T11:22:37Z",
-      "updated_at": "2026-04-17T03:03:48Z",
+      "updated_at": "2026-04-22T05:48:14Z",
       "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/943",
-      "durationInSeconds": 1093271.878,
+      "durationInSeconds": 1535137,
       "jobs": [
         {
           "id": 9430102,
-          "name": "docs-ci",
+          "name": "docs-ci-pipeline-running",
           "status": "completed",
-          "conclusion": "pending",
+          "conclusion": "success",
           "created_at": "2026-04-04T11:22:37Z",
-          "started_at": "2026-04-04T11:23:07Z",
-          "completed_at": "2026-04-17T03:03:48Z",
+          "started_at": "2026-04-22T05:47:02Z",
+          "completed_at": "2026-04-22T05:48:14Z",
           "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/943",
-          "queueDurationInSeconds": 30,
-          "durationInSeconds": 1093241.878
+          "queueDurationInSeconds": 1535065,
+          "durationInSeconds": 72
         }
       ]
     },

@@ -3,8 +3,12 @@
   "owner": "Ascend",
   "repo": "OMSDK",
   "createdAt": "2026-04-15T14:27:01+08:00",
-  "mergedAt": null,
-  "prSubmitToMerge": null,
+  "mergedAt": "2026-04-22T11:22:59+08:00",
+  "prSubmitToMerge": {
+    "durationSeconds": 593758,
+    "fromTime": "2026-04-15T06:27:01Z",
+    "toTime": "2026-04-22T03:22:59Z"
+  },
   "compileToCiCycles": [
     {
       "compileTime": "2026-04-15T06:27:05Z",
@@ -79,5 +83,9 @@
       "durationSeconds": 166
     }
   ],
-  "lastCiRemovalToMerge": null
+  "lastCiRemovalToMerge": {
+    "durationSeconds": 590035,
+    "fromTime": "2026-04-15T07:29:04Z",
+    "toTime": "2026-04-22T03:22:59Z"
+  }
 }

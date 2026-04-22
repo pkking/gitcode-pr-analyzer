@@ -3,8 +3,12 @@
   "owner": "Ascend",
   "repo": "MindStudio-Agent",
   "createdAt": "2026-04-21T19:44:44+08:00",
-  "mergedAt": null,
-  "prSubmitToMerge": null,
+  "mergedAt": "2026-04-22T11:45:46+08:00",
+  "prSubmitToMerge": {
+    "durationSeconds": 57662,
+    "fromTime": "2026-04-21T11:44:44Z",
+    "toTime": "2026-04-22T03:45:46Z"
+  },
   "compileToCiCycles": [
     {
       "compileTime": "2026-04-21T11:46:36Z",
@@ -15,9 +19,13 @@
     {
       "compileTime": "2026-04-21T11:46:36Z",
       "startTime": "2026-04-21T11:47:06Z",
-      "finishTime": "2026-04-22T02:52:22Z",
-      "durationSeconds": 54346
+      "finishTime": "2026-04-22T03:45:46Z",
+      "durationSeconds": 57550
     }
   ],
-  "lastCiRemovalToMerge": null
+  "lastCiRemovalToMerge": {
+    "durationSeconds": 0,
+    "fromTime": "2026-04-22T03:45:46Z",
+    "toTime": "2026-04-22T03:45:46Z"
+  }
 }
