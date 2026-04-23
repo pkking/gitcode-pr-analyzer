@@ -3,21 +3,41 @@
   "owner": "Ascend",
   "repo": "pytorch",
   "createdAt": "2026-04-23T21:38:43+08:00",
-  "mergedAt": null,
-  "prSubmitToMerge": null,
+  "mergedAt": "2026-04-24T00:57:45+08:00",
+  "prSubmitToMerge": {
+    "durationSeconds": 11942,
+    "fromTime": "2026-04-23T13:38:43Z",
+    "toTime": "2026-04-23T16:57:45Z"
+  },
   "compileToCiCycles": [
     {
       "compileTime": "2026-04-23T13:38:48Z",
       "startTime": "2026-04-23T13:39:27Z",
-      "finishTime": "2026-04-23T14:20:34Z",
-      "durationSeconds": 2506
+      "finishTime": "2026-04-23T15:13:15Z",
+      "durationSeconds": 5667
+    },
+    {
+      "compileTime": "2026-04-23T15:14:33Z",
+      "startTime": "2026-04-23T15:16:27Z",
+      "finishTime": "2026-04-23T16:57:25Z",
+      "durationSeconds": 6172
     },
     {
       "compileTime": "2026-04-23T13:38:48Z",
       "startTime": "2026-04-23T13:39:18Z",
-      "finishTime": "2026-04-23T14:20:34Z",
-      "durationSeconds": 2506
+      "finishTime": "2026-04-23T16:57:45Z",
+      "durationSeconds": 11937
+    },
+    {
+      "compileTime": "2026-04-23T15:14:33Z",
+      "startTime": "2026-04-23T15:15:03Z",
+      "finishTime": "2026-04-23T16:57:45Z",
+      "durationSeconds": 6192
     }
   ],
-  "lastCiRemovalToMerge": null
+  "lastCiRemovalToMerge": {
+    "durationSeconds": 0,
+    "fromTime": "2026-04-23T16:57:45Z",
+    "toTime": "2026-04-23T16:57:45Z"
+  }
 }

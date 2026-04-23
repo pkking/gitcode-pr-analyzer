@@ -3,8 +3,12 @@
   "owner": "Ascend",
   "repo": "pytorch",
   "createdAt": "2026-04-23T12:18:10+08:00",
-  "mergedAt": null,
-  "prSubmitToMerge": null,
+  "mergedAt": "2026-04-23T23:36:47+08:00",
+  "prSubmitToMerge": {
+    "durationSeconds": 40717,
+    "fromTime": "2026-04-23T04:18:10Z",
+    "toTime": "2026-04-23T15:36:47Z"
+  },
   "compileToCiCycles": [
     {
       "compileTime": "2026-04-23T04:18:36Z",
@@ -33,39 +37,43 @@
     {
       "compileTime": "2026-04-23T12:26:26Z",
       "startTime": "2026-04-23T12:33:24Z",
-      "finishTime": "2026-04-23T14:22:02Z",
-      "durationSeconds": 6936
+      "finishTime": "2026-04-23T15:14:03Z",
+      "durationSeconds": 10057
     },
     {
       "compileTime": "2026-04-23T04:18:36Z",
       "startTime": "2026-04-23T04:19:06Z",
-      "finishTime": "2026-04-23T14:22:02Z",
-      "durationSeconds": 36206
+      "finishTime": "2026-04-23T15:36:47Z",
+      "durationSeconds": 40691
     },
     {
       "compileTime": "2026-04-23T09:45:41Z",
       "startTime": "2026-04-23T09:46:11Z",
-      "finishTime": "2026-04-23T14:22:02Z",
-      "durationSeconds": 16581
+      "finishTime": "2026-04-23T15:36:47Z",
+      "durationSeconds": 21066
     },
     {
       "compileTime": "2026-04-23T09:53:31Z",
       "startTime": "2026-04-23T09:54:01Z",
-      "finishTime": "2026-04-23T14:22:02Z",
-      "durationSeconds": 16111
+      "finishTime": "2026-04-23T15:36:47Z",
+      "durationSeconds": 20596
     },
     {
       "compileTime": "2026-04-23T11:24:44Z",
       "startTime": "2026-04-23T11:25:14Z",
-      "finishTime": "2026-04-23T14:22:02Z",
-      "durationSeconds": 10638
+      "finishTime": "2026-04-23T15:36:47Z",
+      "durationSeconds": 15123
     },
     {
       "compileTime": "2026-04-23T12:26:26Z",
       "startTime": "2026-04-23T12:26:56Z",
-      "finishTime": "2026-04-23T14:22:02Z",
-      "durationSeconds": 6936
+      "finishTime": "2026-04-23T15:36:47Z",
+      "durationSeconds": 11421
     }
   ],
-  "lastCiRemovalToMerge": null
+  "lastCiRemovalToMerge": {
+    "durationSeconds": 0,
+    "fromTime": "2026-04-23T15:36:47Z",
+    "toTime": "2026-04-23T15:36:47Z"
+  }
 }
