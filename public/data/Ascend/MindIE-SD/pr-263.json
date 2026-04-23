@@ -3,8 +3,12 @@
   "owner": "Ascend",
   "repo": "MindIE-SD",
   "createdAt": "2026-04-21T21:05:42+08:00",
-  "mergedAt": null,
-  "prSubmitToMerge": null,
+  "mergedAt": "2026-04-23T14:35:05+08:00",
+  "prSubmitToMerge": {
+    "durationSeconds": 149363,
+    "fromTime": "2026-04-21T13:05:42Z",
+    "toTime": "2026-04-23T06:35:05Z"
+  },
   "compileToCiCycles": [
     {
       "compileTime": "2026-04-21T13:07:31Z",
@@ -19,6 +23,12 @@
       "durationSeconds": 1682
     },
     {
+      "compileTime": "2026-04-23T03:45:17Z",
+      "startTime": "2026-04-23T03:45:42Z",
+      "finishTime": "2026-04-23T04:29:36Z",
+      "durationSeconds": 2659
+    },
+    {
       "compileTime": "2026-04-21T13:07:31Z",
       "startTime": "2026-04-21T13:15:56Z",
       "finishTime": "2026-04-21T13:23:16Z",
@@ -29,7 +39,17 @@
       "startTime": "2026-04-23T02:03:48Z",
       "finishTime": "2026-04-23T02:05:20Z",
       "durationSeconds": 133
+    },
+    {
+      "compileTime": "2026-04-23T03:45:17Z",
+      "startTime": "2026-04-23T03:46:11Z",
+      "finishTime": "2026-04-23T03:48:19Z",
+      "durationSeconds": 182
     }
   ],
-  "lastCiRemovalToMerge": null
+  "lastCiRemovalToMerge": {
+    "durationSeconds": 7529,
+    "fromTime": "2026-04-23T04:29:36Z",
+    "toTime": "2026-04-23T06:35:05Z"
+  }
 }

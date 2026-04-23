@@ -3,8 +3,12 @@
   "owner": "Ascend",
   "repo": "RAGSDK",
   "createdAt": "2026-04-16T22:37:17+08:00",
-  "mergedAt": null,
-  "prSubmitToMerge": null,
+  "mergedAt": "2026-04-23T12:30:13+08:00",
+  "prSubmitToMerge": {
+    "durationSeconds": 568376,
+    "fromTime": "2026-04-16T14:37:17Z",
+    "toTime": "2026-04-23T04:30:13Z"
+  },
   "compileToCiCycles": [
     {
       "compileTime": "2026-04-16T14:37:37Z",
@@ -25,6 +29,18 @@
       "durationSeconds": 1786
     },
     {
+      "compileTime": "2026-04-23T03:34:16Z",
+      "startTime": "2026-04-23T03:34:38Z",
+      "finishTime": "2026-04-23T04:01:28Z",
+      "durationSeconds": 1632
+    },
+    {
+      "compileTime": "2026-04-23T03:52:25Z",
+      "startTime": "2026-04-23T03:52:55Z",
+      "finishTime": "2026-04-23T04:01:28Z",
+      "durationSeconds": 543
+    },
+    {
       "compileTime": "2026-04-16T14:37:37Z",
       "startTime": "2026-04-16T14:39:06Z",
       "finishTime": "2026-04-16T14:43:05Z",
@@ -41,7 +57,23 @@
       "startTime": "2026-04-23T02:05:35Z",
       "finishTime": "2026-04-23T02:10:18Z",
       "durationSeconds": 397
+    },
+    {
+      "compileTime": "2026-04-23T03:34:16Z",
+      "startTime": "2026-04-23T03:35:06Z",
+      "finishTime": "2026-04-23T03:39:21Z",
+      "durationSeconds": 305
+    },
+    {
+      "compileTime": "2026-04-23T03:52:25Z",
+      "startTime": "2026-04-23T03:53:35Z",
+      "finishTime": "2026-04-23T03:57:30Z",
+      "durationSeconds": 305
     }
   ],
-  "lastCiRemovalToMerge": null
+  "lastCiRemovalToMerge": {
+    "durationSeconds": 1725,
+    "fromTime": "2026-04-23T04:01:28Z",
+    "toTime": "2026-04-23T04:30:13Z"
+  }
 }

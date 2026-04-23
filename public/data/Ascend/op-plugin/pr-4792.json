@@ -3,8 +3,12 @@
   "owner": "Ascend",
   "repo": "op-plugin",
   "createdAt": "2026-04-22T19:50:09+08:00",
-  "mergedAt": null,
-  "prSubmitToMerge": null,
+  "mergedAt": "2026-04-23T16:03:12+08:00",
+  "prSubmitToMerge": {
+    "durationSeconds": 72783,
+    "fromTime": "2026-04-22T11:50:09Z",
+    "toTime": "2026-04-23T08:03:12Z"
+  },
   "compileToCiCycles": [
     {
       "compileTime": "2026-04-22T11:51:26Z",
@@ -33,8 +37,14 @@
     {
       "compileTime": "2026-04-23T01:36:15Z",
       "startTime": "2026-04-23T01:36:43Z",
-      "finishTime": "2026-04-23T03:28:35Z",
-      "durationSeconds": 6740
+      "finishTime": "2026-04-23T03:30:03Z",
+      "durationSeconds": 6828
+    },
+    {
+      "compileTime": "2026-04-23T04:08:41Z",
+      "startTime": "2026-04-23T04:09:05Z",
+      "finishTime": "2026-04-23T05:22:45Z",
+      "durationSeconds": 4444
     },
     {
       "compileTime": "2026-04-22T11:51:26Z",
@@ -65,7 +75,17 @@
       "startTime": "2026-04-23T01:37:35Z",
       "finishTime": "2026-04-23T01:38:44Z",
       "durationSeconds": 149
+    },
+    {
+      "compileTime": "2026-04-23T04:08:41Z",
+      "startTime": "2026-04-23T04:09:36Z",
+      "finishTime": "2026-04-23T04:10:33Z",
+      "durationSeconds": 112
     }
   ],
-  "lastCiRemovalToMerge": null
+  "lastCiRemovalToMerge": {
+    "durationSeconds": 9627,
+    "fromTime": "2026-04-23T05:22:45Z",
+    "toTime": "2026-04-23T08:03:12Z"
+  }
 }

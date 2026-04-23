@@ -3,8 +3,12 @@
   "owner": "Ascend",
   "repo": "memcache",
   "createdAt": "2026-04-21T14:18:36+08:00",
-  "mergedAt": null,
-  "prSubmitToMerge": null,
+  "mergedAt": "2026-04-23T11:50:32+08:00",
+  "prSubmitToMerge": {
+    "durationSeconds": 163916,
+    "fromTime": "2026-04-21T06:18:36Z",
+    "toTime": "2026-04-23T03:50:32Z"
+  },
   "compileToCiCycles": [
     {
       "compileTime": "2026-04-22T10:08:18Z",
@@ -15,9 +19,13 @@
     {
       "compileTime": "2026-04-22T10:08:18Z",
       "startTime": "2026-04-22T10:08:48Z",
-      "finishTime": "2026-04-23T03:12:01Z",
-      "durationSeconds": 61423
+      "finishTime": "2026-04-23T03:50:32Z",
+      "durationSeconds": 63734
     }
   ],
-  "lastCiRemovalToMerge": null
+  "lastCiRemovalToMerge": {
+    "durationSeconds": 0,
+    "fromTime": "2026-04-23T03:50:32Z",
+    "toTime": "2026-04-23T03:50:32Z"
+  }
 }

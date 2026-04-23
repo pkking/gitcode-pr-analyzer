@@ -3,8 +3,12 @@
   "owner": "Ascend",
   "repo": "MindStudio-Operator-Tools",
   "createdAt": "2026-04-22T18:13:13+08:00",
-  "mergedAt": null,
-  "prSubmitToMerge": null,
+  "mergedAt": "2026-04-23T14:11:32+08:00",
+  "prSubmitToMerge": {
+    "durationSeconds": 71899,
+    "fromTime": "2026-04-22T10:13:13Z",
+    "toTime": "2026-04-23T06:11:32Z"
+  },
   "compileToCiCycles": [
     {
       "compileTime": "2026-04-23T01:05:18Z",
@@ -15,9 +19,13 @@
     {
       "compileTime": "2026-04-23T01:05:18Z",
       "startTime": "2026-04-23T01:05:48Z",
-      "finishTime": "2026-04-23T03:01:43Z",
-      "durationSeconds": 6985
+      "finishTime": "2026-04-23T06:11:32Z",
+      "durationSeconds": 18374
     }
   ],
-  "lastCiRemovalToMerge": null
+  "lastCiRemovalToMerge": {
+    "durationSeconds": 0,
+    "fromTime": "2026-04-23T06:11:32Z",
+    "toTime": "2026-04-23T06:11:32Z"
+  }
 }

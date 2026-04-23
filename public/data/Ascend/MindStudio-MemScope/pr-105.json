@@ -3,8 +3,12 @@
   "owner": "Ascend",
   "repo": "MindStudio-MemScope",
   "createdAt": "2026-04-21T10:45:02+08:00",
-  "mergedAt": null,
-  "prSubmitToMerge": null,
+  "mergedAt": "2026-04-23T11:37:12+08:00",
+  "prSubmitToMerge": {
+    "durationSeconds": 175930,
+    "fromTime": "2026-04-21T02:45:02Z",
+    "toTime": "2026-04-23T03:37:12Z"
+  },
   "compileToCiCycles": [
     {
       "compileTime": "2026-04-21T02:58:10Z",
@@ -15,9 +19,13 @@
     {
       "compileTime": "2026-04-21T02:58:10Z",
       "startTime": "2026-04-21T02:58:40Z",
-      "finishTime": "2026-04-23T03:05:26Z",
-      "durationSeconds": 173236
+      "finishTime": "2026-04-23T03:37:12Z",
+      "durationSeconds": 175142
     }
   ],
-  "lastCiRemovalToMerge": null
+  "lastCiRemovalToMerge": {
+    "durationSeconds": 0,
+    "fromTime": "2026-04-23T03:37:12Z",
+    "toTime": "2026-04-23T03:37:12Z"
+  }
 }

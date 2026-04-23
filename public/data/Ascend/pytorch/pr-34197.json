@@ -3,21 +3,29 @@
   "owner": "Ascend",
   "repo": "pytorch",
   "createdAt": "2026-04-23T10:06:47+08:00",
-  "mergedAt": null,
-  "prSubmitToMerge": null,
+  "mergedAt": "2026-04-23T11:32:08+08:00",
+  "prSubmitToMerge": {
+    "durationSeconds": 5121,
+    "fromTime": "2026-04-23T02:06:47Z",
+    "toTime": "2026-04-23T03:32:08Z"
+  },
   "compileToCiCycles": [
     {
       "compileTime": "2026-04-23T02:06:53Z",
       "startTime": "2026-04-23T02:07:27Z",
-      "finishTime": "2026-04-23T03:20:05Z",
-      "durationSeconds": 4392
+      "finishTime": "2026-04-23T03:30:25Z",
+      "durationSeconds": 5012
     },
     {
       "compileTime": "2026-04-23T02:06:53Z",
       "startTime": "2026-04-23T02:07:23Z",
-      "finishTime": "2026-04-23T03:20:05Z",
-      "durationSeconds": 4392
+      "finishTime": "2026-04-23T03:32:08Z",
+      "durationSeconds": 5115
     }
   ],
-  "lastCiRemovalToMerge": null
+  "lastCiRemovalToMerge": {
+    "durationSeconds": 0,
+    "fromTime": "2026-04-23T03:32:08Z",
+    "toTime": "2026-04-23T03:32:08Z"
+  }
 }

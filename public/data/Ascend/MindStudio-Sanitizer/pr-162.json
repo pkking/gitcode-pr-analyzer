@@ -3,8 +3,12 @@
   "owner": "Ascend",
   "repo": "MindStudio-Sanitizer",
   "createdAt": "2026-04-22T10:01:18+08:00",
-  "mergedAt": null,
-  "prSubmitToMerge": null,
+  "mergedAt": "2026-04-23T14:24:00+08:00",
+  "prSubmitToMerge": {
+    "durationSeconds": 102162,
+    "fromTime": "2026-04-22T02:01:18Z",
+    "toTime": "2026-04-23T06:24:00Z"
+  },
   "compileToCiCycles": [
     {
       "compileTime": "2026-04-22T02:01:30Z",
@@ -43,41 +47,57 @@
       "durationSeconds": 1276
     },
     {
+      "compileTime": "2026-04-23T03:11:59Z",
+      "startTime": "2026-04-23T03:12:33Z",
+      "finishTime": "2026-04-23T03:30:34Z",
+      "durationSeconds": 1115
+    },
+    {
       "compileTime": "2026-04-22T02:01:30Z",
       "startTime": "2026-04-22T02:02:00Z",
-      "finishTime": "2026-04-23T03:00:57Z",
-      "durationSeconds": 89967
+      "finishTime": "2026-04-23T06:24:00Z",
+      "durationSeconds": 102150
     },
     {
       "compileTime": "2026-04-22T02:31:23Z",
       "startTime": "2026-04-22T02:31:53Z",
-      "finishTime": "2026-04-23T03:00:57Z",
-      "durationSeconds": 88174
+      "finishTime": "2026-04-23T06:24:00Z",
+      "durationSeconds": 100357
     },
     {
       "compileTime": "2026-04-22T03:00:00Z",
       "startTime": "2026-04-22T03:00:30Z",
-      "finishTime": "2026-04-23T03:00:57Z",
-      "durationSeconds": 86457
+      "finishTime": "2026-04-23T06:24:00Z",
+      "durationSeconds": 98640
     },
     {
       "compileTime": "2026-04-22T03:14:28Z",
       "startTime": "2026-04-22T03:14:58Z",
-      "finishTime": "2026-04-23T03:00:57Z",
-      "durationSeconds": 85589
+      "finishTime": "2026-04-23T06:24:00Z",
+      "durationSeconds": 97772
     },
     {
       "compileTime": "2026-04-22T03:30:02Z",
       "startTime": "2026-04-22T03:30:32Z",
-      "finishTime": "2026-04-23T03:00:57Z",
-      "durationSeconds": 84655
+      "finishTime": "2026-04-23T06:24:00Z",
+      "durationSeconds": 96838
     },
     {
       "compileTime": "2026-04-22T03:46:58Z",
       "startTime": "2026-04-22T03:47:28Z",
-      "finishTime": "2026-04-23T03:00:57Z",
-      "durationSeconds": 83639
+      "finishTime": "2026-04-23T06:24:00Z",
+      "durationSeconds": 95822
+    },
+    {
+      "compileTime": "2026-04-23T03:11:59Z",
+      "startTime": "2026-04-23T03:12:29Z",
+      "finishTime": "2026-04-23T06:24:00Z",
+      "durationSeconds": 11521
     }
   ],
-  "lastCiRemovalToMerge": null
+  "lastCiRemovalToMerge": {
+    "durationSeconds": 0,
+    "fromTime": "2026-04-23T06:24:00Z",
+    "toTime": "2026-04-23T06:24:00Z"
+  }
 }

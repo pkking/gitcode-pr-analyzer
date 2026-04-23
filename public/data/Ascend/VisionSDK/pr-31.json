@@ -3,8 +3,12 @@
   "owner": "Ascend",
   "repo": "VisionSDK",
   "createdAt": "2026-04-21T20:09:46+08:00",
-  "mergedAt": null,
-  "prSubmitToMerge": null,
+  "mergedAt": "2026-04-23T14:59:47+08:00",
+  "prSubmitToMerge": {
+    "durationSeconds": 154201,
+    "fromTime": "2026-04-21T12:09:46Z",
+    "toTime": "2026-04-23T06:59:47Z"
+  },
   "compileToCiCycles": [
     {
       "compileTime": "2026-04-21T12:09:48Z",
@@ -27,21 +31,25 @@
     {
       "compileTime": "2026-04-21T12:09:48Z",
       "startTime": "2026-04-21T12:10:18Z",
-      "finishTime": "2026-04-23T03:09:27Z",
-      "durationSeconds": 140379
+      "finishTime": "2026-04-23T06:59:47Z",
+      "durationSeconds": 154199
     },
     {
       "compileTime": "2026-04-22T02:16:15Z",
       "startTime": "2026-04-22T02:16:45Z",
-      "finishTime": "2026-04-23T03:09:27Z",
-      "durationSeconds": 89592
+      "finishTime": "2026-04-23T06:59:47Z",
+      "durationSeconds": 103412
     },
     {
       "compileTime": "2026-04-23T02:14:49Z",
       "startTime": "2026-04-23T02:15:19Z",
-      "finishTime": "2026-04-23T03:09:27Z",
-      "durationSeconds": 3278
+      "finishTime": "2026-04-23T06:59:47Z",
+      "durationSeconds": 17098
     }
   ],
-  "lastCiRemovalToMerge": null
+  "lastCiRemovalToMerge": {
+    "durationSeconds": 0,
+    "fromTime": "2026-04-23T06:59:47Z",
+    "toTime": "2026-04-23T06:59:47Z"
+  }
 }
