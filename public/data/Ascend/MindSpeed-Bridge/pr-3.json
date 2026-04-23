@@ -3,8 +3,12 @@
   "owner": "Ascend",
   "repo": "MindSpeed-Bridge",
   "createdAt": "2026-04-22T15:54:23+08:00",
-  "mergedAt": null,
-  "prSubmitToMerge": null,
+  "mergedAt": "2026-04-23T17:48:39+08:00",
+  "prSubmitToMerge": {
+    "durationSeconds": 93256,
+    "fromTime": "2026-04-22T07:54:23Z",
+    "toTime": "2026-04-23T09:48:39Z"
+  },
   "compileToCiCycles": [
     {
       "compileTime": "2026-04-22T07:54:36Z",
@@ -45,39 +49,43 @@
     {
       "compileTime": "2026-04-22T07:54:36Z",
       "startTime": "2026-04-22T07:55:06Z",
-      "finishTime": "2026-04-23T02:54:52Z",
-      "durationSeconds": 68416
+      "finishTime": "2026-04-23T09:48:39Z",
+      "durationSeconds": 93243
     },
     {
       "compileTime": "2026-04-22T08:09:48Z",
       "startTime": "2026-04-22T08:10:18Z",
-      "finishTime": "2026-04-23T02:54:52Z",
-      "durationSeconds": 67504
+      "finishTime": "2026-04-23T09:48:39Z",
+      "durationSeconds": 92331
     },
     {
       "compileTime": "2026-04-22T08:47:01Z",
       "startTime": "2026-04-22T08:47:31Z",
-      "finishTime": "2026-04-23T02:54:52Z",
-      "durationSeconds": 65271
+      "finishTime": "2026-04-23T09:48:39Z",
+      "durationSeconds": 90098
     },
     {
       "compileTime": "2026-04-22T09:22:48Z",
       "startTime": "2026-04-22T09:23:18Z",
-      "finishTime": "2026-04-23T02:54:52Z",
-      "durationSeconds": 63124
+      "finishTime": "2026-04-23T09:48:39Z",
+      "durationSeconds": 87951
     },
     {
       "compileTime": "2026-04-22T09:35:40Z",
       "startTime": "2026-04-22T09:36:10Z",
-      "finishTime": "2026-04-23T02:54:52Z",
-      "durationSeconds": 62352
+      "finishTime": "2026-04-23T09:48:39Z",
+      "durationSeconds": 87179
     },
     {
       "compileTime": "2026-04-22T13:32:01Z",
       "startTime": "2026-04-22T13:32:31Z",
-      "finishTime": "2026-04-23T02:54:52Z",
-      "durationSeconds": 48171
+      "finishTime": "2026-04-23T09:48:39Z",
+      "durationSeconds": 72998
     }
   ],
-  "lastCiRemovalToMerge": null
+  "lastCiRemovalToMerge": {
+    "durationSeconds": 0,
+    "fromTime": "2026-04-23T09:48:39Z",
+    "toTime": "2026-04-23T09:48:39Z"
+  }
 }

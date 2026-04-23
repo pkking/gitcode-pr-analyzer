@@ -6234,9 +6234,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-07T07:41:30Z",
-      "updated_at": "2026-04-23T08:11:07Z",
+      "updated_at": "2026-04-23T14:07:03Z",
       "html_url": "https://gitcode.com/Ascend/MindStudio-Modeling/merge_requests/117",
-      "durationInSeconds": 1384177.808,
+      "durationInSeconds": 1405533.076,
       "jobs": [
         {
           "id": 1170118,
@@ -6245,10 +6245,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-07T07:41:30Z",
           "started_at": "2026-04-07T07:42:00Z",
-          "completed_at": "2026-04-23T08:11:07Z",
+          "completed_at": "2026-04-23T14:07:03Z",
           "html_url": "https://gitcode.com/Ascend/MindStudio-Modeling/merge_requests/117",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 1384147.808
+          "durationInSeconds": 1405503.076
         }
       ]
     },
@@ -6259,9 +6259,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-07T07:58:34Z",
-      "updated_at": "2026-04-23T08:11:07Z",
+      "updated_at": "2026-04-23T14:07:03Z",
       "html_url": "https://gitcode.com/Ascend/MindStudio-Modeling/merge_requests/117",
-      "durationInSeconds": 1383153.808,
+      "durationInSeconds": 1404509.076,
       "jobs": [
         {
           "id": 1170119,
@@ -6270,10 +6270,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-07T07:58:34Z",
           "started_at": "2026-04-07T07:59:04Z",
-          "completed_at": "2026-04-23T08:11:07Z",
+          "completed_at": "2026-04-23T14:07:03Z",
           "html_url": "https://gitcode.com/Ascend/MindStudio-Modeling/merge_requests/117",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 1383123.808
+          "durationInSeconds": 1404479.076
         }
       ]
     },
@@ -6284,9 +6284,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-07T08:43:30Z",
-      "updated_at": "2026-04-23T08:11:07Z",
+      "updated_at": "2026-04-23T14:07:03Z",
       "html_url": "https://gitcode.com/Ascend/MindStudio-Modeling/merge_requests/117",
-      "durationInSeconds": 1380457.808,
+      "durationInSeconds": 1401813.076,
       "jobs": [
         {
           "id": 1170120,
@@ -6295,10 +6295,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-07T08:43:30Z",
           "started_at": "2026-04-07T08:44:00Z",
-          "completed_at": "2026-04-23T08:11:07Z",
+          "completed_at": "2026-04-23T14:07:03Z",
           "html_url": "https://gitcode.com/Ascend/MindStudio-Modeling/merge_requests/117",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 1380427.808
+          "durationInSeconds": 1401783.076
         }
       ]
     },
@@ -11957,23 +11957,23 @@
       "name": "PR #945 docs-ci - Add atan2 support in HFusion normalize pass",
       "head_branch": "feat/hfusion-atan2",
       "status": "completed",
-      "conclusion": "pending",
+      "conclusion": "success",
       "created_at": "2026-04-07T06:44:22Z",
-      "updated_at": "2026-04-12T16:19:08Z",
+      "updated_at": "2026-04-23T11:28:07Z",
       "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/945",
-      "durationInSeconds": 466486.39,
+      "durationInSeconds": 1399425,
       "jobs": [
         {
           "id": 9450102,
-          "name": "docs-ci",
+          "name": "docs-ci-pipeline-running",
           "status": "completed",
-          "conclusion": "pending",
+          "conclusion": "success",
           "created_at": "2026-04-07T06:44:22Z",
-          "started_at": "2026-04-07T06:44:52Z",
-          "completed_at": "2026-04-12T16:19:08Z",
+          "started_at": "2026-04-23T11:25:52Z",
+          "completed_at": "2026-04-23T11:28:07Z",
           "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/945",
-          "queueDurationInSeconds": 30,
-          "durationInSeconds": 466456.39
+          "queueDurationInSeconds": 1399290,
+          "durationInSeconds": 135
         }
       ]
     },
@@ -11982,23 +11982,23 @@
       "name": "PR #945 docs-ci - Add atan2 support in HFusion normalize pass",
       "head_branch": "feat/hfusion-atan2",
       "status": "completed",
-      "conclusion": "pending",
+      "conclusion": "success",
       "created_at": "2026-04-07T11:58:00Z",
-      "updated_at": "2026-04-12T16:19:08Z",
+      "updated_at": "2026-04-23T11:28:07Z",
       "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/945",
-      "durationInSeconds": 447668.39,
+      "durationInSeconds": 1380607,
       "jobs": [
         {
           "id": 9450103,
-          "name": "docs-ci",
+          "name": "docs-ci-pipeline-running",
           "status": "completed",
-          "conclusion": "pending",
+          "conclusion": "success",
           "created_at": "2026-04-07T11:58:00Z",
-          "started_at": "2026-04-07T11:58:30Z",
-          "completed_at": "2026-04-12T16:19:08Z",
+          "started_at": "2026-04-23T11:25:52Z",
+          "completed_at": "2026-04-23T11:28:07Z",
           "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/945",
-          "queueDurationInSeconds": 30,
-          "durationInSeconds": 447638.39
+          "queueDurationInSeconds": 1380472,
+          "durationInSeconds": 135
         }
       ]
     },
@@ -16884,9 +16884,9 @@
       "status": "completed",
       "conclusion": "pending",
       "created_at": "2026-04-07T12:45:48Z",
-      "updated_at": "2026-04-23T08:24:17Z",
+      "updated_at": "2026-04-23T14:27:45Z",
       "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33254",
-      "durationInSeconds": 1366709.409,
+      "durationInSeconds": 1388517.701,
       "jobs": [
         {
           "id": 332540101,
@@ -16895,10 +16895,10 @@
           "conclusion": "pending",
           "created_at": "2026-04-07T12:45:48Z",
           "started_at": "2026-04-07T12:46:18Z",
-          "completed_at": "2026-04-23T08:24:17Z",
+          "completed_at": "2026-04-23T14:27:45Z",
           "html_url": "https://gitcode.com/Ascend/pytorch/merge_requests/33254",
           "queueDurationInSeconds": 30,
-          "durationInSeconds": 1366679.409
+          "durationInSeconds": 1388487.701
         }
       ]
     },

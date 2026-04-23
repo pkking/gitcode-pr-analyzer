@@ -3,21 +3,41 @@
   "owner": "Ascend",
   "repo": "MindStudio-Ops-Common",
   "createdAt": "2026-04-21T14:38:48+08:00",
-  "mergedAt": null,
-  "prSubmitToMerge": null,
+  "mergedAt": "2026-04-23T19:19:39+08:00",
+  "prSubmitToMerge": {
+    "durationSeconds": 189651,
+    "fromTime": "2026-04-21T06:38:48Z",
+    "toTime": "2026-04-23T11:19:39Z"
+  },
   "compileToCiCycles": [
     {
       "compileTime": "2026-04-22T06:28:44Z",
-      "startTime": "2026-04-22T06:29:14Z",
-      "finishTime": "2026-04-23T08:07:07Z",
-      "durationSeconds": 92303
+      "startTime": "2026-04-23T11:08:48Z",
+      "finishTime": "2026-04-23T11:19:34Z",
+      "durationSeconds": 103850
+    },
+    {
+      "compileTime": "2026-04-23T11:08:02Z",
+      "startTime": "2026-04-23T11:08:48Z",
+      "finishTime": "2026-04-23T11:19:34Z",
+      "durationSeconds": 692
     },
     {
       "compileTime": "2026-04-22T06:28:44Z",
       "startTime": "2026-04-22T06:29:14Z",
-      "finishTime": "2026-04-23T08:07:07Z",
-      "durationSeconds": 92303
+      "finishTime": "2026-04-23T11:19:39Z",
+      "durationSeconds": 103855
+    },
+    {
+      "compileTime": "2026-04-23T11:08:02Z",
+      "startTime": "2026-04-23T11:08:32Z",
+      "finishTime": "2026-04-23T11:19:39Z",
+      "durationSeconds": 697
     }
   ],
-  "lastCiRemovalToMerge": null
+  "lastCiRemovalToMerge": {
+    "durationSeconds": 0,
+    "fromTime": "2026-04-23T11:19:39Z",
+    "toTime": "2026-04-23T11:19:39Z"
+  }
 }

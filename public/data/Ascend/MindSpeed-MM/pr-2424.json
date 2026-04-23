@@ -3,8 +3,12 @@
   "owner": "Ascend",
   "repo": "MindSpeed-MM",
   "createdAt": "2026-04-23T13:02:01+08:00",
-  "mergedAt": null,
-  "prSubmitToMerge": null,
+  "mergedAt": "2026-04-23T17:28:27+08:00",
+  "prSubmitToMerge": {
+    "durationSeconds": 15986,
+    "fromTime": "2026-04-23T05:02:01Z",
+    "toTime": "2026-04-23T09:28:27Z"
+  },
   "compileToCiCycles": [
     {
       "compileTime": "2026-04-23T05:02:14Z",
@@ -31,5 +35,9 @@
       "durationSeconds": 358
     }
   ],
-  "lastCiRemovalToMerge": null
+  "lastCiRemovalToMerge": {
+    "durationSeconds": 5001,
+    "fromTime": "2026-04-23T08:05:06Z",
+    "toTime": "2026-04-23T09:28:27Z"
+  }
 }

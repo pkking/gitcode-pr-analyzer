@@ -3,8 +3,12 @@
   "owner": "Ascend",
   "repo": "RAGSDK",
   "createdAt": "2026-04-21T17:31:06+08:00",
-  "mergedAt": null,
-  "prSubmitToMerge": null,
+  "mergedAt": "2026-04-23T17:05:08+08:00",
+  "prSubmitToMerge": {
+    "durationSeconds": 171242,
+    "fromTime": "2026-04-21T09:31:06Z",
+    "toTime": "2026-04-23T09:05:08Z"
+  },
   "compileToCiCycles": [
     {
       "compileTime": "2026-04-21T09:31:12Z",
@@ -115,5 +119,9 @@
       "durationSeconds": 1304
     }
   ],
-  "lastCiRemovalToMerge": null
+  "lastCiRemovalToMerge": {
+    "durationSeconds": 3162,
+    "fromTime": "2026-04-23T08:12:26Z",
+    "toTime": "2026-04-23T09:05:08Z"
+  }
 }

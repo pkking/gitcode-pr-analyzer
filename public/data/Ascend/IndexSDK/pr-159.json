@@ -3,8 +3,12 @@
   "owner": "Ascend",
   "repo": "IndexSDK",
   "createdAt": "2026-04-23T11:23:22+08:00",
-  "mergedAt": null,
-  "prSubmitToMerge": null,
+  "mergedAt": "2026-04-23T19:40:27+08:00",
+  "prSubmitToMerge": {
+    "durationSeconds": 29825,
+    "fromTime": "2026-04-23T03:23:22Z",
+    "toTime": "2026-04-23T11:40:27Z"
+  },
   "compileToCiCycles": [
     {
       "compileTime": "2026-04-23T03:23:24Z",
@@ -37,6 +41,12 @@
       "durationSeconds": 333
     },
     {
+      "compileTime": "2026-04-23T09:35:02Z",
+      "startTime": "2026-04-23T09:35:25Z",
+      "finishTime": "2026-04-23T09:38:13Z",
+      "durationSeconds": 191
+    },
+    {
       "compileTime": "2026-04-23T03:23:24Z",
       "startTime": "2026-04-23T03:24:43Z",
       "finishTime": "2026-04-23T03:26:11Z",
@@ -65,7 +75,17 @@
       "startTime": "2026-04-23T04:56:47Z",
       "finishTime": "2026-04-23T04:57:42Z",
       "durationSeconds": 115
+    },
+    {
+      "compileTime": "2026-04-23T09:35:02Z",
+      "startTime": "2026-04-23T09:35:32Z",
+      "finishTime": "2026-04-23T11:40:27Z",
+      "durationSeconds": 7525
     }
   ],
-  "lastCiRemovalToMerge": null
+  "lastCiRemovalToMerge": {
+    "durationSeconds": 0,
+    "fromTime": "2026-04-23T11:40:27Z",
+    "toTime": "2026-04-23T11:40:27Z"
+  }
 }

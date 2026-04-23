@@ -3,8 +3,12 @@
   "owner": "Ascend",
   "repo": "AscendNPU-IR",
   "createdAt": "2026-04-16T20:50:19+08:00",
-  "mergedAt": null,
-  "prSubmitToMerge": null,
+  "mergedAt": "2026-04-23T20:16:00+08:00",
+  "prSubmitToMerge": {
+    "durationSeconds": 602741,
+    "fromTime": "2026-04-16T12:50:19Z",
+    "toTime": "2026-04-23T12:16:00Z"
+  },
   "compileToCiCycles": [
     {
       "compileTime": "2026-04-17T01:12:51Z",
@@ -61,6 +65,12 @@
       "durationSeconds": 422
     },
     {
+      "compileTime": "2026-04-23T08:45:56Z",
+      "startTime": "2026-04-23T08:51:32Z",
+      "finishTime": "2026-04-23T09:02:25Z",
+      "durationSeconds": 989
+    },
+    {
       "compileTime": "2026-04-17T01:12:51Z",
       "startTime": "2026-04-21T08:37:39Z",
       "finishTime": "2026-04-21T08:39:30Z",
@@ -113,7 +123,17 @@
       "startTime": "2026-04-23T00:55:03Z",
       "finishTime": "2026-04-23T00:55:53Z",
       "durationSeconds": 141
+    },
+    {
+      "compileTime": "2026-04-23T08:45:56Z",
+      "startTime": "2026-04-23T08:46:22Z",
+      "finishTime": "2026-04-23T08:49:51Z",
+      "durationSeconds": 235
     }
   ],
-  "lastCiRemovalToMerge": null
+  "lastCiRemovalToMerge": {
+    "durationSeconds": 11615,
+    "fromTime": "2026-04-23T09:02:25Z",
+    "toTime": "2026-04-23T12:16:00Z"
+  }
 }

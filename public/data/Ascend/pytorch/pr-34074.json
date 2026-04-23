@@ -3,8 +3,12 @@
   "owner": "Ascend",
   "repo": "pytorch",
   "createdAt": "2026-04-21T09:59:58+08:00",
-  "mergedAt": null,
-  "prSubmitToMerge": null,
+  "mergedAt": "2026-04-23T20:00:32+08:00",
+  "prSubmitToMerge": {
+    "durationSeconds": 208834,
+    "fromTime": "2026-04-21T01:59:58Z",
+    "toTime": "2026-04-23T12:00:32Z"
+  },
   "compileToCiCycles": [
     {
       "compileTime": "2026-04-21T02:05:03Z",
@@ -45,39 +49,43 @@
     {
       "compileTime": "2026-04-21T02:05:03Z",
       "startTime": "2026-04-21T02:05:33Z",
-      "finishTime": "2026-04-23T03:25:30Z",
-      "durationSeconds": 177627
+      "finishTime": "2026-04-23T12:00:32Z",
+      "durationSeconds": 208529
     },
     {
       "compileTime": "2026-04-21T09:18:28Z",
       "startTime": "2026-04-21T09:18:58Z",
-      "finishTime": "2026-04-23T03:25:30Z",
-      "durationSeconds": 151622
+      "finishTime": "2026-04-23T12:00:32Z",
+      "durationSeconds": 182524
     },
     {
       "compileTime": "2026-04-21T11:04:26Z",
       "startTime": "2026-04-21T11:04:56Z",
-      "finishTime": "2026-04-23T03:25:30Z",
-      "durationSeconds": 145264
+      "finishTime": "2026-04-23T12:00:32Z",
+      "durationSeconds": 176166
     },
     {
       "compileTime": "2026-04-21T12:57:15Z",
       "startTime": "2026-04-21T12:57:45Z",
-      "finishTime": "2026-04-23T03:25:30Z",
-      "durationSeconds": 138495
+      "finishTime": "2026-04-23T12:00:32Z",
+      "durationSeconds": 169397
     },
     {
       "compileTime": "2026-04-22T01:13:00Z",
       "startTime": "2026-04-22T01:13:30Z",
-      "finishTime": "2026-04-23T03:25:30Z",
-      "durationSeconds": 94350
+      "finishTime": "2026-04-23T12:00:32Z",
+      "durationSeconds": 125252
     },
     {
       "compileTime": "2026-04-22T02:09:01Z",
       "startTime": "2026-04-22T02:09:31Z",
-      "finishTime": "2026-04-23T03:25:30Z",
-      "durationSeconds": 90989
+      "finishTime": "2026-04-23T12:00:32Z",
+      "durationSeconds": 121891
     }
   ],
-  "lastCiRemovalToMerge": null
+  "lastCiRemovalToMerge": {
+    "durationSeconds": 0,
+    "fromTime": "2026-04-23T12:00:32Z",
+    "toTime": "2026-04-23T12:00:32Z"
+  }
 }

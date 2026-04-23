@@ -3,8 +3,12 @@
   "owner": "Ascend",
   "repo": "triton-ascend",
   "createdAt": "2026-04-23T01:57:16+08:00",
-  "mergedAt": null,
-  "prSubmitToMerge": null,
+  "mergedAt": "2026-04-23T17:43:23+08:00",
+  "prSubmitToMerge": {
+    "durationSeconds": 56767,
+    "fromTime": "2026-04-22T17:57:16Z",
+    "toTime": "2026-04-23T09:43:23Z"
+  },
   "compileToCiCycles": [
     {
       "compileTime": "2026-04-22T17:57:40Z",
@@ -19,6 +23,18 @@
       "durationSeconds": 765
     },
     {
+      "compileTime": "2026-04-23T08:36:23Z",
+      "startTime": "2026-04-23T08:37:07Z",
+      "finishTime": "2026-04-23T08:56:07Z",
+      "durationSeconds": 1184
+    },
+    {
+      "compileTime": "2026-04-23T08:55:41Z",
+      "startTime": "2026-04-23T08:56:24Z",
+      "finishTime": "2026-04-23T08:56:07Z",
+      "durationSeconds": 26
+    },
+    {
       "compileTime": "2026-04-22T17:57:40Z",
       "startTime": "2026-04-22T17:58:07Z",
       "finishTime": "2026-04-22T17:59:30Z",
@@ -29,7 +45,23 @@
       "startTime": "2026-04-23T07:30:12Z",
       "finishTime": "2026-04-23T07:33:44Z",
       "durationSeconds": 963
+    },
+    {
+      "compileTime": "2026-04-23T08:36:23Z",
+      "startTime": "2026-04-23T08:45:12Z",
+      "finishTime": "2026-04-23T08:51:29Z",
+      "durationSeconds": 906
+    },
+    {
+      "compileTime": "2026-04-23T08:55:41Z",
+      "startTime": "2026-04-23T09:01:47Z",
+      "finishTime": "2026-04-23T09:12:13Z",
+      "durationSeconds": 992
     }
   ],
-  "lastCiRemovalToMerge": null
+  "lastCiRemovalToMerge": {
+    "durationSeconds": 1870,
+    "fromTime": "2026-04-23T09:12:13Z",
+    "toTime": "2026-04-23T09:43:23Z"
+  }
 }

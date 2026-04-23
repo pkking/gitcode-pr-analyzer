@@ -3,8 +3,12 @@
   "owner": "Ascend",
   "repo": "HierarchicalKV-ascend",
   "createdAt": "2026-04-23T10:34:56+08:00",
-  "mergedAt": null,
-  "prSubmitToMerge": null,
+  "mergedAt": "2026-04-23T16:52:38+08:00",
+  "prSubmitToMerge": {
+    "durationSeconds": 22662,
+    "fromTime": "2026-04-23T02:34:56Z",
+    "toTime": "2026-04-23T08:52:38Z"
+  },
   "compileToCiCycles": [
     {
       "compileTime": "2026-04-23T02:34:58Z",
@@ -31,29 +35,45 @@
       "durationSeconds": 545
     },
     {
+      "compileTime": "2026-04-23T08:08:56Z",
+      "startTime": "2026-04-23T08:09:23Z",
+      "finishTime": "2026-04-23T08:25:25Z",
+      "durationSeconds": 989
+    },
+    {
       "compileTime": "2026-04-23T02:34:58Z",
       "startTime": "2026-04-23T02:35:28Z",
-      "finishTime": "2026-04-23T08:06:49Z",
-      "durationSeconds": 19911
+      "finishTime": "2026-04-23T08:52:38Z",
+      "durationSeconds": 22660
     },
     {
       "compileTime": "2026-04-23T03:00:54Z",
       "startTime": "2026-04-23T03:01:24Z",
-      "finishTime": "2026-04-23T08:06:49Z",
-      "durationSeconds": 18355
+      "finishTime": "2026-04-23T08:52:38Z",
+      "durationSeconds": 21104
     },
     {
       "compileTime": "2026-04-23T03:02:24Z",
       "startTime": "2026-04-23T03:02:54Z",
-      "finishTime": "2026-04-23T08:06:49Z",
-      "durationSeconds": 18265
+      "finishTime": "2026-04-23T08:52:38Z",
+      "durationSeconds": 21014
     },
     {
       "compileTime": "2026-04-23T03:03:02Z",
       "startTime": "2026-04-23T03:03:32Z",
-      "finishTime": "2026-04-23T08:06:49Z",
-      "durationSeconds": 18227
+      "finishTime": "2026-04-23T08:52:38Z",
+      "durationSeconds": 20976
+    },
+    {
+      "compileTime": "2026-04-23T08:08:56Z",
+      "startTime": "2026-04-23T08:09:26Z",
+      "finishTime": "2026-04-23T08:52:38Z",
+      "durationSeconds": 2622
     }
   ],
-  "lastCiRemovalToMerge": null
+  "lastCiRemovalToMerge": {
+    "durationSeconds": 0,
+    "fromTime": "2026-04-23T08:52:38Z",
+    "toTime": "2026-04-23T08:52:38Z"
+  }
 }

@@ -3,8 +3,12 @@
   "owner": "Ascend",
   "repo": "torchair",
   "createdAt": "2026-04-23T14:47:45+08:00",
-  "mergedAt": null,
-  "prSubmitToMerge": null,
+  "mergedAt": "2026-04-23T19:02:53+08:00",
+  "prSubmitToMerge": {
+    "durationSeconds": 15308,
+    "fromTime": "2026-04-23T06:47:45Z",
+    "toTime": "2026-04-23T11:02:53Z"
+  },
   "compileToCiCycles": [
     {
       "compileTime": "2026-04-23T06:52:30Z",
@@ -31,5 +35,9 @@
       "durationSeconds": 5
     }
   ],
-  "lastCiRemovalToMerge": null
+  "lastCiRemovalToMerge": {
+    "durationSeconds": 12954,
+    "fromTime": "2026-04-23T07:26:59Z",
+    "toTime": "2026-04-23T11:02:53Z"
+  }
 }

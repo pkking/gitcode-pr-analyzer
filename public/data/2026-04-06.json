@@ -1,6 +1,6 @@
 {
   "date": "2026-04-06",
-  "repo": "Ascend/MindIE-PyMotor",
+  "repo": "Ascend/AscendNPU-IR",
   "runs": [
     {
       "id": 650001,
@@ -282,23 +282,23 @@
       "name": "PR #945 docs-ci - Add atan2 support in HFusion normalize pass",
       "head_branch": "feat/hfusion-atan2",
       "status": "completed",
-      "conclusion": "pending",
+      "conclusion": "success",
       "created_at": "2026-04-06T13:25:25Z",
-      "updated_at": "2026-04-12T16:19:08Z",
+      "updated_at": "2026-04-23T11:28:07Z",
       "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/945",
-      "durationInSeconds": 528823.39,
+      "durationInSeconds": 1461762,
       "jobs": [
         {
           "id": 9450101,
-          "name": "docs-ci",
+          "name": "docs-ci-pipeline-running",
           "status": "completed",
-          "conclusion": "pending",
+          "conclusion": "success",
           "created_at": "2026-04-06T13:25:25Z",
-          "started_at": "2026-04-06T13:25:55Z",
-          "completed_at": "2026-04-12T16:19:08Z",
+          "started_at": "2026-04-23T11:25:52Z",
+          "completed_at": "2026-04-23T11:28:07Z",
           "html_url": "https://gitcode.com/Ascend/AscendNPU-IR/merge_requests/945",
-          "queueDurationInSeconds": 30,
-          "durationInSeconds": 528793.39
+          "queueDurationInSeconds": 1461627,
+          "durationInSeconds": 135
         }
       ]
     },
