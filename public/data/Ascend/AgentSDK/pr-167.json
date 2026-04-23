@@ -3,8 +3,12 @@
   "owner": "Ascend",
   "repo": "AgentSDK",
   "createdAt": "2026-04-21T19:36:53+08:00",
-  "mergedAt": null,
-  "prSubmitToMerge": null,
+  "mergedAt": "2026-04-23T09:18:11+08:00",
+  "prSubmitToMerge": {
+    "durationSeconds": 135678,
+    "fromTime": "2026-04-21T11:36:53Z",
+    "toTime": "2026-04-23T01:18:11Z"
+  },
   "compileToCiCycles": [
     {
       "compileTime": "2026-04-21T11:37:05Z",
@@ -19,5 +23,9 @@
       "durationSeconds": 193
     }
   ],
-  "lastCiRemovalToMerge": null
+  "lastCiRemovalToMerge": {
+    "durationSeconds": 134786,
+    "fromTime": "2026-04-21T11:51:45Z",
+    "toTime": "2026-04-23T01:18:11Z"
+  }
 }

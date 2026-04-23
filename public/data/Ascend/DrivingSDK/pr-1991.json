@@ -6,9 +6,62 @@
   "mergedAt": "2026-04-16T09:55:10+08:00",
   "prSubmitToMerge": {
     "durationSeconds": 166731,
-    "fromTime": "2026-04-14T11:36:19Z",
-    "toTime": "2026-04-16T09:55:10Z"
+    "fromTime": "2026-04-14T03:36:19Z",
+    "toTime": "2026-04-16T01:55:10Z"
   },
-  "lastCiRemovalToMerge": null,
-  "compileToCiCycles": []
+  "compileToCiCycles": [
+    {
+      "compileTime": "2026-04-14T03:37:18Z",
+      "startTime": "2026-04-14T03:37:41Z",
+      "finishTime": "2026-04-14T03:41:39Z",
+      "durationSeconds": 261
+    },
+    {
+      "compileTime": "2026-04-14T06:46:04Z",
+      "startTime": "2026-04-14T06:46:29Z",
+      "finishTime": "2026-04-14T07:02:34Z",
+      "durationSeconds": 990
+    },
+    {
+      "compileTime": "2026-04-14T07:24:48Z",
+      "startTime": "2026-04-14T07:25:09Z",
+      "finishTime": "2026-04-14T07:27:29Z",
+      "durationSeconds": 161
+    },
+    {
+      "compileTime": "2026-04-14T07:27:52Z",
+      "startTime": "2026-04-14T07:28:13Z",
+      "finishTime": "2026-04-14T07:53:49Z",
+      "durationSeconds": 1557
+    },
+    {
+      "compileTime": "2026-04-14T03:37:18Z",
+      "startTime": "2026-04-14T03:37:38Z",
+      "finishTime": "2026-04-14T03:39:16Z",
+      "durationSeconds": 118
+    },
+    {
+      "compileTime": "2026-04-14T06:46:04Z",
+      "startTime": "2026-04-14T06:47:36Z",
+      "finishTime": "2026-04-14T06:48:59Z",
+      "durationSeconds": 175
+    },
+    {
+      "compileTime": "2026-04-14T07:24:48Z",
+      "startTime": "2026-04-14T07:25:55Z",
+      "finishTime": "2026-04-14T07:27:11Z",
+      "durationSeconds": 143
+    },
+    {
+      "compileTime": "2026-04-14T07:27:52Z",
+      "startTime": "2026-04-14T07:29:31Z",
+      "finishTime": "2026-04-14T07:31:00Z",
+      "durationSeconds": 188
+    }
+  ],
+  "lastCiRemovalToMerge": {
+    "durationSeconds": 151281,
+    "fromTime": "2026-04-14T07:53:49Z",
+    "toTime": "2026-04-16T01:55:10Z"
+  }
 }

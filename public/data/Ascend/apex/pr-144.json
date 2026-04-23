@@ -3,8 +3,12 @@
   "owner": "Ascend",
   "repo": "apex",
   "createdAt": "2026-04-20T11:35:35+08:00",
-  "mergedAt": null,
-  "prSubmitToMerge": null,
+  "mergedAt": "2026-04-23T08:50:45+08:00",
+  "prSubmitToMerge": {
+    "durationSeconds": 249310,
+    "fromTime": "2026-04-20T03:35:35Z",
+    "toTime": "2026-04-23T00:50:45Z"
+  },
   "compileToCiCycles": [
     {
       "compileTime": "2026-04-20T03:37:27Z",
@@ -79,5 +83,9 @@
       "durationSeconds": 196
     }
   ],
-  "lastCiRemovalToMerge": null
+  "lastCiRemovalToMerge": {
+    "durationSeconds": 48083,
+    "fromTime": "2026-04-22T11:29:22Z",
+    "toTime": "2026-04-23T00:50:45Z"
+  }
 }

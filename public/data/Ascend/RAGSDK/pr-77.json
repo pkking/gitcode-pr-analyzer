@@ -1,0 +1,31 @@
+{
+  "prNumber": 77,
+  "owner": "Ascend",
+  "repo": "RAGSDK",
+  "createdAt": "2026-04-23T10:03:06+08:00",
+  "mergedAt": "2026-04-23T10:56:55+08:00",
+  "prSubmitToMerge": {
+    "durationSeconds": 3229,
+    "fromTime": "2026-04-23T02:03:06Z",
+    "toTime": "2026-04-23T02:56:55Z"
+  },
+  "compileToCiCycles": [
+    {
+      "compileTime": "2026-04-23T02:03:08Z",
+      "startTime": "2026-04-23T02:03:28Z",
+      "finishTime": "2026-04-23T02:33:38Z",
+      "durationSeconds": 1830
+    },
+    {
+      "compileTime": "2026-04-23T02:03:08Z",
+      "startTime": "2026-04-23T02:04:49Z",
+      "finishTime": "2026-04-23T02:06:16Z",
+      "durationSeconds": 188
+    }
+  ],
+  "lastCiRemovalToMerge": {
+    "durationSeconds": 1397,
+    "fromTime": "2026-04-23T02:33:38Z",
+    "toTime": "2026-04-23T02:56:55Z"
+  }
+}

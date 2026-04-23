@@ -3,8 +3,12 @@
   "owner": "Ascend",
   "repo": "MindStudio-Tools-Extension-Library",
   "createdAt": "2026-04-22T15:13:24+08:00",
-  "mergedAt": null,
-  "prSubmitToMerge": null,
+  "mergedAt": "2026-04-23T09:12:31+08:00",
+  "prSubmitToMerge": {
+    "durationSeconds": 64747,
+    "fromTime": "2026-04-22T07:13:24Z",
+    "toTime": "2026-04-23T01:12:31Z"
+  },
   "compileToCiCycles": [
     {
       "compileTime": "2026-04-22T07:13:58Z",
@@ -21,15 +25,19 @@
     {
       "compileTime": "2026-04-22T07:13:58Z",
       "startTime": "2026-04-22T07:14:28Z",
-      "finishTime": "2026-04-22T19:25:16Z",
-      "durationSeconds": 43878
+      "finishTime": "2026-04-23T01:12:31Z",
+      "durationSeconds": 64713
     },
     {
       "compileTime": "2026-04-22T07:38:16Z",
       "startTime": "2026-04-22T07:38:46Z",
-      "finishTime": "2026-04-22T19:25:16Z",
-      "durationSeconds": 42420
+      "finishTime": "2026-04-23T01:12:31Z",
+      "durationSeconds": 63255
     }
   ],
-  "lastCiRemovalToMerge": null
+  "lastCiRemovalToMerge": {
+    "durationSeconds": 0,
+    "fromTime": "2026-04-23T01:12:31Z",
+    "toTime": "2026-04-23T01:12:31Z"
+  }
 }

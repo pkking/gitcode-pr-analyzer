@@ -3,8 +3,12 @@
   "owner": "Ascend",
   "repo": "pytorch",
   "createdAt": "2026-04-20T16:02:36+08:00",
-  "mergedAt": null,
-  "prSubmitToMerge": null,
+  "mergedAt": "2026-04-23T10:31:34+08:00",
+  "prSubmitToMerge": {
+    "durationSeconds": 239338,
+    "fromTime": "2026-04-20T08:02:36Z",
+    "toTime": "2026-04-23T02:31:34Z"
+  },
   "compileToCiCycles": [
     {
       "compileTime": "2026-04-20T08:02:40Z",
@@ -45,39 +49,43 @@
     {
       "compileTime": "2026-04-20T08:02:40Z",
       "startTime": "2026-04-20T08:03:10Z",
-      "finishTime": "2026-04-22T19:42:40Z",
-      "durationSeconds": 214800
+      "finishTime": "2026-04-23T02:31:34Z",
+      "durationSeconds": 239334
     },
     {
       "compileTime": "2026-04-20T14:01:48Z",
       "startTime": "2026-04-20T14:02:18Z",
-      "finishTime": "2026-04-22T19:42:40Z",
-      "durationSeconds": 193252
+      "finishTime": "2026-04-23T02:31:34Z",
+      "durationSeconds": 217786
     },
     {
       "compileTime": "2026-04-21T08:05:33Z",
       "startTime": "2026-04-21T08:06:03Z",
-      "finishTime": "2026-04-22T19:42:40Z",
-      "durationSeconds": 128227
+      "finishTime": "2026-04-23T02:31:34Z",
+      "durationSeconds": 152761
     },
     {
       "compileTime": "2026-04-21T14:01:47Z",
       "startTime": "2026-04-21T14:02:17Z",
-      "finishTime": "2026-04-22T19:42:40Z",
-      "durationSeconds": 106853
+      "finishTime": "2026-04-23T02:31:34Z",
+      "durationSeconds": 131387
     },
     {
       "compileTime": "2026-04-22T02:19:02Z",
       "startTime": "2026-04-22T02:19:32Z",
-      "finishTime": "2026-04-22T19:42:40Z",
-      "durationSeconds": 62618
+      "finishTime": "2026-04-23T02:31:34Z",
+      "durationSeconds": 87152
     },
     {
       "compileTime": "2026-04-22T14:01:44Z",
       "startTime": "2026-04-22T14:02:14Z",
-      "finishTime": "2026-04-22T19:42:40Z",
-      "durationSeconds": 20456
+      "finishTime": "2026-04-23T02:31:34Z",
+      "durationSeconds": 44990
     }
   ],
-  "lastCiRemovalToMerge": null
+  "lastCiRemovalToMerge": {
+    "durationSeconds": 0,
+    "fromTime": "2026-04-23T02:31:34Z",
+    "toTime": "2026-04-23T02:31:34Z"
+  }
 }
