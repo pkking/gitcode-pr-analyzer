@@ -1,5 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import yaml from 'js-yaml';
 
 import { normalizeConfig, normalizeRepoIdentifier, resolveRepoTargets } from '../etl/lib/config.js';
 
@@ -144,4 +146,43 @@ test('resolveRepoTargets uses replace override mode when requested', async () =>
   const targets = await resolveRepoTargets(config, async () => ['Ascend/community']);
 
   assert.deepEqual(targets[0].rules, docsRules);
+});
+
+test('Ascend compile rules include failed pipeline comment fallback', () => {
+  const config = yaml.load(fs.readFileSync('etl/repos.yaml', 'utf-8'));
+  const ascend = config.orgs.find(org => org.name === 'Ascend');
+  const compileRule = ascend.rules.find(rule => rule.id === 'compile');
+  const docsRule = ascend.rules.find(rule => rule.id === 'docs-ci');
+
+  assert.ok(
+    compileRule.when.some(phase =>
+      phase.phase === 'finish' &&
+      phase.source === 'comment' &&
+      phase.pattern === '*流水线*运行失败*' &&
+      phase.match === 'glob' &&
+      phase.conclusion === 'failure'
+    ),
+    'compile should treat failed pipeline comments as failed finish events'
+  );
+  assert.ok(
+    !docsRule.when.some(phase => phase.source === 'comment' && phase.pattern === '*流水线*运行失败*'),
+    'generic failed pipeline comments should not close docs-ci runs'
+  );
+});
+
+test('Ascend community override preserves failed pipeline comment fallback', () => {
+  const config = yaml.load(fs.readFileSync('etl/repos.yaml', 'utf-8'));
+  const ascend = config.orgs.find(org => org.name === 'Ascend');
+  const communityCompileRule = ascend.repo_overrides['Ascend/community'].rules.find(rule => rule.id === 'compile');
+
+  assert.ok(
+    communityCompileRule.when.some(phase =>
+      phase.phase === 'finish' &&
+      phase.source === 'comment' &&
+      phase.pattern === '*流水线*运行失败*' &&
+      phase.match === 'glob' &&
+      phase.conclusion === 'failure'
+    ),
+    'replace override should keep the failed pipeline comment fallback'
+  );
 });
