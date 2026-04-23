@@ -50,6 +50,7 @@ interface PhaseDef {
   action?: 'added' | 'removed';
   pattern: string;
   match: 'contains' | 'startswith' | 'endswith' | 'equals' | 'glob';
+  conclusion?: 'success' | 'failure' | 'pending';
 }
 
 interface CIRule {
@@ -223,6 +224,13 @@ function matchesPattern(value: string, pattern: string, matchType: string): bool
   }
 }
 
+function inferConclusion(value: string, fallback: 'success' | 'failure' | 'pending' = 'success'): 'success' | 'failure' | 'pending' {
+  const normalized = value.toLowerCase();
+  if (normalized.includes('fail') || normalized.includes('失败')) return 'failure';
+  if (normalized.includes('success') || normalized.includes('passed') || normalized.includes('成功')) return 'success';
+  return fallback;
+}
+
 async function gitcodeFetch(endpoint: string, params: Record<string, string> = {}): Promise<any> {
   const token = process.env.GITCODE_TOKEN;
   if (!token) throw new Error('GITCODE_TOKEN is required');
@@ -339,6 +347,7 @@ function buildTimeline(
               phaseIdx: pIdx,
               detail: c.body.trim().substring(0, 80),
               user: c.user?.login || 'unknown',
+              conclusion: phase.phase === 'finish' ? phase.conclusion || inferConclusion(c.body) : undefined,
             });
           }
         }
@@ -354,7 +363,7 @@ function buildTimeline(
               phaseIdx: pIdx,
               detail: event.label,
               user: event.user,
-              conclusion: event.label.includes('fail') ? 'failure' : 'success',
+              conclusion: phase.conclusion || inferConclusion(event.label),
             });
           }
         }

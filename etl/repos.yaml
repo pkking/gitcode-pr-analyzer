@@ -8,6 +8,7 @@ orgs:
           - { phase: start,   source: label,   action: added, pattern: "ci-pipeline-running", match: equals }
           - { phase: finish,  source: label,   action: added, pattern: "ci-pipeline-passed", match: equals }
           - { phase: finish,  source: label,   action: added, pattern: "ci-pipeline-failed", match: equals }
+          - { phase: finish,  source: comment, pattern: "*流水线*运行失败*", match: glob, conclusion: failure }
 
       - id: docs-ci
         when:
@@ -29,3 +30,4 @@ orgs:
               - { phase: start,   source: label,   action: added, pattern: "ci-pipeline-running", match: equals }
               - { phase: finish,  source: label,   action: added, pattern: "ci-pipeline-passed", match: equals }
               - { phase: finish,  source: label,   action: added, pattern: "ci-pipeline-failed", match: equals }
+              - { phase: finish,  source: comment, pattern: "*流水线*运行失败*", match: glob, conclusion: failure }
