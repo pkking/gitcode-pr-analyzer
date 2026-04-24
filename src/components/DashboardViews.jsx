@@ -49,105 +49,73 @@ export function RunDetailView({ run, timeline, prMergeWaitSeconds, recentRuns, b
       <section className="rounded-2xl border border-stone-200 bg-white/90 p-6 shadow-lg shadow-stone-200/60">
         <div className="flex items-end justify-between gap-4">
           <div>
-            <div className="text-xs uppercase tracking-[0.3em] text-stone-500 font-medium">Recent Runs</div>
-            <h3 className="mt-2 text-2xl font-semibold tracking-tight font-display">在分析页切换最近运行</h3>
+            <div className="text-xs uppercase tracking-[0.3em] text-stone-500 font-medium">CI Records</div>
+            <h3 className="mt-2 text-2xl font-semibold tracking-tight font-display">CI执行记录</h3>
           </div>
           <div className="text-xs text-stone-500">最近 {recentRuns.length} 条</div>
         </div>
 
         <div className="mt-5 grid gap-3">
           {recentRuns.map(candidate => (
-            <div
-              key={candidate.id}
-              className={`rounded-xl border px-4 py-4 transition-all duration-200 ${
-                candidate.id === run.id
-                  ? 'border-stone-900 bg-stone-900 text-white shadow-md'
-                  : 'border-stone-200 bg-stone-50 hover:bg-white hover:shadow-md hover:border-stone-300'
-              }`}
-            >
-              <div className="flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
-                <div className="min-w-0">
-                  <div className="flex items-center gap-2 truncate">
-                    <a
-                      href={candidate.html_url}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="truncate text-sm font-semibold font-display hover:underline"
-                    >
-                      {candidate.name}
-                    </a>
-                    <button
-                      onClick={() => navigate(buildAnalysisHref(candidate))}
-                      className={`shrink-0 rounded-lg p-1 transition-colors ${
-                        candidate.id === run.id
-                          ? 'text-stone-300 hover:text-white hover:bg-white/10'
-                          : 'text-stone-400 hover:text-stone-700 hover:bg-stone-100'
-                      }`}
-                      title="Analyze this run"
-                      aria-label={`Analyze run: ${candidate.name}`}
-                    >
-                      <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M3 4.5h14.25M3 9h9.75M3 13.5h9.75m4.5-4.5v12m0 0-3.75-3.75M17.25 21 21 17.25" />
-                      </svg>
-                    </button>
+            <div key={candidate.id} className="space-y-3">
+              <button
+                type="button"
+                onClick={() => navigate(buildAnalysisHref(candidate))}
+                className={`w-full rounded-xl border px-4 py-4 text-left transition-all duration-200 ${
+                  candidate.id === run.id
+                    ? 'border-stone-900 bg-stone-900 text-white shadow-md'
+                    : 'border-stone-200 bg-stone-50 hover:bg-white hover:shadow-md hover:border-stone-300'
+                }`}
+              >
+                <div className="flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
+                  <div className="min-w-0">
+                    <div className="flex items-center gap-2 truncate">
+                      <div className="truncate text-sm font-semibold font-display">
+                        {candidate.name}
+                      </div>
+                      <span
+                        className={`shrink-0 rounded-full px-2 py-0.5 text-[10px] uppercase tracking-[0.2em] ${
+                          candidate.id === run.id
+                            ? 'bg-white/10 text-stone-200'
+                            : 'bg-stone-200 text-stone-600'
+                        }`}
+                      >
+                        {candidate.id === run.id ? '当前' : '查看分析'}
+                      </span>
+                    </div>
+                    <div className={`mt-1 text-xs ${candidate.id === run.id ? 'text-stone-300' : 'text-stone-500'}`}>
+                      {new Date(candidate.created_at).toLocaleString()} · {getRunStageName(candidate)}
+                    </div>
                   </div>
-                  <div className={`mt-1 text-xs ${candidate.id === run.id ? 'text-stone-300' : 'text-stone-500'}`}>
-                    {new Date(candidate.created_at).toLocaleString()} · {getRunStageName(candidate)}
+                  <div className="flex items-center gap-3">
+                    <Badge
+                      className={candidate.id === run.id ? '!bg-white/15 !text-white !ring-white/20' : ''}
+                    >
+                      {candidate.conclusion || 'unknown'}
+                    </Badge>
+                    <svg
+                      className={`h-4 w-4 shrink-0 ${candidate.id === run.id ? 'text-stone-300' : 'text-stone-400'}`}
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth={2}
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                    </svg>
                   </div>
                 </div>
-                <Badge
-                  className={candidate.id === run.id ? '!bg-white/15 !text-white !ring-white/20' : ''}
-                >
-                  {candidate.conclusion || 'unknown'}
-                </Badge>
-              </div>
+              </button>
+
+              {candidate.id === run.id ? (
+                <RunTimelineCard
+                  timeline={timeline}
+                  totalDuration={totalDuration}
+                  hasTimeline={hasTimeline}
+                />
+              ) : null}
             </div>
           ))}
         </div>
-      </section>
-
-      <section className="rounded-2xl border border-stone-200 bg-white/90 p-6 shadow-lg shadow-stone-200/60">
-        <div className="flex flex-col gap-2 md:flex-row md:items-end md:justify-between">
-          <div>
-            <div className="text-xs uppercase tracking-[0.3em] text-stone-500 font-medium">Timeline</div>
-            <h3 className="mt-2 text-2xl font-semibold tracking-tight font-display">{hasTimeline ? 'CI 执行过程两段式示意图' : 'CI 状态'}</h3>
-          </div>
-          {hasTimeline ? <div className="text-sm text-stone-500">已匹配到 PR 明细，CI 时间按触发、启动、完成节点展示。</div> : null}
-        </div>
-
-        {hasTimeline ? (
-          <div className="mt-8 rounded-2xl border border-stone-200 bg-stone-950 px-5 py-6 text-white">
-            <div className="flex items-center justify-between text-xs uppercase tracking-[0.25em] text-stone-400">
-              <span>CI触发</span>
-              <span>CI启动</span>
-              <span>CI完成</span>
-            </div>
-
-            <div className="mt-4 flex h-5 overflow-hidden rounded-full bg-stone-800">
-              {timeline.map(phase => (
-                <div
-                  key={phase.key}
-                  className={`${phase.barClass} h-full transition-all duration-700 ease-out`}
-                  style={{ width: `${totalDuration > 0 ? (phase.seconds / totalDuration) * 100 : 0}%` }}
-                  title={`${phase.label}: ${formatSeconds(phase.seconds)}`}
-                />
-              ))}
-            </div>
-
-            <div className="mt-6 grid gap-4 lg:grid-cols-2">
-              {timeline.map(phase => (
-                <div key={phase.key} className="rounded-xl border border-stone-800 bg-stone-900/90 px-4 py-5 text-center">
-                  <div className="text-xs uppercase tracking-[0.2em] text-stone-500 mb-2">{phase.label}</div>
-                  <div className="text-2xl font-semibold text-amber-300 font-display">{formatSeconds(phase.seconds)}</div>
-                </div>
-              ))}
-            </div>
-          </div>
-        ) : (
-          <div className="mt-8 rounded-2xl border border-dashed border-stone-300 bg-stone-50 px-6 py-12 text-center text-stone-600">
-            当前已识别到这次 CI 运行，但没有可用的 CI 拆解明细。
-          </div>
-        )}
       </section>
 
       {hasTimeline ? (
@@ -204,6 +172,54 @@ export function RunDetailView({ run, timeline, prMergeWaitSeconds, recentRuns, b
           )}
         </div>
       </section>
+    </div>
+  );
+}
+
+function RunTimelineCard({ timeline, totalDuration, hasTimeline }) {
+  return (
+    <div className="rounded-2xl border border-stone-200 bg-white/80 p-5 shadow-sm shadow-stone-200/60">
+      <div className="flex flex-col gap-2 md:flex-row md:items-end md:justify-between">
+        <div>
+          <div className="text-xs uppercase tracking-[0.3em] text-stone-500 font-medium">Timeline</div>
+          <h4 className="mt-2 text-xl font-semibold tracking-tight font-display">{hasTimeline ? '该次 CI 运行时间分析' : 'CI 状态'}</h4>
+        </div>
+        {hasTimeline ? <div className="text-sm text-stone-500">按触发、启动、完成节点展示本次 CI 用时。</div> : null}
+      </div>
+
+      {hasTimeline ? (
+        <div className="mt-6 rounded-2xl border border-stone-200 bg-stone-950 px-5 py-6 text-white">
+          <div className="flex items-center justify-between text-xs uppercase tracking-[0.25em] text-stone-400">
+            <span>CI触发</span>
+            <span>CI启动</span>
+            <span>CI完成</span>
+          </div>
+
+          <div className="mt-4 flex h-5 overflow-hidden rounded-full bg-stone-800">
+            {timeline.map(phase => (
+              <div
+                key={phase.key}
+                className={`${phase.barClass} h-full transition-all duration-700 ease-out`}
+                style={{ width: `${totalDuration > 0 ? (phase.seconds / totalDuration) * 100 : 0}%` }}
+                title={`${phase.label}: ${formatSeconds(phase.seconds)}`}
+              />
+            ))}
+          </div>
+
+          <div className="mt-6 grid gap-4 lg:grid-cols-2">
+            {timeline.map(phase => (
+              <div key={phase.key} className="rounded-xl border border-stone-800 bg-stone-900/90 px-4 py-5 text-center">
+                <div className="mb-2 text-xs uppercase tracking-[0.2em] text-stone-500">{phase.label}</div>
+                <div className="text-2xl font-semibold text-amber-300 font-display">{formatSeconds(phase.seconds)}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      ) : (
+        <div className="mt-6 rounded-2xl border border-dashed border-stone-300 bg-stone-50 px-6 py-10 text-center text-stone-600">
+          当前已识别到这次 CI 运行，但没有可用的 CI 拆解明细。
+        </div>
+      )}
     </div>
   );
 }
