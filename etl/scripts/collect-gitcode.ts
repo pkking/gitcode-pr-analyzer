@@ -411,14 +411,12 @@ function reconstructCIRuns(
         nextStartIdx++;
       }
       const matchingStart = nextStartIdx < ruleStarts.length ? ruleStarts[nextStartIdx] : null;
-      if (matchingStart) nextStartIdx++;
 
       const finishThreshold = matchingStart?.timestamp || startTime;
       while (nextFinishIdx < ruleFinishes.length && ruleFinishes[nextFinishIdx].timestamp < finishThreshold) {
         nextFinishIdx++;
       }
       const matchingFinish = nextFinishIdx < ruleFinishes.length ? ruleFinishes[nextFinishIdx] : null;
-      if (matchingFinish) nextFinishIdx++;
 
       const endTime = matchingFinish?.timestamp || null;
       const conclusion = matchingFinish?.conclusion || 'pending';
