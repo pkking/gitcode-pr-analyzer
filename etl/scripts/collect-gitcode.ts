@@ -5,6 +5,7 @@ import * as yaml from 'js-yaml';
 import { extractLabelEvents } from '../../src/utils/gitcodeCiEvents.js';
 import { normalizeConfig, normalizeRepoIdentifier, resolveRepoTargets } from '../lib/config.js';
 import { mergePullRequestData, needsPullRequestHydration, normalizeMergedAt } from '../lib/pull-request.js';
+import { toUtcISOString } from '../lib/time.js';
 
 interface Run {
   id: number;
@@ -154,9 +155,9 @@ function safeParseDate(value: string | null | undefined): Date | null {
 /**
  * Safely format a date, returning a fallback ISO string if the date is invalid.
  */
-function safeFormat(date: Date, formatStr: string): string {
+function safeFormat(date: Date, _formatStr: string): string {
   try {
-    return format(date, formatStr);
+    return toUtcISOString(date);
   } catch {
     return date.toISOString();
   }
