@@ -3,9 +3,18 @@ const LABEL_REMOVE_PREFIX = 'delete label ';
 const CI_RUNNING_LABEL = 'ci-pipeline-running';
 const CI_PASSED_LABEL = 'ci-pipeline-passed';
 const CI_FAILED_LABEL = 'ci-pipeline-failed';
+const DOCS_CI_RUNNING_LABEL = 'docs-ci-pipeline-running';
+const DOCS_CI_SUCCESS_LABEL = 'docs-ci-pipeline-success';
 const DOCS_CI_FAILED_LABEL = 'docs-ci-pipeline-failed';
 
-export const CI_FINISH_LABELS = new Set([CI_RUNNING_LABEL, CI_PASSED_LABEL, CI_FAILED_LABEL, DOCS_CI_FAILED_LABEL]);
+export const CI_FINISH_LABELS = new Set([
+  CI_PASSED_LABEL,
+  CI_FAILED_LABEL,
+  DOCS_CI_SUCCESS_LABEL,
+  DOCS_CI_FAILED_LABEL,
+]);
+
+const CI_RUNNING_LABELS = new Set([CI_RUNNING_LABEL, DOCS_CI_RUNNING_LABEL]);
 
 export function extractLabelEvents({ operateLogs = [], history = [] } = {}) {
   const events = [
@@ -22,7 +31,7 @@ export function extractLabelEvents({ operateLogs = [], history = [] } = {}) {
 
 export function extractCiEvents({ operateLogs = [], history = [] } = {}) {
   return extractLabelEvents({ operateLogs, history }).filter(event =>
-    event.label === CI_RUNNING_LABEL ||
+    CI_RUNNING_LABELS.has(event.label) ||
     (event.type === 'added' && CI_FINISH_LABELS.has(event.label))
   );
 }
