@@ -1,19 +1,22 @@
-name: Release Verification
+name: CI
 
 on:
-  release:
-    types: [created]
+  pull_request:
+  push:
+    branches:
+      - main
+      - master
   workflow_dispatch:
 
 permissions:
   contents: read
 
 concurrency:
-  group: release-verification-${{ github.workflow }}-${{ github.ref }}
+  group: ci-${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
-  verify-release:
+  quality:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
@@ -28,4 +31,3 @@ jobs:
       - run: npm run lint
       - run: npm test
       - run: npm run build
-      - run: npm pack --dry-run
