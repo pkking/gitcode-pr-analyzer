@@ -4,14 +4,12 @@ export function buildRunTimeline(run, detail) {
   const primaryJob = Array.isArray(run.jobs) && run.jobs.length > 0 ? run.jobs[0] : null;
   const fallbackPhaseOne = primaryJob?.queueDurationInSeconds || 0;
   const fallbackPhaseTwo = primaryJob?.durationInSeconds || Math.max(0, (run.durationInSeconds || 0) - fallbackPhaseOne);
-  const fallbackPhaseThree = 0;
 
   const matchedCycle = matchCycleToRun(run, detail.compileToCiCycles || []);
   const phaseOne = matchedCycle
     ? Math.max(0, (new Date(matchedCycle.compileTime).getTime() - new Date(run.created_at).getTime()) / 1000)
     : fallbackPhaseOne;
   const phaseTwo = matchedCycle?.durationSeconds ?? fallbackPhaseTwo;
-  const phaseThree = detail.lastCiRemovalToMerge?.durationSeconds ?? fallbackPhaseThree;
 
   return [
     {
@@ -29,14 +27,6 @@ export function buildRunTimeline(run, detail) {
       seconds: phaseTwo,
       description: '',
       barClass: 'bg-emerald-400',
-    },
-    {
-      key: 'remove_to_merge',
-      eyebrow: 'Phase 3',
-      label: 'PR合入时间',
-      seconds: phaseThree,
-      description: '',
-      barClass: 'bg-sky-400',
     },
   ];
 }

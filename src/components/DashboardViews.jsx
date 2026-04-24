@@ -6,10 +6,11 @@ import {
 } from '../utils/etlData.js';
 import { Badge, StatCard } from '../components/ui.jsx';
 
-export function RunDetailView({ run, timeline, recentRuns, buildAnalysisHref, missingRequestedRun }) {
+export function RunDetailView({ run, timeline, prMergeWaitSeconds, recentRuns, buildAnalysisHref, missingRequestedRun }) {
   const navigate = useNavigate();
   const totalDuration = getRunTotalDuration(run, timeline);
   const hasTimeline = timeline.length > 0;
+  const hasPrMergeWait = Number.isFinite(prMergeWaitSeconds);
 
   return (
     <div className="space-y-6">
@@ -109,9 +110,9 @@ export function RunDetailView({ run, timeline, recentRuns, buildAnalysisHref, mi
         <div className="flex flex-col gap-2 md:flex-row md:items-end md:justify-between">
           <div>
             <div className="text-xs uppercase tracking-[0.3em] text-stone-500 font-medium">Timeline</div>
-            <h3 className="mt-2 text-2xl font-semibold tracking-tight font-display">{hasTimeline ? 'CI 全过程三段式示意图' : 'CI 状态'}</h3>
+            <h3 className="mt-2 text-2xl font-semibold tracking-tight font-display">{hasTimeline ? 'CI 执行过程两段式示意图' : 'CI 状态'}</h3>
           </div>
-          {hasTimeline ? <div className="text-sm text-stone-500">已匹配到 PR 明细，三段时间按真实节点展示。</div> : null}
+          {hasTimeline ? <div className="text-sm text-stone-500">已匹配到 PR 明细，CI 时间按触发、启动、完成节点展示。</div> : null}
         </div>
 
         {hasTimeline ? (
@@ -120,7 +121,6 @@ export function RunDetailView({ run, timeline, recentRuns, buildAnalysisHref, mi
               <span>CI触发</span>
               <span>CI启动</span>
               <span>CI完成</span>
-              <span>PR合入</span>
             </div>
 
             <div className="mt-4 flex h-5 overflow-hidden rounded-full bg-stone-800">
@@ -134,7 +134,7 @@ export function RunDetailView({ run, timeline, recentRuns, buildAnalysisHref, mi
               ))}
             </div>
 
-            <div className="mt-6 grid gap-4 lg:grid-cols-3">
+            <div className="mt-6 grid gap-4 lg:grid-cols-2">
               {timeline.map(phase => (
                 <div key={phase.key} className="rounded-xl border border-stone-800 bg-stone-900/90 px-4 py-5 text-center">
                   <div className="text-xs uppercase tracking-[0.2em] text-stone-500 mb-2">{phase.label}</div>
@@ -145,16 +145,30 @@ export function RunDetailView({ run, timeline, recentRuns, buildAnalysisHref, mi
           </div>
         ) : (
           <div className="mt-8 rounded-2xl border border-dashed border-stone-300 bg-stone-50 px-6 py-12 text-center text-stone-600">
-            当前已识别到这次 CI 运行，但没有可用的三段拆解明细。
+            当前已识别到这次 CI 运行，但没有可用的 CI 拆解明细。
           </div>
         )}
       </section>
 
       {hasTimeline ? (
-        <section className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+        <section className="grid gap-4 sm:grid-cols-2">
           <StatCard label="CI启动时间" value={formatSeconds(timeline[0]?.seconds)} tone="amber" />
           <StatCard label="CI运行时间" value={formatSeconds(timeline[1]?.seconds)} tone="green" />
-          <StatCard label="PR合入时间" value={formatSeconds(timeline[2]?.seconds)} tone="blue" />
+        </section>
+      ) : null}
+
+      {hasPrMergeWait ? (
+        <section className="rounded-2xl border border-sky-100 bg-sky-50/80 p-6 shadow-lg shadow-sky-100/70">
+          <div className="text-xs uppercase tracking-[0.3em] text-sky-700/70 font-medium">PR Level Metric</div>
+          <div className="mt-3 flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
+            <div>
+              <h3 className="text-2xl font-semibold tracking-tight text-stone-900 font-display">PR合入等待时间</h3>
+              <p className="mt-2 max-w-2xl text-sm text-stone-600">
+                这是整个 PR 的一次性指标，表示最后一次 CI 完成后到 PR 合入之间的时间，不属于单次 CI 的执行过程。
+              </p>
+            </div>
+            <div className="text-4xl font-semibold text-sky-800 font-display">{formatSeconds(prMergeWaitSeconds)}</div>
+          </div>
         </section>
       ) : null}
 

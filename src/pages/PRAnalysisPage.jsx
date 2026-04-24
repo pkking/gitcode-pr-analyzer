@@ -124,6 +124,7 @@ export default function PRAnalysisPage() {
   const prSummary = useMemo(() => {
     if (runs.length === 0) return null;
     const prE2E = runDetail?.prSubmitToMerge?.durationSeconds ?? null;
+    const prMergeWait = runDetail?.lastCiRemovalToMerge?.durationSeconds ?? null;
     return {
       prNumber: prNum,
       runCount: runs.length,
@@ -132,6 +133,7 @@ export default function PRAnalysisPage() {
       latestStatus: runs[0].conclusion,
       latestCreatedAt: runs[0].created_at,
       prE2E,
+      prMergeWait,
     };
   }, [runs, prNum, runDetail]);
 
@@ -189,6 +191,7 @@ export default function PRAnalysisPage() {
                 </span>
                 <span>平均耗时 {formatSeconds(prSummary.avgDuration)}</span>
                 {prSummary.prE2E !== null && <span>PR E2E {formatSeconds(prSummary.prE2E)}</span>}
+                {prSummary.prMergeWait !== null && <span>合入等待 {formatSeconds(prSummary.prMergeWait)}</span>}
                 <span className="text-stone-500">{new Date(prSummary.latestCreatedAt).toLocaleString()}</span>
               </div>
             )}
@@ -218,6 +221,7 @@ export default function PRAnalysisPage() {
             <RunDetailView
               run={selectedRun}
               timeline={runTimeline}
+              prMergeWaitSeconds={prSummary.prMergeWait}
               recentRuns={runs.slice(0, 8)}
               buildAnalysisHref={run => `/repo/${owner}/${repo}/${prNumber}?runId=${run.id}`}
               missingRequestedRun={false}

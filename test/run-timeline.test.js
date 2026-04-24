@@ -65,13 +65,5 @@ test('buildRunTimeline uses matched PR detail when available', () => {
       description: '',
       barClass: 'bg-emerald-400',
     },
-    {
-      key: 'remove_to_merge',
-      eyebrow: 'Phase 3',
-      label: 'PR合入时间',
-      seconds: 12,
-      description: '',
-      barClass: 'bg-sky-400',
-    },
   ]);
 });
