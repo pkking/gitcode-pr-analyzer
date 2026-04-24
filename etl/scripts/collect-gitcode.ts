@@ -158,9 +158,10 @@ function safeParseDate(value: string | null | undefined): Date | null {
  */
 function safeFormat(date: Date, _formatStr: string): string {
   try {
+    if (!isValidDate(date)) return 'unknown';
     return safeFormatUtc(date);
   } catch {
-    return date.toISOString();
+    return 'unknown';
   }
 }
 

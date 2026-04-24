@@ -3,5 +3,5 @@ export function toUtcISOString(date) {
 }
 
 export function safeFormatUtc(date) {
-  return toUtcISOString(date).replace(/\.\d{3}Z$/, 'Z');
+  return toUtcISOString(date).replace(/\.\d+Z$/, 'Z');
 }
