@@ -1,10 +1,18 @@
 export function getCompletedRunFinishTime(run) {
-  const primaryJob = Array.isArray(run?.jobs) && run.jobs.length > 0 ? run.jobs[0] : null;
-  const completedAt = primaryJob?.completed_at || null;
+  if (Array.isArray(run?.jobs) && run.jobs.length > 0) {
+    let latestCompletedAt = null;
 
-  if (completedAt) return completedAt;
+    for (const job of run.jobs) {
+      if (!job?.completed_at) return null;
+      if (!latestCompletedAt || job.completed_at > latestCompletedAt) {
+        latestCompletedAt = job.completed_at;
+      }
+    }
 
-  if (run?.status === 'completed' && run?.updated_at && run.updated_at !== run.created_at) {
+    if (latestCompletedAt) return latestCompletedAt;
+  }
+
+  if (run?.status === 'completed' && run?.updated_at) {
     return run.updated_at;
   }
 

@@ -22,6 +22,31 @@ test('getCompletedRunFinishTime prefers completed_at from the primary job', () =
   assert.equal(finishTime, '2026-04-23T00:26:41Z');
 });
 
+test('getCompletedRunFinishTime returns the latest completed_at across all jobs', () => {
+  const finishTime = getCompletedRunFinishTime({
+    status: 'completed',
+    created_at: '2026-04-23T00:00:00Z',
+    updated_at: '2026-04-23T03:50:32Z',
+    jobs: [
+      { completed_at: '2026-04-23T00:26:41Z' },
+      { completed_at: '2026-04-23T00:40:00Z' },
+    ],
+  });
+
+  assert.equal(finishTime, '2026-04-23T00:40:00Z');
+});
+
+test('getCompletedRunFinishTime falls back to updated_at for completed runs even when timestamps match', () => {
+  const finishTime = getCompletedRunFinishTime({
+    status: 'completed',
+    created_at: '2026-04-23T00:00:00Z',
+    updated_at: '2026-04-23T00:00:00Z',
+    jobs: [],
+  });
+
+  assert.equal(finishTime, '2026-04-23T00:00:00Z');
+});
+
 test('getCompletedRunFinishTime ignores pending runs without a real completion timestamp', () => {
   const finishTime = getCompletedRunFinishTime({
     status: 'pending',

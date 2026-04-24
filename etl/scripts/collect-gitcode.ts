@@ -6,7 +6,7 @@ import { extractLabelEvents } from '../../src/utils/gitcodeCiEvents.js';
 import { buildLastCiRemovalToMerge } from '../lib/ci-metrics.js';
 import { normalizeConfig, normalizeRepoIdentifier, resolveRepoTargets } from '../lib/config.js';
 import { mergePullRequestData, needsPullRequestHydration, normalizeMergedAt } from '../lib/pull-request.js';
-import { toUtcISOString } from '../lib/time.js';
+import { safeFormatUtc } from '../lib/time.js';
 
 interface Run {
   id: number;
@@ -158,7 +158,7 @@ function safeParseDate(value: string | null | undefined): Date | null {
  */
 function safeFormat(date: Date, _formatStr: string): string {
   try {
-    return toUtcISOString(date);
+    return safeFormatUtc(date);
   } catch {
     return date.toISOString();
   }
@@ -413,7 +413,7 @@ function reconstructCIRuns(
       if (matchingStart) nextStartIdx++;
 
       const finishThreshold = matchingStart?.timestamp || startTime;
-      while (nextFinishIdx < ruleFinishes.length && ruleFinishes[nextFinishIdx].timestamp <= finishThreshold) {
+      while (nextFinishIdx < ruleFinishes.length && ruleFinishes[nextFinishIdx].timestamp < finishThreshold) {
         nextFinishIdx++;
       }
       const matchingFinish = nextFinishIdx < ruleFinishes.length ? ruleFinishes[nextFinishIdx] : null;
