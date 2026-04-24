@@ -3,8 +3,12 @@
   "owner": "Ascend",
   "repo": "MindStudio-Tools-Extension-Library",
   "createdAt": "2026-04-23T23:06:51+08:00",
-  "mergedAt": null,
-  "prSubmitToMerge": null,
+  "mergedAt": "2026-04-24T10:50:44+08:00",
+  "prSubmitToMerge": {
+    "durationSeconds": 42233,
+    "fromTime": "2026-04-23T15:06:51Z",
+    "toTime": "2026-04-24T02:50:44Z"
+  },
   "compileToCiCycles": [
     {
       "compileTime": "2026-04-23T15:07:08Z",
@@ -13,11 +17,39 @@
       "durationSeconds": 341
     },
     {
+      "compileTime": "2026-04-24T01:47:07Z",
+      "startTime": "2026-04-24T01:47:52Z",
+      "finishTime": "2026-04-24T01:54:02Z",
+      "durationSeconds": 415
+    },
+    {
+      "compileTime": "2026-04-24T02:19:07Z",
+      "startTime": "2026-04-24T02:19:44Z",
+      "finishTime": "2026-04-24T02:31:10Z",
+      "durationSeconds": 723
+    },
+    {
       "compileTime": "2026-04-23T15:07:08Z",
-      "startTime": "2026-04-23T15:07:38Z",
-      "finishTime": "2026-04-23T19:21:52Z",
-      "durationSeconds": 15284
+      "startTime": "2026-04-24T02:37:07Z",
+      "finishTime": "2026-04-24T02:56:42Z",
+      "durationSeconds": 42574
+    },
+    {
+      "compileTime": "2026-04-24T01:47:07Z",
+      "startTime": "2026-04-24T02:37:07Z",
+      "finishTime": "2026-04-24T02:56:42Z",
+      "durationSeconds": 4175
+    },
+    {
+      "compileTime": "2026-04-24T02:19:07Z",
+      "startTime": "2026-04-24T02:37:07Z",
+      "finishTime": "2026-04-24T02:56:42Z",
+      "durationSeconds": 2255
     }
   ],
-  "lastCiRemovalToMerge": null
+  "lastCiRemovalToMerge": {
+    "durationSeconds": 0,
+    "fromTime": "2026-04-24T02:56:42Z",
+    "toTime": "2026-04-24T02:50:44Z"
+  }
 }

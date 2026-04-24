@@ -3,8 +3,12 @@
   "owner": "Ascend",
   "repo": "MindStudio-Ops-Profiler",
   "createdAt": "2026-04-23T22:42:57+08:00",
-  "mergedAt": null,
-  "prSubmitToMerge": null,
+  "mergedAt": "2026-04-24T10:49:55+08:00",
+  "prSubmitToMerge": {
+    "durationSeconds": 43618,
+    "fromTime": "2026-04-23T14:42:57Z",
+    "toTime": "2026-04-24T02:49:55Z"
+  },
   "compileToCiCycles": [
     {
       "compileTime": "2026-04-23T14:43:10Z",
@@ -13,11 +17,51 @@
       "durationSeconds": 1130
     },
     {
+      "compileTime": "2026-04-24T01:47:15Z",
+      "startTime": "2026-04-24T01:50:15Z",
+      "finishTime": "2026-04-24T02:15:28Z",
+      "durationSeconds": 1693
+    },
+    {
+      "compileTime": "2026-04-24T01:49:31Z",
+      "startTime": "2026-04-24T01:50:15Z",
+      "finishTime": "2026-04-24T02:15:28Z",
+      "durationSeconds": 1557
+    },
+    {
+      "compileTime": "2026-04-24T02:19:23Z",
+      "startTime": "2026-04-24T02:20:10Z",
+      "finishTime": "2026-04-24T02:41:53Z",
+      "durationSeconds": 1350
+    },
+    {
       "compileTime": "2026-04-23T14:43:10Z",
-      "startTime": "2026-04-23T14:43:40Z",
-      "finishTime": "2026-04-23T19:23:37Z",
-      "durationSeconds": 16827
+      "startTime": "2026-04-24T02:40:34Z",
+      "finishTime": "2026-04-24T03:00:49Z",
+      "durationSeconds": 44259
+    },
+    {
+      "compileTime": "2026-04-24T01:47:15Z",
+      "startTime": "2026-04-24T02:40:34Z",
+      "finishTime": "2026-04-24T03:00:49Z",
+      "durationSeconds": 4414
+    },
+    {
+      "compileTime": "2026-04-24T01:49:31Z",
+      "startTime": "2026-04-24T02:40:34Z",
+      "finishTime": "2026-04-24T03:00:49Z",
+      "durationSeconds": 4278
+    },
+    {
+      "compileTime": "2026-04-24T02:19:23Z",
+      "startTime": "2026-04-24T02:40:34Z",
+      "finishTime": "2026-04-24T03:00:49Z",
+      "durationSeconds": 2486
     }
   ],
-  "lastCiRemovalToMerge": null
+  "lastCiRemovalToMerge": {
+    "durationSeconds": 0,
+    "fromTime": "2026-04-24T03:00:49Z",
+    "toTime": "2026-04-24T02:49:55Z"
+  }
 }

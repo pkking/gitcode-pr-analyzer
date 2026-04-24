@@ -3,8 +3,12 @@
   "owner": "Ascend",
   "repo": "MindStudio-Profiler-Tools-Interface",
   "createdAt": "2026-04-22T11:48:49+08:00",
-  "mergedAt": null,
-  "prSubmitToMerge": null,
+  "mergedAt": "2026-04-24T09:09:46+08:00",
+  "prSubmitToMerge": {
+    "durationSeconds": 163257,
+    "fromTime": "2026-04-22T03:48:49Z",
+    "toTime": "2026-04-24T01:09:46Z"
+  },
   "compileToCiCycles": [
     {
       "compileTime": "2026-04-22T03:50:08Z",
@@ -33,27 +37,31 @@
     {
       "compileTime": "2026-04-22T03:50:08Z",
       "startTime": "2026-04-22T03:50:38Z",
-      "finishTime": "2026-04-23T19:25:39Z",
-      "durationSeconds": 142531
+      "finishTime": "2026-04-24T01:09:46Z",
+      "durationSeconds": 163178
     },
     {
       "compileTime": "2026-04-22T06:18:15Z",
       "startTime": "2026-04-22T06:18:45Z",
-      "finishTime": "2026-04-23T19:25:39Z",
-      "durationSeconds": 133644
+      "finishTime": "2026-04-24T01:09:46Z",
+      "durationSeconds": 154291
     },
     {
       "compileTime": "2026-04-22T06:37:22Z",
       "startTime": "2026-04-22T06:37:52Z",
-      "finishTime": "2026-04-23T19:25:39Z",
-      "durationSeconds": 132497
+      "finishTime": "2026-04-24T01:09:46Z",
+      "durationSeconds": 153144
     },
     {
       "compileTime": "2026-04-23T07:59:44Z",
       "startTime": "2026-04-23T08:00:14Z",
-      "finishTime": "2026-04-23T19:25:39Z",
-      "durationSeconds": 41155
+      "finishTime": "2026-04-24T01:09:46Z",
+      "durationSeconds": 61802
     }
   ],
-  "lastCiRemovalToMerge": null
+  "lastCiRemovalToMerge": {
+    "durationSeconds": 0,
+    "fromTime": "2026-04-24T01:09:46Z",
+    "toTime": "2026-04-24T01:09:46Z"
+  }
 }

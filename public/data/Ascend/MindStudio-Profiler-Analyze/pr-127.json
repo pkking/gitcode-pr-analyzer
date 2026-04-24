@@ -3,8 +3,12 @@
   "owner": "Ascend",
   "repo": "MindStudio-Profiler-Analyze",
   "createdAt": "2026-04-22T15:46:52+08:00",
-  "mergedAt": null,
-  "prSubmitToMerge": null,
+  "mergedAt": "2026-04-24T09:58:24+08:00",
+  "prSubmitToMerge": {
+    "durationSeconds": 151892,
+    "fromTime": "2026-04-22T07:46:52Z",
+    "toTime": "2026-04-24T01:58:24Z"
+  },
   "compileToCiCycles": [
     {
       "compileTime": "2026-04-22T07:47:13Z",
@@ -31,29 +35,45 @@
       "durationSeconds": 1015
     },
     {
+      "compileTime": "2026-04-24T01:12:06Z",
+      "startTime": "2026-04-24T01:12:47Z",
+      "finishTime": "2026-04-24T01:26:29Z",
+      "durationSeconds": 863
+    },
+    {
       "compileTime": "2026-04-22T07:47:13Z",
       "startTime": "2026-04-22T07:47:43Z",
-      "finishTime": "2026-04-23T19:28:02Z",
-      "durationSeconds": 128449
+      "finishTime": "2026-04-24T01:58:24Z",
+      "durationSeconds": 151871
     },
     {
       "compileTime": "2026-04-22T08:36:54Z",
       "startTime": "2026-04-22T08:37:24Z",
-      "finishTime": "2026-04-23T19:28:02Z",
-      "durationSeconds": 125468
+      "finishTime": "2026-04-24T01:58:24Z",
+      "durationSeconds": 148890
     },
     {
       "compileTime": "2026-04-23T03:54:26Z",
       "startTime": "2026-04-23T03:54:56Z",
-      "finishTime": "2026-04-23T19:28:02Z",
-      "durationSeconds": 56016
+      "finishTime": "2026-04-24T01:58:24Z",
+      "durationSeconds": 79438
     },
     {
       "compileTime": "2026-04-23T09:06:01Z",
       "startTime": "2026-04-23T09:06:31Z",
-      "finishTime": "2026-04-23T19:28:02Z",
-      "durationSeconds": 37321
+      "finishTime": "2026-04-24T01:58:24Z",
+      "durationSeconds": 60743
+    },
+    {
+      "compileTime": "2026-04-24T01:12:06Z",
+      "startTime": "2026-04-24T01:12:36Z",
+      "finishTime": "2026-04-24T01:58:24Z",
+      "durationSeconds": 2778
     }
   ],
-  "lastCiRemovalToMerge": null
+  "lastCiRemovalToMerge": {
+    "durationSeconds": 0,
+    "fromTime": "2026-04-24T01:58:24Z",
+    "toTime": "2026-04-24T01:58:24Z"
+  }
 }
