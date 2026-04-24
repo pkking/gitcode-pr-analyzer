@@ -423,7 +423,7 @@ function reconstructCIRuns(
       const conclusion = matchingFinish?.conclusion || 'pending';
       const jobName = matchingStart?.detail || matchingFinish?.detail || rule.id;
 
-      const resolvedEnd = endTime || startTime;
+      const resolvedEnd = endTime || matchingStart?.timestamp || startTime;
       const durationInSeconds = Math.max(0, (resolvedEnd.getTime() - startTime.getTime()) / 1000);
       const queueDuration = matchingStart 
         ? Math.max(0, (matchingStart.timestamp.getTime() - startTime.getTime()) / 1000)
