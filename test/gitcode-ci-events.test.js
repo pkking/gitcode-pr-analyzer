@@ -10,6 +10,10 @@ test('CI_FINISH_LABELS includes docs-ci-pipeline-failed', () => {
   assert.ok(CI_FINISH_LABELS.has('docs-ci-pipeline-failed'), 'CI_FINISH_LABELS should contain docs-ci-pipeline-failed');
 });
 
+test('CI_FINISH_LABELS includes docs-ci-pipeline-success', () => {
+  assert.ok(CI_FINISH_LABELS.has('docs-ci-pipeline-success'), 'CI_FINISH_LABELS should contain docs-ci-pipeline-success');
+});
+
 test('extractCiEvents captures ci-pipeline-failed label addition', () => {
   const history = [
     {
@@ -58,5 +62,39 @@ test('extractCiEvents still captures ci-pipeline-passed (regression test)', () =
 
   assert.equal(result.length, 1);
   assert.equal(result[0].label, 'ci-pipeline-passed');
+  assert.equal(result[0].type, 'added');
+});
+
+test('extractCiEvents captures docs-ci-pipeline-success label addition', () => {
+  const history = [
+    {
+      id: '4',
+      content: 'added label docs-ci-pipeline-success',
+      created_at: '2024-01-01T00:00:00Z',
+      user: { login: 'bot' },
+    },
+  ];
+
+  const result = extractCiEvents({ history });
+
+  assert.equal(result.length, 1);
+  assert.equal(result[0].label, 'docs-ci-pipeline-success');
+  assert.equal(result[0].type, 'added');
+});
+
+test('extractCiEvents captures docs-ci-pipeline-running label addition', () => {
+  const history = [
+    {
+      id: '5',
+      content: 'added label docs-ci-pipeline-running',
+      created_at: '2024-01-01T00:00:00Z',
+      user: { login: 'bot' },
+    },
+  ];
+
+  const result = extractCiEvents({ history });
+
+  assert.equal(result.length, 1);
+  assert.equal(result[0].label, 'docs-ci-pipeline-running');
   assert.equal(result[0].type, 'added');
 });

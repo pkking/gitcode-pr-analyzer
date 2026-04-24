@@ -3,6 +3,7 @@ import * as fs from 'fs';
 import * as path from 'path';
 import * as yaml from 'js-yaml';
 import { extractLabelEvents } from '../../src/utils/gitcodeCiEvents.js';
+import { buildLastCiRemovalToMerge } from '../lib/ci-metrics.js';
 import { normalizeConfig, normalizeRepoIdentifier, resolveRepoTargets } from '../lib/config.js';
 import { mergePullRequestData, needsPullRequestHydration, normalizeMergedAt } from '../lib/pull-request.js';
 import { toUtcISOString } from '../lib/time.js';
@@ -27,7 +28,7 @@ interface Job {
   conclusion: string;
   created_at: string;
   started_at: string;
-  completed_at: string;
+  completed_at: string | null;
   html_url: string;
   queueDurationInSeconds: number;
   durationInSeconds: number;
@@ -393,6 +394,8 @@ function reconstructCIRuns(
     const ruleTriggers = ruleEvents.filter(e => triggerIndices.includes(e.phaseIdx));
     const ruleStarts = ruleEvents.filter(e => startIndices.includes(e.phaseIdx));
     const ruleFinishes = ruleEvents.filter(e => finishIndices.includes(e.phaseIdx));
+    let nextStartIdx = 0;
+    let nextFinishIdx = 0;
 
     let triggerCount = 0;
     const ruleIdx = rules.indexOf(rule);
@@ -403,15 +406,24 @@ function reconstructCIRuns(
       triggerCount++;
 
       // Find the first start event after this trigger
-      const matchingStart = ruleStarts.find(s => s.timestamp >= startTime);
-      // Find the first finish event after this trigger (and preferably after start)
-      const matchingFinish = ruleFinishes.find(f => f.timestamp > startTime);
+      while (nextStartIdx < ruleStarts.length && ruleStarts[nextStartIdx].timestamp < startTime) {
+        nextStartIdx++;
+      }
+      const matchingStart = nextStartIdx < ruleStarts.length ? ruleStarts[nextStartIdx] : null;
+      if (matchingStart) nextStartIdx++;
 
-      let endTime = matchingFinish?.timestamp || safeParseDate(pr.merged_at);
-      let conclusion = matchingFinish?.conclusion || (endTime ? 'success' : 'pending');
+      const finishThreshold = matchingStart?.timestamp || startTime;
+      while (nextFinishIdx < ruleFinishes.length && ruleFinishes[nextFinishIdx].timestamp <= finishThreshold) {
+        nextFinishIdx++;
+      }
+      const matchingFinish = nextFinishIdx < ruleFinishes.length ? ruleFinishes[nextFinishIdx] : null;
+      if (matchingFinish) nextFinishIdx++;
+
+      const endTime = matchingFinish?.timestamp || null;
+      const conclusion = matchingFinish?.conclusion || 'pending';
       const jobName = matchingStart?.detail || matchingFinish?.detail || rule.id;
 
-      const resolvedEnd = endTime || new Date();
+      const resolvedEnd = endTime || startTime;
       const durationInSeconds = Math.max(0, (resolvedEnd.getTime() - startTime.getTime()) / 1000);
       const queueDuration = matchingStart 
         ? Math.max(0, (matchingStart.timestamp.getTime() - startTime.getTime()) / 1000)
@@ -421,7 +433,7 @@ function reconstructCIRuns(
         id: runId,
         name: `PR #${pr.number} ${rule.id} - ${pr.title.substring(0, 50)}`,
         head_branch: pr.head.ref,
-        status: 'completed',
+        status: endTime ? 'completed' : 'pending',
         conclusion,
         created_at: safeFormat(startTime, "yyyy-MM-dd'T'HH:mm:ss'Z'"),
         updated_at: safeFormat(resolvedEnd, "yyyy-MM-dd'T'HH:mm:ss'Z'"),
@@ -431,11 +443,11 @@ function reconstructCIRuns(
           {
             id: runId + 1,
             name: jobName,
-            status: 'completed',
+            status: endTime ? 'completed' : 'pending',
             conclusion,
             created_at: safeFormat(startTime, "yyyy-MM-dd'T'HH:mm:ss'Z'"),
             started_at: safeFormat(new Date(startTime.getTime() + queueDuration * 1000), "yyyy-MM-dd'T'HH:mm:ss'Z'"),
-            completed_at: safeFormat(resolvedEnd, "yyyy-MM-dd'T'HH:mm:ss'Z'"),
+            completed_at: endTime ? safeFormat(resolvedEnd, "yyyy-MM-dd'T'HH:mm:ss'Z'") : null,
             html_url: pr.html_url,
             queueDurationInSeconds: queueDuration,
             durationInSeconds: Math.max(0, durationInSeconds - queueDuration),
@@ -493,29 +505,10 @@ function buildPrDetail(
 
   let lastCiRemovalToMerge: PrDetail['lastCiRemovalToMerge'] = null;
 
-  if (mergedAtValue && runs.length > 0) {
-    let lastFinishTime: Date | null = null;
-
-    for (const run of runs) {
-      const finishCandidate = run.jobs?.[0]?.completed_at || run.updated_at;
-      const finishDate = safeParseDate(finishCandidate);
-      if (finishDate && (!lastFinishTime || finishDate > lastFinishTime)) {
-        lastFinishTime = finishDate;
-      }
-    }
-
-    if (lastFinishTime) {
-      const mergedAt = safeParseDate(mergedAtValue);
-      if (mergedAt) {
-        const durationSeconds = Math.max(0, (mergedAt.getTime() - lastFinishTime.getTime()) / 1000);
-        lastCiRemovalToMerge = {
-          durationSeconds,
-          fromTime: safeFormat(lastFinishTime, "yyyy-MM-dd'T'HH:mm:ss'Z'"),
-          toTime: safeFormat(mergedAt, "yyyy-MM-dd'T'HH:mm:ss'Z'"),
-        };
-      }
-    }
-  }
+  lastCiRemovalToMerge = buildLastCiRemovalToMerge(runs, mergedAtValue, {
+    parseDate: safeParseDate,
+    formatDate: value => safeFormat(value, "yyyy-MM-dd'T'HH:mm:ss'Z'"),
+  });
 
   return {
     prNumber: pr.number,
