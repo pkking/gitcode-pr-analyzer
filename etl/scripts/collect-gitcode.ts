@@ -251,6 +251,13 @@ function normalizeRepoKey(repoKey: string | null | undefined): string {
   return String(repoKey || '').trim().toLowerCase();
 }
 
+function getSortedDurations<T>(source: T[], mapper: (item: T) => number | null | undefined): number[] {
+  return source
+    .map(mapper)
+    .filter((value): value is number => Number.isFinite(value))
+    .sort((a, b) => a - b);
+}
+
 function getRunRepoKey(run: Run): string {
   const url = String(run?.html_url || '');
   const match = url.match(/^https?:\/\/[^/]+\/(.+)\/(?:merge_requests|pulls)\//);
@@ -362,7 +369,7 @@ async function buildHomeOverview(index: Index, prDetailsIndex: string[]): Promis
     prDetailsIndex.map(async filePath => {
       const detailPath = path.join(DATA_DIR, filePath);
       const repoKey = normalizeRepoKey(getPrDetailRepoKeyFromFilePath(filePath));
-      if (!repoKey || !fs.existsSync(detailPath)) return null;
+      if (!repoKey) return null;
       try {
         const content = await fs.promises.readFile(detailPath, 'utf-8');
         return {
@@ -396,26 +403,11 @@ async function buildHomeOverview(index: Index, prDetailsIndex: string[]): Promis
       };
     });
 
-    const prE2EDurations = details
-      .map(d => d?.prSubmitToMerge?.durationSeconds)
-      .filter((value): value is number => Number.isFinite(value))
-      .sort((a, b) => a - b);
-    const ciE2EDurations = runs
-      .map(r => r.durationInSeconds)
-      .filter((value): value is number => Number.isFinite(value))
-      .sort((a, b) => a - b);
-    const ciStartupDurations = runDurations
-      .map(run => run.startupDuration)
-      .filter((value): value is number => Number.isFinite(value))
-      .sort((a, b) => a - b);
-    const ciExecDurations = runDurations
-      .map(run => run.executionDuration)
-      .filter((value): value is number => Number.isFinite(value))
-      .sort((a, b) => a - b);
-    const prReviewDurations = details
-      .map(d => d?.lastCiRemovalToMerge?.durationSeconds)
-      .filter((value): value is number => Number.isFinite(value))
-      .sort((a, b) => a - b);
+    const prE2EDurations = getSortedDurations(details, d => d?.prSubmitToMerge?.durationSeconds);
+    const ciE2EDurations = getSortedDurations(runs, r => r.durationInSeconds);
+    const ciStartupDurations = getSortedDurations(runDurations, run => run.startupDuration);
+    const ciExecDurations = getSortedDurations(runDurations, run => run.executionDuration);
+    const prReviewDurations = getSortedDurations(details, d => d?.lastCiRemovalToMerge?.durationSeconds);
     const ciCompliantCount = runs.filter(r => r.durationInSeconds <= CI_COMPLIANCE_THRESHOLD_SECONDS).length;
 
     return {
