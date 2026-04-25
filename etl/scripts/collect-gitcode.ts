@@ -252,10 +252,9 @@ function normalizeRepoKey(repoKey: string | null | undefined): string {
 }
 
 function getRunRepoKey(run: Run): string {
-  const segments = String(run?.html_url || '').split('/').filter(Boolean);
-  const mergeRequestIndex = segments.findIndex(segment => segment === 'merge_requests' || segment === 'pulls');
-  if (mergeRequestIndex < 2) return '';
-  return segments.slice(2, mergeRequestIndex).join('/');
+  const url = String(run?.html_url || '');
+  const match = url.match(/^https?:\/\/[^/]+\/(.+)\/(?:merge_requests|pulls)\//);
+  return match ? match[1] : '';
 }
 
 function getPrDetailRepoKeyFromFilePath(filePath: string): string {
@@ -274,12 +273,25 @@ function percentileFromSorted(valid: number[], p: number): number | null {
   return valid[lower] + fraction * (valid[upper] - valid[lower]);
 }
 
+function getSortedJobTimestamps(
+  run: Run,
+  key: 'started_at' | 'completed_at',
+  direction: 'asc' | 'desc' = 'asc'
+): Date[] {
+  const timestamps = (run.jobs || [])
+    .map(job => safeParseDate(job[key]))
+    .filter((value): value is Date => Boolean(value));
+
+  timestamps.sort((a, b) => (
+    direction === 'asc' ? a.getTime() - b.getTime() : b.getTime() - a.getTime()
+  ));
+
+  return timestamps;
+}
+
 function getRunStartupDuration(run: Run): number | null {
   const runCreatedAt = safeParseDate(run?.created_at);
-  const startedAts = (run.jobs || [])
-    .map(job => safeParseDate(job.started_at))
-    .filter((value): value is Date => Boolean(value))
-    .sort((a, b) => a.getTime() - b.getTime());
+  const startedAts = getSortedJobTimestamps(run, 'started_at', 'asc');
 
   if (runCreatedAt && startedAts.length > 0) {
     return Math.max(0, (startedAts[0].getTime() - runCreatedAt.getTime()) / 1000);
@@ -302,14 +314,8 @@ function getRunExecutionDuration(run: Run, startupDuration: number | null): numb
     return Math.max(0, run.durationInSeconds - startup);
   }
 
-  const startedAts = (run.jobs || [])
-    .map(job => safeParseDate(job.started_at))
-    .filter((value): value is Date => Boolean(value))
-    .sort((a, b) => a.getTime() - b.getTime());
-  const completedAts = (run.jobs || [])
-    .map(job => safeParseDate(job.completed_at))
-    .filter((value): value is Date => Boolean(value))
-    .sort((a, b) => b.getTime() - a.getTime());
+  const startedAts = getSortedJobTimestamps(run, 'started_at', 'asc');
+  const completedAts = getSortedJobTimestamps(run, 'completed_at', 'desc');
 
   if (startedAts.length > 0 && completedAts.length > 0) {
     return Math.max(0, (completedAts[0].getTime() - startedAts[0].getTime()) / 1000);
@@ -363,7 +369,8 @@ async function buildHomeOverview(index: Index, prDetailsIndex: string[]): Promis
           repoKey,
           detail: JSON.parse(content) as PrDetail,
         };
-      } catch {
+      } catch (err) {
+        console.error(`Failed to read or parse PR detail file: ${detailPath}`, err);
         return null;
       }
     })
