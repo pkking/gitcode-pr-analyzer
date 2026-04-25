@@ -46,6 +46,37 @@ interface DayData {
   runs: Run[];
 }
 
+interface RepoOverviewMetrics {
+  key: string;
+  owner: string;
+  repo: string;
+  prE2EP50: number | null;
+  prE2EP90: number | null;
+  ciE2EP50: number | null;
+  ciE2EP90: number | null;
+  ciStartupP50: number | null;
+  ciStartupP90: number | null;
+  ciExecP50: number | null;
+  ciExecP90: number | null;
+  prReviewP50: number | null;
+  prReviewP90: number | null;
+  ciComplianceRate: number | null;
+  runCount: number;
+  prDetailCount: number;
+}
+
+interface HomeOverview {
+  generated_at: string;
+  source_last_updated: string;
+  orgs: string[];
+  summary: {
+    repoCount: number;
+    totalRuns: number;
+    totalPrDetails: number;
+  };
+  repos: RepoOverviewMetrics[];
+}
+
 interface PhaseDef {
   phase: 'trigger' | 'start' | 'finish';
   source: 'comment' | 'label';
@@ -136,7 +167,10 @@ const GITCODE_API_BASE = 'https://api.gitcode.com/api/v5';
 const ETL_DIR = path.join(process.cwd(), 'etl');
 const DATA_DIR = path.join(process.cwd(), 'public', 'data');
 const INDEX_PATH = path.join(DATA_DIR, 'index.json');
+const HOME_OVERVIEW_PATH = path.join(DATA_DIR, 'home-overview.json');
 const REPOS_CONFIG_PATH = path.join(ETL_DIR, 'repos.yaml');
+const CI_COMPLIANCE_THRESHOLD_SECONDS = 3600;
+const DEFAULT_FILE_READ_CONCURRENCY = 30;
 
 /**
  * Safely parse a date string, returning null if invalid instead of throwing.
@@ -200,6 +234,12 @@ function getBackfillSince(): Date | null {
   return safeParseDate(value);
 }
 
+function getFileReadConcurrency(): number {
+  const rawValue = Number.parseInt(String(process.env.FILE_READ_CONCURRENCY || ''), 10);
+  if (!Number.isFinite(rawValue) || rawValue <= 0) return DEFAULT_FILE_READ_CONCURRENCY;
+  return rawValue;
+}
+
 function readDayData(date: string): DayData {
   const filePath = path.join(DATA_DIR, `${date}.json`);
   try {
@@ -212,6 +252,249 @@ function readDayData(date: string): DayData {
 function writeDayData(data: DayData) {
   const filePath = path.join(DATA_DIR, `${data.date}.json`);
   fs.writeFileSync(filePath, JSON.stringify(data, null, 2));
+}
+
+function normalizeRepoKey(repoKey: string | null | undefined): string {
+  return String(repoKey || '').trim().toLowerCase();
+}
+
+function getSortedDurations<T>(source: T[], mapper: (item: T) => number | null | undefined): number[] {
+  return source
+    .map(mapper)
+    .filter((value): value is number => Number.isFinite(value))
+    .sort((a, b) => a - b);
+}
+
+async function processFilesConcurrently<T, R>(
+  filePaths: T[],
+  concurrencyLimit: number,
+  processor: (filePath: T) => Promise<R | null>
+): Promise<R[]> {
+  if (filePaths.length === 0) return [];
+
+  const results: Array<R | null> = new Array(filePaths.length).fill(null);
+  let nextIndex = 0;
+
+  async function worker() {
+    while (nextIndex < filePaths.length) {
+      const currentIndex = nextIndex;
+      nextIndex += 1;
+      results[currentIndex] = await processor(filePaths[currentIndex]);
+    }
+  }
+
+  const workerCount = Math.min(concurrencyLimit, filePaths.length);
+  await Promise.all(Array.from({ length: workerCount }, () => worker()));
+  return results.filter((result): result is R => result !== null);
+}
+
+function getRunRepoKey(run: Run): string {
+  const url = String(run?.html_url || '');
+  const match = url.match(/^https?:\/\/[^/]+\/(.+)\/(?:merge_requests|pulls)\//);
+  return match ? match[1] : '';
+}
+
+function getPrDetailRepoKeyFromFilePath(filePath: string): string {
+  const match = String(filePath || '').match(/^([^/]+)\/(.+)\/pr-(\d+)\.json$/);
+  return match ? `${match[1]}/${match[2]}` : '';
+}
+
+function percentileFromSorted(valid: number[], p: number): number | null {
+  if (valid.length === 0) return null;
+  if (valid.length === 1) return valid[0];
+  const index = (p / 100) * (valid.length - 1);
+  const lower = Math.floor(index);
+  const upper = Math.ceil(index);
+  if (lower === upper) return valid[lower];
+  const fraction = index - lower;
+  return valid[lower] + fraction * (valid[upper] - valid[lower]);
+}
+
+function getSortedJobTimestamps(
+  run: Run,
+  key: 'started_at' | 'completed_at',
+  direction: 'asc' | 'desc' = 'asc'
+): Date[] {
+  const timestamps = (run.jobs || [])
+    .map(job => safeParseDate(job[key]))
+    .filter((value): value is Date => Boolean(value));
+
+  timestamps.sort((a, b) => (
+    direction === 'asc' ? a.getTime() - b.getTime() : b.getTime() - a.getTime()
+  ));
+
+  return timestamps;
+}
+
+function getRunStartupDuration(run: Run): number | null {
+  const runCreatedAt = safeParseDate(run?.created_at);
+  const startedAts = getSortedJobTimestamps(run, 'started_at', 'asc');
+
+  if (runCreatedAt && startedAts.length > 0) {
+    return Math.max(0, (startedAts[0].getTime() - runCreatedAt.getTime()) / 1000);
+  }
+
+  const queueDurations = (run.jobs || [])
+    .map(job => job.queueDurationInSeconds)
+    .filter((value): value is number => Number.isFinite(value));
+
+  if (queueDurations.length > 0) {
+    return Math.max(0, Math.min(...queueDurations));
+  }
+
+  return null;
+}
+
+function getRunExecutionDuration(run: Run, startupDuration: number | null): number | null {
+  if (Number.isFinite(run.durationInSeconds)) {
+    const startup = Number.isFinite(startupDuration) ? startupDuration : 0;
+    return Math.max(0, run.durationInSeconds - startup);
+  }
+
+  const startedAts = getSortedJobTimestamps(run, 'started_at', 'asc');
+  const completedAts = getSortedJobTimestamps(run, 'completed_at', 'desc');
+
+  if (startedAts.length > 0 && completedAts.length > 0) {
+    return Math.max(0, (completedAts[0].getTime() - startedAts[0].getTime()) / 1000);
+  }
+
+  return null;
+}
+
+async function buildHomeOverview(index: Index, prDetailsIndex: string[]): Promise<HomeOverview> {
+  const repoEntries = Object.entries(index.repos || {})
+    .map(([key, value]) => {
+      const [owner, ...repoParts] = key.split('/');
+      return {
+        key,
+        owner,
+        repo: repoParts.join('/'),
+        files: value.files || [],
+      };
+    })
+    .sort((a, b) => a.key.localeCompare(b.key));
+
+  const dayFiles = new Set<string>();
+  for (const repo of repoEntries) {
+    for (const file of repo.files) {
+      dayFiles.add(file);
+    }
+  }
+
+  const runsByRepo = new Map<string, Run[]>();
+  let totalRuns = 0;
+  const fileReadConcurrency = getFileReadConcurrency();
+  const dayDataFiles = await processFilesConcurrently(
+    Array.from(dayFiles),
+    fileReadConcurrency,
+    async file => {
+      const filePath = path.join(DATA_DIR, String(file));
+      try {
+        const content = await fs.promises.readFile(filePath, 'utf-8');
+        return JSON.parse(content) as DayData;
+      } catch (err) {
+        console.error(`Failed to read or parse day data file: ${filePath}`, err);
+        return { date: String(file).replace(/\.json$/, ''), repo: '', runs: [] } as DayData;
+      }
+    }
+  );
+
+  for (const dayData of dayDataFiles) {
+    for (const run of dayData.runs || []) {
+      const repoKey = normalizeRepoKey(getRunRepoKey(run));
+      if (!repoKey) continue;
+      if (!runsByRepo.has(repoKey)) runsByRepo.set(repoKey, []);
+      runsByRepo.get(repoKey)?.push(run);
+      totalRuns += 1;
+    }
+  }
+
+  const prDetailsByRepo = new Map<string, PrDetail[]>();
+  let totalPrDetails = 0;
+  const prDetails = await processFilesConcurrently(
+    prDetailsIndex,
+    fileReadConcurrency,
+    async filePath => {
+      const detailPath = path.join(DATA_DIR, filePath);
+      const repoKey = normalizeRepoKey(getPrDetailRepoKeyFromFilePath(filePath));
+      if (!repoKey) return null;
+      try {
+        const content = await fs.promises.readFile(detailPath, 'utf-8');
+        return {
+          repoKey,
+          detail: JSON.parse(content) as PrDetail,
+        };
+      } catch (err) {
+        console.error(`Failed to read or parse PR detail file: ${detailPath}`, err);
+        return null;
+      }
+    }
+  );
+
+  for (const entry of prDetails) {
+    if (!prDetailsByRepo.has(entry.repoKey)) prDetailsByRepo.set(entry.repoKey, []);
+    prDetailsByRepo.get(entry.repoKey)?.push(entry.detail);
+    totalPrDetails += 1;
+  }
+
+  const repos: RepoOverviewMetrics[] = repoEntries.map(repoEntry => {
+    const repoKey = normalizeRepoKey(repoEntry.key);
+    const runs = runsByRepo.get(repoKey) || [];
+    const details = prDetailsByRepo.get(repoKey) || [];
+    const runDurations = runs.map(run => {
+      const startupDuration = getRunStartupDuration(run);
+      return {
+        startupDuration,
+        executionDuration: getRunExecutionDuration(run, startupDuration),
+      };
+    });
+
+    const prE2EDurations = getSortedDurations(details, d => d?.prSubmitToMerge?.durationSeconds);
+    const ciE2EDurations = getSortedDurations(runs, r => r.durationInSeconds);
+    const ciStartupDurations = getSortedDurations(runDurations, run => run.startupDuration);
+    const ciExecDurations = getSortedDurations(runDurations, run => run.executionDuration);
+    const prReviewDurations = getSortedDurations(details, d => d?.lastCiRemovalToMerge?.durationSeconds);
+    const ciCompliantCount = runs.filter(r => r.durationInSeconds <= CI_COMPLIANCE_THRESHOLD_SECONDS).length;
+
+    return {
+      key: repoEntry.key,
+      owner: repoEntry.owner,
+      repo: repoEntry.repo,
+      prE2EP50: percentileFromSorted(prE2EDurations, 50),
+      prE2EP90: percentileFromSorted(prE2EDurations, 90),
+      ciE2EP50: percentileFromSorted(ciE2EDurations, 50),
+      ciE2EP90: percentileFromSorted(ciE2EDurations, 90),
+      ciStartupP50: percentileFromSorted(ciStartupDurations, 50),
+      ciStartupP90: percentileFromSorted(ciStartupDurations, 90),
+      ciExecP50: percentileFromSorted(ciExecDurations, 50),
+      ciExecP90: percentileFromSorted(ciExecDurations, 90),
+      prReviewP50: percentileFromSorted(prReviewDurations, 50),
+      prReviewP90: percentileFromSorted(prReviewDurations, 90),
+      ciComplianceRate: runs.length > 0 ? (ciCompliantCount / runs.length) * 100 : null,
+      runCount: runs.length,
+      prDetailCount: details.length,
+    };
+  });
+
+  const orgs = Array.from(new Set(repoEntries.map(repo => repo.owner))).sort((a, b) => a.localeCompare(b));
+
+  return {
+    generated_at: new Date().toISOString(),
+    source_last_updated: index.last_updated || '',
+    orgs,
+    summary: {
+      repoCount: repos.length,
+      totalRuns,
+      totalPrDetails,
+    },
+    repos,
+  };
+}
+
+async function writeHomeOverview(index: Index, prDetailsIndex: string[]) {
+  const overview = await buildHomeOverview(index, prDetailsIndex);
+  await fs.promises.writeFile(HOME_OVERVIEW_PATH, JSON.stringify(overview, null, 2));
+  console.log(`Wrote ${overview.repos.length} repo entries to home-overview.json`);
 }
 
 function matchesPattern(value: string, pattern: string, matchType: string): boolean {
@@ -721,6 +1004,7 @@ async function main() {
   prDetailsIndex.sort();
   fs.writeFileSync(prDetailsIndexPath, JSON.stringify(prDetailsIndex, null, 2));
   console.log(`Wrote ${prDetailsIndex.length} PR detail entries to pr-details-index.json`);
+  await writeHomeOverview(index, prDetailsIndex);
 
   console.log('Done!');
 }

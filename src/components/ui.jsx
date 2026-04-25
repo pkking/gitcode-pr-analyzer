@@ -122,6 +122,37 @@ export function TableSkeleton({ rows = 8 }) {
   );
 }
 
+export function ProgressBar({ value = 0, className = '', label, detail }) {
+  const clampedValue = Math.max(0, Math.min(100, Number(value) || 0));
+  const accessibleLabel = label || 'Loading progress';
+
+  return (
+    <div
+      className={className}
+      role="progressbar"
+      aria-valuenow={clampedValue}
+      aria-valuemin={0}
+      aria-valuemax={100}
+      aria-label={accessibleLabel}
+    >
+      {(label || detail) && (
+        <div className="mb-2 flex items-center justify-between gap-3 text-xs text-stone-400">
+          <span className="truncate">{label}</span>
+          <span className="shrink-0 tabular-nums">{clampedValue}%</span>
+        </div>
+      )}
+      <div className="h-2 overflow-hidden rounded-full bg-stone-800/80">
+        <div
+          className="h-full rounded-full bg-gradient-to-r from-amber-300 via-amber-400 to-orange-400 transition-all duration-500 ease-out"
+          style={{ width: `${clampedValue}%` }}
+          aria-hidden="true"
+        />
+      </div>
+      {detail && <div className="mt-2 text-xs text-stone-500">{detail}</div>}
+    </div>
+  );
+}
+
 export function MetricValue({ p50, p90, className = '' }) {
   if (p50 === null && p90 === null) {
     return <span className={`text-sm text-stone-400 ${className}`}>--</span>;
