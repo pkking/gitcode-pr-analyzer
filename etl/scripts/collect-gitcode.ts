@@ -353,26 +353,35 @@ async function buildHomeOverview(index: Index, prDetailsIndex: string[]): Promis
 
   const runsByRepo = new Map<string, Run[]>();
   let totalRuns = 0;
-  for (const file of dayFiles) {
-    const filePath = path.join(DATA_DIR, String(file).replace(/\.json$/, '') + '.json');
-    let dayData: DayData;
-    try {
-      dayData = JSON.parse(await fs.promises.readFile(filePath, 'utf-8'));
-    } catch {
-      dayData = { date: String(file).replace(/\.json$/, ''), repo: '', runs: [] };
-    }
-    for (const run of dayData.runs || []) {
-      const repoKey = normalizeRepoKey(getRunRepoKey(run));
-      if (!repoKey) continue;
-      if (!runsByRepo.has(repoKey)) runsByRepo.set(repoKey, []);
-      runsByRepo.get(repoKey)?.push(run);
-      totalRuns += 1;
+  const CONCURRENT_FILE_READS = 50;
+  const dayFilesArray = Array.from(dayFiles);
+  for (let i = 0; i < dayFilesArray.length; i += CONCURRENT_FILE_READS) {
+    const chunk = dayFilesArray.slice(i, i + CONCURRENT_FILE_READS);
+    const chunkResults = await Promise.all(
+      chunk.map(async file => {
+        const filePath = path.join(DATA_DIR, String(file).replace(/\.json$/, '') + '.json');
+        try {
+          const content = await fs.promises.readFile(filePath, 'utf-8');
+          return JSON.parse(content) as DayData;
+        } catch {
+          return { date: String(file).replace(/\.json$/, ''), repo: '', runs: [] } as DayData;
+        }
+      })
+    );
+
+    for (const dayData of chunkResults) {
+      for (const run of dayData.runs || []) {
+        const repoKey = normalizeRepoKey(getRunRepoKey(run));
+        if (!repoKey) continue;
+        if (!runsByRepo.has(repoKey)) runsByRepo.set(repoKey, []);
+        runsByRepo.get(repoKey)?.push(run);
+        totalRuns += 1;
+      }
     }
   }
 
   const prDetailsByRepo = new Map<string, PrDetail[]>();
-  const CONCURRENT_FILE_READS = 50;
-  const prDetails: ({ repoKey: string; detail: PrDetail } | null)[] = [];
+  let totalPrDetails = 0;
   for (let i = 0; i < prDetailsIndex.length; i += CONCURRENT_FILE_READS) {
     const chunk = prDetailsIndex.slice(i, i + CONCURRENT_FILE_READS);
     const chunkResults = await Promise.all(
@@ -392,15 +401,13 @@ async function buildHomeOverview(index: Index, prDetailsIndex: string[]): Promis
         }
       })
     );
-    prDetails.push(...chunkResults);
-  }
 
-  let totalPrDetails = 0;
-  for (const entry of prDetails) {
-    if (!entry) continue;
-    if (!prDetailsByRepo.has(entry.repoKey)) prDetailsByRepo.set(entry.repoKey, []);
-    prDetailsByRepo.get(entry.repoKey)?.push(entry.detail);
-    totalPrDetails += 1;
+    for (const entry of chunkResults) {
+      if (!entry) continue;
+      if (!prDetailsByRepo.has(entry.repoKey)) prDetailsByRepo.set(entry.repoKey, []);
+      prDetailsByRepo.get(entry.repoKey)?.push(entry.detail);
+      totalPrDetails += 1;
+    }
   }
 
   const repos: RepoOverviewMetrics[] = repoEntries.map(repoEntry => {
