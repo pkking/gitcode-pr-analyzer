@@ -255,7 +255,7 @@ function getRunRepoKey(run: Run): string {
   const segments = String(run?.html_url || '').split('/').filter(Boolean);
   const mergeRequestIndex = segments.findIndex(segment => segment === 'merge_requests' || segment === 'pulls');
   if (mergeRequestIndex < 2) return '';
-  return `${segments[mergeRequestIndex - 2]}/${segments[mergeRequestIndex - 1]}`;
+  return segments.slice(2, mergeRequestIndex).join('/');
 }
 
 function getPrDetailRepoKeyFromFilePath(filePath: string): string {
@@ -272,6 +272,50 @@ function percentileFromSorted(valid: number[], p: number): number | null {
   if (lower === upper) return valid[lower];
   const fraction = index - lower;
   return valid[lower] + fraction * (valid[upper] - valid[lower]);
+}
+
+function getRunStartupDuration(run: Run): number | null {
+  const runCreatedAt = safeParseDate(run?.created_at);
+  const startedAts = (run.jobs || [])
+    .map(job => safeParseDate(job.started_at))
+    .filter((value): value is Date => Boolean(value))
+    .sort((a, b) => a.getTime() - b.getTime());
+
+  if (runCreatedAt && startedAts.length > 0) {
+    return Math.max(0, (startedAts[0].getTime() - runCreatedAt.getTime()) / 1000);
+  }
+
+  const queueDurations = (run.jobs || [])
+    .map(job => job.queueDurationInSeconds)
+    .filter((value): value is number => Number.isFinite(value));
+
+  if (queueDurations.length > 0) {
+    return Math.max(0, Math.min(...queueDurations));
+  }
+
+  return null;
+}
+
+function getRunExecutionDuration(run: Run, startupDuration: number | null): number | null {
+  if (Number.isFinite(run.durationInSeconds)) {
+    const startup = Number.isFinite(startupDuration) ? startupDuration : 0;
+    return Math.max(0, run.durationInSeconds - startup);
+  }
+
+  const startedAts = (run.jobs || [])
+    .map(job => safeParseDate(job.started_at))
+    .filter((value): value is Date => Boolean(value))
+    .sort((a, b) => a.getTime() - b.getTime());
+  const completedAts = (run.jobs || [])
+    .map(job => safeParseDate(job.completed_at))
+    .filter((value): value is Date => Boolean(value))
+    .sort((a, b) => b.getTime() - a.getTime());
+
+  if (startedAts.length > 0 && completedAts.length > 0) {
+    return Math.max(0, (completedAts[0].getTime() - startedAts[0].getTime()) / 1000);
+  }
+
+  return null;
 }
 
 function buildHomeOverview(index: Index, prDetailsIndex: string[]): HomeOverview {
@@ -328,6 +372,13 @@ function buildHomeOverview(index: Index, prDetailsIndex: string[]): HomeOverview
     const repoKey = normalizeRepoKey(repoEntry.key);
     const runs = runsByRepo.get(repoKey) || [];
     const details = prDetailsByRepo.get(repoKey) || [];
+    const runDurations = runs.map(run => {
+      const startupDuration = getRunStartupDuration(run);
+      return {
+        startupDuration,
+        executionDuration: getRunExecutionDuration(run, startupDuration),
+      };
+    });
 
     const prE2EDurations = details
       .map(d => d?.prSubmitToMerge?.durationSeconds)
@@ -337,12 +388,12 @@ function buildHomeOverview(index: Index, prDetailsIndex: string[]): HomeOverview
       .map(r => r.durationInSeconds)
       .filter((value): value is number => Number.isFinite(value))
       .sort((a, b) => a - b);
-    const ciStartupDurations = runs
-      .map(r => r.jobs?.[0]?.queueDurationInSeconds)
+    const ciStartupDurations = runDurations
+      .map(run => run.startupDuration)
       .filter((value): value is number => Number.isFinite(value))
       .sort((a, b) => a - b);
-    const ciExecDurations = runs
-      .map(r => r.jobs?.[0]?.durationInSeconds)
+    const ciExecDurations = runDurations
+      .map(run => run.executionDuration)
       .filter((value): value is number => Number.isFinite(value))
       .sort((a, b) => a - b);
     const prReviewDurations = details
