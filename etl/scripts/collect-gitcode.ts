@@ -354,7 +354,13 @@ async function buildHomeOverview(index: Index, prDetailsIndex: string[]): Promis
   const runsByRepo = new Map<string, Run[]>();
   let totalRuns = 0;
   for (const file of dayFiles) {
-    const dayData = readDayData(String(file).replace(/\.json$/, ''));
+    const filePath = path.join(DATA_DIR, String(file).replace(/\.json$/, '') + '.json');
+    let dayData: DayData;
+    try {
+      dayData = JSON.parse(await fs.promises.readFile(filePath, 'utf-8'));
+    } catch {
+      dayData = { date: String(file).replace(/\.json$/, ''), repo: '', runs: [] };
+    }
     for (const run of dayData.runs || []) {
       const repoKey = normalizeRepoKey(getRunRepoKey(run));
       if (!repoKey) continue;
@@ -365,23 +371,29 @@ async function buildHomeOverview(index: Index, prDetailsIndex: string[]): Promis
   }
 
   const prDetailsByRepo = new Map<string, PrDetail[]>();
-  const prDetails = await Promise.all(
-    prDetailsIndex.map(async filePath => {
-      const detailPath = path.join(DATA_DIR, filePath);
-      const repoKey = normalizeRepoKey(getPrDetailRepoKeyFromFilePath(filePath));
-      if (!repoKey) return null;
-      try {
-        const content = await fs.promises.readFile(detailPath, 'utf-8');
-        return {
-          repoKey,
-          detail: JSON.parse(content) as PrDetail,
-        };
-      } catch (err) {
-        console.error(`Failed to read or parse PR detail file: ${detailPath}`, err);
-        return null;
-      }
-    })
-  );
+  const CONCURRENT_FILE_READS = 50;
+  const prDetails: Array<{ repoKey: string; detail: PrDetail } | null>[] = [];
+  for (let i = 0; i < prDetailsIndex.length; i += CONCURRENT_FILE_READS) {
+    const chunk = prDetailsIndex.slice(i, i + CONCURRENT_FILE_READS);
+    const chunkResults = await Promise.all(
+      chunk.map(async filePath => {
+        const detailPath = path.join(DATA_DIR, filePath);
+        const repoKey = normalizeRepoKey(getPrDetailRepoKeyFromFilePath(filePath));
+        if (!repoKey) return null;
+        try {
+          const content = await fs.promises.readFile(detailPath, 'utf-8');
+          return {
+            repoKey,
+            detail: JSON.parse(content) as PrDetail,
+          };
+        } catch (err) {
+          console.error(`Failed to read or parse PR detail file: ${detailPath}`, err);
+          return null;
+        }
+      })
+    );
+    prDetails.push(...chunkResults);
+  }
 
   let totalPrDetails = 0;
   for (const entry of prDetails) {
@@ -447,7 +459,7 @@ async function buildHomeOverview(index: Index, prDetailsIndex: string[]): Promis
 
 async function writeHomeOverview(index: Index, prDetailsIndex: string[]) {
   const overview = await buildHomeOverview(index, prDetailsIndex);
-  fs.writeFileSync(HOME_OVERVIEW_PATH, JSON.stringify(overview));
+  fs.writeFileSync(HOME_OVERVIEW_PATH, JSON.stringify(overview, null, 2));
   console.log(`Wrote ${overview.repos.length} repo entries to home-overview.json`);
 }
 
