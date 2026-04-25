@@ -154,6 +154,19 @@ export default function HomePage() {
         setLoadingLabel('首页加载完成');
         setLoadingDetail('首页已使用预聚合指标完成渲染。');
       } catch (overviewErr) {
+        if (cachedOverview) {
+          if (!cancelled) {
+            console.error('Overview refresh failed:', overviewErr);
+            setWarning('首页摘要刷新失败，当前显示的是缓存数据。');
+            setLoading(false);
+            setIsRefreshing(false);
+            setLoadingProgress(100);
+            setLoadingLabel('使用缓存数据');
+            setLoadingDetail('当前会话缓存仍在显示，最新摘要刷新失败。');
+          }
+          return;
+        }
+
         try {
           updateLoading(48, '回退到索引文件', '首页摘要不存在时，仅展示仓库列表并保留交互。');
           const indexRes = await fetch('/data/index.json', { cache: 'no-cache' });
