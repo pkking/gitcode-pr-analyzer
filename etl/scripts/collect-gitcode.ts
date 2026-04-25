@@ -260,21 +260,25 @@ function getSortedDurations<T>(source: T[], mapper: (item: T) => number | null |
 
 async function processFilesConcurrently<T, R>(
   filePaths: T[],
-  chunkSize: number,
+  concurrencyLimit: number,
   processor: (filePath: T) => Promise<R | null>
 ): Promise<R[]> {
-  const results: R[] = [];
+  if (filePaths.length === 0) return [];
 
-  for (let i = 0; i < filePaths.length; i += chunkSize) {
-    const chunk = filePaths.slice(i, i + chunkSize);
-    const chunkResults = await Promise.all(chunk.map(processor));
+  const results: Array<R | null> = new Array(filePaths.length).fill(null);
+  let nextIndex = 0;
 
-    for (const result of chunkResults) {
-      if (result) results.push(result);
+  async function worker() {
+    while (nextIndex < filePaths.length) {
+      const currentIndex = nextIndex;
+      nextIndex += 1;
+      results[currentIndex] = await processor(filePaths[currentIndex]);
     }
   }
 
-  return results;
+  const workerCount = Math.min(concurrencyLimit, filePaths.length);
+  await Promise.all(Array.from({ length: workerCount }, () => worker()));
+  return results.filter((result): result is R => result !== null);
 }
 
 function getRunRepoKey(run: Run): string {
