@@ -318,7 +318,7 @@ function getRunExecutionDuration(run: Run, startupDuration: number | null): numb
   return null;
 }
 
-function buildHomeOverview(index: Index, prDetailsIndex: string[]): HomeOverview {
+async function buildHomeOverview(index: Index, prDetailsIndex: string[]): Promise<HomeOverview> {
   const repoEntries = Object.entries(index.repos || {})
     .map(([key, value]) => {
       const [owner, ...repoParts] = key.split('/');
@@ -352,20 +352,29 @@ function buildHomeOverview(index: Index, prDetailsIndex: string[]): HomeOverview
   }
 
   const prDetailsByRepo = new Map<string, PrDetail[]>();
-  let totalPrDetails = 0;
-  for (const filePath of prDetailsIndex) {
-    const detailPath = path.join(DATA_DIR, filePath);
-    if (!fs.existsSync(detailPath)) continue;
-    try {
+  const prDetails = await Promise.all(
+    prDetailsIndex.map(async filePath => {
+      const detailPath = path.join(DATA_DIR, filePath);
       const repoKey = normalizeRepoKey(getPrDetailRepoKeyFromFilePath(filePath));
-      if (!repoKey) continue;
-      const detail = JSON.parse(fs.readFileSync(detailPath, 'utf-8')) as PrDetail;
-      if (!prDetailsByRepo.has(repoKey)) prDetailsByRepo.set(repoKey, []);
-      prDetailsByRepo.get(repoKey)?.push(detail);
-      totalPrDetails += 1;
-    } catch {
-      continue;
-    }
+      if (!repoKey || !fs.existsSync(detailPath)) return null;
+      try {
+        const content = await fs.promises.readFile(detailPath, 'utf-8');
+        return {
+          repoKey,
+          detail: JSON.parse(content) as PrDetail,
+        };
+      } catch {
+        return null;
+      }
+    })
+  );
+
+  let totalPrDetails = 0;
+  for (const entry of prDetails) {
+    if (!entry) continue;
+    if (!prDetailsByRepo.has(entry.repoKey)) prDetailsByRepo.set(entry.repoKey, []);
+    prDetailsByRepo.get(entry.repoKey)?.push(entry.detail);
+    totalPrDetails += 1;
   }
 
   const repos: RepoOverviewMetrics[] = repoEntries.map(repoEntry => {
@@ -437,9 +446,9 @@ function buildHomeOverview(index: Index, prDetailsIndex: string[]): HomeOverview
   };
 }
 
-function writeHomeOverview(index: Index, prDetailsIndex: string[]) {
-  const overview = buildHomeOverview(index, prDetailsIndex);
-  fs.writeFileSync(HOME_OVERVIEW_PATH, JSON.stringify(overview, null, 2));
+async function writeHomeOverview(index: Index, prDetailsIndex: string[]) {
+  const overview = await buildHomeOverview(index, prDetailsIndex);
+  fs.writeFileSync(HOME_OVERVIEW_PATH, JSON.stringify(overview));
   console.log(`Wrote ${overview.repos.length} repo entries to home-overview.json`);
 }
 
@@ -950,7 +959,7 @@ async function main() {
   prDetailsIndex.sort();
   fs.writeFileSync(prDetailsIndexPath, JSON.stringify(prDetailsIndex, null, 2));
   console.log(`Wrote ${prDetailsIndex.length} PR detail entries to pr-details-index.json`);
-  writeHomeOverview(index, prDetailsIndex);
+  await writeHomeOverview(index, prDetailsIndex);
 
   console.log('Done!');
 }
