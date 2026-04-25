@@ -372,7 +372,7 @@ async function buildHomeOverview(index: Index, prDetailsIndex: string[]): Promis
 
   const prDetailsByRepo = new Map<string, PrDetail[]>();
   const CONCURRENT_FILE_READS = 50;
-  const prDetails: Array<{ repoKey: string; detail: PrDetail } | null>[] = [];
+  const prDetails: ({ repoKey: string; detail: PrDetail } | null)[] = [];
   for (let i = 0; i < prDetailsIndex.length; i += CONCURRENT_FILE_READS) {
     const chunk = prDetailsIndex.slice(i, i + CONCURRENT_FILE_READS);
     const chunkResults = await Promise.all(
