@@ -381,7 +381,7 @@ async function buildHomeOverview(index: Index, prDetailsIndex: string[]): Promis
     Array.from(dayFiles),
     CONCURRENT_FILE_READS,
     async file => {
-      const filePath = path.join(DATA_DIR, String(file).replace(/\.json$/, '') + '.json');
+      const filePath = path.join(DATA_DIR, String(file));
       try {
         const content = await fs.promises.readFile(filePath, 'utf-8');
         return JSON.parse(content) as DayData;
@@ -486,7 +486,7 @@ async function buildHomeOverview(index: Index, prDetailsIndex: string[]): Promis
 
 async function writeHomeOverview(index: Index, prDetailsIndex: string[]) {
   const overview = await buildHomeOverview(index, prDetailsIndex);
-  fs.writeFileSync(HOME_OVERVIEW_PATH, JSON.stringify(overview, null, 2));
+  await fs.promises.writeFile(HOME_OVERVIEW_PATH, JSON.stringify(overview, null, 2));
   console.log(`Wrote ${overview.repos.length} repo entries to home-overview.json`);
 }
 
