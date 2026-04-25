@@ -258,6 +258,25 @@ function getSortedDurations<T>(source: T[], mapper: (item: T) => number | null |
     .sort((a, b) => a - b);
 }
 
+async function processFilesConcurrently<T, R>(
+  filePaths: T[],
+  chunkSize: number,
+  processor: (filePath: T) => Promise<R | null>
+): Promise<R[]> {
+  const results: R[] = [];
+
+  for (let i = 0; i < filePaths.length; i += chunkSize) {
+    const chunk = filePaths.slice(i, i + chunkSize);
+    const chunkResults = await Promise.all(chunk.map(processor));
+
+    for (const result of chunkResults) {
+      if (result) results.push(result);
+    }
+  }
+
+  return results;
+}
+
 function getRunRepoKey(run: Run): string {
   const url = String(run?.html_url || '');
   const match = url.match(/^https?:\/\/[^/]+\/(.+)\/(?:merge_requests|pulls)\//);
@@ -354,60 +373,57 @@ async function buildHomeOverview(index: Index, prDetailsIndex: string[]): Promis
   const runsByRepo = new Map<string, Run[]>();
   let totalRuns = 0;
   const CONCURRENT_FILE_READS = 50;
-  const dayFilesArray = Array.from(dayFiles);
-  for (let i = 0; i < dayFilesArray.length; i += CONCURRENT_FILE_READS) {
-    const chunk = dayFilesArray.slice(i, i + CONCURRENT_FILE_READS);
-    const chunkResults = await Promise.all(
-      chunk.map(async file => {
-        const filePath = path.join(DATA_DIR, String(file).replace(/\.json$/, '') + '.json');
-        try {
-          const content = await fs.promises.readFile(filePath, 'utf-8');
-          return JSON.parse(content) as DayData;
-        } catch {
-          return { date: String(file).replace(/\.json$/, ''), repo: '', runs: [] } as DayData;
-        }
-      })
-    );
-
-    for (const dayData of chunkResults) {
-      for (const run of dayData.runs || []) {
-        const repoKey = normalizeRepoKey(getRunRepoKey(run));
-        if (!repoKey) continue;
-        if (!runsByRepo.has(repoKey)) runsByRepo.set(repoKey, []);
-        runsByRepo.get(repoKey)?.push(run);
-        totalRuns += 1;
+  const dayDataFiles = await processFilesConcurrently(
+    Array.from(dayFiles),
+    CONCURRENT_FILE_READS,
+    async file => {
+      const filePath = path.join(DATA_DIR, String(file).replace(/\.json$/, '') + '.json');
+      try {
+        const content = await fs.promises.readFile(filePath, 'utf-8');
+        return JSON.parse(content) as DayData;
+      } catch (err) {
+        console.error(`Failed to read or parse day data file: ${filePath}`, err);
+        return { date: String(file).replace(/\.json$/, ''), repo: '', runs: [] } as DayData;
       }
+    }
+  );
+
+  for (const dayData of dayDataFiles) {
+    for (const run of dayData.runs || []) {
+      const repoKey = normalizeRepoKey(getRunRepoKey(run));
+      if (!repoKey) continue;
+      if (!runsByRepo.has(repoKey)) runsByRepo.set(repoKey, []);
+      runsByRepo.get(repoKey)?.push(run);
+      totalRuns += 1;
     }
   }
 
   const prDetailsByRepo = new Map<string, PrDetail[]>();
   let totalPrDetails = 0;
-  for (let i = 0; i < prDetailsIndex.length; i += CONCURRENT_FILE_READS) {
-    const chunk = prDetailsIndex.slice(i, i + CONCURRENT_FILE_READS);
-    const chunkResults = await Promise.all(
-      chunk.map(async filePath => {
-        const detailPath = path.join(DATA_DIR, filePath);
-        const repoKey = normalizeRepoKey(getPrDetailRepoKeyFromFilePath(filePath));
-        if (!repoKey) return null;
-        try {
-          const content = await fs.promises.readFile(detailPath, 'utf-8');
-          return {
-            repoKey,
-            detail: JSON.parse(content) as PrDetail,
-          };
-        } catch (err) {
-          console.error(`Failed to read or parse PR detail file: ${detailPath}`, err);
-          return null;
-        }
-      })
-    );
-
-    for (const entry of chunkResults) {
-      if (!entry) continue;
-      if (!prDetailsByRepo.has(entry.repoKey)) prDetailsByRepo.set(entry.repoKey, []);
-      prDetailsByRepo.get(entry.repoKey)?.push(entry.detail);
-      totalPrDetails += 1;
+  const prDetails = await processFilesConcurrently(
+    prDetailsIndex,
+    CONCURRENT_FILE_READS,
+    async filePath => {
+      const detailPath = path.join(DATA_DIR, filePath);
+      const repoKey = normalizeRepoKey(getPrDetailRepoKeyFromFilePath(filePath));
+      if (!repoKey) return null;
+      try {
+        const content = await fs.promises.readFile(detailPath, 'utf-8');
+        return {
+          repoKey,
+          detail: JSON.parse(content) as PrDetail,
+        };
+      } catch (err) {
+        console.error(`Failed to read or parse PR detail file: ${detailPath}`, err);
+        return null;
+      }
     }
+  );
+
+  for (const entry of prDetails) {
+    if (!prDetailsByRepo.has(entry.repoKey)) prDetailsByRepo.set(entry.repoKey, []);
+    prDetailsByRepo.get(entry.repoKey)?.push(entry.detail);
+    totalPrDetails += 1;
   }
 
   const repos: RepoOverviewMetrics[] = repoEntries.map(repoEntry => {
