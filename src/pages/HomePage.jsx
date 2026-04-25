@@ -143,13 +143,10 @@ export default function HomePage() {
         writeCachedOverview(overview);
 
         updateLoading(96, '渲染首页', '首屏指标已就绪。');
-        window.setTimeout(() => {
-          if (cancelled) return;
-          setLoading(false);
-          setLoadingProgress(100);
-          setLoadingLabel('首页加载完成');
-          setLoadingDetail('首页已使用预聚合指标完成渲染。');
-        }, cachedOverview ? 80 : 160);
+        setLoading(false);
+        setLoadingProgress(100);
+        setLoadingLabel('首页加载完成');
+        setLoadingDetail('首页已使用预聚合指标完成渲染。');
       } catch (overviewErr) {
         try {
           updateLoading(48, '回退到索引文件', '首页摘要不存在时，仅展示仓库列表并保留交互。');

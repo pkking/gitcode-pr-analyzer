@@ -251,15 +251,10 @@ function normalizeRepoKey(repoKey: string | null | undefined): string {
 }
 
 function getRunRepoKey(run: Run): string {
-  try {
-    const url = new URL(run?.html_url || '');
-    const segments = url.pathname.split('/').filter(Boolean);
-    const mergeRequestIndex = segments.findIndex(segment => segment === 'merge_requests');
-    if (mergeRequestIndex < 2) return '';
-    return `${segments[mergeRequestIndex - 2]}/${segments[mergeRequestIndex - 1]}`;
-  } catch {
-    return '';
-  }
+  const segments = String(run?.html_url || '').split('/').filter(Boolean);
+  const mergeRequestIndex = segments.findIndex(segment => segment === 'merge_requests' || segment === 'pulls');
+  if (mergeRequestIndex < 2) return '';
+  return `${segments[mergeRequestIndex - 2]}/${segments[mergeRequestIndex - 1]}`;
 }
 
 function getPrDetailRepoKeyFromFilePath(filePath: string): string {
@@ -269,6 +264,10 @@ function getPrDetailRepoKeyFromFilePath(filePath: string): string {
 
 function percentile(numbers: Array<number | null | undefined>, p: number): number | null {
   const valid = numbers.filter((value): value is number => Number.isFinite(value)).sort((a, b) => a - b);
+  return percentileFromSorted(valid, p);
+}
+
+function percentileFromSorted(valid: number[], p: number): number | null {
   if (valid.length === 0) return null;
   if (valid.length === 1) return valid[0];
   const index = (p / 100) * (valid.length - 1);
@@ -334,27 +333,42 @@ function buildHomeOverview(index: Index, prDetailsIndex: string[]): HomeOverview
     const runs = runsByRepo.get(repoKey) || [];
     const details = prDetailsByRepo.get(repoKey) || [];
 
-    const prE2EDurations = details.map(d => d?.prSubmitToMerge?.durationSeconds);
-    const ciE2EDurations = runs.map(r => r.durationInSeconds);
-    const ciStartupDurations = runs.map(r => r.jobs?.[0]?.queueDurationInSeconds);
-    const ciExecDurations = runs.map(r => r.jobs?.[0]?.durationInSeconds);
-    const prReviewDurations = details.map(d => d?.lastCiRemovalToMerge?.durationSeconds);
+    const prE2EDurations = details
+      .map(d => d?.prSubmitToMerge?.durationSeconds)
+      .filter((value): value is number => Number.isFinite(value))
+      .sort((a, b) => a - b);
+    const ciE2EDurations = runs
+      .map(r => r.durationInSeconds)
+      .filter((value): value is number => Number.isFinite(value))
+      .sort((a, b) => a - b);
+    const ciStartupDurations = runs
+      .map(r => r.jobs?.[0]?.queueDurationInSeconds)
+      .filter((value): value is number => Number.isFinite(value))
+      .sort((a, b) => a - b);
+    const ciExecDurations = runs
+      .map(r => r.jobs?.[0]?.durationInSeconds)
+      .filter((value): value is number => Number.isFinite(value))
+      .sort((a, b) => a - b);
+    const prReviewDurations = details
+      .map(d => d?.lastCiRemovalToMerge?.durationSeconds)
+      .filter((value): value is number => Number.isFinite(value))
+      .sort((a, b) => a - b);
     const ciCompliantCount = runs.filter(r => r.durationInSeconds <= 3600).length;
 
     return {
       key: repoEntry.key,
       owner: repoEntry.owner,
       repo: repoEntry.repo,
-      prE2EP50: percentile(prE2EDurations, 50),
-      prE2EP90: percentile(prE2EDurations, 90),
-      ciE2EP50: percentile(ciE2EDurations, 50),
-      ciE2EP90: percentile(ciE2EDurations, 90),
-      ciStartupP50: percentile(ciStartupDurations, 50),
-      ciStartupP90: percentile(ciStartupDurations, 90),
-      ciExecP50: percentile(ciExecDurations, 50),
-      ciExecP90: percentile(ciExecDurations, 90),
-      prReviewP50: percentile(prReviewDurations, 50),
-      prReviewP90: percentile(prReviewDurations, 90),
+      prE2EP50: percentileFromSorted(prE2EDurations, 50),
+      prE2EP90: percentileFromSorted(prE2EDurations, 90),
+      ciE2EP50: percentileFromSorted(ciE2EDurations, 50),
+      ciE2EP90: percentileFromSorted(ciE2EDurations, 90),
+      ciStartupP50: percentileFromSorted(ciStartupDurations, 50),
+      ciStartupP90: percentileFromSorted(ciStartupDurations, 90),
+      ciExecP50: percentileFromSorted(ciExecDurations, 50),
+      ciExecP90: percentileFromSorted(ciExecDurations, 90),
+      prReviewP50: percentileFromSorted(prReviewDurations, 50),
+      prReviewP90: percentileFromSorted(prReviewDurations, 90),
       ciComplianceRate: runs.length > 0 ? (ciCompliantCount / runs.length) * 100 : null,
       runCount: runs.length,
       prDetailCount: details.length,
