@@ -87,7 +87,19 @@ const ExportPanel = forwardRef(function ExportPanel(props, ref) {
   const dialogRef = useRef(null);
   const abortRef = useRef(null);
 
-  useImperativeHandle(ref, () => ({ open, close }), []);
+  const open = useCallback(() => {
+    dialogRef.current?.showModal();
+  }, []);
+
+  const close = useCallback(() => {
+    if (abortRef.current) {
+      abortRef.current.abort();
+      abortRef.current = null;
+    }
+    dialogRef.current?.close();
+  }, []);
+
+  useImperativeHandle(ref, () => ({ open, close }), [open, close]);
 
   const [timePreset, setTimePreset] = useState('7days');
   const [customStart, setCustomStart] = useState('');
@@ -251,7 +263,7 @@ const ExportPanel = forwardRef(function ExportPanel(props, ref) {
       setExporting(false);
       abortRef.current = null;
     }
-  }, [timePreset, customStart, customEnd, selectedColumns]);
+  }, [timePreset, customStart, customEnd, selectedColumns, close]);
 
   const isExportDisabled = exporting || estimatedDays === 0 || selectedColumns.size === 0;
 
