@@ -102,7 +102,7 @@ User clicks "导出" button
 
 ## Implementation Units
 
-- [ ] **Unit 1: Add xlsx dependency and export utility module**
+- [x] **Unit 1: Add xlsx dependency and export utility module**
 
 **Goal:** Install SheetJS library and create the core export utility with data loading, aggregation, and Excel generation functions.
 
@@ -158,7 +158,7 @@ User clicks "导出" button
 - `npm test` passes for all export utility tests
 - Utility functions are pure (no DOM or side effects except `generateExcel` which triggers download)
 
-- [ ] **Unit 2: Create ExportPanel component**
+- [x] **Unit 2: Create ExportPanel component**
 
 **Goal:** Build the export configuration dialog with time range selection, column selector, progress display, and export trigger.
 
@@ -213,7 +213,7 @@ User clicks "导出" button
 - Time presets correctly compute date ranges
 - Column selector state correctly maps to export utility column filter
 
-- [ ] **Unit 3: Integrate ExportPanel into HomePage**
+- [x] **Unit 3: Integrate ExportPanel into HomePage**
 
 **Goal:** Add the export entry button to the HomePage table header and wire up the ExportPanel.
 

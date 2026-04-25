@@ -1,39 +1,41 @@
+import writeExcelFile from 'write-excel-file/browser';
+
 import { percentile, getSuccessRate, getRunRepoKey, getRunPrNumber, getRunStageName } from './etlData.js';
 
 const MAX_DAYS = 90;
 const CONCURRENCY_LIMIT = 6;
 
 const DETAIL_COLUMNS = [
-  { key: 'date', label: '日期', format: 'date' },
-  { key: 'repo', label: '仓库', format: 'text' },
-  { key: 'prNumber', label: 'PR号', format: 'number' },
-  { key: 'runName', label: 'Run名称', format: 'text' },
-  { key: 'stage', label: 'CI阶段', format: 'text' },
-  { key: 'conclusion', label: '状态', format: 'text' },
-  { key: 'totalDuration', label: '总耗时(秒)', format: 'number' },
-  { key: 'queueDuration', label: '队列等待(秒)', format: 'number' },
-  { key: 'execDuration', label: '执行耗时(秒)', format: 'number' },
-  { key: 'jobName', label: 'Job名称', format: 'text' },
-  { key: 'jobCount', label: 'Job数量', format: 'number' },
-  { key: 'createdAt', label: '创建时间', format: 'datetime' },
-  { key: 'updatedAt', label: '更新时间', format: 'datetime' },
-  { key: 'runUrl', label: 'Run链接', format: 'text' },
+  { key: 'date', label: '日期', type: String },
+  { key: 'repo', label: '仓库', type: String },
+  { key: 'prNumber', label: 'PR号', type: Number },
+  { key: 'runName', label: 'Run名称', type: String },
+  { key: 'stage', label: 'CI阶段', type: String },
+  { key: 'conclusion', label: '状态', type: String },
+  { key: 'totalDuration', label: '总耗时(秒)', type: Number },
+  { key: 'queueDuration', label: '队列等待(秒)', type: Number },
+  { key: 'execDuration', label: '执行耗时(秒)', type: Number },
+  { key: 'jobName', label: 'Job名称', type: String },
+  { key: 'jobCount', label: 'Job数量', type: Number },
+  { key: 'createdAt', label: '创建时间', type: Date },
+  { key: 'updatedAt', label: '更新时间', type: Date },
+  { key: 'runUrl', label: 'Run链接', type: String },
 ];
 
 const SUMMARY_COLUMNS = [
-  { key: 'repo', label: '仓库', format: 'text' },
-  { key: 'prE2EP50', label: 'PR E2E P50', format: 'number' },
-  { key: 'prE2EP90', label: 'PR E2E P90', format: 'number' },
-  { key: 'ciE2EP50', label: 'CI E2E P50', format: 'number' },
-  { key: 'ciE2EP90', label: 'CI E2E P90', format: 'number' },
-  { key: 'ciStartupP50', label: 'CI启动 P50', format: 'number' },
-  { key: 'ciStartupP90', label: 'CI启动 P90', format: 'number' },
-  { key: 'ciExecP50', label: 'CI执行 P50', format: 'number' },
-  { key: 'ciExecP90', label: 'CI执行 P90', format: 'number' },
-  { key: 'prReviewP50', label: 'PR检视 P50', format: 'number' },
-  { key: 'prReviewP90', label: 'PR检视 P90', format: 'number' },
-  { key: 'runCount', label: '运行次数', format: 'number' },
-  { key: 'complianceRate', label: '达标率', format: 'number' },
+  { key: 'repo', label: '仓库', type: String },
+  { key: 'prE2EP50', label: 'PR E2E P50', type: Number },
+  { key: 'prE2EP90', label: 'PR E2E P90', type: Number },
+  { key: 'ciE2EP50', label: 'CI E2E P50', type: Number },
+  { key: 'ciE2EP90', label: 'CI E2E P90', type: Number },
+  { key: 'ciStartupP50', label: 'CI启动 P50', type: Number },
+  { key: 'ciStartupP90', label: 'CI启动 P90', type: Number },
+  { key: 'ciExecP50', label: 'CI执行 P50', type: Number },
+  { key: 'ciExecP90', label: 'CI执行 P90', type: Number },
+  { key: 'prReviewP50', label: 'PR检视 P50', type: Number },
+  { key: 'prReviewP90', label: 'PR检视 P90', type: Number },
+  { key: 'runCount', label: '运行次数', type: Number },
+  { key: 'complianceRate', label: '达标率', type: Number },
 ];
 
 const SUMMARY_DEFINITIONS = [
@@ -210,96 +212,65 @@ export function buildDefinitionsData() {
   return [...SUMMARY_DEFINITIONS, ...DETAIL_DEFINITIONS];
 }
 
-function isoToExcelSerial(isoString) {
-  if (!isoString) return 0;
-  const date = new Date(isoString);
-  if (isNaN(date.getTime())) return 0;
-  const excelEpoch = new Date(Date.UTC(1899, 11, 30));
-  return (date - excelEpoch) / (1000 * 60 * 60 * 24);
+function cell(value, type) {
+  if (value === null || value === undefined || value === '') return { value: '', type: String };
+  if (type === Date && typeof value === 'string') {
+    const d = new Date(value);
+    return isNaN(d.getTime()) ? { value: '', type: String } : { value: d, type: Date, format: 'yyyy-mm-dd hh:mm:ss' };
+  }
+  if (type === Number && typeof value === 'number') {
+    return { value, type: Number, format: '0' };
+  }
+  return { value, type: type || String };
 }
 
 export async function generateExcel(summaryData, detailData, definitionsData, selectedDetailColumns) {
-  let XLSX;
-  try {
-    XLSX = await import('xlsx');
-  } catch (err) {
-    throw new Error(`Failed to load Excel library: ${err.message}`);
-  }
-
-  const wb = XLSX.utils.book_new();
-
-  // Summary sheet
-  const summaryHeaders = SUMMARY_COLUMNS.map(c => c.label);
-  const summaryRows = summaryData.map(s =>
-    SUMMARY_COLUMNS.map(col => {
-      const val = s[col.key];
-      return val !== null && val !== undefined ? val : '';
-    })
-  );
-  const summarySheetData = [summaryHeaders, ...summaryRows];
-  const summaryWs = XLSX.utils.aoa_to_sheet(summarySheetData);
-
-  // Apply number formats to summary sheet
-  for (let r = 1; r <= summaryRows.length; r++) {
-    for (let c = 0; c < SUMMARY_COLUMNS.length; c++) {
-      const col = SUMMARY_COLUMNS[c];
-      const cellRef = XLSX.utils.encode_cell({ r, c });
-      if (summaryWs[cellRef] && col.format === 'number') {
-        summaryWs[cellRef].z = '0';
-        summaryWs[cellRef].t = 'n';
-      }
-    }
-  }
-  summaryWs['!cols'] = SUMMARY_COLUMNS.map(col => ({
-    wch: Math.max(col.label.length, 12),
-  }));
-  XLSX.utils.book_append_sheet(wb, summaryWs, '仓库汇总');
-
-  // Detail sheet
   const detailCols = DETAIL_COLUMNS.filter(c =>
     !selectedDetailColumns || selectedDetailColumns.includes(c.key)
   );
-  const detailHeaders = detailCols.map(c => c.label);
-  const detailRows = detailData.map(row =>
-    detailCols.map(col => {
-      const val = row[col.key];
-      if (col.format === 'datetime' && val) return isoToExcelSerial(val);
-      if (col.format === 'number') return val !== null && val !== undefined ? val : 0;
-      return val !== null && val !== undefined ? val : '';
-    })
-  );
-  const detailSheetData = [detailHeaders, ...detailRows];
-  const detailWs = XLSX.utils.aoa_to_sheet(detailSheetData);
 
-  // Apply number formats to detail sheet
-  for (let r = 1; r <= detailRows.length; r++) {
-    for (let c = 0; c < detailCols.length; c++) {
-      const col = detailCols[c];
-      const cellRef = XLSX.utils.encode_cell({ r, c });
-      if (detailWs[cellRef]) {
-        if (col.format === 'number') {
-          detailWs[cellRef].z = '0';
-          detailWs[cellRef].t = 'n';
-        } else if (col.format === 'datetime') {
-          detailWs[cellRef].z = 'yyyy-mm-dd hh:mm:ss';
-          detailWs[cellRef].t = 'n';
-        }
-      }
-    }
+  function buildRows(data, columns) {
+    const headerRow = columns.map(col => ({ value: col.label, type: String }));
+    const dataRows = data.map(row =>
+      columns.map(col => cell(row[col.key], col.type))
+    );
+    return [headerRow, ...dataRows];
   }
-  detailWs['!cols'] = detailCols.map(col => ({
-    wch: Math.max(col.label.length, 15),
-  }));
-  XLSX.utils.book_append_sheet(wb, detailWs, 'CI运行明细');
 
-  // Definitions sheet
-  const defHeaders = ['指标名称', '定义说明'];
-  const defRows = definitionsData.map(d => [d['指标名称'], d['定义说明']]);
-  const defSheetData = [defHeaders, ...defRows];
-  const defWs = XLSX.utils.aoa_to_sheet(defSheetData);
-  defWs['!cols'] = [{ wch: 20 }, { wch: 60 }];
-  XLSX.utils.book_append_sheet(wb, defWs, '指标说明');
+  function buildColumns(columns) {
+    return columns.map(col => ({ header: col.label, width: Math.max(col.label.length, 12) }));
+  }
 
-  // Trigger download
-  XLSX.writeFile(wb, `CI报表_${new Date().toISOString().split('T')[0]}.xlsx`);
+  const sheets = [
+    {
+      data: buildRows(summaryData, SUMMARY_COLUMNS),
+      sheet: '仓库汇总',
+      columns: buildColumns(SUMMARY_COLUMNS),
+    },
+    {
+      data: buildRows(detailData, detailCols),
+      sheet: 'CI运行明细',
+      columns: buildColumns(detailCols),
+    },
+    {
+      data: [
+        [{ value: '指标名称', type: String }, { value: '定义说明', type: String }],
+        ...definitionsData.map(d => [{ value: d['指标名称'], type: String }, { value: d['定义说明'], type: String }]),
+      ],
+      sheet: '指标说明',
+      columns: [{ header: '指标名称', width: 20 }, { header: '定义说明', width: 60 }],
+    },
+  ];
+
+  const result = await writeExcelFile(sheets);
+  const blob = await result.toBlob();
+
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = `CI报表_${new Date().toISOString().split('T')[0]}.xlsx`;
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
 }
