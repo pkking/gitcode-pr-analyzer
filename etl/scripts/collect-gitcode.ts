@@ -46,6 +46,37 @@ interface DayData {
   runs: Run[];
 }
 
+interface RepoOverviewMetrics {
+  key: string;
+  owner: string;
+  repo: string;
+  prE2EP50: number | null;
+  prE2EP90: number | null;
+  ciE2EP50: number | null;
+  ciE2EP90: number | null;
+  ciStartupP50: number | null;
+  ciStartupP90: number | null;
+  ciExecP50: number | null;
+  ciExecP90: number | null;
+  prReviewP50: number | null;
+  prReviewP90: number | null;
+  ciComplianceRate: number | null;
+  runCount: number;
+  prDetailCount: number;
+}
+
+interface HomeOverview {
+  generated_at: string;
+  source_last_updated: string;
+  orgs: string[];
+  summary: {
+    repoCount: number;
+    totalRuns: number;
+    totalPrDetails: number;
+  };
+  repos: RepoOverviewMetrics[];
+}
+
 interface PhaseDef {
   phase: 'trigger' | 'start' | 'finish';
   source: 'comment' | 'label';
@@ -136,6 +167,7 @@ const GITCODE_API_BASE = 'https://api.gitcode.com/api/v5';
 const ETL_DIR = path.join(process.cwd(), 'etl');
 const DATA_DIR = path.join(process.cwd(), 'public', 'data');
 const INDEX_PATH = path.join(DATA_DIR, 'index.json');
+const HOME_OVERVIEW_PATH = path.join(DATA_DIR, 'home-overview.json');
 const REPOS_CONFIG_PATH = path.join(ETL_DIR, 'repos.yaml');
 
 /**
@@ -212,6 +244,142 @@ function readDayData(date: string): DayData {
 function writeDayData(data: DayData) {
   const filePath = path.join(DATA_DIR, `${data.date}.json`);
   fs.writeFileSync(filePath, JSON.stringify(data, null, 2));
+}
+
+function normalizeRepoKey(repoKey: string | null | undefined): string {
+  return String(repoKey || '').trim().toLowerCase();
+}
+
+function getRunRepoKey(run: Run): string {
+  try {
+    const url = new URL(run?.html_url || '');
+    const segments = url.pathname.split('/').filter(Boolean);
+    const mergeRequestIndex = segments.findIndex(segment => segment === 'merge_requests');
+    if (mergeRequestIndex < 2) return '';
+    return `${segments[mergeRequestIndex - 2]}/${segments[mergeRequestIndex - 1]}`;
+  } catch {
+    return '';
+  }
+}
+
+function getPrDetailRepoKeyFromFilePath(filePath: string): string {
+  const match = String(filePath || '').match(/^([^/]+)\/(.+)\/pr-(\d+)\.json$/);
+  return match ? `${match[1]}/${match[2]}` : '';
+}
+
+function percentile(numbers: Array<number | null | undefined>, p: number): number | null {
+  const valid = numbers.filter((value): value is number => Number.isFinite(value)).sort((a, b) => a - b);
+  if (valid.length === 0) return null;
+  if (valid.length === 1) return valid[0];
+  const index = (p / 100) * (valid.length - 1);
+  const lower = Math.floor(index);
+  const upper = Math.ceil(index);
+  if (lower === upper) return valid[lower];
+  const fraction = index - lower;
+  return valid[lower] + fraction * (valid[upper] - valid[lower]);
+}
+
+function buildHomeOverview(index: Index, prDetailsIndex: string[]): HomeOverview {
+  const repoEntries = Object.entries(index.repos || {})
+    .map(([key, value]) => {
+      const [owner, ...repoParts] = key.split('/');
+      return {
+        key,
+        owner,
+        repo: repoParts.join('/'),
+        files: value.files || [],
+      };
+    })
+    .sort((a, b) => a.key.localeCompare(b.key));
+
+  const dayFiles = new Set<string>();
+  for (const repo of repoEntries) {
+    for (const file of repo.files) {
+      dayFiles.add(file);
+    }
+  }
+
+  const runsByRepo = new Map<string, Run[]>();
+  let totalRuns = 0;
+  for (const file of dayFiles) {
+    const dayData = readDayData(String(file).replace(/\.json$/, ''));
+    for (const run of dayData.runs || []) {
+      const repoKey = normalizeRepoKey(getRunRepoKey(run));
+      if (!repoKey) continue;
+      if (!runsByRepo.has(repoKey)) runsByRepo.set(repoKey, []);
+      runsByRepo.get(repoKey)?.push(run);
+      totalRuns += 1;
+    }
+  }
+
+  const prDetailsByRepo = new Map<string, PrDetail[]>();
+  let totalPrDetails = 0;
+  for (const filePath of prDetailsIndex) {
+    const detailPath = path.join(DATA_DIR, filePath);
+    if (!fs.existsSync(detailPath)) continue;
+    try {
+      const repoKey = normalizeRepoKey(getPrDetailRepoKeyFromFilePath(filePath));
+      if (!repoKey) continue;
+      const detail = JSON.parse(fs.readFileSync(detailPath, 'utf-8')) as PrDetail;
+      if (!prDetailsByRepo.has(repoKey)) prDetailsByRepo.set(repoKey, []);
+      prDetailsByRepo.get(repoKey)?.push(detail);
+      totalPrDetails += 1;
+    } catch {
+      continue;
+    }
+  }
+
+  const repos: RepoOverviewMetrics[] = repoEntries.map(repoEntry => {
+    const repoKey = normalizeRepoKey(repoEntry.key);
+    const runs = runsByRepo.get(repoKey) || [];
+    const details = prDetailsByRepo.get(repoKey) || [];
+
+    const prE2EDurations = details.map(d => d?.prSubmitToMerge?.durationSeconds);
+    const ciE2EDurations = runs.map(r => r.durationInSeconds);
+    const ciStartupDurations = runs.map(r => r.jobs?.[0]?.queueDurationInSeconds);
+    const ciExecDurations = runs.map(r => r.jobs?.[0]?.durationInSeconds);
+    const prReviewDurations = details.map(d => d?.lastCiRemovalToMerge?.durationSeconds);
+    const ciCompliantCount = runs.filter(r => r.durationInSeconds <= 3600).length;
+
+    return {
+      key: repoEntry.key,
+      owner: repoEntry.owner,
+      repo: repoEntry.repo,
+      prE2EP50: percentile(prE2EDurations, 50),
+      prE2EP90: percentile(prE2EDurations, 90),
+      ciE2EP50: percentile(ciE2EDurations, 50),
+      ciE2EP90: percentile(ciE2EDurations, 90),
+      ciStartupP50: percentile(ciStartupDurations, 50),
+      ciStartupP90: percentile(ciStartupDurations, 90),
+      ciExecP50: percentile(ciExecDurations, 50),
+      ciExecP90: percentile(ciExecDurations, 90),
+      prReviewP50: percentile(prReviewDurations, 50),
+      prReviewP90: percentile(prReviewDurations, 90),
+      ciComplianceRate: runs.length > 0 ? (ciCompliantCount / runs.length) * 100 : null,
+      runCount: runs.length,
+      prDetailCount: details.length,
+    };
+  });
+
+  const orgs = Array.from(new Set(repoEntries.map(repo => repo.owner))).sort((a, b) => a.localeCompare(b));
+
+  return {
+    generated_at: new Date().toISOString(),
+    source_last_updated: index.last_updated || '',
+    orgs,
+    summary: {
+      repoCount: repos.length,
+      totalRuns,
+      totalPrDetails,
+    },
+    repos,
+  };
+}
+
+function writeHomeOverview(index: Index, prDetailsIndex: string[]) {
+  const overview = buildHomeOverview(index, prDetailsIndex);
+  fs.writeFileSync(HOME_OVERVIEW_PATH, JSON.stringify(overview, null, 2));
+  console.log(`Wrote ${overview.repos.length} repo entries to home-overview.json`);
 }
 
 function matchesPattern(value: string, pattern: string, matchType: string): boolean {
@@ -721,6 +889,7 @@ async function main() {
   prDetailsIndex.sort();
   fs.writeFileSync(prDetailsIndexPath, JSON.stringify(prDetailsIndex, null, 2));
   console.log(`Wrote ${prDetailsIndex.length} PR detail entries to pr-details-index.json`);
+  writeHomeOverview(index, prDetailsIndex);
 
   console.log('Done!');
 }
