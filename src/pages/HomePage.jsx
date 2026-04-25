@@ -166,9 +166,8 @@ export default function HomePage() {
           setLoadingDetail('基础仓库列表已展示。');
         } catch (fallbackErr) {
           if (!cancelled) {
-            const message = fallbackErr instanceof Error ? fallbackErr.message : String(fallbackErr);
-            const overviewMessage = overviewErr instanceof Error ? overviewErr.message : String(overviewErr);
-            setError(`${overviewMessage}; fallback failed: ${message}`);
+            console.error('Overview load failed:', overviewErr, 'Fallback failed:', fallbackErr);
+            setError('无法加载数据。请检查网络连接或确保 ETL 任务已运行。');
             setLoading(false);
           }
         }
