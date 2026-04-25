@@ -86,6 +86,7 @@ function buildFallbackOverview(indexData) {
 
 export default function HomePage() {
   const [loading, setLoading] = useState(true);
+  const [isRefreshing, setIsRefreshing] = useState(false);
   const [loadingProgress, setLoadingProgress] = useState(8);
   const [loadingLabel, setLoadingLabel] = useState('读取首页摘要');
   const [loadingDetail, setLoadingDetail] = useState('仅加载首页所需聚合指标，避免首屏全量扫描。');
@@ -119,7 +120,6 @@ export default function HomePage() {
 
     async function loadData() {
       try {
-        setLoading(true);
         setError(null);
         setWarning(null);
 
@@ -127,6 +127,11 @@ export default function HomePage() {
         if (cachedOverview) {
           updateLoading(42, '命中本地缓存', '先使用本次会话的首页摘要，再静默检查最新文件。');
           applyOverview(cachedOverview);
+          setLoading(false);
+          setIsRefreshing(true);
+        } else {
+          setLoading(true);
+          setIsRefreshing(false);
         }
 
         updateLoading(cachedOverview ? 56 : 16, '请求首页摘要', '正在读取 home-overview.json。');
@@ -145,6 +150,7 @@ export default function HomePage() {
 
         updateLoading(96, '渲染首页', '首屏指标已就绪。');
         setLoading(false);
+        setIsRefreshing(false);
         setLoadingProgress(100);
         setLoadingLabel('首页加载完成');
         setLoadingDetail('首页已使用预聚合指标完成渲染。');
@@ -161,6 +167,7 @@ export default function HomePage() {
           applyOverview(fallbackOverview);
           setWarning('首页摘要文件不可用，当前只展示仓库列表，指标列未预聚合。建议重新运行 ETL 生成 home-overview.json。');
           setLoading(false);
+          setIsRefreshing(false);
           setLoadingProgress(100);
           setLoadingLabel('已使用兼容模式');
           setLoadingDetail('基础仓库列表已展示。');
@@ -169,6 +176,7 @@ export default function HomePage() {
             console.error('Overview load failed:', overviewErr, 'Fallback failed:', fallbackErr);
             setError('无法加载数据。请检查网络连接或确保 ETL 任务已运行。');
             setLoading(false);
+            setIsRefreshing(false);
           }
         }
       }
@@ -225,6 +233,7 @@ export default function HomePage() {
   }
 
   const isBootstrapping = loading && repoMetrics.length === 0;
+  const showProgress = isBootstrapping || isRefreshing;
 
   return (
     <div className="min-h-screen bg-[radial-gradient(circle_at_top,_rgba(253,224,71,0.12),_transparent_28%),linear-gradient(180deg,_#0c0a09_0%,_#171717_45%,_#fafaf9_45%,_#f5f5f4_100%)] text-stone-900">
@@ -251,12 +260,14 @@ export default function HomePage() {
             </div>
           </div>
 
-          <ProgressBar
-            value={loading ? loadingProgress : 100}
-            label={loading ? loadingLabel : '首页加载完成'}
-            detail={loading ? loadingDetail : `最后更新时间：${formatTimestamp(summary.lastUpdated)}`}
-            className="mt-6"
-          />
+          {showProgress && (
+            <ProgressBar
+              value={loadingProgress}
+              label={loadingLabel}
+              detail={loadingDetail}
+              className="mt-6"
+            />
+          )}
 
           {warning && (
             <div className="mt-4 rounded-2xl border border-amber-500/30 bg-amber-400/10 px-4 py-3 text-sm text-amber-100">
