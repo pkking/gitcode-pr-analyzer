@@ -102,6 +102,7 @@ export default function HomePage() {
 
   useEffect(() => {
     let cancelled = false;
+    let cachedOverview = null;
 
     const updateLoading = (progress, label, detail) => {
       if (cancelled) return;
@@ -122,7 +123,7 @@ export default function HomePage() {
         setError(null);
         setWarning(null);
 
-        const cachedOverview = readCachedOverview();
+        cachedOverview = readCachedOverview();
         if (cachedOverview) {
           updateLoading(42, '命中本地缓存', '先使用本次会话的首页摘要，再静默检查最新文件。');
           applyOverview(cachedOverview);
