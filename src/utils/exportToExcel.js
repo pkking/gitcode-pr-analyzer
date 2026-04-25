@@ -84,38 +84,30 @@ export function generateDateRange(startDate, endDate, maxDays = MAX_DAYS) {
 
 export async function fetchDayFiles(dates, concurrency = CONCURRENCY_LIMIT, onProgress) {
   const results = { runs: [], loadedCount: 0, skippedDates: [] };
-  const semaphore = Array(concurrency).fill(null);
+  let index = 0;
 
-  async function fetchOne(date) {
-    try {
-      const res = await fetch(`/data/${date}.json`);
-      if (!res.ok) {
+  async function worker() {
+    while (index < dates.length) {
+      const date = dates[index++];
+      try {
+        const res = await fetch(`/data/${date}.json`);
+        if (!res.ok) {
+          results.skippedDates.push(date);
+        } else {
+          const data = await res.json();
+          if (data?.runs && Array.isArray(data.runs)) {
+            results.runs.push(...data.runs);
+          }
+          results.loadedCount++;
+        }
+      } catch {
         results.skippedDates.push(date);
-        return;
       }
-      const data = await res.json();
-      if (data?.runs && Array.isArray(data.runs)) {
-        results.runs.push(...data.runs);
-      }
-      results.loadedCount++;
-    } catch {
-      results.skippedDates.push(date);
-    }
-    if (onProgress) onProgress(results.loadedCount + results.skippedDates.length, dates.length);
-  }
-
-  for (let i = 0; i < dates.length; i++) {
-    const slot = semaphore.indexOf(null);
-    if (slot === -1) {
-      await Promise.race(semaphore.filter(Boolean));
-      const freeSlot = semaphore.indexOf(null);
-      semaphore[freeSlot] = fetchOne(dates[i]);
-    } else {
-      semaphore[slot] = fetchOne(dates[i]);
+      if (onProgress) onProgress(results.loadedCount + results.skippedDates.length, dates.length);
     }
   }
 
-  await Promise.all(semaphore.filter(Boolean));
+  await Promise.all(Array.from({ length: Math.min(concurrency, dates.length) }, () => worker()));
   return results;
 }
 
@@ -227,7 +219,12 @@ function isoToExcelSerial(isoString) {
 }
 
 export async function generateExcel(summaryData, detailData, definitionsData, selectedDetailColumns) {
-  const XLSX = await import('xlsx');
+  let XLSX;
+  try {
+    XLSX = await import('xlsx');
+  } catch (err) {
+    throw new Error(`Failed to load Excel library: ${err.message}`);
+  }
 
   const wb = XLSX.utils.book_new();
 
