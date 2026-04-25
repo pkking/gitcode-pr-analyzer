@@ -318,7 +318,6 @@ export default function HomePage() {
                   {orgNames.length} 个组织 · {summary.repoCount} 个仓库 · {summary.totalRuns} 次运行
                   {activeOrg && <span className="ml-2 text-sm font-normal text-amber-700">（筛选：{activeOrg}）</span>}
                 </div>
-                </div>
               </div>
               <div className="flex items-center gap-3">
                 <button
@@ -346,6 +345,7 @@ export default function HomePage() {
                 />
               </div>
             </div>
+          </div>
           </div>
 
           {isBootstrapping ? (

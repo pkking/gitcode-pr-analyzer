@@ -1,5 +1,3 @@
-import writeExcelFile from 'write-excel-file/browser';
-
 import { percentile, getSuccessRate, getRunRepoKey, getRunPrNumber, getRunStageName } from './etlData.js';
 
 const MAX_DAYS = 90;
@@ -84,15 +82,16 @@ export function generateDateRange(startDate, endDate, maxDays = MAX_DAYS) {
   return dates;
 }
 
-export async function fetchDayFiles(dates, concurrency = CONCURRENCY_LIMIT, onProgress) {
+export async function fetchDayFiles(dates, concurrency = CONCURRENCY_LIMIT, onProgress, signal) {
   const results = { runs: [], loadedCount: 0, skippedDates: [] };
   let index = 0;
 
   async function worker() {
     while (index < dates.length) {
+      if (signal?.aborted) return;
       const date = dates[index++];
       try {
-        const res = await fetch(`/data/${date}.json`);
+        const res = await fetch(`/data/${date}.json`, { signal });
         if (!res.ok) {
           results.skippedDates.push(date);
         } else {
@@ -103,6 +102,7 @@ export async function fetchDayFiles(dates, concurrency = CONCURRENCY_LIMIT, onPr
           results.loadedCount++;
         }
       } catch {
+        if (signal?.aborted) return;
         results.skippedDates.push(date);
       }
       if (onProgress) onProgress(results.loadedCount + results.skippedDates.length, dates.length);
@@ -131,7 +131,7 @@ export function buildSummaryData(runs) {
     const [owner, repoName] = repoKey.split('/');
     const runCount = group.runs.length;
 
-    const ciDurations = group.runs.map(r => r.durationInSeconds || 0).filter(v => Number.isFinite(v));
+    const ciDurations = group.runs.map(r => r.durationInSeconds).filter(v => typeof v === 'number' && Number.isFinite(v));
     const ciStartupDurations = [];
     const ciExecDurations = [];
 
@@ -225,6 +225,8 @@ function cell(value, type) {
 }
 
 export async function generateExcel(summaryData, detailData, definitionsData, selectedDetailColumns) {
+  const { default: writeExcelFile } = await import('write-excel-file/browser');
+
   const detailCols = DETAIL_COLUMNS.filter(c =>
     !selectedDetailColumns || selectedDetailColumns.includes(c.key)
   );

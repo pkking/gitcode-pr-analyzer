@@ -87,7 +87,7 @@ const ExportPanel = forwardRef(function ExportPanel(props, ref) {
   const dialogRef = useRef(null);
   const abortRef = useRef(null);
 
-  useImperativeHandle(ref, () => ({ open, close }), [open, close]);
+  useImperativeHandle(ref, () => ({ open, close }), []);
 
   const [timePreset, setTimePreset] = useState('7days');
   const [customStart, setCustomStart] = useState('');
@@ -99,33 +99,35 @@ const ExportPanel = forwardRef(function ExportPanel(props, ref) {
   const [warning, setWarning] = useState(null);
   const [estimatedDays, setEstimatedDays] = useState(7);
 
-  useEffect(() => {
-    const range = getDateRangeForPreset(timePreset);
-    if (range.start && range.end) {
-      const dates = generateDateRange(range.start, range.end);
-      setEstimatedDays(dates.length);
-    }
-  }, [timePreset]);
-
-  const open = useCallback(() => {
-    setTimePreset('7days');
-    setSelectedColumns(new Set(ALL_COLUMN_KEYS));
-    setExporting(false);
-    setProgress({ loaded: 0, total: 0, status: 'idle' });
-    setError(null);
-    setWarning(null);
-    setCustomStart('');
-    setCustomEnd('');
-    dialogRef.current?.showModal();
-  }, []);
-
-  const close = useCallback(() => {
+  const handleCancelExport = useCallback(() => {
     if (abortRef.current) {
       abortRef.current.abort();
       abortRef.current = null;
     }
-    dialogRef.current?.close();
+    setExporting(false);
+    setProgress({ loaded: 0, total: 0, status: 'idle' });
   }, []);
+
+  useEffect(() => {
+    let startDate, endDate;
+    if (timePreset === 'custom') {
+      if (customStart && customEnd) {
+        startDate = new Date(customStart);
+        endDate = new Date(customEnd);
+      }
+    } else {
+      const range = getDateRangeForPreset(timePreset);
+      startDate = range.start;
+      endDate = range.end;
+    }
+
+    if (startDate && endDate && !isNaN(startDate.getTime()) && !isNaN(endDate.getTime())) {
+      const dates = generateDateRange(startDate, endDate);
+      setEstimatedDays(dates.length);
+    } else {
+      setEstimatedDays(0);
+    }
+  }, [timePreset, customStart, customEnd]);
 
   useEffect(() => {
     const dialog = dialogRef.current;
@@ -217,7 +219,7 @@ const ExportPanel = forwardRef(function ExportPanel(props, ref) {
 
       const result = await fetchDayFiles(dates, 6, (loaded, total) => {
         setProgress({ loaded, total, status: 'loading' });
-      });
+      }, abortController.signal);
 
       if (abortController.signal.aborted) return;
 
@@ -249,16 +251,7 @@ const ExportPanel = forwardRef(function ExportPanel(props, ref) {
       setExporting(false);
       abortRef.current = null;
     }
-  }, [timePreset, customStart, customEnd, selectedColumns, close]);
-
-  const handleCancelExport = useCallback(() => {
-    if (abortRef.current) {
-      abortRef.current.abort();
-      abortRef.current = null;
-    }
-    setExporting(false);
-    setProgress({ loaded: 0, total: 0, status: 'idle' });
-  }, []);
+  }, [timePreset, customStart, customEnd, selectedColumns]);
 
   const isExportDisabled = exporting || estimatedDays === 0 || selectedColumns.size === 0;
 
