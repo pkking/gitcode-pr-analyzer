@@ -1,5 +1,4 @@
 import React, { useCallback, useDeferredValue, useEffect, useMemo, useState } from 'react';
-import { format as formatDate } from 'date-fns';
 import { Link } from 'react-router-dom';
 import { listOrgEntries, listRepoEntries } from '../utils/etlData.js';
 import { TableSkeleton, MetricValue, Badge, ProgressBar } from '../components/ui.jsx';
@@ -429,10 +428,4 @@ function FullScreenMessage({ children, tone }) {
       </div>
     </div>
   );
-}
-
-function formatTimestamp(value) {
-  if (!value) return '--';
-  const date = new Date(value);
-  return Number.isNaN(date.getTime()) ? String(value) : formatDate(date, 'yyyy-MM-dd HH:mm:ss');
 }
