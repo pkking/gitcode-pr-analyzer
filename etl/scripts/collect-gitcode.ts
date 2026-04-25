@@ -170,6 +170,7 @@ const INDEX_PATH = path.join(DATA_DIR, 'index.json');
 const HOME_OVERVIEW_PATH = path.join(DATA_DIR, 'home-overview.json');
 const REPOS_CONFIG_PATH = path.join(ETL_DIR, 'repos.yaml');
 const CI_COMPLIANCE_THRESHOLD_SECONDS = 3600;
+const DEFAULT_FILE_READ_CONCURRENCY = 30;
 
 /**
  * Safely parse a date string, returning null if invalid instead of throwing.
@@ -231,6 +232,12 @@ function getBackfillSince(): Date | null {
   const value = String(process.env.BACKFILL_SINCE || '').trim();
   if (!value) return null;
   return safeParseDate(value);
+}
+
+function getFileReadConcurrency(): number {
+  const rawValue = Number.parseInt(String(process.env.FILE_READ_CONCURRENCY || ''), 10);
+  if (!Number.isFinite(rawValue) || rawValue <= 0) return DEFAULT_FILE_READ_CONCURRENCY;
+  return rawValue;
 }
 
 function readDayData(date: string): DayData {
@@ -376,10 +383,10 @@ async function buildHomeOverview(index: Index, prDetailsIndex: string[]): Promis
 
   const runsByRepo = new Map<string, Run[]>();
   let totalRuns = 0;
-  const CONCURRENT_FILE_READS = 50;
+  const fileReadConcurrency = getFileReadConcurrency();
   const dayDataFiles = await processFilesConcurrently(
     Array.from(dayFiles),
-    CONCURRENT_FILE_READS,
+    fileReadConcurrency,
     async file => {
       const filePath = path.join(DATA_DIR, String(file));
       try {
@@ -406,7 +413,7 @@ async function buildHomeOverview(index: Index, prDetailsIndex: string[]): Promis
   let totalPrDetails = 0;
   const prDetails = await processFilesConcurrently(
     prDetailsIndex,
-    CONCURRENT_FILE_READS,
+    fileReadConcurrency,
     async filePath => {
       const detailPath = path.join(DATA_DIR, filePath);
       const repoKey = normalizeRepoKey(getPrDetailRepoKeyFromFilePath(filePath));
