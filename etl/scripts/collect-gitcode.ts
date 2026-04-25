@@ -169,6 +169,7 @@ const DATA_DIR = path.join(process.cwd(), 'public', 'data');
 const INDEX_PATH = path.join(DATA_DIR, 'index.json');
 const HOME_OVERVIEW_PATH = path.join(DATA_DIR, 'home-overview.json');
 const REPOS_CONFIG_PATH = path.join(ETL_DIR, 'repos.yaml');
+const CI_COMPLIANCE_THRESHOLD_SECONDS = 3600;
 
 /**
  * Safely parse a date string, returning null if invalid instead of throwing.
@@ -262,11 +263,6 @@ function getPrDetailRepoKeyFromFilePath(filePath: string): string {
   return match ? `${match[1]}/${match[2]}` : '';
 }
 
-function percentile(numbers: Array<number | null | undefined>, p: number): number | null {
-  const valid = numbers.filter((value): value is number => Number.isFinite(value)).sort((a, b) => a - b);
-  return percentileFromSorted(valid, p);
-}
-
 function percentileFromSorted(valid: number[], p: number): number | null {
   if (valid.length === 0) return null;
   if (valid.length === 1) return valid[0];
@@ -353,7 +349,7 @@ function buildHomeOverview(index: Index, prDetailsIndex: string[]): HomeOverview
       .map(d => d?.lastCiRemovalToMerge?.durationSeconds)
       .filter((value): value is number => Number.isFinite(value))
       .sort((a, b) => a - b);
-    const ciCompliantCount = runs.filter(r => r.durationInSeconds <= 3600).length;
+    const ciCompliantCount = runs.filter(r => r.durationInSeconds <= CI_COMPLIANCE_THRESHOLD_SECONDS).length;
 
     return {
       key: repoEntry.key,

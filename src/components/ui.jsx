@@ -124,9 +124,17 @@ export function TableSkeleton({ rows = 8 }) {
 
 export function ProgressBar({ value = 0, className = '', label, detail }) {
   const clampedValue = Math.max(0, Math.min(100, Number(value) || 0));
+  const accessibleLabel = label || 'Loading progress';
 
   return (
-    <div className={className}>
+    <div
+      className={className}
+      role="progressbar"
+      aria-valuenow={clampedValue}
+      aria-valuemin={0}
+      aria-valuemax={100}
+      aria-label={accessibleLabel}
+    >
       {(label || detail) && (
         <div className="mb-2 flex items-center justify-between gap-3 text-xs text-stone-400">
           <span className="truncate">{label}</span>
