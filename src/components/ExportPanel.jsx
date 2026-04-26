@@ -86,12 +86,17 @@ function getDateRangeForPreset(preset) {
 const ExportPanel = forwardRef(function ExportPanel(props, ref) {
   const dialogRef = useRef(null);
   const abortRef = useRef(null);
+  const closeTimerRef = useRef(null);
 
   const open = useCallback(() => {
     dialogRef.current?.showModal();
   }, []);
 
   const close = useCallback(() => {
+    if (closeTimerRef.current) {
+      clearTimeout(closeTimerRef.current);
+      closeTimerRef.current = null;
+    }
     if (abortRef.current) {
       abortRef.current.abort();
       abortRef.current = null;
@@ -154,6 +159,13 @@ const ExportPanel = forwardRef(function ExportPanel(props, ref) {
     dialog.addEventListener('cancel', handleCancel);
     return () => dialog.removeEventListener('cancel', handleCancel);
   }, [exporting, handleCancelExport]);
+
+  useEffect(() => () => {
+    if (closeTimerRef.current) {
+      clearTimeout(closeTimerRef.current);
+      closeTimerRef.current = null;
+    }
+  }, []);
 
   const handlePresetChange = useCallback((preset) => {
     setTimePreset(preset);
@@ -254,7 +266,11 @@ const ExportPanel = forwardRef(function ExportPanel(props, ref) {
       await generateExcel(summaryData, detailData, definitionsData, [...selectedColumns]);
 
       setProgress({ loaded: result.loadedCount, total: dates.length, status: 'done' });
-      setTimeout(close, 500);
+      if (closeTimerRef.current) clearTimeout(closeTimerRef.current);
+      closeTimerRef.current = setTimeout(() => {
+        closeTimerRef.current = null;
+        close();
+      }, 500);
     } catch (err) {
       if (abortController.signal.aborted) return;
       setError(`导出失败：${err.message}`);
