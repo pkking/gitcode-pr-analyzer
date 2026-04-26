@@ -3,6 +3,7 @@ import { ProgressBar } from './ui.jsx';
 import {
   generateDateRange,
   fetchDayFiles,
+  fetchPrDetailsForRuns,
   buildSummaryData,
   buildDetailData,
   buildDefinitionsData,
@@ -259,7 +260,10 @@ const ExportPanel = forwardRef(function ExportPanel(props, ref) {
 
       setProgress({ loaded: result.loadedCount, total: dates.length, status: 'generating' });
 
-      const summaryData = buildSummaryData(result.runs);
+      const prDetails = await fetchPrDetailsForRuns(result.runs, 6, abortController.signal);
+      if (abortController.signal.aborted) return;
+
+      const summaryData = buildSummaryData(result.runs, prDetails);
       const detailData = buildDetailData(result.runs, [...selectedColumns]);
       const definitionsData = buildDefinitionsData();
 

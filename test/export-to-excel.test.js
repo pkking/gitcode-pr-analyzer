@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import {
   generateDateRange,
   fetchDayFiles,
+  fetchPrDetailsForRuns,
   buildSummaryData,
   buildDetailData,
   buildDefinitionsData,
@@ -125,6 +126,20 @@ describe('buildSummaryData', () => {
     assert.strictEqual(summary.ciStartupP50, 15);
     assert.strictEqual(summary.ciExecP50, 60);
     assert.strictEqual(summary.ciExecP90, 84);
+  });
+
+  it('uses PR detail durations for PR E2E summary metrics', () => {
+    const prDetails = [
+      { owner: 'owner', repo: 'repo', prNumber: 1, prSubmitToMerge: { durationSeconds: 100 } },
+      { owner: 'owner', repo: 'repo', prNumber: 2, prSubmitToMerge: { durationSeconds: 300 } },
+      { owner: 'other', repo: 'repo', prNumber: 1, prSubmitToMerge: { durationSeconds: 900 } },
+    ];
+
+    const summary = buildSummaryData(mockRuns, prDetails);
+    const ownerRepo = summary.find(s => s.repoKey === 'owner/repo');
+
+    assert.strictEqual(ownerRepo.prE2EP50, 200);
+    assert.strictEqual(ownerRepo.prE2EP90, 280);
   });
 
   it('skips runs with unparseable html_url', () => {
@@ -272,6 +287,38 @@ describe('fetchDayFiles', () => {
     assert.strictEqual(result.loadedCount, 0);
     assert.strictEqual(result.skippedDates.length, 2);
     assert.strictEqual(result.runs.length, 0);
+  });
+});
+
+describe('fetchPrDetailsForRuns', () => {
+  const originalFetch = globalThis.fetch;
+
+  afterEach(() => {
+    globalThis.fetch = originalFetch;
+  });
+
+  it('fetches unique PR details referenced by runs', async () => {
+    const calls = [];
+    globalThis.fetch = async (url) => {
+      calls.push(url);
+      return {
+        ok: true,
+        json: async () => ({ owner: 'owner', repo: 'repo', prNumber: Number(url.match(/pr-(\d+)\.json/)?.[1]) }),
+      };
+    };
+
+    const runs = [
+      { html_url: 'https://gitcode.com/owner/repo/merge_requests/1', name: 'PR #1 compile' },
+      { html_url: 'https://gitcode.com/owner/repo/merge_requests/1', name: 'PR #1 docs-ci' },
+      { html_url: 'https://gitcode.com/owner/repo/merge_requests/2', name: 'PR #2 compile' },
+    ];
+
+    const details = await fetchPrDetailsForRuns(runs, 2);
+    assert.strictEqual(details.length, 2);
+    assert.deepStrictEqual(calls.sort(), [
+      '/data/owner/repo/pr-1.json',
+      '/data/owner/repo/pr-2.json',
+    ]);
   });
 });
 

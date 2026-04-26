@@ -42,7 +42,7 @@ const SUMMARY_COLUMNS = [
 ];
 
 const SUMMARY_DEFINITIONS = [
-  { 指标名称: 'PR E2E P50/P90', 定义说明: '从 PR 创建到 Merge 的中位/90分位耗时（秒）。注：当前导出基于 CI run 数据，不含 PR 创建/Merge 时间戳，该列暂为空。' },
+  { 指标名称: 'PR E2E P50/P90', 定义说明: '从 PR 创建到 Merge 的中位/90分位耗时（秒）。基于所选 CI run 关联的 PR 明细计算。' },
   { 指标名称: 'CI E2E P50/P90', 定义说明: '从 CI 触发到所有 Job 完成的中位/90分位耗时（秒）' },
   { 指标名称: 'CI启动 P50/P90', 定义说明: '从 CI 触发到第一个 Job 开始的中位/90分位等待时间（秒）' },
   { 指标名称: 'CI执行 P50/P90', 定义说明: '从 Job 开始到完成的中位/90分位执行时间（秒）' },
@@ -118,7 +118,46 @@ export async function fetchDayFiles(dates, concurrency = CONCURRENCY_LIMIT, onPr
   return results;
 }
 
-export function buildSummaryData(runs) {
+export async function fetchPrDetailsForRuns(runs, concurrency = CONCURRENCY_LIMIT, signal) {
+  const prRefs = [];
+  const seen = new Set();
+
+  for (const run of runs || []) {
+    const repoKey = getRunRepoKey(run);
+    const prNumber = getRunPrNumber(run);
+    if (!repoKey || !prNumber) continue;
+
+    const key = `${repoKey}#${prNumber}`;
+    if (seen.has(key)) continue;
+    seen.add(key);
+
+    const [owner, repoName] = repoKey.split('/');
+    prRefs.push({ owner, repoName, prNumber });
+  }
+
+  const details = [];
+  let index = 0;
+
+  async function worker() {
+    while (index < prRefs.length) {
+      if (signal?.aborted) return;
+      const { owner, repoName, prNumber } = prRefs[index++];
+      try {
+        const res = await fetch(`/data/${encodeURIComponent(owner)}/${encodeURIComponent(repoName)}/pr-${prNumber}.json`, { signal });
+        if (!res.ok) continue;
+        const detail = await res.json();
+        details.push(detail);
+      } catch {
+        if (signal?.aborted) return;
+      }
+    }
+  }
+
+  await Promise.all(Array.from({ length: Math.min(concurrency, prRefs.length) }, () => worker()));
+  return details;
+}
+
+export function buildSummaryData(runs, prDetails = []) {
   if (!runs || runs.length === 0) return [];
 
   const byRepo = new Map();
@@ -131,11 +170,22 @@ export function buildSummaryData(runs) {
     byRepo.get(repoKey).runs.push(run);
   }
 
+  const prDetailsByRepo = new Map();
+  for (const detail of prDetails || []) {
+    if (!detail?.owner || !detail?.repo) continue;
+    const repoKey = `${detail.owner}/${detail.repo}`;
+    if (!prDetailsByRepo.has(repoKey)) prDetailsByRepo.set(repoKey, []);
+    prDetailsByRepo.get(repoKey).push(detail);
+  }
+
   const summary = [];
   for (const [repoKey, group] of byRepo) {
     const [owner, repoName] = repoKey.split('/');
     const runCount = group.runs.length;
 
+    const prE2EDurations = (prDetailsByRepo.get(repoKey) || [])
+      .map(detail => detail?.prSubmitToMerge?.durationSeconds)
+      .filter(v => typeof v === 'number' && Number.isFinite(v));
     const ciDurations = group.runs.map(r => r.durationInSeconds).filter(v => typeof v === 'number' && Number.isFinite(v));
     const ciStartupDurations = [];
     const ciExecDurations = [];
@@ -164,8 +214,8 @@ export function buildSummaryData(runs) {
       repoKey,
       owner,
       repoName,
-      prE2EP50: null,
-      prE2EP90: null,
+      prE2EP50: percentile(prE2EDurations, 50),
+      prE2EP90: percentile(prE2EDurations, 90),
       ciE2EP50: percentile(ciDurations, 50),
       ciE2EP90: percentile(ciDurations, 90),
       ciStartupP50: percentile(ciStartupDurations, 50),
