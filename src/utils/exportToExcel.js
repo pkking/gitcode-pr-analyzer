@@ -20,6 +20,11 @@ const DETAIL_COLUMNS = [
   { key: 'runUrl', label: 'Run链接', type: String },
 ];
 
+const DEFINITION_COLUMNS = [
+  { key: '指标名称', label: '指标名称', type: String },
+  { key: '定义说明', label: '定义说明', type: String },
+];
+
 const SUMMARY_COLUMNS = [
   { key: 'repo', label: '仓库', type: String },
   { key: 'prE2EP50', label: 'PR E2E P50', type: Number },
@@ -136,13 +141,21 @@ export function buildSummaryData(runs) {
     const ciExecDurations = [];
 
     for (const run of group.runs) {
-      if (Array.isArray(run.jobs) && run.jobs.length > 0) {
-        const job = run.jobs[0];
-        if (job.started_at && run.created_at) {
-          const startup = (new Date(job.started_at) - new Date(run.created_at)) / 1000;
-          if (Number.isFinite(startup)) ciStartupDurations.push(startup);
+      const jobs = Array.isArray(run.jobs) ? run.jobs : [];
+      const runCreated = toTimestamp(run.created_at);
+      const jobStarts = jobs
+        .map(job => toTimestamp(job.started_at))
+        .filter(time => time !== null);
+
+      if (runCreated !== null && jobStarts.length > 0) {
+        const startup = (Math.min(...jobStarts) - runCreated) / 1000;
+        if (Number.isFinite(startup)) ciStartupDurations.push(startup);
+      }
+
+      for (const job of jobs) {
+        if (typeof job.durationInSeconds === 'number' && Number.isFinite(job.durationInSeconds)) {
+          ciExecDurations.push(job.durationInSeconds);
         }
-        if (Number.isFinite(job.durationInSeconds)) ciExecDurations.push(job.durationInSeconds);
       }
     }
 
@@ -212,14 +225,20 @@ export function buildDefinitionsData() {
   return [...SUMMARY_DEFINITIONS, ...DETAIL_DEFINITIONS];
 }
 
+function toTimestamp(value) {
+  if (!value) return null;
+  const time = new Date(value).getTime();
+  return Number.isFinite(time) ? time : null;
+}
+
 function cell(value, type) {
   if (value === null || value === undefined || value === '') return { value: '', type: String };
   if (type === Date && typeof value === 'string') {
     const d = new Date(value);
     return isNaN(d.getTime()) ? { value: '', type: String } : { value: d, type: Date, format: 'yyyy-mm-dd hh:mm:ss' };
   }
-  if (type === Number && typeof value === 'number') {
-    return { value, type: Number, format: '0' };
+  if (type === Number) {
+    return typeof value === 'number' && Number.isFinite(value) ? { value, type: Number, format: '0' } : { value: '', type: String };
   }
   return { value, type: type || String };
 }
@@ -232,7 +251,7 @@ export async function generateExcel(summaryData, detailData, definitionsData, se
   );
 
   function buildRows(data, columns) {
-    const headerRow = columns.map(col => ({ value: col.label, type: String }));
+    const headerRow = columns.map(col => ({ value: col.label, type: String, fontWeight: 'bold' }));
     const dataRows = data.map(row =>
       columns.map(col => cell(row[col.key], col.type))
     );
@@ -240,7 +259,7 @@ export async function generateExcel(summaryData, detailData, definitionsData, se
   }
 
   function buildColumns(columns) {
-    return columns.map(col => ({ header: col.label, width: Math.max(col.label.length, 12) }));
+    return columns.map(col => ({ header: col.label, width: Math.max(col.label.length * 2, 12) }));
   }
 
   const sheets = [
@@ -255,17 +274,13 @@ export async function generateExcel(summaryData, detailData, definitionsData, se
       columns: buildColumns(detailCols),
     },
     {
-      data: [
-        [{ value: '指标名称', type: String }, { value: '定义说明', type: String }],
-        ...definitionsData.map(d => [{ value: d['指标名称'], type: String }, { value: d['定义说明'], type: String }]),
-      ],
+      data: buildRows(definitionsData, DEFINITION_COLUMNS),
       sheet: '指标说明',
-      columns: [{ header: '指标名称', width: 20 }, { header: '定义说明', width: 60 }],
+      columns: buildColumns(DEFINITION_COLUMNS),
     },
   ];
 
-  const result = await writeExcelFile(sheets);
-  const blob = await result.toBlob();
+  const blob = await writeExcelFile(sheets).toBlob();
 
   const url = URL.createObjectURL(blob);
   const a = document.createElement('a');

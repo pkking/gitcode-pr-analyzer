@@ -94,6 +94,39 @@ describe('buildSummaryData', () => {
     assert.deepStrictEqual(buildSummaryData(null), []);
   });
 
+  it('uses earliest job start for CI startup and all job durations for CI execution', () => {
+    const runs = [
+      {
+        id: 1,
+        name: 'PR #1 compile - test',
+        html_url: 'https://gitcode.com/owner/repo/merge_requests/1',
+        durationInSeconds: 120,
+        conclusion: 'success',
+        created_at: '2026-04-20T01:00:00Z',
+        jobs: [
+          { name: 'late-job', durationInSeconds: 30, started_at: '2026-04-20T01:02:00Z' },
+          { name: 'early-job', durationInSeconds: 90, started_at: '2026-04-20T01:00:10Z' },
+        ],
+      },
+      {
+        id: 2,
+        name: 'PR #2 compile - test',
+        html_url: 'https://gitcode.com/owner/repo/merge_requests/2',
+        durationInSeconds: 100,
+        conclusion: 'success',
+        created_at: '2026-04-20T02:00:00Z',
+        jobs: [
+          { name: 'single-job', durationInSeconds: 60, started_at: '2026-04-20T02:00:20Z' },
+        ],
+      },
+    ];
+
+    const [summary] = buildSummaryData(runs);
+    assert.strictEqual(summary.ciStartupP50, 15);
+    assert.strictEqual(summary.ciExecP50, 60);
+    assert.strictEqual(summary.ciExecP90, 84);
+  });
+
   it('skips runs with unparseable html_url', () => {
     const badRuns = [{ id: 1, name: 'test', html_url: 'not-a-url', durationInSeconds: 100, conclusion: 'success', jobs: [] }];
     assert.deepStrictEqual(buildSummaryData(badRuns), []);
