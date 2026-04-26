@@ -1,7 +1,8 @@
-import React, { useCallback, useDeferredValue, useEffect, useMemo, useState } from 'react';
+import React, { useCallback, useDeferredValue, useEffect, useMemo, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { listOrgEntries, listRepoEntries } from '../utils/etlData.js';
 import { TableSkeleton, MetricValue, Badge, ProgressBar } from '../components/ui.jsx';
+import ExportPanel from '../components/ExportPanel.jsx';
 
 const SORT_KEYS = {
   runCount: 'runCount',
@@ -99,6 +100,7 @@ export default function HomePage() {
   const [activeOrg, setActiveOrg] = useState(null);
   const [searchQuery, setSearchQuery] = useState('');
   const deferredSearchQuery = useDeferredValue(searchQuery);
+  const exportPanelRef = useRef(null);
 
   useEffect(() => {
     let cancelled = false;
@@ -317,7 +319,18 @@ export default function HomePage() {
                   {activeOrg && <span className="ml-2 text-sm font-normal text-amber-700">（筛选：{activeOrg}）</span>}
                 </div>
               </div>
-              <div className="relative">
+              <div className="flex items-center gap-3">
+                <button
+                  onClick={() => exportPanelRef.current?.open?.()}
+                  className="inline-flex items-center gap-1.5 rounded-xl border border-stone-200 bg-white/80 px-3.5 py-2 text-sm font-medium text-stone-600 hover:text-amber-700 hover:border-amber-300 transition-colors"
+                  aria-label="导出Excel报表"
+                >
+                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                  </svg>
+                  导出
+                </button>
+                <div className="relative">
                 <svg className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-stone-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <circle cx="11" cy="11" r="8" />
                   <path d="m21 21-4.35-4.35" strokeLinecap="round" />
@@ -332,6 +345,7 @@ export default function HomePage() {
                 />
               </div>
             </div>
+          </div>
           </div>
 
           {isBootstrapping ? (
@@ -392,6 +406,7 @@ export default function HomePage() {
             </div>
           )}
         </section>
+        <ExportPanel ref={exportPanelRef} />
       </div>
     </div>
   );
