@@ -27,7 +27,8 @@ jobs:
           node-version: 20
           cache: npm
 
-      - run: npm ci
+      - run: rm -f package-lock.json
+      - run: npm install
       - run: npm run lint
       - run: npm test
       - run: npm run build
