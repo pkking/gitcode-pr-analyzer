@@ -260,7 +260,11 @@ const ExportPanel = forwardRef(function ExportPanel(props, ref) {
 
       setProgress({ loaded: result.loadedCount, total: dates.length, status: 'generating' });
 
-      const prDetails = await fetchPrDetailsForRuns(result.runs, 6, abortController.signal);
+      setProgress({ loaded: 0, total: 1, status: 'fetching-pr' });
+
+      const prDetails = await fetchPrDetailsForRuns(result.runs, 6, (loaded, total) => {
+        setProgress({ loaded, total, status: 'fetching-pr' });
+      }, abortController.signal);
       if (abortController.signal.aborted) return;
 
       const summaryData = buildSummaryData(result.runs, prDetails);
@@ -399,7 +403,11 @@ const ExportPanel = forwardRef(function ExportPanel(props, ref) {
         {progress.status !== 'idle' && (
           <ProgressBar
             value={progress.total > 0 ? Math.round((progress.loaded / progress.total) * 100) : 0}
-            label={progress.status === 'loading' ? `加载数据 ${progress.loaded}/${progress.total}` : '生成 Excel 文件...'}
+            label={
+              progress.status === 'loading' ? `加载数据 ${progress.loaded}/${progress.total}` :
+              progress.status === 'fetching-pr' ? `获取 PR 明细 ${progress.loaded}/${progress.total}` :
+              '生成 Excel 文件...'
+            }
             detail={progress.status === 'error' ? error : undefined}
           />
         )}

@@ -82,7 +82,10 @@ export function generateDateRange(startDate, endDate, maxDays = MAX_DAYS) {
   for (let i = 0; i < cappedDays; i++) {
     const d = new Date(start);
     d.setDate(d.getDate() + i);
-    dates.push(d.toISOString().split('T')[0]);
+    const year = d.getFullYear();
+    const month = String(d.getMonth() + 1).padStart(2, '0');
+    const day = String(d.getDate()).padStart(2, '0');
+    dates.push(`${year}-${month}-${day}`);
   }
   return dates;
 }
@@ -118,7 +121,7 @@ export async function fetchDayFiles(dates, concurrency = CONCURRENCY_LIMIT, onPr
   return results;
 }
 
-export async function fetchPrDetailsForRuns(runs, concurrency = CONCURRENCY_LIMIT, signal) {
+export async function fetchPrDetailsForRuns(runs, concurrency = CONCURRENCY_LIMIT, onProgress, signal) {
   const prRefs = [];
   const seen = new Set();
 
@@ -136,6 +139,7 @@ export async function fetchPrDetailsForRuns(runs, concurrency = CONCURRENCY_LIMI
   }
 
   const details = [];
+  let fetched = 0;
   let index = 0;
 
   async function worker() {
@@ -150,6 +154,8 @@ export async function fetchPrDetailsForRuns(runs, concurrency = CONCURRENCY_LIMI
       } catch {
         if (signal?.aborted) return;
       }
+      fetched++;
+      if (onProgress) onProgress(fetched, prRefs.length);
     }
   }
 
