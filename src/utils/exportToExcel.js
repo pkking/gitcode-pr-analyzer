@@ -105,7 +105,9 @@ export async function fetchDayFiles(dates, concurrency = CONCURRENCY_LIMIT, onPr
         } else {
           const data = await res.json();
           if (data?.runs && Array.isArray(data.runs)) {
-            results.runs.push(...data.runs);
+            for (const run of data.runs) {
+              results.runs.push(run);
+            }
           }
           results.loadedCount++;
         }
@@ -204,7 +206,8 @@ export function buildSummaryData(runs, prDetails = []) {
         .filter(time => time !== null);
 
       if (runCreated !== null && jobStarts.length > 0) {
-        const startup = (Math.min(...jobStarts) - runCreated) / 1000;
+        const earliestStart = jobStarts.reduce((min, t) => t < min ? t : min, jobStarts[0]);
+        const startup = (earliestStart - runCreated) / 1000;
         if (Number.isFinite(startup)) ciStartupDurations.push(startup);
       }
 
