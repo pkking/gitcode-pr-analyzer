@@ -288,7 +288,9 @@ function cell(value, type) {
     return isNaN(d.getTime()) ? { value: '', type: String } : { value: d, type: Date, format: 'yyyy-mm-dd hh:mm:ss' };
   }
   if (type === Number) {
-    return typeof value === 'number' && Number.isFinite(value) ? { value, type: Number, format: '0.0' } : { value: '', type: String };
+    return typeof value === 'number' && Number.isFinite(value)
+      ? { value, type: Number, format: Number.isInteger(value) ? '0' : '0.0' }
+      : { value: '', type: String };
   }
   return { value, type: type || String };
 }
